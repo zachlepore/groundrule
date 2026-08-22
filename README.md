@@ -9,6 +9,7 @@ Groundrule is intended to become a municipal property guidance application that 
 - TypeScript
 - ESLint
 - Plain CSS
+- Supabase JavaScript client
 - npm
 
 The intentionally small dependency set keeps the application straightforward to run locally and compatible with a future Vercel deployment.
@@ -38,6 +39,6 @@ npm start
 
 ## Current scope
 
-This foundation contains a single placeholder landing screen for the initial municipality, Clearwater, Florida. Database design, Supabase/PostgreSQL and PostGIS integration, authentication, municipal source documents, structured rules, parcel data, and server-side property lookup are intentionally deferred to subsequent tasks.
+This foundation contains a single placeholder landing screen for the initial municipality, Clearwater, Florida. The municipality label is read on the server from the existing Supabase `public.municipalities` table using `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
 
-Vercel project setup and deployment are also deferred. When those integrations begin, environment-specific settings and secrets should be supplied through local environment files and Vercel environment variables rather than committed to this repository.
+Authentication, database schema changes, PostGIS integration, municipal source documents, structured rules, parcel data, and property lookup remain intentionally deferred. Environment-specific settings and secrets must be supplied through local environment files and Vercel environment variables rather than committed to this repository.
