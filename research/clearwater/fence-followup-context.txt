@@ -1,0 +1,2330 @@
+2358-        Ordinances.
+2359-  Section 3. Unless another penalty is expressly provided, a violation of any
+2360-provision of the Code of Ordinances, or any provision of any rule or regulation
+2361-adopted or issued pursuant thereto, shall be punished as provided in Sections
+2362-1.12 and 1.13 of the Code of Ordinances.
+2363-  Section 4. Any and all additions and amendments to the Code of Ordi-
+2364-nances, when passed in such form as to indicate the intention of the City
+2365-Commission to make the same as part of the Code of Ordinances, shall be
+2366-deemed to be incorporated in the Code of Ordinances so that reference to the
+2367-
+2368-
+2369-                                         ix
+2370-  "Code of Ordinances, City of Clearwater " shall be understood and intended to
+2371-  include such additions and amendment s.
+2372-     Section 5. Neither the adoption of the Code of Ordinances nor the repeal of
+2373-  any ordinance as provided by Section 2 shall affect any right, obligation or
+2374-  liability accrued before the effective date of this ordinance, or any right, obli-
+2375-  gation or liability to be determined and established where a lawsuit, admin-
+2376-  istrative proceeding, or claim is pending, including but not necessarily limited
+2377-  to any indebtedness, resolution, administrat ive rule or regulation, right cif
+2378: franchise, special assessment , land use or zoning regulation, or violation of the
+2379- former Code of Ordinances or any part thereof, which rights, obligations and
+2380- liabilities are preserved. In any action, administrat ive hearing, contract, or-
+2381- dinance, resolution, citation or notice to appear, correspondence, or other matter
+2382- in which a reference has been made to the former Code of Ordinances or to any
+2383- part thereof by chapter, article, or section number, such reference shall be
+2384- deemed amended by inference to the corresponding chapter, article, or section
+2385- number in this Code of Ordinances.
+2386-     Section 6. A copy of the Code of Ordinances shall be kept on file with the
+2387- other public records maintained by the City Clerk, in looseleaf form or in such
+2388- other form as the City Clerk may consider most expedient. It shall be the duty
+2389- of the City Clerk, or someone authorized by the City Clerk, to insert in their
+2390- designated places all amendment s or ordinances which indicate the intention
+2391- of the City Commission to make the same a part of the Code of Ordinances,
+2392-when the same have been printed or reprinted in page form, and to extract
+2393- from the Code of Ordinances all provisions which may from time to time be
+2394-repealed by the City Commission. This copy of the Code of Ordinances shall be
+2395-available for inspection by all persons desiring to examine the same, during
+2396-the normal business hours of the City.
+2397-    Section 7. It shall be unlawful for any person to change or amend, by addi-
+2398-tions, deletions, or otherwise, any provision of the Code of Ordinances or any
+--
+2436-                                    CHARTER AND RELATED LAWS
+2437-Charter and Related Laws . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                        CHT:1
+2438-Subpt. A. Charter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                   CHT:1
+2439-        Art. I. Corporate Existence, Powers, and Boundaries .                                                         CHT:3
+2440-        Art. II. Legislative Power . . . . . . . . . . . . . . . . . . . . . . . . . . .                              CHT:3
+2441-        Art. III. Administration . . . . . . . . . . . . . . . . . . . . . . . . . . . .                             CHT:11
+2442-        Art. IV. City Attorney; Legal Department . . . . . . . . . . . .                                             CHT:12
+2443-        Art. V. Reserved . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                       CHT:13
+2444-        Art. VI. Initiative; Referendum; Recall . . . . . . . . . . . . . .                                          CHT:13
+2445-        Art. VII. General Provisions . . . . . . . . . . . . . . . . . . . . . . . .                                 CHT:15
+2446-        Art. VIII. Nominations and Elections . . . . . . . . . . . . . . . .                                         CHT:15
+2447-        Art. IX. Fiscal Management Procedure . . . . . . . . . . . . . .                                             CHT:17
+2448-        Art. X. Transition Schedule . . . . . . . . . . . . . . . . . . . . . . . . .                                CHT:17
+2449-Subpt. B. Related Laws . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                         RL:1
+2450-        Art. I. Firemen's Pension Fund . . . . . . . . . . . . . . . . . . . . .                                       RL:3
+2451-        Art. II. Revenue and Excise Tax Bonds . . . . . . . . . . . . . .                                             RL:12
+2452-        Art. III. Recording of Maps or Plats of Land in County
+2453-                  Records . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                       RL:14
+2454-        Art. IV. Alcoholic Beverage License for P.A.C.T., Inc. .                                                      RL:14
+2455-        Art. V. Vendors of Certain Malt Beverages Subject to
+2456:                 Zoning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                   RL:14
+2457-Charter Comparative Table—Ordinances . . . . . . . . . . . . . . . . . . . . .                                      CHTCT:1
+2458-Related Laws Comparative Table . . . . . . . . . . . . . . . . . . . . . . . . . . . .                               RLCT:1
+2459-
+2460-                                                            PART II
+2461-                                            CODE OF ORDINANCES
+2462-Chapter
+2463-Subpt. A.           General Ordinances . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                    CD1:1
+2464-1.     General Provisions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                 CD1:1
+2465-2.     Administration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .             CD2:1
+2466-          Art. I. In General . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                      CD2:9
+2467-          Art. II. Liability of City and Employees . . . . . . . . . . . . .                                         CD2:10
+2468-
+2469-
+2470-Supp. No. 90                                                      xi
+2471-                                      CLEARWATER CODE
+2472-
+2473-
+2474-
+2475-Chapter                                                                                           Page
+2476-          Art. III. Appointed Authorities, Boards, Committees .                                   CD2:12
+--
+3461-any agency thereof, or with any person as defined               budget, capital budget and capital
+3462-by law.                                                         program, and provide for hearings on the
+3463-   (c) Construction. The powers of the city under               budget, capital budget and capital
+3464-this charter shall be construed liberally in favor              program and the amendment of the budget
+3465-of the city. The city is empowered to do whatever               following adoption.
+3466-is necessary and proper for the safety, health,
+3467-                                                          3.    Provide for an annual or more frequent
+3468-convenience and general welfare of its inhabit-
+3469-                                                                independent audit of all city accounts by
+3470-ants. The specific mention of a particular power
+3471-                                                                a firm of certified public accountants,
+3472-in this charter shall not be construed as limiting
+3473-                                                                and provide for publication of a notice of
+3474-the general power stated in this Section of
+3475-                                                                availability of each audit. No firm shall
+3476-Article I.
+3477-                                                                be employed for more than five consecu-
+3478-(6372-99, § 1, 1-21-99/3-9-99)
+3479-                                                                tive years. All audits shall be in
+3480-Section 1.02. Corporate boundaries.                             accordance with law.
+3481:   The corporate boundaries of the city shall be          4.    Regulate comprehensive planning, zoning
+3482-as they exist on the date this charter takes                    and land development as provided by
+3483-effect, provided that the city may change its                   law.
+3484-boundaries in the manner prescribed by law.
+3485-                                                       (d) Limitations. The legislative power provided
+3486-                                                     herein shall have the following limitations:
+3487-    ARTICLE II. LEGISLATIVE POWER
+3488-                                                          (1)   The total indebtedness, which for the
+3489-Section 2.01. Council; composition;                             purpose of this limitation shall include
+3490-                 powers.                                        revenue, refunding, and improvement
+3491-   (a) Composition. There shall be a city council,              bonds of the city, shall not exceed 20
+3492-(the council ), composed of five council members,               percent of the current assessed valuation
+3493-including the mayor. The members will occupy                    of all real property located in the city.
+3494-
+3495-
+3496-Supp. No. 78                                     CHT:3
+3497-§ 2.01                                       CLEARWATER CODE
+3498-
+3499-
+3500-
+3501-         The total budgeted expenditures in any                       ing. Workforce Housing means hous-
+--
+4550-
+4551-
+4552-
+4553-Supp. No. 58                                                 RL:1
+4554-                                             CLEARWATER CODE
+4555-
+4556-
+4557-
+4558-                 Article III.   Recording of Maps or Plats of Land in County Records
+4559-               Sec. 1.          Maps, plats entitled to be recorded without approval of board of
+4560-                                county commissioners.
+4561-               Sec. 2.          Effective date.
+4562-
+4563-
+4564-                         Article IV.   Alcoholic Beverage License for P.A.C.T., Inc.
+4565-               Sec. 1.          Authority of division of alcoholic beverages and tobacco to issue.
+4566-               Sec. 2.          Issuance not subject to quota.
+4567-               Sec. 3.          Effective date.
+4568-
+4569-
+4570:                   Article V.   Vendors of Certain Malt Beverages Subject to Zoning
+4571:               Sec. 1.          Vendors of certain malt beverages subject to zoning.
+4572-               Sec. 2.          Effective date.
+4573-
+4574-
+4575-
+4576-
+4577-Supp. No. 58                                         RL:2
+4578-                                                        RELATED LAWS                                                 Art. I, § 1
+4579-
+4580-
+4581-
+4582- ARTICLE I. FIREMEN'S PENSION FUND*                                     assessment and tax shall commence as of the first
+4583-                                                                        taxable year after the effective date of this act and
+4584-Section 1. Creation of fund; contributions;                             shall continue for a period of 35 years thereafter,
+4585-           transfer of property to trustees;                            except as herein otherwise provided; however, the
+4586-           tax authorized.—                                             rate of assessment and tax for the first 10 years
+4587-                                                                        from the effective date of this act shall be six-
+4588-   (1) There is hereby created a fund to be known
+4589-                                                                        tenths of one mill, except as herein otherwise
+4590-as the pension fund of the Fire Department of the
+4591-                                                                        provided.
+--
+5300-and other public funds, and shall also be and
+5301-
+5302-
+5303-Supp. No. 58                                          RL:13
+5304-Art. III, § 1                                          CLEARWATER CODE
+5305-
+5306-
+5307-
+5308- ARTICLE III. RECORDING OF MAPS OR                                 intent and purpose of this act that such license or
+5309- PLATS OF LAND IN COUNTY RECORDS*                                  licenses shall be an exception to any such quota or
+5310-                                                                   limitation.
+5311-Sec. 1. Maps, plats entitled to be recorded
+5312-        without approval of board of county                        Sec. 3. Effective date.
+5313-        commissioners.
+5314-                                                                      This act [article] shall take effect upon becom-
+5315-  Any map or plat of lands within the City of                      ing a law.
+5316-Clearwater which has been approved by the city
+5317-pursuant to its charter, ordinances, regulations
+5318-and applicable laws of Florida shall be entitled to                     ARTICLE V. VENDORS OF CERTAIN
+5319-be recorded in the public records of Pinellas                            MALT BEVERAGES SUBJECT TO
+5320:County without the approval of the board of                                        ZONING‡
+5321-county commissioners of said county.
+5322-                                                                   Sec. 1. Vendors of certain malt beverages
+5323:Sec. 2. Effective date.                                                    subject to zoning.
+5324-
+5325-   This act [article] shall take effect upon becom-                  The provisions of section 563.02(1)(a), Florida
+5326-ing a law.                                                         Statutes, to the contrary notwithstanding, ven-
+5327-                                                                   dors of malt beverages containing alcohol of more
+5328-                                                                   than one percent by weight shall be subject to
+5329:   ARTICLE IV. ALCOHOLIC BEVERAGE                                  zoning by the City of Clearwater.
+5330-      LICENSE FOR P.A.C.T., INC.†
+5331-                                                                   Sec. 2. Effective date.
+5332-Sec. 1. Authority of division of alcoholic bev-                       This act [article] shall take effect upon becom-
+5333-        erages and tobacco to issue.                               ing a law.
+5334-   In addition to any licenses that may be issued
+5335-under the provisions of the beverage law of the
+5336-State of Florida, the division of alcoholic bever-
+5337-ages and tobacco of the department of business
+5338-regulation is hereby authorized to issue a special
+5339-alcoholic beverage license or special alcoholic bev-
+5340-erage licenses to qualified applicants consisting of
+5341-P.A.C.T., Inc., (the Performing Arts Center and
+5342-Theater) located within the City of Clearwater;
+5343-provided, however, that any such license issued
+5344-pursuant to this act [article] shall not permit the
+5345-licensee to sell alcoholic beverages by the package
+5346-for off-premises consumption.
+5347-
+5348-Sec. 2. Issuance not subject to quota.
+5349-  The issuing of such license or licenses shall not
+5350-be subject to any quota or limitation, it being the
+5351-    *Editor’s note—This article consists of Laws of Fla., ch.
+5352-72-507.
+5353-    Code reference—Subdivisions and condominium plat-
+5354-ting, ch. 46.
+5355-    †Editor’s note—This article comprises Laws of Fla., ch.            ‡Editor’s note—This article comprises Laws of Fla., ch.
+5356-84-411.                                                            86-442.
+5357:    Code reference—Alcoholic beverages, ch. 6; zoning regu-            Code reference—Alcoholic beverages, ch. 6; zoning regu-
+5358-lations applicable to alcoholic beverage sales, § 41.071 et seq.   lations applicable to alcoholic beverage sales, § 41.071 et seq.
+5359-
+5360-
+5361-
+5362-Supp. No. 58                                                   RL:14
+5363-                  RELATED LAWS COMPARATIVE TABLE
+5364-
+5365-  This table shows the location of special acts, not amendatory of the Charter, included as
+5366-Subpart B of Part I.
+5367-
+5368-                                                               Section this
+5369-Chapter                        Section                        Related Laws
+5370-63-1226                        1                              1
+5371-                               2                              3
+5372-67-1213                        1                              1
+5373-                               2                              6
+5374-                               3                              10
+5375-72-506                         1                              1
+5376-                               2                              1A
+5377-                               3                              5
+--
+5650-           artic le," "thi s divis ion," etc., as the case
+5651-                                                                            paving, widening, repa iring or vaca ting any
+5652-           may be, or to "sec tion s               thro ugh
+5653-           __ __ " (inse rting section number& to in-                       stree t, alley or othe r public way in the city;
+5654-           dica te the secti ons of the Code which em-                (6) Any ordi nanc e esta blish ing and
+5655-                                                                                                               pres cribi ng
+5656-           body the subs tant ive sections of the ordi-                    the stree t grad es in the city;
+5657-           nanc e inco rpor ated into the Code); and                  (7) The annu al appr opri ation ordi
+5658-                                                                                                              nanc e or any
+5659-     (e) Mak e othe r nons ubst antiv e chan ges nece                      ordi nanc e levy ing or impo sing taxes;
+5660-                                                          s-
+5661-          sary to pres erve the orig inal mea ning of                (8) Any ordi nanc e prov iding for loca
+5662-          ordi nanc e secti ons inse rted into the Code;                                                        l improve-
+5663-                                                                           men ts and asse ssin g truces therefor;
+5664-          but, in no case, shal l the codifier mak e any
+5665-          chan ge in the mea ning or effect of ordi-                 (9) Any ordi nanc e dedi catin g or acce
+5666-                                                                                                                 pting any
+5667-          nanc e mate rial inclu ded in the supp leme nt                   plat or subdivision in the city;
+5668-          or alre ady emb odie d in the Code.                      (10) Any ordi nanc e esta blish ing the offic
+5669-                                                                                                                    ial plat
+5670:                                                                          of the bulk head line, the zoning map or any
+5671-                                                                          ame ndm ents ther eof inco rpor ated by refer-
+5672- Sec. 1.09. Effe ct of repe al of ordi nan                                ence by any section of this Code and not
+5673-                                                 ces.
+5674-                                                                          included here in;
+5675-   (1) The repe al of an ordi nanc e shal
+5676-                                          l not reviv e           (11) Any ordi nanc e pres cribi ng temp
+5677- any ordi nanc es in force before or at the time                                                              orar y traffic
+5678-                                                   the                    regu latio ns for specific locations;
+5679- ordi nanc e repe aled took effect.
+5680-                                                                  (12) Any temp orar y or special ordin
+5681-   (2) The repe al of an ordi nanc e shal
+5682-                                                                                                              ance;
+5683-                                           l not affect           (13) Any provisions of Cha pter 9710, Spec
+5684-any puni shm ent or pena lty incu rred befo                                                                              ial
+5685-                                                 re the                  Acts of 1923 , Flor ida Leg islat ure, as
+5686-repe al took effect, nor any suit, pros ecut ion
+5687-                                                 or pro-                 ame nded by special law or otherwise, which
+5688-ceed ing pend ing at the time of the repe al,
+5689-                                                 for an                  have been conv erte d to ordi nanc es by
+5690-offense com mitt ed unde r the ordi nanc e repe
+--
+6944-
+6945-Supp. No. 90                                          CD2:17
+6946-§ 2.144                                      CLEARWATER CODE
+6947-
+6948-
+6949-
+6950-east on Grove Street to Martin Luther King Jr.                   place of the hearing, and describe the
+6951-Avenue; then south on Martin Luther King Jr.                     boundaries of the existing District and
+6952-Avenue to Laura Street; then east to include                     shall describe the changes to be made
+6953-those properties fronting on Cleveland Street to                 thereto. Additionally, the Board shall
+6954-Fredrica Avenue; then south on Fredrica Avenue                   cause to be mailed to each Freeholder,
+6955-to the southerly boundaries of the properties                    according to the tax collector's records
+6956-fronting on Cleveland Street; then west on those                 existing in the county, a copy of the
+6957-southerly boundary lines to Madison Avenue;                      notice as published in the paper.
+6958-then south on Madison Avenue to vacated Park               (b)   After the public hearing, the Board shall
+6959-Street; then west to Washington Avenue; then                     adopt a resolution defining the changes
+6960-south on Washington Avenue to Gould Street;                      in the District. The Board shall not
+6961-then west on Gould Street to Martin Luther                       incorporate land into the District not
+6962-King Jr. Avenue; then north on Martin Luther                     included in the description contained in
+6963-King Jr. Avenue to the southerly boundary of                     the notice of public hearing, but it may
+6964:Lots 24 and 9 of Block B of Coachman Heights                     eliminate any lands from the proposed
+6965-Subdivision; then west on the south lot lines of                 area.
+6966-Lots 24 and 9 to Ewing Avenue; then south on
+6967-Ewing Avenue to Court Street; then east on                 (c)A Freeholders' referendum shall then be
+6968-Court Street to Martin Luther King Jr. Avenue;                held. If additions to the District are
+6969-then south on Martin Luther King Jr. Avenue to                proposed, only those Freeholders located
+6970-the southerly boundaries of those properties                  in the new area shall be eligible to vote.
+6971-fronting on Chestnut Street; then west on those               If any deletion is proposed, all Freehold-
+6972-southerly boundaries to Myrtle Avenue; then                   ers within the District shall be eligible to
+6973-south on Myrtle Avenue to Turner Street; then                 vote.
+6974-west on Turner Street to East Avenue; then             (Code 1980, § 22.42; Ord. No. 9414-20, § 3,
+6975-north on East Avenue to the southerly boundar-         11-19-20)
+6976-ies of those properties fronting on Chestnut
+6977-Street; then west on those southerly property          Sec. 2.145. Reserved.
+6978-lines to the old ACL Railroad right-of-way; then          Editor’s note—Ord. No. 9744-24, § 2, adopted February
+6979-north on that right-of-way to Chestnut Street;         15, 2024, repealed § 2.145, which pertained to freeholders'
+6980-then west on Chestnut Street to an alley; then         referenda and elections and derived from the 1980 Code,
+6981-                                                       § 22.51; Ord. No. 5493-93, adopted Nov. 18, 1993; Ord. No.
+6982-south on the alley to Rogers Street; then west on      5751-95, adopted March 2, 1995; Ord. No. 6394-99, adopted
+6983-Rogers Street to South Fort Harrison Avenue;           March 18, 1999; Ord. No. 9414-20, adopted Nov. 19, 2020.
+6984-then north on South Fort Harrison Avenue to
+--
+7367-          members from the following categories:                      development orders or permits and
+7368-          (1)   One citizen who is a representative                   expedited permitting for affordable
+7369-                of those areas of labor engaged in                    housing projects.
+7370-                home building in connection with
+7371-                                                                (b)   All allowable fee waivers provided
+7372-                affordable housing.
+7373-                                                                      for the development or construction
+7374-          (2)   One citizen who is actively engaged                   of affordable housing.
+7375-                as a for-profit provider of affordable
+7376-                housing.                                        (c)   The allowance of flexibility in densi-
+7377-                                                                      ties for affordable housing.
+7378-          (3)   One citizen who serves on the local
+7379-                planning agency pursuant to F.S.                (d)   The reservation of infrastructure
+7380-                § 163.3174.                                           capacity for housing for very-low
+7381-          (4)   One citizen who represents essential                  income persons, low-income persons,
+7382-                services personnel, as defined in the                 and moderate-income persons.
+7383-                local housing assistance plan.
+7384-                                                                (e)   Affordable accessory residential
+7385-          The locally elected official serving on an                  units.
+7386-          advisory committee, or a locally elected
+7387:          designee, must attend biannual regional               (f)   The reduction of parking and setback
+7388-          workshops convened and administered                         requirements for affordable hous-
+7389-          under the Affordable Housing Catalyst                       ing.
+7390-
+7391-
+7392-Supp. No. 90                                        CD2:24
+7393-                                               ADMINISTRATION                                               § 2.241
+7394-
+7395-
+7396-
+7397-        (g)    The allowance of flexible lot                       tion at the end of each annual review by
+7398-               configurations, including zero-lot line             the city council of the amendments to the
+7399-               configurations for affordable hous-                 Local Housing Assistance Plan.
+7400-               ing.                                          (5) Those other powers and duties of the
+7401-        (h)    The modification of street require-               affordable housing advisory committee
+7402-               ments for affordable housing.                     as are provided by law.
+7403-                                                         (Ord. No. 5770-95, § 1, 4-20-95; Ord. No. 7017-
+7404-        (i)    The establishment of a process by         02, § 1, 8-22-02; Ord. No. 7981-08, § 1, 8-7-08;
+7405-               which the city considers, before adop-    Ord. No. 8068-09, § 1, 5-7-09; Ord. No. 9438-21,
+7406-               tion, policies, procedures, ordinances,   § 1, 9-2-21)
+7407-               regulations, or plan provisions that
+--
+16570-                                                      Article I. In Genera l
+16571-                                                           (Reserv ed)
+16572-
+16573-                                                       Article II. Airport s
+16574-
+16575-                       Sec. 4.21.       Supervi sion; promulg ation of rules and regulati ons.
+16576-                       Sec. 4.22.       Airport manage r.
+16577-                       Sec. 4.23.       Restrict ions on takeoffs and landings .
+16578-
+16579-
+16580-
+16581-
+16582-                                                                           public lands, § 21.02; aircraft in parks, on beaches and in
+16583-   *Cross referen ces-Air port authorit y, § 2.081 et seq.; littering on
+16584-                                                          public places generall  y, ch. 28; moving airplane s upon or across streets, §
+16585-recreati on areas,§ 22.47; streets, sidewal ks and other
+16586-                                                                        aircraft, § 33.071; grossly negligen t operatio n of surfboar ds,
+16587-30.016; negligen t operatio n of surfboar ds, vessels, and waterbo rne
+16588-                                                   within  acciden t potentia l hazard area of airport, § 42.31; uses interfer ing with
+16589-vessels and waterbo rne aircraft, § 33.072; uses
+16590:aircraft, § 42.32; height varianc es in airport height zone, § 45.41.
+16591-   State law referen ce-Avia tion, F.S. ch. 329 et seq.
+16592-
+16593-
+16594-                                                                CD4:1
+16595-                                          AIRPORTS AND AIRCRAFT                                       § 4.23
+16596-
+16597-
+16598-
+16599-          ARTICLE I. IN GENERAL                        a.m. the following day. Traffic reporting aircraft
+16600-               (RESERVED)                              only may take off at 6:00 a.m. with the permis-
+16601-                                                       sion of the airport manager.
+16602-
+16603-           ARTICLE II. AIRPORTS                            (3) Emergency landings and takeoffs.
+16604-                                                           (a)   The pilot in command of any aircraft
+16605-Sec. 4.21. Supervision; promulgation of                          landing or taking off from Clearwater
+16606-           rules and regulations.                                Executive Airport shall be directly
+16607-                                                                 responsible for and is to be the final
+16608-   The city manager is appointed ex officio                      authority as to the operation of such
+16609-manager of all airports and landing fields, includ-              aircraft while landing or taking off from
+16610-ing seaplane bases, located in the city on property              Clearwater Executive Airport.
+--
+17125-                        Sec. 6.27.       Special conditions, suspension or revocation of conditional use
+17126-                                         approvals.
+17127-                        Sec. 6.28.       Certificate of occupancy/use required; applicability of occupa-
+17128-                                         tional licensing requirements.
+17129-                        Sec. 6.29.       Closing hours.
+17130-                        Sec. 6.30.       Reserved.
+17131-                        Sec. 6.31.       Prohibited acts.
+17132-
+17133-
+17134-                                       Division 2.   Exposure of Private Parts; Lap Dancing
+17135-                        Sec. 6.41.       Definitions.
+17136-                        Sec. 6.42.       Authorization.
+17137-                        Sec. 6.43.       Prohibited acts.
+17138-                        Sec. 6.44.       Revocation of occupational license.
+17139-
+17140-
+17141-
+17142-
+17143-   *Cross references—Proscription of sale of alcoholic beverages during state of emergency, § 15.12; alcoholic beverages
+17144-prohibited on public bathing beaches, § 22.33; intoxicating substances in parks and recreation areas, § 22.57; operating or docking
+17145:vessels while under the influence of alcoholic beverages or controlled substances, § 33.070; zoning restrictions applied to alcoholic
+17146-beverage sales, § 41.071 et seq.
+17147-   Related law reference—Alcoholic beverage license for P.A.C.T., Inc., art. VIII; vendors of certain malt beverages subject to
+17148:zoning, art. IX.
+17149-   State law reference—Liquors and beverages, F.S. tit. XXXIV.
+17150-
+17151-
+17152-
+17153-Supp. No. 48                                                    CD6:1
+17154-                                          ALCOHOLIC BEVERAGES                                            § 6.24
+17155-
+17156-
+17157-
+17158-           ARTICLE I. IN GENERAL                          Opened or unsealed container containing an
+17159-                (RESERVED)                             alcoholic beverage means any vessel or container
+17160-                                                       containing an alcoholic beverage, as defined herein,
+17161-                                                       which is immediately capable of consumption or
+17162-        ARTICLE II. OPERATION OF                       the seal of which has been broken, notwithstand-
+17163-            ESTABLISHMENTS                             ing the fact that the vessel or container has been
+17164-                                                       recapped or covered, excluding a bottle of wine
+17165-               DIVISION 1. GENERALLY                   that has been resealed pursuant to F.S. § 564.09,
+17166-                                                       (Supp. 2005).
+17167-Sec. 6.21. Definitions.                                   Premises means that portion of a parcel of
+17168-  The following words, terms and phrases, when         property occupied by an alcoholic beverage estab-
+--
+17223-of food and nonalcoholic beverages, shall keep and                  where an existing alcoholic beverage sales use at
+17224-maintain all records required by state law and                      a different location is discontinued, for a new
+17225-shall permit the inspection of such records by                      alcoholic beverage sales use.
+17226-designated employees or agents of the city on the
+17227-premises or at a designated place which has been                        (2) For the purposes of this section:
+17228-approved by the state division of alcoholic bever-                      (a)   Approval means a conditional use ap-
+17229-ages and tobacco for such purpose, during reason-                             proval for the sale of alcoholic beverages
+17230-able hours.                                                                   within the city. Every alcoholic beverage
+17231-(Code 1980, § 72.20)                                                          establishment lawfully in existence within
+17232-                                                                              the city as of January 21, 1988, the date of
+17233-Sec. 6.25. Business tax receipt required.                                     adoption of Ordinance No. 4420, shall be
+17234-                                                                              deemed to have such approval, including
+17235-   All alcoholic beverage establishments in the
+17236-                                                                              but not limited to establishments which
+17237-city shall obtain a business tax receipt in accor-
+17238-                                                                              predate the adoption of the land develop-
+17239-dance with the applicable requirements of state
+17240-                                                                              ment code.
+17241-law and of the county. For the purpose of obtain-
+17242-ing a state license, the owner of the establishment                     (b)   Conviction means a verdict of guilty or
+17243:shall obtain a statement of zoning compliance                                 any plea of guilty or nolo contendre, re-
+17244-from the development code administrator follow-                               gardless of whether the court sentences
+17245-ing conditional use approval.                                                 the defendant to jail, probation or other
+17246-(Code 1980, § 72.13; Ord. No. 7724-07, § 1, 1-31-                             sentence, and regardless of whether or
+17247-07)                                                                           not the court withholds its formal adjudi-
+17248-    Cross references—Business tax receipts, § 29.21 et seq.;                  cation of guilt.
+17249:zoning restrictions applied to alcoholic beverage sales, § 41.071
+17250-et seq.                                                                 (c)   Holder of the approval and holder mean
+17251-    State law reference—Vendors of malt beverages contain-                    the person having the right to operate an
+17252-ing alcohol of more than one percent by weight subject to
+17253:zoning, Laws of Fla., ch. 86-442, § 1.
+17254-                                                                              alcoholic beverage establishment within
+17255-                                                                              the city. The terms shall also include any
+17256-                                                                              officer, director or partner, if the holder is
+17257-Sec. 6.26. Applicability of conditional use
+17258-                                                                              a corporation or partnership, and any
+17259-           approval and separation require-
+17260-                                                                              employee or agent of the holder if the
+17261-           ments.
+17262-                                                                              employee or agent is convicted of a crime
+17263-   In addition to the regulations contained in this                           or found to have violated an ordinance or
+17264-article, the conditional use approval require-                                condition described in subsection (3) of
+17265-ments and the separation requirements set forth                               this section.
+17266-in article III of chapter 41 shall apply to alcoholic
+17267-beverage establishments.                                               (3) An approval shall be subject to special
+17268-(Code 1980, § 72.14(a))                                             conditions, suspension or revocation as described
+17269-                                                                    in this section if the holder of the approval is:
+17270-Sec. 6.27. Special conditions, suspension or                            (a)   Convicted of any felony as the result of
+17271-           revocation of conditional use ap-                                  conduct on or off the premises;
+17272-           provals.
+17273-                                                                        (b)   Convicted of any misdemeanor violation
+--
+17300-         the subjects of disorderly conduct or noise   represented by counsel, and to show cause why
+17301-         pursuant to sections 20.61, 20.62 or 20.11;   the approval should not be continued subject to
+17302-   (d) Found by the code enforcement board of          conditions, suspended, or revoked.
+17303-         the city to have violated any ordinance of
+17304-         the city applicable to the alcoholic bever-      (6) The decision of the city commission shall
+17305-         age establishment or the operation thereof;   be deemed a final administrative agency deci-
+17306-         or                                            sion, subject to judicial review by common law
+17307-                                                       certiorari in the circuit court for the county.
+17308-   (e) Found by the city commission, after a
+17309-                                                       (Code 1980, § 72.19)
+17310-         hearing for which the holder has been
+17311-         given notice and an opportunity to appear
+17312-         and participate, to have violated any         Sec. 6.28. Certificate of occupancy/use
+17313-         ordinance of the city relating to the                    required; applicability of
+17314-         standards or criteria for conditional use                occupational licensing require-
+17315-         approvals, including but not necessarily                 ments.
+17316-         limited to false or incomplete informa-          Any person engaging in any business selling
+17317-         tion provided by the applicant of a mate-     alcoholic beverages shall obtain a certificate of
+17318-         rial nature, or to have violated any          occupancy/use for the premises, and shall be
+17319-         condition imposed by ordinance or by the      subject to the occupational licensing require-
+17320:         planning and zoning board at the time of      ments of the city as set forth in chapter 29,
+17321-         conditional use approval, or to have          article II, to the extent that such person is
+17322-         violated any condition previously imposed     engaged in the business of selling nonalcoholic
+17323-         by the city commission pursuant to this       merchandise, food and services.
+17324-         section. The hearing described in this        (Code 1980, § 72.14(b))
+17325-         subsection shall be combined with the
+17326-         hearing required by subsection (4) of this
+17327-         section.                                      Sec. 6.29. Closing hours.
+17328-   (4) In any case in which a conviction or               The opening and closing hours for all alcoholic
+17329-violation described in subsection (3) of this sec-     beverage establishments and the hours for sale
+17330-tion is alleged to have occurred, the city commis-     of alcoholic beverages shall be those established
+17331-sion may take one of the following actions upon        by chapter 6, article II, sections 6-29 and 6-30 of
+17332-the conclusion of a hearing for which the holder       the Pinellas County Code of Ordinances, or
+17333-has been given notice and an opportunity to            amendments thereto.
+17334-appear and participate:                                (Code 1980, § 72.15; Ord. No. 5129, § 1, 10-3-91;
+17335-   (a) Continue the approval subject to such           Ord. No. 7216-03, § 1, 10-16-03; Ord. No. 7217-
+17336-         conditions as shall be deemed reasonably      03, § 1, 11-6-03)
+17337-
+17338-
+17339-Supp. No. 78                                       CD6:5
+17340-§ 6.31                                              CLEARWATER CODE
+--
+17779-ant to the use of the services of any individuals                     specified in the permit;
+17780-or organizations authorized by this section, the
+17781-chief of police shall vest the poundmaster, the                 (2)   Owners who use animals for teaching
+17782-dogcatcher and other persons designated by the                        purposes in recognized educational
+17783-city commission with all powers of special police                     institutes and whose animals are kept on
+17784-officers that are necessary to effectively administer                 the premises of the institution or other
+17785-and enforce this chapter. The city commission is                      authorized place;
+17786-
+17787-
+17788-Supp. No. 82                                           CD8:3
+17789-§ 8.04                                       CLEARWATER CODE
+17790-
+17791-
+17792-
+17793-   (3)   Owners of establishments which treat or        Sec. 8.05. Cruelty.
+17794-         board animals on the premises and which
+17795-         are owned or operated by veterinarians            It shall be unlawful for any person to overdrive,
+17796-         licensed by the state;                         overload or drive when overloaded; overwork or
+17797-                                                        deprive of necessary sustenance; torture, tor-
+17798-   (4)   Owners who are engaged in agriculture          ment or cruelly beat, mutilate; cause or procure
+17799:         as a permitted use pursuant to the zoning      to be so overdriven, overloaded, overworked,
+17800-         ordinance of the city and in connection        deprived of necessary sustenance, tortured,
+17801-         therewith on the premises affected keep        tormented or cruelly beaten or mutilated any
+17802-         horses, cows, hogs, sheep, calves, mules,      animal either as owner or otherwise; permit any
+17803-         or raise animals as farm animals in            such animal to be without proper protection from
+17804-         dairying and animal and poultry                the weather and from flies or other insects; or to
+17805-         husbandry;                                     knowingly or wilfully permit or authorize the
+17806-   (5)   Owners of horse riding academies and           same to be done. Confinement of any dog or cat
+17807-         public horse stables and premises on           in an automobile, truck, pen or other enclosure
+17808-         which they are operated as a permitted         without adequate ventilation shall be construed
+17809:         use pursuant to the zoning ordinance;          as cruel and inhuman treatment and a violation
+17810-                                                        of this section. The words "torture," "torment"
+17811-   (6)   Owners of horses and other animals and         and "cruelty" shall include every act, omission or
+17812-         the premises on which they are permit-         neglect whereby unnecessary or unjustifiable
+17813-         ted to be kept for recreational purposes       physical pain or suffering is caused or permitted.
+17814-         accessory to the residential use of property   (Code 1980, § 91.05)
+17815:         as permitted by the zoning ordinance;              State law reference—Cruelty to animals, F.S. ch. 828.
+17816-   (7)   Owners of establishments licensed to
+17817-         keep animals for the purpose of resale         Sec. 8.06. Disposal of dead animals.
+17818-         whose animals are kept on the premises            It shall be unlawful for the owner or agent of
+17819-         of such establishment or other authorized      such owner of any dead animal to omit to cause
+17820-         place;                                         the dead animal to be removed to such place as
+17821-   (8)   Owners of dogs, birds, domestic cats and       shall be designated by any police officer of the
+17822-         other family pets such as white mice,          city within 12 hours after the death of such
+17823-         hamsters and rabbits. The owners of            animal.
+17824-         such animals must keep the animals on          (Code 1980, § 91.06)
+17825-         the premises of the owner, and such
+17826-         animals shall not be allowed to run at         Sec. 8.07. Capturing, killing birds, squir-
+17827-         large by the owner. The owners of such                    rels declared unlawful.
+17828-         animals are required to remove all excre-
+17829-         ment deposited by their animals on city           It shall be unlawful for any person to capture,
+17830-         property or on the private property of         trap, injure or kill any squirrel or wild bird
+17831-         other persons;                                 within the city.
+17832-                                                        (Code 1980, § 91.07)
+17833-   (9)   Animals kept by the public in public               Cross reference—Hunting and firearms in parks, § 22.39.
+17834-         areas such as public parks or a zoo or in
+17835-         their natural habitat;                         Sec. 8.08. Shooting at prohibited.
+17836-   (10) Bird feeders.                                     (1) No person shall shoot or shoot at any
+17837-  (11) The keeping of chickens pursuant to              animal or fowl in the city, with a weapon from
+17838-       section 3-204.1 of the City of Clearwater        which a projectile is propelled by the action of
+17839-       Community Development Code.                      compressed air, the expansion of gass or a spring,
+17840-(Code 1980, § 91.04; Ord. No. 9489-21, § 1,             or other mechanical means, or with bows and
+17841-10-7-21)                                                arrows, slinghots, or other weapons potentially
+17842:   Cross reference—Zoning, ch. 40.                      dangerous to animals or wildlife.
+17843-
+17844-
+17845-Supp. No. 82                                        CD8:4
+17846-                                                      ANIMALS                                                 § 8.36
+17847-
+17848-
+17849-
+17850-   (2) This section does not apply to a person              owner, or tied or secured on the public streets or
+17851-lawfully defending life or property, to a person            parkways of the city except temporarily shall be
+17852-discharging the weapon on properties expressly              impounded.
+17853-approved for hunting by the Fish and Wildlife               (Code 1980, § 91.22; Ord. No. 9489-21, § 2,
+17854-Conservation Commission or Division of Forestry,            10-7-21)
+17855-or to a person spear fishing in any area where
+17856-such activity has been designated as being permis-          Sec. 8.34. Allowing trespass by animals.
+17857-sible either by the city, the state or the United             No person while in control of any animal
+17858-States.                                                     whether by leash or other manner shall allow
+17859-                                                            such animal to trespass upon the property of
+17860-   (3) This section is not intended to regulate             another.
+17861-the discharge of firearms, which is regulated by            (Code 1980, § 91.23)
+17862-F.S. § 790.15.
+--
+17902-on the public streets, parks, property of another           offensive to a person of reasonable sensibilities
+17903-or parkways of the city, and any such horse, cow            or attracts a large number of flies or other
+17904-and other animal or pet including dogs found to             insects or pests).
+17905-be wandering at large out of presence of the                (Ord. No. 8619-15, § 1, 2-5-15)
+17906-
+17907-
+17908-Supp. No. 82                                            CD8:5
+17909-§ 8.61                                        CLEARWATER CODE
+17910-
+17911-
+17912-
+17913-         ARTICLE III. BEEKEEPING                             (3)Where the city forester, upon receiving
+17914-                                                                an application to engage in beekeeping,
+17915-                                                                first determines that the above condi-
+17916-               DIVISION 1. GENERALLY
+17917-                                                                tions will be complied with and following
+17918-                     (RESERVED)
+17919-                                                                payment of the required fee, he shall
+17920-                                                                issue the requested beekeeping permit.
+17921-                DIVISION 2. PERMIT                       (Code 1980, § 91.30)
+17922:                                                            Cross reference—Zoning districts generally, § 40.031 et
+17923-                                                         seq.
+17924-Sec. 8.61. Required; conditions.
+17925-   The keeping of bees shall be allowed in all           Sec. 8.62. Renewal—Date, fee.
+17926:nonresidential zoning districts and RS-2 zoning
+17927-                                                           (1) The permit required by this division shall
+17928-districts within the city; provided, however, that
+17929-                                                         expire on September 30 following its issuance
+17930:when bees are to be kept in urban zoning
+17931-                                                         regardless of the date of issuance of the permit.
+17932-districts, the following provisions shall apply:
+17933-                                                            (2) Permits required by this division may be
+17934-   (1)   No such beekeeping shall be allowed
+17935-                                                         renewed where an application for renewal is
+17936-         until the person proposing to function as
+17937-                                                         filed with the city forester on or before August 1,
+17938-         a beekeeper first secures a permit from
+17939-                                                         prior to the expiration date of such permit.
+17940-         the city forester and pays a fee as
+17941-         prescribed in appendix A to this Code.             (3) Each applicant for renewal shall pay a fee
+17942-   (2)   No permit to conduct a beekeeping opera-        as prescribed in appendix A to this Code for each
+17943-         tion may be granted until the city forester     such renewal.
+17944-         determines that the following conditions        (Code 1980, § 91.31)
+17945-         have been met:
+17946-                                                         Sec. 8.63. Same—Approval of application.
+17947-         (a)    The density of bee colonies on any
+17948-                proposed lot may not exceed one             Upon receipt of an application for renewal
+17949-                colony of bees for each 2,500 square     under this division the city forester shall make
+17950-                feet of lot area;                        an investigation and shall approve the applica-
+--
+17968-                                                         (Code 1980, § 91.32)
+17969-         (e)    The proposed location of the beehive
+17970-                will not result in the creation of a
+17971-                                                         Sec. 8.64. Revocation or suspension.
+17972-                danger to the health or safety of
+17973-                persons in the immediate vicinity of        (1) The city manager shall have the power to
+17974-                the site where it is proposed to         revoke or suspend the permit required by section
+17975-                locate the beehive.                      8.62 or any renewal permit issued pursuant to
+17976-
+17977-
+17978-Supp. No. 82                                         CD8:6
+17979-                                                  ANIMALS   § 8.64
+17980-
+17981-
+17982-
+17983-section 8.63 if, after investigation and a duly
+17984-noticed hearing, the city manager finds any of
+17985-the following to be true:
+17986-  (a)   The permit holder is in violation of this
+17987-        chapter as it relates to keeping bees or
+17988:        has violated any zoning, health or build-
+17989-        ing code relating to the keeping of animals;
+17990-  (b)   The permit holder has failed to maintain
+17991-        a fresh water source for the bees located
+17992-        in his hive; or
+17993-  (c)   The     permit    holder's     continued
+17994-        maintenance of the beehive on his property
+17995-        will endanger any person or property.
+17996-   (2) If, after investigation, the city manager
+17997-concludes that it is probable that one or more of
+17998-the above grounds for revocation has occurred,
+17999-he shall cause written notice thereof to be
+18000-transmitted by registered mail to the address of
+18001-the permit holder. The notice shall specify the
+18002-grounds of possible revocation of the permit and
+18003-shall provide a date and time for an informal
+18004-hearing to be held before the city manager
+18005-thereon. The date shall be not less than ten days
+18006-subsequent to the date of deposit of the notice in
+18007-the mail.
+18008-  (3) If it is reasonably necessary to protect
+--
+19749-        including but not limited to evidence of                  property to be an unlawful public nui-
+19750-        the general reputation of the place or                    sance.
+19751-        premises. All testimony shall be given
+19752-                                                            (c)   If the board declares that the property is
+19753-        under oath. All testimony shall be re-
+19754-                                                                  an unlawful public nuisance, the board
+19755-        corded. Formal rules of evidence shall not
+19756-                                                                  may then consider the appropriate rem-
+19757-        apply, but fundamental due process shall
+19758-                                                                  edy, at the same meeting or at a later
+19759-        govern the proceedings. Orders of the
+19760-                                                                  regular meeting or special meeting called
+19761-        board shall be based upon clear and con-
+19762-                                                                  for such purpose. The board may, follow-
+19763-        vincing evidence supported by competent
+19764-                                                                  ing its consideration of the appropriate
+19765-        and substantial evidence.
+19766-                                                                  remedy, order any one of the following:
+19767-  (b)   The board shall consider evidence relat-
+19768-                                                                  1.   The discontinuance of the nuisance;
+19769:        ing to the comprehensive plan, zoning
+19770-        regulations, and the uses, interim and                    2.   The closing of the place or premises
+19771-        permanent, that could be made of the                           or a portion thereof for any period up
+19772-        property should it become necessary to                         to one year in order to rid the place
+19773-        close the property in order to rid the                         of the public nuisance. Such order
+19774-        property of the existing public nuisance                       shall contain findings as to the type
+19775-        conduct.                                                       of interim use that could be engaged
+19776-                                                                       in on the property and still termi-
+19777-  (c)   The prosecuting attorney shall have the
+19778-                                                                       nate the public nuisance. A respon-
+19779-        burden of proving the existence of any
+19780-                                                                       dent may seek a stay or modification
+19781-        unlawful public nuisance conduct by com-
+19782-                                                                       of the order of closure where:
+19783-        petent and substantial evidence sufficient
+19784-        to meet the clear and convincing standard                      a.   The respondent can demon-
+19785-        of proof in any case brought by the pros-                           strate that such respondent in-
+19786-        ecuting attorney.                                                   tends to implement a use other
+19787-
+19788-
+19789-Supp. No. 70                                       CD20:5
+--
+21404-               Sec. 22.90.   Conditions; alcoholic beverage special event permit.
+21405-               Sec. 22.91.   Procedural requirements; certain use provisions not applicable.
+21406-
+21407-
+21408-
+21409-
+21410-Supp. No. 89                                     CD22:2
+21411-                                        PARKS, BEACHES, RECREATION                                  § 22.21
+21412-
+21413-
+21414-
+21415-          ARTICLE I. IN GENERAL                         the user that he or she can inhale in simulation
+21416-                                                        of smoking, vaping, or other inhalation
+21417-Sec. 22.01. Surveys of facilities.                      mechanism. This term shall include every ver-
+21418-                                                        sion and type of such devices whether they are
+21419-   The city manager is hereby authorized and            manufactured or marketed as e-cigarettes,
+21420-directed to conduct and maintain current surveys        e-cigars, e-pipes, or under any other product
+21421-of all parks and recreational facilities of the city.   name or description.
+21422-At each location, he shall locate and designate
+21423-all areas which have a specialized function, such         Harbormaster means the director of the city
+21424:as picnic areas, swimming pools, beaches, tennis        marine department.
+21425-courts, or baseball diamonds.
+21426-(Code 1980, § 116.32)                                     Marine department means the city marine
+21427-                                                        department.
+21428-
+21429-     ARTICLE II. USE REGULATIONS*                          Organized activity means any planned
+21430-                                                        recreational activity or game having formal
+21431-Sec. 22.21. Definitions.                                organization or structure, or any activity or
+21432-                                                        game affiliated with membership in an organiza-
+21433-  The following words, terms and phrases, when          tion such as a school or social organization.
+21434-used in this article, shall have the meanings           Organized activity shall not mean informal or
+21435-ascribed to them in this section, except where          casual "pick-up" recreational activity or games,
+21436-the context clearly indicates a different meaning:      occurring without regularity or occurring
+21437-                                                        spontaneously or by chance.
+21438-   Authorized or authorization means that the
+21439-city manager, director, or harbormaster must               Park property means all areas, buildings, loca-
+21440-officially approve and authorize requests.              tions and facilities described in the definition of
+21441-Authorization entails a written letter or               parks.
+21442-memorandum granting the request.
+21443-                                                           Park roads means all surfaced areas designated
+21444-   Courtney Campbell Recreation Area means              for vehicular traffic, and passing through any
+--
+21784-result in the pollution of such waters is hereby         tion shall be guilty of a class IV civil infraction
+21785-prohibited.                                              pursuant to section 1.12 of this Code of
+21786-(Code 1980, § 116.79)                                    Ordinances.
+21787-                                                         (Ord. No. 9680-23, § 2, 6-15-23)
+21788-Sec. 22.31. Protection and preservation of
+21789-            wildlife.
+21790-                                                         Sec. 22.33. Bathing and swimming areas
+21791-   (1) No unauthorized person shall molest, harm,                    and the Courtney Campbell
+21792-frighten, kill, net, trap, snare, hunt, chase, shoot                 Recreation Area.
+21793-or throw or propel by any means missiles at any
+21794-wildlife creature whether it is mammal, aquatic             (1) No person, regardless of age, sex or manner
+21795-or marine life or a bird or a reptile roaming free       of dress shall swim, wade or bathe in waters or
+21796-about the public beach or park. No unauthorized          waterways in any park other than at such places
+21797-person shall remove or possess in any public             set aside for such activities.
+21798-beach or park the young of any wild animal or
+21799-the nest or eggs of any reptile or bird or collect,         (2) No person shall carry, transport, or cause
+21800-remove, or possess, give away, sell or offer to sell,    to be transported any glassware, bottles or any
+21801-buy or offer to buy or accept as a gift any such         other potentially dangerous or sharp objects onto
+21802-specimen, dead or alive.                                 any portion of the Courtney Campbell Recreation
+21803-                                                         Area or onto any public beach, or into any
+21804:   (2) No unauthorized person shall place, dump,         bathing, wading, or swimming pool areas of a
+21805-abandon or leave any fish, mammal, reptile, or           public beach, a park, or the Courtney Campbell
+21806-bird, either wild or domestic, on a public beach or      Recreation Area.
+21807-park property.
+21808-                                                            (3) No person shall frequent any park waters
+21809-   (3) No person shall feed any feral or wild
+21810-                                                         or public bathing beach for the purpose of swim-
+21811-animal or attempt to pet any wildlife on park
+21812-                                                         ming or bathing except between such hours of
+21813-property.
+21814-                                                         the day as shall be designated or posted by the
+21815-(Code 1980, § 116.68; Ord. No. 6437-99, § 4,
+21816-                                                         department for such purposes for each individual
+21817-8-19-99; Ord. No. 8007-08, § 1, 11-18-08)
+21818-   Cross references—Animals generally, ch. 8; hunting
+21819-                                                         area.
+21820-and firearms in parks, § 22-39.
+21821-                                                            (4) Persons using public beaches or the
+21822-                                                         Courtney Campbell Recreation Area shall obey
+21823-Sec. 22.32 Smoking and vaping.
+21824-                                                         all rules posted by the city manager or his
+--
+22893-(Code 1980, § 76.01)                                                (c) The length of service of such applicant with
+22894-  Cross references-Soliciting and collecting upon streets, §            such employer;
+22895-28.041; traffic and motor vehicles generally, ch. 30; vessels
+22896-generally, § 33.051 et seq.                                         (d) The place of residence and nature of em-
+22897-                                                                        ployment of the applicant during the last
+22898-                                                                        preceding year;
+22899-
+22900-
+22901-                                                           CD23:4
+22902-                                  PEDDLERS, SOLICITORS AND CANVASSERS                                   § 23.35
+22903-
+22904-
+22905-
+22906-
+22907-  (e) The nature or character of the goods, wares,                    ing or residing in a house of ill fame,
+22908-      merchandise or services to be offered by the                    solicitation of a lewd or unlawful act,
+22909-      applicant; and                                                  prostitution or pandering, unless such
+22910-                                                                      conviction occurred at least five years
+22911-  (D The physical description of the applicant,
+22912-                                                                      prior to the date of the application; or
+22913:      to include race, sex, height, weight, eye
+22914-      color, hair color, complexion and body build.              2.   An offense involving the use of or threat
+22915-                                                                      to use force or violence upon the person
+22916-  (2) The applicant shall display a driver's li-                      of another, unless such conviction oc-
+22917-cense or other sufficient evidence of the identity of                 curred at least five years prior to the
+22918-the applicant at the time the application is filed.                   date of the application.
+22919-  (3) An applicant for a permit to engage in
+22920-solicitations for home solicitation sales, as defined            For the purposes of this subsection, convic-
+22921-in F.S. § 501.021(2), shall present evidence that a              tion shall include any disposition of a crim-
+22922-current permit for home solicitation sales, as                   inal case resulting in the imposition against
+22923-required by F.S. § 501.022, has been issued by the               the applicant of a fine, probation, incarcer-
+22924-clerk of the circuit court for the county or the                 ation, or other adverse sentence of a puni-
+22925-division of consumer services of the state depart-               tive nature, whether or not the applicant
+22926-ment of agriculture and consumer services.                       has been formally adjudicated guilty;
+22927-
+22928-  (4) Any applicant who is exempt from the oc-
+22929-                                                             (b) The applicant has made any false, mislead-
+22930-cupational license requirements of the city pursu-               ing, or fraudulent statement of fact or a
+22931-ant to F.S. ch. 205, shall comply with the regis-                material omission of fact in the permit
+22932-tration requirements of section 29.43 as a                       application or in any document required by
+22933-prerequisite to the issuance of a permit.                        the city in conjunction herewith; or
+--
+24324-and replacemen t.                                       ments may be made or undertaken whenever the
+24325-  Special assessment improvement means a public         city commission determines that such project
+24326-works project which adds to or extends the capa·        should be undertaken and completed and the costs
+24327-bility of a municipal service and which specially       collected, in whole or in part, as a special assess-
+24328-benefits properties acljoining or adjacent to the       ment.
+24329-project, or located within an area in which the         (Code 1980, § 117.02; Ord. No. 5459-93, § 1, 10-
+24330-special benefits may be determined , by increasing      7-93)
+24331-
+24332-
+24333-Supp. No. 4                                         CD27:3
+24334-§ 27.03-                                      CLEARWATER CODE
+24335-
+24336-
+24337-
+24338-Sec. 27.03. Deelaration of intent; notieer              per assessable unit to arrive at the total assess-
+24339-                                                        ment for that lot or parcel, within the following
+24340-   (1l Whenever the city commission or city man-
+24341-                                                        limits when the basis for assessment is front
+24342-ager shall decide that a special. assessment im-
+24343-provement needs to be accomplished, the commis-         footage:
+24344:sion shall by-resolution declare the-city's intention       (a) For corner lots or parcels,. a 50-foot credit
+24345-to have such work performed, designating the na-                will be given for street paving, street resur-
+24346-ture of the work; the location of the work; the part            facing and sidewalk improvements where
+24347-or portion of the cost to oe paid by special assess·            the short side of the property is adjacent to
+24348-ment; the manner in which special assessments                   an existing improvement of the same type
+24349-shall be made;- when such assessments are to be                 for which the current preperty owner has
+24350-paid; and wliat part, if any, shall be apportioned              already been assessed and the assessment
+24351-te be paid from other funds of the city. Such res-              paid.
+24352-olution shall also describe the lands on which the
+24353:special assessment is to be levied and it shall be          (b) For corner lots or parcels benefitting. from
+24354-                                                                a sanitary sewer extension assessment-
+24355-sufficient to describe such lands as all lots and
+24356-                                                                project, the short property side shaffbe used
+24357-lands adjoining and contiguous or bounding and
+24358-                                                                for determining the front footage basis.
+24359-abutting upon such improvements or specially ben-
+24360-efitted thereby. Such resolution shall also state           (c) For irregular four-sided lots or parcels ben-
+24361-the estimated total amount of the project cost.                 efitting from a sanitary sewer extension as--
+24362-                                                                sessment project, the average of the two
+24363-  t2} Upon adoption of the resolution, the city en-
+24364-                                                                shortest sides will be used· as the basis for
+24365-gineer shall advertise for bids for construction of
+24366-                                                                determining assessable front footage.
+24367-the project in a· newspaper of general circulation
+24368-in the municipality and include in such advertise-          (d) Irregular lots or parcels having more or less
+24369-ment the resolution number and title, except in                 than four sides will be considered on a case-
+24370-cases where the work will be performed pursuant                 by-case basis for sanitary sewer extension
+24371-to an agreement with another public agency or a                 assessment projects. Assessable footage will
+24372-publicly regulated utility agency.                              be developed for these properties so that
+24373-(Code 1980, § 117.08; Ord. No. 5459-93, § 1, 10-                assessments on these properties will be pro-
+--
+25011-use of streets, § 25.233; train engines or cars switching over streets, § 25.234; interim proprietary and general services fee,
+25012-§ 29.91 et seq.; traffic and motor vehicles generally, ch. 30; moving airplanes upon or across streets, § 30.016; soliciting, collecting,
+25013-etc., upon streets, § 30.018; parking in streets and alleys, § 30.041; utilities generally, ch. 32; stormwater management, § 32.241
+25014-et seq.; unlawful to place or allow rubbish, sweepings, debris, trash, etc., on streets, alleys and sidewalks, § 32.276; trash
+25015-containers required or public parking lots, § 32.278; design standards for blocks, § 46.62; design standards for streetlights,
+25016-§ 46.69.
+25017-
+25018-
+25019-
+25020-Supp. No. 85                                                    CD28:1
+25021-                                             CLEARWATER CODE
+25022-
+25023-
+25024-
+25025-                                             Division 4.   Sidewalks
+25026-               Sec. 28.61.      Composition.
+25027-
+25028-
+25029-                                      Article III.   Property Addresses
+25030-               Sec. 28.81.   Official house number atlas.
+25031:               Sec. 28.82.   Numbers required, visibility, size.
+25032-               Sec. 28.83.   Numbers provided by city engineer.
+25033-               Sec. 28.84.   Odd and even numbers.
+25034-               Sec. 28.85.   Progression of numbers.
+25035-               Sec. 28.86.   Enforcement of article.
+25036-               Secs. 28.87—28.90. Reserved.
+25037-
+25038-
+25039-                             Article IV.   Utility Construction in Rights-of-Way
+25040-               Sec. 28.91.      Intent.
+25041-               Sec. 28.92.      Definitions.
+25042-               Sec. 28.93.      Permit required.
+25043-               Sec. 28.94.      Emergencies.
+25044-               Sec. 28.95.      Construction specifications.
+25045-               Sec. 28.96.      Collocation and cooperation.
+25046-               Sec. 28.97.      Damage or injury caused by utility.
+25047-               Sec. 28.98.      Relocation required if requested.
+25048-               Sec. 28.99.      Applicability to other Code sections.
+25049-
+25050-
+25051-
+--
+25149-   (1) No person shall paint, mark or write on, or       period why the item should not be removed.
+25150-post or otherwise affix, any handbill, billboard or      Where the owner cannot be found, the director
+25151-sign to or upon any sidewalk; crosswalk; curb;           shall post the notice described in this subsection
+25152-curbstone; street lamppost; hydrant; tree; shrub;        on the item scheduled to be removed at least 36
+25153-tree stake or guard; railroad trestle; electric light,   hours prior to its removal. The term "cause" shall
+25154-power, telephone or telegraph wire pole or wire          mean a permit or other written permission granted
+25155-appurtenance thereof; fixture of the fire alarm or       by the city. Where the director removes the item
+25156-police telegraph system; any lighting system; pub-       identified in subsection (2) of this section, the
+25157-lic bridge; drinking fountain; street sign or traffic    owner of such object may recover the object upon
+25158-sign; or erect any billboard or sign within the          paying a removal and storage charge to cover the
+25159-limits of the right-of-way of any road or street or      city's cost, but in any event not less than $25.00.
+25160-on any sidewalk. Any handbill, billboard or sign
+25161-found posted or otherwise affixed or erected on or          (5) The provisions of subsection (1) of this
+25162-to public property contrary to the provisions of         section shall not apply with respect to any bench
+25163-this section may be removed by any city employee         containing advertising matter where the city has
+25164-duly authorized to do so.                                previously granted written permission to place
+25165-                                                         the advertising matter on such bench.
+25166-  (2) No person shall erect, place, park or locate
+25167-any structure, game, vehicle, boat, trailer, display        (6) The provisions of subsection (2) of this
+25168-materials, merchandise or similar object within          section shall not apply to any vehicle parked on a
+25169:the limits of any public street, road, or highway        right-of-way by reason of the zoning attached to
+25170-where prohibited by official sign or traffic control     the adjoining property and permission previously
+25171-device or on any other public right-of-way adja-         granted to occupy such right-of-way.
+25172-
+25173-
+25174-Supp. No. 65                                        CD28:4
+25175-                                      STREETS, SIDWALKS, OTHER PUBLIC PLACES                                  § 28.11
+25176-
+25177-
+25178-
+25179-   (7) Property which has been removed from                      This section shall not apply to police and public
+25180-the right-of-way in accordance with the provi-                   safety officers, fire and rescue personnel, or
+25181-sions of this section, including the notice provi-               other emergency workers in the course of their
+25182-sions, and which has not been reclaimed by the                   official business, or to authorized security person-
+25183-owner as set forth on the notice within 30 days of               nel employees or agents of the hospital, medical
+25184-the date of the notice shall be considered                       office or clinic engaged in assisting patients and
+25185-abandoned property. The municipality shall have                  other persons to enter or exit the clinic.
+25186-the right to use or dispose of such property.
+25187-Funds collected from disposal shall be applied                     (2) Penalty. Any person, firm, or corporation
+25188-against all costs incurred by the city in removing               who pleads guilty or nolo contendere, or is
+25189-such property from the right-of-way. The notice                  convicted of violating of this section shall be
+--
+25364-   (2) The following regulations for curb cuts and        fied brick, marble, asphalt or other hard and
+25365-installation of driveways in business zones of the        durable material that may be approved by the city
+25366-city shall apply:                                         commission.
+25367-   (a)    On locations having a frontage of at least      (Code 1980, § 112.04)
+25368-          80 feet, two 30-foot driveways will be
+25369-          permitted. Where the frontage is less than
+25370-          80 feet, only one 30-foot driveway is per-          ARTICLE ID. PROPERTY ADDRESSES *
+25371-          mitted.
+25372-   (b)    When, in the opinion of the city engineer,      Sec. 28.81. Official house number atlas.
+25373-          safety and good engineering practices will
+25374-          allow more than two driveways, more                The document known and designated as the
+25375-          than one driveway will be permitted where       "Official House Number Atlas of the City of
+25376-          the frontage is less than 80 feet, and more     Clearwater," on file in the office of the city engi-
+25377-          than two driveways will be permitted            neer, is accepted and confirmed as the official
+25378-          where the frontage is at least 80 feet,         house number atlas for the city. The house num-
+25379-          provided that no driveway shall be less         ber atlas shall be maintained and revised from
+25380-          than five feet from the property line and       time to time by the city engineer as necessary to
+25381-          not less than ten feet from any other           implement the provisions of this article.
+25382-          driveway.                                       (Code 1980, § 111.01)
+25383-   (c)    Where corner locations are used, a mini-
+25384:          mum of five feet, measured from the prop-       Sec. 28.82. Numbers required, visibility, size.
+25385-          erty corner, shall be reserved for use as a
+25386-          pedestrian island.                                 (1) The owners of all developed properties within
+25387-   (d)    Beginning at the point where curbing is         the city are required to have the proper address
+25388-          cut out, a return shall be installed from       numbers, as set forth in the house number atlas,
+25389-          the curbline to the outside sidewalk line.      displayed conspicuously upon the property. The
+25390-                                                          numbers must be Arabic numerals. Painted num-
+25391-   (e)    Driveways shall be bounded on each side         bers on a curb and written script are not accept-
+25392-          by a curb with a perpendicular face vary-       able. Such numbers shall be not less than three
+25393:          ing in height from no inches at the outside     inches in height for residential uses and not less
+25394:          of the sidewalk. to six inches, or the height   than six inches in height for nonresidential uses,
+25395-          of the city curb at the street curbline. All    and in such location as to be easily visible from
+25396-          return curbs shall be placed on a radius to     the street upon which the property fronts.
+25397-          be governed by existing property condi-
+25398-          tions.                                             (2) The owners of developed nonresidential
+25399-   (f) Each sidewalk shall be protected by the            properties shall also display the proper address
+25400-       installation of an eight-inch masonry curb .       numbers in such location as to be easily visible
+25401-       installed on the property line and running         from the rear of each property, using Arabic
+25402:       the entire length of the sidewalk. measur-         numbers not less than three inches in height;
+25403-       ing from those points where the ap-                provided, however, that this requirement shall be
+25404-       proaches meet the sidewalk line, except            inapplicable to any building having no rear door
+25405-       across the entrance drives and any un-             and no rear window and to any building having
+25406-       paved or unused filling station areas.                 •cross reference-Build ings and building regulations,
+25407-(Code 1980, § 112.02)                                     ch. 47.
+25408-
+25409-
+25410-Supp. No. 18                                        CD28:12
+25411-JOBNAME: No Job Name PAGE: 37 SESS: 2 OUTPUT: Fri Mar 30 14:03:05 2001
+25412-/first/pubdocs/mcc/2/10148_takes
+25413-
+25414-
+25415-
+25416-                                                STREETS, SIDEWALKS, OTHER PUBLIC PLACES                               § 28.92
+25417-
+25418-
+25419-
+25420-                two or more occupants who do not each have a             ARTICLE IV. UTILITY CONSTRUCTION
+25421-                proper address number assigned to the occupant's                 IN RIGHTS-OF-WAY
+25422-                space in the building.
+--
+26307-
+26308-
+26309-
+26310-of the business tax receipt in/on possession of the     refusal to issue a business tax receipt. The appli-
+26311-business representative(s) while conducting busi-       cant shall have the right of appeal as specified in
+26312-ness within the city.                                   section 29.44.
+26313-(Code 1980, § 71.01; Ord. No. 5841-95, § 8, 8-3-95;     (Code 1980, § 71.14; Ord. No. 5835-95, § 1, 5-18-
+26314-Ord. No. 6101-96, § 1, 11-7-96; Ord. No. 7724-07,       95; Ord. No. 5841-95, § 9, 8-3-95; Ord. No. 6101-
+26315-§ 7, 1-31-07)                                           96, § 1, 11-7-96; Ord. No. 7724-07, § 7, 1-31-07)
+26316-
+26317-Sec. 29.31. Issuance requirements for new               Sec. 29.32. Single business tax receipt for
+26318-            businesses.                                             more than one business tax re-
+26319-   (1) A business tax receipt shall be issued pur-                  ceipt.
+26320-suant to this article for any new business, occu-
+26321-pation or profession when all applicable condi-            In all cases where the same person or corpora-
+26322-tions are satisfied.                                    tion must obtain more than one business tax
+26323-                                                        receipt for the business operated at the same
+26324-   (a)    The application for a business tax receipt    location, that person or corporation may be issued
+26325-          has definitely stated the exact location at   a single business tax receipt describing the vari-
+26326-          which the business shall be operated and      ous business tax receipt categories represented by
+26327:          a zoning official has verified that such      such certificate. In such a case the amount paid
+26328-          business, occupation or profession is al-     for the business tax receipt shall be the same as if
+26329-          lowed under the community development         individual certificates are issued. This section
+26330-          code, section 4-205.                          shall serve only to permit the city to consolidate
+26331-   (b)    The application has been approved by the      the separate business tax receipt into one certifi-
+26332-          police chief when required for the busi-      cate.
+26333-          ness, occupation or profession.               (Code 1980, § 71.15; Ord. No. 5841-95, § 10,
+26334-                                                        8-3-95; Ord. No. 7724-07, § 7, 1-31-07)
+26335-   (c)    The application has been approved by the
+26336-          city manager when required for the busi-
+26337-          ness, occupation or profession.               Sec. 29.33. Duplicate business tax receipts
+26338-                                                                    issuance.
+26339-   (d)    The application has been approved by the
+26340-          county health department when required           Duplicate business tax receipts may be issued
+26341-          for the business, occupation or profession.   by the director. An administrative fee as pre-
+26342-   (e)    The application has been approved by the      scribed in appendix A to this Code will be assessed
+26343-          harbormaster when required for the busi-      for each duplicate business tax receipt issued.
+26344-          ness, occupation or profession.               (Code 1980, § 71.21; Ord. No. 7724-07, § 7, 1-31-
+26345-                                                        07)
+26346-   (f)    The application has been approved by the
+26347-          building official when occupancy of a va-
+--
+26405-article.
+26406-                                                                      business tax therefore, any such business
+26407-(Code 1980, § 71.24; Ord. No. 7724-07, § 7, 1-31-
+26408-                                                                      tax receipt shall not be transferable pur-
+26409-07)
+26410-                                                                      suant to this section.
+26411-                                                                (d)   Holders of alcoholic beverage licenses shall
+26412-Sec. 29.37. Identification on trucks required.                        comply with chapter 6 of this Code.
+26413-                                                                (e)   The activity in which the new business
+26414-   Any and all trucks or other vehicles operated or                   engages, as part of the business, must be
+26415-used in connection with any contracting, building,                    lawful.
+26416-delivery, maintenance, repair service, or manufac-              (f)   The transferee must meet the require-
+26417-turing business or occupation conducted within                        ments of the Code to obtain a business tax
+26418-the city shall have painted or otherwise promi-                       receipt.
+26419-nently displayed in a visible and legible manner
+26420-upon such truck or other vehicle, the name, ad-                (2) Within 30 days from the date the applicant
+26421-dress and telephone number of the business in               submits the request, the director of the depart-
+26422-which such truck or other vehicle is used. Such             ment shall transfer the business tax receipt or
+26423-information shall be displayed on both sides of the         notify the applicant in writing setting forth the
+26424-vehicle and the letters in such sign shall be a             grounds for the city's refusal to transfer the
+26425:minimum height of three inches.                             business tax receipt. The applicant shall have the
+26426-(Code 1980, § 71.20; Ord. No. 5841-95, § 12,                right of appeal as specified in section 29.44.
+26427-8-3-95; Ord. No. 7724-07, § 7, 1-31-07)                     (Code 1980, § 71.11; Ord. No. 5835-95, § 2, 5-18-
+26428-    Cross reference—Traffic and motor vehicles generally,   95; Ord. No. 5841-95, § 13, 8-3-95; Ord. No.
+26429-ch. 30.                                                     7724-07, § 7, 1-31-07)
+26430-
+26431-
+26432-Supp. No. 62                                           CD29:7
+26433-§ 29.39                                      CLEARWATER CODE
+26434-
+26435-
+26436-
+26437-Sec. 29.39. Review upon renewal.                        Sec. 29.41. Right to revoke or deny.
+26438-   (1) Upon the annual renewal of all business             (1) Subject to the requirements contained in
+26439-tax receipt, any business tax receipt may be            subsection (2) of this section, the director of the
+26440-reviewed to determine if all applicable provisions      department may revoke any business tax receipt
+26441-of this article, state, county, city and/or federal     granted pursuant to this article for cause, and
+26442-laws, ordinances, rules and regulations have been       may deny the re-issuance of a business tax receipt
+26443-complied with, by the taxpayer.                         to an established business for cause. For the
+26444-   (2) When the taxpayer has failed to comply           purpose of this section, "cause" exists when the
+26445-with, follow or adhere to any applicable provisions     taxpayer commits or permits any of the following
+--
+27459-after, the $20,000.00 household income limitation      deferrals do not apply, however, to taxes or non ad
+27460-shall be adjusted by the percentage change in the      valorem assessments defined in F.S. 197.3632(1)(d)
+27461-average cost-of-living index in the period of Jan-     levied for the payment of bonds or to taxes autho-
+27462-uary 1 through December 31 of the immediate            rized by a vote of the electors pursuant to s. 9(b) or
+27463-prior year compared with the same period for the       Section 12, Article VII of the State Constitution.
+27464-year prior to that year. The index is the average of   (Ord. No. 7633-06, § 1, 6-15-06)
+27465-the monthly consumer-price index figures for the
+27466-stated 12-month period, relative to the United         Sec. 29.102. Definitions.
+27467-States as a whole, issued by the United States           The following words, terms, and phrases, when
+27468-Department of Labor.                                   used in this article, shall have the meanings
+27469-(Ord. No. 7499-05, § 1, 9-15-05)                       ascribed to them in this article, except as where
+27470-                                                       the context clearly indicates a different meaning:
+27471-Sec. 29.95. Penalties.
+27472-                                                         Boat construction facility means facilities where
+27473-   Receipt of the additional homestead exemption       marine vessels are constructed and/or housed
+27474-provided for in the section shall be subject to the    with direct access to navigable waters of the state
+27475-provisions of F.S. § 196.131, which establishes a         Commercial fishing facility means all docks,
+27476-penalty for knowingly and willfully giving false       piers, processing houses or other facilities, which
+27477-information for the purpose of claiming home-          receive commercial fishery products from ships.
+27478-stead exemption, and to F.S. § 196.161, which
+27479:provides for tax liens and the recovery of taxes,         Dock means an accessory structure, not offered
+27480-penalties, and interest from persons not entitled      for sale or rent, including a pier, wharf, loading
+27481-to homestead exemption.                                platform, tie poles, or boat lift constructed on
+27482-(Ord. No. 7499-05, § 1, 9-15-05)                       pilings over open water or upon a system of
+27483-                                                       flotation, for the purpose of launching, mooring
+27484-                                                       and receiving marine vessels.
+27485-   ARTICLE VI. TAX DEFERRAL FOR
+27486-                                                          Dry marina means a licensed commercial facil-
+27487-  RECREATIONAL AND COMMERCIAL
+27488-                                                       ity, which provides public dry storage for vessels
+27489- WORKING WATERFRONT PROPERTIES
+27490-                                                       on a leased basis.
+27491-
+27492-Sec. 29.100. Purpose.                                    Lift means an apparatus used to lift and move
+27493-                                                       marine vessels with direct access to navigable
+27494-   The purpose of this article is to implement         waters of the state.
+27495-§§197.303—197.3047, Florida Statutes (2005) by
+27496-                                                          Non-ad valorem assessment means those as-
+27497-allowing ad valorem tax deferrals for recreational
+27498-                                                       sessments that are not based upon the millage
+27499-and commercial working waterfront properties,
+--
+29332-        sion of a valid and current delivery ticket                   stricted trucks on a trip originating in the
+29333-        or other dispatch order.                                      city and traveling in the city for a desti-
+29334-                                                                      nation point outside the city shall proceed
+29335-  (b)   Authorized emergency vehicles. The oper-                      to the nearest intersection of a designated
+29336-        ation of authorized emergency vehicles                        truck route and travel from that point to
+29337-        upon any street in the city.                                  the city limits only over designated truck
+29338-                                                                      routes.
+29339-  (c)   Public utilities. The operation of trucks
+29340-        owned or operated by the city, public util-             (b)   To inside destination points. All restricted
+29341-        ities, any contractor or materialman while                    trucks on a trip originating in the city and
+29342-
+29343-
+29344-Supp. No. 44                                          CD30:17
+29345-§ 30.125                                           CLEARWATER CODE
+29346-
+29347-
+29348-
+29349-       traveling in the city for destination points         or fixed in violation of this article a written notice
+29350-       in the city shall proceed only over truck            requiring such owner or occupant to remove such
+29351-       routes.                                              tree, shrubbery or other object or to trim such tree
+29352:(Code 1980, § 123.04)                                       or shrubbery or reduce the height and width of
+29353-                                                            other objects so as to comply with the provisions
+29354-Sec. 30.126. Hours of operation.                            of this article. The notice provided for in this
+29355-                                                            section shall be served upon the owner or occu-
+29356-   Trucks shall be able to travel upon truck routes
+29357-                                                            pant of the property therein described and shall
+29358-at all hours of the day unless duly authorized
+29359-                                                            require the owner to comply with the directions
+29360-signs are installed limiting the hours of use on a
+29361-                                                            contained in such written notice within 15 days
+29362-particular street or portion of a street. Those
+29363-                                                            after the service of such notice. Such notice may
+29364-streets which are designated as partially re-
+29365-                                                            and can be served by placing a copy of the notice
+29366-stricted truck routes shall be off limits to trucks
+29367-                                                            at a conspicuous place upon the property abutting
+29368-in the restricted classification during the hours of
+29369-                                                            the parkway, if the offending object is thereon, or
+29370-6:00 p.m. to 6:00 a.m. Any restricted truck at-
+29371-                                                            upon the private property upon which the offend-
+29372-tempting to utilize a partially restricted truck
+--
+29759-               Sec. 32.392.   Definitions.
+29760-               Sec. 32.393.   Industrial activity.
+29761-               Sec. 32.394.   Illicit discharges.
+29762-               Sec. 32.395.   Spills and dumping.
+29763-               Sec. 32.396.   Inspections and monitoring.
+29764-               Sec. 32.397.   Administrative order.
+29765-               Sec. 32.398.   Penalties.
+29766-               Sec. 32.399.   Civil remedies.
+29767-
+29768-
+29769-
+29770-
+29771-Supp. No. 71                                     CD32:5
+29772-                                                 UTILITIES                                            § 32.002
+29773-
+29774-
+29775-
+29776-
+29777-           ARTICLE I. IN GENERAL                          Approved mobile home park means a parcel of
+29778-                                                        property zoned pursuant to the provisions of
+29779:Sec. 32.001. Unified system.                            applicable city or county zoning regulations whose
+29780-                                                        allowed use is the business of renting spaces or
+29781-  All municipal utility properties real and per-        lots upon which mobile homes are placed and
+29782-sonal of the city supplying gas, water, wastewater,     occupied as living units. The term includes any
+29783-solid waste service, stormwater management and          associated and allowed laundry, recreational and
+29784-reclaimed water in and to the city and its citizens     common facilities incidental thereto.
+29785-and inhabitants and users thereof shall be ac-
+29786-counted for in accordance with generally accepted         Backfiow prevention device means the term as
+29787-accounting principles, and shall be controlled,         defined in section 32.093.
+29788-operated and maintained on a combined and
+29789-consolidated basis as a single utility system. Sep-       Bill means an invoice or statement of account
+29790-arate accounting records shall be maintained for        for utility charges, rentals, fees, charges and
+29791-each of the foregoing services in order to deter-       contracts, and applicable taxes.
+29792-mine revenues and operating expenses for each             Building means any structure, either tempo-
+29793-service.                                                rary or permanent, having a roof and used·or built
+29794-(Code 1980, § 50.01; Ord. No. 5058, § 2, 12-20-90;      for the shelter or enclosure of persons, animals,
+29795-Ord. No. 5062, § 1, 1-3-91; Ord. No. 5940-95, § 1,      vehicles, goods, merchandise, equipment, materi-
+29796-12-7-95)
+29797-                                                        als or property of any kind. This definition shall
+29798-                                                        include tents, sheds, garages, carports, animal
+29799-Sec. 32.002. Definitions.                               kennels or storerooms, serving in any way the
+--
+30906-Sec. 32.105. Steam boilers and hot water                      Sec. 32.108. Inspection of plumbing and con-
+30907-             plants; valve requirements.                                   nections.
+30908-   Any person using water from the city water                    No water service shall be connected until the
+30909-mains for steam boilers or hot water plants of any            water meter has been installed. The plumbing
+30910-kind shall do so at their own risk. Service pipe for          from the discharge side of the meter or backflow
+30911-such purposes shall have a checkvalve placed in               preventer shall be inspected and approved by the
+30912-the water line to prevent hot water from backflow-            building services division.
+30913-ing into water mains. Any damage that may occur               (Code 1980, § 52.19; Ord. No. 5064, § 1, 1-3-91)
+30914-to the meter due to defective valves shall be
+30915-charged to the customer.                                      Sec. 32.109. Liability of city; restricting use.
+30916-(Code 1980, § 52.16; Ord. No. 5064, § 1, 1-3-91)
+30917-                                                                 The city shall not be liable for any damage
+30918-                                                              resulting from the bursting of any main, service
+30919-Sec. 32.106. Account adjustments.                             line or valve or from the shutting off of water for
+30920-                                                              repairs, extensions or connections or from the
+30921-   An adjustment will be available for the opera-             accidental failure of the water supply from any
+30922-tion of a separately metered cooling tower or for             cause whatsoever. The city shall have the right to
+30923-an unusual circumstance causing the consump-                  restrict the use of water in any reasonable man-
+30924-tion of water which does not enter the wastewater             ner for the protection of the city and its water
+30925-treatment system, such as an undetected domes-                supply.
+30926:tic water leak or the filling of a swimming pool or           (Code 1980, § 52.20; Ord. No. 5064, § 1, 1-3-91)
+30927-spa, to the extent provided in section 32.193. The
+30928-adjustment will be applicable to sewer service
+30929-                                                              Sec. 32.110. General watering schedule.
+30930-charges, not to water service charges.
+30931-(Code 1980, § 52.15; Ord. No. 5064, § 1, 1-3-91)                Under normal conditions, watering restrictions
+30932-                                                              are as follows:
+30933-Sec. 32.107. Water impact fee.                                      (1)   Established lawns and landscape. Twice-
+30934-                                                                          per-week watering with all water sources
+30935-   (1) Assessment. A water impact fee, payable at                         (except reclaimed, which is allowed any
+30936-the building services division, shall be assessed at                      day of the week):
+30937-the time of original building permit, and must be
+30938-                                                                          a.    Wednesday and Saturday—Even-
+30939-paid for by the applicant for water service at the
+30940-                                                                                numbered addresses (or A - M)
+30941-issuance of a plumbing permit. See appendix A to
+30942-this Code.                                                                b.    Thursday and Sunday—Odd-num-
+30943-                                                                                bered addresses (or N - Z), or mixed
+30944-   (2) Use. All funds received by the city as a                                 or no street address
+30945-water impact fee shall be kept in an account
+30946-                                                                    (2)   New lawns. 60-day establishment period
+--
+31176-   • Facilities with boilers or chilled water sys-             exists, with a resulting threat to the public
+31177-     tems;                                                     potable water supply.
+31178-
+31179-   • Fertilizer manufacturing plants;                     (3) The following is a list of facilities for which
+31180-                                                        double check valve assemblies shall be required:
+31181-   • Film processing laboratories (See note A);
+31182-                                                             • Apartments;
+31183-   • Greenhouses and nurseries;
+31184-                                                             • Beauty parlors and barbershops;
+31185-   • Heating or cooling coils submerged in con-
+31186-     taminants;                                              • Buildings over five stories or with booster
+31187-                                                               pump (See note A);
+31188-   • Hospitals, medical buildings, morgues, mor-
+31189-     tuaries, autopsy facilities, nursing and con-           • Hotels;
+31190-     valescent homes, medical clinics, blood han-            • Irrigation systems, 11/2-inch or larger;
+31191-     dling facilities and kidney dialysis facilities;
+31192-                                                             • Motels;
+31193-   • Laboratories (industrial, commercial, medi-
+31194-                                                             • Restaurants and food handlers (See note A);
+31195-     cal and school);
+31196:                                                             • Swimming pools (nonresidential);
+31197-   • Laundries and dry cleaners;
+31198-                                                             • Any other location where a potential or ac-
+31199-   • Metal manufacturing, cleaning, plating, pro-
+31200-                                                               tual backflow or backsiphonage condition
+31201-     cessing and fabricating plants;
+31202-                                                               exists, with a resulting threat to the public
+31203-   • Motion picture studios;                                   potable water supply.
+31204-
+31205-
+31206-Supp. No. 44                                       CD32:22
+31207-                                                 UTILITIES                                              § 32.153
+31208-
+31209-
+31210-
+31211-  Note A: Unless protected by internal backflow         diffused surface water, and water percolating,
+31212-  prevention devices to the satisfaction of the         standing or flowing beneath the surface of the
+31213-  public utilities department and the plumbing          ground.
+31214-  official.
+31215-(Code 1980, § 52.36; Ord. No. 5064, § 1, 1-3-91;           Water shortage condition or water shortage
+31216-Ord. No. 7573-06, § 4, 1-19-06)                         emergency means the condition in which suffi-
+--
+32114-                                                                   able at all times for inspection and review
+32115-                 • Name and signature of food ser-                 by the administrator. Documents in the
+32116-                   vice facility manger verifying the              file shall be retained and preserved in
+32117-                   food service facility information.              accordance with Clearwater's public records
+32118-           Grease waste hauler information:                        retention policy.
+32119-                 • Company name                               (7) Penalty for violation of section. Any viola-
+32120-                 • Address                                 tion of this section shall be enforced pursuant to
+32121-                                                           Code of Ordinances section 1.12.
+32122-                 • Telephone number
+32123-                                                           (Code 1980, § 53.065; Ord. No. 5065, § 1, 1-3-91;
+32124-                 • Pinellas County Permit #                Ord. No. 6798-01, § 1, 9-20-01; Ord. No. 7090-03,
+32125-                 • Driver name and signature of            § 1, 1-23-03)
+32126-
+32127-
+32128-Supp. No. 44                                         CD32:30.4
+32129-                                               UTILITIES                                              § 32.196
+32130-
+32131-
+32132-
+32133-Sec. 32.190. Service not free.                        treatment system, such as an undetected domes-
+32134:                                                      tic water leak or the filling of a swimming pool or
+32135-   No wastewater collection service shall be fur-     spa, as approved by the utility customer support
+32136-nished or rendered free of charge to any person.      manager. Such adjustments shall not be available
+32137-The city, county and state and every agency,          for lawn irrigation or other usual and customary
+32138-department or instrumentality thereof which is        uses of water. Any such adjustment shall be
+32139-connected to the wastewater collection system         requested and substantiated by the customer
+32140-shall pay the rates and charges fixed in appendix     within 90 days following the date of repair or
+32141-A to this Code, or as established by agreement. A     unusual circumstance and shall be for a period
+32142-minimum bill shall be rendered even though the        not exceeding 90 days preceding the date of repair
+32143-water meter has been temporarily turned off. The      or unusual circumstance. The adjustment shall be
+32144-charge will stop only after the premises has been     based only upon water consumption above the
+32145-sold and the utility customer support division has    annual average consumption rate unless the wa-
+32146-been notified to that effect.                         ter consumption can be metered.
+32147-(Code 1980, § 53.10; Ord. No. 5065, § 1, 1-3-91)      (Ord. No. 5065, § 1, 1-3-91)
+32148-
+32149-Sec. 32.191. Schedule of service rates.               Sec. 32.194. Privies.
+32150-
+32151-   (1) There is an established uniform schedule of       It shall be unlawful for any person to construct
+32152-rates and charges for the use or availability for     or maintain any privy of any type where water
+32153-use of the wastewater collection utility. See ap-     under pressure is available on or adjacent to his
+32154-pendix A to this Code.                                property. Where such water is not available, the
+--
+32739-                                                                    treatment process, such as, but not
+32740-           2.   Wastewater having a pH less than                    limited to, dye wastes and vegetable
+32741-                5.5 or more than 9.5, or otherwise                  tanning        solutions,     which
+32742-                causing corrosive structural damage                 consequently imparts color to the
+32743-                to the WWF or equipment;                            WRF's effluent, thereby violating
+32744-           3.   Solid or viscous substances in                      the city's wastewater NPDES permit;
+32745-                amounts which will cause obstruc-
+32746-                                                                11. Wastewater containing any radioac-
+32747-                tion of the flow in the WWF result-
+32748-                                                                    tive wastes or isotopes except in
+32749-                ing in interference but in no case
+32750-                                                                    compliance with applicable state or
+32751-                solids greater than three-eighths of
+32752-                                                                    federal regulations;
+32753-                an    inch     or   ninety-five-one-
+32754-                hundredths of a centimeter in any               12. Stormwater, excluding stormwater
+32755-                dimension.                                          that has been in contact with an
+32756-           4.   Pollutants, including oxygen-                       approved industrial process, surface
+32757-                demanding pollutants (BOD, etc.),                   water, ground water, artesian well
+32758-                released in a discharge at a flow                   water, roof runoff, subsurface drain-
+32759:                rate and/or pollutant concentration                 age, swimming pool drainage,
+32760-                which, either singly or by interac-                 condensate, deionized water, non-
+32761-                tion with other pollutants, will cause              contact cooling water, and unpol-
+32762-                interference with the WWF;                          luted wastewater, unless specifically
+32763-                                                                    authorized by the coordinator;
+32764-           5.   Wastewater having an average
+32765:                temperature greater than 122°F                  13. Sludges, screenings, or other residues
+32766-                (50°C), at the point of connection                  from the pretreatment of industrial
+32767-                with the city's sanitary sewer system;              wastes;
+32768-
+32769-
+32770-Supp. No. 79                                        CD32:40
+32771-                                               UTILITIES                                            § 32.212
+32772-
+32773-
+32774-
+32775-        14. Medical wastes, except as specifi-             (c)   When wastewater subject to a categori-
+32776-            cally authorized by the coordinator                  cal pretreatment standard is mixed with
+32777-            in a wastewater discharge permit;                    wastewater not regulated by the same
+32778-                                                                 standard, the coordinator shall impose
+32779-        15. Wastewater, alone or in conjunction
+32780-                                                                 an alternate limit using the combined
+32781-            with other sources, causing the
+32782-                                                                 wastestream formula in Chapter
+32783-            POTW's effluent to fail a toxicity
+32784-                                                                 62-625.410(6) FAC. Only those industrial
+32785-            test;
+--
+34654-           of collection and analyzing a user's          ment of the city.
+34655-           discharge, and reviewing monitoring
+34656-           reports submitted by users;                      Developed property means any property which
+34657-                                                         contains any impervious area and is served by
+34658-   (c)     Fees for reviewing and responding to          an active or dormant utility account. The term
+34659-           accidental discharge procedures and           includes all properties within the city, including
+34660-           construction;                                 those properties classified as nonprofit or tax-
+34661-                                                         exempt for ad valorem tax purposes. The term
+34662-   (d)     Fees for filing appeals; and                  includes all government properties, including
+34663-                                                         properties of the city. For new construction, a
+34664-   (e)     Other fees as the city may deem neces-        property shall be considered developed pursuant
+34665-           sary to carry out the requirements            to this article:
+34666-           contained herein. These fees relate solely
+34667-           to the matters covered by this division          (1)   Upon issuance of a certificate of occupancy,
+34668-           and are separate from all other fees,                  or upon completion of construction or
+34669-           fines, and penalties chargeable by the                 final inspection if no such certificate is
+34670-           city.                                                  issued; or
+34671-                                                             *Cross references—Public health, ch. 24; special assess-
+34672-   (2) Severability. If any provision of this divi-      ments for storm system improvements, § 27.11; streets,
+34673-sion is invalidated by any court of competent            sidewalks and other public places, ch. 28; land development
+34674:jurisdiction, the remaining provisions shall not         code, subpart B; zoning, ch. 40; stormwater detention facili-
+34675-be effected and shall continue in full force and         ties required for development, § 42.33; site plans, ch. 43;
+34676-                                                         subdivisions and condominium platting, ch. 46; design
+34677-effect.                                                  standards for stormwater drainage and retention, § 46.74;
+34678-(Ord. No. 6393-99, § 1, 8-5-99; Ord. No. 8322-13,        buildings and building regulations, ch. 47; land disturbing
+34679-§ 15, 2-21-13)                                           activities, ch. 50; flood damage prevention, ch. 51.
+34680-
+34681-
+34682-
+34683-Supp. No. 73                                      CD32:44.22
+34684-                                                 UTILITIES                                             § 32.244
+34685-
+34686-
+34687-
+34688-  (2)   Where construction is at least 50 percent         Undeveloped property means property which
+34689-        complete and construction is halted for a      is not developed property, as that term is defined
+34690-        period of six months.                          in this section.
+34691-                                                       (Ord. No. 5058, § 1, 12-20-90; Ord. No. 8931-16,
+34692-   Equivalent residential unit or ERU means the        § 1, 9-1-16)
+34693-statistical average impervious area for residential       Cross reference—Definitions and rules of construction
+34694-parcels within the city. The numerical value of        generally, § 1.02.
+--
+35279-$200.00 shall be owed by the owner to the city         due on the next business day. Furthermore,
+35280-and shall constitute a lien against the property       permittee shall incur a $25.00 administrative fee
+35281-until paid.                                            each business day the permittee fails to provide
+35282-                                                       invoice copies and monthly service reports, as
+35283-  (4) If a customer has not removed extra or           required by section 32.290(2)(b). A monthly report
+35284-nonconforming solid waste or other industrial          is required every month, even if it is to report no
+35285-waste, hazardous waste or noncombustible refuse        activity for the monthly period. Failure to comply
+35286-within 24 hours after notification by solid waste,     with the permit submission requirements may
+35287-the director of solid waste/general services may       result in revocation or denial of issuance or
+35288-order such removal and all costs incurred shall        renewal of a permit.
+35289-be placed against the customer's utility account.
+35290-                                                          (9) A roll-off container and/or waste receptacle
+35291-   (5) Failure to remove a residential refuse          permittee's failure to fax or email the monthly
+35292-and/or recycling container tagged with a warn-         list of new waste receptacles set within Clearwa-
+35293-ing by the solid waste/general services depart-        ter city limits to solid waste/general services
+35294-ment within the specified period of time subjects      administrative staff by the 10th business day of
+35295-the customer to a fine of $10.00 per day, which is     the following month shall result in the assess-
+35296-placed on the customer's utility bill. Repeat          ment of a $25.00 administrative fee each busi-
+35297-offenders, after written notice and at the sole        ness day the permittee fails to provide the listing
+35298-discretion of the director of solid waste/general      and possible revocation of the permit.
+35299:services, may be placed on side or rear yard
+35300-premium service at the appropriate fee.                   (10) If an audit discloses that a roll-off
+35301-                                                       container and/or waste receptacle permittee has
+35302-   (6) In the event a roll-off container or waste      underpaid the remittance as required by this
+35303-receptacle becomes a danger or nuisance, the           division by more than five percent of the required
+35304-roll-off container or waste receptacle shall be        total, then in addition to a remittance in the
+35305-impounded and owner given notice, if reasonably        amount of the underpayment, the permittee
+35306-possible, and owner shall be responsible for           shall pay the cost of the audit and 15 percent
+35307-claiming such roll-off container or waste receptacle   interest on the amount of the underpayment.
+35308-at owner's own expense as detailed in subsection
+35309-(7).                                                      (11) If a roll-off container and/or waste
+35310-                                                       receptacle permittee fails to provide documenta-
+35311-   (7) Roll-offs containers and/or waste receptacles   tion requested for an audit by the date specified
+35312-located on city property and/or rights-of-way          in the written request for such documentation
+35313-that are not registered shall be hauled to a city      the city shall assess a $25.00 administration fee
+35314-site and an initial fee of $300.00 and a $50.00 a      each business day the permittee is delinquent in
+35315-day storage fee shall be assessed against the          remitting the documentation and shall begin the
+35316-owner of such equipment. If such equipment is          permit revocation process.
+35317-not recovered after 30 days, after the city has        (Ord. No. 6391-99, § 1, 3-4-99; Ord. No. 8025-09,
+35318-gone through reasonable efforts to provide the         § 1, 6-18-09; Ord. No. 8315-12, § 6, 12-20-12;
+35319-owner notice, then such equipment may be               Ord. No. 8748-15, § 3, 8-6-15, eff. 10-1-15)
+--
+35389-           utilized for yard waste must be approved              shall be provided by the owner, tenant, or
+35390-           by the director of solid waste/general                occupant of the premises. Containers
+35391-           services prior to use. The bag or pre-                shall be maintained in good condition
+35392-           approved container must be placed curb-               and shall be subject to inspection and
+35393-           side separate from the city-issued                    approval of conditions by city code enforce-
+35394-
+35395-
+35396-Supp. No. 71                                       CD32:46.4
+35397-                                                  UTILITIES                                              § 32.280
+35398-
+35399-
+35400-
+35401-        ment inspectors and others having                           public place or upon any private property
+35402-        jurisdiction. Routine maintenance of cans,                  whether owned by such person or not,
+35403-        carts, and waste receptacles in a sanitary                  unless it is in containers for collection.
+35404-        manner is the responsibility of the user.                   No person shall place any solid waste at
+35405-        Any container that does not conform to                      the curb for collection except on his or
+35406-        the provisions of this chapter or that may                  her property, and such placement shall
+35407-        have ragged or sharp edges or any other                     be behind the curb or where the curb
+35408-        defect liable to hamper or injure the                       should be. Any person having a corner
+35409:        person collecting the contents thereof,                     lot may use the side yard curb, subject to
+35410-        shall be promptly replaced by the customer                  the director of solid waste/general services'
+35411-        upon written notice by the city. The                        approval. No person shall throw or deposit
+35412-        director of solid waste/general services                    any solid waste in any ditch, stream or
+35413-        shall have the authority to discontinue                     body of water.
+35414-        collection service for failure to comply. In
+35415-                                                              (b)   Unauthorized       accumulation.       Any
+35416-        the event of damage to a container
+35417-                                                                    unauthorized accumulation of solid waste
+35418-        provided by the city caused by a user of
+35419-                                                                    on any lot or premises is hereby declared
+35420-        the container, the cost of repair or replace-
+35421-                                                                    to be a nuisance and is prohibited. Failure
+35422-        ment shall be charged to the customer's
+35423-                                                                    to remove any accumulation of solid waste
+35424-        account.
+35425-                                                                    following notice to the owner or tenant
+35426-  (b)   Specifications. Containers shall be made                    and a reasonable opportunity to take
+35427-        of durable plastic or metal, equipped                       corrective action shall be deemed a viola-
+35428-        with suitable handles and tight-fitting                     tion of this chapter.
+35429-        covers, and shall be watertight. Except
+--
+35516-places, ch. 28; traffic and motor vehicles, ch. 30; buildings          without entering into a building or shelter
+35517-and building regulations, ch. 47.
+35518-                                                                       of any type. Exceptions may be granted
+35519-Sec. 32.281. Duty of property owner; collec-                           with the approval of the director of solid
+35520-             tion practices.                                           waste/general service.
+35521-  (1) Frequency of collection.                                   (b)   Handicapped and elderly. Any person
+35522-  (a) Residential and small businesses. Effec-                         who has been certified by a physician as
+35523-       tive January 11, 2016, solid waste                              being unable to place a residential refuse
+35524-
+35525-
+35526-Supp. No. 71                                             CD32:46.6
+35527-                                                  UTILITIES                                            § 32.284
+35528-
+35529-
+35530-
+35531-        and/or recycling container at the curb            (2) All white goods' doors must be removed or
+35532-        shall be entitled to have the refuse and/or     secured before being set out for collection.
+35533-        recycling collected at the side or rear of
+35534-        the building at no extra charge.                   (3) Items for collection should be placed out
+35535-                                                        no earlier than 24 hours in advance of a scheduled
+35536:  (c)   Side or rear yard premium service. A fee        pick-up and should not present a health or safety
+35537-        as stated in Appendix A will be charged         hazard to the general public.
+35538-        to customers who wish to have the contain-      (Ord. No. 6391-99, § 1, 3-4-99; Ord. No. 8025-09,
+35539-        ers pulled out and placed back for them         § 1, 6-18-09)
+35540-        by solid waste personnel.
+35541-
+35542-  (3) Container placement and removal.                  Sec. 32.283. Littering/illegal dumping.
+35543-
+35544-  (a)   Residential refuse and/or recycling                (1) It is illegal to dump any solid waste other
+35545-        containers and yard waste placed near           than by the defined methods in this Code. Illegal
+35546-        the curb, street or alley shall be placed       dumping may lead to investigation and prosecu-
+35547-        there no earlier than 7:00 p.m. on the          tion.
+35548-        evening preceding the collection day. The          (2) Littering. No person shall throw, place, or
+35549-        containers must be removed from the             deposit any solid waste in any ditch, stream or
+35550-        curb to a point adjacent to the side or         body of water or anywhere within the city in
+35551-        rear of the structure by 7:00 a.m. of the       such a manner that it may be carried or deposited
+35552-        following day. Any container not removed        by wind or rain upon any street, sidewalk, alley,
+35553-        will be tagged by the solid waste/general       sewer, parkway or other public place, or into any
+35554-        services department with a warning.             occupied premises within the city.
+35555-        Second violators will be subject to a fine      (Ord. No. 6391-99, § 1, 3-4-99)
+35556-        of $10.00 per day, which will be placed on
+35557-        the customer's utility bill. Repeat offend-
+35558:        ers will be placed on side or rear yard         Sec. 32.284. Waste receptacle.
+35559-        premium service at the stipulated rate.               (1) Enclosure required.
+35560-   (4) Eviction/move out refuse. The property                 (a)   Customers who receive containerized
+35561-owner shall be responsible for time and material                    service and who are not subject to the
+35562-charges as stated in Appendix A for any refuse                      requirements of paragraph 5 subsection
+35563-clean up resulting from an eviction or move out.                    (b) of this section shall meet the follow-
+35564-(Code 1980, § 54.05; Ord. No. 5321-92, § 1,                         ing requirements with respect to waste
+35565-12-17-92; Ord. No. 6391-99, § 1, 3-4-99; Ord. No.                   receptacle enclosures.
+35566-8025-09, § 1, 6-18-09; Ord. No. 8748-15, § 5,
+35567-8-6-15, eff. 10-1-15)                                         (b)   The enclosure will be constructed and
+35568-                                                                    maintained in such a manner as to ensure
+35569-                                                                    that the waste receptacle is not visible
+35570-Sec. 32.282. Yard waste/bulk collections.
+35571-                                                                    from ground level.
+35572-   (1) It is the responsibility of all tree surgeons,         (c)   The enclosure shall have a gate that is of
+35573-nurseries, lawn care services and landscaping                       sufficient width so that the waste
+35574-contractors, or any individual or company doing                     receptacle is easily accessible by a front-
+35575-work on private property, to remove from the                        end loading refuse collection truck. Said
+35576-premises all residue and rubbish resulting from                     truck requires 12 feet of unobstructed
+35577-said work. Failure to comply will result in a fine                  access.
+35578-in the amount of not less than the existing cost
+35579-for removal plus an administrative fee not to                 (d)   The base of the enclosure shall contain a
+35580-exceed $200.00, for the first infraction. A second                  six-inch-thick reinforced concrete pad of
+35581-infraction may result in the loss of the occupational               a size suitable for the waste receptacle in
+35582-license.                                                            use at that location.
+35583-
+35584-
+35585-Supp. No. 71                                      CD32:46.7
+35586-§ 32.284                                       CLEARWATER CODE
+35587-
+35588-
+35589-
+35590-   (2) Those customers whose site receives                        due to the existence of walls, fences, or
+35591:containerized service and whose use of or improve-                other screening on site in compliance
+35592-ment to the service site requires site plan approval              with this Code; or
+35593-or approval of minor change of use, shall also
+35594-comply with the rules and regulations regarding             (b)   Enforcement of this section would result
+35595-enclosure dimensions, materials, location, and                    in extreme hardship.
+35596-other physical attributes, as may be promulgated
+35597-and amended from time to time by the director of
+35598-                                                             (6) All enclosures are required to be constructed
+35599-solid waste/general services.
+35600-                                                          and maintained in accordance with the City of
+35601-   (3) Every customer who receives container-             Clearwater specifications pursuant to section
+35602-ized service shall assume all risk and shall              3-201.D of the Clearwater Community Develop-
+35603-indemnify, defend, and save harmless the City of          ment Code and City Engineering Index 701.
+35604-Clearwater from and against all loss, damage,
+35605-cost or expense for the enclosure which is not due           (7) Placement of containers. Subscribers or
+35606-to the negligence of the City of Clearwater.              private haulers authorized to provide services
+35607-   (4) No final building inspection shall be              under this article shall not place any container
+35608-undertaken nor certificate of occupancy issued            or receptacle for solid waste or recycling outside
+35609-for any site which has not complied with the              of any building or structure without first having
+35610-enclosure requirements contained in this sec-             obtained permission from the city approving
+35611-tion.                                                     location of such container.
+--
+36961-Supp. No. 87                                     CD33:2
+36962-                                         WATERWAYS AND VESSELS                                      § 33.002
+36963-
+36964-
+36965-
+36966-          ARTICLE I. IN GENERAL                          Direct sewage pump-out connection means a
+36967-                                                       connection between a vessel and the city sewer
+36968-Sec. 33.001. Municipal authority to                    system for the purpose of removing sewage from
+36969-             regulate waterways.                       the holding tank or head on a vessel.
+36970-
+36971-   The city shall possess all rights to regulate the      Disabled, as used to describe a vessel, means
+36972-use of all waterways within the city and the           that the vessel is unable to move under its own
+36973-conduct of all persons using such waterways,           mechanical power or sail because of a mechani-
+36974-except as otherwise provided by law.                   cal failure or emergency.
+36975-(Code 1980, § 114.01; Ord. No. 8146-10, § 1,
+36976-                                                         Discharge means but is not limited to any
+36977-2-18-10)
+36978-                                                       spilling, leaking, pumping, pouring, emitting,
+36979-                                                       emptying, or dumping.
+36980-Sec. 33.002. Definitions.
+36981:                                                          Dock means an accessory structure, not offered
+36982-  The following words, terms and phrases, when         for sale or rental, including a pier, wharf, loading
+36983:used in this chapter, shall have the meanings          platform, tie poles, dolphins, accessory structures,
+36984-ascribed to them in this section, except where         or boat lift which is constructed on pilings over
+36985-the context clearly indicates a different meaning:     open water, or which is supported by flotation.
+36986-   City council means the city council of the City        Harbormaster means the harbormaster of the
+36987-of Clearwater, Florida.                                city, or the harbormaster's designee or duly
+36988-  Commercial vessel means:                             appointed substitute or deputy.
+36989-
+36990-  (a)   Any vessel that takes passengers for              Hazardous chemicals or substances means the
+36991-        hire, fee, or consideration, including com-    term as defined by state and federal law or
+36992-        mercial fishing vessels engaged in the         regulations.
+36993-        taking or landing of saltwater fish or           Holding tank means a receptacle on a vessel
+36994-        saltwater products.                            which is used to contain sewage.
+36995-  (b)   A vessel used as a place of business or
+36996-                                                         Length means the measurement from end to
+36997-        for-profit enterprise to include but not
+36998-                                                       end over the deck parallel to the centerline
+36999-        limited to: charters, bareboat charters,
+37000-                                                       excluding sheer.
+37001-        sight-seeing tours, dinner cruises, AirBnB
+37002-        and the like.                                      Live-aboard vessel means:
+37003-  (c)   Any advertisement or insured as charter            (a)   Any vessel used solely as a residence and
+--
+37896-           waiver.                                             (f)   A statement that the owner or business
+37897-                                                                     operator shall provide vessel operators
+37898-   (c)     The name, address and telephone number                    renting vessels a written form notifying
+37899-           of any business operator who will be re-                  the vessel operators of the special operat-
+37900-           sponsible for any activity conducted un-                  ing conditions set forth in section 33.119
+37901-           der the waiver and the signature of the                   and of the applicable fine for violating any
+37902-           business operator or person representing                  of the conditions. Before permitting rental
+37903-           the business operator.                                    vessels to be operated within the corridor,
+37904-                                                                     the owner or business operator shall have
+37905-   (d)     A statement that the owner or business
+37906-                                                                     the vessel operator sign the form, acknowl-
+37907-           operator agrees to establish and main-
+37908-                                                                     edging that the operator has read the
+37909-           tain, at the owner's or business operator's
+37910-                                                                     form and will comply with the special
+37911-           expense, a marked corridor extending from
+37912-                                                                     operating conditions.
+37913-           the shoreline to the westward extremity
+37914-           of the restricted area, which corridor shall        (g)   For any activity requiring conditional use
+37915-           be marked with buoys or similar devices                   approval, evidence that such approval has
+37916:           conforming to the uniform state water-                    been granted by the planning and zoning
+37917-           way marking system.                                       board prior to the submission of the waiver
+37918-                                                                     application.
+37919-   (e)     A complete description of all activities
+37920-           proposed to be conducted under the waiver,          (h)   A drawing showing the specific location of
+37921-           including a description of the types, sizes               the activities to be conducted under the
+37922-           and numbers of vessels to be operated and                 waiver and indicating the specific location
+37923-           a statement of provisions to be made for                  and width of the marked corridor. The
+37924-           the safety of the public during operations                specific location and width of the marked
+37925-           under the waiver. The maximum number                      corridor shall be subject to the approval of
+37926-           of vessels allowed to be operated from the                the harbormaster in accordance with the
+37927-           owner's property shall be set proportion-                 following provisions:
+37928-           ate to the front footage of real property                 1.   The corridor shall be no wider than
+37929-           along the shoreline with a ratio of one                        40 feet at the shoreline and 80 feet
+37930-           vessel per five feet of frontage, up to a                      at the westward end of the corridor.
+37931-           maximum of 20 vessels per property, of
+37932-                                                                     2.   The corridor shall be wholly con-
+37933-           which no more than 40 percent shall be
+37934-                                                                          tained within the seaward extension
+37935-           mechanically powered. If less than all of
+37936-                                                                          of the real property boundary line.
+--
+38152-               Sec. 34.12.    Term of rental assistance payments.
+38153-
+38154-
+38155-
+38156-
+38157-Supp. No. 45                                    CD34:1
+38158-                                              SPECIAL FUNDS                                           § 34.04
+38159-
+38160-
+38161-
+38162-  ARTICLE I. SUPPLEMENTAL RENTAL                           (3)   A list of the names and mailing addresses
+38163-     ASSISTANCE PAYMENT FUND                                     of the present mobile home owners within
+38164-                                                                 the subject property. This list should iden-
+38165-Sec. 34.01. Purpose.                                             tify those units that are suitable for mov-
+38166-                                                                 ing and for which only vacant replace-
+38167-   The supplemental rental assistance payment                    ment lots will be identified in subsection
+38168-fund ("fund") is intended as a resource to assure                (5) below; and
+38169-that affordable mobile home parks or other suit-
+38170-able facilities will be available for mobile home          (4)   Household profile for each owner-occu-
+38171-owners who are removed or relocated as a result                  pied mobile home within the park, includ-
+38172:of a rezoning or any other official action as pro-               ing number of adults, number of children,
+38173-vided in F.S. § 723.083 hereinafter referred to as a             and whether pets have been allowed in
+38174-Qualifying Official Governmental Action ("QOGA").                the park. Replacement units identified in
+38175-Payments from this fund do not provide a reloca-                 subsection (5) should be suitable for sim-
+38176-tion payment or any other form of compensation                   ilar household profiles; and
+38177-to mobile home owners. If the applicant for a
+38178-QOGA cannot identify adequate mobile home                  (5)A list of other mobile home parks or other
+38179-parks or other suitable facilities that are afford-           suitable facilities with vacant units avail-
+38180-able to the impacted mobile home owners, the                  able at the time of application and that
+38181-payment will be used to provide temporary rental              are of a similar cost profile to which
+38182-assistance to qualified mobile home owners.                   owners residing in the subject property
+38183-(Ord. No. 7616-06, § 4, 5-18-06)                              could reasonably expect to relocate. This
+38184-                                                              list will include, at a minimum, name and
+38185-Sec. 34.02. Applicability.                                    address of the park, park contact name
+38186-                                                              and phone number, the number of vacant
+38187-   An applicant who has been granted a condi-                 spaces available and the cost of those
+38188-tional approval under section 4-610 of the                    spaces, park guidelines on age and condi-
+38189-Clearwater Community Development Code and                     tion of acceptable units, number of rental
+38190-who has not provided an alternative means of                  units available and the cost of those rent-
+38191-meeting the requirements of F.S. § 723.083 accept-            als. All parks or other suitable facilities
+38192-able to council, shall make payment into the fund             must be located within a ten-mile radius
+--
+38316-owner so chooses.                                               such rents and other fees are being with-
+38317-(Ord. No. 7616-06, § 4, 5-18-06)                                held due to a bona fide order by a court of
+38318-                                                                law pending resolution of legal action.
+38319-                                                          (5)   Has provided complete and accurate in-
+38320-Sec. 34.07. Supplemental rental assistance                      formation in the application for rental
+38321-            payments.                                           assistance described herein.
+38322-                                                          (6)Has completed the housing counseling
+38323-   Rental assistance payments are available for              prerequisite and complied with all recom-
+38324-qualified mobile home owners for whom afford-                mendations provided by the housing coun-
+38325-able replacement housing has not been identified.            selors.
+38326-The amount of the rental assistance payment           (Ord. No. 7616-06, § 4, 5-18-06)
+38327-shall be sufficient to cover the gap between the
+38328-rent of the identified eligible unit and the mobile   Sec. 34.09. Applications for supplemental
+38329-home owner's affordability. Affordability will be                 rental assistance.
+38330-based on gross household income, adjusted for
+38331-household size as defined by the State Housing           Mobile home owners requesting rental assis-
+38332-Initiatives Partnership Program (SHIP), F.S.          tance will be required to complete an application
+38333-§ 420.907 et seq., using the rents published an-      for rental assistance in a form acceptable to the
+38334-nually for the SHIP program, adjusted for utili-      city or its designee within 90 days following
+38335-ties.                                                 receipt of notice to vacate the property or final
+38336:(Ord. No. 7616-06, § 4, 5-18-06)                      approval of the zoning change, whichever is later.
+38337-
+38338-
+38339-Supp. No. 45                                     CD34:5
+38340-§ 34.09                                       CLEARWATER CODE
+38341-
+38342-
+38343-
+38344-Information contained in the application will be        Sec. 34.12. Term of rental assistance pay-
+38345-used to determine household affordability and                       ments.
+38346-housing need, and should include, but is not
+38347-                                                          The rental assistance payment benefit period
+38348-limited to, the following:
+38349-                                                        must be consecutive and cannot exceed 24 months.
+38350-   (1)    Name, age, total gross household income,      (Ord. No. 7616-06, § 4, 5-18-06)
+38351-          places of employment, sources of income,
+38352-          household assets, number of persons in
+38353-          the household, dates of birth, and social
+38354-          security numbers; and
+38355-   (2)    Mailing address, residency status, num-
+38356-          ber of bedrooms in the current mobile
+--
+38467-
+38468-
+38469-
+38470-
+38471-                                                                                                       pertained to code text
+38472-   *Editor's note-Ord. No. 6348-99, § 1 repealed Ch. 39 in its entirety. Formerly, said chapter
+38473-                                Ordinance   adopted  a new land developmen t code known as the "Developme nt Code of the City of
+38474-amendment s. Section 2 of said
+38475-Clearwater. " The user's attention is directed to such companion volume.
+38476-
+38477-
+38478-
+38479-Supp. No. 22                                               CD39:1
+38480-                                                        Chapter 40
+38481-
+38482-                                                      RESERVED*
+38483-
+38484-
+38485-
+38486-
+38487:                                                                                                           to zoning. Section 2 of
+38488-   *Editor's note-Ord. No. 6348-99, § 1 repealed Ch. 40, in its entirety. Formerly, said chapter pertained
+38489-                                land developmen t code known  as the  "Developme  nt Code  of the City of Clearwater." The user's
+38490-said Ordinance adopted a new
+38491-attention is directed to such companion volume.
+38492-
+38493-
+38494-
+38495-Supp. No. 22                                                CD40:1
+38496-                                                        Chapter 41
+38497-
+38498-                                                       RESERVED*
+38499-
+38500-
+38501-
+38502-
+38503-                                                                                                             to special land uses.
+38504-   *Editor's note-Ord. No. 6348-99, § 1 repealed Ch. 41, in its entirety. Formerly, said chapter pertained
+38505-                             adopted a new land developmen t code known as the "Developme nt Code of the City of Clearwater." The
+38506-Section 2 of said Ordinance
+38507-user's attention is directed to such companion volume.
+--
+38890-   (34) Re-inspection over 80,000 sq. ft . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                    100.00
+38891-   (35) Subsequent re-inspection over 80,000 sq. ft . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                               200.00
+38892-   (36) Licensure of facilities inspection. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                    50.00
+38893-   (37) Fire watch (per person per hour) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                       43.00
+38894-  (38) Fire watch apparatus usage (per apparatus per hour) . . . . . . . . . . . . . . . . . . . . . . . . . . .                                          150.00
+38895-(Ord. No. 7771-07, § 3, 1-31-07; Ord. No. 7819-07, § 1, 4-4-07; Ord. No. 7919-08, § 1, 3-20-08)
+38896-IX. FIRE DEPARTMENT TRAINING FACILITY:
+38897-  Fee amount determined by use agreement.
+38898-(Ord. No. 5887-95, § 1, 8-17-95)
+38899-X. LIBRARY:
+38900-   Fees for the use of the city library by nonresidents are as follows (§ 18.04):
+38901-   (1)     Annual nonresident . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         100.00
+38902-   A nonresident card may be used by any member of the immediate household of the person to whom the
+38903-   card is issued.
+38904-(Res. No. 88-42, § 2, 11-3-88; Res. No. 92-51, § 1, 8-13-92; Res. No. 94-34, 7-21-94; Ord. No. 5887-95, § 1,
+38905-8-17-95)
+38906-XI. PARKS, BEACHES, RECREATION:
+38907-   Rental fees for parks and recreation facilities (ch. 22):
+38908-   (1)     User groups. There is hereby established the following categories of user groups upon which
+38909-           rental fees will be based for parks and recreation rental facilities, including public buildings,
+38910:           recreation buildings, the bandshell, swimming pools and athletic fields:
+38911-           (a)      City related group . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   No charge
+38912-
+38913-
+38914-Supp. No. 70                                                                  CDA:5
+38915-                                                              CLEARWATER CODE
+38916-
+38917-
+38918-
+38919-        (b)    Cosponsored group . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   1.00
+38920-        (c)    Outside group:
+38921-               1.      Public/civic/church. Hourly charges (Clearwater based only; non-Clearwater based
+38922-                       groups treated as private).
+38923-               2.      Private. Basic rental charge, hourly charges, and equipment charges.
+38924-  (2)   Amounts of fees and charges. Rental fees are established and adjusted by the city manager or his
+38925-        or her designee. A current fee schedule shall be set out in parks and recreation departmental
+38926-        policies.
+38927-  Use of facilities by nonresidents (ch. 22):
+38928-  (1)   Effective June 1, 2005, nonresidents who wish to rent or use City recreation facilities or programs
+38929-        may do so by paying a nonresident fee based on the following formulas which shall be
+38930-        administered by the Parks and Recreation Director:
+--
+39908-                      containers, at the discounted rate detailed below, after undergoing an
+39909-                      initial recycling assessment. The recycling assessment is offered, without
+39910-                      charge, to residents that generate a large amount of refuse. If additional
+39911-                      containers are provided, the director of solid waste/general services may
+39912-                      conduct periodic recycling assessments without notice to the resident.
+39913-                      Based on data derived from subsequent recycling assessments, the city
+39914-                      may elect to remove any additional containers provided to the resident, at
+39915-                      the director of solid waste/general service's sole discretion.
+39916-                                                 Effective
+39917-                                                 10/1/2024   10/1/2025   10/1/2026   10/1/2027   10/1/2028
+39918-                      Each living unit,           $35.92      $37.27      $38.66      $40.11      $41.62
+39919-                      minimum
+39920-                      Each additional              35.92       37.27       38.66       40.11       41.62
+39921-                      container (multiple-
+39922-                      family, commercial, or
+39923-                      refusal of assessment)
+39924-                      Each additional              10.78       11.18       11.60       12.04       12.49
+39925-                      container (single-family
+39926-                      with assessment)
+39927-
+39928:               (ii)   Side or rear yard premium service: Manual pickup has a limit of two
+39929-                      containers per living unit, each having a capacity no larger than 32 gallons
+39930-                      and 50 pounds. For each additional 32-gallon or smaller container for rear
+39931-                      yard pickup, the fee specified below will be charged for side or rear
+39932-                      building collection of each 32-gallon container.
+39933-
+39934-                                                 Effective
+39935-                                                 10/1/2024   10/1/2025   10/1/2026   10/1/2027   10/1/2028
+39936-                      Each living unit            $71.84      $74.53      $77.33      $80.22      $83.23
+39937-                      Each additional               25.14       26.08       27.06       28.07       29.13
+39938-                      container
+39939-
+39940-               (iii) Base charge: The base charge will be included in the monthly charge for
+39941-                     active accounts as specified below. Dormant accounts will be assessed the
+39942-                     base charge for each account.
+39943-
+39944-                                                 Effective
+39945-                                                 10/1/2024   10/1/2025   10/1/2026   10/1/2027   10/1/2028
+39946-                      Each account,               $11.97      $12.42      $12.89      $13.37      $13.87
+39947-                      minimum
+39948-
+--
+39956-Supp. No. 90                                 CDA:23
+39957-XXIV                                           CLEARWATER CODE
+39958-
+39959-
+39960-
+39961-                    b.   Motels, apartment motels, or apartments renting by day or week and serviced
+39962-                         with residential refuse containers: all containers serving the premises shall be
+39963-                         centrally located at one collection point.
+39964-                         (i) Curbside pickup:
+39965-                              First living unit, minimum
+39966-
+39967-                                   Effective
+39968-                                   10/1/2024      10/1/2025       10/1/2026      10/1/2027       10/1/2028
+39969-                                    $35.92         $37.27          $38.66         $40.11          $41.62
+39970-
+39971-                                All additional living units, per unit
+39972-                                   Effective
+39973-                                   10/1/2024      10/1/2025       10/1/2026      10/1/2027       10/1/2028
+39974-                                    $17.96         $18.63          $19.33         $20.06          $20.81
+39975-
+39976:                         (ii)   Side or rear yard premium service:
+39977-                                First living unit, minimum
+39978-
+39979-                                   Effective
+39980-                                   10/1/2024      10/1/2025       10/1/2026      10/1/2027       10/1/2028
+39981-                                    $71.84         $74.53          $77.33         $80.22          $83.23
+39982-
+39983-                                All additional living units, per unit
+39984-
+39985-                                   Effective
+39986-                                   10/1/2024      10/1/2025       10/1/2026      10/1/2027       10/1/2028
+39987-                                    $35.92         $37.27          $38.66         $40.11          $41.62
+39988-
+39989-                    c.   Motels, apartment motels, or apartments renting by day or week and serviced
+39990-                         with commercial containers, will be charged in accordance with the schedule in
+39991-                         subsection (3)(c)2.c of this section.
+39992-                    d.   Commercial buildings of all types (such as professional offices, stores, hotels,
+39993-                         factories, filling stations, service establishments, etc.) where commercial container
+39994-                         service is determined to not be feasible pursuant to section 32.273(2):
+39995-                         (i) Residential refuse container service: Curbside pickup, per container
+39996-
+39997-                                   Effective
+39998-                                   10/1/2024      10/1/2025       10/1/2026      10/1/2027       10/1/2028
+39999-                                    $35.92         $37.27          $38.66         $40.11          $41.62
+40000-
+40001:                         (ii)   Residential refuse container service: Side or rear yard premium service,
+40002-                                per container
+40003-                                   Effective
+40004-                                   10/1/2024      10/1/2025       10/1/2026      10/1/2027       10/1/2028
+40005-                                    $71.84         $74.53          $77.33         $80.22          $83.23
+40006-
+40007-               2.   Monthly charges for daily commercial (except Saturday, Sunday and holidays)
+40008-                    collection for solid waste in prescribed containers (no larger than 32 gallons with
+40009-                    maximum weight of 50 pounds).
+40010-                    a.    Curbside pickup:
+40011-                          (i) Per container:
+40012-
+40013-                                   Effective
+40014-                                   10/1/2024      10/1/2025       10/1/2026      10/1/2027       10/1/2028
+40015-                                    $94.00         $97.52          $101.18        $104.97         $108.91
+40016-
+40017-
+40018-
+40019-Supp. No. 90                                       CDA:24
+40020-                                APPENDIX A—SCHEDULE OF FEES, RATES AND CHARGES                                      XXIV
+40021-
+40022-
+40023-
+40024-                            (ii)   Each additional container, each day:
+40025-                                      Effective
+40026-                                      10/1/2024        10/1/2025        10/1/2026          10/1/2027       10/1/2028
+40027-                                        $4.35            $4.51            $4.68              $4.85           $5.04
+40028-
+40029:                     b.     Side or rear yard premium service:
+40030-                            (i)    Per container:
+40031-                                      Effective
+40032-                                      10/1/2024        10/1/2025        10/1/2026          10/1/2027       10/1/2028
+40033-                                       $188.00          $195.04          $202.36            $209.95         $217.82
+40034-
+40035-                            (ii)   Each additional container, each day:
+40036-
+40037-                                      Effective
+40038-                                      10/1/2024        10/1/2025        10/1/2026          10/1/2027       10/1/2028
+40039-                                        $8.69            $9.02            $9.36              $9.71          $10.07
+40040-
+40041-                     c.     Commercial containers:
+40042-                            (i)    Uncompacted commercial:
+40043-
+40044-                                                        Fiscal Year 2025
+40045-                                                    Effective Date 10/1/2024
+40046-          Size                                             Times per Week Pickup
+40047-      (cubic yard)          1            2               3            4          5                 6            7
+40048-               1          $92.21       $167.27        $240.05       $331.54      $438.27         $636.30      $728.59
+40049-               2          167.37        305.71         444.06        611.43       813.94        1,197.31     1,364.64
+--
+41757-               038.440            Paving (See note D)                                               69.80
+41758-               038.450            Pile driving (See note D)                                         69.80
+41759-               038.460            Pipeline                                                          69.80
+41760-               038.470            Plaster and stucco specialty (see note D)                         69.80
+41761-               038.480            Plumbing (See note D)                                            191.10
+41762-               038.490            Pollutant storage systems; gasoline, oil, etc (See note D)        69.80
+41763-               038.500            Pressure cleaning                                                 69.80
+41764-               038.510            Prestressed precast concrete specialty (See note D)               69.80
+41765-               038.520            Refrigeration, commercial and industrial (See note D)             69.80
+41766-               038.530            Reinforcing steel specialty (See note D)                          69.80
+41767-               038.540            Roofing (See note D)                                              69.80
+41768-               038.550            Septic tank/sewer cleaning                                        69.80
+41769-               038.560            Sheet metal (See note D)                                          69.80
+41770-               038.570            Shutter and opening protectives (See note D)                      69.80
+41771-               038.580            Signs - electrical (See note D)                                   69.80
+41772-               038.590            Signs - nonelectrical (See note D)                                69.80
+41773-               038.600            Solar (See note D)                                                69.80
+41774-               038.610            Steel reinforcing (See note D)                                    69.80
+41775-               038.620            Structural masonry specialty (See note D)                         69.80
+41776-               038.630            Structural steel (See note D)                                     69.80
+41777:               038.640            Swimming pool, residential (See note D)                           69.80
+41778:               038.641            Swimming pool, commercial (See note D)                            69.80
+41779:               038.642            Swimming pool servicing (See note D)                              69.80
+41780:               038.643            Swimming pool, cleaning                                           69.80
+41781-               038.650            Tile and marble specialty (See note D)                            69.80
+41782-               038.660            Underground utility (See note D)                                  69.80
+41783-               038.670            Veneer specialty (See note D)                                     69.80
+41784-               038.680            Water softener installation and service                           69.80
+41785-               038.690            Welding                                                           69.80
+41786-               038.700            Well drilling (requires certification from SWFWMD)                69.80
+41787-               038.710            Window cleaning                                                   44.30
+41788-               038.720            Wrecking and dismantling (other than building)                    69.80
+41789-039.000                           COSTUME OR CLOTHING RENTAL                                        56.90
+41790-040.000                           DATA PROCESSING
+41791-               040.010            Software, consultant, programmer                                  95.20
+41792-               040.020            Web designer                                                      69.80
+41793-041.000                           DATING/ROOMMATE/ESCORT SERVICE (See note B)                      140.10
+41794-042.000                           DECORATOR, INTERIOR                                               69.80
+41795-043.000                           DELIVERY / MESSENGER SERVICE (includes first vehicle)             69.80
+41796-                                  Plus, each additional vehicle                                     25.20
+41797-044.000                           DESIGNER, INDUSTRIAL (See note D)                                 69.80
+41798-045.000                           DISC JOCKEY, FREE LANCE                                           69.80
+41799-046.000                           DIVER                                                             63.50
+41800-047.000                           DRAFTSMAN                                                         95.20
+--
+45612-                                                                                               Provide for annual audit of all city ac-
+45613-DAMAGES AGAINST CITY                                                                                 counts . . . . . . . . . . . . . . . . . . . . . . . . . .               2.01(c)
+45614-  Firemen's pension fund                                                                     Debt
+45615-     Effect of judgment for damages against                                                    Limitations on legislative power . . . . . . .                                2.01(d)
+45616-          city. . . . . . . . . . . . . . . . . . . . . . . . . . . . .           I-18
+45617-
+45618-
+45619-
+45620-Supp. No. 54                                                                          CHTi:2
+45621-                                                                        CHARTER AND RELATED LAWS INDEX
+45622-
+45623-
+45624-                                                                               Section                                                                                  Section
+45625-FINANCES (Cont'd.)                                                                         LICENSES AND PERMITS
+45626-  Expenditures                                                                               Alcoholic beverage licenses for P.A.C.T.,
+45627-     Non-budgeted expenditures in excess of                                                       Inc.
+45628-          $5 million                                                                           Generally . . . . . . . . . . . . . . . . . . . . . . . . . . . .            IV
+45629-       Limits on legislative power . . . . . . . . .                            2.01(d)      Dredging
+45630-  Fiscal management procedure. Charter, Ar-                                                    Limitations on legislative power . . . . . . .                           2.01(d)
+45631-       ticle IX                                                                              Vendors of certain malt beverages subject
+45632:  Purchases and purchasing                                                                        to zoning . . . . . . . . . . . . . . . . . . . . . . . . . .              V
+45633-     Limitations on legislative power . . . . . . .                             2.01(d)
+45634-  Rental                                                                                   LIMITATIONS
+45635-     Limitations on legislative power . . . . . . .                             2.01(d)      Council powers . . . . . . . . . . . . . . . . . . . . . . . . .           2.01(d)
+45636-  Reports
+45637-     Comprehensive report on financial and                                                                                                 M
+45638-          administrative activities of the city
+45639-                                                                                           MAYOR
+45640-       City manager to submit . . . . . . . . . . . .                           3.03(f)
+45641-                                                                                            Composition of council . . . . . . . . . . . . . . . . . .                  2.01(a)
+45642-FINES, FORFEITURES AND OTHER PEN-                                                           Functions and powers . . . . . . . . . . . . . . . . . . .                     2.05
+45643-     ALTIES                                                                                 Prohibitions . . . . . . . . . . . . . . . . . . . . . . . . . . . .           2.06
+45644-  City commission                                                                           Vice-mayor. See: VICE-MAYOR
+45645-     Forfeiture of office. . . . . . . . . . . . . . . . . . . .                2.07(b)    MEETINGS
+45646-                                                                                            City commission
+45647-FIREMEN'S PENSION FUND
+45648-                                                                                               City clerk to attend and keep minutes .                                  3.04(d)
+45649-  Generally . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        I et seq.
+45650-                                                                                               City clerk to give notice. . . . . . . . . . . . . . .                   3.04(e)
+45651-    See: RELATED LAWS
+45652-                                                                                               City manager to attend . . . . . . . . . . . . . . .                     3.03(c)
+--
+45768-  Recording of maps or plats or land in
+45769-       county records                                                                  VACANCIES
+45770-                                                                                         City commission . . . . . . . . . . . . . . . . . . . . . . . .            2.07(a)
+45771-    Effective date . . . . . . . . . . . . . . . . . . . . . . . .            III-2
+45772-                                                                                            Extraordinary. . . . . . . . . . . . . . . . . . . . . . . .            2.07(d)
+45773-    Maps, plats entitled to be recorded with-
+45774-                                                                                            Filling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   2.07(c)
+45775-          out approval of board of county
+45776-          commissioners . . . . . . . . . . . . . . . . . .                   III-1    VETO
+45777-  Revenue and excise tax bonds                                                           Mayor-commissioner does not have veto
+45778-    Additional security authorized. . . . . . . . .                            II-5          power . . . . . . . . . . . . . . . . . . . . . . . . . . . . .          2.05
+45779-    Article declared supplemental . . . . . . . . .                            II-1
+45780-    Effect of provisions on other powers . . .                                 II-8    VICE-MAYOR
+45781-    Excise tax bonds authorized. . . . . . . . . . .                           II-6      To act in absence of mayor-commissioner .                                    2.05
+45782-    Negotiable, bonds declared . . . . . . . . . . . .                         II-7    VOTING
+45783-    Prior acts, proceedings ratified . . . . . . . .                           II-9      City commission procedure . . . . . . . . . . . . . .                      2.08(c)
+45784-    Revenue bonds authorized . . . . . . . . . . . .                           II-2      Elections. See: ELECTIONS
+45785-    Revenue pledge . . . . . . . . . . . . . . . . . . . . . .                 II-4
+45786-    Terms, conditions of revenue bonds; ad-                                                                                             Z
+45787-          vertising authorization, sale. . . . . .                             II-3
+45788:  Vendors of certain malt beverages subject                                            ZONING
+45789:       to zoning                                                                         Council duties . . . . . . . . . . . . . . . . . . . . . . . . . .         2.01(c)
+45790-    Effective date . . . . . . . . . . . . . . . . . . . . . . . .              V-2      Vendors of certain malt beverages subject
+45791:    Vendors of certain malt beverages sub-                                                   to zoning . . . . . . . . . . . . . . . . . . . . . . . . . .               V
+45792:          ject to zoning . . . . . . . . . . . . . . . . . . .                  V-1
+45793-
+45794-REMOVALS
+45795-  City commission not to interfere . . . . . . . . .                        2.06(a)
+45796-
+45797-RENTAL
+45798-  Limitations on legislative power . . . . . . . . .                        2.01(d)
+45799-
+45800-REPORTS
+45801-  Comprehensive report on financial and ad-
+45802-       ministrative activities of the city
+45803-    City manager to submit. . . . . . . . . . . . . . .                     3.03(f)
+45804-
+45805-REVENUE AND EXCISE TAX BONDS
+45806-  Generally . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   II et seq.
+45807-    See: RELATED LAWS
+45808-
+45809-
+45810-                                               S
+45811-
+45812-SEAL
+--
+48743-  Parking                                                                                    Applicability to other Code sections . . .                                        28.99
+48744-     Generally . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30.041 et seq.        Construction specifications . . . . . . . . . . .                                 28.95
+48745-        See: MOTOR VEHICLES AND                                                              Collocation and cooperation . . . . . . . . . . .                                 28.96
+48746-              TRAFFIC                                                                        Damage or injury caused by utility . . . .                                        28.97
+48747-     Meters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30.091 et seq.       Definitions . . . . . . . . . . . . . . . . . . . . . . . . . .                   28.92
+48748-        See: MOTOR VEHICLES AND                                                              Emergencies . . . . . . . . . . . . . . . . . . . . . . . . .                     28.94
+48749-              TRAFFIC                                                                        Intent . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .              28.91
+48750-     Streets and alleys . . . . . . . . . . . . . . . . . . . .                30.041        Permit required . . . . . . . . . . . . . . . . . . . . . .                       28.93
+48751-  Parks, beaches and recreation areas . . . . .                          22.01 et seq.       Relocation required if requested . . . . . .                                      28.98
+48752-     See:     PARKS,               BEACHES                    AND                          Vacation of streets, alleys, rights-of-way,
+48753-           RECREATION AREAS                                                                      easements. . . . . . . . . . . . . . . . . . . . . . . . .                    28.05
+48754-  Permits                                                                                  Vehicle safety zone
+48755-     Construction of streets and sidewalks .                             28.41 et seq.       Bread and Roses Woman's Health Center
+48756-        See herein: Construction of Streets                                                         located at 1560 S. Highland Avenue                                         28.10
+48757-              and Sidewalks                                                                Wastewater collection . . . . . . . . . . . . . . . . . . .                 32.181 et seq.
+48758-  Play streets . . . . . . . . . . . . . . . . . . . . . . . . . . . .         30.011        See: WASTEWATER COLLECTION
+48759-  Playing ball in streets . . . . . . . . . . . . . . . . . .                   28.07      Water system . . . . . . . . . . . . . . . . . . . . . . . . . .            32.091 et seq.
+48760-  Property addresses                                                                         See: WATER SUPPLY AND DISTRIBU-
+48761-     City engineer, numbers provided by . . .                                   28.83               TION
+48762-     Enforcement of provisions . . . . . . . . . . . .                          28.86
+48763:     Numbers required, visibility, size . . . . .                               28.82    SUBDIVISIONS
+48764-     Odd and even numbers . . . . . . . . . . . . . . .                         28.84      Downtown development board . . . . . . . . . . .                             2.141 et seq.
+48765-     Official house number atlas . . . . . . . . . . .                          28.81        See: DOWNTOWN DEVELOPMENT
+48766-     Progression of numbers. . . . . . . . . . . . . . .                        28.85             BOARD
+48767-
+48768-
+48769-
+48770-Supp. No. 90                                                                        CDi:39
+48771-                                                                              CLEARWATER CODE
+48772-
+48773-
+48774-                                                                               Section                                                                                   Section
+48775-SUBDIVISIONS (Cont'd.)                                                                    TAMPERING
+48776-  Fire prevention code . . . . . . . . . . . . . . . . . . . .            17.31 et seq.     Gas meter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         32.339
+48777-     See: FIRE PREVENTION                                                                   Parking meters/revenue control equip-
+48778-  Gas system. . . . . . . . . . . . . . . . . . . . . . . . . . . . .    32.330 et seq.          ment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         30.098
+48779-     See: GAS
+48780-  Historical committee . . . . . . . . . . . . . . . . . . . .            2.171 et seq.   TANKS
+48781-     See: HISTORICAL COMMITTEE                                                              Bicycles, riding on tanks on . . . . . . . . . . . . .                        30.014
+48782-  Marine advisory board . . . . . . . . . . . . . . . . . .               2.196 et seq.   TAPPING
+48783-     See: MARINE ADVISORY BOARD                                                             Gas main . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .          32.334
+--
+49191- Emergencies . . . . . . . . . . . . . . . . . . . . . . . . . . .          15.11             als, processes, and occupancies . . .                                     17.34
+49192- Emergency management . . . . . . . . . . . . . . . .                15.01 et seq.    Liability of city and employees . . . . . . . . . .                        2.031 et seq.
+49193-   See: EMERGENCY MANAGEMENT                                                             See: OFFICERS AND EMPLOYEES
+49194-                                                                                      Pension plan
+49195-WEEDS AND BRUSH                                                                          Plan administration
+49196- Yard waste, preparation of solid waste . . .                        32.280(1)(d)          Defense of actions; trustee liability;
+49197-                                                                                                 indemnifications . . . . . . . . . . . . . .                        2.413(h)
+49198-WELLHEAD PROTECTION
+49199- Definitions . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    24.62
+49200- Enforcement of article—Inspections . . . . .                             24.68                                                      Y
+49201- Permit
+49202-                                                                                     YEAR
+49203-   Denial . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   24.66
+49204-                                                                                       Definitions and rules of construction gener-
+49205-   Required . . . . . . . . . . . . . . . . . . . . . . . . . . . .       24.63
+49206-                                                                                            ally . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .           1.02
+49207-   Requirements . . . . . . . . . . . . . . . . . . . . . . . .           24.64
+49208-   Revocation of . . . . . . . . . . . . . . . . . . . . . . . .          24.69
+49209- Purpose and intent of article . . . . . . . . . . . .                    24.61                                                      Z
+49210- Review of protection-containment plan . . .                              24.65
+49211: Sale of property, change of use . . . . . . . . . .                      24.67      ZONING
+49212- Violations and penalties . . . . . . . . . . . . . . . .                 24.70        Alcoholic beverage
+49213- Water system . . . . . . . . . . . . . . . . . . . . . . . . . . 32.091 et seq.          Establishments location restrictions . . .                              6.31(3)
+49214-   See: WATER SUPPLY AND DISTRIBU-                                                        Operation of establishment . . . . . . . . . . .                   6.21 et seq.
+49215-         TION                                                                               See: ALCOHOLIC BEVERAGES
+49216-                                                                                       Fire prevention code . . . . . . . . . . . . . . . . . . . .         17.31 et seq.
+49217-WELLS                                                                                     See: FIRE PREVENTION
+49218- Reclaimed water system                                                                Gas system. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32.330 et seq.
+49219-   Irrigation wells . . . . . . . . . . . . . . . . . . . . . .           32.377          See: GAS
+49220-   Shallow potable wells . . . . . . . . . . . . . . . .                  32.378       Historical committee . . . . . . . . . . . . . . . . . . . .         2.171 et seq.
+49221- Well mitigation . . . . . . . . . . . . . . . . . . . . . . . . . 32.171 et seq.         See: HISTORICAL COMMITTEE
+49222-   See: WATER SUPPLY AND DISTRIBU-                                                     Maps
+49223-         TION                                                                             Certain ordinances not affected by Code                               1.10(10)
+49224-
+49225-
+49226-
+49227-Supp. No. 90                                                                    CDi:45
+49228-                                                                             CLEARWATER CODE
+49229-
+49230-
+49231-                                                                              Section          Section
+49232:ZONING (Cont'd.)
+49233-  Marine advisory board . . . . . . . . . . . . . . . . . .              2.196 et seq.
+49234-    See: MARINE ADVISORY BOARD
+49235-  Solid waste generally . . . . . . . . . . . . . . . . . . .           32.271 et seq.
+49236-    See: SOLID WASTE
+49237-  Stormwater management . . . . . . . . . . . . . . .                   32.241 et seq.
+49238-    See: STORMWATER MANAGEMENT
+49239-  Utilities
+49240-    Emergencies . . . . . . . . . . . . . . . . . . . . . . . . .               15.13
+49241-    Generally . . . . . . . . . . . . . . . . . . . . . . . . . . . .   32.001 et seq.
+49242-        See: UTILITIES
+49243-  Waterways and vessels . . . . . . . . . . . . . . . . . .             33.001 et seq.
+49244-    See: WATERWAYS AND VESSELS
+49245-  Wellhead protection. . . . . . . . . . . . . . . . . . . . .           24.61 et seq.
+49246-    See: WELLHEAD PROTECTION
+49247-
+49248-
+49249-
+49250-
+49251-Supp. No. 90                                                                        CDi:46
+49252-
