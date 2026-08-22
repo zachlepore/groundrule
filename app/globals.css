@@ -1,0 +1,154 @@
+:root {
+  --background: #f7f7f4;
+  --foreground: #1c211e;
+  --muted: #626964;
+  --border: #c9ceca;
+  --accent: #1e4d39;
+  --accent-muted: #7f9188;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.shell {
+  display: grid;
+  min-height: 100svh;
+  padding: clamp(2rem, 6vw, 5rem);
+}
+
+.intro {
+  display: flex;
+  width: min(100%, 62rem);
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.wordmark {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.tagline {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.prompt {
+  width: min(100%, 44rem);
+  margin: clamp(7rem, 20vh, 13rem) auto 3rem;
+}
+
+.location {
+  margin: 0 0 1rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 15ch;
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.address-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem;
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+
+.address-form input,
+.address-form button {
+  min-height: 3.5rem;
+  border-radius: 0.2rem;
+}
+
+.address-form input {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--muted);
+  padding: 0 1rem;
+}
+
+.address-form input::placeholder {
+  color: #737a75;
+  opacity: 1;
+}
+
+.address-form button {
+  border: 1px solid var(--accent-muted);
+  background: var(--accent-muted);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0 1.5rem;
+}
+
+.address-form :disabled {
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.status {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 36rem) {
+  .shell {
+    padding: 1.5rem;
+  }
+
+  .prompt {
+    margin-top: 7rem;
+  }
+
+  .address-form {
+    grid-template-columns: 1fr;
+  }
+
+  .address-form button {
+    width: 100%;
+  }
+}
