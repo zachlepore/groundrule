@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test:evaluator": "tsx --test tests/evaluator.test.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.109.0",
@@ -20,6 +21,7 @@
     "@types/react-dom": "^19.0.0",
     "eslint": "^9.0.0",
     "eslint-config-next": "16.3.2",
+    "tsx": "^4.23.12",
     "typescript": "^5.0.0"
   }
 }
