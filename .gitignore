@@ -24,3 +24,6 @@ npm-debug.log*
 .DS_Store
 
 /source-material/
+
+# GIS pilot scratch files (curated snapshots under research/gis/data are tracked)
+/research/gis/data/clearwater-pilot-v1/.tmp/
