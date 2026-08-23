@@ -1,0 +1,106 @@
+{
+  "addresses": {
+    "name": "addresses",
+    "agency": "Pinellas County",
+    "layerUrl": "https://egis.pinellas.gov/gis/rest/services/PublicWebGIS/Parcels/MapServer/0",
+    "queryUrl": "https://egis.pinellas.gov/gis/rest/services/PublicWebGIS/Parcels/MapServer/0/query",
+    "retrievedAt": "2026-08-23T23:21:57.885Z",
+    "bbox": [
+      -82.7605,
+      27.974,
+      -82.7555,
+      27.979
+    ],
+    "requestedFields": [
+      "OBJECTID",
+      "PIN_NUM",
+      "SITEADDID",
+      "ADDPTKEY",
+      "FULLADDR",
+      "MUNICIPALITY",
+      "POSTCODE",
+      "STATUS"
+    ],
+    "objectIdField": null,
+    "geometryType": "esriGeometryPoint",
+    "spatialReference": {
+      "wkid": 2882,
+      "latestWkid": 2882
+    },
+    "capabilities": "Map,Query,Data",
+    "maxRecordCount": 1000,
+    "serviceLastEditDate": null,
+    "supportsPagination": true,
+    "supportsGeoJSON": true,
+    "recordCount": 8,
+    "sha256": "a6a007a3dd82a5f5d351ff015f2f2ba6c9f0b013f811518b2fee8b8acbd10c27"
+  },
+  "parcels": {
+    "name": "parcels",
+    "agency": "Pinellas County",
+    "layerUrl": "https://egis.pinellas.gov/gis/rest/services/PublicWebGIS/Parcels/MapServer/1",
+    "queryUrl": "https://egis.pinellas.gov/gis/rest/services/PublicWebGIS/Parcels/MapServer/1/query",
+    "retrievedAt": "2026-08-23T23:21:58.093Z",
+    "bbox": [
+      -82.7605,
+      27.974,
+      -82.7555,
+      27.979
+    ],
+    "requestedFields": [
+      "OBJECTID",
+      "PARCELID",
+      "STRAP",
+      "SITE_ADDRESS",
+      "SITE_CITY",
+      "SITE_STATE",
+      "SITE_ZIP",
+      "LAND_USE_CODE"
+    ],
+    "objectIdField": null,
+    "geometryType": "esriGeometryPolygon",
+    "spatialReference": {
+      "wkid": 2882,
+      "latestWkid": 2882
+    },
+    "capabilities": "Map,Query,Data",
+    "maxRecordCount": 1000,
+    "serviceLastEditDate": null,
+    "supportsPagination": true,
+    "supportsGeoJSON": true,
+    "recordCount": 20,
+    "sha256": "a6d7b437f897be9922353905d8c655badb48eaf028c8c6bfb3b9bc35dbcbc1b7"
+  },
+  "zoning": {
+    "name": "zoning",
+    "agency": "City of Clearwater",
+    "layerUrl": "https://gis.myclearwater.com/arcgis/rest/services/ArcGISMapServices/Zoning_WGS84/MapServer/1",
+    "queryUrl": "https://gis.myclearwater.com/arcgis/rest/services/ArcGISMapServices/Zoning_WGS84/MapServer/1/query",
+    "retrievedAt": "2026-08-23T23:22:03.330Z",
+    "bbox": [
+      -82.7605,
+      27.974,
+      -82.7555,
+      27.979
+    ],
+    "requestedFields": [
+      "OBJECTID",
+      "ZONING",
+      "ZONING_DESC",
+      "SPECIAL"
+    ],
+    "objectIdField": null,
+    "geometryType": "esriGeometryPolygon",
+    "spatialReference": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    },
+    "capabilities": "Map,Query,Data",
+    "maxRecordCount": 1000,
+    "serviceLastEditDate": null,
+    "supportsPagination": true,
+    "supportsGeoJSON": true,
+    "recordCount": 4,
+    "sha256": "f13967dfd84e5c3f9b8ba84a95f8c022ead31bbf8edcf32000190f86ee7a8fb0"
+  }
+}

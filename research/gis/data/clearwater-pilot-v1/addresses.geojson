@@ -1,0 +1,173 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 156894,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.76031108262961,
+          27.97529167929927
+        ]
+      },
+      "properties": {
+        "OBJECTID": 156894,
+        "PIN_NUM": "122915000003200100",
+        "SITEADDID": "51002970",
+        "ADDPTKEY": null,
+        "FULLADDR": "1875 AIRPORT DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157059,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75590026160147,
+          27.974086576707858
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157059,
+        "PIN_NUM": "122915558360010001",
+        "SITEADDID": "51003189",
+        "ADDPTKEY": null,
+        "FULLADDR": "1000 N HERCULES AVE BLDG HANGER",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157060,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75598326447336,
+          27.976316813850183
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157060,
+        "PIN_NUM": "122915558360010003",
+        "SITEADDID": "51003191",
+        "ADDPTKEY": null,
+        "FULLADDR": "1180 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157062,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75674993235947,
+          27.976507063414637
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157062,
+        "PIN_NUM": "122915558360010006",
+        "SITEADDID": "51003194",
+        "ADDPTKEY": null,
+        "FULLADDR": "1000 N HERCULES AVE BLDG A",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157063,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75696039565008,
+          27.977719608876196
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157063,
+        "PIN_NUM": "122915558360010009",
+        "SITEADDID": "51003196",
+        "ADDPTKEY": null,
+        "FULLADDR": "1900 GRAND AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157064,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7584889005372,
+          27.97803181066252
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157064,
+        "PIN_NUM": "122915558360010001",
+        "SITEADDID": "51003199",
+        "ADDPTKEY": null,
+        "FULLADDR": "1000 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 410686,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75598238039419,
+          27.976315679904204
+        ]
+      },
+      "properties": {
+        "OBJECTID": 410686,
+        "PIN_NUM": "122915558360010003",
+        "SITEADDID": "53143949",
+        "ADDPTKEY": null,
+        "FULLADDR": "1971 GRAND AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 459896,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75591823928175,
+          27.978440474128
+        ]
+      },
+      "properties": {
+        "OBJECTID": 459896,
+        "PIN_NUM": "122915558360010002",
+        "SITEADDID": "51003190",
+        "ADDPTKEY": null,
+        "FULLADDR": "1310 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    }
+  ]
+}

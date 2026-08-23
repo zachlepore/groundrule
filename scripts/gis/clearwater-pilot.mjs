@@ -4,8 +4,11 @@
 import { createHash } from "node:crypto";
 import { mkdir, rename, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const ROOT = path.resolve(import.meta.dirname, "../..");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const ROOT = path.resolve(__dirname, "../..");
 const OUT = path.join(ROOT, "research/gis/data/clearwater-pilot-v1");
 const TMP = path.join(OUT, ".tmp");
 const BBOX = [-82.7605, 27.974, -82.7555, 27.979];

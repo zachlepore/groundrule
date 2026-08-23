@@ -1,0 +1,323 @@
+[
+  {
+    "displayAddress": "1875 AIRPORT DR",
+    "normalizedAddress": "1875 AIRPORT DR",
+    "sourceAddressIdentifier": 156894,
+    "parcelIdentifier": "122915000003200100",
+    "parcelSourceIdentifier": 1033899,
+    "parcelMatchMethod": "spatial_covers",
+    "zoningCode": "OS/R",
+    "normalizedZoningCode": null,
+    "zoningDescription": "Open Space/Recreation",
+    "zoningSourceIdentifier": 10563,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning",
+      "unsupported_zoning_code"
+    ],
+    "addressCoordinates": [
+      -82.76031108262961,
+      27.97529167929927
+    ],
+    "parcelRepresentativePoint": [
+      -82.76135030353689,
+      27.975195969835045
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:21:57.885Z",
+        "sha256": "a6a007a3dd82a5f5d351ff015f2f2ba6c9f0b013f811518b2fee8b8acbd10c27"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:21:58.093Z",
+        "sha256": "a6d7b437f897be9922353905d8c655badb48eaf028c8c6bfb3b9bc35dbcbc1b7"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:22:03.330Z",
+        "sha256": "f13967dfd84e5c3f9b8ba84a95f8c022ead31bbf8edcf32000190f86ee7a8fb0"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "1000 N HERCULES AVE BLDG HANGER",
+    "normalizedAddress": "1000 N HERCULES AVE BLDG HANGER",
+    "sourceAddressIdentifier": 157059,
+    "parcelIdentifier": "122915558360010001",
+    "parcelSourceIdentifier": 731805,
+    "parcelMatchMethod": "spatial_covers",
+    "zoningCode": "I",
+    "normalizedZoningCode": "i",
+    "zoningDescription": "Institutional",
+    "zoningSourceIdentifier": 10818,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75590026160147,
+      27.974086576707858
+    ],
+    "parcelRepresentativePoint": [
+      -82.75653363776898,
+      27.975158206584787
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:21:57.885Z",
+        "sha256": "a6a007a3dd82a5f5d351ff015f2f2ba6c9f0b013f811518b2fee8b8acbd10c27"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:21:58.093Z",
+        "sha256": "a6d7b437f897be9922353905d8c655badb48eaf028c8c6bfb3b9bc35dbcbc1b7"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:22:03.330Z",
+        "sha256": "f13967dfd84e5c3f9b8ba84a95f8c022ead31bbf8edcf32000190f86ee7a8fb0"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "i"
+    }
+  },
+  {
+    "displayAddress": "1180 N HERCULES AVE",
+    "normalizedAddress": "1180 N HERCULES AVE",
+    "sourceAddressIdentifier": 157060,
+    "parcelIdentifier": "122915558360010003",
+    "parcelSourceIdentifier": 994502,
+    "parcelMatchMethod": "spatial_covers",
+    "zoningCode": "IRT",
+    "normalizedZoningCode": "irt",
+    "zoningDescription": "Industrial Research and Technology",
+    "zoningSourceIdentifier": 10793,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75598326447336,
+      27.976316813850183
+    ],
+    "parcelRepresentativePoint": [
+      -82.75558779637825,
+      27.976269867956184
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:21:57.885Z",
+        "sha256": "a6a007a3dd82a5f5d351ff015f2f2ba6c9f0b013f811518b2fee8b8acbd10c27"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:21:58.093Z",
+        "sha256": "a6d7b437f897be9922353905d8c655badb48eaf028c8c6bfb3b9bc35dbcbc1b7"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:22:03.330Z",
+        "sha256": "f13967dfd84e5c3f9b8ba84a95f8c022ead31bbf8edcf32000190f86ee7a8fb0"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "1000 N HERCULES AVE BLDG A",
+    "normalizedAddress": "1000 N HERCULES AVE BLDG A",
+    "sourceAddressIdentifier": 157062,
+    "parcelIdentifier": "122915558360010006",
+    "parcelSourceIdentifier": 1082609,
+    "parcelMatchMethod": "spatial_covers",
+    "zoningCode": "I",
+    "normalizedZoningCode": "i",
+    "zoningDescription": "Institutional",
+    "zoningSourceIdentifier": 10818,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75674993235947,
+      27.976507063414637
+    ],
+    "parcelRepresentativePoint": [
+      -82.75695904188409,
+      27.976256231853085
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:21:57.885Z",
+        "sha256": "a6a007a3dd82a5f5d351ff015f2f2ba6c9f0b013f811518b2fee8b8acbd10c27"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:21:58.093Z",
+        "sha256": "a6d7b437f897be9922353905d8c655badb48eaf028c8c6bfb3b9bc35dbcbc1b7"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:22:03.330Z",
+        "sha256": "f13967dfd84e5c3f9b8ba84a95f8c022ead31bbf8edcf32000190f86ee7a8fb0"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "1900 GRAND AVE",
+    "normalizedAddress": "1900 GRAND AVE",
+    "sourceAddressIdentifier": 157063,
+    "parcelIdentifier": "122915558360010009",
+    "parcelSourceIdentifier": 739621,
+    "parcelMatchMethod": "spatial_covers",
+    "zoningCode": "IRT",
+    "normalizedZoningCode": "irt",
+    "zoningDescription": "Industrial Research and Technology",
+    "zoningSourceIdentifier": 10793,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75696039565008,
+      27.977719608876196
+    ],
+    "parcelRepresentativePoint": [
+      -82.75712175538388,
+      27.977951957989344
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:21:57.885Z",
+        "sha256": "a6a007a3dd82a5f5d351ff015f2f2ba6c9f0b013f811518b2fee8b8acbd10c27"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:21:58.093Z",
+        "sha256": "a6d7b437f897be9922353905d8c655badb48eaf028c8c6bfb3b9bc35dbcbc1b7"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:22:03.330Z",
+        "sha256": "f13967dfd84e5c3f9b8ba84a95f8c022ead31bbf8edcf32000190f86ee7a8fb0"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "irt"
+    }
+  },
+  {
+    "displayAddress": "1000 N HERCULES AVE",
+    "normalizedAddress": "1000 N HERCULES AVE",
+    "sourceAddressIdentifier": 157064,
+    "parcelIdentifier": "122915558360010012",
+    "parcelSourceIdentifier": 747976,
+    "parcelMatchMethod": "spatial_covers",
+    "zoningCode": "I",
+    "normalizedZoningCode": "i",
+    "zoningDescription": "Institutional",
+    "zoningSourceIdentifier": 10818,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.7584889005372,
+      27.97803181066252
+    ],
+    "parcelRepresentativePoint": [
+      -82.75963335529318,
+      27.978983007083983
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:21:57.885Z",
+        "sha256": "a6a007a3dd82a5f5d351ff015f2f2ba6c9f0b013f811518b2fee8b8acbd10c27"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:21:58.093Z",
+        "sha256": "a6d7b437f897be9922353905d8c655badb48eaf028c8c6bfb3b9bc35dbcbc1b7"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:22:03.330Z",
+        "sha256": "f13967dfd84e5c3f9b8ba84a95f8c022ead31bbf8edcf32000190f86ee7a8fb0"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "1971 GRAND AVE",
+    "normalizedAddress": "1971 GRAND AVE",
+    "sourceAddressIdentifier": 410686,
+    "parcelIdentifier": "122915558360010003",
+    "parcelSourceIdentifier": 994502,
+    "parcelMatchMethod": "spatial_covers",
+    "zoningCode": "IRT",
+    "normalizedZoningCode": "irt",
+    "zoningDescription": "Industrial Research and Technology",
+    "zoningSourceIdentifier": 10793,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75598238039419,
+      27.976315679904204
+    ],
+    "parcelRepresentativePoint": [
+      -82.75558779637825,
+      27.976269867956184
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:21:57.885Z",
+        "sha256": "a6a007a3dd82a5f5d351ff015f2f2ba6c9f0b013f811518b2fee8b8acbd10c27"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:21:58.093Z",
+        "sha256": "a6d7b437f897be9922353905d8c655badb48eaf028c8c6bfb3b9bc35dbcbc1b7"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:22:03.330Z",
+        "sha256": "f13967dfd84e5c3f9b8ba84a95f8c022ead31bbf8edcf32000190f86ee7a8fb0"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "1310 N HERCULES AVE",
+    "normalizedAddress": "1310 N HERCULES AVE",
+    "sourceAddressIdentifier": 459896,
+    "parcelIdentifier": "122915558360010002",
+    "parcelSourceIdentifier": 1008878,
+    "parcelMatchMethod": "spatial_covers",
+    "zoningCode": "IRT",
+    "normalizedZoningCode": "irt",
+    "zoningDescription": "Industrial Research and Technology",
+    "zoningSourceIdentifier": 10793,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75591823928175,
+      27.978440474128
+    ],
+    "parcelRepresentativePoint": [
+      -82.7560792478996,
+      27.978783864735572
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:21:57.885Z",
+        "sha256": "a6a007a3dd82a5f5d351ff015f2f2ba6c9f0b013f811518b2fee8b8acbd10c27"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:21:58.093Z",
+        "sha256": "a6d7b437f897be9922353905d8c655badb48eaf028c8c6bfb3b9bc35dbcbc1b7"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:22:03.330Z",
+        "sha256": "f13967dfd84e5c3f9b8ba84a95f8c022ead31bbf8edcf32000190f86ee7a8fb0"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "irt"
+    }
+  }
+]
