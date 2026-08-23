@@ -1,0 +1,28 @@
+{
+  "pilotName": "clearwater-residential-pilot-v2",
+  "addressesFetched": 126,
+  "uniqueParcelsRepresented": 114,
+  "parcelsFetched": 123,
+  "zoningPolygonsFetched": 5,
+  "cleanPropertyProfiles": 110,
+  "reviewPropertyProfiles": 16,
+  "unmatchedAddresses": 0,
+  "duplicateOrAmbiguousAddressMatches": 0,
+  "parcelsWithNoZoning": 0,
+  "parcelsWithAmbiguousZoning": 7,
+  "zoningDistrictsRepresented": [
+    "C",
+    "LMDR",
+    "MDR",
+    "OS/R"
+  ],
+  "evaluatorReadyZoningDistrictProfiles": 110,
+  "evaluatorReadyZoningDistrictPercentage": 87.3,
+  "matchMethodsUsed": {
+    "authoritative_identifier": 126
+  },
+  "issueCountsByType": {
+    "parcel_ambiguous_zoning": 15,
+    "unsupported_zoning_code": 1
+  }
+}

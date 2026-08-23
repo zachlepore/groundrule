@@ -1,0 +1,2651 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1581,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75287829523481,
+          27.96854172300167
+        ]
+      },
+      "properties": {
+        "OBJECTID": 1581,
+        "PIN_NUM": "122915826560090020",
+        "SITEADDID": "51003400",
+        "ADDPTKEY": null,
+        "FULLADDR": "208 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3363,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75384014922457,
+          27.97142994419989
+        ]
+      },
+      "properties": {
+        "OBJECTID": 3363,
+        "PIN_NUM": "122915826380010120",
+        "SITEADDID": "51277200",
+        "ADDPTKEY": null,
+        "FULLADDR": "2011 MARILYN ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157000,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75584392525111,
+          27.970450761449406
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157000,
+        "PIN_NUM": "122915557820210060",
+        "SITEADDID": "51003117",
+        "ADDPTKEY": null,
+        "FULLADDR": "1952 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157001,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75562389971884,
+          27.970440969968028
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157001,
+        "PIN_NUM": "122915557820210070",
+        "SITEADDID": "51003118",
+        "ADDPTKEY": null,
+        "FULLADDR": "1956 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157002,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75514939727782,
+          27.970812144655472
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157002,
+        "PIN_NUM": "122915557820210140",
+        "SITEADDID": "51003120",
+        "ADDPTKEY": null,
+        "FULLADDR": "1967 GILBERT ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157003,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75489902645987,
+          27.97089328460539
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157003,
+        "PIN_NUM": "122915557820210141",
+        "SITEADDID": "51003121",
+        "ADDPTKEY": null,
+        "FULLADDR": "1971 GILBERT ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157004,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75537244474114,
+          27.970810916656323
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157004,
+        "PIN_NUM": "122915557820210150",
+        "SITEADDID": "51003122",
+        "ADDPTKEY": null,
+        "FULLADDR": "1963 GILBERT ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157005,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75561099954488,
+          27.970812355394518
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157005,
+        "PIN_NUM": "122915557820210170",
+        "SITEADDID": "51003123",
+        "ADDPTKEY": null,
+        "FULLADDR": "1955 GILBERT ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157006,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75589577356881,
+          27.969889378583517
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157006,
+        "PIN_NUM": "122915557820220010",
+        "SITEADDID": "51003125",
+        "ADDPTKEY": null,
+        "FULLADDR": "1953 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157008,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7559342037871,
+          27.969625120720533
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157008,
+        "PIN_NUM": "122915557820220030",
+        "SITEADDID": "51003127",
+        "ADDPTKEY": null,
+        "FULLADDR": "311 CINCINNATI PKWY",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157009,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7558552817362,
+          27.969413769889478
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157009,
+        "PIN_NUM": "122915557820220040",
+        "SITEADDID": "51003128",
+        "ADDPTKEY": null,
+        "FULLADDR": "305 CINCINNATI PKWY",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157010,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75556093786939,
+          27.96943740376118
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157010,
+        "PIN_NUM": "122915557820220050",
+        "SITEADDID": "51003129",
+        "ADDPTKEY": null,
+        "FULLADDR": "1956 HARDING PLZ",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157011,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75507480155895,
+          27.96944281840453
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157011,
+        "PIN_NUM": "122915557820220070",
+        "SITEADDID": "51003131",
+        "ADDPTKEY": null,
+        "FULLADDR": "1968 HARDING PLZ",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157012,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75505956662097,
+          27.969924235022397
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157012,
+        "PIN_NUM": "122915557820220100",
+        "SITEADDID": "51003132",
+        "ADDPTKEY": null,
+        "FULLADDR": "1967 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157013,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75484891424908,
+          27.96992539358425
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157013,
+        "PIN_NUM": "122915557820220101",
+        "SITEADDID": "51003133",
+        "ADDPTKEY": null,
+        "FULLADDR": "1971 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157014,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75526997202199,
+          27.969887321530337
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157014,
+        "PIN_NUM": "122915557820220120",
+        "SITEADDID": "51003134",
+        "ADDPTKEY": null,
+        "FULLADDR": "1963 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157015,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75547135001912,
+          27.969888963707294
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157015,
+        "PIN_NUM": "122915557820220130",
+        "SITEADDID": "51003135",
+        "ADDPTKEY": null,
+        "FULLADDR": "1959 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157050,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75590643956967,
+          27.96875337421591
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157050,
+        "PIN_NUM": "122915557820250010",
+        "SITEADDID": "51003179",
+        "ADDPTKEY": null,
+        "FULLADDR": "209 CINCINNATI PKWY",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157051,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75539216467246,
+          27.968750703973868
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157051,
+        "PIN_NUM": "122915557820250080",
+        "SITEADDID": "51003180",
+        "ADDPTKEY": null,
+        "FULLADDR": "1965 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157052,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75513502772675,
+          27.968749368580184
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157052,
+        "PIN_NUM": "122915557820250110",
+        "SITEADDID": "51003181",
+        "ADDPTKEY": null,
+        "FULLADDR": "1971 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157053,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75487626265621,
+          27.968514249885146
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157053,
+        "PIN_NUM": "122915557820250170",
+        "SITEADDID": "51003182",
+        "ADDPTKEY": null,
+        "FULLADDR": "1976 DREW PLZ",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157054,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7551333990532,
+          27.96851558577348
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157054,
+        "PIN_NUM": "122915557820250210",
+        "SITEADDID": "51003183",
+        "ADDPTKEY": null,
+        "FULLADDR": "1970 DREW PLZ",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157055,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75564767285302,
+          27.96851825700481
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157055,
+        "PIN_NUM": "122915557820250270",
+        "SITEADDID": "51003185",
+        "ADDPTKEY": null,
+        "FULLADDR": "1954 DREW PLZ",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157175,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75423979402868,
+          27.971430499864187
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157175,
+        "PIN_NUM": "122915826380010010",
+        "SITEADDID": "51003339",
+        "ADDPTKEY": null,
+        "FULLADDR": "2001 MARILYN ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157176,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75423830202635,
+          27.971215971375457
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157176,
+        "PIN_NUM": "122915826380010020",
+        "SITEADDID": "51003340",
+        "ADDPTKEY": null,
+        "FULLADDR": "417 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157177,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75423690466961,
+          27.97101519555688
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157177,
+        "PIN_NUM": "122915826380010030",
+        "SITEADDID": "51003341",
+        "ADDPTKEY": null,
+        "FULLADDR": "413 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157178,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75423550731468,
+          27.97081441792767
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157178,
+        "PIN_NUM": "122915826380010040",
+        "SITEADDID": "51003342",
+        "ADDPTKEY": null,
+        "FULLADDR": "409 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157179,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75423720781494,
+          27.97061362421292
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157179,
+        "PIN_NUM": "122915826380010050",
+        "SITEADDID": "51003343",
+        "ADDPTKEY": null,
+        "FULLADDR": "405 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157180,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383605471973,
+          27.970395787794725
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157180,
+        "PIN_NUM": "122915826380010070",
+        "SITEADDID": "51003344",
+        "ADDPTKEY": null,
+        "FULLADDR": "2010 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157181,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383754690382,
+          27.97061031812804
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157181,
+        "PIN_NUM": "122915826380010080",
+        "SITEADDID": "51003345",
+        "ADDPTKEY": null,
+        "FULLADDR": "404 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157182,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383584464697,
+          27.970811111857994
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157182,
+        "PIN_NUM": "122915826380010090",
+        "SITEADDID": "51003346",
+        "ADDPTKEY": null,
+        "FULLADDR": "408 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157183,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7538372422782,
+          27.971011889500232
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157183,
+        "PIN_NUM": "122915826380010100",
+        "SITEADDID": "51003347",
+        "ADDPTKEY": null,
+        "FULLADDR": "412 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157184,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383863787853,
+          27.97121266534299
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157184,
+        "PIN_NUM": "122915826380010110",
+        "SITEADDID": "51003348",
+        "ADDPTKEY": null,
+        "FULLADDR": "416 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157185,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75423336096277,
+          27.970023208036523
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157185,
+        "PIN_NUM": "122915826380020010",
+        "SITEADDID": "51003349",
+        "ADDPTKEY": null,
+        "FULLADDR": "2001 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157186,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75423620856272,
+          27.969579449881895
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157186,
+        "PIN_NUM": "122915826380020030",
+        "SITEADDID": "51003350",
+        "ADDPTKEY": null,
+        "FULLADDR": "309 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157187,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7542363779602,
+          27.96915862687548
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157187,
+        "PIN_NUM": "122915826380020050",
+        "SITEADDID": "51003351",
+        "ADDPTKEY": null,
+        "FULLADDR": "2000 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157188,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383674152845,
+          27.969158071037572
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157188,
+        "PIN_NUM": "122915826380020060",
+        "SITEADDID": "51003352",
+        "ADDPTKEY": null,
+        "FULLADDR": "2010 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157189,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383825173002,
+          27.9693753508674
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157189,
+        "PIN_NUM": "122915826380020070",
+        "SITEADDID": "51003353",
+        "ADDPTKEY": null,
+        "FULLADDR": "304 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157190,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383484917998,
+          27.969776938381145
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157190,
+        "PIN_NUM": "122915826380020090",
+        "SITEADDID": "51003354",
+        "ADDPTKEY": null,
+        "FULLADDR": "314 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157191,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383635941083,
+          27.969994217289177
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157191,
+        "PIN_NUM": "122915826380020100",
+        "SITEADDID": "51003355",
+        "ADDPTKEY": null,
+        "FULLADDR": "2009 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157192,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7542367577831,
+          27.968768057745258
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157192,
+        "PIN_NUM": "122915826380030010",
+        "SITEADDID": "51003356",
+        "ADDPTKEY": null,
+        "FULLADDR": "2001 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157193,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7542367577831,
+          27.968768057745258
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157193,
+        "PIN_NUM": "122915826380030010",
+        "SITEADDID": "51003357",
+        "ADDPTKEY": null,
+        "FULLADDR": "213 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157194,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75423830736199,
+          27.96854526022021
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157194,
+        "PIN_NUM": "122915826380030020",
+        "SITEADDID": "51003358",
+        "ADDPTKEY": null,
+        "FULLADDR": "209 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157204,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383886231576,
+          27.968572207905158
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157204,
+        "PIN_NUM": "122915826380030070",
+        "SITEADDID": "51003368",
+        "ADDPTKEY": null,
+        "FULLADDR": "210 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157205,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383886231576,
+          27.968572207905158
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157205,
+        "PIN_NUM": "122915826380030070",
+        "SITEADDID": "51003369",
+        "ADDPTKEY": null,
+        "FULLADDR": "212 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157206,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383710367474,
+          27.968764751525345
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157206,
+        "PIN_NUM": "122915826380030080",
+        "SITEADDID": "51003370",
+        "ADDPTKEY": null,
+        "FULLADDR": "2009 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157207,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383710367474,
+          27.968764751525345
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157207,
+        "PIN_NUM": "122915826380030080",
+        "SITEADDID": "51003371",
+        "ADDPTKEY": null,
+        "FULLADDR": "216 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157208,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7532531492773,
+          27.968542416426573
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157208,
+        "PIN_NUM": "122915826380040020",
+        "SITEADDID": "51003375",
+        "ADDPTKEY": null,
+        "FULLADDR": "209 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157209,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7532531492773,
+          27.968542416426573
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157209,
+        "PIN_NUM": "122915826380040020",
+        "SITEADDID": "51003376",
+        "ADDPTKEY": null,
+        "FULLADDR": "211 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157214,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75325704444657,
+          27.969994646842384
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157214,
+        "PIN_NUM": "122915826380050010",
+        "SITEADDID": "51003382",
+        "ADDPTKEY": null,
+        "FULLADDR": "2019 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157215,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7532555152579,
+          27.969774617555995
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157215,
+        "PIN_NUM": "122915826380050020",
+        "SITEADDID": "51003383",
+        "ADDPTKEY": null,
+        "FULLADDR": "315 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157216,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75325411979257,
+          27.969573839845147
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157216,
+        "PIN_NUM": "122915826380050030",
+        "SITEADDID": "51003384",
+        "ADDPTKEY": null,
+        "FULLADDR": "311 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157217,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75325121430933,
+          27.9691557840794
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157217,
+        "PIN_NUM": "122915826380050050",
+        "SITEADDID": "51003385",
+        "ADDPTKEY": null,
+        "FULLADDR": "2020 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157218,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75325790072934,
+          27.971009567015226
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157218,
+        "PIN_NUM": "122915826380060030",
+        "SITEADDID": "51003387",
+        "ADDPTKEY": null,
+        "FULLADDR": "413 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157219,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75325511068813,
+          27.970608013459046
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157219,
+        "PIN_NUM": "122915826380060050",
+        "SITEADDID": "51003388",
+        "ADDPTKEY": null,
+        "FULLADDR": "405 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157220,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75325671749144,
+          27.97039346703938
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157220,
+        "PIN_NUM": "122915826380060060",
+        "SITEADDID": "51003389",
+        "ADDPTKEY": null,
+        "FULLADDR": "2020 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157221,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75288592437178,
+          27.971424179098392
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157221,
+        "PIN_NUM": "122915826560070010",
+        "SITEADDID": "51003390",
+        "ADDPTKEY": null,
+        "FULLADDR": "2025 MARILYN ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157222,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75288443402525,
+          27.971209649645722
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157222,
+        "PIN_NUM": "122915826560070020",
+        "SITEADDID": "51003391",
+        "ADDPTKEY": null,
+        "FULLADDR": "416 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157223,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75288474216796,
+          27.97080807912061
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157223,
+        "PIN_NUM": "122915826560070040",
+        "SITEADDID": "51003393",
+        "ADDPTKEY": null,
+        "FULLADDR": "408 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157224,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75288644618627,
+          27.970607285367997
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157224,
+        "PIN_NUM": "122915826560070050",
+        "SITEADDID": "51003394",
+        "ADDPTKEY": null,
+        "FULLADDR": "404 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157225,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75288493679683,
+          27.970390005534966
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157225,
+        "PIN_NUM": "122915826560070060",
+        "SITEADDID": "51003395",
+        "ADDPTKEY": null,
+        "FULLADDR": "2030 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157226,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75288375577787,
+          27.9697739063618
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157226,
+        "PIN_NUM": "122915826560080020",
+        "SITEADDID": "51003396",
+        "ADDPTKEY": null,
+        "FULLADDR": "312 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157227,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75288096624425,
+          27.969372351802097
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157227,
+        "PIN_NUM": "122915826560080040",
+        "SITEADDID": "51003397",
+        "ADDPTKEY": null,
+        "FULLADDR": "306 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157228,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75287945796053,
+          27.96915507192423
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157228,
+        "PIN_NUM": "122915826560080050",
+        "SITEADDID": "51003398",
+        "ADDPTKEY": null,
+        "FULLADDR": "2030 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157229,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75288292136155,
+          27.968761735396157
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157229,
+        "PIN_NUM": "122915826560090010",
+        "SITEADDID": "51003399",
+        "ADDPTKEY": null,
+        "FULLADDR": "2029 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157230,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75287829523481,
+          27.96854172300167
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157230,
+        "PIN_NUM": "122915826560090020",
+        "SITEADDID": "51003401",
+        "ADDPTKEY": null,
+        "FULLADDR": "2031 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157234,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75235304944836,
+          27.97142159945384
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157234,
+        "PIN_NUM": "122915826560100010",
+        "SITEADDID": "51003405",
+        "ADDPTKEY": null,
+        "FULLADDR": "2041 MARILYN ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157235,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75235154209845,
+          27.971204320516655
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157235,
+        "PIN_NUM": "122915826560100020",
+        "SITEADDID": "51003406",
+        "ADDPTKEY": null,
+        "FULLADDR": "417 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157236,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7523504774419,
+          27.9706047225865
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157236,
+        "PIN_NUM": "122915826560100050",
+        "SITEADDID": "51003407",
+        "ADDPTKEY": null,
+        "FULLADDR": "405 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157237,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75234896912634,
+          27.970387442726576
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157237,
+        "PIN_NUM": "122915826560100060",
+        "SITEADDID": "51003408",
+        "ADDPTKEY": null,
+        "FULLADDR": "2040 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157238,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7520081857871,
+          27.970386559809988
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157238,
+        "PIN_NUM": "122915826560100070",
+        "SITEADDID": "51003409",
+        "ADDPTKEY": null,
+        "FULLADDR": "2050 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157239,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75200967434884,
+          27.97060108933159
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157239,
+        "PIN_NUM": "122915826560100080",
+        "SITEADDID": "51003410",
+        "ADDPTKEY": null,
+        "FULLADDR": "404 GRAHAM DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157240,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75201106755823,
+          27.970801865265273
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157240,
+        "PIN_NUM": "122915826560100090",
+        "SITEADDID": "51003411",
+        "ADDPTKEY": null,
+        "FULLADDR": "408 GRAHAM DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157241,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75200936192465,
+          27.971002659033076
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157241,
+        "PIN_NUM": "122915826560100100",
+        "SITEADDID": "51003412",
+        "ADDPTKEY": null,
+        "FULLADDR": "412 GRAHAM DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157242,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75201075516951,
+          27.971203436759737
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157242,
+        "PIN_NUM": "122915826560100110",
+        "SITEADDID": "51003413",
+        "ADDPTKEY": null,
+        "FULLADDR": "416 GRAHAM DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157243,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75201226183661,
+          27.97142071571399
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157243,
+        "PIN_NUM": "122915826560100120",
+        "SITEADDID": "51003414",
+        "ADDPTKEY": null,
+        "FULLADDR": "420 GRAHAM DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157244,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75235109883381,
+          27.96980158046047
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157244,
+        "PIN_NUM": "122915826560110020",
+        "SITEADDID": "51003415",
+        "ADDPTKEY": null,
+        "FULLADDR": "315 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157245,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75234836952131,
+          27.969408276914493
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157245,
+        "PIN_NUM": "122915826560110040",
+        "SITEADDID": "51003416",
+        "ADDPTKEY": null,
+        "FULLADDR": "305 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157246,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75235007355239,
+          27.96920748221227
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157246,
+        "PIN_NUM": "122915826560110050",
+        "SITEADDID": "51003417",
+        "ADDPTKEY": null,
+        "FULLADDR": "301 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157247,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75234869888727,
+          27.96900945660351
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157247,
+        "PIN_NUM": "122915826560110060",
+        "SITEADDID": "51003418",
+        "ADDPTKEY": null,
+        "FULLADDR": "217 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157248,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75235351979863,
+          27.968811396209507
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157248,
+        "PIN_NUM": "122915826560110070",
+        "SITEADDID": "51003419",
+        "ADDPTKEY": null,
+        "FULLADDR": "211 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157249,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75231145431816,
+          27.968553081147295
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157249,
+        "PIN_NUM": "122915826560110080",
+        "SITEADDID": "51003421",
+        "ADDPTKEY": null,
+        "FULLADDR": "2040 NE COACHMAN RD",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157250,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75231145431816,
+          27.968553081147295
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157250,
+        "PIN_NUM": "122915826560110080",
+        "SITEADDID": "51003422",
+        "ADDPTKEY": null,
+        "FULLADDR": "2050 NE COACHMAN RD",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157251,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75197972133435,
+          27.96864556769376
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157251,
+        "PIN_NUM": "122915826560110090",
+        "SITEADDID": "51003423",
+        "ADDPTKEY": null,
+        "FULLADDR": "2062 NE COACHMAN RD",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157255,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7520048220819,
+          27.969008589630228
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157255,
+        "PIN_NUM": "122915826560110100",
+        "SITEADDID": "51003427",
+        "ADDPTKEY": null,
+        "FULLADDR": "218 GRAHAM DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157256,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75200766451668,
+          27.969418394462938
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157256,
+        "PIN_NUM": "122915826560110120",
+        "SITEADDID": "51003428",
+        "ADDPTKEY": null,
+        "FULLADDR": "304 GRAHAM DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157257,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75201033639999,
+          27.969803446966566
+        ]
+      },
+      "properties": {
+        "OBJECTID": 157257,
+        "PIN_NUM": "122915826560110140",
+        "SITEADDID": "51003429",
+        "ADDPTKEY": null,
+        "FULLADDR": "312 GRAHAM DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 210788,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7549525742999,
+          27.969685532210118
+        ]
+      },
+      "properties": {
+        "OBJECTID": 210788,
+        "PIN_NUM": "122915557820220090",
+        "SITEADDID": "51069081",
+        "ADDPTKEY": null,
+        "FULLADDR": "310 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 210791,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75325272536422,
+          27.969373063025152
+        ]
+      },
+      "properties": {
+        "OBJECTID": 210791,
+        "PIN_NUM": "122915826380050040",
+        "SITEADDID": "51069085",
+        "ADDPTKEY": null,
+        "FULLADDR": "305 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 238611,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75506626634223,
+          27.970441287195545
+        ]
+      },
+      "properties": {
+        "OBJECTID": 238611,
+        "PIN_NUM": "122915557820210100",
+        "SITEADDID": "51106640",
+        "ADDPTKEY": null,
+        "FULLADDR": "1966 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 259828,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75287829523481,
+          27.96854172300167
+        ]
+      },
+      "properties": {
+        "OBJECTID": 259828,
+        "PIN_NUM": "122915826560090020",
+        "SITEADDID": "51135317",
+        "ADDPTKEY": null,
+        "FULLADDR": "210 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 269978,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75485869164618,
+          27.970439677535374
+        ]
+      },
+      "properties": {
+        "OBJECTID": 269978,
+        "PIN_NUM": "122915557820210101",
+        "SITEADDID": "51151829",
+        "ADDPTKEY": null,
+        "FULLADDR": "1970 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 320522,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75525213809753,
+          27.97044026521865
+        ]
+      },
+      "properties": {
+        "OBJECTID": 320522,
+        "PIN_NUM": "122915557820210090",
+        "SITEADDID": "51250419",
+        "ADDPTKEY": null,
+        "FULLADDR": "1964 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 320528,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75423569672915,
+          27.97039634353983
+        ]
+      },
+      "properties": {
+        "OBJECTID": 320528,
+        "PIN_NUM": "122915826380010060",
+        "SITEADDID": "51250426",
+        "ADDPTKEY": null,
+        "FULLADDR": "2000 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 320530,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75235187128864,
+          27.97080549940669
+        ]
+      },
+      "properties": {
+        "OBJECTID": 320530,
+        "PIN_NUM": "122915826560100040",
+        "SITEADDID": "51250428",
+        "ADDPTKEY": null,
+        "FULLADDR": "409 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 322653,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75423830736199,
+          27.96854526022021
+        ]
+      },
+      "properties": {
+        "OBJECTID": 322653,
+        "PIN_NUM": "122915826380030020",
+        "SITEADDID": "51253460",
+        "ADDPTKEY": null,
+        "FULLADDR": "207 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 338849,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75490084059558,
+          27.9707089930297
+        ]
+      },
+      "properties": {
+        "OBJECTID": 338849,
+        "PIN_NUM": "122915557820210130",
+        "SITEADDID": "51277185",
+        "ADDPTKEY": null,
+        "FULLADDR": "412 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 338850,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75486724690711,
+          27.969443959981568
+        ]
+      },
+      "properties": {
+        "OBJECTID": 338850,
+        "PIN_NUM": "122915557820220071",
+        "SITEADDID": "51277186",
+        "ADDPTKEY": null,
+        "FULLADDR": "1972 HARDING PLZ",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 338854,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75590480924578,
+          27.968519593255746
+        ]
+      },
+      "properties": {
+        "OBJECTID": 338854,
+        "PIN_NUM": "122915557820250300",
+        "SITEADDID": "51277191",
+        "ADDPTKEY": null,
+        "FULLADDR": "1950 DREW PLZ",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 338864,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75288526410321,
+          27.96999118531755
+        ]
+      },
+      "properties": {
+        "OBJECTID": 338864,
+        "PIN_NUM": "122915826560080010",
+        "SITEADDID": "51277202",
+        "ADDPTKEY": null,
+        "FULLADDR": "2025 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 338865,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75234972411994,
+          27.969603553064132
+        ]
+      },
+      "properties": {
+        "OBJECTID": 338865,
+        "PIN_NUM": "122915826560110030",
+        "SITEADDID": "51277203",
+        "ADDPTKEY": null,
+        "FULLADDR": "309 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 338866,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7520063095281,
+          27.969223118298203
+        ]
+      },
+      "properties": {
+        "OBJECTID": 338866,
+        "PIN_NUM": "122915826560110110",
+        "SITEADDID": "51277204",
+        "ADDPTKEY": null,
+        "FULLADDR": "300 GRAHAM DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 354060,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383710367474,
+          27.968764751525345
+        ]
+      },
+      "properties": {
+        "OBJECTID": 354060,
+        "PIN_NUM": "122915826380030080",
+        "SITEADDID": "51302045",
+        "ADDPTKEY": null,
+        "FULLADDR": "214 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 356496,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75231145431816,
+          27.968553081147295
+        ]
+      },
+      "properties": {
+        "OBJECTID": 356496,
+        "PIN_NUM": "122915826560110080",
+        "SITEADDID": "51307443",
+        "ADDPTKEY": null,
+        "FULLADDR": "2034 NE COACHMAN RD",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 361560,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75288235997814,
+          27.969573127736954
+        ]
+      },
+      "properties": {
+        "OBJECTID": 361560,
+        "PIN_NUM": "122915826560080030",
+        "SITEADDID": "51313887",
+        "ADDPTKEY": null,
+        "FULLADDR": "310 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 368544,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75423790910526,
+          27.96937865703415
+        ]
+      },
+      "properties": {
+        "OBJECTID": 368544,
+        "PIN_NUM": "122915826380020040",
+        "SITEADDID": "51323927",
+        "ADDPTKEY": null,
+        "FULLADDR": "305 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 368545,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75423830736199,
+          27.96854526022021
+        ]
+      },
+      "properties": {
+        "OBJECTID": 368545,
+        "PIN_NUM": "122915826380030020",
+        "SITEADDID": "51323928",
+        "ADDPTKEY": null,
+        "FULLADDR": "211 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 368546,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75235014720631,
+          27.971003542811307
+        ]
+      },
+      "properties": {
+        "OBJECTID": 368546,
+        "PIN_NUM": "122915826560100030",
+        "SITEADDID": "51323929",
+        "ADDPTKEY": null,
+        "FULLADDR": "413 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 379526,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75564930161256,
+          27.968752038886876
+        ]
+      },
+      "properties": {
+        "OBJECTID": 379526,
+        "PIN_NUM": "122915557820250050",
+        "SITEADDID": "51341031",
+        "ADDPTKEY": null,
+        "FULLADDR": "1959 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 379535,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75200900044861,
+          27.969610920266298
+        ]
+      },
+      "properties": {
+        "OBJECTID": 379535,
+        "PIN_NUM": "122915826560110130",
+        "SITEADDID": "51341041",
+        "ADDPTKEY": null,
+        "FULLADDR": "308 GRAHAM DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 379543,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75325929730231,
+          27.97121034467842
+        ]
+      },
+      "properties": {
+        "OBJECTID": 379543,
+        "PIN_NUM": "122915826380060020",
+        "SITEADDID": "51341054",
+        "ADDPTKEY": null,
+        "FULLADDR": "417 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 379552,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75583094711943,
+          27.970811144578633
+        ]
+      },
+      "properties": {
+        "OBJECTID": 379552,
+        "PIN_NUM": "122915557820210180",
+        "SITEADDID": "51341064",
+        "ADDPTKEY": null,
+        "FULLADDR": "1951 GILBERT ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 379556,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75383655044728,
+          27.969576143724776
+        ]
+      },
+      "properties": {
+        "OBJECTID": 379556,
+        "PIN_NUM": "122915826380020080",
+        "SITEADDID": "51341068",
+        "ADDPTKEY": null,
+        "FULLADDR": "310 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 398979,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7548778907629,
+          27.968748030901097
+        ]
+      },
+      "properties": {
+        "OBJECTID": 398979,
+        "PIN_NUM": "122915557820250140",
+        "SITEADDID": "51375116",
+        "ADDPTKEY": null,
+        "FULLADDR": "1975 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 403345,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75325650620974,
+          27.970808790237317
+        ]
+      },
+      "properties": {
+        "OBJECTID": 403345,
+        "PIN_NUM": "122915826380060040",
+        "SITEADDID": "51382921",
+        "ADDPTKEY": null,
+        "FULLADDR": "409 PATRICIA AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 405856,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7542367577831,
+          27.968768057745258
+        ]
+      },
+      "properties": {
+        "OBJECTID": 405856,
+        "PIN_NUM": "122915826380030010",
+        "SITEADDID": "51386930",
+        "ADDPTKEY": null,
+        "FULLADDR": "215 N HERCULES AVE",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 459891,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75543802900094,
+          27.970441993343922
+        ]
+      },
+      "properties": {
+        "OBJECTID": 459891,
+        "PIN_NUM": "122915557820210080",
+        "SITEADDID": "51003119",
+        "ADDPTKEY": null,
+        "FULLADDR": "1960 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 459893,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7553071063936,
+          27.969436769758712
+        ]
+      },
+      "properties": {
+        "OBJECTID": 459893,
+        "PIN_NUM": "122915557820220060",
+        "SITEADDID": "51003130",
+        "ADDPTKEY": null,
+        "FULLADDR": "1962 HARDING PLZ",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 459894,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75567902048094,
+          27.96990432422474
+        ]
+      },
+      "properties": {
+        "OBJECTID": 459894,
+        "PIN_NUM": "122915557820220140",
+        "SITEADDID": "51003136",
+        "ADDPTKEY": null,
+        "FULLADDR": "1955 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 459895,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.7553905364672,
+          27.968516922077885
+        ]
+      },
+      "properties": {
+        "OBJECTID": 459895,
+        "PIN_NUM": "122915557820250240",
+        "SITEADDID": "51003184",
+        "ADDPTKEY": null,
+        "FULLADDR": "1964 DREW PLZ",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 459905,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75325467737183,
+          27.968762446660403
+        ]
+      },
+      "properties": {
+        "OBJECTID": 459905,
+        "PIN_NUM": "122915826380040010",
+        "SITEADDID": "51003372",
+        "ADDPTKEY": null,
+        "FULLADDR": "2019 HARDING ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 459907,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75325768950938,
+          27.971424890176205
+        ]
+      },
+      "properties": {
+        "OBJECTID": 459907,
+        "PIN_NUM": "122915826380060010",
+        "SITEADDID": "51003386",
+        "ADDPTKEY": null,
+        "FULLADDR": "2021 MARILYN ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 459908,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75288613701568,
+          27.97100885591018
+        ]
+      },
+      "properties": {
+        "OBJECTID": 459908,
+        "PIN_NUM": "122915826560070030",
+        "SITEADDID": "51003392",
+        "ADDPTKEY": null,
+        "FULLADDR": "412 KERRY DR",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 470897,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75200863073506,
+          27.97000424076294
+        ]
+      },
+      "properties": {
+        "OBJECTID": 470897,
+        "PIN_NUM": "122915826560110150",
+        "SITEADDID": "51313888",
+        "ADDPTKEY": null,
+        "FULLADDR": "2051 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 471943,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75234941388914,
+          27.970005123696353
+        ]
+      },
+      "properties": {
+        "OBJECTID": 471943,
+        "PIN_NUM": "122915826560110010",
+        "SITEADDID": "51341052",
+        "ADDPTKEY": null,
+        "FULLADDR": "2041 MCKINLEY ST",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 593527,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.75543162396929,
+          27.969098252561253
+        ]
+      },
+      "properties": {
+        "OBJECTID": 593527,
+        "PIN_NUM": "122915557820000002",
+        "SITEADDID": "200002763",
+        "ADDPTKEY": "ADD-2837",
+        "FULLADDR": "1955 HARDING PLZ",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33765",
+        "STATUS": "A"
+      }
+    }
+  ]
+}

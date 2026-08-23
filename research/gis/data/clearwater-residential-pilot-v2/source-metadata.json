@@ -1,0 +1,120 @@
+{
+  "pilot": {
+    "pilotName": "clearwater-residential-pilot-v2",
+    "jurisdiction": "clearwater-fl",
+    "targetUse": "Approximately 75–150 compact, ordinary residential parcels for homeowner fence-workflow GIS validation",
+    "bbox": null,
+    "bboxEnvironmentVariable": "CLEARWATER_RESIDENTIAL_BBOX",
+    "selectionStatus": "Requires local authoritative-map selection because network access was unavailable in the implementation environment",
+    "outputDirectory": "research/gis/data/clearwater-residential-pilot-v2"
+  },
+  "sources": {
+    "addresses": {
+      "name": "addresses",
+      "agency": "Pinellas County",
+      "layerUrl": "https://egis.pinellas.gov/gis/rest/services/PublicWebGIS/Parcels/MapServer/0",
+      "queryUrl": "https://egis.pinellas.gov/gis/rest/services/PublicWebGIS/Parcels/MapServer/0/query",
+      "retrievedAt": "2026-08-23T23:49:35.559Z",
+      "pilotName": "clearwater-residential-pilot-v2",
+      "bbox": [
+        -82.756,
+        27.9684,
+        -82.752,
+        27.9716
+      ],
+      "requestedFields": [
+        "OBJECTID",
+        "PIN_NUM",
+        "SITEADDID",
+        "ADDPTKEY",
+        "FULLADDR",
+        "MUNICIPALITY",
+        "POSTCODE",
+        "STATUS"
+      ],
+      "objectIdField": null,
+      "geometryType": "esriGeometryPoint",
+      "spatialReference": {
+        "wkid": 2882,
+        "latestWkid": 2882
+      },
+      "capabilities": "Map,Query,Data",
+      "maxRecordCount": 1000,
+      "serviceLastEditDate": null,
+      "supportsPagination": true,
+      "supportsGeoJSON": true,
+      "recordCount": 126,
+      "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+    },
+    "parcels": {
+      "name": "parcels",
+      "agency": "Pinellas County",
+      "layerUrl": "https://egis.pinellas.gov/gis/rest/services/PublicWebGIS/Parcels/MapServer/1",
+      "queryUrl": "https://egis.pinellas.gov/gis/rest/services/PublicWebGIS/Parcels/MapServer/1/query",
+      "retrievedAt": "2026-08-23T23:49:35.751Z",
+      "pilotName": "clearwater-residential-pilot-v2",
+      "bbox": [
+        -82.756,
+        27.9684,
+        -82.752,
+        27.9716
+      ],
+      "requestedFields": [
+        "OBJECTID",
+        "PARCELID",
+        "STRAP",
+        "SITE_ADDRESS",
+        "SITE_CITY",
+        "SITE_STATE",
+        "SITE_ZIP",
+        "LAND_USE_CODE"
+      ],
+      "objectIdField": null,
+      "geometryType": "esriGeometryPolygon",
+      "spatialReference": {
+        "wkid": 2882,
+        "latestWkid": 2882
+      },
+      "capabilities": "Map,Query,Data",
+      "maxRecordCount": 1000,
+      "serviceLastEditDate": null,
+      "supportsPagination": true,
+      "supportsGeoJSON": true,
+      "recordCount": 123,
+      "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+    },
+    "zoning": {
+      "name": "zoning",
+      "agency": "City of Clearwater",
+      "layerUrl": "https://gis.myclearwater.com/arcgis/rest/services/ArcGISMapServices/Zoning_WGS84/MapServer/1",
+      "queryUrl": "https://gis.myclearwater.com/arcgis/rest/services/ArcGISMapServices/Zoning_WGS84/MapServer/1/query",
+      "retrievedAt": "2026-08-23T23:49:39.339Z",
+      "pilotName": "clearwater-residential-pilot-v2",
+      "bbox": [
+        -82.756,
+        27.9684,
+        -82.752,
+        27.9716
+      ],
+      "requestedFields": [
+        "OBJECTID",
+        "ZONING",
+        "ZONING_DESC",
+        "SPECIAL"
+      ],
+      "objectIdField": null,
+      "geometryType": "esriGeometryPolygon",
+      "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+      },
+      "capabilities": "Map,Query,Data",
+      "maxRecordCount": 1000,
+      "serviceLastEditDate": null,
+      "supportsPagination": true,
+      "supportsGeoJSON": true,
+      "recordCount": 5,
+      "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+    }
+  }
+}

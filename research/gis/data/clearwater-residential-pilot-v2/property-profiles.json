@@ -1,0 +1,5042 @@
+[
+  {
+    "displayAddress": "208 KERRY DR",
+    "normalizedAddress": "208 KERRY DR",
+    "sourceAddressIdentifier": 1581,
+    "parcelIdentifier": "122915826560090020",
+    "parcelSourceIdentifier": 867087,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75287829523481,
+      27.96854172300167
+    ],
+    "parcelRepresentativePoint": [
+      -82.75282995064798,
+      27.96851003482168
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "2011 MARILYN ST",
+    "normalizedAddress": "2011 MARILYN ST",
+    "sourceAddressIdentifier": 3363,
+    "parcelIdentifier": "122915826380010120",
+    "parcelSourceIdentifier": 1066177,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75384014922457,
+      27.97142994419989
+    ],
+    "parcelRepresentativePoint": [
+      -82.75383972956843,
+      27.97142941424755
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1952 MCKINLEY ST",
+    "normalizedAddress": "1952 MCKINLEY ST",
+    "sourceAddressIdentifier": 157000,
+    "parcelIdentifier": "122915557820210060",
+    "parcelSourceIdentifier": 736559,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75584392525111,
+      27.970450761449406
+    ],
+    "parcelRepresentativePoint": [
+      -82.75589123620921,
+      27.9704642382623
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1956 MCKINLEY ST",
+    "normalizedAddress": "1956 MCKINLEY ST",
+    "sourceAddressIdentifier": 157001,
+    "parcelIdentifier": "122915557820210070",
+    "parcelSourceIdentifier": 1097564,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75562389971884,
+      27.970440969968028
+    ],
+    "parcelRepresentativePoint": [
+      -82.75562500296965,
+      27.97044136520927
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1967 GILBERT ST",
+    "normalizedAddress": "1967 GILBERT ST",
+    "sourceAddressIdentifier": 157002,
+    "parcelIdentifier": "122915557820210140",
+    "parcelSourceIdentifier": 888249,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75514939727782,
+      27.970812144655472
+    ],
+    "parcelRepresentativePoint": [
+      -82.7551293977066,
+      27.970804050498412
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1971 GILBERT ST",
+    "normalizedAddress": "1971 GILBERT ST",
+    "sourceAddressIdentifier": 157003,
+    "parcelIdentifier": "122915557820210141",
+    "parcelSourceIdentifier": 726888,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75489902645987,
+      27.97089328460539
+    ],
+    "parcelRepresentativePoint": [
+      -82.7549000019264,
+      27.970879788788743
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1963 GILBERT ST",
+    "normalizedAddress": "1963 GILBERT ST",
+    "sourceAddressIdentifier": 157004,
+    "parcelIdentifier": "122915557820210150",
+    "parcelSourceIdentifier": 995933,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75537244474114,
+      27.970810916656323
+    ],
+    "parcelRepresentativePoint": [
+      -82.75536777060066,
+      27.970812511868992
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1955 GILBERT ST",
+    "normalizedAddress": "1955 GILBERT ST",
+    "sourceAddressIdentifier": 157005,
+    "parcelIdentifier": "122915557820210170",
+    "parcelSourceIdentifier": 1002032,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75561099954488,
+      27.970812355394518
+    ],
+    "parcelRepresentativePoint": [
+      -82.75558097844674,
+      27.97083311888497
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1953 MCKINLEY ST",
+    "normalizedAddress": "1953 MCKINLEY ST",
+    "sourceAddressIdentifier": 157006,
+    "parcelIdentifier": "122915557820220010",
+    "parcelSourceIdentifier": 954498,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75589577356881,
+      27.969889378583517
+    ],
+    "parcelRepresentativePoint": [
+      -82.75588507561805,
+      27.969850433343566
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "311 CINCINNATI PKWY",
+    "normalizedAddress": "311 CINCINNATI PKWY",
+    "sourceAddressIdentifier": 157008,
+    "parcelIdentifier": "122915557820220030",
+    "parcelSourceIdentifier": 787668,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7559342037871,
+      27.969625120720533
+    ],
+    "parcelRepresentativePoint": [
+      -82.7558578321395,
+      27.969655895608074
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "305 CINCINNATI PKWY",
+    "normalizedAddress": "305 CINCINNATI PKWY",
+    "sourceAddressIdentifier": 157009,
+    "parcelIdentifier": "122915557820220040",
+    "parcelSourceIdentifier": 723317,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7558552817362,
+      27.969413769889478
+    ],
+    "parcelRepresentativePoint": [
+      -82.75583410103448,
+      27.96944976837949
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1956 HARDING PLZ",
+    "normalizedAddress": "1956 HARDING PLZ",
+    "sourceAddressIdentifier": 157010,
+    "parcelIdentifier": "122915557820220050",
+    "parcelSourceIdentifier": 854011,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75556093786939,
+      27.96943740376118
+    ],
+    "parcelRepresentativePoint": [
+      -82.75555828975035,
+      27.969524499988978
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1968 HARDING PLZ",
+    "normalizedAddress": "1968 HARDING PLZ",
+    "sourceAddressIdentifier": 157011,
+    "parcelIdentifier": "122915557820220070",
+    "parcelSourceIdentifier": 998322,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75507480155895,
+      27.96944281840453
+    ],
+    "parcelRepresentativePoint": [
+      -82.7550631760397,
+      27.969420826679933
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1967 MCKINLEY ST",
+    "normalizedAddress": "1967 MCKINLEY ST",
+    "sourceAddressIdentifier": 157012,
+    "parcelIdentifier": "122915557820220100",
+    "parcelSourceIdentifier": 739436,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75505956662097,
+      27.969924235022397
+    ],
+    "parcelRepresentativePoint": [
+      -82.75504340721446,
+      27.96990215266229
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1971 MCKINLEY ST",
+    "normalizedAddress": "1971 MCKINLEY ST",
+    "sourceAddressIdentifier": 157013,
+    "parcelIdentifier": "122915557820220101",
+    "parcelSourceIdentifier": 873338,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75484891424908,
+      27.96992539358425
+    ],
+    "parcelRepresentativePoint": [
+      -82.75486361310311,
+      27.969901855364977
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1963 MCKINLEY ST",
+    "normalizedAddress": "1963 MCKINLEY ST",
+    "sourceAddressIdentifier": 157014,
+    "parcelIdentifier": "122915557820220120",
+    "parcelSourceIdentifier": 826507,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75526997202199,
+      27.969887321530337
+    ],
+    "parcelRepresentativePoint": [
+      -82.75523550687075,
+      27.96987311513438
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1959 MCKINLEY ST",
+    "normalizedAddress": "1959 MCKINLEY ST",
+    "sourceAddressIdentifier": 157015,
+    "parcelIdentifier": "122915557820220130",
+    "parcelSourceIdentifier": 910770,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75547135001912,
+      27.969888963707294
+    ],
+    "parcelRepresentativePoint": [
+      -82.75548011185256,
+      27.96984784909168
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "209 CINCINNATI PKWY",
+    "normalizedAddress": "209 CINCINNATI PKWY",
+    "sourceAddressIdentifier": 157050,
+    "parcelIdentifier": "122915557820250010",
+    "parcelSourceIdentifier": 849530,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75590643956967,
+      27.96875337421591
+    ],
+    "parcelRepresentativePoint": [
+      -82.75587822978567,
+      27.96876298201295
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1965 HARDING ST",
+    "normalizedAddress": "1965 HARDING ST",
+    "sourceAddressIdentifier": 157051,
+    "parcelIdentifier": "122915557820250080",
+    "parcelSourceIdentifier": 919745,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75539216467246,
+      27.968750703973868
+    ],
+    "parcelRepresentativePoint": [
+      -82.75540270230343,
+      27.96876120731253
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1971 HARDING ST",
+    "normalizedAddress": "1971 HARDING ST",
+    "sourceAddressIdentifier": 157052,
+    "parcelIdentifier": "122915557820250110",
+    "parcelSourceIdentifier": 916992,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75513502772675,
+      27.968749368580184
+    ],
+    "parcelRepresentativePoint": [
+      -82.75514216845048,
+      27.96874961721543
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1976 DREW PLZ",
+    "normalizedAddress": "1976 DREW PLZ",
+    "sourceAddressIdentifier": 157053,
+    "parcelIdentifier": "122915557820250170",
+    "parcelSourceIdentifier": 974931,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75487626265621,
+      27.968514249885146
+    ],
+    "parcelRepresentativePoint": [
+      -82.75487820471415,
+      27.968525994928367
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1970 DREW PLZ",
+    "normalizedAddress": "1970 DREW PLZ",
+    "sourceAddressIdentifier": 157054,
+    "parcelIdentifier": "122915557820250210",
+    "parcelSourceIdentifier": 277965,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7551333990532,
+      27.96851558577348
+    ],
+    "parcelRepresentativePoint": [
+      -82.75514047433963,
+      27.968516262406865
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1954 DREW PLZ",
+    "normalizedAddress": "1954 DREW PLZ",
+    "sourceAddressIdentifier": 157055,
+    "parcelIdentifier": "122915557820250270",
+    "parcelSourceIdentifier": 1096867,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75564767285302,
+      27.96851825700481
+    ],
+    "parcelRepresentativePoint": [
+      -82.75563762584838,
+      27.968517965541583
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2001 MARILYN ST",
+    "normalizedAddress": "2001 MARILYN ST",
+    "sourceAddressIdentifier": 157175,
+    "parcelIdentifier": "122915826380010010",
+    "parcelSourceIdentifier": 941524,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75423979402868,
+      27.971430499864187
+    ],
+    "parcelRepresentativePoint": [
+      -82.75419888126329,
+      27.971454653173602
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "417 N HERCULES AVE",
+    "normalizedAddress": "417 N HERCULES AVE",
+    "sourceAddressIdentifier": 157176,
+    "parcelIdentifier": "122915826380010020",
+    "parcelSourceIdentifier": 967821,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75423830202635,
+      27.971215971375457
+    ],
+    "parcelRepresentativePoint": [
+      -82.75423792150093,
+      27.97121558574358
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "413 N HERCULES AVE",
+    "normalizedAddress": "413 N HERCULES AVE",
+    "sourceAddressIdentifier": 157177,
+    "parcelIdentifier": "122915826380010030",
+    "parcelSourceIdentifier": 1078693,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75423690466961,
+      27.97101519555688
+    ],
+    "parcelRepresentativePoint": [
+      -82.75423728650428,
+      27.971014855827733
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "409 N HERCULES AVE",
+    "normalizedAddress": "409 N HERCULES AVE",
+    "sourceAddressIdentifier": 157178,
+    "parcelIdentifier": "122915826380010040",
+    "parcelSourceIdentifier": 752323,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75423550731468,
+      27.97081441792767
+    ],
+    "parcelRepresentativePoint": [
+      -82.75423665249632,
+      27.97081408371433
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "405 N HERCULES AVE",
+    "normalizedAddress": "405 N HERCULES AVE",
+    "sourceAddressIdentifier": 157179,
+    "parcelIdentifier": "122915826380010050",
+    "parcelSourceIdentifier": 791825,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75423720781494,
+      27.97061362421292
+    ],
+    "parcelRepresentativePoint": [
+      -82.75423601925591,
+      27.970613310688545
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2010 MCKINLEY ST",
+    "normalizedAddress": "2010 MCKINLEY ST",
+    "sourceAddressIdentifier": 157180,
+    "parcelIdentifier": "122915826380010070",
+    "parcelSourceIdentifier": 748090,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75383605471973,
+      27.970395787794725
+    ],
+    "parcelRepresentativePoint": [
+      -82.75379602425014,
+      27.970417949826384
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "404 PATRICIA AVE",
+    "normalizedAddress": "404 PATRICIA AVE",
+    "sourceAddressIdentifier": 157181,
+    "parcelIdentifier": "122915826380010080",
+    "parcelSourceIdentifier": 807620,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75383754690382,
+      27.97061031812804
+    ],
+    "parcelRepresentativePoint": [
+      -82.75377030217314,
+      27.970610593620762
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "408 PATRICIA AVE",
+    "normalizedAddress": "408 PATRICIA AVE",
+    "sourceAddressIdentifier": 157182,
+    "parcelIdentifier": "122915826380010090",
+    "parcelSourceIdentifier": 727021,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75383584464697,
+      27.970811111857994
+    ],
+    "parcelRepresentativePoint": [
+      -82.75377124887844,
+      27.970811367876266
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "412 PATRICIA AVE",
+    "normalizedAddress": "412 PATRICIA AVE",
+    "sourceAddressIdentifier": 157183,
+    "parcelIdentifier": "122915826380010100",
+    "parcelSourceIdentifier": 900778,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7538372422782,
+      27.971011889500232
+    ],
+    "parcelRepresentativePoint": [
+      -82.7537722121906,
+      27.9710121411326
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "416 PATRICIA AVE",
+    "normalizedAddress": "416 PATRICIA AVE",
+    "sourceAddressIdentifier": 157184,
+    "parcelIdentifier": "122915826380010110",
+    "parcelSourceIdentifier": 882940,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75383863787853,
+      27.97121266534299
+    ],
+    "parcelRepresentativePoint": [
+      -82.75377274102664,
+      27.971212771028423
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2001 MCKINLEY ST",
+    "normalizedAddress": "2001 MCKINLEY ST",
+    "sourceAddressIdentifier": 157185,
+    "parcelIdentifier": "122915826380020010",
+    "parcelSourceIdentifier": 876707,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75423336096277,
+      27.970023208036523
+    ],
+    "parcelRepresentativePoint": [
+      -82.75420767805159,
+      27.96992333850066
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "309 N HERCULES AVE",
+    "normalizedAddress": "309 N HERCULES AVE",
+    "sourceAddressIdentifier": 157186,
+    "parcelIdentifier": "122915826380020030",
+    "parcelSourceIdentifier": 767775,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75423620856272,
+      27.969579449881895
+    ],
+    "parcelRepresentativePoint": [
+      -82.7542365130206,
+      27.969578470787276
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2000 HARDING ST",
+    "normalizedAddress": "2000 HARDING ST",
+    "sourceAddressIdentifier": 157187,
+    "parcelIdentifier": "122915826380020050",
+    "parcelSourceIdentifier": 893417,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7542363779602,
+      27.96915862687548
+    ],
+    "parcelRepresentativePoint": [
+      -82.75423688902123,
+      27.96916017263984
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2010 HARDING ST",
+    "normalizedAddress": "2010 HARDING ST",
+    "sourceAddressIdentifier": 157188,
+    "parcelIdentifier": "122915826380020060",
+    "parcelSourceIdentifier": 868649,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75383674152845,
+      27.969158071037572
+    ],
+    "parcelRepresentativePoint": [
+      -82.75379708803744,
+      27.969181178141422
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "304 PATRICIA AVE",
+    "normalizedAddress": "304 PATRICIA AVE",
+    "sourceAddressIdentifier": 157189,
+    "parcelIdentifier": "122915826380020070",
+    "parcelSourceIdentifier": 950929,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75383825173002,
+      27.9693753508674
+    ],
+    "parcelRepresentativePoint": [
+      -82.75377040333767,
+      27.969375013931643
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "314 PATRICIA AVE",
+    "normalizedAddress": "314 PATRICIA AVE",
+    "sourceAddressIdentifier": 157190,
+    "parcelIdentifier": "122915826380020090",
+    "parcelSourceIdentifier": 741513,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75383484917998,
+      27.969776938381145
+    ],
+    "parcelRepresentativePoint": [
+      -82.75377016111959,
+      27.969776062105836
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2009 MCKINLEY ST",
+    "normalizedAddress": "2009 MCKINLEY ST",
+    "sourceAddressIdentifier": 157191,
+    "parcelIdentifier": "122915826380020100",
+    "parcelSourceIdentifier": 918350,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75383635941083,
+      27.969994217289177
+    ],
+    "parcelRepresentativePoint": [
+      -82.7538364587901,
+      27.969995539037807
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2001 HARDING ST",
+    "normalizedAddress": "2001 HARDING ST",
+    "sourceAddressIdentifier": 157192,
+    "parcelIdentifier": "122915826380030010",
+    "parcelSourceIdentifier": 863709,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7542367577831,
+      27.968768057745258
+    ],
+    "parcelRepresentativePoint": [
+      -82.75420899606686,
+      27.968759317968107
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "mdr"
+    }
+  },
+  {
+    "displayAddress": "213 N HERCULES AVE",
+    "normalizedAddress": "213 N HERCULES AVE",
+    "sourceAddressIdentifier": 157193,
+    "parcelIdentifier": "122915826380030010",
+    "parcelSourceIdentifier": 863709,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7542367577831,
+      27.968768057745258
+    ],
+    "parcelRepresentativePoint": [
+      -82.75420899606686,
+      27.968759317968107
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "mdr"
+    }
+  },
+  {
+    "displayAddress": "209 N HERCULES AVE",
+    "normalizedAddress": "209 N HERCULES AVE",
+    "sourceAddressIdentifier": 157194,
+    "parcelIdentifier": "122915826380030020",
+    "parcelSourceIdentifier": 796985,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75423830736199,
+      27.96854526022021
+    ],
+    "parcelRepresentativePoint": [
+      -82.75423741028806,
+      27.9685266801381
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "210 PATRICIA AVE",
+    "normalizedAddress": "210 PATRICIA AVE",
+    "sourceAddressIdentifier": 157204,
+    "parcelIdentifier": "122915826380030070",
+    "parcelSourceIdentifier": 57827,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75383886231576,
+      27.968572207905158
+    ],
+    "parcelRepresentativePoint": [
+      -82.75377120361037,
+      27.968572817575023
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "212 PATRICIA AVE",
+    "normalizedAddress": "212 PATRICIA AVE",
+    "sourceAddressIdentifier": 157205,
+    "parcelIdentifier": "122915826380030070",
+    "parcelSourceIdentifier": 57827,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75383886231576,
+      27.968572207905158
+    ],
+    "parcelRepresentativePoint": [
+      -82.75377120361037,
+      27.968572817575023
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "2009 HARDING ST",
+    "normalizedAddress": "2009 HARDING ST",
+    "sourceAddressIdentifier": 157206,
+    "parcelIdentifier": "122915826380030080",
+    "parcelSourceIdentifier": 998355,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75383710367474,
+      27.968764751525345
+    ],
+    "parcelRepresentativePoint": [
+      -82.75383785445221,
+      27.968745431896103
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "mdr"
+    }
+  },
+  {
+    "displayAddress": "216 PATRICIA AVE",
+    "normalizedAddress": "216 PATRICIA AVE",
+    "sourceAddressIdentifier": 157207,
+    "parcelIdentifier": "122915826380030080",
+    "parcelSourceIdentifier": 998355,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75383710367474,
+      27.968764751525345
+    ],
+    "parcelRepresentativePoint": [
+      -82.75383785445221,
+      27.968745431896103
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "mdr"
+    }
+  },
+  {
+    "displayAddress": "209 PATRICIA AVE",
+    "normalizedAddress": "209 PATRICIA AVE",
+    "sourceAddressIdentifier": 157208,
+    "parcelIdentifier": "122915826380040020",
+    "parcelSourceIdentifier": 1043133,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.7532531492773,
+      27.968542416426573
+    ],
+    "parcelRepresentativePoint": [
+      -82.75328084686312,
+      27.96851157194513
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "211 PATRICIA AVE",
+    "normalizedAddress": "211 PATRICIA AVE",
+    "sourceAddressIdentifier": 157209,
+    "parcelIdentifier": "122915826380040020",
+    "parcelSourceIdentifier": 1043133,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.7532531492773,
+      27.968542416426573
+    ],
+    "parcelRepresentativePoint": [
+      -82.75328084686312,
+      27.96851157194513
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "2019 MCKINLEY ST",
+    "normalizedAddress": "2019 MCKINLEY ST",
+    "sourceAddressIdentifier": 157214,
+    "parcelIdentifier": "122915826380050010",
+    "parcelSourceIdentifier": 271878,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75325704444657,
+      27.969994646842384
+    ],
+    "parcelRepresentativePoint": [
+      -82.75325616958884,
+      27.969993914023174
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "315 PATRICIA AVE",
+    "normalizedAddress": "315 PATRICIA AVE",
+    "sourceAddressIdentifier": 157215,
+    "parcelIdentifier": "122915826380050020",
+    "parcelSourceIdentifier": 861801,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7532555152579,
+      27.969774617555995
+    ],
+    "parcelRepresentativePoint": [
+      -82.75325471678464,
+      27.96977526067665
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "311 PATRICIA AVE",
+    "normalizedAddress": "311 PATRICIA AVE",
+    "sourceAddressIdentifier": 157216,
+    "parcelIdentifier": "122915826380050030",
+    "parcelSourceIdentifier": 842318,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75325411979257,
+      27.969573839845147
+    ],
+    "parcelRepresentativePoint": [
+      -82.75325338205023,
+      27.9695744830846
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2020 HARDING ST",
+    "normalizedAddress": "2020 HARDING ST",
+    "sourceAddressIdentifier": 157217,
+    "parcelIdentifier": "122915826380050050",
+    "parcelSourceIdentifier": 884054,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75325121430933,
+      27.9691557840794
+    ],
+    "parcelRepresentativePoint": [
+      -82.75325104076275,
+      27.96915636918414
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "413 PATRICIA AVE",
+    "normalizedAddress": "413 PATRICIA AVE",
+    "sourceAddressIdentifier": 157218,
+    "parcelIdentifier": "122915826380060030",
+    "parcelSourceIdentifier": 941319,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75325790072934,
+      27.971009567015226
+    ],
+    "parcelRepresentativePoint": [
+      -82.75325746231537,
+      27.971010175227498
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "405 PATRICIA AVE",
+    "normalizedAddress": "405 PATRICIA AVE",
+    "sourceAddressIdentifier": 157219,
+    "parcelIdentifier": "122915826380060050",
+    "parcelSourceIdentifier": 1027970,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75325511068813,
+      27.970608013459046
+    ],
+    "parcelRepresentativePoint": [
+      -82.75329491533486,
+      27.970588733853354
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2020 MCKINLEY ST",
+    "normalizedAddress": "2020 MCKINLEY ST",
+    "sourceAddressIdentifier": 157220,
+    "parcelIdentifier": "122915826380060060",
+    "parcelSourceIdentifier": 227743,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75325671749144,
+      27.97039346703938
+    ],
+    "parcelRepresentativePoint": [
+      -82.7532946474191,
+      27.970416085169404
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2025 MARILYN ST",
+    "normalizedAddress": "2025 MARILYN ST",
+    "sourceAddressIdentifier": 157221,
+    "parcelIdentifier": "122915826560070010",
+    "parcelSourceIdentifier": 909220,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75288592437178,
+      27.971424179098392
+    ],
+    "parcelRepresentativePoint": [
+      -82.7528510995818,
+      27.97140174449782
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "416 KERRY DR",
+    "normalizedAddress": "416 KERRY DR",
+    "sourceAddressIdentifier": 157222,
+    "parcelIdentifier": "122915826560070020",
+    "parcelSourceIdentifier": 880644,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75288443402525,
+      27.971209649645722
+    ],
+    "parcelRepresentativePoint": [
+      -82.75282717198854,
+      27.971208931906066
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "408 KERRY DR",
+    "normalizedAddress": "408 KERRY DR",
+    "sourceAddressIdentifier": 157223,
+    "parcelIdentifier": "122915826560070040",
+    "parcelSourceIdentifier": 846820,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75288474216796,
+      27.97080807912061
+    ],
+    "parcelRepresentativePoint": [
+      -82.75288524340169,
+      27.97080766184288
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "404 KERRY DR",
+    "normalizedAddress": "404 KERRY DR",
+    "sourceAddressIdentifier": 157224,
+    "parcelIdentifier": "122915826560070050",
+    "parcelSourceIdentifier": 129052,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75288644618627,
+      27.970607285367997
+    ],
+    "parcelRepresentativePoint": [
+      -82.75288478494727,
+      27.970606889624005
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2030 MCKINLEY ST",
+    "normalizedAddress": "2030 MCKINLEY ST",
+    "sourceAddressIdentifier": 157225,
+    "parcelIdentifier": "122915826560070060",
+    "parcelSourceIdentifier": 995258,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75288493679683,
+      27.970390005534966
+    ],
+    "parcelRepresentativePoint": [
+      -82.75288439209855,
+      27.970391079075032
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "312 KERRY DR",
+    "normalizedAddress": "312 KERRY DR",
+    "sourceAddressIdentifier": 157226,
+    "parcelIdentifier": "122915826560080020",
+    "parcelSourceIdentifier": 995190,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75288375577787,
+      27.9697739063618
+    ],
+    "parcelRepresentativePoint": [
+      -82.75288295881313,
+      27.969773522582287
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "306 KERRY DR",
+    "normalizedAddress": "306 KERRY DR",
+    "sourceAddressIdentifier": 157227,
+    "parcelIdentifier": "122915826560080040",
+    "parcelSourceIdentifier": 969520,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75288096624425,
+      27.969372351802097
+    ],
+    "parcelRepresentativePoint": [
+      -82.7528802906927,
+      27.969371961266912
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2030 HARDING ST",
+    "normalizedAddress": "2030 HARDING ST",
+    "sourceAddressIdentifier": 157228,
+    "parcelIdentifier": "122915826560080050",
+    "parcelSourceIdentifier": 884319,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75287945796053,
+      27.96915507192423
+    ],
+    "parcelRepresentativePoint": [
+      -82.7528787907336,
+      27.96915463577276
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2029 HARDING ST",
+    "normalizedAddress": "2029 HARDING ST",
+    "sourceAddressIdentifier": 157229,
+    "parcelIdentifier": "122915826560090010",
+    "parcelSourceIdentifier": 1066880,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75288292136155,
+      27.968761735396157
+    ],
+    "parcelRepresentativePoint": [
+      -82.75288207292238,
+      27.96873553535387
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "mdr"
+    }
+  },
+  {
+    "displayAddress": "2031 HARDING ST",
+    "normalizedAddress": "2031 HARDING ST",
+    "sourceAddressIdentifier": 157230,
+    "parcelIdentifier": "122915826560090020",
+    "parcelSourceIdentifier": 867087,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75287829523481,
+      27.96854172300167
+    ],
+    "parcelRepresentativePoint": [
+      -82.75282995064798,
+      27.96851003482168
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "2041 MARILYN ST",
+    "normalizedAddress": "2041 MARILYN ST",
+    "sourceAddressIdentifier": 157234,
+    "parcelIdentifier": "122915826560100010",
+    "parcelSourceIdentifier": 88308,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75235304944836,
+      27.97142159945384
+    ],
+    "parcelRepresentativePoint": [
+      -82.7523520313052,
+      27.97142306902888
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "417 KERRY DR",
+    "normalizedAddress": "417 KERRY DR",
+    "sourceAddressIdentifier": 157235,
+    "parcelIdentifier": "122915826560100020",
+    "parcelSourceIdentifier": 809166,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75235154209845,
+      27.971204320516655
+    ],
+    "parcelRepresentativePoint": [
+      -82.75235162072303,
+      27.97120576446772
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "405 KERRY DR",
+    "normalizedAddress": "405 KERRY DR",
+    "sourceAddressIdentifier": 157236,
+    "parcelIdentifier": "122915826560100050",
+    "parcelSourceIdentifier": 1046869,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7523504774419,
+      27.9706047225865
+    ],
+    "parcelRepresentativePoint": [
+      -82.75235050029471,
+      27.97060402413728
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2040 MCKINLEY ST",
+    "normalizedAddress": "2040 MCKINLEY ST",
+    "sourceAddressIdentifier": 157237,
+    "parcelIdentifier": "122915826560100060",
+    "parcelSourceIdentifier": 906959,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75234896912634,
+      27.970387442726576
+    ],
+    "parcelRepresentativePoint": [
+      -82.75235009171291,
+      27.97038828314119
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2050 MCKINLEY ST",
+    "normalizedAddress": "2050 MCKINLEY ST",
+    "sourceAddressIdentifier": 157238,
+    "parcelIdentifier": "122915826560100070",
+    "parcelSourceIdentifier": 739986,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7520081857871,
+      27.970386559809988
+    ],
+    "parcelRepresentativePoint": [
+      -82.75197552235822,
+      27.970409078317516
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "404 GRAHAM DR",
+    "normalizedAddress": "404 GRAHAM DR",
+    "sourceAddressIdentifier": 157239,
+    "parcelIdentifier": "122915826560100080",
+    "parcelSourceIdentifier": 95785,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75200967434884,
+      27.97060108933159
+    ],
+    "parcelRepresentativePoint": [
+      -82.75195344370177,
+      27.97060102282971
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "408 GRAHAM DR",
+    "normalizedAddress": "408 GRAHAM DR",
+    "sourceAddressIdentifier": 157240,
+    "parcelIdentifier": "122915826560100090",
+    "parcelSourceIdentifier": 842321,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75201106755823,
+      27.970801865265273
+    ],
+    "parcelRepresentativePoint": [
+      -82.751954143265,
+      27.970801795187267
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "412 GRAHAM DR",
+    "normalizedAddress": "412 GRAHAM DR",
+    "sourceAddressIdentifier": 157241,
+    "parcelIdentifier": "122915826560100100",
+    "parcelSourceIdentifier": 1097369,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75200936192465,
+      27.971002659033076
+    ],
+    "parcelRepresentativePoint": [
+      -82.75197699950361,
+      27.97098229868758
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "416 GRAHAM DR",
+    "normalizedAddress": "416 GRAHAM DR",
+    "sourceAddressIdentifier": 157242,
+    "parcelIdentifier": "122915826560100110",
+    "parcelSourceIdentifier": 308197,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75201075516951,
+      27.971203436759737
+    ],
+    "parcelRepresentativePoint": [
+      -82.75197713683752,
+      27.971224421205363
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "420 GRAHAM DR",
+    "normalizedAddress": "420 GRAHAM DR",
+    "sourceAddressIdentifier": 157243,
+    "parcelIdentifier": "122915826560100120",
+    "parcelSourceIdentifier": 826942,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75201226183661,
+      27.97142071571399
+    ],
+    "parcelRepresentativePoint": [
+      -82.75197738739737,
+      27.971398395051033
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "315 KERRY DR",
+    "normalizedAddress": "315 KERRY DR",
+    "sourceAddressIdentifier": 157244,
+    "parcelIdentifier": "122915826560110020",
+    "parcelSourceIdentifier": 1082618,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75235109883381,
+      27.96980158046047
+    ],
+    "parcelRepresentativePoint": [
+      -82.75234974791549,
+      27.969803822940488
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "305 KERRY DR",
+    "normalizedAddress": "305 KERRY DR",
+    "sourceAddressIdentifier": 157245,
+    "parcelIdentifier": "122915826560110040",
+    "parcelSourceIdentifier": 777739,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75234836952131,
+      27.969408276914493
+    ],
+    "parcelRepresentativePoint": [
+      -82.75237271335826,
+      27.969394961314524
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "301 KERRY DR",
+    "normalizedAddress": "301 KERRY DR",
+    "sourceAddressIdentifier": 157246,
+    "parcelIdentifier": "122915826560110050",
+    "parcelSourceIdentifier": 191017,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75235007355239,
+      27.96920748221227
+    ],
+    "parcelRepresentativePoint": [
+      -82.7523239273654,
+      27.969197144422317
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "217 KERRY DR",
+    "normalizedAddress": "217 KERRY DR",
+    "sourceAddressIdentifier": 157247,
+    "parcelIdentifier": "122915826560110060",
+    "parcelSourceIdentifier": 926631,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75234869888727,
+      27.96900945660351
+    ],
+    "parcelRepresentativePoint": [
+      -82.75229160966991,
+      27.96901077466441
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "211 KERRY DR",
+    "normalizedAddress": "211 KERRY DR",
+    "sourceAddressIdentifier": 157248,
+    "parcelIdentifier": "122915826560110070",
+    "parcelSourceIdentifier": 855567,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75235351979863,
+      27.968811396209507
+    ],
+    "parcelRepresentativePoint": [
+      -82.75232337926559,
+      27.968816991316498
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "2040 NE COACHMAN RD",
+    "normalizedAddress": "2040 NE COACHMAN RD",
+    "sourceAddressIdentifier": 157249,
+    "parcelIdentifier": "122915826560110080",
+    "parcelSourceIdentifier": 790162,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "C",
+    "normalizedZoningCode": "c",
+    "zoningDescription": "Commercial",
+    "zoningSourceIdentifier": 10962,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75231145431816,
+      27.968553081147295
+    ],
+    "parcelRepresentativePoint": [
+      -82.7524155451999,
+      27.968535041937194
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "2050 NE COACHMAN RD",
+    "normalizedAddress": "2050 NE COACHMAN RD",
+    "sourceAddressIdentifier": 157250,
+    "parcelIdentifier": "122915826560110080",
+    "parcelSourceIdentifier": 790162,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "C",
+    "normalizedZoningCode": "c",
+    "zoningDescription": "Commercial",
+    "zoningSourceIdentifier": 10962,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75231145431816,
+      27.968553081147295
+    ],
+    "parcelRepresentativePoint": [
+      -82.7524155451999,
+      27.968535041937194
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "2062 NE COACHMAN RD",
+    "normalizedAddress": "2062 NE COACHMAN RD",
+    "sourceAddressIdentifier": 157251,
+    "parcelIdentifier": "122915826560110090",
+    "parcelSourceIdentifier": 1071938,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "C",
+    "normalizedZoningCode": "c",
+    "zoningDescription": "Commercial",
+    "zoningSourceIdentifier": 10962,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75197972133435,
+      27.96864556769376
+    ],
+    "parcelRepresentativePoint": [
+      -82.75189045121047,
+      27.96881409112842
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "c"
+    }
+  },
+  {
+    "displayAddress": "218 GRAHAM DR",
+    "normalizedAddress": "218 GRAHAM DR",
+    "sourceAddressIdentifier": 157255,
+    "parcelIdentifier": "122915826560110100",
+    "parcelSourceIdentifier": 866199,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.7520048220819,
+      27.969008589630228
+    ],
+    "parcelRepresentativePoint": [
+      -82.75197232875045,
+      27.969008513223685
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "304 GRAHAM DR",
+    "normalizedAddress": "304 GRAHAM DR",
+    "sourceAddressIdentifier": 157256,
+    "parcelIdentifier": "122915826560110120",
+    "parcelSourceIdentifier": 924221,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75200766451668,
+      27.969418394462938
+    ],
+    "parcelRepresentativePoint": [
+      -82.752042334102,
+      27.969435999298263
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "312 GRAHAM DR",
+    "normalizedAddress": "312 GRAHAM DR",
+    "sourceAddressIdentifier": 157257,
+    "parcelIdentifier": "122915826560110140",
+    "parcelSourceIdentifier": 1057019,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75201033639999,
+      27.969803446966566
+    ],
+    "parcelRepresentativePoint": [
+      -82.75200910267945,
+      27.96980431379871
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "310 N HERCULES AVE",
+    "normalizedAddress": "310 N HERCULES AVE",
+    "sourceAddressIdentifier": 210788,
+    "parcelIdentifier": "122915557820220090",
+    "parcelSourceIdentifier": 726557,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7549525742999,
+      27.969685532210118
+    ],
+    "parcelRepresentativePoint": [
+      -82.75498829962282,
+      27.969684762026873
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "305 PATRICIA AVE",
+    "normalizedAddress": "305 PATRICIA AVE",
+    "sourceAddressIdentifier": 210791,
+    "parcelIdentifier": "122915826380050040",
+    "parcelSourceIdentifier": 808548,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75325272536422,
+      27.969373063025152
+    ],
+    "parcelRepresentativePoint": [
+      -82.75325215011974,
+      27.96937368845528
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1966 MCKINLEY ST",
+    "normalizedAddress": "1966 MCKINLEY ST",
+    "sourceAddressIdentifier": 238611,
+    "parcelIdentifier": "122915557820210100",
+    "parcelSourceIdentifier": 721250,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75506626634223,
+      27.970441287195545
+    ],
+    "parcelRepresentativePoint": [
+      -82.75506567172188,
+      27.97044319322225
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "210 KERRY DR",
+    "normalizedAddress": "210 KERRY DR",
+    "sourceAddressIdentifier": 259828,
+    "parcelIdentifier": "122915826560090020",
+    "parcelSourceIdentifier": 867087,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75287829523481,
+      27.96854172300167
+    ],
+    "parcelRepresentativePoint": [
+      -82.75282995064798,
+      27.96851003482168
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "1970 MCKINLEY ST",
+    "normalizedAddress": "1970 MCKINLEY ST",
+    "sourceAddressIdentifier": 269978,
+    "parcelIdentifier": "122915557820210101",
+    "parcelSourceIdentifier": 69594,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75485869164618,
+      27.970439677535374
+    ],
+    "parcelRepresentativePoint": [
+      -82.75487154026833,
+      27.970442376903833
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1964 MCKINLEY ST",
+    "normalizedAddress": "1964 MCKINLEY ST",
+    "sourceAddressIdentifier": 320522,
+    "parcelIdentifier": "122915557820210090",
+    "parcelSourceIdentifier": 836377,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75525213809753,
+      27.97044026521865
+    ],
+    "parcelRepresentativePoint": [
+      -82.7552173182776,
+      27.97045439473295
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2000 MCKINLEY ST",
+    "normalizedAddress": "2000 MCKINLEY ST",
+    "sourceAddressIdentifier": 320528,
+    "parcelIdentifier": "122915826380010060",
+    "parcelSourceIdentifier": 813773,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75423569672915,
+      27.97039634353983
+    ],
+    "parcelRepresentativePoint": [
+      -82.75423533800154,
+      27.970397411072796
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "409 KERRY DR",
+    "normalizedAddress": "409 KERRY DR",
+    "sourceAddressIdentifier": 320530,
+    "parcelIdentifier": "122915826560100040",
+    "parcelSourceIdentifier": 924970,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75235187128864,
+      27.97080549940669
+    ],
+    "parcelRepresentativePoint": [
+      -82.75235086042373,
+      27.97080479397676
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "207 N HERCULES AVE",
+    "normalizedAddress": "207 N HERCULES AVE",
+    "sourceAddressIdentifier": 322653,
+    "parcelIdentifier": "122915826380030020",
+    "parcelSourceIdentifier": 796985,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75423830736199,
+      27.96854526022021
+    ],
+    "parcelRepresentativePoint": [
+      -82.75423741028806,
+      27.9685266801381
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "412 N HERCULES AVE",
+    "normalizedAddress": "412 N HERCULES AVE",
+    "sourceAddressIdentifier": 338849,
+    "parcelIdentifier": "122915557820210130",
+    "parcelSourceIdentifier": 947650,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75490084059558,
+      27.9707089930297
+    ],
+    "parcelRepresentativePoint": [
+      -82.75490807829166,
+      27.970697541422606
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1972 HARDING PLZ",
+    "normalizedAddress": "1972 HARDING PLZ",
+    "sourceAddressIdentifier": 338850,
+    "parcelIdentifier": "122915557820220071",
+    "parcelSourceIdentifier": 1062307,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75486724690711,
+      27.969443959981568
+    ],
+    "parcelRepresentativePoint": [
+      -82.75488330548103,
+      27.969420529274537
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1950 DREW PLZ",
+    "normalizedAddress": "1950 DREW PLZ",
+    "sourceAddressIdentifier": 338854,
+    "parcelIdentifier": "122915557820250300",
+    "parcelSourceIdentifier": 324716,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75590480924578,
+      27.968519593255746
+    ],
+    "parcelRepresentativePoint": [
+      -82.75588644455618,
+      27.96851878748736
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2025 MCKINLEY ST",
+    "normalizedAddress": "2025 MCKINLEY ST",
+    "sourceAddressIdentifier": 338864,
+    "parcelIdentifier": "122915826560080010",
+    "parcelSourceIdentifier": 1016698,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75288526410321,
+      27.96999118531755
+    ],
+    "parcelRepresentativePoint": [
+      -82.7528844111203,
+      27.969992175720616
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "309 KERRY DR",
+    "normalizedAddress": "309 KERRY DR",
+    "sourceAddressIdentifier": 338865,
+    "parcelIdentifier": "122915826560110030",
+    "parcelSourceIdentifier": 937751,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75234972411994,
+      27.969603553064132
+    ],
+    "parcelRepresentativePoint": [
+      -82.75234911463794,
+      27.969573713470293
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "300 GRAHAM DR",
+    "normalizedAddress": "300 GRAHAM DR",
+    "sourceAddressIdentifier": 338866,
+    "parcelIdentifier": "122915826560110110",
+    "parcelSourceIdentifier": 937098,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7520063095281,
+      27.969223118298203
+    ],
+    "parcelRepresentativePoint": [
+      -82.752007399684,
+      27.969231531456487
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "214 PATRICIA AVE",
+    "normalizedAddress": "214 PATRICIA AVE",
+    "sourceAddressIdentifier": 354060,
+    "parcelIdentifier": "122915826380030080",
+    "parcelSourceIdentifier": 998355,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75383710367474,
+      27.968764751525345
+    ],
+    "parcelRepresentativePoint": [
+      -82.75383785445221,
+      27.968745431896103
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "mdr"
+    }
+  },
+  {
+    "displayAddress": "2034 NE COACHMAN RD",
+    "normalizedAddress": "2034 NE COACHMAN RD",
+    "sourceAddressIdentifier": 356496,
+    "parcelIdentifier": "122915826560110080",
+    "parcelSourceIdentifier": 790162,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "C",
+    "normalizedZoningCode": "c",
+    "zoningDescription": "Commercial",
+    "zoningSourceIdentifier": 10962,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75231145431816,
+      27.968553081147295
+    ],
+    "parcelRepresentativePoint": [
+      -82.7524155451999,
+      27.968535041937194
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "310 KERRY DR",
+    "normalizedAddress": "310 KERRY DR",
+    "sourceAddressIdentifier": 361560,
+    "parcelIdentifier": "122915826560080030",
+    "parcelSourceIdentifier": 759515,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75288235997814,
+      27.969573127736954
+    ],
+    "parcelRepresentativePoint": [
+      -82.75288162476387,
+      27.969572744521805
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "305 N HERCULES AVE",
+    "normalizedAddress": "305 N HERCULES AVE",
+    "sourceAddressIdentifier": 368544,
+    "parcelIdentifier": "122915826380020040",
+    "parcelSourceIdentifier": 918573,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75423790910526,
+      27.96937865703415
+    ],
+    "parcelRepresentativePoint": [
+      -82.7542366932665,
+      27.969377780346594
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "211 N HERCULES AVE",
+    "normalizedAddress": "211 N HERCULES AVE",
+    "sourceAddressIdentifier": 368545,
+    "parcelIdentifier": "122915826380030020",
+    "parcelSourceIdentifier": 796985,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "addressCoordinates": [
+      -82.75423830736199,
+      27.96854526022021
+    ],
+    "parcelRepresentativePoint": [
+      -82.75423741028806,
+      27.9685266801381
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  },
+  {
+    "displayAddress": "413 KERRY DR",
+    "normalizedAddress": "413 KERRY DR",
+    "sourceAddressIdentifier": 368546,
+    "parcelIdentifier": "122915826560100030",
+    "parcelSourceIdentifier": 863527,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75235014720631,
+      27.971003542811307
+    ],
+    "parcelRepresentativePoint": [
+      -82.75235123937117,
+      27.971004685464585
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1959 HARDING ST",
+    "normalizedAddress": "1959 HARDING ST",
+    "sourceAddressIdentifier": 379526,
+    "parcelIdentifier": "122915557820250050",
+    "parcelSourceIdentifier": 891487,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75564930161256,
+      27.968752038886876
+    ],
+    "parcelRepresentativePoint": [
+      -82.7556413078561,
+      27.96877086980646
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "308 GRAHAM DR",
+    "normalizedAddress": "308 GRAHAM DR",
+    "sourceAddressIdentifier": 379535,
+    "parcelIdentifier": "122915826560110130",
+    "parcelSourceIdentifier": 1047865,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75200900044861,
+      27.969610920266298
+    ],
+    "parcelRepresentativePoint": [
+      -82.75204296590269,
+      27.969630042603562
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "417 PATRICIA AVE",
+    "normalizedAddress": "417 PATRICIA AVE",
+    "sourceAddressIdentifier": 379543,
+    "parcelIdentifier": "122915826380060020",
+    "parcelSourceIdentifier": 1032063,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75325929730231,
+      27.97121034467842
+    ],
+    "parcelRepresentativePoint": [
+      -82.75325780815308,
+      27.97121094758922
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1951 GILBERT ST",
+    "normalizedAddress": "1951 GILBERT ST",
+    "sourceAddressIdentifier": 379552,
+    "parcelIdentifier": "122915557820210180",
+    "parcelSourceIdentifier": 1034124,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75583094711943,
+      27.970811144578633
+    ],
+    "parcelRepresentativePoint": [
+      -82.75586116844508,
+      27.97083321379045
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "310 PATRICIA AVE",
+    "normalizedAddress": "310 PATRICIA AVE",
+    "sourceAddressIdentifier": 379556,
+    "parcelIdentifier": "122915826380020080",
+    "parcelSourceIdentifier": 122822,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75383655044728,
+      27.969576143724776
+    ],
+    "parcelRepresentativePoint": [
+      -82.75377024591772,
+      27.969575700574087
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1975 HARDING ST",
+    "normalizedAddress": "1975 HARDING ST",
+    "sourceAddressIdentifier": 398979,
+    "parcelIdentifier": "122915557820250140",
+    "parcelSourceIdentifier": 864021,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7548778907629,
+      27.968748030901097
+    ],
+    "parcelRepresentativePoint": [
+      -82.75487979773591,
+      27.968738029886104
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "409 PATRICIA AVE",
+    "normalizedAddress": "409 PATRICIA AVE",
+    "sourceAddressIdentifier": 403345,
+    "parcelIdentifier": "122915826380060040",
+    "parcelSourceIdentifier": 971606,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75325650620974,
+      27.970808790237317
+    ],
+    "parcelRepresentativePoint": [
+      -82.75325697190918,
+      27.97080940320048
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "215 N HERCULES AVE",
+    "normalizedAddress": "215 N HERCULES AVE",
+    "sourceAddressIdentifier": 405856,
+    "parcelIdentifier": "122915826380030010",
+    "parcelSourceIdentifier": 863709,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7542367577831,
+      27.968768057745258
+    ],
+    "parcelRepresentativePoint": [
+      -82.75420899606686,
+      27.968759317968107
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "mdr"
+    }
+  },
+  {
+    "displayAddress": "1960 MCKINLEY ST",
+    "normalizedAddress": "1960 MCKINLEY ST",
+    "sourceAddressIdentifier": 459891,
+    "parcelIdentifier": "122915557820210080",
+    "parcelSourceIdentifier": 910957,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75543802900094,
+      27.970441993343922
+    ],
+    "parcelRepresentativePoint": [
+      -82.75545174428547,
+      27.9704782287517
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1962 HARDING PLZ",
+    "normalizedAddress": "1962 HARDING PLZ",
+    "sourceAddressIdentifier": 459893,
+    "parcelIdentifier": "122915557820220060",
+    "parcelSourceIdentifier": 32057,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7553071063936,
+      27.969436769758712
+    ],
+    "parcelRepresentativePoint": [
+      -82.75532284399819,
+      27.969517084673612
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1955 MCKINLEY ST",
+    "normalizedAddress": "1955 MCKINLEY ST",
+    "sourceAddressIdentifier": 459894,
+    "parcelIdentifier": "122915557820220140",
+    "parcelSourceIdentifier": 752903,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75567902048094,
+      27.96990432422474
+    ],
+    "parcelRepresentativePoint": [
+      -82.75571126688494,
+      27.969898748771403
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1964 DREW PLZ",
+    "normalizedAddress": "1964 DREW PLZ",
+    "sourceAddressIdentifier": 459895,
+    "parcelIdentifier": "122915557820250240",
+    "parcelSourceIdentifier": 1044840,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.7553905364672,
+      27.968516922077885
+    ],
+    "parcelRepresentativePoint": [
+      -82.75538892236065,
+      27.96851710984712
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2019 HARDING ST",
+    "normalizedAddress": "2019 HARDING ST",
+    "sourceAddressIdentifier": 459905,
+    "parcelIdentifier": "122915826380040010",
+    "parcelSourceIdentifier": 727728,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "MDR",
+    "normalizedZoningCode": "mdr",
+    "zoningDescription": "Medium Density Residential",
+    "zoningSourceIdentifier": 10961,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75325467737183,
+      27.968762446660403
+    ],
+    "parcelRepresentativePoint": [
+      -82.75325381005719,
+      27.968735810101535
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "mdr"
+    }
+  },
+  {
+    "displayAddress": "2021 MARILYN ST",
+    "normalizedAddress": "2021 MARILYN ST",
+    "sourceAddressIdentifier": 459907,
+    "parcelIdentifier": "122915826380060010",
+    "parcelSourceIdentifier": 979783,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75325768950938,
+      27.971424890176205
+    ],
+    "parcelRepresentativePoint": [
+      -82.75325823487952,
+      27.97142614452166
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "412 KERRY DR",
+    "normalizedAddress": "412 KERRY DR",
+    "sourceAddressIdentifier": 459908,
+    "parcelIdentifier": "122915826560070030",
+    "parcelSourceIdentifier": 948961,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75288613701568,
+      27.97100885591018
+    ],
+    "parcelRepresentativePoint": [
+      -82.75285030988495,
+      27.971028346568982
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2051 MCKINLEY ST",
+    "normalizedAddress": "2051 MCKINLEY ST",
+    "sourceAddressIdentifier": 470897,
+    "parcelIdentifier": "122915826560110150",
+    "parcelSourceIdentifier": 922953,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75200863073506,
+      27.97000424076294
+    ],
+    "parcelRepresentativePoint": [
+      -82.75200940997135,
+      27.970003753397542
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "2041 MCKINLEY ST",
+    "normalizedAddress": "2041 MCKINLEY ST",
+    "sourceAddressIdentifier": 471943,
+    "parcelIdentifier": "122915826560110010",
+    "parcelSourceIdentifier": 1003531,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "LMDR",
+    "normalizedZoningCode": "lmdr",
+    "zoningDescription": "Low Medium Density Residential",
+    "zoningSourceIdentifier": 11130,
+    "jurisdiction": "clearwater-fl",
+    "status": "clean",
+    "issues": [],
+    "addressCoordinates": [
+      -82.75234941388914,
+      27.970005123696353
+    ],
+    "parcelRepresentativePoint": [
+      -82.75238411904168,
+      27.969984430802395
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": {
+      "property.zoning_district": "lmdr"
+    }
+  },
+  {
+    "displayAddress": "1955 HARDING PLZ",
+    "normalizedAddress": "1955 HARDING PLZ",
+    "sourceAddressIdentifier": 593527,
+    "parcelIdentifier": "122915557820000002",
+    "parcelSourceIdentifier": 808789,
+    "parcelMatchMethod": "authoritative_identifier",
+    "zoningCode": "OS/R",
+    "normalizedZoningCode": null,
+    "zoningDescription": "Open Space/Recreation",
+    "zoningSourceIdentifier": 10703,
+    "jurisdiction": "clearwater-fl",
+    "status": "review",
+    "issues": [
+      "unsupported_zoning_code"
+    ],
+    "addressCoordinates": [
+      -82.75543162396929,
+      27.969098252561253
+    ],
+    "parcelRepresentativePoint": [
+      -82.75539497044757,
+      27.9691015722598
+    ],
+    "sourceSnapshots": {
+      "addresses": {
+        "retrievedAt": "2026-08-23T23:49:35.559Z",
+        "sha256": "f00b66631849c9e5654158a25568143a15eb5b70b84e470dbdb6b79ba66506f1"
+      },
+      "parcels": {
+        "retrievedAt": "2026-08-23T23:49:35.751Z",
+        "sha256": "394e8f4dd27815fe50add146443a6992a8644a631882663c3a756c1cfa7dc177"
+      },
+      "zoning": {
+        "retrievedAt": "2026-08-23T23:49:39.339Z",
+        "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
+      }
+    },
+    "evaluatorFacts": null
+  }
+]
