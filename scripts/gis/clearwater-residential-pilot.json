@@ -1,0 +1,9 @@
+{
+  "pilotName": "clearwater-residential-pilot-v2",
+  "jurisdiction": "clearwater-fl",
+  "targetUse": "Approximately 75–150 compact, ordinary residential parcels for homeowner fence-workflow GIS validation",
+  "bbox": null,
+  "bboxEnvironmentVariable": "CLEARWATER_RESIDENTIAL_BBOX",
+  "selectionStatus": "Requires local authoritative-map selection because network access was unavailable in the implementation environment",
+  "outputDirectory": "research/gis/data/clearwater-residential-pilot-v2"
+}
