@@ -2,9 +2,22 @@
 
 import { evaluateProjectRules } from "../../../lib/rules";
 import type { Facts } from "../../../lib/rules/types";
-import { mockClearwaterPropertyFacts } from "./mock-property";
+import { findPropertyByAddress } from "../../../lib/properties/lookup";
+import { propertyProfileToFacts } from "../../../lib/properties";
 
-export async function evaluateFenceAnswers(facts: Facts) {
-  // Property facts remain server-owned until the mock is replaced by GIS.
-  return evaluateProjectRules({ jurisdiction: "clearwater-fl", projectType: "fence", facts: { ...facts, ...mockClearwaterPropertyFacts } });
+const jurisdiction = "clearwater-fl";
+
+export async function startFenceLookup(address: string) {
+  const property = await findPropertyByAddress(jurisdiction, address);
+  if (!property) return null;
+  const facts = propertyProfileToFacts(property);
+  const result = await evaluateProjectRules({ jurisdiction, projectType: "fence", facts });
+  return { displayAddress: property.displayAddress, facts, result };
+}
+
+export async function evaluateFenceAnswers(address: string, facts: Facts) {
+  const property = await findPropertyByAddress(jurisdiction, address);
+  if (!property) throw new Error("The property is outside trusted pilot coverage.");
+  const propertyFacts = propertyProfileToFacts(property);
+  return evaluateProjectRules({ jurisdiction, projectType: "fence", facts: { ...facts, ...propertyFacts } });
 }
