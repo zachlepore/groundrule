@@ -164,6 +164,37 @@ h1 {
 .sources { color: var(--muted); font-size: .9rem; }
 .sources a { color: var(--accent); }
 
+.address-panel, .guide { width: min(100%, 46rem); margin: clamp(5rem, 12vh, 9rem) auto 4rem; }
+.address-panel h1 { max-width: 18ch; }
+.found { color: var(--accent); font-size: 1.05rem; font-weight: 700; }
+.address-heading { max-width: none !important; font-size: clamp(2rem, 6vw, 3.25rem); text-transform: capitalize; }
+.address-heading small { display: block; margin-top: .65rem; color: var(--muted); font-size: 1rem; font-weight: 400; text-transform: none; }
+.project-choice { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+.project-choice h2 { font-size: 1.25rem; }
+.project-choice button { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 4.75rem; margin-top: 1rem; padding: 0 1.4rem; border: 1px solid var(--accent); border-radius: .25rem; background: #fff; color: var(--foreground); font-size: 1.1rem; font-weight: 700; text-align: left; }
+.project-choice button:hover { background: #f0f5f2; }
+.guide { margin-top: clamp(4rem, 9vh, 7rem); }
+.guide > h1 { max-width: 18ch; text-transform: capitalize; }
+.guide-intro { max-width: 42rem; margin: 1.5rem 0 4rem; color: var(--muted); font-size: 1.08rem; line-height: 1.65; }
+.guide-section { margin: 4rem 0; }
+.guide-section > h2 { display: flex; gap: .75rem; align-items: center; margin: 0 0 1rem; font-size: .82rem; letter-spacing: .1em; }
+.guide-section > h2 span { display: grid; width: 1.8rem; height: 1.8rem; place-items: center; border-radius: 50%; background: #e5f0e9; color: var(--accent); font-size: 1rem; }
+.guide-item { padding: 1.6rem 0; border-top: 1px solid var(--border); }
+.guide-item h3 { margin: 0 0 .65rem; font-size: 1.25rem; }
+.guide-item > p, .guide-item li { line-height: 1.65; }
+.guide-item > p { margin: 0; }
+.guide-item ul { padding-left: 1.3rem; }
+.guide-source { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; margin-top: 1.25rem !important; color: var(--muted); font-size: .85rem; }
+.guide-source a { color: var(--accent); font-weight: 700; }
+.visibility-diagram { margin: 1.5rem 0 0; padding: 1rem; border: 1px solid var(--border); background: #f8faf8; }
+.visibility-diagram svg { display: block; width: 100%; height: auto; }
+.visibility-diagram figcaption { padding: .75rem .25rem 0; color: var(--muted); font-size: .85rem; line-height: 1.5; }
+.refine { margin-top: 5rem; padding: 2rem; background: #edf2ef; }
+.refine h2 { margin: 0; font-size: 1.4rem; }
+.refine p { color: var(--muted); line-height: 1.55; }
+.refine button { min-height: 3.25rem; padding: 0 1.2rem; border: 0; background: var(--accent); color: #fff; font-weight: 700; }
+.back-link { margin-bottom: 3rem; padding: .5rem 0; border: 0; background: transparent; color: var(--accent); }
+
 @media (max-width: 36rem) {
   .shell {
     padding: 1.5rem;
@@ -184,4 +215,9 @@ h1 {
   .choice-grid { grid-template-columns: 1fr; }
   .workflow-actions { flex-wrap: wrap; }
   .workflow-actions .primary { width: 100%; margin-left: 0; order: -1; }
+  .workflow-shell { padding: 1.25rem; }
+  .address-panel, .guide { margin-top: 4rem; }
+  .guide-intro { margin-bottom: 3rem; }
+  .guide-section { margin: 3rem 0; }
+  .refine { margin-left: -1.25rem; margin-right: -1.25rem; padding: 1.5rem 1.25rem; }
 }
