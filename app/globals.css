@@ -179,8 +179,7 @@ h1 {
 .guide { margin-top: clamp(3rem, 7vh, 5.5rem); }
 .guide > h1 { max-width: none; font-size: clamp(2.15rem, 5vw, 3.3rem); text-transform: capitalize; }
 .guide > h1 span { display: block; margin-bottom: .3rem; color: var(--muted); font-size: .42em; font-weight: 600; letter-spacing: .01em; text-transform: none; }
-.guide-intro { max-width: 42rem; margin: 1.1rem 0 2.5rem; color: var(--muted); font-size: 1rem; line-height: 1.55; }
-.guide-intro strong { color: var(--foreground); font-weight: 500; }
+.guide-intro { max-width: 46rem; margin: .75rem 0 2.5rem; color: var(--muted); font-size: .82rem; line-height: 1.5; }
 .property-context { display: flex; align-items: center; gap: 1rem; margin: 1.25rem 0 0; padding: .85rem 1rem; border: 1px solid #d5dcdd; border-radius: .25rem; background: var(--property-background); }
 .property-context p { flex: 0 0 auto; margin: 0; color: #526066; font-size: .7rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
 .property-context ul { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; margin: 0; padding: 0; color: #465157; font-size: .86rem; list-style: none; }
@@ -203,11 +202,11 @@ h1 {
 .guide-item ul { padding-left: 1.3rem; }
 .guide-source { margin: .7rem 0 0 !important; color: var(--muted); font-size: .76rem; }
 .guide-source a { display: inline-block; min-height: 1.5rem; color: var(--accent); text-underline-offset: .18rem; }
-.process-section ol { margin: 0; padding: 0; list-style: none; counter-reset: process; border-bottom: 1px solid var(--border); }
-.process-section li { display: grid; grid-template-columns: 2.1rem 1fr; gap: .75rem; padding: 1rem 0; border-top: 1px solid var(--border); counter-increment: process; }
-.process-section li::before { display: grid; width: 1.7rem; height: 1.7rem; place-items: center; border: 1px solid var(--accent-muted); border-radius: 50%; color: var(--accent); content: counter(process); font-size: .78rem; font-weight: 700; }
-.process-section h3 { margin: .2rem 0 .25rem; font-size: 1rem; }
-.process-section li p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.45; }
+.permit-action { padding: 1.1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.permit-action h3 { margin: 0 0 .35rem; font-size: 1.2rem; }
+.permit-action > p { margin: .35rem 0; line-height: 1.5; }
+.permit-action-next { color: var(--muted); font-size: .9rem; }
+.permit-secondary { margin-top: 1rem !important; padding-top: .8rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .86rem; }
 .visibility-diagram { max-width: 38rem; margin: 1.25rem 0 0; padding: .75rem; border: 1px solid var(--border); background: #f8faf8; }
 .visibility-diagram svg { display: block; width: 100%; height: auto; }
 .visibility-diagram figcaption { padding: .75rem .25rem 0; color: var(--muted); font-size: .85rem; line-height: 1.5; }

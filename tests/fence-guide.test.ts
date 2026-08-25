@@ -11,6 +11,8 @@ const result: EvaluationResult = {
   ruleSet: { key: "clearwater_fence_v1", title: "Fence", jurisdiction: "clearwater-fl", projectType: "fence", coverageStatus: "limited", knownGaps: [] }, conflicts: [], missingInputs: [], notMatchedRules: [], reviewRequiredRules: [], citations: [],
   matchedRules: [
     makeRule("permit.building_required", "MATCHED", [{ sequence: 1, type: "obligation", subjectKey: null, parameters: { presentation_group: "before_you_build" }, severity: "requirement", messageTemplate: "Permit required before construction." }], "§ 4-203"),
+    makeRule("permit.review_path", "MATCHED", [{ sequence: 1, type: "obligation", subjectKey: null, parameters: { presentation_group: "before_you_build" }, severity: "requirement", messageTemplate: "Submit the application and applicable plans for City review." }], "§ 4-203"),
+    makeRule("permit.final_inspection", "MATCHED", [{ sequence: 1, type: "obligation", subjectKey: null, parameters: { presentation_group: "before_you_build" }, severity: "requirement", messageTemplate: "Final inspection required after installation." }], "§ 4-203"),
   ],
   unknownRules: [
     makeRule("height.front_baseline", "UNKNOWN", [maximum(4)], "§ 3-804"), makeRule("height.side_rear_baseline", "UNKNOWN", [maximum(6)], "§ 3-804"),
@@ -26,25 +28,33 @@ test("known LMDR property gets an answers-first guide without project details", 
   const facts = { "property.zoning_district": "lmdr", "project.structure_type": "fence" };
   const guide = buildClearwaterFenceGuide(result, facts);
   assert.equal(guide.zoningDistrict, "lmdr");
-  assert.deepEqual(guide.propertyContext, ["Clearwater zoning · LMDR"]);
+  assert.deepEqual(guide.propertyContext, ["Zoning · LMDR"]);
   assert.equal(facts["project.height" as keyof typeof facts], undefined);
   assert.deepEqual(guide.whatYouCanDo.map((item) => item.title), ["Front yard", "Side + rear", "Materials"]);
   assert.deepEqual(guide.highlights.map((item) => item.title), ["Front yard", "Side + rear", "Materials", "Permit"]);
-  assert.equal(guide.highlights[0]?.answer, "Up to 4 feet");
+  assert.equal(guide.highlights[0]?.answer, "4 ft maximum fence height");
+  assert.equal(guide.highlights[1]?.answer, "6 ft maximum fence height");
   const materials = guide.highlights.find((item) => item.key === "material.metal_prohibition");
-  assert.equal(materials?.answer, "Not allowed");
-  assert.equal(materials?.qualification, "Corrugated or sheet metal");
+  assert.equal(materials?.answer, "No corrugated or sheet metal fencing");
+  assert.notEqual(materials?.answer, "Not allowed");
   assert.match(materials?.body ?? "", /may not be used to form the fence or wall/);
   assert.equal(materials?.citations[0]?.sectionIdentifier, "§ 3-802");
 });
 
 test("permit is a before-build duty, visibility is conditional, and citations survive", () => {
   const guide = buildClearwaterFenceGuide(result, { "property.zoning_district": "lmdr" });
-  assert.equal(guide.beforeYouBuild[0]?.title, "Building permit required");
+  const permit = guide.highlights.find((item) => item.title === "Permit");
+  assert.equal(permit?.answer, "Permit required");
+  assert.equal(guide.beforeYouBuild.length, 1);
+  assert.equal(guide.beforeYouBuild[0]?.title, "Get your fence permit");
+  assert.match(guide.beforeYouBuild[0]?.actionText ?? "", /application and applicable plans/);
+  assert.match(guide.beforeYouBuild[0]?.secondaryRequirement ?? "", /Final inspection required after installation/);
   assert.equal(guide.checkThis[0]?.assetId, "clearwater_sight_visibility_triangle_v1");
   assert.match(guide.checkThis[0]?.body ?? "", /cannot tell/);
   assert.equal(guide.checkThis[0]?.values?.horizontal_leg_1_ft, 20);
   assert.equal(guide.checkThis[0]?.values?.display_value, 30);
+  assert.match(guide.checkThis[0]?.bullets?.[0] ?? "", /20 feet along one applicable edge.*20 feet along the other applicable edge/);
+  assert.match(guide.checkThis[0]?.bullets?.[2] ?? "", /maximum fence height.*30 inches/);
   assert.equal(guide.checkThis[0]?.citations[0]?.sourceUrl, citation.sourceUrl);
   assert.doesNotMatch(JSON.stringify(guide), /UNKNOWN|REVIEW_REQUIRED/);
 });
@@ -54,6 +64,9 @@ test("resident UI ends with guidance, shows trusted property context, and embeds
   assert.doesNotMatch(ui, /Check my fence|specific fence in mind|QuestionControl|nextQuestion|stage === "refine"/);
   assert.match(ui, /guide\.propertyContext\.map/);
   assert.match(ui, /<GuideHighlights items={guide.highlights}/);
+  assert.match(ui, /View Clearwater rule ↗/);
+  assert.match(ui, /citation\.sectionIdentifier/);
+  assert.match(ui, /secondaryRequirement/);
   assert.doesNotMatch(ui, /30 inches|20 ft|maximum height is 4|maximum height is 6/);
   assert.doesNotMatch(ui, /Not allowed|Corrugated or sheet metal/);
 });

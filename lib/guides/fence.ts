@@ -11,6 +11,8 @@ export interface FenceGuideItem {
   citations: Citation[];
   assetId?: string;
   values?: Record<string, JsonValue>;
+  actionText?: string;
+  secondaryRequirement?: string;
 }
 export interface FenceGuide { zoningDistrict: string | null; propertyContext: string[]; highlights: FenceGuideItem[]; whatYouCanDo: FenceGuideItem[]; beforeYouBuild: FenceGuideItem[]; checkThis: FenceGuideItem[] }
 
@@ -21,6 +23,11 @@ const displayMeasure = (item: Outcome | undefined) => {
   const value = item?.parameters.display_value ?? item?.parameters.value;
   const unit = item?.parameters.display_unit ?? item?.parameters.unit;
   return value == null || unit == null ? null : `${value} ${unit === "ft" ? "feet" : unit === "in" ? "inches" : unit}`;
+};
+const displayCompactMeasure = (item: Outcome | undefined) => {
+  const value = item?.parameters.display_value ?? item?.parameters.value;
+  const unit = item?.parameters.display_unit ?? item?.parameters.unit;
+  return value == null || unit == null ? null : `${value} ${unit}`;
 };
 const sourceItem = (rule: EvaluatedRule, item: Omit<FenceGuideItem, "citations">): FenceGuideItem => ({ ...item, citations: rule.citations });
 
@@ -34,7 +41,7 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   const front = rules.get("height.front_baseline");
   const frontMaximum = outcome(front, "maximum");
   if (front && displayMeasure(frontMaximum)) whatYouCanDo.push(sourceItem(front, {
-    key: front.key, title: "Front yard", answer: `Up to ${displayMeasure(frontMaximum)}`,
+    key: front.key, title: "Front yard", answer: `${displayCompactMeasure(frontMaximum)} maximum fence height`,
     qualification: "Ordinary, non-chain-link fence.",
     body: `For an ordinary, non-chain-link fence, the maximum height is ${displayMeasure(frontMaximum)}. Other designs or special locations may follow different rules.`,
     values: frontMaximum?.parameters,
@@ -43,7 +50,7 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   const sideRear = rules.get("height.side_rear_baseline");
   const sideRearMaximum = outcome(sideRear, "maximum");
   if (sideRear && displayMeasure(sideRearMaximum)) whatYouCanDo.push(sourceItem(sideRear, {
-    key: sideRear.key, title: "Side + rear", answer: `Up to ${displayMeasure(sideRearMaximum)}`,
+    key: sideRear.key, title: "Side + rear", answer: `${displayCompactMeasure(sideRearMaximum)} maximum fence height`,
     qualification: "Ordinary, non-chain-link fence away from a protected waterfront area.",
     body: `For an ordinary, non-chain-link fence away from a protected waterfront area, the maximum height is ${displayMeasure(sideRearMaximum)}.`,
     values: sideRearMaximum?.parameters,
@@ -53,8 +60,8 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   if (material) {
     const materialText = material.outcomes[0]?.messageTemplate ?? material.summary;
     whatYouCanDo.push(sourceItem(material, {
-      key: material.key, title: "Materials", answer: "Not allowed",
-      qualification: "Corrugated or sheet metal", body: materialText,
+      key: material.key, title: "Materials", answer: "No corrugated or sheet metal fencing",
+      body: materialText,
     }));
   }
 
@@ -70,6 +77,23 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
     }));
   }
 
+  const permitDuty = beforeYouBuild.find((item) => item.key === "permit.building_required");
+  const reviewDuty = beforeYouBuild.find((item) => item.key === "permit.review_path");
+  const inspectionDuty = beforeYouBuild.find((item) => item.key === "permit.final_inspection");
+  const permitCitations = [permitDuty, reviewDuty, inspectionDuty]
+    .flatMap((item) => item?.citations ?? [])
+    .filter((citation, index, citations) => citations.findIndex((candidate) =>
+      candidate.sourceUrl === citation.sourceUrl && candidate.sectionIdentifier === citation.sectionIdentifier
+    ) === index);
+  const permitAction = permitDuty ? {
+    ...permitDuty,
+    title: "Get your fence permit",
+    answer: "Permit required",
+    actionText: reviewDuty?.body,
+    secondaryRequirement: inspectionDuty?.body,
+    citations: permitCitations,
+  } : undefined;
+
   const visibility = rules.get("visibility.triangle_restriction");
   const height = outcome(visibility, "maximum");
   const opacity = outcome(visibility, "required_value");
@@ -81,17 +105,16 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
       key: visibility.key, title: "Special visibility rules may apply",
       body: "Groundrule cannot tell from the stored property data whether your fence enters this area.",
       bullets: [
-        `The visibility area extends ${leg1} feet along one edge and ${leg2} feet along the other.`,
+        `The visibility area extends ${leg1} feet along one applicable edge and ${leg2} feet along the other applicable edge.`,
         `Only a ${String(opacity.parameters.meaning)} fence is permitted there.`,
-        `The maximum height there is ${displayMeasure(height)}.`,
+        `The maximum fence height in the visibility area is ${displayMeasure(height)}.`,
         "Ask Clearwater to confirm the exact area; a City Engineer exception may be available.",
       ], assetId, values: { ...height.parameters, ...opacity.parameters },
     }));
   }
 
-  const permit = beforeYouBuild.find((item) => item.key === "permit.building_required");
-  const highlights = [...whatYouCanDo, ...(permit ? [{ ...permit, title: "Permit" }] : [])];
+  const highlights = [...whatYouCanDo, ...(permitDuty ? [{ ...permitDuty, title: "Permit", answer: "Permit required" }] : [])];
   const zoningDistrict = typeof facts["property.zoning_district"] === "string" ? facts["property.zoning_district"] : null;
-  const propertyContext = zoningDistrict ? [`Clearwater zoning · ${zoningDistrict.toUpperCase()}`] : [];
-  return { zoningDistrict, propertyContext, highlights, whatYouCanDo, beforeYouBuild, checkThis };
+  const propertyContext = zoningDistrict ? [`Zoning · ${zoningDistrict.toUpperCase()}`] : [];
+  return { zoningDistrict, propertyContext, highlights, whatYouCanDo, beforeYouBuild: permitAction ? [permitAction] : [], checkThis };
 }

@@ -46,11 +46,15 @@ Boxes exist to make scanning easier, not to decorate every paragraph. All panels
 
 **Answer cells** form a two-by-two desktop summary and a single readable mobile column. The order is answer first, qualification second, source third. Values and conclusions always come from structured guide presentation data, never React literals.
 
-**Property context** is a single subdued metadata strip. **Process** uses a numbered sequence rather than independent cards. **Check this** groups one conditional explanation and its diagram. **City confirmation** is used only under the escalation rule below.
+**Simple does not mean vague.** Resident-facing measurements must identify what they measure: use “4 ft maximum fence height,” not “4 ft maximum,” and “20 ft along each applicable edge,” not “20 ft.” Status copy must likewise name its subject when context does not make that subject unmistakable.
+
+**Property context** is a single subdued metadata strip. **Process** centers the primary action and compresses supporting obligations beneath it rather than creating independent cards. **Check this** groups one conditional explanation and its diagram. **City confirmation** is used only under the escalation rule below.
 
 ## Before You Build
 
 Use **Before you build** for concise, ordered actions supported by rule outcomes, such as an application, permit, or final inspection. Translate municipal procedural language into clear resident instructions without adding unsupported steps. Groundrule explains what must happen; the municipality still accepts, reviews, and approves the actual application.
+
+**A regulatory fact does not automatically deserve a UI element.** Each element must answer the resident, provide a next action, establish property-specific trust, or prevent a materially wrong interpretation. Compress supporting process obligations beneath the primary action when separate rows would only repeat bureaucratic language, while retaining facts whose omission could mislead.
 
 ## Check This
 
@@ -70,7 +74,7 @@ Do not use city confirmation for every uncertainty. Simple conditional guidance 
 
 ## Citations
 
-Authoritative access is never removed. Present citations compactly as `Source · § …`, with an accessible label that identifies the full source. Citation hierarchy is answer first, qualification second, source third. Links must be comfortably tappable and visually subordinate, never hidden or replaced with fabricated sources.
+Authoritative access is never removed. Present citations compactly as a resident-facing official-rule link, with an accessible label or title that retains the source and section identifier. Citation hierarchy is answer first, qualification second, source third. Links must be comfortably tappable and visually subordinate, never hidden or replaced with fabricated sources.
 
 ## Questionnaire removal and complexity escalation
 
