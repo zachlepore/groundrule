@@ -26,7 +26,9 @@ test("known LMDR property gets an answers-first guide without project details", 
   const guide = buildClearwaterFenceGuide(result, facts);
   assert.equal(guide.zoningDistrict, "lmdr");
   assert.equal(facts["project.height" as keyof typeof facts], undefined);
-  assert.deepEqual(guide.whatYouCanDo.map((item) => item.title), ["Front of the property", "Side and rear of the property"]);
+  assert.deepEqual(guide.whatYouCanDo.map((item) => item.title), ["Front yard", "Side + rear"]);
+  assert.deepEqual(guide.highlights.map((item) => item.title), ["Front yard", "Side + rear", "Permit"]);
+  assert.equal(guide.highlights[0]?.answer, "Up to 4 feet");
 });
 
 test("permit is a before-build duty, visibility is conditional, and citations survive", () => {
@@ -34,6 +36,8 @@ test("permit is a before-build duty, visibility is conditional, and citations su
   assert.equal(guide.beforeYouBuild[0]?.title, "Building permit required");
   assert.equal(guide.checkThis[0]?.assetId, "clearwater_sight_visibility_triangle_v1");
   assert.match(guide.checkThis[0]?.body ?? "", /cannot tell/);
+  assert.equal(guide.checkThis[0]?.values?.horizontal_leg_1_ft, 20);
+  assert.equal(guide.checkThis[0]?.values?.display_value, 30);
   assert.equal(guide.checkThis[0]?.citations[0]?.sourceUrl, citation.sourceUrl);
   assert.doesNotMatch(JSON.stringify(guide), /UNKNOWN|REVIEW_REQUIRED/);
 });
@@ -41,6 +45,7 @@ test("permit is a before-build duty, visibility is conditional, and citations su
 test("resident UI contains optional refinement and no embedded regulatory numbers", () => {
   const ui = fs.readFileSync("app/clearwater/fence/workflow.tsx", "utf8");
   assert.match(ui, /Check my fence/);
+  assert.ok(ui.indexOf("<GuideHighlights items={guide.highlights}") < ui.indexOf('<aside className="refine"'));
   assert.doesNotMatch(ui, /30 inches|20 ft|maximum height is 4|maximum height is 6/);
 });
 

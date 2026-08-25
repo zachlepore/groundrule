@@ -11,8 +11,8 @@ type Snapshot = { facts: Facts; result: EvaluationResult };
 function Source({ item }: { item: FenceGuideItem }) {
   const citation = item.citations[0];
   if (!citation) return null;
-  const label = `${citation.sourceTitle} ${citation.sectionIdentifier}`;
-  return <p className="guide-source"><span>{label}</span>{citation.sourceUrl && <a href={citation.sourceUrl} target="_blank" rel="noreferrer">View official rule →</a>}</p>;
+  const label = `Source · ${citation.sectionIdentifier}`;
+  return <p className="guide-source">{citation.sourceUrl ? <a href={citation.sourceUrl} target="_blank" rel="noreferrer" aria-label={`${label}, ${citation.sourceTitle}`}>{label}</a> : <span>{label}</span>}</p>;
 }
 
 function VisibilityDiagram({ item }: { item: FenceGuideItem }) {
@@ -39,6 +39,23 @@ function GuideSection({ symbol, title, items }: { symbol: string; title: string;
   </section>;
 }
 
+function GuideHighlights({ items }: { items: FenceGuideItem[] }) {
+  return <section className="guide-highlights" aria-labelledby="guide-highlights-title">
+    <h2 id="guide-highlights-title">What you can do</h2>
+    <div className="highlight-grid">{items.map((item) => <article key={item.key} className="highlight-item">
+      <h3>{item.title}</h3><p className="highlight-answer">{item.answer ?? item.body}</p>
+      {item.qualification && <p className="highlight-qualification">{item.qualification}</p>}<Source item={item}/>
+    </article>)}</div>
+  </section>;
+}
+
+function ProcessSection({ items }: { items: FenceGuideItem[] }) {
+  if (!items.length) return null;
+  return <section className="guide-section process-section" aria-labelledby="before-build"><h2 id="before-build">Before you build</h2>
+    <ol>{items.map((item) => <li key={item.key}><div><h3>{item.title}</h3><p>{item.body}</p><Source item={item}/></div></li>)}</ol>
+  </section>;
+}
+
 function QuestionControl({ input, value, onChange }: { input: RuleInput; value: FactValue; onChange: (value: FactValue) => void }) {
   if (input.dataType === "boolean") return <div className="choice-grid"><button className={value === true ? "selected" : ""} onClick={() => onChange(true)}>Yes</button><button className={value === false ? "selected" : ""} onClick={() => onChange(false)}>No</button></div>;
   if (input.dataType === "enum") return <div className="choice-grid">{input.options.map((option) => <button className={value === option.key ? "selected" : ""} key={option.key} onClick={() => onChange(option.key)}>{option.label}{option.description && <small>{option.description}</small>}</button>)}</div>;
@@ -57,7 +74,7 @@ export function FenceWorkflow() {
   return <main className="workflow-shell"><header className="workflow-brand">GROUNDRULE <span>Clearwater, Florida</span></header>
     {stage === "address" && <section className="address-panel"><p className="eyebrow">Clearwater fence pilot</p><h1>Enter your property address</h1><p className="workflow-copy">Guidance based on current City rules and property data.</p><div className="address-form"><input aria-label="Property address" autoComplete="street-address" placeholder="1950 Drew Plz" value={address} onChange={(e) => setAddress(e.target.value)} onKeyDown={(e) => e.key === "Enter" && address.trim() && lookup()}/><button onClick={lookup} disabled={pending || !address.trim()}>{pending ? "Looking…" : "Continue"}</button></div>{error && <p role="alert" className="warning">{error}</p>}</section>}
     {stage === "project" && <section className="address-panel"><p className="found">✓ We found this property.</p><h1 className="address-heading">{confirmedAddress}<small>Clearwater, FL</small></h1><div className="project-choice"><h2>What do you want to do?</h2><button onClick={() => setStage("guide")}>Build or replace a fence <span>→</span></button></div></section>}
-    {stage === "guide" && guide && <article className="guide"><p className="eyebrow">Clearwater fence guide</p><h1>Fences at {confirmedAddress}</h1><p className="guide-intro">This guidance is based on this property and current Clearwater rules. It is not a permit or City approval.</p><GuideSection symbol="✓" title="WHAT YOU CAN DO" items={guide.whatYouCanDo}/><GuideSection symbol="!" title="BEFORE YOU BUILD" items={guide.beforeYouBuild}/><GuideSection symbol="?" title="CHECK THIS" items={guide.checkThis}/><aside className="refine"><h2>Have a specific fence in mind?</h2><p>Answer a few optional questions to check your planned location, height, and material.</p><button onClick={() => setStage("refine")}>Check my fence</button></aside></article>}
+    {stage === "guide" && guide && <article className="guide"><p className="eyebrow">Clearwater fence guide</p><h1><span>Fences at</span>{confirmedAddress}</h1><p className="guide-intro">Guidance for this property based on current Clearwater rules.<br/><strong>Not a permit or City approval.</strong></p><GuideHighlights items={guide.highlights}/><ProcessSection items={guide.beforeYouBuild}/><GuideSection symbol="" title="Near a driveway or street corner?" items={guide.checkThis}/><aside className="refine"><h2>Have a specific fence in mind?</h2><p>Answer a few optional questions to check your planned location, height, and material.</p><button onClick={() => setStage("refine")}>Check my fence</button></aside></article>}
     {stage === "refine" && snapshot && <section className="address-panel"><button className="back-link" onClick={() => setStage("guide")}>← Back to property guide</button><p className="eyebrow">Optional fence check</p>{question ? <><h1>{question.label}</h1><QuestionControl input={question} value={draft} onChange={setDraft}/><div className="workflow-actions"><button className="primary" onClick={submit} disabled={pending || draft === undefined || draft === ""}>{pending ? "Checking…" : "Continue"}</button></div></> : <><h1>Your details are checked.</h1><p className="workflow-copy">Return to the property guide. Your answers were evaluated against the live Clearwater rules.</p></>}{error && <p role="alert" className="warning">{error}</p>}</section>}
   </main>;
 }

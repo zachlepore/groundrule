@@ -19,6 +19,8 @@ function clientReturning(data: unknown[]) {
 const cleanRow = { property_id: "pilot-property", display_address: clean.displayAddress, normalized_zoning_code: clean.normalizedZoningCode, validation_status: "clean" };
 
 test("known clean pilot address resolves after conservative casing and spacing normalization", async () => {
+  assert.equal(clean.status, "clean");
+  assert.equal(clean.normalizedZoningCode, "lmdr");
   assert.equal(normalizeAddress("  1950   drew plz "), "1950 DREW PLZ");
   const property = await findPropertyByAddress("clearwater-fl", "  1950   drew plz ", clientReturning([cleanRow]));
   assert.equal(property?.displayAddress, "1950 DREW PLZ");
