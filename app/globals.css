@@ -164,7 +164,7 @@ h1 {
 .sources { color: var(--muted); font-size: .9rem; }
 .sources a { color: var(--accent); }
 
-.address-panel, .guide { width: min(100%, 46rem); margin: clamp(5rem, 12vh, 9rem) auto 4rem; }
+.address-panel, .guide { width: min(100%, 54rem); margin: clamp(5rem, 12vh, 9rem) auto 4rem; }
 .address-panel h1 { max-width: 18ch; }
 .found { color: var(--accent); font-size: 1.05rem; font-weight: 700; }
 .address-heading { max-width: none !important; font-size: clamp(2rem, 6vw, 3.25rem); text-transform: capitalize; }
@@ -173,23 +173,38 @@ h1 {
 .project-choice h2 { font-size: 1.25rem; }
 .project-choice button { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 4.75rem; margin-top: 1rem; padding: 0 1.4rem; border: 1px solid var(--accent); border-radius: .25rem; background: #fff; color: var(--foreground); font-size: 1.1rem; font-weight: 700; text-align: left; }
 .project-choice button:hover { background: #f0f5f2; }
-.guide { margin-top: clamp(4rem, 9vh, 7rem); }
-.guide > h1 { max-width: 18ch; text-transform: capitalize; }
-.guide-intro { max-width: 42rem; margin: 1.5rem 0 4rem; color: var(--muted); font-size: 1.08rem; line-height: 1.65; }
-.guide-section { margin: 4rem 0; }
-.guide-section > h2 { display: flex; gap: .75rem; align-items: center; margin: 0 0 1rem; font-size: .82rem; letter-spacing: .1em; }
-.guide-section > h2 span { display: grid; width: 1.8rem; height: 1.8rem; place-items: center; border-radius: 50%; background: #e5f0e9; color: var(--accent); font-size: 1rem; }
-.guide-item { padding: 1.6rem 0; border-top: 1px solid var(--border); }
+.guide { margin-top: clamp(3rem, 7vh, 5.5rem); }
+.guide > h1 { max-width: none; font-size: clamp(2.15rem, 5vw, 3.3rem); text-transform: capitalize; }
+.guide > h1 span { display: block; margin-bottom: .3rem; color: var(--muted); font-size: .42em; font-weight: 600; letter-spacing: .01em; text-transform: none; }
+.guide-intro { max-width: 42rem; margin: 1.1rem 0 2.5rem; color: var(--muted); font-size: 1rem; line-height: 1.55; }
+.guide-intro strong { color: var(--foreground); font-weight: 500; }
+.guide-highlights { margin-top: 2rem; border-top: 2px solid var(--foreground); }
+.guide-highlights > h2, .guide-section > h2 { margin: 0; padding: 1rem 0 .75rem; color: var(--accent); font-size: .76rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.highlight-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-bottom: 1px solid var(--border); }
+.highlight-item { min-width: 0; padding: 1.25rem 1.25rem 1.2rem 0; border-top: 1px solid var(--border); }
+.highlight-item:nth-child(even) { padding-left: 1.5rem; border-left: 1px solid var(--border); }
+.highlight-item h3 { margin: 0 0 .55rem; color: var(--muted); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; }
+.highlight-answer { margin: 0; font-size: clamp(1.45rem, 3vw, 2rem); font-weight: 650; letter-spacing: -.025em; line-height: 1.15; }
+.highlight-qualification { margin: .6rem 0 0; color: var(--muted); font-size: .88rem; line-height: 1.4; }
+.guide-section { margin: 2.75rem 0; }
+.guide-section > h2 { border-top: 2px solid var(--foreground); }
+.guide-section > h2 span:empty { display: none; }
+.guide-item { padding: 1.15rem 0; border-top: 1px solid var(--border); }
 .guide-item h3 { margin: 0 0 .65rem; font-size: 1.25rem; }
-.guide-item > p, .guide-item li { line-height: 1.65; }
+.guide-item > p, .guide-item li { line-height: 1.5; }
 .guide-item > p { margin: 0; }
 .guide-item ul { padding-left: 1.3rem; }
-.guide-source { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; margin-top: 1.25rem !important; color: var(--muted); font-size: .85rem; }
-.guide-source a { color: var(--accent); font-weight: 700; }
-.visibility-diagram { margin: 1.5rem 0 0; padding: 1rem; border: 1px solid var(--border); background: #f8faf8; }
+.guide-source { margin: .7rem 0 0 !important; color: var(--muted); font-size: .76rem; }
+.guide-source a { display: inline-block; min-height: 1.5rem; color: var(--accent); text-underline-offset: .18rem; }
+.process-section ol { margin: 0; padding: 0; list-style: none; counter-reset: process; border-bottom: 1px solid var(--border); }
+.process-section li { display: grid; grid-template-columns: 2.1rem 1fr; gap: .75rem; padding: 1rem 0; border-top: 1px solid var(--border); counter-increment: process; }
+.process-section li::before { display: grid; width: 1.7rem; height: 1.7rem; place-items: center; border: 1px solid var(--accent-muted); border-radius: 50%; color: var(--accent); content: counter(process); font-size: .78rem; font-weight: 700; }
+.process-section h3 { margin: .2rem 0 .25rem; font-size: 1rem; }
+.process-section li p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.45; }
+.visibility-diagram { max-width: 38rem; margin: 1.25rem 0 0; padding: .75rem; border: 1px solid var(--border); background: #f8faf8; }
 .visibility-diagram svg { display: block; width: 100%; height: auto; }
 .visibility-diagram figcaption { padding: .75rem .25rem 0; color: var(--muted); font-size: .85rem; line-height: 1.5; }
-.refine { margin-top: 5rem; padding: 2rem; background: #edf2ef; }
+.refine { margin-top: 3rem; padding: 1.5rem; border-left: 3px solid var(--accent-muted); background: #edf2ef; }
 .refine h2 { margin: 0; font-size: 1.4rem; }
 .refine p { color: var(--muted); line-height: 1.55; }
 .refine button { min-height: 3.25rem; padding: 0 1.2rem; border: 0; background: var(--accent); color: #fff; font-weight: 700; }
@@ -217,7 +232,13 @@ h1 {
   .workflow-actions .primary { width: 100%; margin-left: 0; order: -1; }
   .workflow-shell { padding: 1.25rem; }
   .address-panel, .guide { margin-top: 4rem; }
-  .guide-intro { margin-bottom: 3rem; }
-  .guide-section { margin: 3rem 0; }
-  .refine { margin-left: -1.25rem; margin-right: -1.25rem; padding: 1.5rem 1.25rem; }
+  .guide > h1 { overflow-wrap: anywhere; }
+  .guide-intro { margin-bottom: 2rem; }
+  .highlight-grid { grid-template-columns: 1fr; }
+  .highlight-item, .highlight-item:nth-child(even) { padding: 1rem 0; border-left: 0; }
+  .highlight-answer { font-size: 1.55rem; }
+  .guide-section { margin: 2.25rem 0; }
+  .visibility-diagram { padding: .4rem; }
+  .visibility-diagram figcaption { font-size: .8rem; }
+  .refine { padding: 1.25rem; }
 }

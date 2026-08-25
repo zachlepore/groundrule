@@ -4,13 +4,15 @@ export type FenceGuideSection = "what_you_can_do" | "before_you_build" | "check_
 export interface FenceGuideItem {
   key: string;
   title: string;
+  answer?: string;
+  qualification?: string;
   body: string;
   bullets?: string[];
   citations: Citation[];
   assetId?: string;
   values?: Record<string, JsonValue>;
 }
-export interface FenceGuide { zoningDistrict: string | null; whatYouCanDo: FenceGuideItem[]; beforeYouBuild: FenceGuideItem[]; checkThis: FenceGuideItem[] }
+export interface FenceGuide { zoningDistrict: string | null; highlights: FenceGuideItem[]; whatYouCanDo: FenceGuideItem[]; beforeYouBuild: FenceGuideItem[]; checkThis: FenceGuideItem[] }
 
 const allRules = (result: EvaluationResult) => [...result.matchedRules, ...result.reviewRequiredRules, ...result.unknownRules, ...result.notMatchedRules];
 const outcome = (rule: EvaluatedRule | undefined, type?: string) => rule?.outcomes.find((item) => !type || item.type === type);
@@ -32,7 +34,8 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   const front = rules.get("height.front_baseline");
   const frontMaximum = outcome(front, "maximum");
   if (front && displayMeasure(frontMaximum)) whatYouCanDo.push(sourceItem(front, {
-    key: front.key, title: "Front of the property",
+    key: front.key, title: "Front yard", answer: `Up to ${displayMeasure(frontMaximum)}`,
+    qualification: "Ordinary, non-chain-link fence.",
     body: `For an ordinary, non-chain-link fence, the maximum height is ${displayMeasure(frontMaximum)}. Other designs or special locations may follow different rules.`,
     values: frontMaximum?.parameters,
   }));
@@ -40,13 +43,17 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   const sideRear = rules.get("height.side_rear_baseline");
   const sideRearMaximum = outcome(sideRear, "maximum");
   if (sideRear && displayMeasure(sideRearMaximum)) whatYouCanDo.push(sourceItem(sideRear, {
-    key: sideRear.key, title: "Side and rear of the property",
+    key: sideRear.key, title: "Side + rear", answer: `Up to ${displayMeasure(sideRearMaximum)}`,
+    qualification: "Ordinary, non-chain-link fence away from a protected waterfront area.",
     body: `For an ordinary, non-chain-link fence away from a protected waterfront area, the maximum height is ${displayMeasure(sideRearMaximum)}.`,
     values: sideRearMaximum?.parameters,
   }));
 
   const material = rules.get("material.metal_prohibition");
-  if (material) whatYouCanDo.push(sourceItem(material, { key: material.key, title: "Materials", body: material.outcomes[0]?.messageTemplate ?? material.summary }));
+  if (material) {
+    const materialText = material.outcomes[0]?.messageTemplate ?? material.summary;
+    whatYouCanDo.push(sourceItem(material, { key: material.key, title: "Materials", answer: materialText, body: materialText }));
+  }
 
   for (const [key, title, fallback] of [
     ["permit.building_required", "Building permit required", "Get a building permit before construction."],
@@ -54,7 +61,10 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
     ["permit.final_inspection", "Final inspection", "Request a final inspection after the work is complete."],
   ] as const) {
     const rule = rules.get(key);
-    if (rule?.status === "MATCHED") beforeYouBuild.push(sourceItem(rule, { key, title, body: rule.outcomes[0]?.messageTemplate ?? fallback }));
+    if (rule?.status === "MATCHED") beforeYouBuild.push(sourceItem(rule, {
+      key, title, answer: key === "permit.building_required" ? "Required" : undefined,
+      body: rule.outcomes[0]?.messageTemplate ?? fallback,
+    }));
   }
 
   const visibility = rules.get("visibility.triangle_restriction");
@@ -65,8 +75,8 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
     const leg1 = number(height, "horizontal_leg_1_ft");
     const leg2 = number(height, "horizontal_leg_2_ft");
     checkThis.push(sourceItem(visibility, {
-      key: visibility.key, title: "Near a driveway or street corner?",
-      body: "Special visibility rules may apply. Groundrule cannot tell from the stored property data whether your fence enters this area.",
+      key: visibility.key, title: "Special visibility rules may apply",
+      body: "Groundrule cannot tell from the stored property data whether your fence enters this area.",
       bullets: [
         `The visibility area extends ${leg1} feet along one edge and ${leg2} feet along the other.`,
         `Only a ${String(opacity.parameters.meaning)} fence is permitted there.`,
@@ -76,5 +86,7 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
     }));
   }
 
-  return { zoningDistrict: typeof facts["property.zoning_district"] === "string" ? facts["property.zoning_district"] : null, whatYouCanDo, beforeYouBuild, checkThis };
+  const permit = beforeYouBuild.find((item) => item.key === "permit.building_required");
+  const highlights = [...whatYouCanDo, ...(permit ? [{ ...permit, title: "Permit" }] : [])];
+  return { zoningDistrict: typeof facts["property.zoning_district"] === "string" ? facts["property.zoning_district"] : null, highlights, whatYouCanDo, beforeYouBuild, checkThis };
 }
