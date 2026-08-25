@@ -7,8 +7,8 @@ import { startFenceLookup } from "./actions";
 function Source({ item }: { item: FenceGuideItem }) {
   const citation = item.citations[0];
   if (!citation) return null;
-  const label = `Source · ${citation.sectionIdentifier}`;
-  return <p className="guide-source">{citation.sourceUrl ? <a href={citation.sourceUrl} target="_blank" rel="noreferrer" aria-label={`${label}, ${citation.sourceTitle}`}>{label}</a> : <span>{label}</span>}</p>;
+  const detail = `${citation.sourceTitle}, ${citation.sectionIdentifier}`;
+  return <p className="guide-source">{citation.sourceUrl ? <a href={citation.sourceUrl} target="_blank" rel="noreferrer" aria-label={`View Clearwater rule, ${detail}`} title={detail}>View Clearwater rule ↗</a> : <span title={detail}>Official rule</span>}</p>;
 }
 
 function VisibilityDiagram({ item }: { item: FenceGuideItem }) {
@@ -24,7 +24,7 @@ function VisibilityDiagram({ item }: { item: FenceGuideItem }) {
       <text x="26" y="267" fill="#44514b" fontSize="18">Street / right-of-way</text><text x="411" y="38" fill="#44514b" fontSize="17">Driveway</text>
       <text x="276" y="184" fill="#173d2d" fontSize="16">Keep view clear</text>
     </svg>
-    <figcaption id="visibility-caption">In the shaded area: non-opaque fence only, no higher than {String(height)} {String(heightUnit)} This illustration helps explain the rule; Clearwater must confirm the exact location.</figcaption>
+    <figcaption id="visibility-caption">The shaded visibility area extends {String(feet)} ft along each applicable edge. In this area: non-opaque fence only, with a {String(height)} {String(heightUnit)} maximum fence height. This illustration helps explain the rule; Clearwater must confirm the exact location.</figcaption>
   </figure>;
 }
 
@@ -48,7 +48,7 @@ function GuideHighlights({ items }: { items: FenceGuideItem[] }) {
 function ProcessSection({ items }: { items: FenceGuideItem[] }) {
   if (!items.length) return null;
   return <section className="guide-section process-section" aria-labelledby="before-build"><h2 id="before-build">Before you build</h2>
-    <ol>{items.map((item) => <li key={item.key}><div><h3>{item.title}</h3><p>{item.body}</p><Source item={item}/></div></li>)}</ol>
+    {items.map((item) => <article className="permit-action" key={item.key}><h3>{item.title}</h3><p>{item.body}</p>{item.actionText && <p className="permit-action-next">{item.actionText}</p>}<Source item={item}/>{item.secondaryRequirement && <p className="permit-secondary">{item.secondaryRequirement}</p>}</article>)}
   </section>;
 }
 
@@ -63,6 +63,6 @@ export function FenceWorkflow() {
   return <main className="workflow-shell"><header className="workflow-brand">GROUNDRULE <span>Clearwater, Florida</span></header>
     {stage === "address" && <section className="address-panel"><p className="eyebrow">Clearwater fence pilot</p><h1>Enter your property address</h1><p className="workflow-copy">Guidance based on current City rules and property data.</p><div className="address-form"><input aria-label="Property address" autoComplete="street-address" placeholder="1950 Drew Plz" value={address} onChange={(e) => setAddress(e.target.value)} onKeyDown={(e) => e.key === "Enter" && address.trim() && lookup()}/><button onClick={lookup} disabled={pending || !address.trim()}>{pending ? "Looking…" : "Continue"}</button></div>{error && <p role="alert" className="warning">{error}</p>}</section>}
     {stage === "project" && <section className="address-panel"><p className="found">✓ We found this property.</p><h1 className="address-heading">{confirmedAddress}<small>Clearwater, Florida</small></h1><div className="project-choice"><h2>What are you working on?</h2><button onClick={() => setStage("guide")}>Fence <span>→</span></button></div></section>}
-    {stage === "guide" && guide && <article className="guide"><p className="eyebrow">Clearwater fence guide</p><h1><span>Fences at</span>{confirmedAddress}</h1><aside className="property-context" aria-label="Property data used"><p>Property data used</p><ul>{guide.propertyContext.map((fact) => <li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Guidance based on current Clearwater rules and property data.<br/><strong>Not a permit or City approval.</strong></p><GuideHighlights items={guide.highlights}/><ProcessSection items={guide.beforeYouBuild}/><GuideSection symbol="" title="Near a driveway or street corner?" items={guide.checkThis}/><button className="new-search" onClick={newSearch}>← New search</button></article>}
+    {stage === "guide" && guide && <article className="guide"><p className="eyebrow">Clearwater fence guide</p><h1><span>Fences at</span>{confirmedAddress}</h1><aside className="property-context" aria-label="Property data used"><p>Property data used for this address</p><ul>{guide.propertyContext.map((fact) => <li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Guidance only · Based on current Clearwater rules and property data · Not a permit or City approval</p><GuideHighlights items={guide.highlights}/><ProcessSection items={guide.beforeYouBuild}/><GuideSection symbol="" title="Near a driveway or street corner?" items={guide.checkThis}/><button className="new-search" onClick={newSearch}>← New search</button></article>}
   </main>;
 }
