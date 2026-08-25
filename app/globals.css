@@ -5,6 +5,9 @@
   --border: #c9ceca;
   --accent: #1e4d39;
   --accent-muted: #7f9188;
+  --property-background: #f1f4f4;
+  --answer-background: #f3f7f4;
+  --check-background: #faf7ed;
 }
 
 * {
@@ -178,11 +181,14 @@ h1 {
 .guide > h1 span { display: block; margin-bottom: .3rem; color: var(--muted); font-size: .42em; font-weight: 600; letter-spacing: .01em; text-transform: none; }
 .guide-intro { max-width: 42rem; margin: 1.1rem 0 2.5rem; color: var(--muted); font-size: 1rem; line-height: 1.55; }
 .guide-intro strong { color: var(--foreground); font-weight: 500; }
+.property-context { display: flex; align-items: center; gap: 1rem; margin: 1.25rem 0 0; padding: .85rem 1rem; border: 1px solid #d5dcdd; border-radius: .25rem; background: var(--property-background); }
+.property-context p { flex: 0 0 auto; margin: 0; color: #526066; font-size: .7rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.property-context ul { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; margin: 0; padding: 0; color: #465157; font-size: .86rem; list-style: none; }
 .guide-highlights { margin-top: 2rem; border-top: 2px solid var(--foreground); }
 .guide-highlights > h2, .guide-section > h2 { margin: 0; padding: 1rem 0 .75rem; color: var(--accent); font-size: .76rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .highlight-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-bottom: 1px solid var(--border); }
-.highlight-item { min-width: 0; padding: 1.25rem 1.25rem 1.2rem 0; border-top: 1px solid var(--border); }
-.highlight-item:nth-child(even) { padding-left: 1.5rem; border-left: 1px solid var(--border); }
+.highlight-item { min-width: 0; padding: 1.25rem; border-top: 1px solid var(--border); background: var(--answer-background); }
+.highlight-item:nth-child(even) { border-left: 1px solid var(--border); }
 .highlight-item h3 { margin: 0 0 .55rem; color: var(--muted); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; }
 .highlight-answer { margin: 0; font-size: clamp(1.45rem, 3vw, 2rem); font-weight: 650; letter-spacing: -.025em; line-height: 1.15; }
 .highlight-qualification { margin: .6rem 0 0; color: var(--muted); font-size: .88rem; line-height: 1.4; }
@@ -190,6 +196,7 @@ h1 {
 .guide-section > h2 { border-top: 2px solid var(--foreground); }
 .guide-section > h2 span:empty { display: none; }
 .guide-item { padding: 1.15rem 0; border-top: 1px solid var(--border); }
+.guide-section:not(.process-section) .guide-item { padding: 1.25rem; border: 1px solid #ded6c2; border-radius: .25rem; background: var(--check-background); }
 .guide-item h3 { margin: 0 0 .65rem; font-size: 1.25rem; }
 .guide-item > p, .guide-item li { line-height: 1.5; }
 .guide-item > p { margin: 0; }
@@ -204,10 +211,7 @@ h1 {
 .visibility-diagram { max-width: 38rem; margin: 1.25rem 0 0; padding: .75rem; border: 1px solid var(--border); background: #f8faf8; }
 .visibility-diagram svg { display: block; width: 100%; height: auto; }
 .visibility-diagram figcaption { padding: .75rem .25rem 0; color: var(--muted); font-size: .85rem; line-height: 1.5; }
-.refine { margin-top: 3rem; padding: 1.5rem; border-left: 3px solid var(--accent-muted); background: #edf2ef; }
-.refine h2 { margin: 0; font-size: 1.4rem; }
-.refine p { color: var(--muted); line-height: 1.55; }
-.refine button { min-height: 3.25rem; padding: 0 1.2rem; border: 0; background: var(--accent); color: #fff; font-weight: 700; }
+.new-search { min-height: 2.75rem; margin-top: .5rem; padding: 0; border: 0; background: transparent; color: var(--accent); font-weight: 700; text-decoration: underline; text-underline-offset: .2rem; }
 .back-link { margin-bottom: 3rem; padding: .5rem 0; border: 0; background: transparent; color: var(--accent); }
 
 @media (max-width: 36rem) {
@@ -235,10 +239,10 @@ h1 {
   .guide > h1 { overflow-wrap: anywhere; }
   .guide-intro { margin-bottom: 2rem; }
   .highlight-grid { grid-template-columns: 1fr; }
-  .highlight-item, .highlight-item:nth-child(even) { padding: 1rem 0; border-left: 0; }
+  .property-context { align-items: flex-start; flex-direction: column; gap: .45rem; padding: .8rem; }
+  .highlight-item, .highlight-item:nth-child(even) { padding: 1rem; border-left: 0; }
   .highlight-answer { font-size: 1.55rem; }
   .guide-section { margin: 2.25rem 0; }
   .visibility-diagram { padding: .4rem; }
   .visibility-diagram figcaption { font-size: .8rem; }
-  .refine { padding: 1.25rem; }
 }

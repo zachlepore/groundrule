@@ -26,6 +26,7 @@ test("known LMDR property gets an answers-first guide without project details", 
   const facts = { "property.zoning_district": "lmdr", "project.structure_type": "fence" };
   const guide = buildClearwaterFenceGuide(result, facts);
   assert.equal(guide.zoningDistrict, "lmdr");
+  assert.deepEqual(guide.propertyContext, ["Clearwater zoning · LMDR"]);
   assert.equal(facts["project.height" as keyof typeof facts], undefined);
   assert.deepEqual(guide.whatYouCanDo.map((item) => item.title), ["Front yard", "Side + rear", "Materials"]);
   assert.deepEqual(guide.highlights.map((item) => item.title), ["Front yard", "Side + rear", "Materials", "Permit"]);
@@ -48,10 +49,11 @@ test("permit is a before-build duty, visibility is conditional, and citations su
   assert.doesNotMatch(JSON.stringify(guide), /UNKNOWN|REVIEW_REQUIRED/);
 });
 
-test("resident UI contains optional refinement and no embedded regulatory numbers", () => {
+test("resident UI ends with guidance, shows trusted property context, and embeds no regulatory numbers", () => {
   const ui = fs.readFileSync("app/clearwater/fence/workflow.tsx", "utf8");
-  assert.match(ui, /Check my fence/);
-  assert.ok(ui.indexOf("<GuideHighlights items={guide.highlights}") < ui.indexOf('<aside className="refine"'));
+  assert.doesNotMatch(ui, /Check my fence|specific fence in mind|QuestionControl|nextQuestion|stage === "refine"/);
+  assert.match(ui, /guide\.propertyContext\.map/);
+  assert.match(ui, /<GuideHighlights items={guide.highlights}/);
   assert.doesNotMatch(ui, /30 inches|20 ft|maximum height is 4|maximum height is 6/);
   assert.doesNotMatch(ui, /Not allowed|Corrugated or sheet metal/);
 });
