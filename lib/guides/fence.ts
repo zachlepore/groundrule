@@ -52,7 +52,10 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   const material = rules.get("material.metal_prohibition");
   if (material) {
     const materialText = material.outcomes[0]?.messageTemplate ?? material.summary;
-    whatYouCanDo.push(sourceItem(material, { key: material.key, title: "Materials", answer: materialText, body: materialText }));
+    whatYouCanDo.push(sourceItem(material, {
+      key: material.key, title: "Materials", answer: "Not allowed",
+      qualification: "Corrugated or sheet metal", body: materialText,
+    }));
   }
 
   for (const [key, title, fallback] of [

@@ -14,6 +14,7 @@ const result: EvaluationResult = {
   ],
   unknownRules: [
     makeRule("height.front_baseline", "UNKNOWN", [maximum(4)], "§ 3-804"), makeRule("height.side_rear_baseline", "UNKNOWN", [maximum(6)], "§ 3-804"),
+    makeRule("material.metal_prohibition", "UNKNOWN", [{ sequence: 1, type: "prohibition", subjectKey: "project.material", parameters: {}, severity: "prohibition", messageTemplate: "Corrugated or sheet metal may not be used to form the fence or wall." }], "§ 3-802"),
     makeRule("visibility.triangle_restriction", "UNKNOWN", [
       { sequence: 1, type: "maximum", subjectKey: "project.height", parameters: { value: 2.5, unit: "ft", display_value: 30, display_unit: "in", horizontal_leg_1_ft: 20, horizontal_leg_2_ft: 20, presentation_asset_id: "clearwater_sight_visibility_triangle_v1" }, severity: "requirement", messageTemplate: "height" },
       { sequence: 2, type: "required_value", subjectKey: "project.is_opaque", parameters: { value: false, meaning: "non-opaque", presentation_asset_id: "clearwater_sight_visibility_triangle_v1" }, severity: "requirement", messageTemplate: "opacity" },
@@ -26,9 +27,14 @@ test("known LMDR property gets an answers-first guide without project details", 
   const guide = buildClearwaterFenceGuide(result, facts);
   assert.equal(guide.zoningDistrict, "lmdr");
   assert.equal(facts["project.height" as keyof typeof facts], undefined);
-  assert.deepEqual(guide.whatYouCanDo.map((item) => item.title), ["Front yard", "Side + rear"]);
-  assert.deepEqual(guide.highlights.map((item) => item.title), ["Front yard", "Side + rear", "Permit"]);
+  assert.deepEqual(guide.whatYouCanDo.map((item) => item.title), ["Front yard", "Side + rear", "Materials"]);
+  assert.deepEqual(guide.highlights.map((item) => item.title), ["Front yard", "Side + rear", "Materials", "Permit"]);
   assert.equal(guide.highlights[0]?.answer, "Up to 4 feet");
+  const materials = guide.highlights.find((item) => item.key === "material.metal_prohibition");
+  assert.equal(materials?.answer, "Not allowed");
+  assert.equal(materials?.qualification, "Corrugated or sheet metal");
+  assert.match(materials?.body ?? "", /may not be used to form the fence or wall/);
+  assert.equal(materials?.citations[0]?.sectionIdentifier, "§ 3-802");
 });
 
 test("permit is a before-build duty, visibility is conditional, and citations survive", () => {
@@ -47,6 +53,7 @@ test("resident UI contains optional refinement and no embedded regulatory number
   assert.match(ui, /Check my fence/);
   assert.ok(ui.indexOf("<GuideHighlights items={guide.highlights}") < ui.indexOf('<aside className="refine"'));
   assert.doesNotMatch(ui, /30 inches|20 ft|maximum height is 4|maximum height is 6/);
+  assert.doesNotMatch(ui, /Not allowed|Corrugated or sheet metal/);
 });
 
 test("unsupported lookup retains an explicit safe pilot message", () => {
