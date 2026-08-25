@@ -12,7 +12,7 @@ export interface FenceGuideItem {
   assetId?: string;
   values?: Record<string, JsonValue>;
 }
-export interface FenceGuide { zoningDistrict: string | null; highlights: FenceGuideItem[]; whatYouCanDo: FenceGuideItem[]; beforeYouBuild: FenceGuideItem[]; checkThis: FenceGuideItem[] }
+export interface FenceGuide { zoningDistrict: string | null; propertyContext: string[]; highlights: FenceGuideItem[]; whatYouCanDo: FenceGuideItem[]; beforeYouBuild: FenceGuideItem[]; checkThis: FenceGuideItem[] }
 
 const allRules = (result: EvaluationResult) => [...result.matchedRules, ...result.reviewRequiredRules, ...result.unknownRules, ...result.notMatchedRules];
 const outcome = (rule: EvaluatedRule | undefined, type?: string) => rule?.outcomes.find((item) => !type || item.type === type);
@@ -91,5 +91,7 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
 
   const permit = beforeYouBuild.find((item) => item.key === "permit.building_required");
   const highlights = [...whatYouCanDo, ...(permit ? [{ ...permit, title: "Permit" }] : [])];
-  return { zoningDistrict: typeof facts["property.zoning_district"] === "string" ? facts["property.zoning_district"] : null, highlights, whatYouCanDo, beforeYouBuild, checkThis };
+  const zoningDistrict = typeof facts["property.zoning_district"] === "string" ? facts["property.zoning_district"] : null;
+  const propertyContext = zoningDistrict ? [`Clearwater zoning · ${zoningDistrict.toUpperCase()}`] : [];
+  return { zoningDistrict, propertyContext, highlights, whatYouCanDo, beforeYouBuild, checkThis };
 }
