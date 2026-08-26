@@ -43,8 +43,8 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   const frontMaximum = outcome(front, "maximum");
   if (front && displayMeasure(frontMaximum)) whatYouCanDo.push(sourceItem(front, {
     key: front.key, title: "Front yard", answer: `${displayCompactMeasure(frontMaximum)} maximum fence height`,
-    qualification: "Ordinary, non-chain-link fence.",
-    body: `For an ordinary, non-chain-link fence, the maximum height is ${displayMeasure(frontMaximum)}. Other designs or special locations may follow different rules.`,
+    qualification: "Chain-link is not allowed in front of the principal structure and follows separate rules.",
+    body: `For a fence other than chain-link, the maximum height is ${displayMeasure(frontMaximum)}. Chain-link is not allowed in front of the principal structure and follows separate rules.`,
     values: frontMaximum?.parameters,
   }));
 
@@ -52,8 +52,8 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   const sideRearMaximum = outcome(sideRear, "maximum");
   if (sideRear && displayMeasure(sideRearMaximum)) whatYouCanDo.push(sourceItem(sideRear, {
     key: sideRear.key, title: "Side + rear", answer: `${displayCompactMeasure(sideRearMaximum)} maximum fence height`,
-    qualification: "Ordinary, non-chain-link fence away from a protected waterfront area.",
-    body: `For an ordinary, non-chain-link fence away from a protected waterfront area, the maximum height is ${displayMeasure(sideRearMaximum)}.`,
+    qualification: "For fences other than chain-link. Chain-link and water-adjacent locations follow different rules.",
+    body: `For a fence other than chain-link, the maximum height is ${displayMeasure(sideRearMaximum)}. Chain-link has separate height, coating, location, and landscaping rules. On a water-adjacent property, a fence within 20 feet of the water-side property line—or within the required setback, if greater—must be non-opaque and no higher than 4 feet.`,
     values: sideRearMaximum?.parameters,
   }));
 
@@ -61,7 +61,7 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   if (material) {
     const materialText = material.outcomes[0]?.messageTemplate ?? material.summary;
     whatYouCanDo.push(sourceItem(material, {
-      key: material.key, title: "Materials", answer: "Avoid corrugated or sheet metal fencing",
+      key: material.key, title: "Materials", answer: "Corrugated or sheet metal fencing is not allowed",
       body: materialText,
     }));
   }
