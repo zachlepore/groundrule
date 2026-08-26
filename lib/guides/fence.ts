@@ -13,7 +13,7 @@ export interface FenceGuideItem {
   values?: Record<string, JsonValue>;
   actionText?: string;
   secondaryRequirement?: string;
-  actionUrl?: string;
+  action?: { label: string; url: string };
 }
 export interface FenceGuide { zoningDistrict: string | null; propertyContext: string[]; highlights: FenceGuideItem[]; whatYouCanDo: FenceGuideItem[]; beforeYouBuild: FenceGuideItem[]; checkThis: FenceGuideItem[]; specificSituations: FenceGuideItem[] }
 
@@ -43,6 +43,7 @@ const conditionValues = (rule: EvaluatedRule | undefined, fact: string): string[
 };
 const vinylColorList = (values: string[]) => values.map((value, index) => `${value.replaceAll("_", " ")}${index < values.length - 1 ? "-" : ""}`).join(" or ");
 const WATER_ADJACENT_DISTANCE_FT = 20;
+const CLEARWATER_FENCE_PERMIT_GUIDANCE_URL = "https://www.myclearwater.com/Business-Development/Permitting/06-Fence-Permit-Application-Checklist";
 
 /** Builds a resident guide from structured outcomes; it never treats an unmatched prohibition as permission. */
 export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts): FenceGuide {
@@ -153,7 +154,12 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
     citations: waterfrontHeight.citations,
   });
 
-  const highlights = [...whatYouCanDo, ...(permitDuty ? [{ ...permitDuty, title: "Permit", answer: "Required" }] : [])];
+  const highlights = [...whatYouCanDo, ...(permitDuty ? [{
+    ...permitDuty,
+    title: "Permit",
+    answer: "Required",
+    action: { label: "View fence permit steps", url: CLEARWATER_FENCE_PERMIT_GUIDANCE_URL },
+  }] : [])];
   const zoningDistrict = typeof facts["property.zoning_district"] === "string" ? facts["property.zoning_district"] : null;
   const propertyContext = zoningDistrict ? [`Zoning · ${zoningDistrict.toUpperCase()}`] : [];
   return { zoningDistrict, propertyContext, highlights, whatYouCanDo, beforeYouBuild: permitAction ? [permitAction] : [], checkThis, specificSituations };

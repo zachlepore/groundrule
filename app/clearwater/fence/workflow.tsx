@@ -40,7 +40,7 @@ function GuideHighlights({ items }: { items: FenceGuideItem[] }) {
     <h2 id="guide-highlights-title">What you can do</h2>
     <div className="highlight-grid">{items.map((item) => <article key={item.key} className="highlight-item">
       <h3>{item.title}</h3><p className="highlight-answer">{item.answer ?? item.body}</p>
-      {item.qualification && <p className="highlight-qualification">{item.qualification}</p>}{item.actionUrl && <a className="highlight-action" href={item.actionUrl}>Apply for fence permit →</a>}<Source item={item}/>
+      {item.qualification && <p className="highlight-qualification">{item.qualification}</p>}{item.action && <a className="highlight-action" href={item.action.url}>{item.action.label} →</a>}<Source item={item}/>
     </article>)}</div>
   </section>;
 }
