@@ -13,6 +13,7 @@ export interface FenceGuideItem {
   values?: Record<string, JsonValue>;
   actionText?: string;
   secondaryRequirement?: string;
+  actionUrl?: string;
 }
 export interface FenceGuide { zoningDistrict: string | null; propertyContext: string[]; highlights: FenceGuideItem[]; whatYouCanDo: FenceGuideItem[]; beforeYouBuild: FenceGuideItem[]; checkThis: FenceGuideItem[] }
 
@@ -60,7 +61,7 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   if (material) {
     const materialText = material.outcomes[0]?.messageTemplate ?? material.summary;
     whatYouCanDo.push(sourceItem(material, {
-      key: material.key, title: "Materials", answer: "No corrugated or sheet metal fencing",
+      key: material.key, title: "Materials", answer: "Avoid corrugated or sheet metal fencing",
       body: materialText,
     }));
   }
@@ -102,18 +103,17 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
     const leg1 = number(height, "horizontal_leg_1_ft");
     const leg2 = number(height, "horizontal_leg_2_ft");
     checkThis.push(sourceItem(visibility, {
-      key: visibility.key, title: "Special visibility rules may apply",
-      body: "Groundrule cannot tell from the stored property data whether your fence enters this area.",
+      key: visibility.key, title: "Special visibility rules apply",
+      body: "If your fence is near a driveway or street corner:",
       bullets: [
-        `The visibility area extends ${leg1} feet along one applicable edge and ${leg2} feet along the other applicable edge.`,
-        `Only a ${String(opacity.parameters.meaning)} fence is permitted there.`,
-        `The maximum fence height in the visibility area is ${displayMeasure(height)}.`,
-        "Ask Clearwater to confirm the exact area; a City Engineer exception may be available.",
+        leg1 === leg2 ? `The visibility area extends ${leg1} ft along each applicable edge.` : `The visibility area extends ${leg1} ft along one applicable edge and ${leg2} ft along the other applicable edge.`,
+        `Fence in this area must be ${String(opacity.parameters.meaning)}.`,
+        `Maximum fence height in this area is ${displayCompactMeasure(height)}.`,
       ], assetId, values: { ...height.parameters, ...opacity.parameters },
     }));
   }
 
-  const highlights = [...whatYouCanDo, ...(permitDuty ? [{ ...permitDuty, title: "Permit", answer: "Permit required" }] : [])];
+  const highlights = [...whatYouCanDo, ...(permitDuty ? [{ ...permitDuty, title: "Permit", answer: "Required" }] : [])];
   const zoningDistrict = typeof facts["property.zoning_district"] === "string" ? facts["property.zoning_district"] : null;
   const propertyContext = zoningDistrict ? [`Zoning · ${zoningDistrict.toUpperCase()}`] : [];
   return { zoningDistrict, propertyContext, highlights, whatYouCanDo, beforeYouBuild: permitAction ? [permitAction] : [], checkThis };

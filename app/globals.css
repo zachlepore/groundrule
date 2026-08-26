@@ -169,19 +169,19 @@ h1 {
 
 .address-panel, .guide { width: min(100%, 54rem); margin: clamp(5rem, 12vh, 9rem) auto 4rem; }
 .address-panel h1 { max-width: 18ch; }
-.found { color: var(--accent); font-size: 1.05rem; font-weight: 700; }
-.address-heading { max-width: none !important; font-size: clamp(2rem, 6vw, 3.25rem); text-transform: capitalize; }
+.found { margin-bottom: 1rem; color: var(--accent); font-size: .88rem; font-weight: 700; }
+.address-heading { max-width: none !important; font-size: clamp(2rem, 5vw, 2.85rem); }
 .address-heading small { display: block; margin-top: .65rem; color: var(--muted); font-size: 1rem; font-weight: 400; text-transform: none; }
 .project-choice { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border); }
 .project-choice h2 { font-size: 1.25rem; }
-.project-choice button { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 4.75rem; margin-top: 1rem; padding: 0 1.4rem; border: 1px solid var(--accent); border-radius: .25rem; background: #fff; color: var(--foreground); font-size: 1.1rem; font-weight: 700; text-align: left; }
+.project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin-top: 1rem; }
+.project-choice button { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 4.25rem; padding: 0 1.1rem; border: 1px solid var(--accent); border-radius: .25rem; background: #fff; color: var(--foreground); font-size: 1rem; font-weight: 700; text-align: left; }
 .project-choice button:hover { background: #f0f5f2; }
 .guide { margin-top: clamp(3rem, 7vh, 5.5rem); }
-.guide > h1 { max-width: none; font-size: clamp(2.15rem, 5vw, 3.3rem); text-transform: capitalize; }
+.guide > h1 { max-width: none; font-size: clamp(2.15rem, 5vw, 3.3rem); }
 .guide > h1 span { display: block; margin-bottom: .3rem; color: var(--muted); font-size: .42em; font-weight: 600; letter-spacing: .01em; text-transform: none; }
 .guide-intro { max-width: 46rem; margin: .75rem 0 2.5rem; color: var(--muted); font-size: .82rem; line-height: 1.5; }
-.property-context { display: flex; align-items: center; gap: 1rem; margin: 1.25rem 0 0; padding: .85rem 1rem; border: 1px solid #d5dcdd; border-radius: .25rem; background: var(--property-background); }
-.property-context p { flex: 0 0 auto; margin: 0; color: #526066; font-size: .7rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.property-context { display: flex; align-items: center; gap: 1rem; margin: 1.25rem 0 0; padding: .7rem .9rem; border: 1px solid #d5dcdd; border-radius: .25rem; background: var(--property-background); }
 .property-context ul { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; margin: 0; padding: 0; color: #465157; font-size: .86rem; list-style: none; }
 .guide-highlights { margin-top: 2rem; border-top: 2px solid var(--foreground); }
 .guide-highlights > h2, .guide-section > h2 { margin: 0; padding: 1rem 0 .75rem; color: var(--accent); font-size: .76rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
@@ -202,6 +202,7 @@ h1 {
 .guide-item ul { padding-left: 1.3rem; }
 .guide-source { margin: .7rem 0 0 !important; color: var(--muted); font-size: .76rem; }
 .guide-source a { display: inline-block; min-height: 1.5rem; color: var(--accent); text-underline-offset: .18rem; }
+.highlight-action { display: inline-block; margin-top: .8rem; color: var(--accent); font-size: .9rem; font-weight: 700; text-underline-offset: .18rem; }
 .permit-action { padding: 1.1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .permit-action h3 { margin: 0 0 .35rem; font-size: 1.2rem; }
 .permit-action > p { margin: .35rem 0; line-height: 1.5; }
@@ -210,6 +211,7 @@ h1 {
 .visibility-diagram { max-width: 38rem; margin: 1.25rem 0 0; padding: .75rem; border: 1px solid var(--border); background: #f8faf8; }
 .visibility-diagram svg { display: block; width: 100%; height: auto; }
 .visibility-diagram figcaption { padding: .75rem .25rem 0; color: var(--muted); font-size: .85rem; line-height: 1.5; }
+.visibility-escalation { margin: -1.8rem 0 2.5rem; color: var(--muted); font-size: .86rem; }
 .new-search { min-height: 2.75rem; margin-top: .5rem; padding: 0; border: 0; background: transparent; color: var(--accent); font-weight: 700; text-decoration: underline; text-underline-offset: .2rem; }
 .back-link { margin-bottom: 3rem; padding: .5rem 0; border: 0; background: transparent; color: var(--accent); }
 
@@ -235,6 +237,8 @@ h1 {
   .workflow-actions .primary { width: 100%; margin-left: 0; order: -1; }
   .workflow-shell { padding: 1.25rem; }
   .address-panel, .guide { margin-top: 4rem; }
+  .address-heading { overflow-wrap: break-word; }
+  .project-grid { grid-template-columns: minmax(0, 1fr); }
   .guide > h1 { overflow-wrap: anywhere; }
   .guide-intro { margin-bottom: 2rem; }
   .highlight-grid { grid-template-columns: 1fr; }

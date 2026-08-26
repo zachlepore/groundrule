@@ -22,6 +22,14 @@ A. Groundrule should derive more of the required information itself, or
 
 B. the question is too complex for the simple self-service product and should be escalated to municipal staff.
 
+## Answer the call, not the code
+
+Design around the simple resident question that would otherwise become a phone call. The evaluator may know many facts, but a regulatory fact does not automatically deserve UI. Show only what answers the current question, supports the answer, prevents a meaningful misunderstanding, or helps the resident act.
+
+**Action beats procedure.** When a permit is required, say so and provide a trustworthy application destination when one is available. Do not reproduce the municipal review lifecycle by default. **Hide the machine:** never explain evaluator uncertainty, stored-data limitations, GIS architecture, or database structure to residents. Translate a genuine boundary into useful conditional guidance or a concise staff handoff.
+
+**Escalation is a feature.** Groundrule confidently resolves repetitive questions and preserves valuable planner conversations where interpretation is genuinely needed. The goal is to eliminate unnecessary calls, not every call.
+
 ## Property trust treatment
 
 The guide gives a quiet signal that it used the resident's property rather than presenting a generic FAQ. Place a compact, cool-neutral **Property data used** strip beside or immediately below the address. Show only friendly interpretations of trusted stored facts, such as a zoning designation actually returned for the property.
@@ -50,9 +58,9 @@ Boxes exist to make scanning easier, not to decorate every paragraph. All panels
 
 **Property context** is a single subdued metadata strip. **Process** centers the primary action and compresses supporting obligations beneath it rather than creating independent cards. **Check this** groups one conditional explanation and its diagram. **City confirmation** is used only under the escalation rule below.
 
-## Before You Build
+## Permit action
 
-Use **Before you build** for concise, ordered actions supported by rule outcomes, such as an application, permit, or final inspection. Translate municipal procedural language into clear resident instructions without adding unsupported steps. Groundrule explains what must happen; the municipality still accepts, reviews, and approves the actual application.
+Put the immediate permit status and a verified application action with the primary answers. Do not create a second workflow that repeats the permit answer. Supporting application-review and inspection facts remain in structured evaluator and presentation data without automatically receiving prominent resident UI.
 
 **A regulatory fact does not automatically deserve a UI element.** Each element must answer the resident, provide a next action, establish property-specific trust, or prevent a materially wrong interpretation. Compress supporting process obligations beneath the primary action when separate rows would only repeat bureaucratic language, while retaining facts whose omission could mislead.
 
@@ -78,7 +86,11 @@ Authoritative access is never removed. Present citations compactly as a resident
 
 ## Questionnaire removal and complexity escalation
 
-The Clearwater Fence resident guide ends after **What you can do**, **Before you build**, and **Check this**, apart from a restrained new-search action or genuinely useful municipal contact. It has no “Check my fence,” refinement questionnaire, continuation funnel, eligibility check, chatbot, or substitute wizard.
+The Clearwater Fence resident guide ends after **What you can do** and **Check this**, apart from a restrained new-search action or genuinely useful municipal contact. It has no “Check my fence,” refinement questionnaire, continuation funnel, eligibility check, chatbot, or substitute wizard.
+
+## Clearwater permit action research gap
+
+No authoritative resident-facing fence permit application URL is stored in the current sources or rule metadata. Beta V1 therefore keeps the permit-required answer without fabricating a CTA. Verify the City's current official application destination before adding the link; a legal-code citation is not a substitute for an action destination.
 
 Generic evaluator and question-planning infrastructure may continue to support internal or future uses, but a long interview is not a resident product strategy. Groundrule either provides simple conditional guidance or stops at the boundary of planner judgment and offers a precise escalation.
 
