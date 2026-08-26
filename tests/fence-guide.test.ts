@@ -35,8 +35,7 @@ test("known LMDR property gets an answers-first guide without project details", 
   assert.equal(guide.highlights[0]?.answer, "4 ft maximum fence height");
   assert.equal(guide.highlights[1]?.answer, "6 ft maximum fence height");
   const materials = guide.highlights.find((item) => item.key === "material.metal_prohibition");
-  assert.equal(materials?.answer, "Avoid corrugated or sheet metal fencing");
-  assert.notEqual(materials?.answer, "Not allowed");
+  assert.equal(materials?.answer, "Corrugated or sheet metal fencing is not allowed");
   assert.match(materials?.body ?? "", /may not be used to form the fence or wall/);
   assert.equal(materials?.citations[0]?.sectionIdentifier, "§ 3-802");
 });
@@ -63,6 +62,7 @@ test("resident UI ends with guidance, shows trusted property context, and embeds
   const ui = fs.readFileSync("app/clearwater/fence/workflow.tsx", "utf8");
   assert.doesNotMatch(ui, /Check my fence|specific fence in mind|QuestionControl|nextQuestion|stage === "refine"/);
   assert.match(ui, /guide\.propertyContext\.map/);
+  assert.doesNotMatch(ui, /Clearwater fence guide|Fences at/);
   assert.match(ui, /<GuideHighlights items={guide.highlights}/);
   assert.match(ui, /Source ↗/);
   assert.match(ui, /citation\.sectionIdentifier/);
