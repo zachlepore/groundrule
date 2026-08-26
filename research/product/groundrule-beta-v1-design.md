@@ -70,6 +70,14 @@ Use **Check this** for simple conditional guidance that is broadly useful withou
 
 Do not assert that the condition applies to the property when trusted data cannot establish that. Diagrams may explain a rule but must not imply a survey or site determination. Measurements, restrictions, and citations remain structured and data-driven.
 
+## Specific Situations
+
+Use **Specific situations** for authoritative rules that apply only to a subset of residents, are easy for those residents to self-identify, can be explained concisely, and do not deserve another mandatory resident question. Place this compact, stacked secondary guidance after the primary answers and any broadly useful **Check this** content.
+
+**Conditional guidance beats conditional questioning.** If Groundrule can clearly say, “If X applies to you, here is the rule,” prefer that over asking every resident, “Does X apply to you?” The resident can read the relevant row without interacting, while the common answer remains immediate.
+
+A regulatory fact does not automatically deserve a primary UI element. **Specific situations** is secondary guidance, not an excuse to dump every edge case onto the page. Include only short, useful conditions; leave rules that cannot be summarized accurately and actionably to structured/internal data or a focused municipal handoff.
+
 ## City Confirmation
 
 Use **Need city confirmation** only when a genuinely material property or project detail cannot be reliably derived and requires professional judgment. It contains:
@@ -86,7 +94,7 @@ Authoritative access is never removed. Present citations compactly as a resident
 
 ## Questionnaire removal and complexity escalation
 
-The Clearwater Fence resident guide ends after **What you can do** and **Check this**, apart from a restrained new-search action or genuinely useful municipal contact. It has no “Check my fence,” refinement questionnaire, continuation funnel, eligibility check, chatbot, or substitute wizard.
+The Clearwater Fence resident guide ends after **What you can do**, **Check this**, and any concise **Specific situations**, apart from a restrained new-search action or genuinely useful municipal contact. It has no “Check my fence,” refinement questionnaire, continuation funnel, eligibility check, chatbot, or substitute wizard.
 
 ## Clearwater permit action research gap
 

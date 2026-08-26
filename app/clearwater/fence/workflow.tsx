@@ -45,6 +45,17 @@ function GuideHighlights({ items }: { items: FenceGuideItem[] }) {
   </section>;
 }
 
+/** Compact secondary guidance shared by workflows with self-identifiable conditions. */
+function SpecificSituations({ items }: { items: FenceGuideItem[] }) {
+  if (!items.length) return null;
+  return <section className="specific-situations" aria-labelledby="specific-situations-title">
+    <h2 id="specific-situations-title">Specific situations</h2>
+    <div>{items.map((item) => <article key={item.key} className="specific-situation">
+      <h3>{item.title}</h3><p>{item.body}</p><Source item={item}/>
+    </article>)}</div>
+  </section>;
+}
+
 function residentAddress(value: string) {
   return value.toLocaleLowerCase("en-US").replace(/\b\p{L}/gu, (letter) => letter.toLocaleUpperCase("en-US"));
 }
@@ -60,6 +71,6 @@ export function FenceWorkflow() {
   return <main className="workflow-shell"><header className="workflow-brand">GROUNDRULE <span>Clearwater, Florida</span></header>
     {stage === "address" && <section className="address-panel"><p className="eyebrow">Clearwater fence pilot</p><h1>Enter your property address</h1><p className="workflow-copy">Guidance based on current City rules and property data.</p><div className="address-form"><input aria-label="Property address" autoComplete="street-address" placeholder="1950 Drew Plz" value={address} onChange={(e) => setAddress(e.target.value)} onKeyDown={(e) => e.key === "Enter" && address.trim() && lookup()}/><button onClick={lookup} disabled={pending || !address.trim()}>{pending ? "Looking…" : "Continue"}</button></div>{error && <p role="alert" className="warning">{error}</p>}</section>}
     {stage === "project" && confirmedAddress && <section className="address-panel"><p className="found">✓ Property found</p><h1 className="address-heading">{residentAddress(confirmedAddress)}<small>Clearwater, FL</small></h1><div className="project-choice"><h2>What do you need help with?</h2><div className="project-grid"><button onClick={() => setStage("guide")}>Fence <span>→</span></button></div></div></section>}
-    {stage === "guide" && guide && confirmedAddress && <article className="guide"><h1>{residentAddress(confirmedAddress)}</h1><aside className="property-context" aria-label="Property facts used"><ul>{guide.propertyContext.map((fact) => <li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Guidance only · Based on current Clearwater rules and property data · Not a permit or City approval</p><GuideHighlights items={guide.highlights}/><GuideSection symbol="" title="Near a driveway or street corner?" items={guide.checkThis}/><p className="visibility-escalation">Not sure if this applies to your fence? Contact Clearwater.</p><button className="new-search" onClick={newSearch}>← New search</button></article>}
+    {stage === "guide" && guide && confirmedAddress && <article className="guide"><h1>{residentAddress(confirmedAddress)}</h1><aside className="property-context" aria-label="Property facts used"><ul>{guide.propertyContext.map((fact) => <li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Guidance only · Based on current Clearwater rules and property data · Not a permit or City approval</p><GuideHighlights items={guide.highlights}/><GuideSection symbol="" title="Near a driveway or street corner?" items={guide.checkThis}/><p className="visibility-escalation">Not sure if this applies to your fence? Contact Clearwater.</p><SpecificSituations items={guide.specificSituations}/><button className="new-search" onClick={newSearch}>← New search</button></article>}
   </main>;
 }
