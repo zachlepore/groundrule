@@ -21,6 +21,12 @@ const result: EvaluationResult = {
       { sequence: 1, type: "maximum", subjectKey: "project.height", parameters: { value: 2.5, unit: "ft", display_value: 30, display_unit: "in", horizontal_leg_1_ft: 20, horizontal_leg_2_ft: 20, presentation_asset_id: "clearwater_sight_visibility_triangle_v1" }, severity: "requirement", messageTemplate: "height" },
       { sequence: 2, type: "required_value", subjectKey: "project.is_opaque", parameters: { value: false, meaning: "non-opaque", presentation_asset_id: "clearwater_sight_visibility_triangle_v1" }, severity: "requirement", messageTemplate: "opacity" },
     ]),
+    { ...makeRule("chain_link.front_location", "UNKNOWN", [{ sequence: 1, type: "required_value", subjectKey: "project.is_rear_of_front_building_line", parameters: { value: true }, severity: "requirement", messageTemplate: "Chain-link must be rear of the principal structure front building line." }], "§ 3-805") },
+    { ...makeRule("chain_link.side_rear_base_height", "UNKNOWN", [maximum(4)], "§ 3-805"), condition: { all: [{ fact: "project.is_chain_link", op: "is_true" }, { fact: "project.vinyl_color", op: "not_in", values: ["green", "black"] }] } },
+    { ...makeRule("chain_link.side_rear_vinyl_height", "UNKNOWN", [maximum(6)], "§ 3-805"), condition: { all: [{ fact: "project.is_chain_link", op: "is_true" }, { fact: "project.vinyl_color", op: "in", values: ["green", "black"] }] } },
+    makeRule("chain_link.landscaping", "UNKNOWN", [{ sequence: 1, type: "manual_review_required", subjectKey: "project.chain_link_landscaping_approved", parameters: { full_length: true }, severity: "requirement", messageTemplate: "Full-length qualifying landscaping must be confirmed." }], "§ 3-805"),
+    makeRule("waterfront.height", "UNKNOWN", [maximum(4)], "§ 3-804"),
+    makeRule("waterfront.opacity", "UNKNOWN", [{ sequence: 1, type: "required_value", subjectKey: "project.is_opaque", parameters: { value: false }, severity: "requirement", messageTemplate: "The fence must be non-opaque." }], "§ 3-804"),
   ],
 };
 
@@ -58,18 +64,49 @@ test("permit duties remain structured, visibility is resident-facing, and citati
   assert.doesNotMatch(JSON.stringify(guide), /UNKNOWN|REVIEW_REQUIRED/);
 });
 
+test("specific situations compose chain-link and water-adjacent guidance from structured rules", () => {
+  const guide = buildClearwaterFenceGuide(result, { "property.zoning_district": "lmdr" });
+  assert.deepEqual(guide.specificSituations.map((item) => item.title), ["Chain-link fences", "Property next to the water"]);
+  const chain = guide.specificSituations[0];
+  assert.equal(chain?.body, "Chain-link fences follow different rules. They generally must be behind the front building line. Standard chain-link is limited to 48 in. Green- or black-vinyl-coated chain-link may be allowed up to 6 ft, with additional location and landscaping requirements.");
+  assert.equal(chain?.values?.standard_height_in, 48);
+  assert.deepEqual(chain?.values?.coating_colors, ["green", "black"]);
+  assert.equal((chain?.values?.coated_height as Record<string, unknown>)?.value, 6);
+  assert.equal(chain?.citations[0]?.sectionIdentifier, "§ 3-805");
+  assert.equal(guide.highlights.some((item) => item.key.startsWith("chain_link.")), false);
+  assert.doesNotMatch(chain?.body ?? "", /4 ft maximum fence height|6 ft maximum fence height/);
+
+  const water = guide.specificSituations[1];
+  assert.equal(water?.body, "Additional fence restrictions apply near a water-adjacent property line. If your fence is within 20 ft of that property line — or within the required setback, whichever is greater — different rules may apply. Not sure whether this applies? Clearwater can confirm it.");
+  assert.equal(water?.values?.distance_ft, 20);
+  assert.equal(water?.citations[0]?.sectionIdentifier, "§ 3-804");
+  assert.deepEqual(guide.propertyContext, ["Zoning · LMDR"]);
+  assert.doesNotMatch(guide.propertyContext.join(" "), /Waterfront/);
+});
+
 test("resident UI ends with guidance, shows trusted property context, and embeds no regulatory numbers", () => {
   const ui = fs.readFileSync("app/clearwater/fence/workflow.tsx", "utf8");
   assert.doesNotMatch(ui, /Check my fence|specific fence in mind|QuestionControl|nextQuestion|stage === "refine"/);
   assert.match(ui, /guide\.propertyContext\.map/);
   assert.doesNotMatch(ui, /Clearwater fence guide|Fences at/);
   assert.match(ui, /<GuideHighlights items={guide.highlights}/);
+  assert.match(ui, /<SpecificSituations items={guide.specificSituations}/);
+  assert.ok(ui.indexOf("<GuideHighlights") < ui.indexOf("<SpecificSituations"));
+  assert.ok(ui.indexOf("<GuideSection") < ui.indexOf("<SpecificSituations"));
   assert.match(ui, /Source ↗/);
   assert.match(ui, /citation\.sectionIdentifier/);
   assert.doesNotMatch(ui, /Before you build|ProcessSection|secondaryRequirement/);
   assert.doesNotMatch(ui, /Official rule|stored property data|cannot tell/);
   assert.doesNotMatch(ui, /30 inches|20 ft|maximum height is 4|maximum height is 6/);
+  assert.doesNotMatch(ui, /48 in|6 ft|vinyl-coated|waterfront/i);
   assert.doesNotMatch(ui, /Not allowed|Corrugated or sheet metal/);
+});
+
+test("resident workflow adds no chain-link or waterfront questionnaire", () => {
+  const ui = fs.readFileSync("app/clearwater/fence/workflow.tsx", "utf8");
+  assert.doesNotMatch(ui, /Is your fence chain-link|Is your property waterfront|within 20 feet of the water/i);
+  assert.equal((ui.match(/<input/g) ?? []).length, 1);
+  assert.doesNotMatch(ui, /Waterfront · (?:Yes|No)/);
 });
 
 test("unsupported lookup retains an explicit safe pilot message", () => {

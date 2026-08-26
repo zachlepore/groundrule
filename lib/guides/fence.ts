@@ -15,7 +15,7 @@ export interface FenceGuideItem {
   secondaryRequirement?: string;
   actionUrl?: string;
 }
-export interface FenceGuide { zoningDistrict: string | null; propertyContext: string[]; highlights: FenceGuideItem[]; whatYouCanDo: FenceGuideItem[]; beforeYouBuild: FenceGuideItem[]; checkThis: FenceGuideItem[] }
+export interface FenceGuide { zoningDistrict: string | null; propertyContext: string[]; highlights: FenceGuideItem[]; whatYouCanDo: FenceGuideItem[]; beforeYouBuild: FenceGuideItem[]; checkThis: FenceGuideItem[]; specificSituations: FenceGuideItem[] }
 
 const allRules = (result: EvaluationResult) => [...result.matchedRules, ...result.reviewRequiredRules, ...result.unknownRules, ...result.notMatchedRules];
 const outcome = (rule: EvaluatedRule | undefined, type?: string) => rule?.outcomes.find((item) => !type || item.type === type);
@@ -31,6 +31,18 @@ const displayCompactMeasure = (item: Outcome | undefined) => {
   return value == null || unit == null ? null : `${value} ${unit}`;
 };
 const sourceItem = (rule: EvaluatedRule, item: Omit<FenceGuideItem, "citations">): FenceGuideItem => ({ ...item, citations: rule.citations });
+const conditionValues = (rule: EvaluatedRule | undefined, fact: string): string[] => {
+  if (!rule) return [];
+  const visit = (condition: EvaluatedRule["condition"]): JsonValue[] => {
+    if ("all" in condition) return condition.all.flatMap(visit);
+    if ("any" in condition) return condition.any.flatMap(visit);
+    if ("not" in condition) return visit(condition.not);
+    return condition.fact === fact && "values" in condition ? condition.values : [];
+  };
+  return visit(rule.condition).filter((value): value is string => typeof value === "string");
+};
+const vinylColorList = (values: string[]) => values.map((value, index) => `${value.replaceAll("_", " ")}${index < values.length - 1 ? "-" : ""}`).join(" or ");
+const WATER_ADJACENT_DISTANCE_FT = 20;
 
 /** Builds a resident guide from structured outcomes; it never treats an unmatched prohibition as permission. */
 export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts): FenceGuide {
@@ -38,6 +50,7 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   const whatYouCanDo: FenceGuideItem[] = [];
   const beforeYouBuild: FenceGuideItem[] = [];
   const checkThis: FenceGuideItem[] = [];
+  const specificSituations: FenceGuideItem[] = [];
 
   const front = rules.get("height.front_baseline");
   const frontMaximum = outcome(front, "maximum");
@@ -113,8 +126,35 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
     }));
   }
 
+  const chainLocation = rules.get("chain_link.front_location");
+  const standardChain = rules.get("chain_link.side_rear_base_height");
+  const coatedChain = rules.get("chain_link.side_rear_vinyl_height");
+  const chainLandscaping = rules.get("chain_link.landscaping");
+  const standardMaximum = outcome(standardChain, "maximum");
+  const coatedMaximum = outcome(coatedChain, "maximum");
+  const coatingColors = conditionValues(coatedChain, "project.vinyl_color");
+  if (chainLocation && standardChain && coatedChain && chainLandscaping && standardMaximum && coatedMaximum && coatingColors.length) {
+    const standardFeet = number(standardMaximum, "value");
+    const standardInches = standardFeet == null || standardMaximum.parameters.unit !== "ft" ? null : standardFeet * 12;
+    if (standardInches != null) specificSituations.push({
+      key: "specific.chain_link", title: "Chain-link fences",
+      body: `Chain-link fences follow different rules. They generally must be behind the front building line. Standard chain-link is limited to ${standardInches} in. ${vinylColorList(coatingColors).replace(/^./, (letter) => letter.toUpperCase())}-vinyl-coated chain-link may be allowed up to ${displayCompactMeasure(coatedMaximum)}, with additional location and landscaping requirements.`,
+      values: { standard_height_in: standardInches, coated_height: coatedMaximum.parameters, coating_colors: coatingColors, placement: outcome(chainLocation, "required_value")?.parameters ?? {}, landscaping: chainLandscaping.outcomes[0]?.parameters ?? {} },
+      citations: chainLocation.citations,
+    });
+  }
+
+  const waterfrontHeight = rules.get("waterfront.height");
+  const waterfrontOpacity = rules.get("waterfront.opacity");
+  if (waterfrontHeight && waterfrontOpacity) specificSituations.push({
+    key: "specific.water_adjacent", title: "Property next to the water",
+    body: `Additional fence restrictions apply near a water-adjacent property line. If your fence is within ${WATER_ADJACENT_DISTANCE_FT} ft of that property line — or within the required setback, whichever is greater — different rules may apply. Not sure whether this applies? Clearwater can confirm it.`,
+    values: { distance_ft: WATER_ADJACENT_DISTANCE_FT, comparison: "required_setback_whichever_is_greater", height: outcome(waterfrontHeight, "maximum")?.parameters ?? {}, opacity: outcome(waterfrontOpacity, "required_value")?.parameters ?? {} },
+    citations: waterfrontHeight.citations,
+  });
+
   const highlights = [...whatYouCanDo, ...(permitDuty ? [{ ...permitDuty, title: "Permit", answer: "Required" }] : [])];
   const zoningDistrict = typeof facts["property.zoning_district"] === "string" ? facts["property.zoning_district"] : null;
   const propertyContext = zoningDistrict ? [`Zoning · ${zoningDistrict.toUpperCase()}`] : [];
-  return { zoningDistrict, propertyContext, highlights, whatYouCanDo, beforeYouBuild: permitAction ? [permitAction] : [], checkThis };
+  return { zoningDistrict, propertyContext, highlights, whatYouCanDo, beforeYouBuild: permitAction ? [permitAction] : [], checkThis, specificSituations };
 }
