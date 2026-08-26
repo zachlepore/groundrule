@@ -9,9 +9,9 @@ const item = (rule: EvaluatedRule, title: string, answer: string, qualification?
 /** Converts structured outcomes into an answers-first shed guide. */
 export function buildClearwaterShedGuide(result: EvaluationResult, facts: Facts): ShedGuide {
   const byKey = rules(result); const highlights: ShedGuideItem[] = []; const specificSituations: ShedGuideItem[] = [];
-  const exemption = byKey.get("permit.small_shed_exemption"); const threshold = outcome(exemption, "permit_threshold");
+  const exemption = byKey.get("permit.small_shed_exemption"); const threshold = outcome(exemption, "exemption");
   if (exemption && threshold) highlights.push(item(exemption, "Building permit", `${threshold.parameters.exempt_max_sq_ft} sq ft or smaller · No building permit required`, "City development standards still apply. Utilities or other work may require separate permits.", threshold.parameters));
-  const setback = byKey.get("location.lmdr_setbacks"); const minimums = outcome(setback, "minimum_setbacks");
+  const setback = byKey.get("location.lmdr_setbacks"); const minimums = outcome(setback, "obligation");
   if (setback && minimums) highlights.push(item(setback, "Setbacks", `${minimums.parameters.front_ft} ft from the front property line · ${minimums.parameters.side_ft} ft from a side property line · ${minimums.parameters.rear_ft} ft from the rear property line`, "The shed cannot be between the street right-of-way and the principal structure.", minimums.parameters));
   const height = byKey.get("height.residential_maximum"); const maximum = outcome(height, "maximum");
   if (height && maximum) highlights.push(item(height, "Maximum height", `${maximum.parameters.value} ft maximum shed height`, undefined, maximum.parameters));
