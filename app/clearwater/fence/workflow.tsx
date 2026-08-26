@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
+import { useRouter } from "next/navigation";
 import type { FenceGuide, FenceGuideItem } from "../../../lib/guides/fence";
 import { startFenceLookup } from "./actions";
 
@@ -61,6 +62,7 @@ function residentAddress(value: string) {
 }
 
 export function FenceWorkflow() {
+  const router = useRouter();
   const [address, setAddress] = useState(""); const [confirmedAddress, setConfirmedAddress] = useState<string | null>(null);
   const [guide, setGuide] = useState<FenceGuide | null>(null);
   const [stage, setStage] = useState<"address" | "project" | "guide">("address");
@@ -70,7 +72,7 @@ export function FenceWorkflow() {
 
   return <main className="workflow-shell"><header className="workflow-brand">GROUNDRULE <span>Clearwater, Florida</span></header>
     {stage === "address" && <section className="address-panel"><p className="eyebrow">Clearwater fence pilot</p><h1>Enter your property address</h1><p className="workflow-copy">Guidance based on current City rules and property data.</p><div className="address-form"><input aria-label="Property address" autoComplete="street-address" placeholder="1950 Drew Plz" value={address} onChange={(e) => setAddress(e.target.value)} onKeyDown={(e) => e.key === "Enter" && address.trim() && lookup()}/><button onClick={lookup} disabled={pending || !address.trim()}>{pending ? "Looking…" : "Continue"}</button></div>{error && <p role="alert" className="warning">{error}</p>}</section>}
-    {stage === "project" && confirmedAddress && <section className="address-panel"><p className="found">✓ Property found</p><h1 className="address-heading">{residentAddress(confirmedAddress)}<small>Clearwater, FL</small></h1><div className="project-choice"><h2>What do you need help with?</h2><div className="project-grid"><button onClick={() => setStage("guide")}>Fence <span>→</span></button></div></div></section>}
+    {stage === "project" && confirmedAddress && <section className="address-panel"><p className="found">✓ Property found</p><h1 className="address-heading">{residentAddress(confirmedAddress)}<small>Clearwater, FL</small></h1><div className="project-choice"><h2>What do you need help with?</h2><div className="project-grid"><button onClick={() => setStage("guide")}>Fence <span>→</span></button><button onClick={() => { router.push("/clearwater/shed"); }}>Shed <span>→</span></button></div></div></section>}
     {stage === "guide" && guide && confirmedAddress && <article className="guide"><h1>{residentAddress(confirmedAddress)}</h1><aside className="property-context" aria-label="Property facts used"><ul>{guide.propertyContext.map((fact) => <li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Guidance only · Based on current Clearwater rules and property data · Not a permit or City approval</p><GuideHighlights items={guide.highlights}/><GuideSection symbol="" title="Near a driveway or street corner?" items={guide.checkThis}/><p className="visibility-escalation">Not sure if this applies to your fence? Contact Clearwater.</p><SpecificSituations items={guide.specificSituations}/><button className="new-search" onClick={newSearch}>← New search</button></article>}
   </main>;
 }
