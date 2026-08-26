@@ -50,6 +50,10 @@ test("permit duties remain structured, visibility is resident-facing, and citati
   const guide = buildClearwaterFenceGuide(result, { "property.zoning_district": "lmdr" });
   const permit = guide.highlights.find((item) => item.title === "Permit");
   assert.equal(permit?.answer, "Required");
+  assert.deepEqual(permit?.action, {
+    label: "View fence permit steps",
+    url: "https://www.myclearwater.com/Business-Development/Permitting/06-Fence-Permit-Application-Checklist",
+  });
   assert.equal(guide.beforeYouBuild.length, 1);
   assert.equal(guide.beforeYouBuild[0]?.title, "Get your fence permit");
   assert.match(guide.beforeYouBuild[0]?.actionText ?? "", /application and applicable plans/);
@@ -96,6 +100,9 @@ test("resident UI ends with guidance, shows trusted property context, and embeds
   assert.match(ui, /Source ↗/);
   assert.match(ui, /citation\.sectionIdentifier/);
   assert.doesNotMatch(ui, /Before you build|ProcessSection|secondaryRequirement/);
+  assert.match(ui, /item\.action\.label/);
+  assert.match(ui, /href={item\.action\.url}/);
+  assert.doesNotMatch(ui, /https:\/\/www\.myclearwater\.com\/Business-Development\/Permitting/);
   assert.doesNotMatch(ui, /Official rule|stored property data|cannot tell/);
   assert.doesNotMatch(ui, /30 inches|20 ft|maximum height is 4|maximum height is 6/);
   assert.doesNotMatch(ui, /48 in|6 ft|vinyl-coated|waterfront/i);

@@ -202,7 +202,7 @@ h1 {
 .guide-item ul { padding-left: 1.3rem; }
 .guide-source { margin: .7rem 0 0 !important; color: var(--muted); font-size: .76rem; }
 .guide-source a { display: inline-block; min-height: 1.5rem; color: var(--accent); text-underline-offset: .18rem; }
-.highlight-action { display: inline-block; margin-top: .8rem; color: var(--accent); font-size: .9rem; font-weight: 700; text-underline-offset: .18rem; }
+.highlight-action { display: inline-flex; align-items: center; min-height: 2.75rem; margin-top: .35rem; color: var(--accent); font-size: .9rem; font-weight: 700; text-underline-offset: .18rem; }
 .permit-action { padding: 1.1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .permit-action h3 { margin: 0 0 .35rem; font-size: 1.2rem; }
 .permit-action > p { margin: .35rem 0; line-height: 1.5; }
