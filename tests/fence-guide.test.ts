@@ -35,26 +35,26 @@ test("known LMDR property gets an answers-first guide without project details", 
   assert.equal(guide.highlights[0]?.answer, "4 ft maximum fence height");
   assert.equal(guide.highlights[1]?.answer, "6 ft maximum fence height");
   const materials = guide.highlights.find((item) => item.key === "material.metal_prohibition");
-  assert.equal(materials?.answer, "No corrugated or sheet metal fencing");
+  assert.equal(materials?.answer, "Avoid corrugated or sheet metal fencing");
   assert.notEqual(materials?.answer, "Not allowed");
   assert.match(materials?.body ?? "", /may not be used to form the fence or wall/);
   assert.equal(materials?.citations[0]?.sectionIdentifier, "§ 3-802");
 });
 
-test("permit is a before-build duty, visibility is conditional, and citations survive", () => {
+test("permit duties remain structured, visibility is resident-facing, and citations survive", () => {
   const guide = buildClearwaterFenceGuide(result, { "property.zoning_district": "lmdr" });
   const permit = guide.highlights.find((item) => item.title === "Permit");
-  assert.equal(permit?.answer, "Permit required");
+  assert.equal(permit?.answer, "Required");
   assert.equal(guide.beforeYouBuild.length, 1);
   assert.equal(guide.beforeYouBuild[0]?.title, "Get your fence permit");
   assert.match(guide.beforeYouBuild[0]?.actionText ?? "", /application and applicable plans/);
   assert.match(guide.beforeYouBuild[0]?.secondaryRequirement ?? "", /Final inspection required after installation/);
   assert.equal(guide.checkThis[0]?.assetId, "clearwater_sight_visibility_triangle_v1");
-  assert.match(guide.checkThis[0]?.body ?? "", /cannot tell/);
+  assert.equal(guide.checkThis[0]?.body, "If your fence is near a driveway or street corner:");
   assert.equal(guide.checkThis[0]?.values?.horizontal_leg_1_ft, 20);
   assert.equal(guide.checkThis[0]?.values?.display_value, 30);
-  assert.match(guide.checkThis[0]?.bullets?.[0] ?? "", /20 feet along one applicable edge.*20 feet along the other applicable edge/);
-  assert.match(guide.checkThis[0]?.bullets?.[2] ?? "", /maximum fence height.*30 inches/);
+  assert.equal(guide.checkThis[0]?.bullets?.[0], "The visibility area extends 20 ft along each applicable edge.");
+  assert.equal(guide.checkThis[0]?.bullets?.[2], "Maximum fence height in this area is 30 in.");
   assert.equal(guide.checkThis[0]?.citations[0]?.sourceUrl, citation.sourceUrl);
   assert.doesNotMatch(JSON.stringify(guide), /UNKNOWN|REVIEW_REQUIRED/);
 });
@@ -64,9 +64,10 @@ test("resident UI ends with guidance, shows trusted property context, and embeds
   assert.doesNotMatch(ui, /Check my fence|specific fence in mind|QuestionControl|nextQuestion|stage === "refine"/);
   assert.match(ui, /guide\.propertyContext\.map/);
   assert.match(ui, /<GuideHighlights items={guide.highlights}/);
-  assert.match(ui, /View Clearwater rule ↗/);
+  assert.match(ui, /Source ↗/);
   assert.match(ui, /citation\.sectionIdentifier/);
-  assert.match(ui, /secondaryRequirement/);
+  assert.doesNotMatch(ui, /Before you build|ProcessSection|secondaryRequirement/);
+  assert.doesNotMatch(ui, /Official rule|stored property data|cannot tell/);
   assert.doesNotMatch(ui, /30 inches|20 ft|maximum height is 4|maximum height is 6/);
   assert.doesNotMatch(ui, /Not allowed|Corrugated or sheet metal/);
 });
