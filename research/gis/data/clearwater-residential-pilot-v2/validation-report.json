@@ -5,7 +5,9 @@
   "parcelsFetched": 123,
   "zoningPolygonsFetched": 5,
   "cleanPropertyProfiles": 110,
+  "cleanProperties": 106,
   "reviewPropertyProfiles": 16,
+  "reviewProperties": 8,
   "unmatchedAddresses": 0,
   "duplicateOrAmbiguousAddressMatches": 0,
   "parcelsWithNoZoning": 0,
@@ -24,5 +26,14 @@
   "issueCountsByType": {
     "parcel_ambiguous_zoning": 15,
     "unsupported_zoning_code": 1
+  },
+  "rawMunicipalityAddressCounts": {
+    "CLEARWATER": 126
+  },
+  "normalizedJurisdictionPropertyCounts": {
+    "clearwater": 114
+  },
+  "jurisdictionDerivationPropertyCounts": {
+    "authoritative_municipality": 114
   }
 }
