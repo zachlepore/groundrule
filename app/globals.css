@@ -169,6 +169,8 @@ h1 {
 
 .address-panel, .guide { width: min(100%, 54rem); margin: clamp(5rem, 12vh, 9rem) auto 4rem; }
 .address-panel h1 { max-width: 18ch; }
+.handoff-status { min-height: 16rem; }
+.handoff-status .warning { margin-top: 2rem; }
 .found { margin-bottom: 1rem; color: var(--accent); font-size: .88rem; font-weight: 700; }
 .address-heading { max-width: none !important; font-size: clamp(2rem, 5vw, 2.85rem); }
 .address-heading small { display: block; margin-top: .65rem; color: var(--muted); font-size: 1rem; font-weight: 400; text-transform: none; }

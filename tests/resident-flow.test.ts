@@ -6,6 +6,7 @@ const fence = fs.readFileSync("app/clearwater/fence/workflow.tsx", "utf8");
 const shed = fs.readFileSync("app/clearwater/shed/workflow.tsx", "utf8");
 const fencePage = fs.readFileSync("app/clearwater/fence/page.tsx", "utf8");
 const shedPage = fs.readFileSync("app/clearwater/shed/page.tsx", "utf8");
+const handoff = fs.readFileSync("app/clearwater/project-handoff.tsx", "utf8");
 
 test("first cross-project selection carries the resolved address and opens the selected guide", () => {
   assert.match(fence, /clearwater\/shed\?address=\$\{encodeURIComponent\(confirmedAddress\)\}&project=shed/);
@@ -13,9 +14,26 @@ test("first cross-project selection carries the resolved address and opens the s
   for (const [workflow, page, project] of [[fence, fencePage, "fence"], [shed, shedPage, "shed"]]) {
     assert.match(page, /query\.address/);
     assert.match(page, new RegExp(`query\\.project\\s*===\\s*"${project}"`));
-    assert.match(workflow, /lookup\(initialAddress, true\)/);
+    assert.match(workflow, /lookup\(initialAddress,\s*true\)/);
     assert.ok(workflow.includes('showGuide ? "guide" : "project"') || workflow.includes('showGuide?"guide":"project"'));
   }
+});
+
+test("cross-project routes render a neutral handoff state before trusted lookup completes", () => {
+  assert.match(handoff, /Loading property guidance…/);
+  assert.doesNotMatch(handoff, /Property address|Enter your property address/);
+  for (const workflow of [fence, shed]) {
+    assert.match(workflow, /isProjectHandoff/);
+    assert.match(workflow, /isProjectHandoff\s*\?\s*"handoff"\s*:\s*"address"/);
+    assert.match(workflow, /stage\s*===?\s*"handoff"/);
+    assert.match(workflow, /showGuide\s*\?\s*"handoff"\s*:\s*"address"/);
+  }
+});
+
+test("handoff failures remain safe without exposing the empty address form", () => {
+  assert.match(handoff, /role="alert"/);
+  assert.match(handoff, /onNewSearch/);
+  assert.match(handoff, /We couldn’t load guidance/);
 });
 
 test("same-project choices open locally without navigation or a second lookup", () => {
