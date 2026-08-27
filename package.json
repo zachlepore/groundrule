@@ -15,6 +15,7 @@
     "test:guide": "tsx --test tests/fence-guide.test.ts tests/resident-flow.test.ts",
     "test:evaluator:live": "NODE_OPTIONS='--conditions=react-server' tsx tests/live-evaluator.integration.ts",
     "test:shed": "tsx --test tests/shed-guide.test.ts",
+    "test:setbacks": "tsx --test tests/setbacks-guide.test.ts",
     "test:jurisdiction": "tsx --test tests/jurisdiction-guardrail.test.ts"
   },
   "dependencies": {
