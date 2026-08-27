@@ -12,7 +12,7 @@
     "test:evaluator": "tsx --test tests/evaluator.test.ts",
     "test:questions": "tsx --test tests/question-flow.test.ts",
     "test:property": "NODE_OPTIONS='--conditions=react-server' tsx --test tests/property-lookup.test.ts",
-    "test:guide": "tsx --test tests/fence-guide.test.ts",
+    "test:guide": "tsx --test tests/fence-guide.test.ts tests/resident-flow.test.ts",
     "test:evaluator:live": "NODE_OPTIONS='--conditions=react-server' tsx tests/live-evaluator.integration.ts",
     "test:shed": "tsx --test tests/shed-guide.test.ts",
     "test:jurisdiction": "tsx --test tests/jurisdiction-guardrail.test.ts"
