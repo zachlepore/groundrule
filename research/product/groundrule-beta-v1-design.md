@@ -80,6 +80,12 @@ Use **Specific situations** for authoritative rules that apply only to a subset 
 
 A regulatory fact does not automatically deserve a primary UI element. **Specific situations** is secondary guidance, not an excuse to dump every edge case onto the page. Include only short, useful conditions; leave rules that cannot be summarized accurately and actionably to structured/internal data or a focused municipal handoff.
 
+## Related Property Guides
+
+Use **Related Property Guides** when a general Guide provides a useful default answer but supported improvement types have their own specific rules. Follow a short warning or context sentence with compact buttons for only the related Guides Groundrule currently supports, then a concise City escalation for everything else. Keep this navigation separate from property and lot conditions in **Specific situations**.
+
+**Link to what Groundrule knows. Escalate what it doesn't.**
+
 ## City Confirmation
 
 Use **Need city confirmation** only when a genuinely material property or project detail cannot be reliably derived and requires professional judgment. It contains:
