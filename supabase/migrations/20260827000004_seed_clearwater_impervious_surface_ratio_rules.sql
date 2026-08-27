@@ -1,8 +1,8 @@
 -- Clearwater Impervious Surface Ratio V1. Forward-only, deterministic LMDR profile.
 begin;
 insert into public.project_types(key,label,description) values ('impervious_surface_ratio','Impervious surface ratio','Maximum impervious surface ratio applicable to a property') on conflict(key) do nothing;
-insert into public.input_definitions(key,label,description,data_type,unit_dimension,canonical_unit,value_scope,default_source_class,user_input_allowed,required_when_applicable)
-values ('development.impervious_surface_ratio','Impervious surface ratio','Ratio of total impervious surface area to gross land area.','decimal','ratio','percent','global','derived',false,false) on conflict(key) do nothing;
+insert into public.input_definitions(key,label,description,data_type,unit_dimension,canonical_unit,value_scope,default_source_class,user_input_allowed)
+values ('development.impervious_surface_ratio','Impervious surface ratio','Ratio of total impervious surface area to gross land area.','decimal','ratio','percent','global','derived',false) on conflict(key) do nothing;
 insert into public.rule_sets(jurisdiction_id,project_type_id,key,title,scope_description,coverage_status,research_status,effective_from,verified_at,published_at,known_gaps)
 select j.id,p.id,'clearwater_impervious_surface_ratio_v1','Clearwater impervious surface ratio','Deterministic LMDR maximum; both FLU designations allowed in LMDR share the same maximum.','limited','verified',date '2024-06-06',timestamptz '2026-08-27 00:00:00+00',timestamptz '2026-08-27 00:00:00+00','["Citywide expansion requires authoritative Future Land Use and special-area-plan classification", "nonconforming and approved-plan conditions require City confirmation"]'::jsonb from public.jurisdictions j,public.project_types p where j.slug='clearwater-fl' and p.key='impervious_surface_ratio' on conflict(jurisdiction_id,project_type_id,key) do nothing;
 insert into public.source_provisions(regulatory_source_id,locator,display_locator,title,excerpt,source_url,verified_at,notes)
