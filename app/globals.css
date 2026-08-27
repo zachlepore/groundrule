@@ -176,7 +176,7 @@ h1 {
 .address-heading small { display: block; margin-top: .65rem; color: var(--muted); font-size: 1rem; font-weight: 400; text-transform: none; }
 .project-choice { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border); }
 .project-choice h2 { font-size: 1.25rem; }
-.project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin-top: 1rem; }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin-top: 1rem; }
 .project-choice button { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 4.25rem; padding: 0 1.1rem; border: 1px solid var(--accent); border-radius: .25rem; background: #fff; color: var(--foreground); font-size: 1rem; font-weight: 700; text-align: left; }
 .project-choice button:hover { background: #f0f5f2; }
 .guide { margin-top: clamp(3rem, 7vh, 5.5rem); }
@@ -203,6 +203,9 @@ h1 {
 .highlight-item:nth-child(even) { border-left: 1px solid var(--border); }
 .highlight-item h3 { margin: 0 0 .55rem; color: var(--muted); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; }
 .highlight-answer { margin: 0; font-size: clamp(1.45rem, 3vw, 2rem); font-weight: 650; letter-spacing: -.025em; line-height: 1.15; }
+.str-answer { margin-top: 2rem; padding: 1.5rem 0; border-top: 2px solid var(--foreground); border-bottom: 1px solid #d5dcdd; }
+.str-answer h2 { margin: .35rem 0 .65rem; font-size: clamp(2.4rem, 8vw, 4.8rem); line-height: .95; letter-spacing: -.045em; }
+.str-answer > p:not(.eyebrow):not(.guide-source) { max-width: 42rem; font-size: 1.08rem; line-height: 1.55; }
 .highlight-qualification { margin: .6rem 0 0; color: var(--muted); font-size: .88rem; line-height: 1.4; }
 .guide-section { margin: 2.75rem 0; }
 .guide-section > h2 { border-top: 2px solid var(--foreground); }

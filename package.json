@@ -16,7 +16,8 @@
     "test:evaluator:live": "NODE_OPTIONS='--conditions=react-server' tsx tests/live-evaluator.integration.ts",
     "test:shed": "tsx --test tests/shed-guide.test.ts",
     "test:setbacks": "tsx --test tests/setbacks-guide.test.ts",
-    "test:jurisdiction": "tsx --test tests/jurisdiction-guardrail.test.ts"
+    "test:jurisdiction": "tsx --test tests/jurisdiction-guardrail.test.ts",
+    "test:str": "tsx --test tests/short-term-rental-guide.test.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.109.0",
