@@ -54,6 +54,8 @@ Boxes exist to make scanning easier, not to decorate every paragraph. All panels
 
 **Answer cells** form a two-by-two desktop summary and a single readable mobile column. The order is answer first, qualification second, source third. Values and conclusions always come from structured guide presentation data, never React literals.
 
+**Context once, not three times.** When several answer cards share the same measurement meaning or qualification, explain that context once at the section level rather than repeating technical language inside every card.
+
 **Simple does not mean vague.** Resident-facing measurements must identify what they measure: use “4 ft maximum fence height,” not “4 ft maximum,” and “20 ft along each applicable edge,” not “20 ft.” Status copy must likewise name its subject when context does not make that subject unmistakable.
 
 **Property context** is a single subdued metadata strip. **Process** centers the primary action and compresses supporting obligations beneath it rather than creating independent cards. **Check this** groups one conditional explanation and its diagram. **City confirmation** is used only under the escalation rule below.
