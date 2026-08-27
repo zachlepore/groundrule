@@ -14,7 +14,8 @@
     "test:property": "NODE_OPTIONS='--conditions=react-server' tsx --test tests/property-lookup.test.ts",
     "test:guide": "tsx --test tests/fence-guide.test.ts",
     "test:evaluator:live": "NODE_OPTIONS='--conditions=react-server' tsx tests/live-evaluator.integration.ts",
-    "test:shed": "tsx --test tests/shed-guide.test.ts"
+    "test:shed": "tsx --test tests/shed-guide.test.ts",
+    "test:jurisdiction": "tsx --test tests/jurisdiction-guardrail.test.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.109.0",

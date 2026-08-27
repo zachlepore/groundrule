@@ -16,7 +16,8 @@ function clientReturning(data: unknown[]) {
   } } as never;
 }
 
-const cleanRow = { property_id: "pilot-property", display_address: clean.displayAddress, normalized_zoning_code: clean.normalizedZoningCode, validation_status: "clean" };
+const jurisdictionRow = { jurisdiction_key: "clearwater", jurisdiction_authority_name: "City of Clearwater", jurisdiction_source: "Pinellas County municipal boundary GIS", jurisdiction_source_updated_at: "2026-08-25T00:00:00Z", jurisdiction_derived_at: "2026-08-26T00:00:00Z" };
+const cleanRow = { ...jurisdictionRow, property_id: "pilot-property", display_address: clean.displayAddress, normalized_zoning_code: clean.normalizedZoningCode, validation_status: "clean" };
 
 test("known clean pilot address resolves after conservative casing and spacing normalization", async () => {
   assert.equal(clean.status, "clean");
@@ -32,8 +33,8 @@ test("unknown address and duplicate matches fail safely", async () => {
 });
 
 test("only a CLEAN profile produces the supported zoning fact", () => {
-  assert.deepEqual(propertyProfileToFacts({ id: "1", displayAddress: "x", normalizedZoningCode: "lmdr", validationStatus: "clean" }), { "property.zoning_district": "lmdr" });
-  assert.deepEqual(propertyProfileToFacts({ id: "2", displayAddress: "x", normalizedZoningCode: "mdr", validationStatus: "review" }), {});
+  assert.deepEqual(propertyProfileToFacts({ id: "1", displayAddress: "x", normalizedZoningCode: "lmdr", validationStatus: "clean", jurisdiction: { normalizedKey: "clearwater", authorityName: "City of Clearwater", source: "GIS", sourceUpdatedAt: null, derivedAt: "now" } }), { "property.zoning_district": "lmdr" });
+  assert.deepEqual(propertyProfileToFacts({ id: "2", displayAddress: "x", normalizedZoningCode: "mdr", validationStatus: "review", jurisdiction: { normalizedKey: "unknown", authorityName: null, source: "GIS", sourceUpdatedAt: null, derivedAt: "now" } }), {});
 });
 
 test("seed contains CLEAN addresses and excludes all REVIEW addresses", () => {
@@ -44,7 +45,7 @@ test("seed contains CLEAN addresses and excludes all REVIEW addresses", () => {
 
 test("property-derived zoning is supplied to evaluation and removes that missing fact", () => {
   const ruleSet: LoadedRuleSet = { key: "proof", title: "proof", jurisdiction: "clearwater-fl", projectType: "fence", coverageStatus: "limited", knownGaps: [], relationships: [], rules: [{ key: "zone", title: "zone", groupKey: null, versionNumber: 1, condition: { fact: "property.zoning_district", op: "eq", value: "lmdr" }, evaluationMode: "deterministic", summary: "proof", outcomes: [], citations: [], inputs: [{ key: "property.zoning_district", label: "Zone", dataType: "enum", unit: null, propertyDerived: true, userInputAllowed: false, requiredWhenApplicable: true, role: "applicability", options: [] }] }] };
-  const facts = propertyProfileToFacts({ id: "1", displayAddress: clean.displayAddress, normalizedZoningCode: clean.normalizedZoningCode, validationStatus: "clean" });
+  const facts = propertyProfileToFacts({ id: "1", displayAddress: clean.displayAddress, normalizedZoningCode: clean.normalizedZoningCode, validationStatus: "clean", jurisdiction: { normalizedKey: "clearwater", authorityName: "City of Clearwater", source: "GIS", sourceUpdatedAt: null, derivedAt: "now" } });
   const result = evaluateLoadedRuleSet(ruleSet, { jurisdiction: "clearwater-fl", projectType: "fence", facts });
   assert.equal(result.matchedRules[0]?.key, "zone");
   assert.equal(result.missingInputs.some((input) => input.key === "property.zoning_district"), false);

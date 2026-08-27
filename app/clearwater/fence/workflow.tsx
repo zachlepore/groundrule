@@ -67,7 +67,7 @@ export function FenceWorkflow() {
   const [guide, setGuide] = useState<FenceGuide | null>(null);
   const [stage, setStage] = useState<"address" | "project" | "guide">("address");
   const [error, setError] = useState<string | null>(null); const [pending, startTransition] = useTransition();
-  const lookup = () => startTransition(async () => { try { const found = await startFenceLookup(address); if (!found) { setError("This address isn’t in our limited Clearwater pilot area yet. We did not evaluate it."); return; } setConfirmedAddress(found.displayAddress); setGuide(found.guide); setStage("project"); setError(null); } catch { setError("We couldn’t look up that address right now. Please try again later."); } });
+  const lookup = () => startTransition(async () => { try { const found = await startFenceLookup(address); if (!found) { setError("This address isn’t in our limited Clearwater pilot area yet. We did not evaluate it."); return; } if(found.status==="blocked"){setError(found.reason==="outside"?`THIS PROPERTY IS OUTSIDE CLEARWATER CITY LIMITS · Jurisdiction · ${found.jurisdictionName ?? "Outside Clearwater"}. Clearwater's property rules don't apply to this address.`:"WE COULDN'T CONFIRM THIS PROPERTY'S JURISDICTION. Groundrule won't apply Clearwater rules until it can be confirmed.");return;} setConfirmedAddress(found.displayAddress); setGuide(found.guide); setStage("project"); setError(null); } catch { setError("We couldn’t look up that address right now. Please try again later."); } });
   const newSearch = () => { setAddress(""); setConfirmedAddress(null); setGuide(null); setError(null); setStage("address"); };
 
   return <main className="workflow-shell"><header className="workflow-brand">GROUNDRULE <span>Clearwater, Florida</span></header>
