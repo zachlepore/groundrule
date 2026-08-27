@@ -30,5 +30,12 @@ export async function findPropertyByAddress(
     displayAddress: String(row.display_address),
     normalizedZoningCode: typeof row.normalized_zoning_code === "string" ? row.normalized_zoning_code : null,
     validationStatus: "clean",
+    jurisdiction: {
+      normalizedKey: String(row.jurisdiction_key) as StoredPropertyProfile["jurisdiction"]["normalizedKey"],
+      authorityName: typeof row.jurisdiction_authority_name === "string" ? row.jurisdiction_authority_name : null,
+      source: String(row.jurisdiction_source),
+      sourceUpdatedAt: typeof row.jurisdiction_source_updated_at === "string" ? row.jurisdiction_source_updated_at : null,
+      derivedAt: String(row.jurisdiction_derived_at),
+    },
   };
 }
