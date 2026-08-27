@@ -187,6 +187,13 @@ h1 {
 .property-context ul { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; margin: 0; padding: 0; color: #465157; font-size: .86rem; list-style: none; }
 .guide-highlights { margin-top: 2rem; border-top: 2px solid var(--foreground); }
 .guide-highlights > h2, .guide-section > h2 { margin: 0; padding: 1rem 0 .75rem; color: var(--accent); font-size: .76rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.setback-highlights > header { padding: 1rem 0 .9rem; }
+.setback-highlights > header h2 { margin: 0; color: var(--foreground); font-size: clamp(1.2rem, 2.5vw, 1.45rem); letter-spacing: -.01em; }
+.setback-highlights > header p { margin: .35rem 0 0; color: var(--muted); font-size: .95rem; line-height: 1.5; }
+.setback-highlights .highlight-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.setback-project-note { margin-top: 1rem; padding: .85rem 1rem; border-left: 2px solid var(--border); color: var(--muted); }
+.setback-project-note h3 { margin: 0 0 .25rem; color: var(--foreground); font-size: .9rem; }
+.setback-project-note p { margin: 0; font-size: .88rem; line-height: 1.45; }
 .highlight-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-bottom: 1px solid var(--border); }
 .highlight-item { min-width: 0; padding: 1.25rem; border-top: 1px solid var(--border); background: var(--answer-background); }
 .highlight-item:nth-child(even) { border-left: 1px solid var(--border); }
@@ -250,6 +257,7 @@ h1 {
   .guide > h1 { overflow-wrap: anywhere; }
   .guide-intro { margin-bottom: 2rem; }
   .highlight-grid { grid-template-columns: 1fr; }
+  .setback-highlights .highlight-grid { grid-template-columns: 1fr; }
   .property-context { align-items: flex-start; flex-direction: column; gap: .45rem; padding: .8rem; }
   .highlight-item, .highlight-item:nth-child(even) { padding: 1rem; border-left: 0; }
   .highlight-answer { font-size: 1.55rem; }
