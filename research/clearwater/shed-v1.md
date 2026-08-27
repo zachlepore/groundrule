@@ -14,19 +14,19 @@ The City of Clearwater Community Development Code is the controlling City source
 - **§ 3-203.D:** the residential base maximum is 15 feet; Level One flexible approval may allow 20 feet, but never above the principal structure.
 - **§ 2-202:** LMDR detached-dwelling minimum setbacks are 25 feet front, five feet side, and ten feet rear. The waterfront rear condition is not asserted for the pilot property.
 
-The planner lead says “anything under 100 SF no permit required.” Narrow research did **not** locate an accessible City primary-source provision that establishes whether the exemption is `< 100` or `<= 100`, its structure qualifiers, anchoring/foundation treatment, or whether a separate development approval remains necessary. The migration represents the candidate resident boundary as **100 square feet or smaller / larger than 100**, explicitly flags the source gap in rule-set metadata, and must receive planner/source validation before production publication. The UI distinguishes the candidate **building permit** exemption from continuing City development standards.
+The initial planner lead said “anything under 100 SF no permit required,” while narrow research did **not** locate an accessible City primary-source provision establishing whether the exemption was `< 100` or `<= 100`. On August 27, 2026, Clearwater planner contact Abi directly validated that exactly 100 square feet remains exempt, measurement uses the pad or footprint's exterior dimensions, and ordinary zoning/setback rules still apply. This is **planner-validated**, not independently verified published-Code or web guidance. The structured rule now represents **100 square feet or smaller / larger than 100** and distinguishes the **building permit** exemption from continuing City development standards. Structure qualifiers, anchoring/foundation treatment, and utility trade permits remain unresolved.
 
 ## Rule classification
 
 ### A. Primary answers
 
-1. Candidate building-permit threshold and precise inclusive boundary.
+1. Planner-validated building-permit threshold and precise inclusive boundary.
 2. Property-specific LMDR front, side, and rear minimum setbacks, measured from property lines.
 3. Residential base maximum shed height of 15 feet.
 
 ### B. Specific situations
 
-- Larger than 100 square feet: use the City permit path after the boundary is validated.
+- Larger than 100 square feet: use the City building-permit path under the complementary planner-validated boundary.
 - Electricity or plumbing: confirm separate trade permits.
 
 These are conditional statements, never required questions. The optional flexible-height process, waterfront rear-setback alternative, cumulative size cap, flood requirements, easements, and impervious capacity are not promoted into basic answers.
@@ -37,7 +37,7 @@ Zoning district is already provided by `propertyProfileToFacts`. For **1950 DREW
 
 ### D. City review
 
-City review is appropriate for the unverified permit boundary, trade permits, flexible height above 15 feet, uncertain legal property-line placement, waterfront/flood conditions, and unusual structures.
+City review is appropriate for trade permits, flexible height above 15 feet, uncertain legal property-line placement, waterfront/flood conditions, and unusual structures. The permit boundary itself is planner-validated.
 
 ### E. Deferred / outside V1
 
@@ -62,15 +62,15 @@ No GIS layer or property schema was added.
 
 ## Architecture and migration
 
-`20260826000000_seed_clearwater_shed_rules.sql` is forward-only. It adds the `shed` project type, `clearwater_shed_v1` rule set, five rules and structured outcomes, and citations/provisions. Previously applied migrations and all Fence data remain untouched. No generalized schema or evaluator change was required.
+`20260826000000_seed_clearwater_shed_rules.sql` is the immutable original publication. `20260827000002_validate_clearwater_shed_permit_threshold.sql` adds forward-only Version 2 records for the two threshold rules because their published outcomes lacked measurement semantics and accurate planner provenance. It leaves the already-correct inclusive number intact, preserves Version 1 history, and does not revise `permit.utilities`, setbacks, or height. No generalized schema or evaluator change was required.
 
 The workflow reuses the trusted address lookup, clean-profile gate, property fact adapter, generalized loader/evaluator, `Facts`/outcome/citation contracts, Beta V1 CSS, answer cards, trust strip, compact citations, Specific Situations grammar, and safe unsupported-address behavior. The only new workflow-specific modules are the Shed action, adapter, route/workflow composition, rule package, research record, and tests. Fence's currently route-local presentation components remain a candidate for extraction before workflow #3; a broad rewrite was deliberately avoided.
 
 ## Canonical output
 
-For **1950 DREW PLZ** (trusted zoning: LMDR), the candidate guide returns:
+For **1950 DREW PLZ** (trusted zoning: LMDR), the guide returns:
 
-- Building permit: 100 sq ft or smaller — no building permit required, pending authoritative boundary validation; development standards still apply.
+- Building permit: not required for sheds 100 sq ft or smaller. Measure the shed footprint using exterior dimensions. Setback and zoning rules still apply.
 - Setbacks: at least 25 ft from the front property line, 5 ft from a side property line, and 10 ft from the rear property line; not between the right-of-way and principal structure.
 - Height: 15 ft maximum base shed height.
 - Specific situations: larger sheds and utility work receive concise City handoffs.
@@ -85,6 +85,6 @@ Shed was materially simpler than inventing Fence from scratch: its implementatio
 
 ## Remaining minimum gap
 
-Obtain one accessible authoritative City of Clearwater source (or a formally validated City interpretation) that states the small-shed building-permit exemption, exact 100-square-foot boundary, covered shed types, continued zoning/development approval, and the effect of anchoring, foundations, electricity, and plumbing. Nothing else is required to validate the ordinary LMDR pilot guide.
+The exact boundary, footprint/exterior-dimension measurement, and continued zoning/setback applicability are now formally planner-validated. Published primary-source confirmation remains unavailable, and covered shed types plus the effects of anchoring, foundations, electricity, and plumbing remain unresolved.
 
-SHED V1 NEEDS TARGETED RESEARCH/DATA
+SHED V1 PERMIT THRESHOLD PLANNER-VALIDATED; TARGETED LIMITS REMAIN
