@@ -272,3 +272,8 @@ h1 {
   .visibility-diagram { padding: .4rem; }
   .visibility-diagram figcaption { font-size: .8rem; }
 }
+.isr-answer { margin-top: 2rem; padding: 1.5rem 0; border-top: 2px solid var(--foreground); border-bottom: 1px solid #d5dcdd; }
+.isr-answer h2 { margin: .35rem 0 0; color: var(--muted); font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; }
+.isr-value { margin: .25rem 0 .8rem; color: var(--accent); font-size: clamp(4rem, 14vw, 7rem); font-weight: 700; letter-spacing: -.06em; line-height: 1; }
+.isr-answer > p { max-width: 43rem; line-height: 1.55; }
+.isr-scope { color: var(--muted); font-size: .88rem; }
