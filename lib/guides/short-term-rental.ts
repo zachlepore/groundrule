@@ -15,11 +15,11 @@ export function buildClearwaterShortTermRentalGuide(result: EvaluationResult, fa
   const prohibition = result.matchedRules.find((rule) => rule.outcomes.some((outcome) => outcome.type === "prohibition"));
   if (prohibition) return {
     status: "not_allowed",
-    heading: "NOT ALLOWED",
+    heading: "Not allowed at this property",
     explanation: prohibition.outcomes.find((outcome) => outcome.type === "prohibition")!.messageTemplate,
     zoningDistrict,
     propertyContext: zoningDistrict ? [`Zoning · ${zoningDistrict.toUpperCase()}`] : [],
     citations: prohibition.citations,
   };
-  return { status: "unknown", heading: "NEEDS CONFIRMATION", explanation: "Groundrule can’t confirm this property yet.", zoningDistrict, propertyContext: [], citations: [] };
+  return { status: "unknown", heading: "Needs confirmation", explanation: "Groundrule can’t confirm this property yet.", zoningDistrict, propertyContext: [], citations: [] };
 }
