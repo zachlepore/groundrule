@@ -35,6 +35,34 @@ export function parseBbox(value) {
 export function normalizeAddress(value) { return String(value ?? "").trim().toUpperCase().replace(/[^A-Z0-9# ]/g, " ").replace(/\s+/g, " "); }
 export function normalizeZoning(value) { return String(value ?? "").trim().toLowerCase().replace(/[\s_-]+/g, ""); }
 
+const supportedMunicipalities = new Map([
+  ["CLEARWATER", { normalizedJurisdiction: "clearwater", authorityName: "City of Clearwater" }],
+  ["UNINCORPORATED", { normalizedJurisdiction: "unincorporated_pinellas", authorityName: "Unincorporated Pinellas County" }],
+]);
+for (const name of ["BELLEAIR", "BELLEAIR BEACH", "BELLEAIR BLUFFS", "BELLEAIR SHORE", "DUNEDIN", "GULFPORT", "INDIAN ROCKS BEACH", "INDIAN SHORES", "KENNETH CITY", "LARGO", "MADEIRA BEACH", "NORTH REDINGTON BEACH", "OLDSMAR", "PINELLAS PARK", "REDINGTON BEACH", "REDINGTON SHORES", "SAFETY HARBOR", "SEMINOLE", "SOUTH PASADENA", "ST PETE BEACH", "ST PETERSBURG", "TARPON SPRINGS", "TREASURE ISLAND"]) {
+  supportedMunicipalities.set(name, { normalizedJurisdiction: "other_pinellas_municipality", authorityName: name });
+}
+
+/** Resolve the county's authoritative MUNICIPALITY value before considering geometry. */
+export function normalizeMunicipality(value) {
+  const raw = value == null ? "" : String(value).trim();
+  if (!raw) return null;
+  const normalized = raw.toUpperCase();
+  const supported = supportedMunicipalities.get(normalized);
+  if (supported) return { rawMunicipality: raw, ...supported };
+  throw new Error(`Unsupported authoritative MUNICIPALITY value: ${JSON.stringify(raw)}`);
+}
+
+export function resolvePropertyJurisdiction(rawValues, geometryFallback) {
+  const values = [...new Set(rawValues.map((value) => value == null ? "" : String(value).trim()))];
+  const resolved = values.filter(Boolean).map(normalizeMunicipality);
+  const keys = new Set(resolved.map((value) => value.normalizedJurisdiction));
+  if (keys.size === 1 && resolved.length === values.length) return { ...resolved[0], rawMunicipality: values.join(" | "), derivationMethod: "authoritative_municipality", jurisdictionStatus: "confirmed" };
+  if (keys.size > 1 || (resolved.length && values.includes(""))) return { rawMunicipality: values.join(" | "), normalizedJurisdiction: "ambiguous", authorityName: null, derivationMethod: "authoritative_municipality_conflict", jurisdictionStatus: "conflict" };
+  if (typeof geometryFallback === "function") return { ...geometryFallback(), rawMunicipality: values.join(" | ") || null, derivationMethod: "geometry_fallback" };
+  return { rawMunicipality: null, normalizedJurisdiction: "unknown", authorityName: null, derivationMethod: "unresolved", jurisdictionStatus: "missing" };
+}
+
 async function requestJson(url, params = {}) {
   const target = new URL(url);
   for (const [key, value] of Object.entries(params)) if (value !== "") target.searchParams.set(key, String(value));
@@ -75,6 +103,7 @@ export function preprocess(data, snapshots, pilot = { jurisdiction: "clearwater-
   const addressId = configured("PINELLAS_ADDRESS_ID_FIELDS", "OBJECTID,SITEADDID,ADDPTKEY,GlobalID,GLOBALID");
   const addressText = configured("PINELLAS_ADDRESS_TEXT_FIELDS", "FULLADDR,FULL_ADDRESS,SITE_ADDRESS");
   const addressParcel = configured("PINELLAS_ADDRESS_PARCEL_FIELDS", "PIN_NUM,PARCELID,PARCEL_ID,PARCELNO");
+  const addressMunicipality = configured("PINELLAS_ADDRESS_MUNICIPALITY_FIELDS", "MUNICIPALITY");
   const parcelId = configured("PINELLAS_PARCEL_ID_FIELDS", "PARCELID,STRAP,PARCEL_ID,PARCELNO,FOLIO");
   const parcelSource = configured("PINELLAS_PARCEL_SOURCE_ID_FIELDS", "OBJECTID,GlobalID,GLOBALID");
   const zoningId = configured("CLEARWATER_ZONING_ID_FIELDS", "OBJECTID,GlobalID,GLOBALID");
@@ -99,12 +128,23 @@ export function preprocess(data, snapshots, pilot = { jurisdiction: "clearwater-
     if (representativeMatches.length === 0) issues.push("parcel_without_zoning");
     if (representativeMatches.length > 1 || touchedCodes.size > 1) issues.push("parcel_ambiguous_zoning");
     if (zone && !allowedZoning.has(normalizedCode)) issues.push("unsupported_zoning_code");
-    return { displayAddress, normalizedAddress, sourceAddressIdentifier: prop(address, addressId), parcelIdentifier: parcel?.id ?? null, parcelSourceIdentifier: parcel?.sourceId ?? null, parcelMatchMethod, zoningCode: zone?.code ?? null, normalizedZoningCode: allowedZoning.has(normalizedCode) ? normalizedCode : null, zoningDescription: zone?.description ?? null, zoningSourceIdentifier: zone?.sourceId ?? null, jurisdiction: pilot.jurisdiction, status: issues.length ? "review" : "clean", issues, addressCoordinates: address.geometry?.type === "Point" ? address.geometry.coordinates : null, parcelRepresentativePoint: point, sourceSnapshots: Object.fromEntries(Object.entries(snapshots).map(([key, value]) => [key, { retrievedAt: value.retrievedAt, sha256: value.sha256 }])), evaluatorFacts: issues.length ? null : { "property.zoning_district": normalizedCode } };
+    return { displayAddress, normalizedAddress, sourceAddressIdentifier: prop(address, addressId), parcelIdentifier: parcel?.id ?? null, parcelSourceIdentifier: parcel?.sourceId ?? null, parcelMatchMethod, zoningCode: zone?.code ?? null, normalizedZoningCode: allowedZoning.has(normalizedCode) ? normalizedCode : null, zoningDescription: zone?.description ?? null, zoningSourceIdentifier: zone?.sourceId ?? null, jurisdiction: pilot.jurisdiction, rawMunicipality: prop(address, addressMunicipality), status: issues.length ? "review" : "clean", issues, addressCoordinates: address.geometry?.type === "Point" ? address.geometry.coordinates : null, parcelRepresentativePoint: point, sourceSnapshots: Object.fromEntries(Object.entries(snapshots).map(([key, value]) => [key, { retrievedAt: value.retrievedAt, sha256: value.sha256 }])), evaluatorFacts: issues.length ? null : { "property.zoning_district": normalizedCode } };
   });
+  const byParcel = new Map();
+  for (const profile of profiles) byParcel.set(profile.parcelIdentifier, [...(byParcel.get(profile.parcelIdentifier) ?? []), profile]);
+  for (const profile of profiles) {
+    const resolution = resolvePropertyJurisdiction((byParcel.get(profile.parcelIdentifier) ?? [profile]).map((item) => item.rawMunicipality));
+    Object.assign(profile, resolution);
+    if (resolution.normalizedJurisdiction === "ambiguous") profile.issues.push("conflicting_address_municipality");
+    if (resolution.normalizedJurisdiction === "unknown") profile.issues.push("missing_address_municipality");
+    profile.status = profile.issues.length ? "review" : "clean";
+    profile.evaluatorFacts = profile.status === "clean" ? { "property.zoning_district": profile.normalizedZoningCode } : null;
+  }
   const countIssues = (issue) => profiles.filter((p) => p.issues.includes(issue)).length, parcelSet = (predicate) => new Set(profiles.filter(predicate).map((p) => p.parcelIdentifier).filter((id) => id != null));
   const clean = profiles.filter((p) => p.status === "clean"), evaluatorReady = profiles.filter((p) => p.evaluatorFacts?.["property.zoning_district"]);
   const countBy = (values) => Object.fromEntries([...new Set(values)].sort().map((value) => [value, values.filter((v) => v === value).length]));
-  const stats = { pilotName: pilot.pilotName, addressesFetched: data.addresses.features.length, uniqueParcelsRepresented: parcelSet(() => true).size, parcelsFetched: parcels.length, zoningPolygonsFetched: zoning.length, cleanPropertyProfiles: clean.length, reviewPropertyProfiles: profiles.length - clean.length, unmatchedAddresses: countIssues("address_without_parcel"), duplicateOrAmbiguousAddressMatches: profiles.filter((p) => p.issues.includes("duplicate_address") || p.issues.includes("address_multiple_parcels")).length, parcelsWithNoZoning: parcelSet((p) => p.issues.includes("parcel_without_zoning")).size, parcelsWithAmbiguousZoning: parcelSet((p) => p.issues.includes("parcel_ambiguous_zoning")).size, zoningDistrictsRepresented: [...new Set(profiles.map((p) => p.zoningCode).filter(Boolean))].sort(), evaluatorReadyZoningDistrictProfiles: evaluatorReady.length, evaluatorReadyZoningDistrictPercentage: profiles.length ? Number((evaluatorReady.length * 100 / profiles.length).toFixed(2)) : 0, matchMethodsUsed: countBy(profiles.map((p) => p.parcelMatchMethod)), issueCountsByType: countBy(profiles.flatMap((p) => p.issues)) };
+  const propertyResolutions = [...byParcel.values()].map((items) => items[0]);
+  const stats = { pilotName: pilot.pilotName, addressesFetched: data.addresses.features.length, uniqueParcelsRepresented: parcelSet(() => true).size, parcelsFetched: parcels.length, zoningPolygonsFetched: zoning.length, cleanPropertyProfiles: clean.length, cleanProperties: new Set(clean.map((p) => p.parcelIdentifier)).size, reviewPropertyProfiles: profiles.length - clean.length, reviewProperties: new Set(profiles.filter((p) => p.status === "review").map((p) => p.parcelIdentifier)).size, unmatchedAddresses: countIssues("address_without_parcel"), duplicateOrAmbiguousAddressMatches: profiles.filter((p) => p.issues.includes("duplicate_address") || p.issues.includes("address_multiple_parcels")).length, parcelsWithNoZoning: parcelSet((p) => p.issues.includes("parcel_without_zoning")).size, parcelsWithAmbiguousZoning: parcelSet((p) => p.issues.includes("parcel_ambiguous_zoning")).size, zoningDistrictsRepresented: [...new Set(profiles.map((p) => p.zoningCode).filter(Boolean))].sort(), evaluatorReadyZoningDistrictProfiles: evaluatorReady.length, evaluatorReadyZoningDistrictPercentage: profiles.length ? Number((evaluatorReady.length * 100 / profiles.length).toFixed(2)) : 0, matchMethodsUsed: countBy(profiles.map((p) => p.parcelMatchMethod)), issueCountsByType: countBy(profiles.flatMap((p) => p.issues)), rawMunicipalityAddressCounts: countBy(profiles.map((p) => p.rawMunicipality || "<blank>")), normalizedJurisdictionPropertyCounts: countBy(propertyResolutions.map((p) => p.normalizedJurisdiction)), jurisdictionDerivationPropertyCounts: countBy(propertyResolutions.map((p) => p.derivationMethod)) };
   return { profiles, stats, qcSamples: clean.slice().sort((a, b) => a.normalizedAddress.localeCompare(b.normalizedAddress) || String(a.parcelIdentifier).localeCompare(String(b.parcelIdentifier))).slice(0, 10) };
 }
 

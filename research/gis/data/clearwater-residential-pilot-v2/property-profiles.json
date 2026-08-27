@@ -11,6 +11,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -37,7 +38,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2011 MARILYN ST",
@@ -51,6 +56,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -77,7 +83,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1952 MCKINLEY ST",
@@ -91,6 +101,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -117,7 +128,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1956 MCKINLEY ST",
@@ -131,6 +146,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -157,7 +173,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1967 GILBERT ST",
@@ -171,6 +191,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -197,7 +218,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1971 GILBERT ST",
@@ -211,6 +236,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -237,7 +263,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1963 GILBERT ST",
@@ -251,6 +281,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -277,7 +308,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1955 GILBERT ST",
@@ -291,6 +326,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -317,7 +353,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1953 MCKINLEY ST",
@@ -331,6 +371,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -357,7 +398,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "311 CINCINNATI PKWY",
@@ -371,6 +416,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -397,7 +443,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "305 CINCINNATI PKWY",
@@ -411,6 +461,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -437,7 +488,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1956 HARDING PLZ",
@@ -451,6 +506,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -477,7 +533,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1968 HARDING PLZ",
@@ -491,6 +551,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -517,7 +578,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1967 MCKINLEY ST",
@@ -531,6 +596,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -557,7 +623,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1971 MCKINLEY ST",
@@ -571,6 +641,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -597,7 +668,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1963 MCKINLEY ST",
@@ -611,6 +686,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -637,7 +713,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1959 MCKINLEY ST",
@@ -651,6 +731,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -677,7 +758,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "209 CINCINNATI PKWY",
@@ -691,6 +776,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -717,7 +803,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1965 HARDING ST",
@@ -731,6 +821,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -757,7 +848,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1971 HARDING ST",
@@ -771,6 +866,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -797,7 +893,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1976 DREW PLZ",
@@ -811,6 +911,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -837,7 +938,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1970 DREW PLZ",
@@ -851,6 +956,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -877,7 +983,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1954 DREW PLZ",
@@ -891,6 +1001,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -917,7 +1028,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2001 MARILYN ST",
@@ -931,6 +1046,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -957,7 +1073,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "417 N HERCULES AVE",
@@ -971,6 +1091,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -997,7 +1118,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "413 N HERCULES AVE",
@@ -1011,6 +1136,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1037,7 +1163,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "409 N HERCULES AVE",
@@ -1051,6 +1181,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1077,7 +1208,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "405 N HERCULES AVE",
@@ -1091,6 +1226,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1117,7 +1253,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2010 MCKINLEY ST",
@@ -1131,6 +1271,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1157,7 +1298,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "404 PATRICIA AVE",
@@ -1171,6 +1316,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1197,7 +1343,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "408 PATRICIA AVE",
@@ -1211,6 +1361,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1237,7 +1388,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "412 PATRICIA AVE",
@@ -1251,6 +1406,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1277,7 +1433,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "416 PATRICIA AVE",
@@ -1291,6 +1451,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1317,7 +1478,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2001 MCKINLEY ST",
@@ -1331,6 +1496,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1357,7 +1523,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "309 N HERCULES AVE",
@@ -1371,6 +1541,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1397,7 +1568,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2000 HARDING ST",
@@ -1411,6 +1586,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1437,7 +1613,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2010 HARDING ST",
@@ -1451,6 +1631,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1477,7 +1658,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "304 PATRICIA AVE",
@@ -1491,6 +1676,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1517,7 +1703,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "314 PATRICIA AVE",
@@ -1531,6 +1721,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1557,7 +1748,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2009 MCKINLEY ST",
@@ -1571,6 +1766,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1597,7 +1793,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2001 HARDING ST",
@@ -1611,6 +1811,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1637,7 +1838,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "mdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "213 N HERCULES AVE",
@@ -1651,6 +1856,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1677,7 +1883,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "mdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "209 N HERCULES AVE",
@@ -1691,6 +1901,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -1717,7 +1928,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "210 PATRICIA AVE",
@@ -1731,6 +1946,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -1757,7 +1973,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "212 PATRICIA AVE",
@@ -1771,6 +1991,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -1797,7 +2018,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2009 HARDING ST",
@@ -1811,6 +2036,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1837,7 +2063,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "mdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "216 PATRICIA AVE",
@@ -1851,6 +2081,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1877,7 +2108,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "mdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "209 PATRICIA AVE",
@@ -1891,6 +2126,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -1917,7 +2153,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "211 PATRICIA AVE",
@@ -1931,6 +2171,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -1957,7 +2198,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2019 MCKINLEY ST",
@@ -1971,6 +2216,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -1997,7 +2243,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "315 PATRICIA AVE",
@@ -2011,6 +2261,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2037,7 +2288,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "311 PATRICIA AVE",
@@ -2051,6 +2306,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2077,7 +2333,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2020 HARDING ST",
@@ -2091,6 +2351,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2117,7 +2378,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "413 PATRICIA AVE",
@@ -2131,6 +2396,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2157,7 +2423,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "405 PATRICIA AVE",
@@ -2171,6 +2441,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2197,7 +2468,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2020 MCKINLEY ST",
@@ -2211,6 +2486,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2237,7 +2513,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2025 MARILYN ST",
@@ -2251,6 +2531,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2277,7 +2558,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "416 KERRY DR",
@@ -2291,6 +2576,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2317,7 +2603,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "408 KERRY DR",
@@ -2331,6 +2621,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2357,7 +2648,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "404 KERRY DR",
@@ -2371,6 +2666,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2397,7 +2693,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2030 MCKINLEY ST",
@@ -2411,6 +2711,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2437,7 +2738,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "312 KERRY DR",
@@ -2451,6 +2756,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2477,7 +2783,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "306 KERRY DR",
@@ -2491,6 +2801,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2517,7 +2828,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2030 HARDING ST",
@@ -2531,6 +2846,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2557,7 +2873,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2029 HARDING ST",
@@ -2571,6 +2891,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2597,7 +2918,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "mdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2031 HARDING ST",
@@ -2611,6 +2936,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -2637,7 +2963,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2041 MARILYN ST",
@@ -2651,6 +2981,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2677,7 +3008,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "417 KERRY DR",
@@ -2691,6 +3026,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2717,7 +3053,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "405 KERRY DR",
@@ -2731,6 +3071,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2757,7 +3098,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2040 MCKINLEY ST",
@@ -2771,6 +3116,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2797,7 +3143,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2050 MCKINLEY ST",
@@ -2811,6 +3161,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2837,7 +3188,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "404 GRAHAM DR",
@@ -2851,6 +3206,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2877,7 +3233,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "408 GRAHAM DR",
@@ -2891,6 +3251,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2917,7 +3278,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "412 GRAHAM DR",
@@ -2931,6 +3296,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2957,7 +3323,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "416 GRAHAM DR",
@@ -2971,6 +3341,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -2997,7 +3368,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "420 GRAHAM DR",
@@ -3011,6 +3386,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3037,7 +3413,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "315 KERRY DR",
@@ -3051,6 +3431,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3077,7 +3458,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "305 KERRY DR",
@@ -3091,6 +3476,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3117,7 +3503,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "301 KERRY DR",
@@ -3131,6 +3521,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3157,7 +3548,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "217 KERRY DR",
@@ -3171,6 +3566,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3197,7 +3593,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "211 KERRY DR",
@@ -3211,6 +3611,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -3237,7 +3638,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2040 NE COACHMAN RD",
@@ -3251,6 +3656,7 @@
     "zoningDescription": "Commercial",
     "zoningSourceIdentifier": 10962,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -3277,7 +3683,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2050 NE COACHMAN RD",
@@ -3291,6 +3701,7 @@
     "zoningDescription": "Commercial",
     "zoningSourceIdentifier": 10962,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -3317,7 +3728,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2062 NE COACHMAN RD",
@@ -3331,6 +3746,7 @@
     "zoningDescription": "Commercial",
     "zoningSourceIdentifier": 10962,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3357,7 +3773,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "c"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "218 GRAHAM DR",
@@ -3371,6 +3791,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -3397,7 +3818,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "304 GRAHAM DR",
@@ -3411,6 +3836,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3437,7 +3863,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "312 GRAHAM DR",
@@ -3451,6 +3881,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3477,7 +3908,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "310 N HERCULES AVE",
@@ -3491,6 +3926,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3517,7 +3953,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "305 PATRICIA AVE",
@@ -3531,6 +3971,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3557,7 +3998,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1966 MCKINLEY ST",
@@ -3571,6 +4016,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3597,7 +4043,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "210 KERRY DR",
@@ -3611,6 +4061,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -3637,7 +4088,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1970 MCKINLEY ST",
@@ -3651,6 +4106,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3677,7 +4133,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1964 MCKINLEY ST",
@@ -3691,6 +4151,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3717,7 +4178,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2000 MCKINLEY ST",
@@ -3731,6 +4196,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3757,7 +4223,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "409 KERRY DR",
@@ -3771,6 +4241,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3797,7 +4268,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "207 N HERCULES AVE",
@@ -3811,6 +4286,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -3837,7 +4313,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "412 N HERCULES AVE",
@@ -3851,6 +4331,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3877,7 +4358,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1972 HARDING PLZ",
@@ -3891,6 +4376,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3917,7 +4403,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1950 DREW PLZ",
@@ -3931,6 +4421,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3957,7 +4448,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2025 MCKINLEY ST",
@@ -3971,6 +4466,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -3997,7 +4493,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "309 KERRY DR",
@@ -4011,6 +4511,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4037,7 +4538,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "300 GRAHAM DR",
@@ -4051,6 +4556,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4077,7 +4583,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "214 PATRICIA AVE",
@@ -4091,6 +4601,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4117,7 +4628,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "mdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2034 NE COACHMAN RD",
@@ -4131,6 +4646,7 @@
     "zoningDescription": "Commercial",
     "zoningSourceIdentifier": 10962,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -4157,7 +4673,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "310 KERRY DR",
@@ -4171,6 +4691,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4197,7 +4718,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "305 N HERCULES AVE",
@@ -4211,6 +4736,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4237,7 +4763,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "211 N HERCULES AVE",
@@ -4251,6 +4781,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "parcel_ambiguous_zoning"
@@ -4277,7 +4808,11 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "413 KERRY DR",
@@ -4291,6 +4826,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4317,7 +4853,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1959 HARDING ST",
@@ -4331,6 +4871,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4357,7 +4898,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "308 GRAHAM DR",
@@ -4371,6 +4916,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4397,7 +4943,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "417 PATRICIA AVE",
@@ -4411,6 +4961,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4437,7 +4988,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1951 GILBERT ST",
@@ -4451,6 +5006,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4477,7 +5033,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "310 PATRICIA AVE",
@@ -4491,6 +5051,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4517,7 +5078,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1975 HARDING ST",
@@ -4531,6 +5096,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4557,7 +5123,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "409 PATRICIA AVE",
@@ -4571,6 +5141,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4597,7 +5168,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "215 N HERCULES AVE",
@@ -4611,6 +5186,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4637,7 +5213,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "mdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1960 MCKINLEY ST",
@@ -4651,6 +5231,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4677,7 +5258,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1962 HARDING PLZ",
@@ -4691,6 +5276,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4717,7 +5303,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1955 MCKINLEY ST",
@@ -4731,6 +5321,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4757,7 +5348,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1964 DREW PLZ",
@@ -4771,6 +5366,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4797,7 +5393,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2019 HARDING ST",
@@ -4811,6 +5411,7 @@
     "zoningDescription": "Medium Density Residential",
     "zoningSourceIdentifier": 10961,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4837,7 +5438,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "mdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2021 MARILYN ST",
@@ -4851,6 +5456,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4877,7 +5483,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "412 KERRY DR",
@@ -4891,6 +5501,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4917,7 +5528,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2051 MCKINLEY ST",
@@ -4931,6 +5546,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4957,7 +5573,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "2041 MCKINLEY ST",
@@ -4971,6 +5591,7 @@
     "zoningDescription": "Low Medium Density Residential",
     "zoningSourceIdentifier": 11130,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "clean",
     "issues": [],
     "addressCoordinates": [
@@ -4997,7 +5618,11 @@
     },
     "evaluatorFacts": {
       "property.zoning_district": "lmdr"
-    }
+    },
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   },
   {
     "displayAddress": "1955 HARDING PLZ",
@@ -5011,6 +5636,7 @@
     "zoningDescription": "Open Space/Recreation",
     "zoningSourceIdentifier": 10703,
     "jurisdiction": "clearwater-fl",
+    "rawMunicipality": "CLEARWATER",
     "status": "review",
     "issues": [
       "unsupported_zoning_code"
@@ -5037,6 +5663,10 @@
         "sha256": "49bbf292efc112b13d08fdbf27add6b69a4ba6f15ffd7e9bfe974398018dd07e"
       }
     },
-    "evaluatorFacts": null
+    "evaluatorFacts": null,
+    "normalizedJurisdiction": "clearwater",
+    "authorityName": "City of Clearwater",
+    "derivationMethod": "authoritative_municipality",
+    "jurisdictionStatus": "confirmed"
   }
 ]

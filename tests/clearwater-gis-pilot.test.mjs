@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { covers, normalizeZoning, parseBbox, preprocess, renderQc } from "../scripts/gis/clearwater-pilot.mjs";
+import { covers, normalizeMunicipality, normalizeZoning, parseBbox, preprocess, renderQc, resolvePropertyJurisdiction } from "../scripts/gis/clearwater-pilot.mjs";
 
 const polygon = (minX, maxX) => ({ type: "Polygon", coordinates: [[[minX, 0], [maxX, 0], [maxX, 1], [minX, 1], [minX, 0]]] });
 const snapshots = { addresses: { retrievedAt: "t", sha256: "a" }, parcels: { retrievedAt: "t", sha256: "p" }, zoning: { retrievedAt: "t", sha256: "z" } };
@@ -16,6 +16,29 @@ test("configuration and case/format-only normalization are strict", () => {
 test("covers includes polygon boundaries", () => {
   assert.equal(covers(polygon(0, 1), [0, 0.5]), true);
   assert.equal(covers(polygon(0, 1), [2, 0.5]), false);
+});
+
+test("authoritative municipality resolves without unnecessary geometry", () => {
+  let geometryCalls = 0;
+  const result = resolvePropertyJurisdiction(["CLEARWATER", "CLEARWATER"], () => { geometryCalls++; return {}; });
+  assert.equal(result.normalizedJurisdiction, "clearwater");
+  assert.equal(result.derivationMethod, "authoritative_municipality");
+  assert.equal(geometryCalls, 0);
+  assert.equal(normalizeMunicipality(" UNINCORPORATED ").normalizedJurisdiction, "unincorporated_pinellas");
+});
+
+test("municipality conflicts fail safely and unsupported values fail loudly", () => {
+  assert.equal(resolvePropertyJurisdiction(["CLEARWATER", "UNINCORPORATED"]).normalizedJurisdiction, "ambiguous");
+  assert.throws(() => normalizeMunicipality("ATLANTIS"), /Unsupported authoritative MUNICIPALITY value/);
+});
+
+test("every committed pilot property has an explicit authoritative jurisdiction resolution", async () => {
+  const profiles = JSON.parse(await readFile(new URL("../research/gis/data/clearwater-residential-pilot-v2/property-profiles.json", import.meta.url), "utf8"));
+  assert.equal(profiles.length, 126);
+  assert.equal(new Set(profiles.map((profile) => profile.parcelIdentifier)).size, 114);
+  assert.ok(profiles.every((profile) => profile.normalizedJurisdiction && profile.jurisdictionStatus));
+  const canonical = profiles.find((profile) => profile.displayAddress === "1950 DREW PLZ");
+  assert.deepEqual([canonical.rawMunicipality, canonical.normalizedJurisdiction, canonical.normalizedZoningCode], ["CLEARWATER", "clearwater", "lmdr"]);
 });
 
 test("ambiguous zoning is REVIEW and never produces evaluator facts", () => {
