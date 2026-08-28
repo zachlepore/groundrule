@@ -1,4 +1,5 @@
 import { getMunicipalityBySlug } from "../lib/municipalities";
+import { MunicipalityTheme } from "./municipality-theme";
 
 export const dynamic = "force-dynamic";
 
@@ -10,7 +11,7 @@ export default async function Home() {
   const municipality = await getMunicipalityBySlug("clearwater");
 
   return (
-    <main className="shell">
+    <MunicipalityTheme slug="clearwater"><main className="shell">
       <section className="intro" aria-labelledby="property-prompt">
         <header>
           <p className="wordmark">GROUND&shy;RULE</p>
@@ -43,6 +44,6 @@ export default async function Home() {
           <p className="status">Address lookup is coming soon.</p>
         </div>
       </section>
-    </main>
+    </main></MunicipalityTheme>
   );
 }
