@@ -18,7 +18,8 @@
     "test:setbacks": "tsx --test tests/setbacks-guide.test.ts",
     "test:jurisdiction": "tsx --test tests/jurisdiction-guardrail.test.ts",
     "test:str": "tsx --test tests/short-term-rental-guide.test.ts",
-    "test:isr": "tsx --test tests/impervious-surface-ratio-guide.test.ts"
+    "test:isr": "tsx --test tests/impervious-surface-ratio-guide.test.ts",
+    "test:theme": "tsx --test tests/municipality-theme.test.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.109.0",

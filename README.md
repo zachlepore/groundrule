@@ -14,6 +14,12 @@ Groundrule is intended to become a municipal property guidance application that 
 
 The intentionally small dependency set keeps the application straightforward to run locally and compatible with a future Vercel deployment.
 
+## Municipality theming
+
+Municipalities may color a small set of semantic accents while Groundrule continues to own typography, spacing, geometry, layout, hierarchy, interactions, and regulatory presentation. Themes live in `lib/municipality-themes.ts`; add a municipality entry there and apply `MunicipalityTheme` once at its route layout. Unknown slugs safely use the neutral Groundrule default.
+
+The six tokens cover an accessible primary/foreground pair, a restrained secondary accent, a soft surface, section dividers, and a secondary soft surface. Adapt brand colors for sufficient contrast rather than copying them literally, and keep tints quiet: themes should provide continuity, not white-label the product.
+
 ## Local development
 
 Install dependencies:
