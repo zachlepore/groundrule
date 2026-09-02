@@ -16,6 +16,7 @@ const result: EvaluationResult = {
   ],
   unknownRules: [
     makeRule("height.front_baseline", "UNKNOWN", [maximum(4)], "§ 3-804"), makeRule("height.side_rear_baseline", "UNKNOWN", [maximum(6)], "§ 3-804"),
+    makeRule("design.front_landscape_strip", "UNKNOWN", [{ sequence: 1, type: "minimum", subjectKey: "project.landscape_strip_width", parameters: { value: 3, unit: "ft", location: "right_of_way_side" }, severity: "requirement", messageTemplate: "Provide a three-foot-wide landscape strip." }], "§ 3-804"),
     makeRule("material.metal_prohibition", "UNKNOWN", [{ sequence: 1, type: "prohibition", subjectKey: "project.material", parameters: {}, severity: "prohibition", messageTemplate: "Corrugated or sheet metal may not be used to form the fence or wall." }], "§ 3-802"),
     makeRule("visibility.triangle_restriction", "UNKNOWN", [
       { sequence: 1, type: "maximum", subjectKey: "project.height", parameters: { value: 2.5, unit: "ft", display_value: 30, display_unit: "in", horizontal_leg_1_ft: 20, horizontal_leg_2_ft: 20, presentation_asset_id: "clearwater_sight_visibility_triangle_v1" }, severity: "requirement", messageTemplate: "height" },
@@ -27,6 +28,8 @@ const result: EvaluationResult = {
     makeRule("chain_link.landscaping", "UNKNOWN", [{ sequence: 1, type: "manual_review_required", subjectKey: "project.chain_link_landscaping_approved", parameters: { full_length: true }, severity: "requirement", messageTemplate: "Full-length qualifying landscaping must be confirmed." }], "§ 3-805"),
     makeRule("waterfront.height", "UNKNOWN", [maximum(4)], "§ 3-804"),
     makeRule("waterfront.opacity", "UNKNOWN", [{ sequence: 1, type: "required_value", subjectKey: "project.is_opaque", parameters: { value: false }, severity: "requirement", messageTemplate: "The fence must be non-opaque." }], "§ 3-804"),
+    makeRule("access.prohibited_area", "UNKNOWN", [{ sequence: 1, type: "prohibition", subjectKey: null, parameters: {}, severity: "requirement", messageTemplate: "Placement is prohibited without authorization." }], "§ 3-806"),
+    makeRule("access.utility_easement", "UNKNOWN", [{ sequence: 1, type: "manual_review_required", subjectKey: null, parameters: {}, severity: "requirement", messageTemplate: "Utility access requires official review." }], "§ 3-806"),
   ],
 };
 
@@ -39,6 +42,8 @@ test("known LMDR property gets an answers-first guide without project details", 
   assert.deepEqual(guide.whatYouCanDo.map((item) => item.title), ["Front yard", "Side + rear", "Materials"]);
   assert.deepEqual(guide.highlights.map((item) => item.title), ["Front yard", "Side + rear", "Materials", "Permit"]);
   assert.equal(guide.highlights[0]?.answer, "4 ft maximum fence height");
+  assert.match(guide.highlights[0]?.qualification ?? "", /3 ft vegetation buffer on the street side/);
+  assert.equal((guide.highlights[0]?.values?.landscape_buffer as Record<string, unknown>)?.value, 3);
   assert.equal(guide.highlights[1]?.answer, "6 ft maximum fence height");
   const materials = guide.highlights.find((item) => item.key === "material.metal_prohibition");
   assert.equal(materials?.answer, "Corrugated or sheet metal fencing is not allowed");
@@ -68,9 +73,9 @@ test("permit duties remain structured, visibility is resident-facing, and citati
   assert.doesNotMatch(JSON.stringify(guide), /UNKNOWN|REVIEW_REQUIRED/);
 });
 
-test("specific situations compose chain-link and water-adjacent guidance from structured rules", () => {
+test("specific situations compose supported rules and escalate unknown property conditions", () => {
   const guide = buildClearwaterFenceGuide(result, { "property.zoning_district": "lmdr" });
-  assert.deepEqual(guide.specificSituations.map((item) => item.title), ["Chain-link fences", "Property next to the water"]);
+  assert.deepEqual(guide.specificSituations.map((item) => item.title), ["Chain-link fences", "Property next to the water", "Fence in an easement or right-of-way", "Next to City or County property"]);
   const chain = guide.specificSituations[0];
   assert.equal(chain?.body, "Chain-link fences follow different rules. They generally must be behind the front building line. Standard chain-link is limited to 48 in. Green- or black-vinyl-coated chain-link may be allowed up to 6 ft, with additional location and landscaping requirements.");
   assert.equal(chain?.values?.standard_height_in, 48);
@@ -81,11 +86,24 @@ test("specific situations compose chain-link and water-adjacent guidance from st
   assert.doesNotMatch(chain?.body ?? "", /4 ft maximum fence height|6 ft maximum fence height/);
 
   const water = guide.specificSituations[1];
-  assert.equal(water?.body, "Additional fence restrictions apply near a water-adjacent property line. If your fence is within 20 ft of that property line — or within the required setback, whichever is greater — different rules may apply. Not sure whether this applies? Clearwater can confirm it.");
-  assert.equal(water?.values?.distance_ft, 20);
+  assert.match(water?.body ?? "", /does not currently have those trusted property and project facts/);
+  assert.match(water?.body ?? "", /Contact Clearwater Planning & Zoning/);
+  assert.equal(water?.values?.determination, "staff_confirmation_required");
+  assert.doesNotMatch(water?.body ?? "", /must be non-opaque|no higher than|maximum/i);
   assert.equal(water?.citations[0]?.sectionIdentifier, "§ 3-804");
   assert.deepEqual(guide.propertyContext, ["Zoning · LMDR"]);
   assert.doesNotMatch(guide.propertyContext.join(" "), /Waterfront/);
+
+  const easement = guide.specificSituations[2];
+  assert.match(easement?.body ?? "", /does not authorize interference with utility or access rights/);
+  assert.equal(easement?.values?.determination, "external_review_required");
+  assert.equal(easement?.citations[0]?.sectionIdentifier, "§ 3-806");
+
+  const government = guide.specificSituations[3];
+  assert.match(government?.body ?? "", /cannot currently detect government-property adjacency/);
+  assert.match(government?.body ?? "", /Contact Clearwater Planning & Zoning/);
+  assert.equal(government?.values?.determination, "staff_confirmation_required");
+  assert.doesNotMatch(government?.body ?? "", /approved|allowed/i);
 });
 
 test("resident UI ends with guidance, shows trusted property context, and embeds no regulatory numbers", () => {
@@ -107,6 +125,8 @@ test("resident UI ends with guidance, shows trusted property context, and embeds
   assert.doesNotMatch(ui, /30 inches|20 ft|maximum height is 4|maximum height is 6/);
   assert.doesNotMatch(ui, /48 in|6 ft|vinyl-coated|waterfront/i);
   assert.doesNotMatch(ui, /Not allowed|Corrugated or sheet metal/);
+  assert.match(ui, /Contact Clearwater Planning &amp; Zoning/);
+  assert.match(ui, /Final permit approval may include review by Engineering or another City department/);
 });
 
 test("resident workflow adds no chain-link or waterfront questionnaire", () => {
