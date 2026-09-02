@@ -5,6 +5,7 @@ export interface ImperviousSurfaceRatioGuide {
   maximumPercent: number | null;
   heading: string;
   explanation: string;
+  whatCounts: string;
   scopeNote: string;
   propertyContext: string[];
   citations: Citation[];
@@ -19,8 +20,9 @@ export function buildClearwaterImperviousSurfaceRatioGuide(result: EvaluationRes
   if (rule && outcome && typeof value === "number") return {
     status: "determined", maximumPercent: value, heading: "Maximum allowed",
     explanation: outcome.messageTemplate,
+    whatCounts: "Roofs, sidewalks, parking areas, and surfaces made from compacted sand, limerock, shell, or clay are examples of surfaces that can count as impervious.",
     scopeNote: "This is the maximum applicable ratio. Groundrule does not calculate your property’s existing impervious coverage or remaining capacity.",
     propertyContext: zoning ? [`Zoning · ${zoning.toUpperCase()}`] : [], citations: rule.citations,
   };
-  return { status: "unknown", maximumPercent: null, heading: "Needs confirmation", explanation: "Groundrule can’t confirm the applicable maximum from the trusted property facts available.", scopeNote: "No ratio was estimated.", propertyContext: zoning ? [`Zoning · ${zoning.toUpperCase()}`] : [], citations: [] };
+  return { status: "unknown", maximumPercent: null, heading: "Needs confirmation", explanation: "Groundrule can’t confirm the applicable maximum from the trusted property facts available.", whatCounts: "Roofs, sidewalks, parking areas, and surfaces made from compacted sand, limerock, shell, or clay are examples of surfaces that can count as impervious.", scopeNote: "No ratio was estimated.", propertyContext: zoning ? [`Zoning · ${zoning.toUpperCase()}`] : [], citations: [] };
 }

@@ -289,3 +289,6 @@ h1 {
 .isr-value { margin: .25rem 0 .8rem; color: var(--municipality-primary); font-size: clamp(4rem, 14vw, 7rem); font-weight: 700; letter-spacing: -.06em; line-height: 1; }
 .isr-answer > p { max-width: 43rem; line-height: 1.55; }
 .isr-scope { color: var(--muted); font-size: .88rem; }
+.isr-education { max-width: 43rem; padding: 1.35rem 0; border-bottom: 1px solid #d5dcdd; }
+.isr-education h2 { margin: 0 0 .5rem; color: var(--municipality-primary); font-size: .9rem; letter-spacing: .06em; text-transform: uppercase; }
+.isr-education p { margin: 0; color: #3f4843; line-height: 1.55; }
