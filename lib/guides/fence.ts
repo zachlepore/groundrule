@@ -42,7 +42,6 @@ const conditionValues = (rule: EvaluatedRule | undefined, fact: string): string[
   return visit(rule.condition).filter((value): value is string => typeof value === "string");
 };
 const vinylColorList = (values: string[]) => values.map((value, index) => `${value.replaceAll("_", " ")}${index < values.length - 1 ? "-" : ""}`).join(" or ");
-const WATER_ADJACENT_DISTANCE_FT = 20;
 const CLEARWATER_FENCE_PERMIT_GUIDANCE_URL = "https://www.myclearwater.com/Business-Development/Permitting/06-Fence-Permit-Application-Checklist";
 
 /** Builds a resident guide from structured outcomes; it never treats an unmatched prohibition as permission. */
@@ -55,19 +54,25 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
 
   const front = rules.get("height.front_baseline");
   const frontMaximum = outcome(front, "maximum");
+  const frontLandscape = rules.get("design.front_landscape_strip");
+  const frontLandscapeMinimum = outcome(frontLandscape, "minimum");
   if (front && displayMeasure(frontMaximum)) whatYouCanDo.push(sourceItem(front, {
     key: front.key, title: "Front yard", answer: `${displayCompactMeasure(frontMaximum)} maximum fence height`,
-    qualification: "Chain-link is not allowed in front of the principal structure and follows separate rules.",
-    body: `For a fence other than chain-link, the maximum height is ${displayMeasure(frontMaximum)}. Chain-link is not allowed in front of the principal structure and follows separate rules.`,
-    values: frontMaximum?.parameters,
+    qualification: frontLandscapeMinimum && displayMeasure(frontLandscapeMinimum)
+      ? `Reaching the full maximum requires a ${displayCompactMeasure(frontLandscapeMinimum)} vegetation buffer on the street side unless the City waives it. Chain-link follows separate rules.`
+      : "Chain-link is not allowed in front of the principal structure and follows separate rules.",
+    body: frontLandscapeMinimum && displayMeasure(frontLandscapeMinimum)
+      ? `For a fence other than chain-link, the maximum height is ${displayMeasure(frontMaximum)}. Reaching that maximum requires a ${displayMeasure(frontLandscapeMinimum)} vegetation buffer on the right-of-way side unless the City waives it. Chain-link is not allowed in front of the principal structure and follows separate rules.`
+      : `For a fence other than chain-link, the maximum height is ${displayMeasure(frontMaximum)}. Chain-link is not allowed in front of the principal structure and follows separate rules.`,
+    values: { ...frontMaximum?.parameters, landscape_buffer: frontLandscapeMinimum?.parameters ?? {} },
   }));
 
   const sideRear = rules.get("height.side_rear_baseline");
   const sideRearMaximum = outcome(sideRear, "maximum");
   if (sideRear && displayMeasure(sideRearMaximum)) whatYouCanDo.push(sourceItem(sideRear, {
     key: sideRear.key, title: "Side + rear", answer: `${displayCompactMeasure(sideRearMaximum)} maximum fence height`,
-    qualification: "For fences other than chain-link. Chain-link and water-adjacent locations follow different rules.",
-    body: `For a fence other than chain-link, the maximum height is ${displayMeasure(sideRearMaximum)}. Chain-link has separate height, coating, location, and landscaping rules. On a water-adjacent property, a fence within 20 feet of the water-side property line—or within the required setback, if greater—must be non-opaque and no higher than 4 feet.`,
+    qualification: "For fences other than chain-link. Chain-link and waterfront locations follow different rules.",
+    body: `For a fence other than chain-link, the maximum height is ${displayMeasure(sideRearMaximum)}. Chain-link has separate height, coating, location, and landscaping rules. Waterfront locations need confirmation before relying on this ordinary side/rear answer.`,
     values: sideRearMaximum?.parameters,
   }));
 
@@ -149,9 +154,25 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   const waterfrontOpacity = rules.get("waterfront.opacity");
   if (waterfrontHeight && waterfrontOpacity) specificSituations.push({
     key: "specific.water_adjacent", title: "Property next to the water",
-    body: `Additional fence restrictions apply near a water-adjacent property line. If your fence is within ${WATER_ADJACENT_DISTANCE_FT} ft of that property line — or within the required setback, whichever is greater — different rules may apply. Not sure whether this applies? Clearwater can confirm it.`,
-    values: { distance_ft: WATER_ADJACENT_DISTANCE_FT, comparison: "required_setback_whichever_is_greater", height: outcome(waterfrontHeight, "maximum")?.parameters ?? {}, opacity: outcome(waterfrontOpacity, "required_value")?.parameters ?? {} },
+    body: "Waterfront fence rules depend on the water-adjacent property line, the required setback, and the proposed fence location. Groundrule does not currently have those trusted property and project facts. Contact Clearwater Planning & Zoning before relying on the ordinary height answer.",
+    values: { determination: "staff_confirmation_required", reason: "waterfront_property_and_fence_geometry_unavailable" },
     citations: waterfrontHeight.citations,
+  });
+
+  const prohibitedAccess = rules.get("access.prohibited_area");
+  const utilityEasement = rules.get("access.utility_easement");
+  if (prohibitedAccess && utilityEasement) specificSituations.push({
+    key: "specific.easement", title: "Fence in an easement or right-of-way",
+    body: "City zoning guidance does not authorize interference with utility or access rights. Easements, rights-of-way, meters, and manholes require the applicable City or utility review before placement. Contact Clearwater Planning & Zoning to start that check.",
+    values: { determination: "external_review_required" },
+    citations: [...prohibitedAccess.citations, ...utilityEasement.citations],
+  });
+
+  specificSituations.push({
+    key: "specific.government_adjacent", title: "Next to City or County property",
+    body: "Additional departmental review is needed when a proposed fence touches or abuts City- or County-owned property. Groundrule cannot currently detect government-property adjacency. Contact Clearwater Planning & Zoning before proceeding.",
+    values: { determination: "staff_confirmation_required", reason: "government_adjacency_data_unavailable" },
+    citations: [],
   });
 
   const highlights = [...whatYouCanDo, ...(permitDuty ? [{
