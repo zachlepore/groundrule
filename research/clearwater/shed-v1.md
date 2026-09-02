@@ -88,3 +88,14 @@ Shed was materially simpler than inventing Fence from scratch: its implementatio
 The exact boundary, footprint/exterior-dimension measurement, and continued zoning/setback applicability are now formally planner-validated. Published primary-source confirmation remains unavailable, and covered shed types plus the effects of anchoring, foundations, electricity, and plumbing remain unresolved.
 
 SHED V1 PERMIT THRESHOLD PLANNER-VALIDATED; TARGETED LIMITS REMAIN
+
+## Post-planner beta correction — September 2, 2026
+
+The correction pass classifies the new feedback as follows:
+
+- **Impervious surface / dirt floor — C (missing, supported):** CDC § 8-102 expressly includes roofs among impervious surfaces. A shed's roof therefore remains part of impervious area even when the floor below is dirt. The Guide states applicability, links to the separate ISR maximum Guide, and does not calculate existing coverage, remaining capacity, or feasibility.
+- **Electrical/plumbing final inspection — D (planner interpretation with an official next step):** Abi confirmed the applicable final electrical or plumbing inspection after completed work. The City inspection scheduling page is retained as the next step. This does not automate or expand trade-code requirements.
+- **Permanent roof/tarp — D (planner interpretation):** Abi confirmed permanent roofing is required and a tarp is not a roof. No generally applicable published Clearwater provision was located in the committed Code, so the structured citation identifies planner provenance rather than fabricating a Code pinpoint. Additional published authoritative confirmation is advisable.
+- **Permit-exempt does not mean rule-exempt — B (correct logic, incomplete presentation):** the structured permit outcome already preserved zoning and setbacks; the presentation now places ISR and trade-installation obligations in visible specific-situation rows.
+
+The existing permit threshold, LMDR setback outcomes, and residential accessory-height outcome are unchanged. The inspection URL returned HTTP 403 to the non-browser verification request on September 2, 2026; it is retained as planner-provided official City source material.
