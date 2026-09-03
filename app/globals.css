@@ -215,6 +215,10 @@ h1 {
 .str-answer h2 { margin: .35rem 0 .65rem; max-width: 36rem; font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.05; letter-spacing: -.035em; }
 .str-answer > p:not(.eyebrow):not(.guide-source) { max-width: 42rem; font-size: 1.08rem; line-height: 1.55; }
 .highlight-qualification { margin: .6rem 0 0; color: var(--muted); font-size: .88rem; line-height: 1.4; }
+.pool-measurement { margin: 1.25rem 0 2.75rem; padding: 1.35rem; border-left: .4rem solid var(--municipality-primary); background: var(--municipality-surface); }
+.pool-measurement h2 { margin: 0 0 .55rem; font-size: clamp(1.45rem, 4vw, 2.15rem); }
+.pool-measurement p { max-width: 46rem; margin: .35rem 0; line-height: 1.5; }
+.primary-link { display: inline-block; margin-top: .75rem; padding: .85rem 1rem; border-radius: .2rem; background: var(--municipality-primary); color: #fff; font-weight: 700; text-decoration: none; }
 .guide-section { margin: 2.75rem 0; }
 .guide-section > h2 { border-top: 2px solid var(--foreground); }
 .guide-section > h2 span:empty { display: none; }

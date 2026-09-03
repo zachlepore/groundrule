@@ -1,7 +1,7 @@
 # Clearwater Pool Guide — Research Gate V1
 
 **Research date:** September 2, 2026  
-**Decision:** **STOP before production implementation.** The Code establishes the
+**Original decision:** **STOP before production implementation.** The Code establishes the
 ordinary LMDR placement framework and now expressly classifies a pool's associated
 deck, but a current official pool application/checklist pathway could not be
 independently verified. The planner's blanket waterfront handoff also remains
@@ -9,6 +9,18 @@ operational guidance rather than a rule found in the reviewed Code.
 
 No route, React presentation, production rule package, database migration, or CAD
 artwork is part of this research gate.
+
+## September 2, 2026 gate-clearing addendum
+
+The blocker was subsequently cleared by the verified official City page,
+**Residential In-Ground Pools/Spas & Enclosures Application Checklists**:
+https://www.myclearwater.com/Business-Development/Permitting/05-Residential-In-Ground-PoolsSpas-Enclosures-Application-Checklists.
+It establishes the homeowner/contractor pathways and supporting-material review,
+including signed and sealed plans, a Duke Energy No Conflict Letter, Safety Act
+form, ISR worksheet, clearing/grubbing step, submission, and staff review. Its
+separate enclosure checklist requires a current survey marking the exact pool/spa
+location and engineering drawings. Pool V1 therefore proceeded in the subsequent
+application and migration changes while retaining every limitation below.
 
 ## 1. Sources inspected and authority hierarchy
 
@@ -257,4 +269,3 @@ gate failed.
 **Migration filename:** none.  
 **Remote migration applied:** no.  
 **SUPABASE ACTION REQUIRED: NO.**
-
