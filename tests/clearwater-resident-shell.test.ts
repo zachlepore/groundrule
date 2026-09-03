@@ -29,13 +29,45 @@ test("all workflows use the resident shell rather than cloning the primary selec
   assert.match(shell, /What do you need help with\?/);
 });
 
-test("direct Pool access selects Pool while the shell supplies all six choices", () => {
+test("direct Pool access selects Pool in the collapsed shell", () => {
   const page = fs.readFileSync("app/clearwater/pool/page.tsx", "utf8");
   const workflow = fs.readFileSync("app/clearwater/pool/workflow.tsx", "utf8");
   assert.match(page, /query|const q/);
   assert.match(page, /project==="pool"/);
   assert.match(workflow, /activeGuide="pool"/);
+  assert.match(workflow, /guideTitle="Pool guidance"/);
+  assert.doesNotMatch(workflow, /<h1>Pool guidance<\/h1>/);
   assert.equal(CLEARWATER_SUPPORTED_GUIDES.length, 6);
+});
+
+test("the canonical selector is shown only when no Guide is selected", () => {
+  const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
+  assert.match(shell, /stage === "project" && <div className="project-choice">/);
+  assert.match(shell, /stage === "guide" && guide && confirmedAddress/);
+  assert.doesNotMatch(shell, /stage === "guide" \|\| stage === "project"\) && <div className="project-choice">/);
+});
+
+test("Other options keeps the property and returns only to the canonical selector", () => {
+  const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
+  assert.match(shell, /const showOtherOptions = \(\) => \{ setStage\("project"\); setError\(null\); \}/);
+  assert.match(shell, /onClick=\{showOtherOptions\}>Other options<\/button>/);
+  const handler = shell.match(/const showOtherOptions = .*?;/)?.[0] ?? "";
+  assert.doesNotMatch(handler, /setAddress|setConfirmedAddress|router|reset/);
+  assert.match(shell, /if \(key === activeGuide && guide\) \{ setStage\("guide"\); return; \}/);
+});
+
+test("the shell owns one Guide heading row and its responsive utility action", () => {
+  const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  assert.match(shell, /className="active-guide-heading"/);
+  assert.match(shell, /<h1>\{guideTitle\}<\/h1>/);
+  assert.match(css, /\.active-guide-heading \{[^}]*display: flex/);
+  assert.match(css, /\.active-guide-heading \{ align-items: flex-start; flex-direction: column/);
+  for (const name of workflowNames) {
+    const workflow = fs.readFileSync(`app/clearwater/${name}/workflow.tsx`, "utf8");
+    assert.match(workflow, /guideTitle="[^"]+"/);
+    assert.doesNotMatch(workflow, /<h1>/);
+  }
 });
 
 test("Guide switching preserves the address and New Search clears shell state", () => {

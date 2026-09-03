@@ -7,7 +7,7 @@ function Situations({items,onOpenIsr}:{items:ShedGuideItem[];onOpenIsr:()=>void}
 import { ClearwaterResidentShell } from "../resident-shell";
 
 export function ShedWorkflow({initialAddress="",openProject=false}:{initialAddress?:string;openProject?:boolean}) {
- return <ClearwaterResidentShell activeGuide="shed" initialAddress={initialAddress} openProject={openProject} lookup={startShedLookup}>
- {(guide,openGuide)=><article className="guide"><h1>Shed guidance</h1><aside className="property-context" aria-label="Property facts used"><ul>{guide.propertyContext.map(fact=><li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Guidance only · Based on current Clearwater rules and property data · Not a permit or City approval</p><Cards items={guide.highlights}/><Situations items={guide.specificSituations} onOpenIsr={()=>openGuide("impervious-surface-ratio")}/></article>}
+ return <ClearwaterResidentShell activeGuide="shed" guideTitle="Shed guidance" initialAddress={initialAddress} openProject={openProject} lookup={startShedLookup}>
+ {(guide,openGuide)=><article className="guide"><aside className="property-context" aria-label="Property facts used"><ul>{guide.propertyContext.map(fact=><li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Guidance only · Based on current Clearwater rules and property data · Not a permit or City approval</p><Cards items={guide.highlights}/><Situations items={guide.specificSituations} onOpenIsr={()=>openGuide("impervious-surface-ratio")}/></article>}
  </ClearwaterResidentShell>;
 }

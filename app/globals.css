@@ -187,7 +187,11 @@ h1 {
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin-top: 1rem; }
 .project-choice button { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 4.25rem; padding: 0 1.1rem; border: 1px solid var(--municipality-primary); border-radius: .25rem; background: #fff; color: var(--foreground); font-size: 1rem; font-weight: 700; text-align: left; }
 .project-choice button:hover { background: var(--municipality-surface); }
-.guide { margin-top: clamp(3rem, 7vh, 5.5rem); }
+.active-guide-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem; width: min(100%, 54rem); margin: clamp(3rem, 7vh, 5.5rem) auto 0; padding-bottom: 1.25rem; border-bottom: 1px solid var(--municipality-divider); }
+.active-guide-heading h1 { max-width: none; margin: 0; font-size: clamp(2.15rem, 5vw, 3.3rem); }
+.active-guide-heading button { flex: 0 0 auto; padding: .45rem 0; border: 0; border-bottom: 1px solid currentColor; background: transparent; color: var(--municipality-primary); font: inherit; font-size: .88rem; font-weight: 700; }
+.active-guide-heading button:hover { color: var(--foreground); }
+.guide { margin-top: 1.5rem; }
 .guide > h1 { max-width: none; font-size: clamp(2.15rem, 5vw, 3.3rem); }
 .guide > h1 span { display: block; margin-bottom: .3rem; color: var(--muted); font-size: .42em; font-weight: 600; letter-spacing: .01em; text-transform: none; }
 .guide-intro { max-width: 46rem; margin: .75rem 0 2.5rem; color: var(--muted); font-size: .82rem; line-height: 1.5; }
@@ -274,7 +278,9 @@ h1 {
   .workflow-actions { flex-wrap: wrap; }
   .workflow-actions .primary { width: 100%; margin-left: 0; order: -1; }
   .workflow-shell { padding: 1.25rem; }
-  .address-panel, .guide { margin-top: 4rem; }
+  .address-panel { margin-top: 4rem; }
+  .active-guide-heading { align-items: flex-start; flex-direction: column; gap: .75rem; margin-top: 3rem; }
+  .guide { margin-top: 1.5rem; }
   .address-heading { overflow-wrap: break-word; }
   .project-grid { grid-template-columns: minmax(0, 1fr); }
   .guide > h1 { overflow-wrap: anywhere; }

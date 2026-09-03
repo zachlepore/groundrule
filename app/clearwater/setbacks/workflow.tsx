@@ -8,7 +8,7 @@ function TrustCue({guide}:{guide:SetbacksGuide}){const codeUrl=[...guide.setback
 import { ClearwaterResidentShell } from "../resident-shell";
 
 export function SetbacksWorkflow({initialAddress="",openProject=false}:{initialAddress?:string;openProject?:boolean}) {
- return <ClearwaterResidentShell activeGuide="setbacks" initialAddress={initialAddress} openProject={openProject} lookup={startSetbacksLookup}>
- {(guide,openGuide)=><article className="guide"><h1>Standard home setbacks</h1><aside className="property-context" aria-label="Property facts used"><ul>{guide.propertyContext.map(fact=><li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Standard detached-dwelling guidance · Based on current Clearwater rules and property data · Not a permit or City approval</p><SetbackCards items={guide.setbacks} onOpenGuide={openGuide}/><Situations items={guide.specificSituations}/><TrustCue guide={guide}/></article>}
+ return <ClearwaterResidentShell activeGuide="setbacks" guideTitle="Standard home setbacks" initialAddress={initialAddress} openProject={openProject} lookup={startSetbacksLookup}>
+ {(guide,openGuide)=><article className="guide"><aside className="property-context" aria-label="Property facts used"><ul>{guide.propertyContext.map(fact=><li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Standard detached-dwelling guidance · Based on current Clearwater rules and property data · Not a permit or City approval</p><SetbackCards items={guide.setbacks} onOpenGuide={openGuide}/><Situations items={guide.specificSituations}/><TrustCue guide={guide}/></article>}
  </ClearwaterResidentShell>;
 }

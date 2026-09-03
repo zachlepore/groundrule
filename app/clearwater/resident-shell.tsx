@@ -13,6 +13,7 @@ const residentAddress = (value: string) => value.toLocaleLowerCase("en-US").repl
 
 export function ClearwaterResidentShell<Guide>({
   activeGuide,
+  guideTitle,
   initialAddress = "",
   openProject = false,
   lookup,
@@ -20,6 +21,7 @@ export function ClearwaterResidentShell<Guide>({
   children,
 }: {
   activeGuide?: ClearwaterGuideKey;
+  guideTitle?: string;
   initialAddress?: string;
   openProject?: boolean;
   lookup: (address: string) => Promise<LookupResult<Guide>>;
@@ -72,6 +74,7 @@ export function ClearwaterResidentShell<Guide>({
   useEffect(() => { if (openProject && initialAddress && !opened.current) { opened.current = true; runLookup(initialAddress, true); } }, [initialAddress, openProject]);
 
   const reset = () => { setAddress(""); setConfirmedAddress(null); setGuide(null); setError(null); setStage("address"); };
+  const showOtherOptions = () => { setStage("project"); setError(null); };
   const openGuide = (key: ClearwaterGuideKey) => {
     if (key === activeGuide && guide) { setStage("guide"); return; }
     const selected = CLEARWATER_SUPPORTED_GUIDES.find((item) => item.key === key)!;
@@ -81,9 +84,9 @@ export function ClearwaterResidentShell<Guide>({
   const propertyChooser = confirmedAddress && <section className="address-panel">
     <p className="found">✓ Property found</p>
     <h1 className="address-heading">{residentAddress(confirmedAddress)}<small>Clearwater, FL</small></h1>
-    <div className="project-choice"><h2>What do you need help with?</h2><div className="project-grid">
-      {CLEARWATER_SUPPORTED_GUIDES.map((item) => <button key={item.key} aria-current={stage === "guide" && item.key === activeGuide ? "page" : undefined} onClick={() => openGuide(item.key)}>{item.label} <span>→</span></button>)}
-    </div></div>
+    {stage === "project" && <div className="project-choice"><h2>What do you need help with?</h2><div className="project-grid">
+      {CLEARWATER_SUPPORTED_GUIDES.map((item) => <button key={item.key} onClick={() => openGuide(item.key)}>{item.label} <span>→</span></button>)}
+    </div></div>}
   </section>;
 
   return <main className="workflow-shell">
@@ -91,6 +94,13 @@ export function ClearwaterResidentShell<Guide>({
     {stage === "handoff" && <ProjectHandoffStatus error={error} onNewSearch={reset}/>} 
     {stage === "address" && <section className="address-panel"><p className="eyebrow">Clearwater property guide</p><h1>Enter your property address</h1><p className="workflow-copy">Guidance based on current City rules and property data.</p><div className="address-form"><input aria-label="Property address" autoComplete="street-address" placeholder="1950 Drew Plz" value={address} onChange={(event) => setAddress(event.target.value)} onKeyDown={(event) => event.key === "Enter" && address.trim() && runLookup()}/><button disabled={pending || !address.trim()} onClick={() => runLookup()}>{pending ? "Looking…" : "Continue"}</button></div>{error && <p role="alert" className="warning">{error}</p>}</section>}
     {(stage === "project" || stage === "guide") && propertyChooser}
-    {stage === "guide" && guide && confirmedAddress && <>{children(guide, openGuide)}<button className="new-search" onClick={reset}>← New search</button></>}
+    {stage === "guide" && guide && confirmedAddress && <>
+      <div className="active-guide-heading">
+        <h1>{guideTitle}</h1>
+        <button type="button" onClick={showOtherOptions}>Other options</button>
+      </div>
+      {children(guide, openGuide)}
+      <button className="new-search" onClick={reset}>← New search</button>
+    </>}
   </main>;
 }
