@@ -20,7 +20,8 @@
     "test:str": "tsx --test tests/short-term-rental-guide.test.ts",
     "test:isr": "tsx --test tests/impervious-surface-ratio-guide.test.ts",
     "test:theme": "tsx --test tests/municipality-theme.test.ts",
-    "test:pool": "tsx --test tests/pool-guide.test.ts"
+    "test:pool": "tsx --test tests/pool-guide.test.ts",
+    "test:shell": "tsx --test tests/clearwater-resident-shell.test.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.109.0",
