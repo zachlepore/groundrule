@@ -1,9 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, useTransition } from "react";
-import { useRouter } from "next/navigation";
-import type { FenceGuide, FenceGuideItem } from "../../../lib/guides/fence";
-import { ProjectHandoffStatus } from "../project-handoff";
+import type { FenceGuideItem } from "../../../lib/guides/fence";
 import { startFenceLookup } from "./actions";
 
 function Source({ item }: { item: FenceGuideItem }) {
@@ -58,29 +55,11 @@ function SpecificSituations({ items }: { items: FenceGuideItem[] }) {
   </section>;
 }
 
-function residentAddress(value: string) {
-  return value.toLocaleLowerCase("en-US").replace(/\b\p{L}/gu, (letter) => letter.toLocaleUpperCase("en-US"));
-}
+
+import { ClearwaterResidentShell } from "../resident-shell";
 
 export function FenceWorkflow({ initialAddress = "", openProject = false }: { initialAddress?: string; openProject?: boolean }) {
-  const router = useRouter();
-  const isProjectHandoff = openProject && initialAddress.trim().length > 0;
-  const [address, setAddress] = useState(""); const [confirmedAddress, setConfirmedAddress] = useState<string | null>(null);
-  const [guide, setGuide] = useState<FenceGuide | null>(null);
-  const [stage, setStage] = useState<"address" | "handoff" | "project" | "guide">(isProjectHandoff ? "handoff" : "address");
-  const [error, setError] = useState<string | null>(null); const [pending, startTransition] = useTransition();
-  const lookup = (requestedAddress = address, showGuide = false) => startTransition(async () => { try { const found = await startFenceLookup(requestedAddress); if (!found) { setStage(showGuide ? "handoff" : "address"); setError("This address isn’t in our limited Clearwater pilot area yet. We did not evaluate it."); return; } if(found.status==="blocked"){setStage(showGuide ? "handoff" : "address");setError(found.reason==="outside"?`THIS PROPERTY IS OUTSIDE CLEARWATER CITY LIMITS · Jurisdiction · ${found.jurisdictionName ?? "Outside Clearwater"}. Clearwater's property rules don't apply to this address.`:"WE COULDN'T CONFIRM THIS PROPERTY'S JURISDICTION. Groundrule won't apply Clearwater rules until it can be confirmed.");return;} setAddress(requestedAddress); setConfirmedAddress(found.displayAddress); setGuide(found.guide); setStage(showGuide ? "guide" : "project"); setError(null); } catch { setStage(showGuide ? "handoff" : "address"); setError("We couldn’t look up that address right now. Please try again later."); } });
-  const opened = useRef(false);
-  // The route handoff is intentionally consumed once; lookup uses the initial address.
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => { if (openProject && initialAddress && !opened.current) { opened.current = true; lookup(initialAddress, true); } }, [initialAddress, openProject]);
-  const newSearch = () => { setAddress(""); setConfirmedAddress(null); setGuide(null); setError(null); setStage("address"); };
-
-  return <main className="workflow-shell"><header className="workflow-brand">GROUNDRULE <span>Clearwater, Florida</span></header>
-    {stage === "handoff" && <ProjectHandoffStatus error={error} onNewSearch={newSearch} />}
-    {stage === "address" && <section className="address-panel"><p className="eyebrow">Clearwater fence pilot</p><h1>Enter your property address</h1><p className="workflow-copy">Guidance based on current City rules and property data.</p><div className="address-form"><input aria-label="Property address" autoComplete="street-address" placeholder="1950 Drew Plz" value={address} onChange={(e) => setAddress(e.target.value)} onKeyDown={(e) => e.key === "Enter" && address.trim() && lookup()}/><button onClick={() => lookup()} disabled={pending || !address.trim()}>{pending ? "Looking…" : "Continue"}</button></div>{error && <p role="alert" className="warning">{error}</p>}</section>}
-    {stage === "project" && confirmedAddress && <section className="address-panel"><p className="found">✓ Property found</p><h1 className="address-heading">{residentAddress(confirmedAddress)}<small>Clearwater, FL</small></h1><div className="project-choice"><h2>What do you need help with?</h2><div className="project-grid"><button onClick={() => setStage("guide")}>Fence <span>→</span></button><button onClick={() => router.push(`/clearwater/shed?address=${encodeURIComponent(confirmedAddress)}&project=shed`)}>Shed <span>→</span></button>
-              <button onClick={() => router.push(`/clearwater/setbacks?address=${encodeURIComponent(confirmedAddress)}&project=setbacks`)}>Setbacks <span>→</span></button><button onClick={()=>router.push(`/clearwater/short-term-rental?address=${encodeURIComponent(confirmedAddress)}&project=short-term-rental`)}>Short-term rental <span>→</span></button><button onClick={()=>router.push(`/clearwater/pool?address=${encodeURIComponent(confirmedAddress)}&project=pool`)}>Pool <span>→</span></button><button onClick={()=>router.push(`/clearwater/impervious-surface-ratio?address=${encodeURIComponent(confirmedAddress)}&project=impervious-surface-ratio`)}>Impervious surface ratio <span>→</span></button></div></div></section>}
-    {stage === "guide" && guide && confirmedAddress && <article className="guide"><h1>{residentAddress(confirmedAddress)}</h1><aside className="property-context" aria-label="Property facts used"><ul>{guide.propertyContext.map((fact) => <li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Guidance only · Based on current Clearwater rules and property data · Not a permit or City approval</p><GuideHighlights items={guide.highlights}/><GuideSection symbol="" title="Near a driveway or street corner?" items={guide.checkThis}/><p className="visibility-escalation">Not sure if this applies to your fence? Contact Clearwater Planning &amp; Zoning.</p><SpecificSituations items={guide.specificSituations}/><p className="guide-intro">The ordinary requirements above are based on the facts Groundrule can confirm. Final permit approval may include review by Engineering or another City department.</p><button className="new-search" onClick={newSearch}>← New search</button></article>}
-  </main>;
+  return <ClearwaterResidentShell activeGuide="fence" initialAddress={initialAddress} openProject={openProject} lookup={startFenceLookup}>
+    {(guide) => <article className="guide"><h1>Fence guidance</h1><aside className="property-context" aria-label="Property facts used"><ul>{guide.propertyContext.map((fact) => <li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Guidance only · Based on current Clearwater rules and property data · Not a permit or City approval</p><GuideHighlights items={guide.highlights}/><GuideSection symbol="" title="Near a driveway or street corner?" items={guide.checkThis}/><p className="visibility-escalation">Not sure if this applies to your fence? Contact Clearwater Planning &amp; Zoning.</p><SpecificSituations items={guide.specificSituations}/><p className="guide-intro">The ordinary requirements above are based on the facts Groundrule can confirm. Final permit approval may include review by Engineering or another City department.</p></article>}
+  </ClearwaterResidentShell>;
 }

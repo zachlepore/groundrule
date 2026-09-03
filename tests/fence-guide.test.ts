@@ -131,12 +131,13 @@ test("resident UI ends with guidance, shows trusted property context, and embeds
 
 test("resident workflow adds no chain-link or waterfront questionnaire", () => {
   const ui = fs.readFileSync("app/clearwater/fence/workflow.tsx", "utf8");
+  const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
   assert.doesNotMatch(ui, /Is your fence chain-link|Is your property waterfront|within 20 feet of the water/i);
-  assert.equal((ui.match(/<input/g) ?? []).length, 1);
+  assert.equal((shell.match(/<input/g) ?? []).length, 1);
   assert.doesNotMatch(ui, /Waterfront · (?:Yes|No)/);
 });
 
 test("unsupported lookup retains an explicit safe pilot message", () => {
-  const ui = fs.readFileSync("app/clearwater/fence/workflow.tsx", "utf8");
-  assert.match(ui, /isn’t in our limited Clearwater pilot area yet\. We did not evaluate it\./);
+  const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
+  assert.match(shell, /isn’t in our limited Clearwater pilot area yet\. We did not evaluate it\./);
 });
