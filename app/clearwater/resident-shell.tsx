@@ -81,16 +81,18 @@ export function ClearwaterResidentShell<Guide>({
     router.push(`${selected.path}?address=${encodeURIComponent(confirmedAddress!)}&project=${selected.key}`);
   };
 
-  const propertyChooser = confirmedAddress && <section className="address-panel">
-    <p className="found">✓ Property found</p>
-    <h1 className="address-heading">{residentAddress(confirmedAddress)}<small>Clearwater, FL</small></h1>
+  const propertyChooser = confirmedAddress && <section className="address-panel confirmed-property">
+    <div className="resolved-address">
+      <span className="resolved-check" aria-hidden="true">✓</span>
+      <p className="address-heading">{residentAddress(confirmedAddress)}<small>Clearwater, FL</small></p>
+    </div>
     {stage === "project" && <div className="project-choice"><h2>What do you need help with?</h2><div className="project-grid">
       {CLEARWATER_SUPPORTED_GUIDES.map((item) => <button key={item.key} onClick={() => openGuide(item.key)}>{item.label} <span>→</span></button>)}
     </div></div>}
   </section>;
 
   return <main className="workflow-shell">
-    <header className="workflow-brand">GROUNDRULE <span>Clearwater, Florida</span></header>
+    <header className="workflow-brand">GROUNDRULE</header>
     {stage === "handoff" && <ProjectHandoffStatus error={error} onNewSearch={reset}/>} 
     {stage === "address" && <section className="address-panel"><p className="eyebrow">Clearwater property guide</p><h1>Enter your property address</h1><p className="workflow-copy">Guidance based on current City rules and property data.</p><div className="address-form"><input aria-label="Property address" autoComplete="street-address" placeholder="1950 Drew Plz" value={address} onChange={(event) => setAddress(event.target.value)} onKeyDown={(event) => event.key === "Enter" && address.trim() && runLookup()}/><button disabled={pending || !address.trim()} onClick={() => runLookup()}>{pending ? "Looking…" : "Continue"}</button></div>{error && <p role="alert" className="warning">{error}</p>}</section>}
     {(stage === "project" || stage === "guide") && propertyChooser}

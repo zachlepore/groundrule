@@ -150,7 +150,6 @@ h1 {
 
 .workflow-shell { min-height: 100svh; padding: clamp(1.5rem, 5vw, 4rem); }
 .workflow-brand { font-size: .82rem; font-weight: 700; letter-spacing: .18em; }
-.workflow-brand span { margin-left: 1rem; color: var(--muted); font-weight: 400; letter-spacing: 0; }
 .workflow-progress { width: min(100%, 48rem); margin: clamp(4rem, 10vh, 7rem) auto 1rem; color: var(--municipality-primary); font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
 .workflow-card { width: min(100%, 48rem); margin: 0 auto; padding: clamp(1.5rem, 5vw, 3.5rem); border: 1px solid var(--border); background: #fff; }
 .workflow-card h1 { max-width: 18ch; }
@@ -179,24 +178,26 @@ h1 {
 .address-panel h1 { max-width: 18ch; }
 .handoff-status { min-height: 16rem; }
 .handoff-status .warning { margin-top: 2rem; }
-.found { margin-bottom: 1rem; color: var(--municipality-primary); font-size: .88rem; font-weight: 700; }
-.address-heading { max-width: none !important; font-size: clamp(2rem, 5vw, 2.85rem); }
-.address-heading small { display: block; margin-top: .65rem; color: var(--muted); font-size: 1rem; font-weight: 400; text-transform: none; }
+.confirmed-property { margin-top: clamp(2rem, 5vh, 3.5rem); margin-bottom: 0; }
+.resolved-address { display: flex; align-items: flex-start; gap: .65rem; }
+.resolved-check { padding-top: .15rem; color: var(--municipality-primary); font-size: 1rem; font-weight: 700; line-height: 1.25; }
+.address-heading { max-width: none !important; margin: 0; font-size: clamp(1.15rem, 2.2vw, 1.4rem); line-height: 1.2; overflow-wrap: anywhere; }
+.address-heading small { display: block; margin-top: .25rem; color: var(--muted); font-size: .9rem; font-weight: 400; line-height: 1.35; text-transform: none; }
 .project-choice { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--municipality-divider); }
 .project-choice h2 { font-size: 1.25rem; }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin-top: 1rem; }
 .project-choice button { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 4.25rem; padding: 0 1.1rem; border: 1px solid var(--municipality-primary); border-radius: .25rem; background: #fff; color: var(--foreground); font-size: 1rem; font-weight: 700; text-align: left; }
 .project-choice button:hover { background: var(--municipality-surface); }
-.active-guide-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem; width: min(100%, 54rem); margin: clamp(3rem, 7vh, 5.5rem) auto 0; padding-bottom: 1.25rem; border-bottom: 1px solid var(--municipality-divider); }
+.active-guide-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem; width: min(100%, 54rem); margin: clamp(1.5rem, 3.5vh, 2.5rem) auto 0; }
 .active-guide-heading h1 { max-width: none; margin: 0; font-size: clamp(2.15rem, 5vw, 3.3rem); }
-.active-guide-heading button { flex: 0 0 auto; padding: .45rem 0; border: 0; border-bottom: 1px solid currentColor; background: transparent; color: var(--municipality-primary); font: inherit; font-size: .88rem; font-weight: 700; }
+.active-guide-heading button { flex: 0 0 auto; min-height: 2.75rem; padding: .45rem 0; border: 0; border-bottom: 1px solid currentColor; background: transparent; color: var(--municipality-primary); font: inherit; font-size: .88rem; font-weight: 700; }
 .active-guide-heading button:hover { color: var(--foreground); }
-.guide { margin-top: 1.5rem; }
+.guide { margin-top: .6rem; }
 .guide > h1 { max-width: none; font-size: clamp(2.15rem, 5vw, 3.3rem); }
 .guide > h1 span { display: block; margin-bottom: .3rem; color: var(--muted); font-size: .42em; font-weight: 600; letter-spacing: .01em; text-transform: none; }
-.guide-intro { max-width: 46rem; margin: .75rem 0 2.5rem; color: var(--muted); font-size: .82rem; line-height: 1.5; }
-.property-context { display: flex; align-items: center; gap: 1rem; margin: 1.25rem 0 0; padding: .7rem .9rem; border: 1px solid var(--municipality-divider); border-radius: .25rem; background: var(--municipality-surface); }
-.property-context ul { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; margin: 0; padding: 0; color: #465157; font-size: .86rem; list-style: none; }
+.guide-intro { max-width: 46rem; margin: .45rem 0 1.25rem; color: var(--muted); font-size: .78rem; line-height: 1.5; }
+.property-context { margin: 0; color: #465157; }
+.property-context ul { display: flex; flex-wrap: wrap; gap: .3rem 1.1rem; margin: 0; padding: 0; font-size: .82rem; line-height: 1.45; list-style: none; }
 .guide-highlights { margin-top: 2rem; border-top: 2px solid var(--foreground); }
 .guide-highlights > h2, .guide-section > h2 { margin: 0; padding: 1rem 0 .75rem; color: var(--municipality-primary); font-size: .76rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .setback-highlights > header { padding: 1rem 0 .9rem; }
@@ -273,21 +274,20 @@ h1 {
   .address-form button {
     width: 100%;
   }
-  .workflow-brand span { display: block; margin: .5rem 0 0; }
   .choice-grid { grid-template-columns: 1fr; }
   .workflow-actions { flex-wrap: wrap; }
   .workflow-actions .primary { width: 100%; margin-left: 0; order: -1; }
   .workflow-shell { padding: 1.25rem; }
   .address-panel { margin-top: 4rem; }
-  .active-guide-heading { align-items: flex-start; flex-direction: column; gap: .75rem; margin-top: 3rem; }
-  .guide { margin-top: 1.5rem; }
+  .confirmed-property { margin-top: 2rem; }
+  .active-guide-heading { align-items: flex-start; flex-direction: column; gap: .25rem; margin-top: 1.5rem; }
+  .guide { margin-top: .5rem; }
   .address-heading { overflow-wrap: break-word; }
   .project-grid { grid-template-columns: minmax(0, 1fr); }
   .guide > h1 { overflow-wrap: anywhere; }
-  .guide-intro { margin-bottom: 2rem; }
+  .guide-intro { margin-bottom: 1.25rem; }
   .highlight-grid { grid-template-columns: 1fr; }
   .setback-highlights .highlight-grid { grid-template-columns: 1fr; }
-  .property-context { align-items: flex-start; flex-direction: column; gap: .45rem; padding: .8rem; }
   .highlight-item, .highlight-item:nth-child(even) { padding: 1rem; border-left: 0; }
   .highlight-answer { font-size: 1.55rem; }
   .guide-section { margin: 2.25rem 0; }
