@@ -8,6 +8,6 @@ import { ClearwaterResidentShell } from "../resident-shell";
 
 export function ShedWorkflow({initialAddress="",openProject=false}:{initialAddress?:string;openProject?:boolean}) {
  return <ClearwaterResidentShell activeGuide="shed" guideTitle="Shed guidance" initialAddress={initialAddress} openProject={openProject} lookup={startShedLookup}>
- {(guide,openGuide)=><article className="guide"><aside className="property-context" aria-label="Property facts used"><ul>{guide.propertyContext.map(fact=><li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Guidance only · Based on current Clearwater rules and property data · Not a permit or City approval</p><Cards items={guide.highlights}/><Situations items={guide.specificSituations} onOpenIsr={()=>openGuide("impervious-surface-ratio")}/></article>}
+ {(guide,openGuide)=><article className="guide"><aside className="property-context" aria-label="Property facts used"><ul>{guide.propertyContext.map(fact=><li key={fact}>{fact}</li>)}</ul></aside><p className="guide-intro">Based on current Clearwater rules and property data · Not City approval</p><Cards items={guide.highlights}/><Situations items={guide.specificSituations} onOpenIsr={()=>openGuide("impervious-surface-ratio")}/></article>}
  </ClearwaterResidentShell>;
 }

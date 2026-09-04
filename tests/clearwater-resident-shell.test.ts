@@ -70,6 +70,17 @@ test("the shell owns one Guide heading row and its responsive utility action", (
   }
 });
 
+test("resolved Guide context stays compact while the Guide title remains primary", () => {
+  const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  assert.match(shell, /<header className="workflow-brand">GROUNDRULE<\/header>/);
+  assert.doesNotMatch(shell, /Property found|Clearwater, Florida/);
+  assert.match(shell, /<p className="address-heading">.*<small>Clearwater, FL<\/small><\/p>/);
+  assert.match(css, /\.confirmed-property \{[^}]*margin-top: clamp\(2rem, 5vh, 3\.5rem\)/);
+  assert.match(css, /\.property-context \{ margin: 0; color:/);
+  assert.doesNotMatch(css, /\.property-context \{[^}]*background:/);
+});
+
 test("Guide switching preserves the address and New Search clears shell state", () => {
   const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
   assert.match(shell, /address=\$\{encodeURIComponent\(confirmedAddress!\)\}/);
