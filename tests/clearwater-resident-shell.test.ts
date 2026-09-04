@@ -113,3 +113,17 @@ test("contextual handoffs remain intentionally narrow and separate", () => {
   const setbacks = fs.readFileSync("app/clearwater/setbacks/workflow.tsx", "utf8");
   assert.match(setbacks, /relatedGuides = \[\{key:"fence".*\{key:"shed"/);
 });
+
+test("all contextual Guide handoffs use the shared compact secondary action", () => {
+  const pool = fs.readFileSync("app/clearwater/pool/workflow.tsx", "utf8");
+  const setbacks = fs.readFileSync("app/clearwater/setbacks/workflow.tsx", "utf8");
+  const shed = fs.readFileSync("app/clearwater/shed/workflow.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+
+  assert.equal((pool.match(/className="related-guide-action"/g) ?? []).length, 2);
+  assert.match(setbacks, /relatedGuides\.map\(guide=><button className="related-guide-action"/);
+  assert.match(shed, /<button className="related-guide-action" onClick=\{onOpenIsr\}>/);
+  assert.match(css, /\.related-guide-action \{[^}]*min-height: 2\.75rem;[^}]*border: 1px solid var\(--municipality-primary\);[^}]*border-radius: \.2rem;[^}]*background: transparent;[^}]*color: var\(--municipality-primary\);[^}]*font: inherit;[^}]*font-size: \.88rem;[^}]*font-weight: 700/);
+  assert.match(css, /\.related-guide-action:hover \{ background: var\(--municipality-surface\); \}/);
+  assert.match(css, /\.related-guide-action:focus-visible \{[^}]*outline: 2px solid var\(--municipality-primary\);[^}]*outline-offset: 2px/);
+});
