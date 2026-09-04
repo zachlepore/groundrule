@@ -190,8 +190,9 @@ h1 {
 .project-choice button:hover { background: var(--municipality-surface); }
 .active-guide-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem; width: min(100%, 54rem); margin: clamp(1.5rem, 3.5vh, 2.5rem) auto 0; }
 .active-guide-heading h1 { max-width: none; margin: 0; font-size: clamp(2.15rem, 5vw, 3.3rem); }
-.active-guide-heading button { flex: 0 0 auto; min-height: 2.75rem; padding: .45rem 0; border: 0; border-bottom: 1px solid currentColor; background: transparent; color: var(--municipality-primary); font: inherit; font-size: .88rem; font-weight: 700; }
-.active-guide-heading button:hover { color: var(--foreground); }
+.active-guide-heading button { flex: 0 0 auto; min-height: 2.75rem; padding: .5rem .85rem; border: 1px solid var(--municipality-primary); border-radius: .2rem; background: transparent; color: var(--municipality-primary); font: inherit; font-size: .88rem; font-weight: 700; }
+.active-guide-heading button:hover { background: var(--municipality-surface); }
+.active-guide-heading button:focus-visible { outline: 2px solid var(--municipality-primary); outline-offset: 2px; }
 .guide { margin-top: .6rem; }
 .guide > h1 { max-width: none; font-size: clamp(2.15rem, 5vw, 3.3rem); }
 .guide > h1 span { display: block; margin-bottom: .3rem; color: var(--muted); font-size: .42em; font-weight: 600; letter-spacing: .01em; text-transform: none; }
