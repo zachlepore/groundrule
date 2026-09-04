@@ -63,6 +63,10 @@ test("the shell owns one Guide heading row and its responsive utility action", (
   assert.match(shell, /<h1>\{guideTitle\}<\/h1>/);
   assert.match(css, /\.active-guide-heading \{[^}]*display: flex/);
   assert.match(css, /\.active-guide-heading \{ align-items: flex-start; flex-direction: column/);
+  assert.match(css, /\.active-guide-heading button \{[^}]*min-height: 2\.75rem;[^}]*border: 1px solid var\(--municipality-primary\);[^}]*border-radius: \.2rem;[^}]*background: transparent;[^}]*color: var\(--municipality-primary\)/);
+  assert.match(css, /\.active-guide-heading button:hover \{ background: var\(--municipality-surface\); \}/);
+  assert.match(css, /\.active-guide-heading button:focus-visible \{[^}]*outline: 2px solid var\(--municipality-primary\);[^}]*outline-offset: 2px/);
+  assert.doesNotMatch(css, /\.active-guide-heading button \{[^}]*border-bottom:/);
   for (const name of workflowNames) {
     const workflow = fs.readFileSync(`app/clearwater/${name}/workflow.tsx`, "utf8");
     assert.match(workflow, /guideTitle="[^"]+"/);
