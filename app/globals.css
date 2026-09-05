@@ -218,6 +218,7 @@ h1 {
 .highlight-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-bottom: 1px solid var(--municipality-divider); }
 .highlight-item { min-width: 0; padding: 1.25rem; border-top: 1px solid var(--municipality-divider); background: var(--municipality-surface); }
 .highlight-item:nth-child(even) { border-left: 1px solid var(--municipality-divider); }
+.setback-highlights .highlight-item:not(:first-child) { border-left: 1px solid var(--municipality-divider); }
 .highlight-item h3 { margin: 0 0 .55rem; color: var(--muted); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; }
 .highlight-answer { margin: 0; font-size: clamp(1.45rem, 3vw, 2rem); font-weight: 650; letter-spacing: -.025em; line-height: 1.15; }
 .str-answer { margin-top: 2rem; padding: 1.5rem 0; border-top: 2px solid var(--foreground); border-bottom: 1px solid #d5dcdd; }
@@ -292,7 +293,7 @@ h1 {
   .guide-intro { margin-bottom: 1.25rem; }
   .highlight-grid { grid-template-columns: 1fr; }
   .setback-highlights .highlight-grid { grid-template-columns: 1fr; }
-  .highlight-item, .highlight-item:nth-child(even) { padding: 1rem; border-left: 0; }
+  .highlight-item, .highlight-item:nth-child(even), .setback-highlights .highlight-item:not(:first-child) { padding: 1rem; border-left: 0; }
   .highlight-answer { font-size: 1.55rem; }
   .guide-section { margin: 2.25rem 0; }
   .visibility-diagram { padding: .4rem; }
