@@ -77,12 +77,23 @@ test("the shell owns one Guide heading row and its responsive utility action", (
 test("resolved Guide context stays compact while the Guide title remains primary", () => {
   const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
   const css = fs.readFileSync("app/globals.css", "utf8");
-  assert.match(shell, /<header className="workflow-brand">GROUNDRULE<\/header>/);
+  assert.match(shell, /<span className="municipality-guidance">Clearwater Property Guidance<\/span>/);
+  assert.match(shell, /<span className="platform-attribution">Powered by Groundrule<\/span>/);
   assert.doesNotMatch(shell, /Property found|Clearwater, Florida/);
   assert.match(shell, /<p className="address-heading">.*<small>Clearwater, FL<\/small><\/p>/);
   assert.match(css, /\.confirmed-property \{[^}]*margin-top: clamp\(2rem, 5vh, 3\.5rem\)/);
   assert.match(css, /\.property-context \{ margin: 0; color:/);
   assert.doesNotMatch(css, /\.property-context \{[^}]*background:/);
+});
+
+test("resident guidance keeps Groundrule to one restrained shared attribution", () => {
+  const residentFiles = ["app/clearwater/resident-shell.tsx", ...workflowNames.map((name) => `app/clearwater/${name}/workflow.tsx`), "lib/guides/fence.ts", "lib/guides/short-term-rental.ts", "lib/guides/impervious-surface-ratio.ts"];
+  const residentCopy = residentFiles.map((file) => fs.readFileSync(file, "utf8")).join("\n");
+  assert.equal((residentCopy.match(/Powered by Groundrule/g) ?? []).length, 1);
+  assert.doesNotMatch(residentCopy, /Groundrule (?:does not|cannot|can’t|has not|uses|can show|won’t)/i);
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  assert.match(css, /\.workflow-brand \{[^}]*flex-direction: column/);
+  assert.match(css, /\.platform-attribution \{[^}]*font-size: \.68rem/);
 });
 
 test("Guide switching preserves the address and New Search clears shell state", () => {

@@ -149,7 +149,9 @@ h1 {
 }
 
 .workflow-shell { min-height: 100svh; padding: clamp(1.5rem, 5vw, 4rem); }
-.workflow-brand { font-size: .82rem; font-weight: 700; letter-spacing: .18em; }
+.workflow-brand { display: flex; flex-direction: column; align-items: flex-start; gap: .3rem; }
+.municipality-guidance { color: var(--municipality-primary); font-size: .86rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.platform-attribution { color: #68716d; font-size: .68rem; font-weight: 600; letter-spacing: .04em; }
 .workflow-progress { width: min(100%, 48rem); margin: clamp(4rem, 10vh, 7rem) auto 1rem; color: var(--municipality-primary); font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
 .workflow-card { width: min(100%, 48rem); margin: 0 auto; padding: clamp(1.5rem, 5vw, 3.5rem); border: 1px solid var(--border); background: #fff; }
 .workflow-card h1 { max-width: 18ch; }

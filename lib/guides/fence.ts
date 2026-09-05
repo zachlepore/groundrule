@@ -154,7 +154,7 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   const waterfrontOpacity = rules.get("waterfront.opacity");
   if (waterfrontHeight && waterfrontOpacity) specificSituations.push({
     key: "specific.water_adjacent", title: "Property next to the water",
-    body: "Waterfront fence rules depend on the water-adjacent property line, the required setback, and the proposed fence location. Groundrule does not currently have those trusted property and project facts. Contact Clearwater Planning & Zoning before relying on the ordinary height answer.",
+    body: "Waterfront fence rules depend on the water-adjacent property line, the required setback, and the proposed fence location. Those trusted property and project facts are not available here. Contact Clearwater Planning & Zoning before relying on the ordinary height answer.",
     values: { determination: "staff_confirmation_required", reason: "waterfront_property_and_fence_geometry_unavailable" },
     citations: waterfrontHeight.citations,
   });
@@ -170,7 +170,7 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
 
   specificSituations.push({
     key: "specific.government_adjacent", title: "Next to City or County property",
-    body: "Additional departmental review is needed when a proposed fence touches or abuts City- or County-owned property. Groundrule cannot currently detect government-property adjacency. Contact Clearwater Planning & Zoning before proceeding.",
+    body: "Additional departmental review is needed when a proposed fence touches or abuts City- or County-owned property. Government-property adjacency cannot be determined from the available property data. Contact Clearwater Planning & Zoning before proceeding.",
     values: { determination: "staff_confirmation_required", reason: "government_adjacency_data_unavailable" },
     citations: [],
   });

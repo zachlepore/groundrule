@@ -21,7 +21,7 @@ test("cross-Guide routes render a neutral handoff before trusted lookup complete
 test("handoff failures remain safe without exposing the empty address form", () => {
   assert.match(handoff, /role="alert"/);
   assert.match(handoff, /onNewSearch/);
-  assert.match(handoff, /We couldn’t load guidance/);
+  assert.match(handoff, /Property guidance couldn’t be loaded/);
 });
 
 test("new search clears address, trusted result, guide, error, and stage", () => {
