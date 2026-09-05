@@ -25,7 +25,7 @@ test("Clearwater routes apply the theme once without Guide color forks", () => {
 
 test("Setbacks regulatory answers and quiet trust treatment remain intact", () => {
   const workflow = fs.readFileSync("app/clearwater/setbacks/workflow.tsx", "utf8");
-  for (const copy of ["Building something else?", "Specific situations", "Based on Clearwater’s current development standards", "Groundrule uses official City of Clearwater codes and property data to generate this guidance.", "View Clearwater codes"]) assert.match(workflow, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  for (const copy of ["Building something else?", "Specific situations", "Based on Clearwater’s current development standards", "This guidance uses official City of Clearwater codes and property data.", "View Clearwater codes"]) assert.match(workflow, new RegExp(copy.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   assert.match(workflow, /item.answer/);
   assert.doesNotMatch(workflow, /municipalityThemes|getMunicipalityTheme/);
 });

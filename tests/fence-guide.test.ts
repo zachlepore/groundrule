@@ -86,7 +86,7 @@ test("specific situations compose supported rules and escalate unknown property 
   assert.doesNotMatch(chain?.body ?? "", /4 ft maximum fence height|6 ft maximum fence height/);
 
   const water = guide.specificSituations[1];
-  assert.match(water?.body ?? "", /does not currently have those trusted property and project facts/);
+  assert.match(water?.body ?? "", /trusted property and project facts are not available here/);
   assert.match(water?.body ?? "", /Contact Clearwater Planning & Zoning/);
   assert.equal(water?.values?.determination, "staff_confirmation_required");
   assert.doesNotMatch(water?.body ?? "", /must be non-opaque|no higher than|maximum/i);
@@ -100,7 +100,7 @@ test("specific situations compose supported rules and escalate unknown property 
   assert.equal(easement?.citations[0]?.sectionIdentifier, "§ 3-806");
 
   const government = guide.specificSituations[3];
-  assert.match(government?.body ?? "", /cannot currently detect government-property adjacency/);
+  assert.match(government?.body ?? "", /Government-property adjacency cannot be determined from the available property data/);
   assert.match(government?.body ?? "", /Contact Clearwater Planning & Zoning/);
   assert.equal(government?.values?.determination, "staff_confirmation_required");
   assert.doesNotMatch(government?.body ?? "", /approved|allowed/i);
@@ -139,5 +139,5 @@ test("resident workflow adds no chain-link or waterfront questionnaire", () => {
 
 test("unsupported lookup retains an explicit safe pilot message", () => {
   const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
-  assert.match(shell, /isn’t in our limited Clearwater pilot area yet\. We did not evaluate it\./);
+  assert.match(shell, /isn’t in the limited Clearwater pilot area yet\. It was not evaluated\./);
 });

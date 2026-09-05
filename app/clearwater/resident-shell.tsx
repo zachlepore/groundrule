@@ -42,19 +42,19 @@ export function ClearwaterResidentShell<Guide>({
       const found = await lookup(requestedAddress);
       if (!found) {
         setStage(showGuide ? "handoff" : "address");
-        setError("This address isn’t in our limited Clearwater pilot area yet. We did not evaluate it.");
+        setError("This address isn’t in the limited Clearwater pilot area yet. It was not evaluated.");
         return;
       }
       if (found.status === "blocked") {
         setStage(showGuide ? "handoff" : "address");
         setError(found.reason === "outside"
           ? `THIS PROPERTY IS OUTSIDE CLEARWATER CITY LIMITS · Jurisdiction · ${found.jurisdictionName ?? "Outside Clearwater"}. Clearwater's property rules don't apply to this address.`
-          : "WE COULDN’T CONFIRM THIS PROPERTY’S JURISDICTION. Groundrule won’t apply Clearwater rules until it can be confirmed.");
+          : "THIS PROPERTY’S JURISDICTION COULDN’T BE CONFIRMED. Clearwater rules will not be applied until the jurisdiction is confirmed.");
         return;
       }
       if (found.guide && validateGuide && !validateGuide(found.guide)) {
         setStage(showGuide ? "handoff" : "project");
-        setError("We couldn’t establish supported guidance for this property. No generic values were substituted.");
+        setError("Supported guidance couldn’t be established for this property. No generic values were substituted.");
         return;
       }
       setAddress(requestedAddress);
@@ -64,7 +64,7 @@ export function ClearwaterResidentShell<Guide>({
       setError(null);
     } catch {
       setStage(showGuide ? "handoff" : "address");
-      setError("We couldn’t look up that address right now. Please try again later.");
+      setError("That address couldn’t be looked up right now. Please try again later.");
     }
   });
 
@@ -92,7 +92,10 @@ export function ClearwaterResidentShell<Guide>({
   </section>;
 
   return <main className="workflow-shell">
-    <header className="workflow-brand">GROUNDRULE</header>
+    <header className="workflow-brand">
+      <span className="municipality-guidance">Clearwater Property Guidance</span>
+      <span className="platform-attribution">Powered by Groundrule</span>
+    </header>
     {stage === "handoff" && <ProjectHandoffStatus error={error} onNewSearch={reset}/>} 
     {stage === "address" && <section className="address-panel"><p className="eyebrow">Clearwater property guide</p><h1>Enter your property address</h1><p className="workflow-copy">Guidance based on current City rules and property data.</p><div className="address-form"><input aria-label="Property address" autoComplete="street-address" placeholder="1950 Drew Plz" value={address} onChange={(event) => setAddress(event.target.value)} onKeyDown={(event) => event.key === "Enter" && address.trim() && runLookup()}/><button disabled={pending || !address.trim()} onClick={() => runLookup()}>{pending ? "Looking…" : "Continue"}</button></div>{error && <p role="alert" className="warning">{error}</p>}</section>}
     {(stage === "project" || stage === "guide") && propertyChooser}

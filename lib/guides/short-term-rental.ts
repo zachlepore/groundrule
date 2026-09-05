@@ -21,5 +21,5 @@ export function buildClearwaterShortTermRentalGuide(result: EvaluationResult, fa
     propertyContext: zoningDistrict ? [`Zoning · ${zoningDistrict.toUpperCase()}`] : [],
     citations: prohibition.citations,
   };
-  return { status: "unknown", heading: "Needs confirmation", explanation: "Groundrule can’t confirm this property yet.", zoningDistrict, propertyContext: [], citations: [] };
+  return { status: "unknown", heading: "Needs confirmation", explanation: "This property cannot be confirmed from the available property data.", zoningDistrict, propertyContext: [], citations: [] };
 }
