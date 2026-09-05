@@ -120,7 +120,7 @@ test("all contextual Guide handoffs use the shared compact secondary action", ()
   const shed = fs.readFileSync("app/clearwater/shed/workflow.tsx", "utf8");
   const css = fs.readFileSync("app/globals.css", "utf8");
 
-  assert.equal((pool.match(/className="related-guide-action"/g) ?? []).length, 3);
+  assert.equal((pool.match(/className="related-guide-action"/g) ?? []).length, 5);
   assert.match(setbacks, /relatedGuides\.map\(guide=><button className="related-guide-action"/);
   assert.match(shed, /<button className="related-guide-action" onClick=\{onOpenIsr\}>/);
   assert.match(css, /\.related-guide-action \{[^}]*min-height: 2\.75rem;[^}]*border: 1px solid var\(--municipality-primary\);[^}]*border-radius: \.2rem;[^}]*background: transparent;[^}]*color: var\(--municipality-primary\);[^}]*font: inherit;[^}]*font-size: \.88rem;[^}]*font-weight: 700/);
