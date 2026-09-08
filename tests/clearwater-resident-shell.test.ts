@@ -12,6 +12,19 @@ test("the production address entry uses a generic placeholder and an empty defau
   assert.doesNotMatch(shell, /1950 Drew Plz|1950 DREW PLZ|122915557820250300/i);
 });
 
+test("address suggestions use neutral, readable surfaces and concise helper copy", () => {
+  const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  assert.match(shell, /<small>Suggested address<\/small>/);
+  assert.doesNotMatch(shell, /Suggested address — select to confirm/);
+  assert.match(css, /\.address-form > button \{[^}]*background: var\(--municipality-primary\)/);
+  assert.match(css, /\.address-suggestions button \{[^}]*background: #ffffff;[^}]*color: var\(--foreground\)/);
+  assert.match(css, /\.address-suggestions \[aria-selected="true"\] button \{[^}]*background: var\(--municipality-surface\);[^}]*color: var\(--foreground\)/);
+  assert.match(css, /\.address-suggestions button small \{[^}]*color: var\(--muted\)/);
+  assert.match(css, /\.address-suggestions button:focus-visible \{[^}]*outline: 2px solid var\(--municipality-primary\)/);
+  assert.match(css, /\.address-suggestions \{ position: static; margin-top: 0\.3rem; \}/);
+});
+
 test("Clearwater has one canonical, complete, duplicate-free supported Guide registry", () => {
   assert.deepEqual(CLEARWATER_SUPPORTED_GUIDES.map(({ key, label }) => ({ key, label })), [
     { key: "fence", label: "Fence" },
