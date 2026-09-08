@@ -3,7 +3,8 @@ import fs from "node:fs";
 import test from "node:test";
 import { evaluateLoadedRuleSet } from "../lib/rules/evaluate";
 import { propertyProfileToFacts } from "../lib/properties/facts";
-import { findPropertyByAddress, normalizeAddress } from "../lib/properties/lookup";
+import { findPropertyByAddress, normalizeAddress, resolvePropertyAddress } from "../lib/properties/lookup";
+import { gateClearwaterEvaluation } from "../lib/properties/jurisdiction";
 import type { LoadedRuleSet } from "../lib/rules/types";
 
 const profiles = JSON.parse(fs.readFileSync("research/gis/data/clearwater-residential-pilot-v2/property-profiles.json", "utf8"));
@@ -18,6 +19,39 @@ function clientReturning(data: unknown[]) {
 
 const jurisdictionRow = { jurisdiction_key: "clearwater", jurisdiction_authority_name: "City of Clearwater", jurisdiction_source: "Pinellas County municipal boundary GIS", jurisdiction_source_updated_at: "2026-08-25T00:00:00Z", jurisdiction_derived_at: "2026-08-26T00:00:00Z" };
 const cleanRow = { ...jurisdictionRow, property_id: "pilot-property", display_address: clean.displayAddress, normalized_zoning_code: clean.normalizedZoningCode, validation_status: "clean" };
+
+const resolutionClient = (data: unknown[]) => ({ rpc: async () => ({ data, error: null }) }) as never;
+
+test("shared non-evaluating resolution preserves no-match, REVIEW, and ambiguity states", async () => {
+  assert.deepEqual(await resolvePropertyAddress("clearwater-fl", "195 bingo bong", resolutionClient([])), { status: "no_match" });
+  assert.deepEqual(await resolvePropertyAddress("clearwater-fl", "100 review st", resolutionClient([{ ...cleanRow, property_id: "review-property", validation_status: "review", match_count: 1 }])), {
+    status: "untrusted_property", propertyId: "review-property", validationStatus: "review",
+  });
+  const ambiguous = await resolvePropertyAddress("clearwater-fl", "100 shared st", resolutionClient([
+    { ...cleanRow, property_id: "first", match_count: 2 }, { ...cleanRow, property_id: "second", match_count: 2 },
+  ]));
+  assert.deepEqual(ambiguous, { status: "ambiguous", matchCount: 2 });
+  assert.equal("property" in ambiguous, false);
+});
+
+test("unique CLEAN resolution remains subject to the existing jurisdiction gate", async () => {
+  const inside = await resolvePropertyAddress("clearwater-fl", clean.displayAddress, resolutionClient([{ ...cleanRow, match_count: 1 }]));
+  assert.equal(inside.status, "resolved");
+  if (inside.status === "resolved") assert.deepEqual(gateClearwaterEvaluation(inside.property), { eligible: true });
+
+  const outside = await resolvePropertyAddress("clearwater-fl", "100 county rd", resolutionClient([{ ...cleanRow, jurisdiction_key: "unincorporated_pinellas", jurisdiction_authority_name: "Unincorporated Pinellas County", match_count: 1 }]));
+  assert.equal(outside.status, "resolved");
+  if (outside.status === "resolved") assert.deepEqual(gateClearwaterEvaluation(outside.property), { eligible: false, reason: "outside", jurisdictionName: "Unincorporated Pinellas County" });
+});
+
+test("resolution RPC is informational while trusted lookup and suggestions stay clean-only", () => {
+  const resolutionSql = fs.readFileSync("supabase/migrations/20260908000001_add_non_evaluating_property_resolution.sql", "utf8");
+  const searchSql = fs.readFileSync("supabase/migrations/20260908000000_add_municipality_address_search.sql", "utf8");
+  assert.doesNotMatch(resolutionSql, /validation_status\s*=\s*'clean'/);
+  assert.match(resolutionSql, /count\(\*\) over \(\) as match_count/);
+  assert.match(searchSql, /find_trusted_property_by_address[\s\S]*p\.validation_status='clean'/);
+  assert.match(searchSql, /search_trusted_municipality_addresses[\s\S]*p\.validation_status='clean'/);
+});
 
 test("known clean pilot address resolves after conservative casing and spacing normalization", async () => {
   assert.equal(clean.status, "clean");

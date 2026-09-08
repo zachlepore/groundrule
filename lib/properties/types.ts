@@ -21,3 +21,10 @@ export interface PublicPropertyMatch {
   displayAddress: string;
   facts: import("../rules/types").Facts;
 }
+
+/** Informational address resolution. This result never authorizes rule evaluation. */
+export type PropertyResolutionResult =
+  | { status: "no_match" }
+  | { status: "ambiguous"; matchCount: number }
+  | { status: "untrusted_property"; propertyId: string; validationStatus: "review" }
+  | { status: "resolved"; property: StoredPropertyProfile };
