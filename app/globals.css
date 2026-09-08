@@ -240,13 +240,13 @@ h1 {
 .address-panel h1 { max-width: 18ch; }
 .handoff-status { min-height: 16rem; }
 .handoff-status .warning { margin-top: 2rem; }
-.confirmed-property { margin-top: clamp(2rem, 5vh, 3.5rem); margin-bottom: 0; }
+.confirmed-property { margin-top: clamp(1.5rem, 3vh, 2.5rem); margin-bottom: 0; }
 .resolved-address { display: flex; align-items: flex-start; gap: .65rem; }
 .resolved-check { padding-top: .15rem; color: var(--municipality-primary); font-size: 1rem; font-weight: 700; line-height: 1.25; }
 .address-heading { max-width: none !important; margin: 0; font-size: clamp(1.15rem, 2.2vw, 1.4rem); line-height: 1.2; overflow-wrap: anywhere; }
 .address-heading small { display: block; margin-top: .25rem; color: var(--muted); font-size: .9rem; font-weight: 400; line-height: 1.35; text-transform: none; }
-.project-choice { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--municipality-divider); }
-.project-choice h2 { font-size: 1.25rem; }
+.project-choice { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--municipality-divider); }
+.project-choice h2 { margin: 0; font-size: 1.25rem; }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin-top: 1rem; }
 .project-choice button { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 4.25rem; padding: 0 1.1rem; border: 1px solid var(--municipality-primary); border-radius: .25rem; background: #fff; color: var(--foreground); font-size: 1rem; font-weight: 700; text-align: left; }
 .project-choice button:hover { background: var(--municipality-surface); }
@@ -347,7 +347,8 @@ h1 {
   .workflow-actions .primary { width: 100%; margin-left: 0; order: -1; }
   .workflow-shell { padding: 1.25rem; }
   .address-panel { margin-top: 4rem; }
-  .confirmed-property { margin-top: 2rem; }
+  .confirmed-property { margin-top: 1.5rem; }
+  .project-choice { margin-top: 1.5rem; padding-top: 1.25rem; }
   .active-guide-heading { align-items: flex-start; flex-direction: column; gap: .25rem; margin-top: 1.5rem; }
   .guide { margin-top: .5rem; }
   .address-heading { overflow-wrap: break-word; }

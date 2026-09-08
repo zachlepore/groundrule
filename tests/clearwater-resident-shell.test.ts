@@ -101,9 +101,17 @@ test("resolved Guide context stays compact while the Guide title remains primary
   assert.match(shell, /<span className="platform-attribution">Powered by Groundrule<\/span>/);
   assert.doesNotMatch(shell, /Property found|Clearwater, Florida/);
   assert.match(shell, /<p className="address-heading">.*<small>Clearwater, FL<\/small><\/p>/);
-  assert.match(css, /\.confirmed-property \{[^}]*margin-top: clamp\(2rem, 5vh, 3\.5rem\)/);
+  assert.match(css, /\.confirmed-property \{[^}]*margin-top: clamp\(1\.5rem, 3vh, 2\.5rem\)/);
   assert.match(css, /\.property-context \{ margin: 0; color:/);
   assert.doesNotMatch(css, /\.property-context \{[^}]*background:/);
+});
+
+test("the resolved-property selector uses compact responsive shell spacing", () => {
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  assert.match(css, /\.project-choice \{ margin-top: 3rem; padding-top: 1\.5rem; border-top: 1px solid var\(--municipality-divider\); \}/);
+  assert.match(css, /\.project-choice h2 \{ margin: 0; font-size: 1\.25rem; \}/);
+  assert.match(css, /@media \(max-width: 36rem\)[\s\S]*\.confirmed-property \{ margin-top: 1\.5rem; \}[\s\S]*\.project-choice \{ margin-top: 1\.5rem; padding-top: 1\.25rem; \}/);
+  assert.match(css, /\.project-choice button \{[^}]*min-height: 4\.25rem;[^}]*padding: 0 1\.1rem/);
 });
 
 test("resident guidance keeps Groundrule to one restrained shared attribution", () => {
