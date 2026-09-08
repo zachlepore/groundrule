@@ -137,7 +137,7 @@ test("resident workflow adds no chain-link or waterfront questionnaire", () => {
   assert.doesNotMatch(ui, /Waterfront · (?:Yes|No)/);
 });
 
-test("unsupported lookup retains an explicit safe pilot message", () => {
+test("unsupported lookup removes obsolete pilot language", () => {
   const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
-  assert.match(shell, /isn’t in the limited Clearwater pilot area yet\. It was not evaluated\./);
+  assert.doesNotMatch(shell, /limited Clearwater pilot area|It was not evaluated/);
 });
