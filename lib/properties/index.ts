@@ -1,3 +1,4 @@
 export { propertyProfileToFacts } from "./facts";
-export type { PublicPropertyMatch, StoredPropertyProfile } from "./types";
+export type { PropertyResolutionResult, PublicPropertyMatch, StoredPropertyProfile } from "./types";
+export { resolvePropertyAddress } from "./lookup";
 export { requireClearwaterProperty } from "./clearwater";
