@@ -69,7 +69,7 @@ test("the canonical selector is shown only when no Guide is selected", () => {
 
 test("Other options keeps the property and returns only to the canonical selector", () => {
   const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
-  assert.match(shell, /const showOtherOptions = \(\) => \{ setStage\("project"\); setError\(null\); \}/);
+  assert.match(shell, /const showOtherOptions = \(\) => \{ setStage\("project"\); setMessage\(null\); \}/);
   assert.match(shell, /onClick=\{showOtherOptions\}>Other options<\/button>/);
   const handler = shell.match(/const showOtherOptions = .*?;/)?.[0] ?? "";
   assert.doesNotMatch(handler, /setAddress|setConfirmedAddress|router|reset/);
@@ -122,18 +122,53 @@ test("Guide switching preserves the address and New Search clears shell state", 
   for (const key of ["shed", "setbacks", "short-term-rental"]) {
     assert.ok(CLEARWATER_SUPPORTED_GUIDES.some((guide) => guide.key === key));
   }
-  assert.match(shell, /setAddress\(""\); setConfirmedAddress\(null\); setGuide\(null\); setError\(null\); setStage\("address"\)/);
+  assert.match(shell, /setAddress\(""\); setConfirmedAddress\(null\); setGuide\(null\); setMessage\(null\); setStage\("address"\)/);
 });
 
 test("server revalidation and Clearwater jurisdiction gating remain per Guide", () => {
   for (const name of workflowNames) {
     const action = fs.readFileSync(`app/clearwater/${name}/actions.ts`, "utf8");
-    assert.match(action, /findPropertyByAddress/);
-    assert.match(action, /requireClearwaterProperty/);
+    assert.match(action, /resolveClearwaterPropertyForGuide/);
     assert.match(action, /evaluateProjectRules/);
   }
+  const admission = fs.readFileSync("app/clearwater/property-resolution.ts", "utf8");
+  assert.match(admission, /resolvePropertyAddress/);
+  assert.match(admission, /findPropertyByAddress/);
+  assert.match(admission, /requireClearwaterProperty/);
+  assert.ok(admission.indexOf("findPropertyByAddress") < admission.indexOf("requireClearwaterProperty"));
   const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
   assert.match(shell, /direct Guide route revalidates the address/);
+});
+
+test("resident address failures truthfully map every safe resolution and jurisdiction state", () => {
+  const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
+  assert.match(shell, /We couldn't find that address\./);
+  assert.match(shell, /We found more than one match for that address\./);
+  assert.match(shell, /Property-specific guidance isn't available for this address yet\./);
+  assert.match(shell, /This property isn't within Clearwater city limits\./);
+  assert.match(shell, /We can't confirm Clearwater property guidance for this address\./);
+  assert.match(shell, /Check the address and try again\./);
+  assert.match(shell, /Contact Clearwater Planning & Zoning for help with this property\./);
+  assert.match(shell, /Clearwater property guidance isn't available for this address\./);
+  assert.doesNotMatch(shell, /limited Clearwater pilot area|property was not evaluated/i);
+});
+
+test("failure states stop before Guide admission and expose no internal property terminology", () => {
+  const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
+  const admission = fs.readFileSync("app/clearwater/property-resolution.ts", "utf8");
+  assert.match(shell, /found\.status === "no_match" \|\| found\.status === "ambiguous" \|\| found\.status === "untrusted_property"/);
+  assert.match(admission, /if \(resolution\.status !== "resolved"\) return \{ status: resolution\.status \}/);
+  assert.match(admission, /if \(!property\) return \{ status: "untrusted_property" \}/);
+  const residentMessages = shell.match(/const resolutionMessages[\s\S]*?\n};/)?.[0] ?? "";
+  assert.doesNotMatch(residentMessages, /CLEAN|REVIEW|evaluator|canonical record|validation status|property profile/i);
+});
+
+test("selecting an autocomplete suggestion only fills the field and Continue still resolves it", () => {
+  const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
+  const selection = shell.match(/const selectSuggestion[\s\S]*?\n  };/)?.[0] ?? "";
+  assert.match(selection, /setAddress\(candidate\.canonicalAddress\)/);
+  assert.doesNotMatch(selection, /runLookup|lookup\(/);
+  assert.match(shell, /onClick=\{\(\) => runLookup\(\)\}/);
 });
 
 test("contextual handoffs remain intentionally narrow and separate", () => {

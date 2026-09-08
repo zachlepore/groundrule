@@ -226,6 +226,10 @@ h1 {
 .workflow-actions button:disabled { cursor: not-allowed; opacity: .5; }
 .result-link { margin-top: 1.25rem; padding: 0; border: 0; background: transparent; color: var(--municipality-primary); text-decoration: underline; }
 .warning { border-left: .25rem solid #9a6324; padding: .75rem 1rem; background: #faf4e9; }
+.address-state { margin-top: 1rem; padding: .8rem 1rem; border-left: .2rem solid var(--municipality-primary); background: var(--municipality-surface); color: var(--foreground); }
+.address-state strong, .address-state span { display: block; }
+.address-state span { margin-top: .2rem; color: var(--muted); }
+.address-state.error { border-left-color: #9a6324; background: #faf4e9; }
 .results h2 { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 1.25rem; }
 .results h3 { margin: 1.25rem 0 .25rem; font-size: 1rem; }
 .results li { margin: .45rem 0; line-height: 1.5; }

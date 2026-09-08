@@ -19,19 +19,21 @@ test("cross-Guide routes render a neutral handoff before trusted lookup complete
 });
 
 test("handoff failures remain safe without exposing the empty address form", () => {
-  assert.match(handoff, /role="alert"/);
+  assert.match(handoff, /"alert" : "status"/);
   assert.match(handoff, /onNewSearch/);
-  assert.match(handoff, /Property guidance couldn’t be loaded/);
+  assert.match(handoff, /message\.title/);
 });
 
-test("new search clears address, trusted result, guide, error, and stage", () => {
-  assert.match(shell, /setAddress\(""\); setConfirmedAddress\(null\); setGuide\(null\); setError\(null\); setStage\("address"\)/);
+test("new search clears address, trusted result, guide, message, and stage", () => {
+  assert.match(shell, /setAddress\(""\); setConfirmedAddress\(null\); setGuide\(null\); setMessage\(null\); setStage\("address"\)/);
 });
 
 test("every lookup retains the Clearwater jurisdiction gate", () => {
   for (const name of ["fence", "shed", "setbacks", "short-term-rental", "impervious-surface-ratio", "pool"]) {
     const source = fs.readFileSync(`app/clearwater/${name}/actions.ts`, "utf8");
-    assert.match(source, /findPropertyByAddress/);
-    assert.match(source, /requireClearwaterProperty\(property\)/);
+    assert.match(source, /resolveClearwaterPropertyForGuide/);
   }
+  const admission = fs.readFileSync("app/clearwater/property-resolution.ts", "utf8");
+  assert.match(admission, /findPropertyByAddress/);
+  assert.match(admission, /requireClearwaterProperty\(property\)/);
 });
