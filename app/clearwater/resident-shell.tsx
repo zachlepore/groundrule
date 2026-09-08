@@ -141,10 +141,10 @@ export function ClearwaterResidentShell<Guide>({
     {stage === "guide" && guide && confirmedAddress && <>
       <div className="active-guide-heading">
         <h1>{guideTitle}</h1>
-        <button type="button" onClick={showOtherOptions}>Other options</button>
+        <button type="button" className="shell-secondary-action" onClick={showOtherOptions}>Other options</button>
       </div>
       {children(guide, openGuide)}
-      <button className="new-search" onClick={reset}>← New search</button>
+      <button type="button" className="shell-secondary-action new-search" onClick={reset}>← New Search</button>
     </>}
   </main>;
 }

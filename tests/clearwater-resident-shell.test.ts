@@ -70,7 +70,7 @@ test("the canonical selector is shown only when no Guide is selected", () => {
 test("Other options keeps the property and returns only to the canonical selector", () => {
   const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
   assert.match(shell, /const showOtherOptions = \(\) => \{ setStage\("project"\); setMessage\(null\); \}/);
-  assert.match(shell, /onClick=\{showOtherOptions\}>Other options<\/button>/);
+  assert.match(shell, /className="shell-secondary-action" onClick=\{showOtherOptions\}>Other options<\/button>/);
   const handler = shell.match(/const showOtherOptions = .*?;/)?.[0] ?? "";
   assert.doesNotMatch(handler, /setAddress|setConfirmedAddress|router|reset/);
   assert.match(shell, /if \(key === activeGuide && guide\) \{ setStage\("guide"\); return; \}/);
@@ -83,9 +83,9 @@ test("the shell owns one Guide heading row and its responsive utility action", (
   assert.match(shell, /<h1>\{guideTitle\}<\/h1>/);
   assert.match(css, /\.active-guide-heading \{[^}]*display: flex/);
   assert.match(css, /\.active-guide-heading \{ align-items: flex-start; flex-direction: column/);
-  assert.match(css, /\.active-guide-heading button \{[^}]*min-height: 2\.75rem;[^}]*border: 1px solid var\(--municipality-primary\);[^}]*border-radius: \.2rem;[^}]*background: transparent;[^}]*color: var\(--municipality-primary\)/);
-  assert.match(css, /\.active-guide-heading button:hover \{ background: var\(--municipality-surface\); \}/);
-  assert.match(css, /\.active-guide-heading button:focus-visible \{[^}]*outline: 2px solid var\(--municipality-primary\);[^}]*outline-offset: 2px/);
+  assert.match(css, /\.shell-secondary-action \{[^}]*min-height: 2\.75rem;[^}]*border: 1px solid var\(--municipality-primary\);[^}]*border-radius: \.2rem;[^}]*background: transparent;[^}]*color: var\(--municipality-primary\)/);
+  assert.match(css, /\.shell-secondary-action:hover \{ background: var\(--municipality-surface\); \}/);
+  assert.match(css, /\.shell-secondary-action:focus-visible \{[^}]*outline: 2px solid var\(--municipality-primary\);[^}]*outline-offset: 2px/);
   assert.doesNotMatch(css, /\.active-guide-heading button \{[^}]*border-bottom:/);
   for (const name of workflowNames) {
     const workflow = fs.readFileSync(`app/clearwater/${name}/workflow.tsx`, "utf8");
@@ -131,6 +131,16 @@ test("Guide switching preserves the address and New Search clears shell state", 
     assert.ok(CLEARWATER_SUPPORTED_GUIDES.some((guide) => guide.key === key));
   }
   assert.match(shell, /setAddress\(""\); setConfirmedAddress\(null\); setGuide\(null\); setMessage\(null\); setStage\("address"\)/);
+  assert.match(shell, /<button type="button" className="shell-secondary-action new-search" onClick=\{reset\}>← New Search<\/button>/);
+});
+
+test("New Search shares the compact secondary shell action without link styling", () => {
+  const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  assert.equal((shell.match(/className="shell-secondary-action(?: new-search)?"/g) ?? []).length, 2);
+  assert.match(css, /\.shell-secondary-action \{[^}]*min-height: 2\.75rem;[^}]*padding: \.5rem \.85rem;[^}]*font: inherit;[^}]*font-size: \.88rem;[^}]*font-weight: 700;[^}]*text-decoration: none/);
+  assert.match(css, /\.new-search \{ margin-top: \.5rem; \}/);
+  assert.doesNotMatch(css, /\.new-search \{[^}]*text-decoration: underline/);
 });
 
 test("server revalidation and Clearwater jurisdiction gating remain per Guide", () => {
