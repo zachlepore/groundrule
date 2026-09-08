@@ -5,6 +5,13 @@ import { CLEARWATER_SUPPORTED_GUIDES } from "../app/clearwater/supported-guides"
 
 const workflowNames = ["fence", "shed", "setbacks", "short-term-rental", "impervious-surface-ratio", "pool"];
 
+test("the production address entry uses a generic placeholder and an empty default", () => {
+  const shell = fs.readFileSync("app/clearwater/resident-shell.tsx", "utf8");
+  assert.match(shell, /placeholder="Enter a Clearwater property address"/);
+  assert.match(shell, /const \[address, setAddress\] = useState\(""\)/);
+  assert.doesNotMatch(shell, /1950 Drew Plz|1950 DREW PLZ|122915557820250300/i);
+});
+
 test("Clearwater has one canonical, complete, duplicate-free supported Guide registry", () => {
   assert.deepEqual(CLEARWATER_SUPPORTED_GUIDES.map(({ key, label }) => ({ key, label })), [
     { key: "fence", label: "Fence" },
