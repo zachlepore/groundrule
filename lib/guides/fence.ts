@@ -43,6 +43,8 @@ const conditionValues = (rule: EvaluatedRule | undefined, fact: string): string[
 };
 const vinylColorList = (values: string[]) => values.map((value, index) => `${value.replaceAll("_", " ")}${index < values.length - 1 ? "-" : ""}`).join(" or ");
 const CLEARWATER_FENCE_PERMIT_GUIDANCE_URL = "https://www.myclearwater.com/Business-Development/Permitting/06-Fence-Permit-Application-Checklist";
+const CLEARWATER_PLANNING_DEVELOPMENT_URL = "https://www.myclearwater.com/My-Government/0-City-Departments/Planning-Development";
+const CLEARWATER_RIGHT_OF_WAY_URL = "https://www.myclearwater.com/Business-Development/Permitting/Z-Other-Permitting-Services/Apply-for-a-Right-of-Way-Permit";
 
 /** Builds a resident guide from structured outcomes; it never treats an unmatched prohibition as permission. */
 export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts): FenceGuide {
@@ -155,6 +157,7 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   if (waterfrontHeight && waterfrontOpacity) specificSituations.push({
     key: "specific.water_adjacent", title: "Property next to the water",
     body: "Waterfront fence rules depend on the water-adjacent property line, the required setback, and the proposed fence location. Those trusted property and project facts are not available here. Contact Clearwater Planning & Zoning before relying on the ordinary height answer.",
+    action: { label: "Contact Planning & Development", url: CLEARWATER_PLANNING_DEVELOPMENT_URL },
     values: { determination: "staff_confirmation_required", reason: "waterfront_property_and_fence_geometry_unavailable" },
     citations: waterfrontHeight.citations,
   });
@@ -164,6 +167,7 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   if (prohibitedAccess && utilityEasement) specificSituations.push({
     key: "specific.easement", title: "Fence in an easement or right-of-way",
     body: "City zoning guidance does not authorize interference with utility or access rights. Easements, rights-of-way, meters, and manholes require the applicable City or utility review before placement. Contact Clearwater Planning & Zoning to start that check.",
+    action: { label: "Right-of-way & easement information", url: CLEARWATER_RIGHT_OF_WAY_URL },
     values: { determination: "external_review_required" },
     citations: [...prohibitedAccess.citations, ...utilityEasement.citations],
   });
@@ -171,6 +175,7 @@ export function buildClearwaterFenceGuide(result: EvaluationResult, facts: Facts
   specificSituations.push({
     key: "specific.government_adjacent", title: "Next to City or County property",
     body: "Additional departmental review is needed when a proposed fence touches or abuts City- or County-owned property. Government-property adjacency cannot be determined from the available property data. Contact Clearwater Planning & Zoning before proceeding.",
+    action: { label: "Contact Planning & Development", url: CLEARWATER_PLANNING_DEVELOPMENT_URL },
     values: { determination: "staff_confirmation_required", reason: "government_adjacency_data_unavailable" },
     citations: [],
   });

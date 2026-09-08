@@ -50,7 +50,7 @@ function SpecificSituations({ items }: { items: FenceGuideItem[] }) {
   return <section className="specific-situations" aria-labelledby="specific-situations-title">
     <h2 id="specific-situations-title">Specific situations</h2>
     <div>{items.map((item) => <article key={item.key} className="specific-situation">
-      <h3>{item.title}</h3><p>{item.body}</p><Source item={item}/>
+      <h3>{item.title}</h3><p>{item.body}</p>{item.action && <a className="related-guide-action" href={item.action.url} target="_blank" rel="noreferrer">{item.action.label} →</a>}<Source item={item}/>
     </article>)}</div>
   </section>;
 }

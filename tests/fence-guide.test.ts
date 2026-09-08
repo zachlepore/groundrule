@@ -89,6 +89,10 @@ test("specific situations compose supported rules and escalate unknown property 
   assert.match(water?.body ?? "", /trusted property and project facts are not available here/);
   assert.match(water?.body ?? "", /Contact Clearwater Planning & Zoning/);
   assert.equal(water?.values?.determination, "staff_confirmation_required");
+  assert.deepEqual(water?.action, {
+    label: "Contact Planning & Development",
+    url: "https://www.myclearwater.com/My-Government/0-City-Departments/Planning-Development",
+  });
   assert.doesNotMatch(water?.body ?? "", /must be non-opaque|no higher than|maximum/i);
   assert.equal(water?.citations[0]?.sectionIdentifier, "§ 3-804");
   assert.deepEqual(guide.propertyContext, ["Zoning · LMDR"]);
@@ -97,13 +101,20 @@ test("specific situations compose supported rules and escalate unknown property 
   const easement = guide.specificSituations[2];
   assert.match(easement?.body ?? "", /does not authorize interference with utility or access rights/);
   assert.equal(easement?.values?.determination, "external_review_required");
+  assert.deepEqual(easement?.action, {
+    label: "Right-of-way & easement information",
+    url: "https://www.myclearwater.com/Business-Development/Permitting/Z-Other-Permitting-Services/Apply-for-a-Right-of-Way-Permit",
+  });
   assert.equal(easement?.citations[0]?.sectionIdentifier, "§ 3-806");
 
   const government = guide.specificSituations[3];
   assert.match(government?.body ?? "", /Government-property adjacency cannot be determined from the available property data/);
   assert.match(government?.body ?? "", /Contact Clearwater Planning & Zoning/);
   assert.equal(government?.values?.determination, "staff_confirmation_required");
+  assert.deepEqual(government?.action, water?.action);
   assert.doesNotMatch(government?.body ?? "", /approved|allowed/i);
+  assert.equal(chain?.action, undefined);
+  for (const item of [water, easement, government]) assert.match(item?.action?.url ?? "", /^https:\/\/www\.myclearwater\.com\//);
 });
 
 test("resident UI ends with guidance, shows trusted property context, and embeds no regulatory numbers", () => {
@@ -127,6 +138,16 @@ test("resident UI ends with guidance, shows trusted property context, and embeds
   assert.doesNotMatch(ui, /Not allowed|Corrugated or sheet metal/);
   assert.match(ui, /Contact Clearwater Planning &amp; Zoning/);
   assert.match(ui, /Final permit approval may include review by Engineering or another City department/);
+  assert.match(ui, /className="related-guide-action"/);
+  assert.match(ui, /target="_blank" rel="noreferrer"/);
+  assert.match(ui, /item\.action\.label/);
+});
+
+test("special-situation links reuse keyboard- and mobile-friendly contextual action styling", () => {
+  const css = fs.readFileSync("app/globals.css", "utf8");
+  assert.match(css, /\.related-guide-action \{[^}]*display: inline-flex;[^}]*max-width: 100%;[^}]*min-height: 2\.75rem;/);
+  assert.match(css, /\.related-guide-action:focus-visible \{[^}]*outline: 2px solid var\(--municipality-primary\);[^}]*outline-offset: 2px/);
+  assert.match(css, /\.related-guide-action:hover \{ background: var\(--municipality-surface\); \}/);
 });
 
 test("resident workflow adds no chain-link or waterfront questionnaire", () => {
