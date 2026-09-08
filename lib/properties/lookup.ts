@@ -3,10 +3,8 @@ import "server-only";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { createSupabaseServerClient } from "../supabase/server";
 import type { StoredPropertyProfile } from "./types";
-
-export function normalizeAddress(address: string): string {
-  return address.trim().replace(/\s+/g, " ").toUpperCase();
-}
+export { normalizeAddress } from "./address-normalization";
+import { normalizeAddress } from "./address-normalization";
 
 type LookupClient = Pick<SupabaseClient, "rpc">;
 

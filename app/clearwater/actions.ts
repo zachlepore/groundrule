@@ -2,6 +2,11 @@
 
 import { findPropertyByAddress } from "../../lib/properties/lookup";
 import { requireClearwaterProperty } from "../../lib/properties";
+import { searchMunicipalityAddresses } from "../../lib/properties/address-search";
+
+export async function searchClearwaterAddresses(query: string) {
+  return searchMunicipalityAddresses({ jurisdiction: "clearwater-fl", query });
+}
 
 export async function startClearwaterPropertyLookup(address: string) {
   const property = await findPropertyByAddress("clearwater-fl", address);
