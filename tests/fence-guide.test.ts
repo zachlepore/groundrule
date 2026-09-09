@@ -73,6 +73,20 @@ test("permit duties remain structured, visibility is resident-facing, and citati
   assert.doesNotMatch(JSON.stringify(guide), /UNKNOWN|REVIEW_REQUIRED/);
 });
 
+test("permit handoff reuses the contextual action without changing its navigation", () => {
+  const ui = fs.readFileSync("app/clearwater/fence/workflow.tsx", "utf8");
+  const guide = buildClearwaterFenceGuide(result, { "property.zoning_district": "lmdr" });
+  const permit = guide.highlights.find((item) => item.title === "Permit");
+  const action = /\{item\.action && (<a[^>]+>\{item\.action\.label\} <span aria-hidden="true">→<\/span><\/a>)\}/.exec(ui)?.[1] ?? "";
+
+  assert.equal(permit?.answer, "Required");
+  assert.equal(permit?.action?.label, "View fence permit steps");
+  assert.equal(permit?.action?.url, "https://www.myclearwater.com/Business-Development/Permitting/06-Fence-Permit-Application-Checklist");
+  assert.match(action, /^<a className="related-guide-action" href=\{item\.action\.url\}>/);
+  assert.match(action, /\{item\.action\.label\} <span aria-hidden="true">→<\/span>/);
+  assert.doesNotMatch(action, /highlight-action|primary-link|text-decoration|target=|rel=/);
+});
+
 test("specific situations compose supported rules and escalate unknown property conditions", () => {
   const guide = buildClearwaterFenceGuide(result, { "property.zoning_district": "lmdr" });
   assert.deepEqual(guide.specificSituations.map((item) => item.title), ["Chain-link fences", "Property next to the water", "Fence in an easement or right-of-way", "Next to City or County property"]);
