@@ -5,6 +5,7 @@ export interface ShedGuide { zoningDistrict: string | null; propertyContext: str
 const rules = (result: EvaluationResult) => new Map([...result.matchedRules, ...result.reviewRequiredRules, ...result.unknownRules, ...result.notMatchedRules].map((rule) => [rule.key, rule]));
 const outcome = (rule: EvaluatedRule | undefined, type: string): Outcome | undefined => rule?.outcomes.find((value) => value.type === type);
 const item = (rule: EvaluatedRule, title: string, answer: string, qualification?: string, values?: Record<string, JsonValue>): ShedGuideItem => ({ key: rule.key, title, answer, qualification, values, citations: rule.citations });
+const CLEARWATER_PLANNING_DEVELOPMENT_URL = "https://www.myclearwater.com/My-Government/0-City-Departments/Planning-Development";
 
 export function qualifiesForShedBuildingPermitExemption(parameters: Record<string, JsonValue>, areaSqFt: number): boolean {
   const maximum = parameters.exempt_max_sq_ft;
@@ -22,7 +23,7 @@ export function buildClearwaterShedGuide(result: EvaluationResult, facts: Facts)
   if (setback && minimums) highlights.push(item(setback, "Setbacks", `${minimums.parameters.front_ft} ft from the front property line · ${minimums.parameters.side_ft} ft from a side property line · ${minimums.parameters.rear_ft} ft from the rear property line`, "The shed cannot be between the street right-of-way and the principal structure.", minimums.parameters));
   const height = byKey.get("height.residential_maximum"); const maximum = outcome(height, "maximum");
   if (height && maximum) highlights.push(item(height, "Maximum height", `${maximum.parameters.value} ft maximum shed height`, undefined, maximum.parameters));
-  const larger = byKey.get("permit.larger_shed_review"); const largerOutcome = outcome(larger, "external_authority_required"); if (larger && largerOutcome) specificSituations.push(item(larger, `Sheds larger than ${largerOutcome.parameters.trigger_min_exclusive_sq_ft} sq ft`, largerOutcome.messageTemplate ?? larger.summary, undefined, largerOutcome.parameters));
+  const larger = byKey.get("permit.larger_shed_review"); const largerOutcome = outcome(larger, "external_authority_required"); if (larger && largerOutcome) specificSituations.push({ ...item(larger, `Sheds larger than ${largerOutcome.parameters.trigger_min_exclusive_sq_ft} sq ft`, largerOutcome.messageTemplate ?? larger.summary, undefined, largerOutcome.parameters), action: { label: "Contact Clearwater Permitting", url: CLEARWATER_PLANNING_DEVELOPMENT_URL } });
   const utilities = byKey.get("permit.utilities"); if (utilities) specificSituations.push(item(utilities, "Electricity or plumbing", utilities.outcomes[0]?.messageTemplate ?? utilities.summary));
   if (impervious) specificSituations.push(item(impervious, "Impervious surface", impervious.outcomes[0]?.messageTemplate ?? impervious.summary, undefined, impervious.outcomes[0]?.parameters));
   if (utilities && specificSituations.length) specificSituations.find(candidate => candidate.key === utilities.key)!.action = { label: "Schedule or cancel an inspection", url: "https://www.myclearwater.com/Business-Development/Permitting/Schedule-or-Cancel-an-Inspection" };
