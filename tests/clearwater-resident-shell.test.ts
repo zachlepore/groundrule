@@ -212,3 +212,15 @@ test("all contextual Guide handoffs use the shared compact secondary action", ()
   assert.match(css, /\.related-guide-action:hover \{ background: var\(--municipality-surface\); \}/);
   assert.match(css, /\.related-guide-action:focus-visible \{[^}]*outline: 2px solid var\(--municipality-primary\);[^}]*outline-offset: 2px/);
 });
+
+test("all contextual actions use the horizontal continue arrow", () => {
+  for (const workflowName of workflowNames) {
+    const workflow = fs.readFileSync(`app/clearwater/${workflowName}/workflow.tsx`, "utf8");
+    const actions = [...workflow.matchAll(/<(a|button) className="related-guide-action"[\s\S]*?<\/\1>/g)].map((match) => match[0]);
+
+    for (const action of actions) {
+      assert.match(action, /→/, `${workflowName} contextual action should use →`);
+      assert.doesNotMatch(action, /↗/, `${workflowName} contextual action should not use ↗`);
+    }
+  }
+});
