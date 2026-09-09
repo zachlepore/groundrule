@@ -284,6 +284,10 @@ h1 {
 .setback-highlights .highlight-item:not(:first-child) { border-left: 1px solid var(--municipality-divider); }
 .highlight-item h3 { margin: 0 0 .55rem; color: var(--muted); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; }
 .highlight-answer { margin: 0; font-size: clamp(1.45rem, 3vw, 2rem); font-weight: 650; letter-spacing: -.025em; line-height: 1.15; }
+.shed-setback-values { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.5rem, 2vw, 1.25rem); margin: 0; }
+.shed-setback-value { min-width: 0; }
+.shed-setback-value dt { color: var(--muted); font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.shed-setback-value dd { margin: .2rem 0 0; font-size: clamp(1.45rem, 3vw, 2rem); font-weight: 650; letter-spacing: -.025em; line-height: 1.15; white-space: nowrap; }
 .str-answer { margin-top: 2rem; padding: 1.5rem 0; border-top: 2px solid var(--foreground); border-bottom: 1px solid #d5dcdd; }
 .str-answer h2 { margin: .35rem 0 .65rem; max-width: 36rem; font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.05; letter-spacing: -.035em; }
 .str-answer > p:not(.eyebrow):not(.guide-source) { max-width: 42rem; font-size: 1.08rem; line-height: 1.55; }
@@ -303,6 +307,7 @@ h1 {
 .guide-item ul { padding-left: 1.3rem; }
 .guide-source { margin: .7rem 0 0 !important; color: var(--muted); font-size: .76rem; }
 .guide-source a { display: inline-block; min-height: 1.5rem; color: var(--municipality-primary); text-underline-offset: .18rem; }
+.guide-source .related-guide-action { display: inline-flex; min-height: 2.75rem; text-decoration: none; }
 .highlight-action { display: inline-flex; align-items: center; min-height: 2.75rem; margin-top: .35rem; color: var(--municipality-primary); font-size: .9rem; font-weight: 700; text-underline-offset: .18rem; }
 .permit-action { padding: 1.1rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .permit-action h3 { margin: 0 0 .35rem; font-size: 1.2rem; }
