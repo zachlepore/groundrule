@@ -10,27 +10,20 @@ function Source({ item }: { item: FenceGuideItem }) {
   return <p className="guide-source">{citation.sourceUrl ? <a href={citation.sourceUrl} target="_blank" rel="noreferrer" aria-label={`View source, ${detail}`} title={detail}>Source ↗</a> : null}</p>;
 }
 
-function VisibilityDiagram({ item }: { item: FenceGuideItem }) {
-  const feet = item.values?.horizontal_leg_1_ft;
-  const height = item.values?.display_value;
-  const heightUnit = item.values?.display_unit === "in" ? "in." : item.values?.display_unit;
-  return <figure className="visibility-diagram" aria-labelledby="visibility-caption">
-    <svg viewBox="0 0 560 300" role="img" aria-label="Simple diagram of the triangular clear-view area where a driveway meets a street">
-      <rect width="560" height="300" fill="#f8faf8"/><rect y="220" width="560" height="80" fill="#dfe5e2"/>
-      <rect x="390" width="100" height="220" fill="#e9edeb"/><path d="M390 220 L265 220 L390 95 Z" fill="#cce3d5" stroke="#236044" strokeWidth="3"/>
-      <path d="M265 205v30M390 205v30M280 230h95" stroke="#236044" strokeWidth="2"/><text x="307" y="255" fill="#173d2d" fontSize="18">{String(feet)} ft</text>
-      <path d="M375 95h30M375 220h30M400 110v95" stroke="#236044" strokeWidth="2"/><text x="412" y="166" fill="#173d2d" fontSize="18">{String(feet)} ft</text>
-      <text x="26" y="267" fill="#44514b" fontSize="18">Street / right-of-way</text><text x="411" y="38" fill="#44514b" fontSize="17">Driveway</text>
-      <text x="276" y="184" fill="#173d2d" fontSize="16">Keep view clear</text>
-    </svg>
-    <figcaption id="visibility-caption">The shaded visibility area extends {String(feet)} ft along each applicable edge. In this area: non-opaque fence only, with a {String(height)} {String(heightUnit)} maximum fence height.</figcaption>
+function VisibilityFigure() {
+  return <figure className="visibility-figure">
+    <h4>Where sight visibility rules apply</h4>
+    {/* The future CAD asset must retain its intrinsic aspect ratio without fixed dimensions. */}
+    {/* eslint-disable-next-line @next/next/no-img-element */}
+    <img src="/figures/clearwater/fence-sight-visibility-triangle.png" alt="Clearwater sight-visibility triangles at a driveway and street corner"/>
+    <figcaption>Use this diagram to identify the areas that may require visibility review.</figcaption>
   </figure>;
 }
 
 function GuideSection({ symbol, title, items }: { symbol: string; title: string; items: FenceGuideItem[] }) {
   if (!items.length) return null;
   return <section className="guide-section" aria-labelledby={`section-${title.replaceAll(" ", "-")}`}><h2 id={`section-${title.replaceAll(" ", "-")}`}><span>{symbol}</span>{title}</h2>
-    {items.map((item) => <article className="guide-item" key={item.key}><h3>{item.title}</h3><p>{item.body}</p>{item.bullets && <ul>{item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>}{item.assetId && <VisibilityDiagram item={item}/>}<Source item={item}/></article>)}
+    {items.map((item) => <article className="guide-item" key={item.key}><h3>{item.title}</h3><p>{item.body}</p>{item.bullets && <ul>{item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>}{item.assetId && <VisibilityFigure/>}<Source item={item}/></article>)}
   </section>;
 }
 
