@@ -87,6 +87,15 @@ test("permit handoff reuses the contextual action without changing its navigatio
   assert.doesNotMatch(action, /highlight-action|primary-link|text-decoration|target=|rel=/);
 });
 
+test("visibility guidance uses the future CAD image instead of a drawn diagram", () => {
+  const ui = fs.readFileSync("app/clearwater/fence/workflow.tsx", "utf8");
+
+  assert.match(ui, /Where sight visibility rules apply/);
+  assert.match(ui, /src="\/figures\/clearwater\/fence-sight-visibility-triangle\.png"/);
+  assert.match(ui, /alt="Clearwater sight-visibility triangles at a driveway and street corner"/);
+  assert.doesNotMatch(ui, /<svg|VisibilityDiagram/);
+});
+
 test("specific situations compose supported rules and escalate unknown property conditions", () => {
   const guide = buildClearwaterFenceGuide(result, { "property.zoning_district": "lmdr" });
   assert.deepEqual(guide.specificSituations.map((item) => item.title), ["Chain-link fences", "Property next to the water", "Fence in an easement or right-of-way", "Next to City or County property"]);
