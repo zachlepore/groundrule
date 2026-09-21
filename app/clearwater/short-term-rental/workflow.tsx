@@ -1,7 +1,7 @@
 "use client";
-import type {ShortTermRentalGuide} from "../../../lib/guides/short-term-rental";
+import {CLEARWATER_SHORT_TERM_RENTAL_GUIDANCE_URL, type ShortTermRentalGuide} from "../../../lib/guides/short-term-rental";
 import {startShortTermRentalLookup} from "./actions";
-function Source({guide}:{guide:ShortTermRentalGuide}){const citation=guide.citations[0];if(!citation?.sourceUrl)return null;const detail=`${citation.sourceTitle}, ${citation.sectionIdentifier}`;return <p className="guide-source"><a className="related-guide-action" href={citation.sourceUrl} target="_blank" rel="noreferrer" aria-label={`View Clearwater short-term rental code, ${detail}`} title={detail}>View Clearwater short-term rental code <span aria-hidden="true">→</span></a></p>}
+function Source({guide}:{guide:ShortTermRentalGuide}){const citation=guide.citations[0];if(!citation?.sourceUrl)return null;const detail=`${citation.sourceTitle}, ${citation.sectionIdentifier}`;return <p className="guide-source"><a className="related-guide-action" href={CLEARWATER_SHORT_TERM_RENTAL_GUIDANCE_URL} target="_blank" rel="noreferrer" aria-label="View Clearwater's short-term rental guidance" title={detail}>View Clearwater&apos;s short-term rental guidance <span aria-hidden="true">→</span></a></p>}
 import { ClearwaterResidentShell } from "../resident-shell";
 
 export function ShortTermRentalWorkflow({initialAddress="",openProject=false}:{initialAddress?:string;openProject?:boolean}) {
