@@ -318,6 +318,9 @@ h1 {
 .visibility-figure h4 { margin: 0 0 .75rem; font-size: 1rem; }
 .visibility-figure img { display: block; width: 100%; height: auto; }
 .visibility-figure figcaption { padding-top: .65rem; color: var(--muted); font-size: .85rem; line-height: 1.5; }
+.isr-example-figure { width: 100%; max-width: 42rem; margin: 1.25rem auto; padding: .5rem; }
+.isr-example-figure img { display: block; width: 100%; height: auto; }
+.isr-example-figure figcaption { padding-top: .65rem; color: var(--muted); font-size: .85rem; line-height: 1.5; }
 .visibility-escalation { margin: -1.8rem 0 2.5rem; color: var(--muted); font-size: .86rem; }
 .specific-situations { margin: 2.75rem 0; }
 .specific-situations > h2 { margin: 0; padding: 1rem 0 .75rem; border-top: 1px solid var(--foreground); color: var(--municipality-primary); font-size: .76rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
@@ -365,6 +368,8 @@ h1 {
   .guide-section { margin: 2.25rem 0; }
   .visibility-figure { padding: .25rem; }
   .visibility-figure figcaption { font-size: .8rem; }
+  .isr-example-figure { padding: .25rem; }
+  .isr-example-figure figcaption { font-size: .8rem; }
 }
 .isr-answer { margin-top: 2rem; padding: 1.5rem 0; border-top: 2px solid var(--foreground); border-bottom: 1px solid #d5dcdd; }
 .isr-answer h2 { margin: .35rem 0 0; color: var(--muted); font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; }
