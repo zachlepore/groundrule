@@ -22,23 +22,47 @@ async function json(url, params = {}) {
   return body;
 }
 
-async function layer(name, url, fields, where, expectedGeometry, geometry) {
-  const metadata = await json(url, { f: "json" });
+export function discoverObjectIdField(metadata) {
+  const oidFields = (metadata.fields ?? []).filter((field) => field.type === "esriFieldTypeOID").map((field) => field.name);
+  const advertised = [metadata.objectIdField, metadata.objectIdFieldName, metadata.uniqueIdField?.name]
+    .find((name) => typeof name === "string" && oidFields.includes(name));
+  return advertised ?? (oidFields.length === 1 ? oidFields[0] : null);
+}
+
+export async function acquireLayer(name, url, fields, where, expectedGeometry, geometry, request = json) {
+  const metadata = await request(url, { f: "json" });
   if (metadata.geometryType !== expectedGeometry) throw new Error(`${name}: source structure changed; expected ${expectedGeometry}, received ${metadata.geometryType}`);
   const known = new Set((metadata.fields ?? []).map((field) => field.name));
   const missing = fields.filter((field) => !known.has(field));
   if (missing.length) throw new Error(`${name}: source structure changed; missing ${missing.join(", ")}`);
-  if (!metadata.objectIdField || metadata.advancedQueryCapabilities?.supportsPagination === false) throw new Error(`${name}: safe deterministic pagination is unavailable`);
-  const count = await json(`${url}/query`, { f: "json", where, returnCountOnly: true, ...(geometry ?? {}) });
-  const size = Math.min(metadata.maxRecordCount ?? 1000, 2000), features = [];
+  const objectIdField = discoverObjectIdField(metadata);
+  const queryCapabilities = metadata.advancedQueryCapabilities;
+  if (!objectIdField || queryCapabilities?.supportsPagination !== true || queryCapabilities?.supportsOrderBy !== true) throw new Error(`${name}: safe deterministic pagination is unavailable`);
+  const count = await request(`${url}/query`, { f: "json", where, returnCountOnly: true, ...(geometry ?? {}) });
+  if (!Number.isSafeInteger(count.count) || count.count < 0) throw new Error(`${name}: invalid preflight count`);
+  const advertisedPageSize = metadata.maxRecordCount ?? 1000;
+  if (!Number.isSafeInteger(advertisedPageSize) || advertisedPageSize < 1) throw new Error(`${name}: invalid maxRecordCount`);
+  const size = Math.min(advertisedPageSize, 2000), features = [];
   for (let offset = 0; offset < count.count; offset += size) {
-    const page = await json(`${url}/query`, { f: "geojson", where, outFields: fields.join(","), returnGeometry: true, outSR: 4326, resultOffset: offset, resultRecordCount: size, orderByFields: `${metadata.objectIdField} ASC`, ...(geometry ?? {}) });
+    const requestedFields = [...new Set([...fields, objectIdField])];
+    const page = await request(`${url}/query`, { f: "geojson", where, outFields: requestedFields.join(","), returnGeometry: true, outSR: 4326, resultOffset: offset, resultRecordCount: size, orderByFields: `${objectIdField} ASC`, ...(geometry ?? {}) });
     if (page.type !== "FeatureCollection" || !Array.isArray(page.features)) throw new Error(`${name}: non-GeoJSON response`);
+    const expectedPageLength = Math.min(size, count.count - offset);
+    if (page.features.length !== expectedPageLength) throw new Error(`${name}: incomplete page at offset ${offset} (${expectedPageLength} expected, ${page.features.length} received)`);
     features.push(...page.features);
   }
   if (features.length !== count.count) throw new Error(`${name}: count changed during snapshot (${count.count} expected, ${features.length} received)`);
+  const objectIds = features.map((feature) => feature.properties?.[objectIdField]);
+  if (objectIds.some((id) => id == null)) throw new Error(`${name}: response is missing ${objectIdField}`);
+  const uniqueObjectIds = new Set(objectIds.map(String));
+  if (uniqueObjectIds.size !== objectIds.length) throw new Error(`${name}: duplicate ${objectIdField} received`);
+  for (let index = 1; index < objectIds.length; index += 1) {
+    if (!(objectIds[index - 1] < objectIds[index])) throw new Error(`${name}: ${objectIdField} ordering is not strictly ascending`);
+  }
+  const postflightCount = await request(`${url}/query`, { f: "json", where, returnCountOnly: true, ...(geometry ?? {}) });
+  if (postflightCount.count !== count.count) throw new Error(`${name}: count changed during snapshot (${count.count} before, ${postflightCount.count} after)`);
   const collection = { type: "FeatureCollection", features };
-  return { collection, snapshot: { name, layerUrl: url, queryUrl: `${url}/query`, where, geometry: geometry ?? null, retrievedAt: new Date().toISOString(), serviceLastEditDate: metadata.editingInfo?.lastEditDate ?? null, layerVersion: metadata.currentVersion ?? null, objectIdField: metadata.objectIdField, maxRecordCount: metadata.maxRecordCount ?? null, recordCount: features.length, fields, sha256: sha(collection) } };
+  return { collection, snapshot: { name, layerUrl: url, queryUrl: `${url}/query`, where, geometry: geometry ?? null, retrievedAt: new Date().toISOString(), serviceLastEditDate: metadata.editingInfo?.lastEditDate ?? null, layerVersion: metadata.currentVersion ?? null, objectIdField, maxRecordCount: metadata.maxRecordCount ?? null, supportsPagination: queryCapabilities.supportsPagination, supportsOrderBy: queryCapabilities.supportsOrderBy, ordering: `${objectIdField} ASC`, recordCount: features.length, fields, sha256: sha(collection) } };
 }
 
 function extentOfPoints(features, padding = 0.01) {
@@ -73,11 +97,11 @@ async function main() {
   if (await exists(out)) throw new Error(`Refusing to replace ${out}; validate and archive the prior snapshot first`);
   await mkdir(tmp, { recursive: true });
   try {
-    const addressResult = await layer("addresses", required("PINELLAS_ADDRESSES_LAYER_URL"), config.layers.addresses.fields, config.layers.addresses.where, "esriGeometryPoint");
+    const addressResult = await acquireLayer("addresses", required("PINELLAS_ADDRESSES_LAYER_URL"), config.layers.addresses.fields, config.layers.addresses.where, "esriGeometryPoint");
     const bbox = extentOfPoints(addressResult.collection.features);
     const spatial = { geometry: bbox.join(","), geometryType: "esriGeometryEnvelope", inSR: 4326, spatialRel: "esriSpatialRelIntersects" };
-    const parcelResult = await layer("parcels", required("PINELLAS_PARCELS_LAYER_URL"), config.layers.parcels.fields, "1=1", "esriGeometryPolygon", spatial);
-    const zoningResult = await layer("zoning", required("CLEARWATER_ZONING_LAYER_URL"), config.layers.zoning.fields, "1=1", "esriGeometryPolygon");
+    const parcelResult = await acquireLayer("parcels", required("PINELLAS_PARCELS_LAYER_URL"), config.layers.parcels.fields, "1=1", "esriGeometryPolygon", spatial);
+    const zoningResult = await acquireLayer("zoning", required("CLEARWATER_ZONING_LAYER_URL"), config.layers.zoning.fields, "1=1", "esriGeometryPolygon");
     const data = { addresses: addressResult.collection, parcels: parcelResult.collection, zoning: zoningResult.collection };
     const snapshots = { addresses: addressResult.snapshot, parcels: parcelResult.snapshot, zoning: zoningResult.snapshot };
     for (const [name, collection] of Object.entries(data)) await writeFile(path.join(tmp, `${name}.geojson`), `${JSON.stringify(collection)}\n`);

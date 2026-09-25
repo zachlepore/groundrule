@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { geographicSample, humanReport } from "../scripts/gis/clearwater-full.mjs";
+import { acquireLayer, discoverObjectIdField, geographicSample, humanReport } from "../scripts/gis/clearwater-full.mjs";
 import { preprocess } from "../scripts/gis/clearwater-pilot.mjs";
 
 const polygon = (x, code = "LMDR") => ({ type: "Feature", properties: { OBJECTID: x, ZONING: code, ZONING_DESC: code }, geometry: { type: "Polygon", coordinates: [[[x, 0], [x + 0.9, 0], [x + 0.9, 0.9], [x, 0.9], [x, 0]]] } });
@@ -40,4 +40,77 @@ test("full configuration uses explicit authoritative municipality attribution, n
   const config = JSON.parse(await (await import("node:fs/promises")).readFile(new URL("../scripts/gis/clearwater-full.json", import.meta.url), "utf8"));
   assert.equal(config.layers.addresses.where, "MUNICIPALITY = 'CLEARWATER'");
   assert.doesNotMatch(config.layers.addresses.where, /SITE_CITY|POSTCODE/);
+});
+
+const layerMetadata = (overrides = {}) => ({
+  currentVersion: 10.91,
+  geometryType: "esriGeometryPoint",
+  fields: [{ name: "OBJECTID", type: "esriFieldTypeOID" }, { name: "FULLADDR", type: "esriFieldTypeString" }],
+  uniqueIdField: { name: "OBJECTID", isSystemMaintained: true },
+  maxRecordCount: 1000,
+  advancedQueryCapabilities: { supportsPagination: true, supportsOrderBy: true },
+  ...overrides,
+});
+
+const feature = (id) => ({ type: "Feature", properties: { OBJECTID: id, FULLADDR: `${id} MAIN ST` }, geometry: { type: "Point", coordinates: [id, id] } });
+
+function mockArcGis(metadata, pages, count = pages.flat().length) {
+  const calls = [];
+  const counts = Array.isArray(count) ? count.slice() : [count, count];
+  const request = async (url, params) => {
+    calls.push({ url, params });
+    if (!url.endsWith("/query")) return metadata;
+    if (params.returnCountOnly) return { count: counts.shift() };
+    const page = pages.shift() ?? [];
+    return { type: "FeatureCollection", features: page };
+  };
+  return { calls, request };
+}
+
+test("MapServer OID metadata enables maxRecordCount-aware, explicitly ordered pagination", async () => {
+  const metadata = layerMetadata({ maxRecordCount: 2 });
+  assert.equal(discoverObjectIdField(metadata), "OBJECTID");
+  const mock = mockArcGis(metadata, [[feature(1), feature(2)], [feature(3)]]);
+  const result = await acquireLayer("addresses", "https://example.test/MapServer/0", ["FULLADDR"], "1=1", "esriGeometryPoint", undefined, mock.request);
+  const pageCalls = mock.calls.filter(({ params }) => params.f === "geojson");
+  assert.deepEqual(pageCalls.map(({ params }) => params.resultOffset), [0, 2]);
+  assert.ok(pageCalls.every(({ params }) => params.resultRecordCount === 2 && params.orderByFields === "OBJECTID ASC"));
+  assert.ok(pageCalls.every(({ params }) => params.outFields === "FULLADDR,OBJECTID"));
+  assert.equal(result.snapshot.objectIdField, "OBJECTID");
+  assert.equal(result.snapshot.ordering, "OBJECTID ASC");
+});
+
+test("OID discovery supports MapServer and FeatureServer metadata representations", () => {
+  assert.equal(discoverObjectIdField(layerMetadata()), "OBJECTID");
+  assert.equal(discoverObjectIdField(layerMetadata({ uniqueIdField: undefined, objectIdField: "OBJECTID" })), "OBJECTID");
+  assert.equal(discoverObjectIdField(layerMetadata({ uniqueIdField: undefined, objectIdFieldName: "OBJECTID" })), "OBJECTID");
+  assert.equal(discoverObjectIdField(layerMetadata({ uniqueIdField: undefined })), "OBJECTID");
+});
+
+test("full extraction refuses layers without both an OID and deterministic paging capabilities", async () => {
+  for (const metadata of [
+    layerMetadata({ fields: [{ name: "FULLADDR", type: "esriFieldTypeString" }], uniqueIdField: undefined }),
+    layerMetadata({ advancedQueryCapabilities: { supportsPagination: false, supportsOrderBy: true } }),
+    layerMetadata({ advancedQueryCapabilities: { supportsPagination: true, supportsOrderBy: false } }),
+  ]) {
+    const mock = mockArcGis(metadata, []);
+    await assert.rejects(acquireLayer("addresses", "https://example.test/MapServer/0", ["FULLADDR"], "1=1", "esriGeometryPoint", undefined, mock.request), /safe deterministic pagination is unavailable/);
+  }
+});
+
+test("full extraction detects duplicate and non-monotonic object IDs", async () => {
+  for (const ids of [[1, 1], [2, 1]]) {
+    const mock = mockArcGis(layerMetadata(), [ids.map(feature)]);
+    await assert.rejects(acquireLayer("addresses", "https://example.test/MapServer/0", ["FULLADDR"], "1=1", "esriGeometryPoint", undefined, mock.request), /duplicate OBJECTID|ordering is not strictly ascending/);
+  }
+});
+
+test("full extraction detects missing OIDs and reconciles every page with the preflight count", async () => {
+  const withoutOid = { ...feature(1), properties: { FULLADDR: "1 MAIN ST" } };
+  let mock = mockArcGis(layerMetadata(), [[withoutOid]]);
+  await assert.rejects(acquireLayer("addresses", "https://example.test/MapServer/0", ["FULLADDR"], "1=1", "esriGeometryPoint", undefined, mock.request), /response is missing OBJECTID/);
+  mock = mockArcGis(layerMetadata({ maxRecordCount: 2 }), [[feature(1)]], 2);
+  await assert.rejects(acquireLayer("addresses", "https://example.test/MapServer/0", ["FULLADDR"], "1=1", "esriGeometryPoint", undefined, mock.request), /incomplete page at offset 0 \(2 expected, 1 received\)/);
+  mock = mockArcGis(layerMetadata(), [[feature(1)]], [1, 2]);
+  await assert.rejects(acquireLayer("addresses", "https://example.test/MapServer/0", ["FULLADDR"], "1=1", "esriGeometryPoint", undefined, mock.request), /count changed during snapshot \(1 before, 2 after\)/);
 });
