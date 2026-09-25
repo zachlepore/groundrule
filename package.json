@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "gis:clearwater:pilot": "node scripts/gis/clearwater-pilot.mjs",
+    "gis:clearwater:full": "node scripts/gis/clearwater-full.mjs",
     "test:gis": "node --test tests/clearwater-gis-pilot.test.mjs",
     "test:evaluator": "tsx --test tests/evaluator.test.ts",
     "test:questions": "tsx --test tests/question-flow.test.ts",

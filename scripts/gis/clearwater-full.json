@@ -1,0 +1,18 @@
+{
+  "pilotName": "clearwater-full-v1",
+  "jurisdiction": "clearwater-fl",
+  "outputDirectory": "research/gis/data/clearwater-full-v1",
+  "qaSampleSize": 24,
+  "layers": {
+    "addresses": {
+      "where": "MUNICIPALITY = 'CLEARWATER'",
+      "fields": ["OBJECTID", "PIN_NUM", "SITEADDID", "ADDPTKEY", "FULLADDR", "MUNICIPALITY", "POSTCODE", "STATUS"]
+    },
+    "parcels": {
+      "fields": ["OBJECTID", "PARCELID", "STRAP", "SITE_ADDRESS", "SITE_CITY", "SITE_STATE", "SITE_ZIP", "LAND_USE_CODE"]
+    },
+    "zoning": {
+      "fields": ["OBJECTID", "ZONING", "ZONING_DESC", "SPECIAL"]
+    }
+  }
+}
