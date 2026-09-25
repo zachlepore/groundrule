@@ -1,0 +1,63 @@
+name: Clearwater full GIS extraction
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    name: Extract and validate municipality snapshot
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      PINELLAS_ADDRESSES_LAYER_URL: https://egis.pinellas.gov/gis/rest/services/PublicWebGIS/Parcels/MapServer/0
+      PINELLAS_PARCELS_LAYER_URL: https://egis.pinellas.gov/gis/rest/services/PublicWebGIS/Parcels/MapServer/1
+      CLEARWATER_ZONING_LAYER_URL: https://gis.myclearwater.com/arcgis/rest/services/ArcGISMapServices/Zoning_WGS84/MapServer/1
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Report ArcGIS endpoint reachability
+        continue-on-error: true
+        shell: bash
+        run: |
+          status=0
+          for variable in PINELLAS_ADDRESSES_LAYER_URL PINELLAS_PARCELS_LAYER_URL CLEARWATER_ZONING_LAYER_URL; do
+            url="${!variable}"
+            echo "::group::${variable}"
+            if curl --fail-with-body --location --silent --show-error \
+              --connect-timeout 20 --max-time 60 \
+              --output /dev/null --write-out 'HTTP %{http_code}\n' \
+              "${url}?f=json"; then
+              echo "Reachable: ${url}"
+            else
+              echo "Unreachable: ${url}" >&2
+              status=1
+            fi
+            echo "::endgroup::"
+          done
+          exit "${status}"
+
+      - name: Run full Clearwater extraction
+        run: npm run gis:clearwater:full
+
+      - name: Upload full snapshot and QA outputs
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: clearwater-full-gis-snapshot
+          path: research/gis/data/clearwater-full-v1/
+          if-no-files-found: warn
+          retention-days: 14

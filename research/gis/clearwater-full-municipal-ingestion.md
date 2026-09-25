@@ -50,3 +50,7 @@ Acceptance requires the final query to return exactly one CLEAN Clearwater row w
 ## Current stop condition (2026-09-25)
 
 This environment cannot reach the authoritative Pinellas endpoint: its network proxy returns HTTP 403 (`CONNECT tunnel failed`). Consequently no truthful full source counts, CLEAN/REVIEW percentages, database write counts, geographic manual comparisons, or full-dataset timings can be reported, and no production or staging load was attempted. This is an authoritative-source access constraint and a required stop condition. Re-run from a network allowed by the agencies, then review the generated artifacts before any database operation.
+
+## Manual GitHub extraction
+
+In GitHub, open **Actions → Clearwater full GIS extraction → Run workflow**. The manually triggered workflow runs the same full extractor against the authoritative endpoints and, on success, provides a `clearwater-full-gis-snapshot` download on the workflow run's **Artifacts** section. Successful extraction does **not** authorize a production database load: review the QA JSON, QA Markdown, REVIEW ledger, CLEAN candidates, and geographic sample before any staging or import work.
