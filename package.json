@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "gis:clearwater:pilot": "node scripts/gis/clearwater-pilot.mjs",
     "gis:clearwater:full": "node scripts/gis/clearwater-full.mjs",
+    "gis:clearwater:diagnose-zoning": "node scripts/gis/diagnose-clearwater-zoning.mjs",
     "test:gis": "node --test tests/clearwater-gis-pilot.test.mjs",
     "test:evaluator": "tsx --test tests/evaluator.test.ts",
     "test:questions": "tsx --test tests/question-flow.test.ts",
@@ -26,7 +27,13 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.109.0",
+    "@turf/area": "^7.4.0",
+    "@turf/bbox": "^7.4.0",
+    "@turf/boolean-valid": "^7.4.0",
+    "@turf/helpers": "^7.4.0",
+    "@turf/intersect": "^7.4.0",
     "next": "16.3.2",
+    "rbush": "^4.0.1",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "server-only": "^0.0.1"
