@@ -53,8 +53,13 @@ jobs:
       - name: Run full Clearwater extraction
         run: npm run gis:clearwater:full
 
+      - name: Diagnose zoning ambiguity
+        run: >-
+          npm run gis:clearwater:diagnose-zoning --
+          research/gis/data/clearwater-full-v1/
+          research/gis/data/clearwater-full-v1/zoning-diagnostic/
+
       - name: Upload full snapshot and QA outputs
-        if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
           name: clearwater-full-gis-snapshot
