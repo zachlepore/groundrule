@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "dataset": {
+    "id": "clearwater-sales-v1",
+    "designation": "curated_sales_demo",
+    "jurisdictionSlug": "clearwater-fl",
+    "municipality": "Clearwater",
+    "description": "Manually verified properties curated one at a time for the Clearwater Sales V1 demo. This is not full-city coverage."
+  },
+  "records": []
+}
