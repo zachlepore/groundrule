@@ -4,7 +4,7 @@
 
 ## Reviewed evidence
 
-There are 20 reviewed cases: 17 single-district confirmations and 3 true splits. Batch 1B's five cases were skipped without human labels.
+There are 25 reviewed cases: 20 single-district confirmations, 4 true splits (including one multipart split), and 1 unresolved staff-review case. Batch 1B's five cases were skipped without human labels.
 
 | Batch | Class | Human results |
 |---|---|---|
@@ -12,6 +12,7 @@ There are 20 reviewed cases: 17 single-district confirmations and 3 true splits.
 | 1C | Lower-dominance LMDR/OS/R | 5 confirmed LMDR, down to 96.887830% LMDR |
 | 2A | LMDR/P | 5 confirmed LMDR, including nearly 49.4% competing P coverage |
 | 3A | LMDR/MDR | 2 confirmed LMDR and 3 true splits |
+| 4A | LMDR/Commercial | 2 confirmed LMDR, 1 confirmed C, 1 unresolved staff review, and 1 multipart true split |
 
 All recorded reviews occurred October 6, 2026. Raw results and notes are preserved exactly, including the `MDR / LMDR` ordering for 3A-05. [The findings report](review-findings-3a.md) explains the evidence and sampling limits. [The Preservation research](p-preservation-research.md) establishes the meaning of P and preserves the separate open investigation for 2A-03. Neither report establishes a universal tolerance.
 
@@ -23,7 +24,7 @@ Record only explicitly answered cases. Preserve the human result and note verbat
 
 Reviewed zone arrays are research annotations. True splits must not be forced to a dominant district or address-point district. The conceptual future split property fact and resident wording are stored only as unimplemented human observations. Do not extrapolate an individual decision to other parcels, implement resolver rules or thresholds, or alter production classification, CLEAN/REVIEW status, Supabase, Guides or UX.
 
-LMDR/OS/R and LMDR/P sampling are paused at the user's request. The next approved class is LMDR versus Commercial (C), with broad dominant-coverage sampling and geographic variety where practical. Ask before proposing generalized resolver rules.
+LMDR/OS/R and LMDR/P sampling are paused at the user's request. Batch 4A completed the approved LMDR/Commercial (C) sampling. Case 4A-03 is technical development-district ambiguity, 4A-04 remains unresolved without a verified zone list, and 4A-05 preserves a linked, disconnected multipart-parcel split. Physical residential use is not evidence to override mapped zoning. Preserve these distinct outcomes; neither dominant area nor address-point location resolves a genuine split. Ask before proposing generalized resolver rules.
 
 ## Provenance and persistence
 

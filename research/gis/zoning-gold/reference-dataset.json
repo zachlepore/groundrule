@@ -86,6 +86,16 @@
       "singleDistrictCount": 2,
       "trueSplitCount": 3,
       "uncertainCount": 0
+    },
+    {
+      "batchId": "4A",
+      "status": "completed",
+      "pattern": "LMDR/Commercial (C), minor to near-even intersections; includes geometry uncertainty and multipart split.",
+      "humanReviewedCount": 5,
+      "singleDistrictCount": 3,
+      "trueSplitCount": 1,
+      "multipartSplitCount": 1,
+      "uncertainCount": 1
     }
   ],
   "observations": [
@@ -142,6 +152,14 @@
       "futurePathwaysObservation": "Groundrule could then provide the relevant pathways for both districts and direct the resident to the official zoning map / Planning for confirmation of which portion applies.",
       "implementationAuthorized": false,
       "instruction": "DO NOT implement that resident UX or production data-model change yet. Preserve TRUE SPLIT as distinct from UNCLEAR / STAFF REVIEW; do not establish a universal percentage threshold from this batch."
+    },
+    {
+      "batchId": "4A",
+      "author": "User participating in this chat",
+      "date": "2026-10-06",
+      "text": "for overlaps between two development districts, TRUE SPLIT should require a zoning boundary that materially divides the parcel or parcel components in a way that appears intentional/meaningful. A minor edge/corner intersection alone should not produce TRUE SPLIT. Preserve 4A-03 as an example of technical development-district ambiguity, 4A-04 as genuine unresolved uncertainty, and 4A-05 as a distinct multipart split-zoning case.",
+      "instruction": "Do not change production classification, thresholds, Supabase, Guides, or resident UX yet.",
+      "implementationAuthorized": false
     }
   ],
   "records": [
@@ -2009,6 +2027,391 @@
           "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
         }
       }
+    },
+    {
+      "caseNumber": "4A-01",
+      "batchId": "4A",
+      "address": "1349 S MICHIGAN AVE",
+      "parcelId": "222915489780100010",
+      "targetCoveragePercent": 99,
+      "selectionReason": "Near 99%; geographic alternative to north Clearwater cases.",
+      "alternateAddresses": [],
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.046231,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.046231
+          },
+          {
+            "zoningCode": "C",
+            "coveragePercent": 0.953769
+          }
+        ],
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false,
+        "zoningFeatures": [
+          {
+            "sourceIndex": 593,
+            "sourceIdentifier": 11083,
+            "rawZoningCode": "C",
+            "normalizedZoningCode": "c",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 5.693,
+            "percentOfParcel": 0.953769
+          },
+          {
+            "sourceIndex": 592,
+            "sourceIdentifier": 11082,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 591.247,
+            "percentOfParcel": 99.046231
+          }
+        ]
+      },
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "Official Clearwater viewer shows this parcel clearly as LMDR. The ~0.95% C intersection is negligible and appears to be another minor polygon/boundary mismatch rather than a meaningful split.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat",
+        "referenceCategory": "false_technical_ambiguity",
+        "reviewedZones": [
+          "LMDR"
+        ]
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "4A-02",
+      "batchId": "4A",
+      "address": "1729 JADE AVE",
+      "parcelId": "032915437400000210",
+      "targetCoveragePercent": 95,
+      "selectionReason": "Nearest 95%; incomplete total mapped coverage.",
+      "alternateAddresses": [],
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 95.819301,
+        "totalCoveragePercent": 96.659738,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 95.819301
+          },
+          {
+            "zoningCode": "C",
+            "coveragePercent": 0.840437
+          }
+        ],
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false,
+        "zoningFeatures": [
+          {
+            "sourceIndex": 651,
+            "sourceIdentifier": 11144,
+            "rawZoningCode": "C",
+            "normalizedZoningCode": "c",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 5.202,
+            "percentOfParcel": 0.840437
+          },
+          {
+            "sourceIndex": 319,
+            "sourceIdentifier": 10803,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 593.04,
+            "percentOfParcel": 95.819301
+          }
+        ]
+      },
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "Same interpretation as 4A-01. The competing C intersection is not meaningful in the official viewer; parcel is clearly LMDR.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat",
+        "referenceCategory": "false_technical_ambiguity",
+        "reviewedZones": [
+          "LMDR"
+        ]
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "4A-03",
+      "batchId": "4A",
+      "address": "2040 NE COACHMAN RD",
+      "parcelId": "122915826560110080",
+      "targetCoveragePercent": 85,
+      "selectionReason": "Nearest 85%; diagnostic flags zoning geometry.",
+      "alternateAddresses": [
+        "2050 NE COACHMAN RD",
+        "2034 NE COACHMAN RD"
+      ],
+      "diagnostic": {
+        "dominantZoning": "C",
+        "dominantCoveragePercent": 90.910087,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "C",
+            "coveragePercent": 90.910087
+          },
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 9.089913
+          }
+        ],
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": true,
+        "zoningFeatures": [
+          {
+            "sourceIndex": 474,
+            "sourceIdentifier": 10962,
+            "rawZoningCode": "C",
+            "normalizedZoningCode": "c",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1298.4,
+            "percentOfParcel": 90.910087
+          },
+          {
+            "sourceIndex": 637,
+            "sourceIdentifier": 11130,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": false,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 129.824,
+            "percentOfParcel": 9.089913
+          }
+        ]
+      },
+      "humanReview": {
+        "result": "CONFIRMED: C",
+        "note": "The official Clearwater viewer shows the parcel overwhelmingly within Commercial zoning. A small LMDR polygon clips the upper portion of the parcel, but this appears to be a zoning/parcel geometry mismatch rather than a meaningful split of the developed property. Do not classify this as TRUE SPLIT solely because two polygons intersect the parcel.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat",
+        "referenceCategory": "false_technical_ambiguity",
+        "reviewedZones": [
+          "C"
+        ]
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "4A-04",
+      "batchId": "4A",
+      "address": "511 SKYVIEW AVE",
+      "parcelId": "142915105660010200",
+      "targetCoveragePercent": 70,
+      "selectionReason": "Nearest 70%; diagnostic flags zoning geometry.",
+      "alternateAddresses": [],
+      "diagnostic": {
+        "dominantZoning": "C",
+        "dominantCoveragePercent": 64.354143,
+        "totalCoveragePercent": 100.00001,
+        "candidates": [
+          {
+            "zoningCode": "C",
+            "coveragePercent": 64.354143
+          },
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 35.645867
+          }
+        ],
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": true,
+        "zoningFeatures": [
+          {
+            "sourceIndex": 742,
+            "sourceIdentifier": 11243,
+            "rawZoningCode": "C",
+            "normalizedZoningCode": "c",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 690.537,
+            "percentOfParcel": 64.354143
+          },
+          {
+            "sourceIndex": 383,
+            "sourceIdentifier": 10867,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": false,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 382.489,
+            "percentOfParcel": 35.645867
+          }
+        ]
+      },
+      "humanReview": {
+        "result": "UNCLEAR / STAFF REVIEW — C / LMDR",
+        "note": "Official Clearwater zoning viewer depicts most of the parcel as C with an LMDR portion along the south. The site is physically residential, but existing land use cannot be used to override the City's zoning map. This could represent intentional commercial zoning of a residential use, a lawful/nonconforming use, or a GIS boundary issue. Do not infer a single zoning designation without additional authoritative confirmation.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_staff_review",
+        "reviewer": "User participating in this chat",
+        "referenceCategory": "unresolved_uncertain",
+        "reviewedZones": [],
+        "reportedZoneContext": [
+          "C",
+          "LMDR"
+        ]
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      },
+      "researchFollowUp": {
+        "status": "open",
+        "reason": "Authoritative staff confirmation needed; residential land use must not override mapped zoning. No single zoning interpretation established."
+      }
+    },
+    {
+      "caseNumber": "4A-05",
+      "batchId": "4A",
+      "address": "402 MARSHALL ST",
+      "parcelId": "092915555300000170",
+      "targetCoveragePercent": 50,
+      "selectionReason": "Nearest 50%; nearly equal Commercial/LMDR coverage.",
+      "alternateAddresses": [
+        "1620 N FORT HARRISON AVE"
+      ],
+      "diagnostic": {
+        "dominantZoning": "C",
+        "dominantCoveragePercent": 50.000134,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "C",
+            "coveragePercent": 50.000134
+          },
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 49.999866
+          }
+        ],
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false,
+        "zoningFeatures": [
+          {
+            "sourceIndex": 173,
+            "sourceIdentifier": 10654,
+            "rawZoningCode": "C",
+            "normalizedZoningCode": "c",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 463.673,
+            "percentOfParcel": 50.000134
+          },
+          {
+            "sourceIndex": 437,
+            "sourceIdentifier": 10924,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 463.671,
+            "percentOfParcel": 49.999866
+          }
+        ]
+      },
+      "humanReview": {
+        "result": "TRUE SPLIT / MULTIPART PARCEL — LMDR / C",
+        "note": "Clearwater’s official viewer selects both disconnected parcel components together when either is clicked, indicating that they are treated as one linked/multipart parcel record. The components fall in different zoning districts. Preserve this as a distinct multipart-parcel edge case; do not resolve using dominant area or address-point location.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_true_split",
+        "reviewer": "User participating in this chat",
+        "referenceCategory": "true_split_zoning",
+        "reviewedZones": [
+          "LMDR",
+          "C"
+        ],
+        "splitType": "multipart_parcel",
+        "parcelMultipartReported": true,
+        "multipartEvidence": "Human reports both disconnected components select together as one linked parcel record in the official viewer."
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
     }
   ],
   "samplingState": {
@@ -2020,15 +2423,16 @@
     "currentBatch": null,
     "generalizedResolverRuleApproved": false,
     "productionThresholdApproved": false,
-    "lastCompletedBatch": "3A",
-    "proposedNextClass": "LMDR/C",
-    "proposalStatus": "proposed_not_queued"
+    "lastCompletedBatch": "4A",
+    "proposedNextClass": null,
+    "proposalStatus": "awaiting_next_sampling_direction"
   },
   "summaryCounts": {
-    "reviewed": 20,
-    "humanConfirmed": 17,
-    "trueSplit": 3,
-    "staffReview": 0,
+    "reviewed": 25,
+    "humanConfirmed": 20,
+    "trueSplit": 4,
+    "multipartSplit": 1,
+    "staffReview": 1,
     "skippedUnreviewed": 5
   }
 }
