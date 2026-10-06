@@ -1,0 +1,2034 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "clearwater-zoning-human-reference-v1",
+  "purpose": "Human-reviewed research examples for future resolver evaluation; no production effects.",
+  "sourceRunUrl": "https://github.com/zachlepore/groundrule/actions/runs/36493181320",
+  "sourceFiles": [
+    {
+      "path": "database-review.json",
+      "bytes": 30635392,
+      "sha256": "bb34bb7a2048a6031f37f68c8571a244a9049f473a029f0ef45a42ad85f56112"
+    },
+    {
+      "path": "source-metadata.json",
+      "bytes": 3719,
+      "sha256": "f94920bfd23a89169fafbf97658c21312c6930cf5d55e0f765db698cabfb1989"
+    },
+    {
+      "path": "validation-report.json",
+      "bytes": 10196,
+      "sha256": "b51d57f1dc737ecfb862e4c49626558a3662d83b263e30f8b08c90f38925cb78"
+    },
+    {
+      "path": "zoning.geojson",
+      "bytes": 2289896,
+      "sha256": "56ee74e1c2e8fab582efcdda388008e77205237439169c13191caa0ecb31929b"
+    },
+    {
+      "path": "zoning-diagnostic/zoning-diagnostic.json",
+      "bytes": 26136992,
+      "sha256": "f0b1edcbdd960019b3f153cd4cbd3b393cbb800f74c892642917f08378fe86e3"
+    },
+    {
+      "path": "zoning-diagnostic/representative-samples.md",
+      "bytes": 1987,
+      "sha256": "f00f35a446f68d8da2f6ba82a1c483f490e35f88d862fd1152ead85cc02a4f06"
+    }
+  ],
+  "evidenceLimitations": [
+    "Original artifact ZIP and raw parcel source hash not independently verified here.",
+    "Viewer verification is reported by the human reviewer; no screenshots or staff determinations supplied.",
+    "Diagnostic percentages are predictions, not human labels."
+  ],
+  "reviewProtocol": {
+    "batchSize": 5,
+    "acceptedResponses": [
+      "CONFIRMED: <zoning code>",
+      "TRUE SPLIT",
+      "UNCLEAR / STAFF REVIEW"
+    ],
+    "verificationMethod": "Clearwater official zoning viewer",
+    "parcelGeometryUploadRequired": false,
+    "preserveHumanResultAndNoteVerbatim": true,
+    "productionChangesAllowed": false
+  },
+  "batches": [
+    {
+      "batchId": "1A",
+      "status": "completed",
+      "pattern": "Microscopic OS/R intersections with approximately 99.996% LMDR dominance; Masters Drive.",
+      "humanReviewedCount": 5
+    },
+    {
+      "batchId": "1B",
+      "status": "skipped_unreviewed",
+      "pattern": "LMDR + OS/R with 99.9–99.99% LMDR dominance.",
+      "humanReviewedCount": 0,
+      "skipReason": "User requested skipping this band as too similar to Batch 1A; no human decisions supplied."
+    },
+    {
+      "batchId": "1C",
+      "status": "completed",
+      "pattern": "LMDR/OS/R from 99.005034% down to 96.887830% LMDR.",
+      "humanReviewedCount": 5
+    },
+    {
+      "batchId": "2A",
+      "status": "completed",
+      "pattern": "LMDR/P across 99.999962% to 50.601139% dominant LMDR; distinct addresses.",
+      "humanReviewedCount": 5
+    },
+    {
+      "batchId": "3A",
+      "status": "completed",
+      "pattern": "LMDR/MDR development-district pair, dominant coverage 98.998339% to 51.216386%.",
+      "humanReviewedCount": 5,
+      "singleDistrictCount": 2,
+      "trueSplitCount": 3,
+      "uncertainCount": 0
+    }
+  ],
+  "observations": [
+    {
+      "batchId": "1A",
+      "author": "User participating in this chat",
+      "date": "2026-10-06",
+      "text": "requiring effectively 100% polygon agreement is too strict for these datasets. These ~99.996% LMDR parcels are clearly LMDR in the official viewer despite microscopic OS/R intersections.",
+      "instruction": "Record these labels, but do not generalize a new production threshold yet—continue sampling lower-dominance bands so we can determine a defensible tolerance from the gold set."
+    },
+    {
+      "batchId": "1C",
+      "author": "User participating in this chat",
+      "date": "2026-10-06",
+      "text": "even down to ~96.9% dominant LMDR, these LMDR/OS/R cases are still visually unambiguous in the official Clearwater viewer. The OS/R intersection appears to be surrounding/open-space geometry rather than a meaningful competing parcel zoning assignment.",
+      "instruction": "Record these exact human decisions in the gold/reference dataset, but do not change production classification or establish a threshold yet. Since the LMDR/OS/R class bottoms out around 96.89% in the supplied diagnostic and is still resolving clearly, stop sampling this class for now."
+    },
+    {
+      "batchId": "2A",
+      "author": "User participating in this chat",
+      "date": "2026-10-06",
+      "text": "this batch indicates `P` should not be treated as an ordinary competing base-zoning polygon for parcel classification. Even very large `P` intersection percentages can occur on clearly LMDR residential parcels because parcel geometry extends into ponds/water.",
+      "instruction": "Record these decisions, but do not change production logic yet. Pause LMDR/P sampling after recording these five."
+    },
+    {
+      "batchId": "3A",
+      "author": "User participating in this chat",
+      "date": "2026-10-06",
+      "distinctions": [
+        {
+          "category": "false_technical_ambiguity",
+          "description": "a small intersection with another development district where the official viewer still clearly presents the parcel as one district.",
+          "futureConsideration": "These should eventually be resolvable by improved deterministic GIS logic."
+        },
+        {
+          "category": "true_split_zoning",
+          "description": "The official zoning boundary materially crosses the legal parcel and both zoning districts are genuinely present.",
+          "futureConsideration": "This should NOT eventually be forced into one dominant zoning classification."
+        },
+        {
+          "category": "unresolved_uncertain",
+          "description": "Groundrule cannot confidently establish the applicable zoning interpretation and staff confirmation is required."
+        }
+      ],
+      "futureArchitectureObservation": "For future architecture, TRUE SPLIT should be considered a legitimate property fact rather than simply a failed lookup.",
+      "conceptualFuturePropertyFact": {
+        "zoning_status": "split",
+        "zones": [
+          "LMDR",
+          "MDR"
+        ]
+      },
+      "conceptualFutureResidentCopy": "This property appears to span two zoning districts: LMDR and MDR. The rules that apply may depend on where your proposed project is located on the parcel.",
+      "futurePathwaysObservation": "Groundrule could then provide the relevant pathways for both districts and direct the resident to the official zoning map / Planning for confirmation of which portion applies.",
+      "implementationAuthorized": false,
+      "instruction": "DO NOT implement that resident UX or production data-model change yet. Preserve TRUE SPLIT as distinct from UNCLEAR / STAFF REVIEW; do not establish a universal percentage threshold from this batch."
+    }
+  ],
+  "records": [
+    {
+      "caseNumber": "1A-01",
+      "batchId": "1A",
+      "address": "3136 MASTERS DR",
+      "parcelId": "202816186670000010",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.996949,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.996949,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 0.003051,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 665,
+            "sourceIdentifier": 11158,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 5103.974,
+            "percentOfParcel": 99.996949
+          },
+          {
+            "sourceIndex": 43,
+            "sourceIdentifier": 10523,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 0.156,
+            "percentOfParcel": 0.003051
+          }
+        ],
+        "diagnosticCandidate": true,
+        "sourceAddressIdentifier": 470878
+      },
+      "selectionReason": "Overwhelming LMDR dominance with microscopic OS/R intersection; Masters Drive comparison group.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "OS/R does not meaningfully overlap the parcel in the official viewer; this appears to be a tiny GIS boundary/sliver artifact.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "1A-02",
+      "batchId": "1A",
+      "address": "3116 MASTERS DR",
+      "parcelId": "202816186450000260",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.996597,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.996597,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 0.003403,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 665,
+            "sourceIdentifier": 11158,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1130.453,
+            "percentOfParcel": 99.996597
+          },
+          {
+            "sourceIndex": 43,
+            "sourceIdentifier": 10523,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 0.038,
+            "percentOfParcel": 0.003403
+          }
+        ],
+        "diagnosticCandidate": true,
+        "sourceAddressIdentifier": 141488
+      },
+      "selectionReason": "Overwhelming LMDR dominance with microscopic OS/R intersection; Masters Drive comparison group.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "same pattern as 1A-01.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "1A-03",
+      "batchId": "1A",
+      "address": "3124 MASTERS DR",
+      "parcelId": "202816186450000280",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.996516,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.996516,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 0.003484,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 665,
+            "sourceIdentifier": 11158,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1533.509,
+            "percentOfParcel": 99.996516
+          },
+          {
+            "sourceIndex": 43,
+            "sourceIdentifier": 10523,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 0.053,
+            "percentOfParcel": 0.003484
+          }
+        ],
+        "diagnosticCandidate": true,
+        "sourceAddressIdentifier": 281550
+      },
+      "selectionReason": "Overwhelming LMDR dominance with microscopic OS/R intersection; Masters Drive comparison group.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "same pattern as 1A-01.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "1A-04",
+      "batchId": "1A",
+      "address": "3112 MASTERS DR",
+      "parcelId": "202816186450000250",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.996411,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.996411,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 0.003589,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 665,
+            "sourceIdentifier": 11158,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1130.451,
+            "percentOfParcel": 99.996411
+          },
+          {
+            "sourceIndex": 43,
+            "sourceIdentifier": 10523,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 0.041,
+            "percentOfParcel": 0.003589
+          }
+        ],
+        "diagnosticCandidate": true,
+        "sourceAddressIdentifier": 141487
+      },
+      "selectionReason": "Overwhelming LMDR dominance with microscopic OS/R intersection; Masters Drive comparison group.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "same pattern as 1A-01.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "1A-05",
+      "batchId": "1A",
+      "address": "3104 MASTERS DR",
+      "parcelId": "202816186450000230",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.996267,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.996267,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 0.003733,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 665,
+            "sourceIdentifier": 11158,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1129.453,
+            "percentOfParcel": 99.996267
+          },
+          {
+            "sourceIndex": 43,
+            "sourceIdentifier": 10523,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 0.042,
+            "percentOfParcel": 0.003733
+          }
+        ],
+        "diagnosticCandidate": true,
+        "sourceAddressIdentifier": 141485
+      },
+      "selectionReason": "Overwhelming LMDR dominance with microscopic OS/R intersection; Masters Drive comparison group.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "same pattern as 1A-01.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "1B-01",
+      "batchId": "1B",
+      "address": "3266 MASTERS DR",
+      "parcelId": "172816186440000500",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.988977,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.988977,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 0.011023,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 665,
+            "sourceIdentifier": 11158,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1491.367,
+            "percentOfParcel": 99.988977
+          },
+          {
+            "sourceIndex": 43,
+            "sourceIdentifier": 10523,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 0.164,
+            "percentOfParcel": 0.011023
+          }
+        ],
+        "diagnosticCandidate": true,
+        "sourceAddressIdentifier": 368205
+      },
+      "selectionReason": "Lower LMDR dominance (99.9–99.99%) with small OS/R intersection; same two-code ambiguity class.",
+      "humanReview": {
+        "result": null,
+        "note": null,
+        "reviewDate": null,
+        "verificationMethod": null,
+        "reviewStatus": "pending",
+        "reviewer": null
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      },
+      "queueStatus": "skipped_unreviewed"
+    },
+    {
+      "caseNumber": "1B-02",
+      "batchId": "1B",
+      "address": "844 ELDORADO AVE",
+      "parcelId": "052915546660060040",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.968139,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.968139,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 0.031861,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 281,
+            "sourceIdentifier": 10764,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 572.967,
+            "percentOfParcel": 99.968139
+          },
+          {
+            "sourceIndex": 466,
+            "sourceIdentifier": 10954,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 0.183,
+            "percentOfParcel": 0.031861
+          }
+        ],
+        "diagnosticCandidate": true,
+        "sourceAddressIdentifier": 338617
+      },
+      "selectionReason": "Lower LMDR dominance (99.9–99.99%) with small OS/R intersection; same two-code ambiguity class.",
+      "humanReview": {
+        "result": null,
+        "note": null,
+        "reviewDate": null,
+        "verificationMethod": null,
+        "reviewStatus": "pending",
+        "reviewer": null
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      },
+      "queueStatus": "skipped_unreviewed"
+    },
+    {
+      "caseNumber": "1B-03",
+      "batchId": "1B",
+      "address": "2878 QUAIL HOLLOW RD W",
+      "parcelId": "292816623790000270",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.967808,
+        "totalCoveragePercent": 100.006313,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.967808,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 0.038505,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 61,
+            "sourceIdentifier": 10541,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1285.281,
+            "percentOfParcel": 99.967808
+          },
+          {
+            "sourceIndex": 43,
+            "sourceIdentifier": 10523,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 0.495,
+            "percentOfParcel": 0.038505
+          }
+        ],
+        "diagnosticCandidate": true,
+        "sourceAddressIdentifier": 145829
+      },
+      "selectionReason": "Lower LMDR dominance (99.9–99.99%) with small OS/R intersection; same two-code ambiguity class.",
+      "humanReview": {
+        "result": null,
+        "note": null,
+        "reviewDate": null,
+        "verificationMethod": null,
+        "reviewStatus": "pending",
+        "reviewer": null
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      },
+      "queueStatus": "skipped_unreviewed"
+    },
+    {
+      "caseNumber": "1B-04",
+      "batchId": "1B",
+      "address": "3100 MASTERS DR",
+      "parcelId": "202816186450000220",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.953058,
+        "totalCoveragePercent": 99.999999,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.953058,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 0.046941,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 665,
+            "sourceIdentifier": 11158,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1489.927,
+            "percentOfParcel": 99.953058
+          },
+          {
+            "sourceIndex": 43,
+            "sourceIdentifier": 10523,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 0.7,
+            "percentOfParcel": 0.046941
+          }
+        ],
+        "diagnosticCandidate": true,
+        "sourceAddressIdentifier": 141484
+      },
+      "selectionReason": "Lower LMDR dominance (99.9–99.99%) with small OS/R intersection; same two-code ambiguity class.",
+      "humanReview": {
+        "result": null,
+        "note": null,
+        "reviewDate": null,
+        "verificationMethod": null,
+        "reviewStatus": "pending",
+        "reviewer": null
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      },
+      "queueStatus": "skipped_unreviewed"
+    },
+    {
+      "caseNumber": "1B-05",
+      "batchId": "1B",
+      "address": "2815 QUAIL HOLLOW RD E",
+      "parcelId": "292816623790000280",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.945613,
+        "totalCoveragePercent": 100.010752,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.945613,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 0.065139,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 61,
+            "sourceIdentifier": 10541,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1106.191,
+            "percentOfParcel": 99.945613
+          },
+          {
+            "sourceIndex": 43,
+            "sourceIdentifier": 10523,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 0.721,
+            "percentOfParcel": 0.065139
+          }
+        ],
+        "diagnosticCandidate": true,
+        "sourceAddressIdentifier": 459151
+      },
+      "selectionReason": "Lower LMDR dominance (99.9–99.99%) with small OS/R intersection; same two-code ambiguity class.",
+      "humanReview": {
+        "result": null,
+        "note": null,
+        "reviewDate": null,
+        "verificationMethod": null,
+        "reviewStatus": "pending",
+        "reviewer": null
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      },
+      "queueStatus": "skipped_unreviewed"
+    },
+    {
+      "caseNumber": "1C-01",
+      "batchId": "1C",
+      "address": "3233 HYDE PARK DR",
+      "parcelId": "172816186440000200",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.005034,
+        "totalCoveragePercent": 99.999999,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.005034,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 0.994965,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 665,
+            "sourceIdentifier": 11158,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1342.092,
+            "percentOfParcel": 99.005034
+          },
+          {
+            "sourceIndex": 43,
+            "sourceIdentifier": 10523,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 13.488,
+            "percentOfParcel": 0.994965
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 141044,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Lower-dominance LMDR/OS/R calibration case; official-viewer human review.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "OS/R overlap is not meaningful in the official viewer; visually this is clearly an LMDR parcel.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "1C-02",
+      "batchId": "1C",
+      "address": "2875 GREEN MEADOW CT",
+      "parcelId": "202816498570001060",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 97.969992,
+        "totalCoveragePercent": 100.000002,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 97.969992,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 2.03001,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 63,
+            "sourceIdentifier": 10543,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1614.343,
+            "percentOfParcel": 97.969992
+          },
+          {
+            "sourceIndex": 230,
+            "sourceIdentifier": 10713,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 33.45,
+            "percentOfParcel": 2.03001
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 141671,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Lower-dominance LMDR/OS/R calibration case; official-viewer human review.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "same interpretation.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "1C-03",
+      "batchId": "1C",
+      "address": "1400 W VIRGINIA LN",
+      "parcelId": "082916943020110160",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 97.208776,
+        "totalCoveragePercent": 100.055798,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 97.208776,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 2.847022,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 645,
+            "sourceIdentifier": 11138,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": false,
+            "multipart": true,
+            "intersectionAreaSquareMeters": 911.745,
+            "percentOfParcel": 97.208776
+          },
+          {
+            "sourceIndex": 620,
+            "sourceIdentifier": 11113,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 26.703,
+            "percentOfParcel": 2.847022
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 351148,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": true
+      },
+      "selectionReason": "Lower-dominance LMDR/OS/R calibration case; official-viewer human review.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "same interpretation.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "1C-04",
+      "batchId": "1C",
+      "address": "2841 MOONBEAM WAY",
+      "parcelId": "322816884270000002",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 97.182497,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 97.182497,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 2.817503,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 61,
+            "sourceIdentifier": 10541,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 2179.854,
+            "percentOfParcel": 97.182497
+          },
+          {
+            "sourceIndex": 120,
+            "sourceIdentifier": 10600,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 63.198,
+            "percentOfParcel": 2.817503
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 624188,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Lower-dominance LMDR/OS/R calibration case; official-viewer human review.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "same interpretation.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "1C-05",
+      "batchId": "1C",
+      "address": "3045 PIN OAK DR",
+      "parcelId": "332816803900060120",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 96.88783,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 96.88783,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "OS/R",
+            "coveragePercent": 3.11217,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 61,
+            "sourceIdentifier": 10541,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 869.65,
+            "percentOfParcel": 96.88783
+          },
+          {
+            "sourceIndex": 120,
+            "sourceIdentifier": 10600,
+            "rawZoningCode": "OS/R",
+            "normalizedZoningCode": "os/r",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 27.934,
+            "percentOfParcel": 3.11217
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 147983,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Lower-dominance LMDR/OS/R calibration case; official-viewer human review.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "same interpretation.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "2A-01",
+      "batchId": "2A",
+      "address": "295 BAYSIDE DR",
+      "parcelId": "082915049680000050",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 99.999962,
+        "totalCoveragePercent": 100.000003,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 99.999962,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "P",
+            "coveragePercent": 0.000041,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 413,
+            "sourceIdentifier": 10897,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 996.891,
+            "percentOfParcel": 99.999962
+          },
+          {
+            "sourceIndex": 605,
+            "sourceIdentifier": 11095,
+            "rawZoningCode": "P",
+            "normalizedZoningCode": "p",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 0,
+            "percentOfParcel": 0.000041
+          }
+        ],
+        "diagnosticCandidate": true,
+        "sourceAddressIdentifier": 153571,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "New LMDR/P class, microscopic competing P baseline.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "waterfront/ocean adjacency; `P` does not represent a meaningful competing parcel zoning assignment.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "2A-02",
+      "batchId": "2A",
+      "address": "859 BAY ESPLANADE",
+      "parcelId": "052915546660400050",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 95.539097,
+        "totalCoveragePercent": 100.000068,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 95.539097,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "P",
+            "coveragePercent": 4.460971,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 281,
+            "sourceIdentifier": 10764,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 761.571,
+            "percentOfParcel": 95.539097
+          },
+          {
+            "sourceIndex": 452,
+            "sourceIdentifier": 10940,
+            "rawZoningCode": "P",
+            "normalizedZoningCode": "p",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 35.56,
+            "percentOfParcel": 4.460971
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 153348,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Approximately 95% LMDR with a larger P intersection.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "small water/sliver interaction; property is clearly LMDR in the official viewer.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "2A-03",
+      "batchId": "2A",
+      "address": "1773 OWEN DR",
+      "parcelId": "052916714240000100",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 87.198015,
+        "totalCoveragePercent": 97.628407,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 87.198015,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "P",
+            "coveragePercent": 10.430392,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 692,
+            "sourceIdentifier": 11191,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 694.144,
+            "percentOfParcel": 87.198015
+          },
+          {
+            "sourceIndex": 678,
+            "sourceIdentifier": 11174,
+            "rawZoningCode": "P",
+            "normalizedZoningCode": "p",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 83.032,
+            "percentOfParcel": 10.430392
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 206356,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Approximately 87% LMDR with P plus incomplete total diagnostic coverage.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "no obvious water shown in imagery; `P` may reflect a City GIS feature, flood/water-related geometry, or another mapping artifact, but the parcel is clearly presented as LMDR. Flag this one as worth understanding separately.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      },
+      "researchFollowUp": {
+        "status": "open",
+        "reason": "Human requested separate investigation of P geometry; no obvious water shown in imagery.",
+        "pZoningObjectId": 11174,
+        "lmdrZoningObjectId": 11191,
+        "incompleteDiagnosticCoveragePercent": 2.371593
+      }
+    },
+    {
+      "caseNumber": "2A-04",
+      "batchId": "2A",
+      "address": "115 EVELYN AVE",
+      "parcelId": "182916345600050230",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 69.205499,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 69.205499,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "P",
+            "coveragePercent": 30.794501,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 495,
+            "sourceIdentifier": 10984,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 624.329,
+            "percentOfParcel": 69.205499
+          },
+          {
+            "sourceIndex": 496,
+            "sourceIdentifier": 10985,
+            "rawZoningCode": "P",
+            "normalizedZoningCode": "p",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 277.809,
+            "percentOfParcel": 30.794501
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 382399,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Approximately 69% LMDR versus 31% P.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "`P` corresponds to the pond behind the residential properties; parcel is clearly LMDR.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "2A-05",
+      "batchId": "2A",
+      "address": "1012 N OSCEOLA AVE",
+      "parcelId": "092915255420010010",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 50.601139,
+        "totalCoveragePercent": 100.000024,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 50.601139,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "P",
+            "coveragePercent": 49.398885,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 437,
+            "sourceIdentifier": 10924,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 4910.33,
+            "percentOfParcel": 50.601139
+          },
+          {
+            "sourceIndex": 452,
+            "sourceIdentifier": 10940,
+            "rawZoningCode": "P",
+            "normalizedZoningCode": "p",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 4793.663,
+            "percentOfParcel": 49.398885
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 153864,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Near-even LMDR/P diagnostic coverage.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "parcel extends substantially into water / includes dock-water area, creating nearly 50% `P` intersection, but the developed property is clearly LMDR.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat"
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "3A-01",
+      "batchId": "3A",
+      "address": "1973 BECKETT LAKE DR",
+      "parcelId": "012915061150030080",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 98.998339,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 98.998339,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "MDR",
+            "coveragePercent": 1.001661,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 406,
+            "sourceIdentifier": 10890,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 649.583,
+            "percentOfParcel": 98.998339
+          },
+          {
+            "sourceIndex": 325,
+            "sourceIdentifier": 10809,
+            "rawZoningCode": "MDR",
+            "normalizedZoningCode": "mdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 6.572,
+            "percentOfParcel": 1.001661
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 149346,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Two development zoning districts (LMDR/MDR); compare minor, substantial, and near-even intersections.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "The ~1.0% MDR intersection is negligible in the official Clearwater viewer. The parcel is clearly presented as LMDR and does not appear meaningfully split.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat",
+        "referenceCategory": "false_technical_ambiguity",
+        "reviewedZones": [
+          "LMDR"
+        ]
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "3A-02",
+      "batchId": "3A",
+      "address": "1925 N BETTY LN",
+      "parcelId": "032915499860000130",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 95.696176,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 95.696176,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "MDR",
+            "coveragePercent": 4.303824,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 411,
+            "sourceIdentifier": 10895,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 712.502,
+            "percentOfParcel": 95.696176
+          },
+          {
+            "sourceIndex": 402,
+            "sourceIdentifier": 10886,
+            "rawZoningCode": "MDR",
+            "normalizedZoningCode": "mdr",
+            "geometryValid": true,
+            "multipart": true,
+            "intersectionAreaSquareMeters": 32.044,
+            "percentOfParcel": 4.303824
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 338559,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Two development zoning districts (LMDR/MDR); compare minor, substantial, and near-even intersections.",
+      "humanReview": {
+        "result": "CONFIRMED: LMDR",
+        "note": "Same interpretation as 3A-01. The ~4.3% MDR intersection does not appear to represent a meaningful split of the parcel in the official viewer.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_confirmed",
+        "reviewer": "User participating in this chat",
+        "referenceCategory": "false_technical_ambiguity",
+        "reviewedZones": [
+          "LMDR"
+        ]
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "3A-03",
+      "batchId": "3A",
+      "address": "2811 RAMPART CIR",
+      "parcelId": "172816149050000600",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 69.282837,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 69.282837,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "MDR",
+            "coveragePercent": 30.717163,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 144,
+            "sourceIdentifier": 10624,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 3522.558,
+            "percentOfParcel": 69.282837
+          },
+          {
+            "sourceIndex": 210,
+            "sourceIdentifier": 10691,
+            "rawZoningCode": "MDR",
+            "normalizedZoningCode": "mdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1561.757,
+            "percentOfParcel": 30.717163
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 138239,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Two development zoning districts (LMDR/MDR); compare minor, substantial, and near-even intersections.",
+      "humanReview": {
+        "result": "TRUE SPLIT: LMDR / MDR",
+        "note": "The zoning boundary materially crosses the parcel in the official Clearwater viewer. Do not resolve this using dominant percentage or the address point.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_true_split",
+        "reviewer": "User participating in this chat",
+        "referenceCategory": "true_split_zoning",
+        "reviewedZones": [
+          "LMDR",
+          "MDR"
+        ]
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "3A-04",
+      "batchId": "3A",
+      "address": "2809 DELACHAISE CT",
+      "parcelId": "172816149050000820",
+      "diagnostic": {
+        "dominantZoning": "LMDR",
+        "dominantCoveragePercent": 52.379527,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 52.379527,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "MDR",
+            "coveragePercent": 47.620473,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 144,
+            "sourceIdentifier": 10624,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 2104.687,
+            "percentOfParcel": 52.379527
+          },
+          {
+            "sourceIndex": 210,
+            "sourceIdentifier": 10691,
+            "rawZoningCode": "MDR",
+            "normalizedZoningCode": "mdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1913.461,
+            "percentOfParcel": 47.620473
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 138236,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Two development zoning districts (LMDR/MDR); compare minor, substantial, and near-even intersections.",
+      "humanReview": {
+        "result": "TRUE SPLIT: LMDR / MDR",
+        "note": "Same interpretation as 3A-03. Both development zoning districts materially occupy the parcel.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_true_split",
+        "reviewer": "User participating in this chat",
+        "referenceCategory": "true_split_zoning",
+        "reviewedZones": [
+          "LMDR",
+          "MDR"
+        ]
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    },
+    {
+      "caseNumber": "3A-05",
+      "batchId": "3A",
+      "address": "3424 ANNETTE CT",
+      "parcelId": "172816149050000640",
+      "diagnostic": {
+        "dominantZoning": "MDR",
+        "dominantCoveragePercent": 51.216386,
+        "totalCoveragePercent": 100,
+        "candidates": [
+          {
+            "zoningCode": "MDR",
+            "coveragePercent": 51.216386,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          },
+          {
+            "zoningCode": "LMDR",
+            "coveragePercent": 48.783614,
+            "featureCount": 1,
+            "overlappingPolygons": false
+          }
+        ],
+        "zoningFeatures": [
+          {
+            "sourceIndex": 144,
+            "sourceIdentifier": 10624,
+            "rawZoningCode": "LMDR",
+            "normalizedZoningCode": "lmdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1151.004,
+            "percentOfParcel": 48.783614
+          },
+          {
+            "sourceIndex": 210,
+            "sourceIdentifier": 10691,
+            "rawZoningCode": "MDR",
+            "normalizedZoningCode": "mdr",
+            "geometryValid": true,
+            "multipart": false,
+            "intersectionAreaSquareMeters": 1208.403,
+            "percentOfParcel": 51.216386
+          }
+        ],
+        "diagnosticCandidate": false,
+        "sourceAddressIdentifier": 138325,
+        "parcelGeometryValid": true,
+        "hasInvalidZoningGeometry": false
+      },
+      "selectionReason": "Two development zoning districts (LMDR/MDR); compare minor, substantial, and near-even intersections.",
+      "humanReview": {
+        "result": "TRUE SPLIT: MDR / LMDR",
+        "note": "Same underlying condition as 3A-03 and 3A-04. The parcel is genuinely split between two development zoning districts; MDR happens to be the slight majority.",
+        "reviewDate": "2026-10-06",
+        "verificationMethod": "Clearwater official zoning viewer",
+        "reviewStatus": "human_true_split",
+        "reviewer": "User participating in this chat",
+        "referenceCategory": "true_split_zoning",
+        "reviewedZones": [
+          "MDR",
+          "LMDR"
+        ]
+      },
+      "sourceSnapshots": {
+        "addresses": {
+          "retrievedAt": "2026-09-28T22:35:05.311Z",
+          "sha256": "d12a20140e6e15f77c9c36e1491604bae11c8be2a00af194b1f6dc4b622d264d"
+        },
+        "parcels": {
+          "retrievedAt": "2026-09-28T22:40:38.416Z",
+          "sha256": "03d32130650c896341a562810da21c87f2e8cc4ab0383972e5c54b3a609c3aa1"
+        },
+        "zoning": {
+          "retrievedAt": "2026-09-28T22:40:41.232Z",
+          "sha256": "f4c73ba22eed03d42c70c9c592a2dcd2f36f86cb3aac63259d28e771fb78e354"
+        }
+      }
+    }
+  ],
+  "samplingState": {
+    "pausedClasses": [
+      "LMDR/OS/R",
+      "LMDR/P"
+    ],
+    "activeClass": null,
+    "currentBatch": null,
+    "generalizedResolverRuleApproved": false,
+    "productionThresholdApproved": false,
+    "lastCompletedBatch": "3A",
+    "proposedNextClass": "LMDR/C",
+    "proposalStatus": "proposed_not_queued"
+  },
+  "summaryCounts": {
+    "reviewed": 20,
+    "humanConfirmed": 17,
+    "trueSplit": 3,
+    "staffReview": 0,
+    "skippedUnreviewed": 5
+  }
+}
