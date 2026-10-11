@@ -1,0 +1,56 @@
+name: Clearwater Rule 001 candidate and QC
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Test research candidate and exclusions
+        run: node --test tests/clearwater-rule001.test.mjs
+      - name: Download permanently preserved release (not Actions source artifact)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/rule001"
+          curl --fail --location --silent --show-error --retry 2 \
+            --output "$RUNNER_TEMP/rule001/source.zip" \
+            https://github.com/zachlepore/groundrule/releases/download/clearwater-gis-2026-09-28/clearwater-full-gis-snapshot.zip
+          python3 scripts/gis/unpack-rule001-release.py "$RUNNER_TEMP/rule001/source.zip" "$RUNNER_TEMP/rule001/source"
+      - name: Verify full frozen source and generate provisional citywide outputs
+        run: node scripts/gis/clearwater-rule001.mjs "$RUNNER_TEMP/rule001/source" "$RUNNER_TEMP/rule001/output"
+      - name: Validate full output and unchanged source
+        run: node scripts/gis/verify-rule001-output.mjs "$RUNNER_TEMP/rule001/source" "$RUNNER_TEMP/rule001/output"
+      - name: Publish small report in run summary
+        shell: bash
+        run: cat "$RUNNER_TEMP/rule001/output/report.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload complete derived research outputs (no raw source commit)
+        uses: actions/upload-artifact@v4
+        with:
+          name: clearwater-rule001-pending-qc
+          path: ${{ runner.temp }}/rule001/output/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Upload standalone reviewer packet
+        uses: actions/upload-artifact@v4
+        with:
+          name: clearwater-rule001-reviewer-packet
+          path: |
+            ${{ runner.temp }}/rule001/output/qc-reviewer.md
+            ${{ runner.temp }}/rule001/output/qc-with-proposals.md
+            ${{ runner.temp }}/rule001/output/qc-batch.json
+            ${{ runner.temp }}/rule001/output/summary.json
+            ${{ runner.temp }}/rule001/output/report.md
+          if-no-files-found: error
+          retention-days: 90

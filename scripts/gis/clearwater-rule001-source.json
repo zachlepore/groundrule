@@ -1,0 +1,61 @@
+{
+  "snapshotId": "clearwater-gis-2026-09-28",
+  "releaseAssetUrl": "https://github.com/zachlepore/groundrule/releases/download/clearwater-gis-2026-09-28/clearwater-full-gis-snapshot.zip",
+  "archiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+  "researchCommit": "1e5e45f450cdc0b8423a44025829d55ff7e64703",
+  "files": {
+    "addresses.geojson": {
+      "bytes": 19691340,
+      "sha256": "f4d65a13e94871765f758c3dd238bfca67e1e78de197c10f8564dd16e9dedc96"
+    },
+    "database-import.clean.json": {
+      "bytes": 64423990,
+      "sha256": "7cf12d24c9e766bb7c5649386ebcbf324096a8e6698b8b90c3ceaf5042d27c84"
+    },
+    "database-review.json": {
+      "bytes": 30635392,
+      "sha256": "bb34bb7a2048a6031f37f68c8571a244a9049f473a029f0ef45a42ad85f56112"
+    },
+    "parcels.geojson": {
+      "bytes": 93980229,
+      "sha256": "713252d9f00ef9ea384a06a90f22a24df1034807fc68208b1ee7a47eb0e63d56"
+    },
+    "property-profiles.json": {
+      "bytes": 95059379,
+      "sha256": "89a5d403df8a2cb4393f8f142d6b8e4de78e8e0a9d57211643b0334ace90753a"
+    },
+    "source-metadata.json": {
+      "bytes": 3719,
+      "sha256": "f94920bfd23a89169fafbf97658c21312c6930cf5d55e0f765db698cabfb1989"
+    },
+    "validation-report.json": {
+      "bytes": 10196,
+      "sha256": "b51d57f1dc737ecfb862e4c49626558a3662d83b263e30f8b08c90f38925cb78"
+    },
+    "validation-report.md": {
+      "bytes": 4239,
+      "sha256": "cd6a25b7f12b81230b61921ccb0b8cb5b1b67034ad138fbf3ba7f883e023c4ef"
+    },
+    "zoning-diagnostic/representative-samples.md": {
+      "bytes": 1987,
+      "sha256": "f00f35a446f68d8da2f6ba82a1c483f490e35f88d862fd1152ead85cc02a4f06"
+    },
+    "zoning-diagnostic/zoning-diagnostic.json": {
+      "bytes": 26136992,
+      "sha256": "f0b1edcbdd960019b3f153cd4cbd3b393cbb800f74c892642917f08378fe86e3"
+    },
+    "zoning.geojson": {
+      "bytes": 2289896,
+      "sha256": "56ee74e1c2e8fab582efcdda388008e77205237439169c13191caa0ecb31929b"
+    }
+  },
+  "expectedCounts": {
+    "addresses": 63430,
+    "parcels": 112466,
+    "zoning": 761,
+    "profiles": 63430,
+    "uniqueParcels": 47716,
+    "clean": 43092,
+    "review": 20338
+  }
+}
