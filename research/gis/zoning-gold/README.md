@@ -4,7 +4,7 @@
 
 ## Reviewed evidence
 
-There are 25 reviewed cases: 20 single-district confirmations, 4 true splits (including one multipart split), and 1 unresolved staff-review case. Batch 1B's five cases were skipped without human labels.
+The original historical reference contains 25 reviewed cases: 20 single-district confirmations, 4 true splits (including one multipart split), and 1 unresolved staff-review case. Batch 1B's five cases were skipped without human labels. The separate completed Rule 001 session is described below; repeated parcels are not counted as independent new evidence.
 
 | Batch | Class | Human results |
 |---|---|---|
@@ -14,9 +14,19 @@ There are 25 reviewed cases: 20 single-district confirmations, 4 true splits (in
 | 3A | LMDR/MDR | 2 confirmed LMDR and 3 true splits |
 | 4A | LMDR/Commercial | 2 confirmed LMDR, 1 confirmed C, 1 unresolved staff review, and 1 multipart true split |
 
-All recorded reviews occurred October 6, 2026. Raw results and notes are preserved exactly, including the `MDR / LMDR` ordering for 3A-05. [The findings report](review-findings-3a.md) explains the evidence and sampling limits. [The Preservation research](p-preservation-research.md) establishes the meaning of P and preserves the separate open investigation for 2A-03. Neither report establishes a universal tolerance.
+All original historical reviews occurred October 6, 2026. Raw results and notes are preserved exactly, including the `MDR / LMDR` ordering for 3A-05. [The findings report](review-findings-3a.md) explains the evidence and sampling limits. [The Preservation research](p-preservation-research.md) establishes the meaning of P and preserves the separate open investigation for 2A-03. Neither report establishes a universal tolerance.
 
 ## Continuing human review
+
+### Completed Rule 001 QC session — recorded October 12, 2026
+
+All 30 exact case observations, addresses, string parcel IDs, original intersections and quality flags are preserved in [rule001-qc-observations.json](rule001-qc-observations.json), registered under `additionalReviewDatasets` in the reference JSON. The original 25 historical gold records and their labels remain unchanged. The frozen 30-case packet is also unchanged; this is a separate human review session, not a regeneration or candidate activation.
+
+The session contains 2 CONFIRMED historical controls, 23 PRIMARY CANDIDATE observations, 1 TRUE SPLIT and 4 UNCLEAR primary/classification interpretations. PRIMARY CANDIDATE does not mean legally confirmed. R001-17 separately preserves uncertain marina context despite a named US19 candidate. R001-27 preserves the full frozen NCOD subtype while recording only the user's LMDR-NCOD family interpretation.
+
+R001-01 and R001-02 are the two declared controls. R001-26 also repeats historical gold parcel 2A-03, so there are **27 independent new parcels**, not 28 or 30; none supplies a new unqualified CONFIRMED primary label. October 12 is the consolidation date; actual inspection dates were not supplied and are null. Historical October 6 review dates are not overwritten.
+
+See the [evidence assessment and conditional impact](../rule001-qc-assessment/assessment.md). No rule approval was given. The recommended next step is targeted primary-applicability confirmation followed by separate district-pair decisions. All five quality exceptions remain excluded, including the human-reported P/LMDR TRUE SPLIT. The frozen candidate generator is not changed to consume this review session during consolidation; any promotion must explicitly assess this registered evidence before regeneration or activation.
 
 Present exactly five properties at a time, grouped by recurring ambiguity class. Include case ID, address, string parcel ID, dominant and competing codes, diagnostic percentages and selection reason. Parcel geometry uploads are not required for this human workflow.
 

@@ -2,6 +2,18 @@
 
 `CLR-Z-001` is a research candidate, **not an approved resolver rule**. No production classifier, database, Supabase, Guide, or resident UI changes are included.
 
+## Completed human QC — latest assessment
+
+The October 12 consolidation records all 30 supplied observations in [the human review session](zoning-gold/rule001-qc-observations.json), with the [updated evidence assessment](rule001-qc-assessment/assessment.md) and machine-readable [pair/scope impact counts](rule001-qc-assessment/assessment.json). This assessment is the current approval recommendation; the original packet and citywide outputs below remain frozen historical candidate evidence.
+
+Outcomes are 2 CONFIRMED historical controls, 23 PRIMARY CANDIDATE observations, 4 UNCLEAR interpretations and 1 TRUE SPLIT. OWEN DR is also a repeat of a gold parcel, so only 27 parcels are independent new evidence; there are no new unqualified confirmations. The original 25 gold records remain intact and index the separate review session. All original quality flags and NCOD qualifiers are retained.
+
+The recommendation is additional targeted primary-applicability confirmation followed by separately approved district-pair rules, beginning with LMDR/P as a potential scope. Conditional REVIEW ceilings are 256 for LMDR/P, 1,150 for LMDR/MDR/HDR/LDR together, and 2,178 for all existing qualifiers. None is approved; currently trusted additional addresses are zero. The P/LMDR TRUE SPLIT is excluded by the existing quality safeguards and remains a counterexample to an unconditional structural-only shortcut. Park and marina applicability requires specific review.
+
+The approved **design direction only** for a primary Guide plus Preservation context is saved in [the locked design note](../product/preservation-primary-guidance-design.md). No resident-facing implementation is authorized. Proposed Rule 002 priorities are documented in the assessment; no additional rule or geometry feature was implemented.
+
+The candidate generator, its frozen QC selection, and production code are unchanged by consolidation. Any later approval/promotion must explicitly consider the registered new human session; running the historical generator alone is not evidence that these observations were incorporated or that a scope was approved.
+
 ## Frozen evidence
 
 Use the permanent [September 28 release](https://github.com/zachlepore/groundrule/releases/tag/clearwater-gis-2026-09-28), asset `clearwater-full-gis-snapshot.zip`. Do not use expiring Actions artifacts as the source. The archive SHA-256 is `174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902`. This archive hash was pinned on download; no separate publisher archive digest was supplied. Six contained files independently match the pre-existing human-reference checksums.

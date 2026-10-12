@@ -2434,5 +2434,16 @@
     "multipartSplit": 1,
     "staffReview": 1,
     "skippedUnreviewed": 5
-  }
+  },
+  "additionalReviewDatasets": [
+    {
+      "datasetId": "clearwater-rule001-human-qc-2026-10-12",
+      "path": "rule001-qc-observations.json",
+      "sha256": "65c8659a6adf32d9cc47b7f8ee10f1ff6069a5da7e20fd4c3247b3b5f09b4eb5",
+      "recordedOn": "2026-10-12",
+      "observationCount": 30,
+      "independentNewParcelCount": 27,
+      "note": "Separate review session preserves historical 25 gold records without overwriting labels; 3 repeated parcels, including 2 declared controls. Candidate generator is not changed or rerun by this registration."
+    }
+  ]
 }
