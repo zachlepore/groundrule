@@ -18,8 +18,8 @@
   },
   "presentation": {
     "preservationNoticeProminentWhenPercentGreaterThan": 2,
-    "noNoticeThresholdIsLegalExemption": false,
-    "secondaryPreservationMustBeRetained": true
+    "secondaryPreservationMustBeRetained": true,
+    "noticeThresholdIsLegalExemption": false
   },
   "excludedScopes": [
     "201 REVIEW code-change proposals",
@@ -35,7 +35,12 @@
     "originalReview": 20338,
     "newlyApprovedSameCodeReview": 1967,
     "stillReview": 18371,
-    "changedPrimaryCodes": 0
+    "changedPrimaryCodes": 0,
+    "pendingChangedCodeReview": 201,
+    "pendingUnclassifiedReview": 1,
+    "approvedNoticeProminent": 762,
+    "approvedNoticeNotProminent": 1205
   },
-  "approvedGuidanceNotEquivalentToOfficialZoningDetermination": true
+  "approvedGuidanceNotEquivalentToOfficialZoningDetermination": true,
+  "ruleVersion": "2.0.0-provisional"
 }

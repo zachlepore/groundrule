@@ -2,6 +2,14 @@ name: Clearwater Rule 001 candidate and QC
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - codex/clearwater-rule001-approved-same-code
+    paths:
+      - .github/workflows/clearwater-rule001.yml
+      - scripts/gis/**
+      - tests/clearwater-rule001*.test.mjs
+      - research/gis/**
 
 permissions:
   contents: read
@@ -18,7 +26,7 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Test research candidate and exclusions
-        run: node --test tests/clearwater-rule001.test.mjs tests/clearwater-rule001-policy.test.mjs tests/clearwater-rule001-qc-assessment.test.mjs
+        run: node --test tests/clearwater-rule001.test.mjs tests/clearwater-rule001-policy.test.mjs tests/clearwater-rule001-qc-assessment.test.mjs tests/clearwater-rule001-approved-export.test.mjs
       - name: Download permanently preserved release (not Actions source artifact)
         shell: bash
         run: |
@@ -32,6 +40,24 @@ jobs:
         run: node scripts/gis/clearwater-rule001.mjs "$RUNNER_TEMP/rule001/source" "$RUNNER_TEMP/rule001/output"
       - name: Validate full output and unchanged source
         run: node scripts/gis/verify-rule001-output.mjs "$RUNNER_TEMP/rule001/source" "$RUNNER_TEMP/rule001/output"
+      - name: Export and reconcile approved same-code scope against frozen originals
+        run: node scripts/gis/export-clearwater-approved-rule001.mjs "$RUNNER_TEMP/rule001/output" "$RUNNER_TEMP/rule001/approved" "$RUNNER_TEMP/rule001/source"
+      - name: Publish approved reconciliation in run summary
+        shell: bash
+        run: |
+          {
+            echo '## Approved static export reconciliation'
+            echo '```json'
+            cat "$RUNNER_TEMP/rule001/approved/approval-audit.json"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload approved citywide lookup and audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: clearwater-rule001-approved-static-lookup
+          path: ${{ runner.temp }}/rule001/approved/
+          if-no-files-found: error
+          retention-days: 90
       - name: Publish small report in run summary
         shell: bash
         run: cat "$RUNNER_TEMP/rule001/output/report.md" >> "$GITHUB_STEP_SUMMARY"
