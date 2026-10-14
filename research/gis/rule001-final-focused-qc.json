@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-10-14",
+  "sourcePacket": "research/gis/rule001-policy-v2-results/qc-reviewer.md",
+  "status": "Human visual observations recorded; intended to inform primary-guidance routing, not certify the legal zoning status of entire parcels.",
+  "observations": [
+    {
+      "caseId": "R001-P2-01",
+      "parcelId": "082915049140000300",
+      "address": "195 DEVON DR",
+      "review": "Negligible Preservation overlap",
+      "primaryGuidanceCandidate": "LMDR",
+      "result": "SUPPORTS_PRIMARY_GUIDANCE"
+    },
+    {
+      "caseId": "R001-P2-02",
+      "parcelId": "082915049680000070",
+      "address": "285 BAYSIDE DR",
+      "review": "Negligible Preservation overlap",
+      "primaryGuidanceCandidate": "LMDR",
+      "result": "SUPPORTS_PRIMARY_GUIDANCE"
+    },
+    {
+      "caseId": "R001-P2-03",
+      "parcelId": "042915614880120020",
+      "address": "1742 SUNSET DR",
+      "review": "Negligible Preservation overlap",
+      "primaryGuidanceCandidate": "LMDR",
+      "result": "SUPPORTS_PRIMARY_GUIDANCE"
+    },
+    {
+      "caseId": "R001-P2-04",
+      "parcelId": "182916345600050110",
+      "address": "306 KILMER AVE",
+      "review": "P corresponds to a pond between houses",
+      "primaryGuidanceCandidate": "LMDR",
+      "result": "SUPPORTS_PRIMARY_GUIDANCE"
+    },
+    {
+      "caseId": "R001-P2-05",
+      "parcelId": "282816000002200100",
+      "address": "2850 MCMULLEN BOOTH RD",
+      "review": "Negligible Preservation overlap",
+      "primaryGuidanceCandidate": "I",
+      "result": "SUPPORTS_PRIMARY_GUIDANCE"
+    },
+    {
+      "caseId": "R001-P2-06",
+      "parcelId": "092915255600000010",
+      "address": "301 ELDRIDGE ST",
+      "review": "Marina; D appropriate for primary guidance",
+      "primaryGuidanceCandidate": "D",
+      "result": "SUPPORTS_DIFFERENT_CODE_OUT_OF_APPROVED_SCOPE"
+    },
+    {
+      "caseId": "R001-P2-07",
+      "parcelId": "092915000001300100",
+      "address": "301 CEDAR ST",
+      "review": "Same marina context; D appropriate for primary guidance",
+      "primaryGuidanceCandidate": "D",
+      "result": "SUPPORTS_DIFFERENT_CODE_OUT_OF_APPROVED_SCOPE"
+    }
+  ],
+  "independenceCaveat": "Support from a visual check is not legal certification. The two D code-change candidates are NOT approved for export as changed primary zoning.",
+  "sourceQaAndPOverlapsRetained": true
+}
