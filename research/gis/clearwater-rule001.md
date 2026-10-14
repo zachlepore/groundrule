@@ -2,6 +2,12 @@
 
 `CLR-Z-001` is a research candidate, **not an approved resolver rule**. No production classifier, database, Supabase, Guide, or resident UI changes are included.
 
+## October 14 simplified policy — current implementation
+
+[Rule 001 v2](rule001-policy-v2.md) supersedes the earlier per-pair-only activation recommendation below with the user's simplified primary-guidance/notice proposal. It incorporates the completed human session's exclusions and adds an offline exact 2% presentation boundary, never a legal/eligibility tolerance. The full 63,430-record dataset was regenerated from the frozen source plus source-matched immutable measurements. Current qualifiers are 1,839 parcels / 2,498 addresses, including 2,169 potential REVIEW recoveries (1,967 already matching; 201 changed; 1 unclassified), plus 329 original CLEAN candidates. Nine previously matching REVIEW proposals are withheld for known unclear primary applicability. No policy is approved or activated.
+
+See the [current band/threshold/pair report](rule001-policy-v2-results/report.md), [human regressions](rule001-policy-v2-results/human-review-regression.json), [seven-new-case focused packet](rule001-policy-v2-results/qc-reviewer.md) and [approved-export instructions](rule001-policy-v2.md). The earlier 30-case packet, assessment and data remain historical evidence; a new extensive QC project is not required by this implementation. All existing source and human exceptions remain in force.
+
 ## Completed human QC — latest assessment
 
 The October 12 consolidation records all 30 supplied observations in [the human review session](zoning-gold/rule001-qc-observations.json), with the [updated evidence assessment](rule001-qc-assessment/assessment.md) and machine-readable [pair/scope impact counts](rule001-qc-assessment/assessment.json). This assessment is the current approval recommendation; the original packet and citywide outputs below remain frozen historical candidate evidence.

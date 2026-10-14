@@ -10,6 +10,8 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import bbox from "@turf/bbox";
 import RBush from "rbush";
 import { allowedZoning, normalizeZoning } from "./clearwater-pilot.mjs";
+import { RULE_VERSION, NOTICE_THRESHOLD_PERCENT, noticeVisibility, normalizeReviewSession,
+  analyzePolicy, focusedQc, renderPolicyReport, renderFocusedQc } from "./clearwater-rule001-policy.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const RULE_ID = "CLR-Z-001";
@@ -39,11 +41,21 @@ export function classify(d, profiles, gold = [], duplicateIdentity = false) {
   if (profiles.some(p => p.normalizedJurisdiction !== "clearwater" || p.jurisdictionStatus !== "confirmed")) flags.push("jurisdiction_not_confirmed");
   if (profiles.some(p => p.issues.some(i => i !== "parcel_ambiguous_zoning"))) flags.push("unrelated_source_profile_issue");
   if (gold.some(r => ["human_true_split", "human_staff_review"].includes(r.humanReview.reviewStatus))) flags.push("human_split_or_staff_review");
+  if (gold.some(r => r.humanReview.reviewStatus === "human_primary_applicability_unclear")) flags.push("human_primary_applicability_unclear");
   const proposal = structuralMatch ? d.zoningFeatures.find(e => e.normalizedZoningCode === other[0])?.rawZoningCode : null;
   if (structuralMatch && gold.some(r => r.humanReview.reviewStatus === "human_confirmed" && normalizeZoning(r.humanReview.result.replace(/^CONFIRMED:\s*/, "")) !== other[0])) flags.push("gold_contradiction");
+  if (structuralMatch && gold.some(r => {
+    if(r.humanReview.reviewStatus!=="human_primary_candidate"||!r.humanReview.reportedPrimaryCode)return false;
+    const reported=normalizeZoning(r.humanReview.reportedPrimaryCode);
+    const familyOnly=reported.endsWith("ncod")&&other[0].startsWith(reported);
+    return other[0]!==reported&&!familyOnly;
+  })) flags.push("conflicting_human_candidate_evidence");
   if (other.length > 1) flags.push("multiple_non_P_districts");
   const eligible = structuralMatch && !flags.length;
-  return { ruleId: RULE_ID, structuralMatch, eligible, hypotheticalNonP: proposal,
+  return { ruleId: RULE_ID, ruleVersion:RULE_VERSION, structuralMatch, eligible, hypotheticalNonP: proposal,
+    pCoveragePercent:codes.includes("p")?pPercent(d):null,
+    proposedNoticeVisibility:noticeVisibility(eligible,pPercent(d)),noticeThresholdPercent:NOTICE_THRESHOLD_PERCENT,
+    retainedSecondaryPreservation:eligible?"P":null,approvalStatus:"NOT_APPROVED",
     proposedPrimaryGuidanceZoning: eligible ? proposal : null,
     otherIntersectingZoningDistricts: eligible ? rawCodes(d).filter(c => normalizeZoning(c) !== other[0]) : rawCodes(d),
     decisionStatus: eligible ? "PENDING_QC" : codes.length === 1 && codes[0] === "p" && !flags.length ? "P_ONLY_PRESERVED" : "REVIEW",
@@ -140,21 +152,24 @@ export function sampleQc(population, gold) {
     humanReview: { result: null, note: null, reviewDate: null, verificationMethod: "Clearwater official zoning viewer", reviewStatus: "pending" } }));
 }
 
-function renderQc(cases, predictions = false) {
-  let text = "# CLR-Z-001 manual QC\n\nIndependently inspect the official zoning viewer. Respond `CONFIRMED: <code>`, `TRUE SPLIT: <codes>`, or `UNCLEAR / STAFF REVIEW`, with notes. P remains a legally substantive mapped district. No candidate is approved. Waterfront/inland context is unverified except where explicitly attributed to earlier human notes.\n\n";
-  for (let i = 0; i < cases.length; i += 5) {
-    text += `## Batch ${Math.floor(i/5)+1}${i >= 25 ? " — quality exceptions (no operative proposal)" : ""}\n\n`;
-    for (const c of cases.slice(i,i+5)) text += `### ${c.caseId}: ${c.address}\n\n- Parcel: ${c.parcelId}\n- Original mapped coverage: ${c.originalIntersections.map(e => `${e.code} ${e.percentOfParcel}%`).join("; ")}\n- Flags: ${c.diagnosticFlags.join(", ") || "none"}\n- Selected because: ${c.selectionReason}\n- Context: ${c.waterfrontStatus}\n- Coordinates: ${c.coordinates?.join(", ")}\n- Closest other sampled address: ${c.nearestOtherSampleMeters} m\n${predictions ? `- Research proposal: ${c.proposedPrimaryGuidanceZoning ?? "WITHHELD"}; hypothetical non-P: ${c.hypotheticalNonP ?? "none"}; ${c.decisionStatus}\n` : ""}- Human decision: pending\n\n`;
-  }
-  return text;
-}
-
 export async function run(input, output, measurementsFile = null) {
   input = path.resolve(input); output = path.resolve(output);
   assert.ok(output !== input && !output.startsWith(input + path.sep), "Derived output must be separate from source");
   try { await access(output); throw new Error("Refusing to overwrite existing output; regenerate from frozen source into a new directory."); } catch(e) { if (e.code !== "ENOENT") throw e; }
   const manifest = await json(path.join(ROOT,"scripts/gis/clearwater-rule001-source.json"));
   const gold = await json(path.join(ROOT,"research/gis/zoning-gold/reference-dataset.json"));
+  const observations=[];
+  const reviewDatasetHashes=[];
+  for(const entry of gold.additionalReviewDatasets??[]){
+    assert.equal(path.basename(entry.path),entry.path,"Review journal must remain in the gold directory");
+    const bytes=await readFile(path.join(ROOT,"research/gis/zoning-gold",entry.path));
+    assert.equal(hash(bytes),entry.sha256,"Registered human review checksum");
+    const session=JSON.parse(bytes);
+    assert.equal(hash(await readFile(path.join(ROOT,session.sourceQcPacket.path))),session.sourceQcPacket.sha256,"Frozen QC identity checksum");
+    observations.push(...session.records);reviewDatasetHashes.push({path:entry.path,sha256:entry.sha256});
+  }
+  assert.equal(observations.length,30,"Completed Rule 001 human session is required for v2");
+  const reviews=[...gold.records,...normalizeReviewSession(observations)];
   const source = await verifySource(input, manifest, gold);
   console.log("Verified all source hashes, gold evidence hashes, metadata layer hashes and full-city counts.");
   const byParcel = new Map();
@@ -196,7 +211,7 @@ export async function run(input, output, measurementsFile = null) {
   })));
   const population = [...evidence.values()].filter(d => d.zoningCodeCoverage.some(e => e.normalizedZoningCode === "p") || d.sourceErrors?.length).map(d => {
     const profiles = byParcel.get(d.parcelIdentifier) ?? [];
-    const reviewed = gold.records.filter(r => r.parcelId === d.parcelIdentifier && r.humanReview.reviewStatus !== "pending");
+    const reviewed = reviews.filter(r => r.parcelId === d.parcelIdentifier && r.humanReview.reviewStatus !== "pending");
     return { parcelId: d.parcelIdentifier, membership: profiles.length ? "address_linked_clearwater" : "unverified_membership_no_city_address",
       addresses: profiles.slice().sort((a,b) => a.displayAddress.localeCompare(b.displayAddress)).map(p => ({ address: p.displayAddress, sourceAddressIdentifier: p.sourceAddressIdentifier, coordinates: p.addressCoordinates, originalStatus: p.status })),
       combination: pair(d), pCoveragePercent: pPercent(d), coverageBand: coverageBand(pPercent(d)),
@@ -243,6 +258,7 @@ export async function run(input, output, measurementsFile = null) {
   const exceptionFlags = {};
   for (const r of city) for (const flag of r.decision.flags) { const v=exceptionFlags[flag]??={parcels:0,addresses:0};v.parcels++;v.addresses+=r.addresses.length; }
   const summary = { ruleId:RULE_ID, approvalStatus:"NOT_APPROVED", snapshotId:manifest.snapshotId, inputCounts:source.counts,
+    ruleVersion:RULE_VERSION,noticeThresholdPercent:NOTICE_THRESHOLD_PERCENT,
     pParcels:confirmedP.length, pAddresses:confirmedP.reduce((s,r)=>s+r.addresses.length,0),
     pCleanAddresses:confirmedP.reduce((s,r)=>s+r.addresses.filter(a=>a.originalStatus==="clean").length,0),
     pReviewAddresses:confirmedP.reduce((s,r)=>s+r.addresses.filter(a=>a.originalStatus==="review").length,0),
@@ -271,17 +287,20 @@ export async function run(input, output, measurementsFile = null) {
     unverifiedMembershipPOnlyParcels:population.filter(r=>r.membership!=="address_linked_clearwater"&&r.originalIntersections.length===1&&r.originalIntersections[0].normalizedZoningCode==="p").length,
     byCombination, pCoverageDistribution:histogram, exceptionFlags,
     limitations:["The 112,466 raw parcel features include neighbors; only the 47,716 address-linked parcels have source-confirmed Clearwater membership. Additional raw P-overlap parcels are inventoried separately, not declared Clearwater.","No water/shoreline layer supplied. Waterfront/inland context must be established by the reviewer; known contexts are attributed to prior human notes.","Frozen diagnostic uses exact positive-area intersections greater than 0.000001 m²; line/point touches are not districts with area coverage. Percentages are summed source-polygon areas, not unioned coverage; repeated polygons are excluded.","Five unpushed Batch 5A labels are unavailable and excluded. No human label or approval is inferred.","The zip hash is pinned at first download; six raw-file hashes independently match committed human-reference lineage. No separate publisher-provided archive checksum was supplied."] };
-  const qc = sampleQc(city,gold);
-  assert.equal(qc.length,30,"QC must contain 30 distinct parcels");
+  const policy=analyzePolicy(city,byParcel,observations,gold);
+  const qc = focusedQc(city,byParcel,observations,gold);
+  assert.ok(qc.length<=12,"No extensive new QC packet");
   await mkdir(output,{recursive:true});
   const writeJson = (name,value)=>writeFile(path.join(output,name),JSON.stringify(value,null,2)+"\n");
   await writeJson("supplemental-intersections.json",{...measurementHeader,parcels:[...evidence.values()].filter(d=>d.evidenceMethod==="supplemental_exact_intersection").sort((a,b)=>a.parcelIdentifier.localeCompare(b.parcelIdentifier))});
   await writeJson("source-verification.json",{...manifest,filesVerified:source.verification,metadata:source.metadata,
-    processorSha256:hash(await readFile(path.join(ROOT,"scripts/gis/clearwater-rule001.mjs"))),intersectionAlgorithmSha256:algorithmSha256});
+    processorSha256:hash(await readFile(path.join(ROOT,"scripts/gis/clearwater-rule001.mjs"))),intersectionAlgorithmSha256:algorithmSha256,
+    policySha256:hash(await readFile(path.join(ROOT,"scripts/gis/clearwater-rule001-policy.mjs"))),ruleVersion:RULE_VERSION,reviewDatasetHashes});
   await writeJson("summary.json",summary); await writeJson("p-parcel-inventory.json",population);
+  await writeJson("policy-analysis.json",policy);await writeJson("human-review-regression.json",{historical:policy.historicalRegression,rule001:policy.regression});
   await writeJson("gold-comparison.json",goldComparison); await writeJson("qc-batch.json",qc);
-  await writeFile(path.join(output,"qc-reviewer.md"),renderQc(qc));
-  await writeFile(path.join(output,"qc-with-proposals.md"),renderQc(qc,true));
+  await writeFile(path.join(output,"qc-reviewer.md"),renderFocusedQc(qc));
+  await writeFile(path.join(output,"qc-with-proposals.md"),renderFocusedQc(qc,true));
   const inventoryMap = new Map(city.map(r=>[r.parcelId,r]));
   let audit = "", derived = "";
   for (const p of source.profiles) {
@@ -294,16 +313,24 @@ export async function run(input, output, measurementsFile = null) {
       proposedPrimaryGuidanceZoning:decision?.proposedPrimaryGuidanceZoning??null,
       otherIntersectingZoningDistricts:decision?.otherIntersectingZoningDistricts??null,
       ruleId:decision?.eligible?RULE_ID:null, decisionStatus:decision?.decisionStatus??"UNCHANGED",
+      ruleVersion:RULE_VERSION,approvalStatus:"NOT_APPROVED",
+      existingPrimaryZoning:p.zoningCode,sourceGisQualityStatus:p.status,originalSourceProfileFlags:p.issues,
+      originalZoningFeatures:d?.zoningFeatures??null,
+      originalIntersectionEvidenceReference:r?{file:"p-parcel-inventory.json",parcelId:r.parcelId}:d?{sourceFile:"zoning-diagnostic/zoning-diagnostic.json",parcelId:d.parcelIdentifier}:null,
+      retainedSecondaryPreservation:decision?.retainedSecondaryPreservation??null,
+      pCoveragePercent:r?.pCoveragePercent??null,
+      proposedNoticeVisibility:r?noticeVisibility(Boolean(decision?.eligible),r.pCoveragePercent):"NOT_APPLICABLE_NO_RULE001_PROPOSAL",
+      noticeThresholdPercent:NOTICE_THRESHOLD_PERCENT,preservationDetailsRetained:Boolean(r),officialViewerAccessRequired:Boolean(r),
+      residentGuidanceEligibility:decision?.eligible?"PROVISIONAL_ELIGIBLE_AFTER_EXPLICIT_APPROVAL":r?"REVIEW_REQUIRED":"UNCHANGED_NO_RULE001",
       flags:decision?.flags??[], productionEligible:false } };
     derived += JSON.stringify(record)+"\n";
     if(decision?.eligible) audit += JSON.stringify({sourceAddressIdentifier:p.sourceAddressIdentifier,address:p.displayAddress,parcelId:p.parcelIdentifier,originalZoningCode:p.zoningCode,originalStatus:p.status,originalIntersections:r.originalIntersections,...decision,sourceSnapshotIdentifier:manifest.snapshotId})+"\n";
   }
   await writeFile(path.join(output,"citywide-provisional.jsonl"),derived);
   await writeFile(path.join(output,"changed-record-audit.jsonl"),audit);
-  const addressClarification = `## Mutually exclusive address outcomes\n\n| Original status | Relationship to proposed primary code | Addresses |\n|---|---|---:|\n| REVIEW | Already matched the proposed code | ${addressCategories.reviewAlreadyMatched} |\n| REVIEW | Different existing code | ${addressCategories.reviewDifferentCode} |\n| REVIEW | Previously unclassified | ${addressCategories.reviewPreviouslyUnclassified} |\n| CLEAN | Already matched the proposed code | ${addressCategories.cleanAlreadyMatched} |\n| CLEAN | Different existing code | ${addressCategories.cleanDifferentCode} |\n| CLEAN | Previously unclassified | ${addressCategories.cleanPreviouslyUnclassified} |\n\nOriginal REVIEW records with a provisional resolution opportunity: ${summary.originallyReviewCandidates}, including the already-matched REVIEW subset. These are not yet resolved or promoted to CLEAN; all require QC. Only ${addressCategories.reviewDifferentCode + addressCategories.reviewPreviouslyUnclassified} of those REVIEW addresses need a different/new zoning code; ${addressCategories.reviewAlreadyMatched} already carried the candidate code but remained REVIEW. The ${summary.originallyCleanCandidates} original CLEAN addresses are separate and do not count as recovered REVIEW records. Do not add already-matched records to the REVIEW total a second time. All original statuses and classifications remain unchanged.`;
-  const report = `# CLR-Z-001 provisional citywide results\n\nNOT APPROVED. No source classification, status, evaluator facts, or production data changed.\n\nSnapshot: ${manifest.snapshotId}. Archive SHA256: ${manifest.archiveSha256}. All 11 release files, three metadata layer hashes, and six gold-lineage checksums verified.\n\n${source.profiles.length} address records retained. ${summary.pParcels} source-confirmed address-linked parcels intersect P (${summary.pAddresses} addresses). P-only: ${summary.pOnly}; P + one other: ${summary.pExactlyOneOther}; P + multiple others: ${summary.pMultipleOther}.\n\n${summary.candidateParcels} parcels / ${summary.candidateAddresses} address records receive an additional PENDING_QC proposal; ${summary.unchangedProvisionalRecords} receive no proposal. All ${source.profiles.length} original classifications remain unchanged. ${summary.unresolvedReviewWithoutCandidate} original REVIEW records have no candidate; all ${summary.pendingQcRecords} candidates also remain unresolved pending human QC.\n\n${addressClarification}\n\n## Pair-specific populations\n\n| Combination | Parcels | Addresses | Candidate parcels | Candidate addresses | Excluded two-code parcels | CLEAN addresses | REVIEW addresses |\n|---|---:|---:|---:|---:|---:|---:|---:|\n${Object.entries(byCombination).sort((a,b)=>b[1].parcels-a[1].parcels).map(([k,v])=>`| ${k} | ${v.parcels} | ${v.addresses} | ${v.candidateParcels} | ${v.candidateAddresses} | ${v.excludedStructuralParcels} | ${v.cleanAddresses} | ${v.reviewAddresses} |`).join("\n")}\n\nEach non-P pairing requires its own QC decision. Residential pairs may share a sampling protocol but their evidence is not interchangeable; commercial, US19, institutional, development, open-space, and NCOD combinations require independent review. Unsupported NCOD combinations are excluded. P-only and 3+ code cases remain separate.\n\n## Coverage distribution\n\n${Object.entries(histogram).map(([k,v])=>`- ${k}: ${v.parcels} parcels / ${v.addresses} addresses`).join("\n")}\n\n## Exceptions (overlapping counts)\n\n${Object.entries(exceptionFlags).map(([k,v])=>`- ${k}: ${v.parcels} parcels / ${v.addresses} addresses`).join("\n")}\n\n## Human evidence\n\n${summary.goldReviewed} reviewed records; ${summary.goldStructurallyApplicable} match the two-code P pattern; ${summary.goldContradictions} contradictory predictions; ${summary.goldEligibleAgreements} eligible agreements. Consult gold-comparison.json for excluded agreements and every preserved split. The OWEN DR gap is an exception, not a contradicted human LMDR label. Unpushed Batch 5A is not used.\n\n## Review and approval\n\nRead qc-reviewer.md five at a time; it omits proposals to reduce anchoring. qc-with-proposals.md and qc-batch.json contain the requested prediction audit. Return exact human decisions and notes; record answered cases in the existing reference dataset. Compare all labels before recommending acceptance, narrowing, or rejection. Only explicit approval authorizes a small version-controlled approved-rule configuration and regeneration from this original frozen release. Never patch this provisional output or promote its records automatically.\n\n## Scope limits\n\n${summary.limitations.map(x=>`- ${x}`).join("\n")}\n`;
+  const report = renderPolicyReport(policy,summary,qc);
   await writeFile(path.join(output,"report.md"),report);
-  const names=["supplemental-intersections.json","source-verification.json","summary.json","p-parcel-inventory.json","gold-comparison.json","qc-batch.json","qc-reviewer.md","qc-with-proposals.md","citywide-provisional.jsonl","changed-record-audit.jsonl","report.md"];
+  const names=["supplemental-intersections.json","source-verification.json","summary.json","p-parcel-inventory.json","gold-comparison.json","policy-analysis.json","human-review-regression.json","qc-batch.json","qc-reviewer.md","qc-with-proposals.md","citywide-provisional.jsonl","changed-record-audit.jsonl","report.md"];
   const outputHashes={};for(const name of names){const b=await readFile(path.join(output,name));outputHashes[name]={bytes:b.length,sha256:hash(b)};}
   await writeJson("output-checksums.json",outputHashes);
   console.log(JSON.stringify(summary,null,2));

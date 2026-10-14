@@ -2,6 +2,12 @@
 
 Recorded October 12, 2026 from the user's explicit design approval. **Design direction approved; implementation, classifier promotion, data changes and resident-facing Guide changes are not authorized.**
 
+## October 14 proposed presentation refinement — offline only
+
+The simplified Rule 001 proposal records notice prominence using exact mapped P coverage. For an otherwise qualifying P-plus-one-supported-district property, P **≤2%** recommends no prominent Preservation warning in ordinary Guides, while P **>2%** recommends the locked informational notice on relevant physical-project Guides. This boundary controls presentation only, not legal applicability, source quality, or primary-guidance eligibility. At both levels retain P in backend/property zoning details and preserve official viewer access. Never describe a property as legally free of P restrictions.
+
+Only the offline `proposedNoticeVisibility` field is implemented. Excluded/uncertain properties get `UNRESOLVED_NO_PRIMARY_PROPOSAL`, not a suppression recommendation. The primary policy and all classifications remain provisional until explicit activation approval; no Guide or notice component has been changed. The notice wording below remains locked and unchanged.
+
 When a property has an independently established primary guidance district alongside a relevant Preservation intersection, retain the normal primary-zone Guide and show this exact contextual notice:
 
 **Part of your property is mapped as Preservation**

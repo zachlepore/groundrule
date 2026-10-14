@@ -18,7 +18,7 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Test research candidate and exclusions
-        run: node --test tests/clearwater-rule001.test.mjs
+        run: node --test tests/clearwater-rule001.test.mjs tests/clearwater-rule001-policy.test.mjs tests/clearwater-rule001-qc-assessment.test.mjs
       - name: Download permanently preserved release (not Actions source artifact)
         shell: bash
         run: |
@@ -51,6 +51,8 @@ jobs:
             ${{ runner.temp }}/rule001/output/qc-with-proposals.md
             ${{ runner.temp }}/rule001/output/qc-batch.json
             ${{ runner.temp }}/rule001/output/summary.json
+            ${{ runner.temp }}/rule001/output/policy-analysis.json
+            ${{ runner.temp }}/rule001/output/human-review-regression.json
             ${{ runner.temp }}/rule001/output/report.md
           if-no-files-found: error
           retention-days: 90
