@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "approvalId": "CLR-Z-001-SAME-CODE-2026-10-14",
+  "ruleId": "CLR-Z-001",
+  "decision": "APPROVED_FOR_OFFLINE_STATIC_EXPORT_ONLY",
+  "approvedOn": "2026-10-14",
+  "authorization": "Groundrule owner explicitly approved the first bounded scope in conversation on 2026-10-14, after completion of seven focused inspections. No Supabase, production UI, canonical database, or source-QA changes were authorized.",
+  "sourceSnapshotId": "clearwater-gis-2026-09-28",
+  "sourceArchiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+  "basisCommit": "c702e56305b20bda755b7a0076eb239dbd291a10",
+  "scope": {
+    "originalQaStatus": "review",
+    "proposedNonPDistrictMustMatchExistingPrimary": true,
+    "exactlyPreservationPlusOneSupportedDistrict": true,
+    "requirePreviousProvisionalEligibility": true,
+    "retainAllExistingQualityAndHumanExclusions": true,
+    "doNotChangeOriginalPrimaryCode": true
+  },
+  "presentation": {
+    "preservationNoticeProminentWhenPercentGreaterThan": 2,
+    "noNoticeThresholdIsLegalExemption": false,
+    "secondaryPreservationMustBeRetained": true
+  },
+  "excludedScopes": [
+    "201 REVIEW code-change proposals",
+    "1 REVIEW unclassified proposal",
+    "329 existing CLEAN candidate addresses (retain existing treatment)",
+    "known true splits",
+    "staff review/unclear cases",
+    "source-quality and unsupported code exceptions"
+  ],
+  "expected": {
+    "allAddresses": 63430,
+    "originalClean": 43092,
+    "originalReview": 20338,
+    "newlyApprovedSameCodeReview": 1967,
+    "stillReview": 18371,
+    "changedPrimaryCodes": 0
+  },
+  "approvedGuidanceNotEquivalentToOfficialZoningDetermination": true
+}
