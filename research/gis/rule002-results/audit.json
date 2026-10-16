@@ -1,0 +1,126 @@
+{
+  "ruleId": "CLR-Z-002",
+  "ruleVersion": "1.0.0-provisional",
+  "approvalStatus": "NOT_APPROVED",
+  "sourceSnapshotId": "clearwater-gis-2026-09-28",
+  "sourceArchiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+  "allAddresses": 63430,
+  "population": {
+    "parcels": 352,
+    "addresses": 356,
+    "cleanAddresses": 0,
+    "reviewAddresses": 356
+  },
+  "qualifying": {
+    "parcels": 259,
+    "addresses": 262,
+    "cleanAddresses": 0,
+    "reviewAddresses": 262
+  },
+  "excluded": {
+    "parcels": 93,
+    "addresses": 94,
+    "cleanAddresses": 0,
+    "reviewAddresses": 94
+  },
+  "additionalDistricts": {
+    "parcels": 120,
+    "addresses": 173,
+    "cleanAddresses": 0,
+    "reviewAddresses": 173,
+    "withPreservationParcels": 70
+  },
+  "addressCategories": {
+    "reviewSameCode": 262,
+    "reviewChangedCode": 0,
+    "reviewUnclassified": 0,
+    "cleanSameCode": 0,
+    "cleanChangedCode": 0,
+    "cleanUnclassified": 0
+  },
+  "populationExistingPrimaryCodes": {
+    "LMDR": 348,
+    "OS/R": 8
+  },
+  "populationCodeAgreement": {
+    "sameLMDR": 348,
+    "differentCode": 8,
+    "unclassified": 0
+  },
+  "exclusionReasons": {
+    "coverage_outside_99.9_to_100.1_percent": {
+      "parcels": 11,
+      "addresses": 11
+    },
+    "unrelated_source_profile_issue": {
+      "parcels": 8,
+      "addresses": 8
+    },
+    "invalid_zoning_geometry": {
+      "parcels": 81,
+      "addresses": 82
+    }
+  },
+  "exclusionCombinations": {
+    "coverage_outside_99.9_to_100.1_percent": {
+      "parcels": 10,
+      "addresses": 10
+    },
+    "coverage_outside_99.9_to_100.1_percent + unrelated_source_profile_issue": {
+      "parcels": 1,
+      "addresses": 1
+    },
+    "invalid_zoning_geometry": {
+      "parcels": 75,
+      "addresses": 76
+    },
+    "invalid_zoning_geometry + unrelated_source_profile_issue": {
+      "parcels": 6,
+      "addresses": 6
+    },
+    "unrelated_source_profile_issue": {
+      "parcels": 1,
+      "addresses": 1
+    }
+  },
+  "goldRegressionCases": 10,
+  "goldAgreements": 9,
+  "goldContradictions": 0,
+  "goldQualityExclusions": 1,
+  "goldQualityExclusionControls": [
+    {
+      "caseId": "1C-03",
+      "address": "1400 W VIRGINIA LN",
+      "parcelId": "082916943020110160",
+      "flags": [
+        "invalid_zoning_geometry"
+      ]
+    }
+  ],
+  "qualifyingOsrCoverageRange": {
+    "minimum": 0.000333,
+    "maximum": 30.946006
+  },
+  "potentialIncrementalReviewRecovery": 262,
+  "rule001OverlapAddresses": 0,
+  "rule001ApprovedPreserved": 1967,
+  "combinedPotentialApprovedGuidance": 2229,
+  "remainingReviewAfterHypotheticalApproval": 18109,
+  "rule002NewApprovals": 0,
+  "originalZoningCodesChanged": 0,
+  "originalSourceQaStatusesChanged": 0,
+  "rule001FieldsChanged": 0,
+  "rule001NoticeProminent": 762,
+  "rule001NoticeNotProminent": 1205,
+  "screening": {
+    "frozenDiagnostics": 12244,
+    "missingDiagnosticParcelsMeasured": 3641,
+    "supplementalPositiveOsrParcels": 12,
+    "measurementErrorParcels": 0,
+    "unlinkedRawBboxParcels": 660
+  },
+  "qcNewIndependentParcels": 10,
+  "supabaseChanged": false,
+  "productionGuidesChanged": false,
+  "residentUxChanged": false
+}

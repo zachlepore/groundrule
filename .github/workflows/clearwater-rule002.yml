@@ -1,0 +1,71 @@
+name: Clearwater Rule 002 provisional LMDR OSR
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - codex/clearwater-rule002-lmdr-osr
+    paths:
+      - .github/workflows/clearwater-rule002.yml
+      - scripts/gis/clearwater-rule002*.mjs
+      - scripts/gis/verify-rule002-output.mjs
+      - tests/clearwater-rule002.test.mjs
+      - research/gis/clearwater-rule002.md
+      - research/gis/rule002-results/**
+
+permissions:
+  contents: read
+
+jobs:
+  provisional:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Test Rule 001 preservation and provisional Rule 002 safeguards
+        run: node --test tests/clearwater-rule00*.test.mjs tests/clearwater-gis-pilot.test.mjs tests/clearwater-gis-full.test.mjs
+      - name: Download and verify immutable September 28 release
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/rule002"
+          curl --fail --location --silent --show-error --retry 2 \
+            --output "$RUNNER_TEMP/rule002/source.zip" \
+            https://github.com/zachlepore/groundrule/releases/download/clearwater-gis-2026-09-28/clearwater-full-gis-snapshot.zip
+          python3 scripts/gis/unpack-rule001-release.py "$RUNNER_TEMP/rule002/source.zip" "$RUNNER_TEMP/rule002/source"
+      - name: Regenerate original Rule 001 from source (no prior classifications)
+        run: node scripts/gis/clearwater-rule001.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule002/rule001-provisional"
+      - name: Verify Rule 001 and produce unchanged approved same-code scope
+        shell: bash
+        run: |
+          set -euo pipefail
+          node scripts/gis/verify-rule001-output.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule002/rule001-provisional"
+          node scripts/gis/export-clearwater-approved-rule001.mjs "$RUNNER_TEMP/rule002/rule001-provisional" "$RUNNER_TEMP/rule002/rule001-approved" "$RUNNER_TEMP/rule002/source"
+      - name: Analyze LMDR OSR and produce complete provisional combined lookup
+        run: node scripts/gis/clearwater-rule002.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule002/rule001-approved" "$RUNNER_TEMP/rule002/provisional"
+      - name: Verify serialized combined lookup and incremental audit
+        run: node scripts/gis/verify-rule002-output.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule002/rule001-approved" "$RUNNER_TEMP/rule002/provisional"
+      - name: Publish provisional audit and QC summary
+        shell: bash
+        run: |
+          cat "$RUNNER_TEMP/rule002/provisional/report.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload full combined lookup, evidence, audit and independent QC
+        uses: actions/upload-artifact@v4
+        with:
+          name: clearwater-rule002-provisional-combined
+          path: |
+            ${{ runner.temp }}/rule002/provisional/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Upload regenerated unchanged Rule 001 approved baseline
+        uses: actions/upload-artifact@v4
+        with:
+          name: clearwater-rule002-rule001-approved-baseline
+          path: ${{ runner.temp }}/rule002/rule001-approved/
+          if-no-files-found: error
+          retention-days: 90

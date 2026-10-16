@@ -1,0 +1,364 @@
+[
+  {
+    "caseId": "1A-01",
+    "parcelId": "202816186670000010",
+    "address": "3136 MASTERS DR",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "OS/R does not meaningfully overlap the parcel in the official viewer; this appears to be a tiny GIS boundary/sliver artifact.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "eligible": true,
+    "flags": [],
+    "proposedPrimary": "LMDR",
+    "agreement": true,
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 5103.974,
+        "percentOfParcel": 99.996949
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 0.156,
+        "percentOfParcel": 0.003051
+      }
+    ]
+  },
+  {
+    "caseId": "1A-02",
+    "parcelId": "202816186450000260",
+    "address": "3116 MASTERS DR",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same pattern as 1A-01.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "eligible": true,
+    "flags": [],
+    "proposedPrimary": "LMDR",
+    "agreement": true,
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1130.453,
+        "percentOfParcel": 99.996597
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 0.038,
+        "percentOfParcel": 0.003403
+      }
+    ]
+  },
+  {
+    "caseId": "1A-03",
+    "parcelId": "202816186450000280",
+    "address": "3124 MASTERS DR",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same pattern as 1A-01.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "eligible": true,
+    "flags": [],
+    "proposedPrimary": "LMDR",
+    "agreement": true,
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1533.509,
+        "percentOfParcel": 99.996516
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 0.053,
+        "percentOfParcel": 0.003484
+      }
+    ]
+  },
+  {
+    "caseId": "1A-04",
+    "parcelId": "202816186450000250",
+    "address": "3112 MASTERS DR",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same pattern as 1A-01.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "eligible": true,
+    "flags": [],
+    "proposedPrimary": "LMDR",
+    "agreement": true,
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1130.451,
+        "percentOfParcel": 99.996411
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 0.041,
+        "percentOfParcel": 0.003589
+      }
+    ]
+  },
+  {
+    "caseId": "1A-05",
+    "parcelId": "202816186450000230",
+    "address": "3104 MASTERS DR",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same pattern as 1A-01.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "eligible": true,
+    "flags": [],
+    "proposedPrimary": "LMDR",
+    "agreement": true,
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1129.453,
+        "percentOfParcel": 99.996267
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 0.042,
+        "percentOfParcel": 0.003733
+      }
+    ]
+  },
+  {
+    "caseId": "1C-01",
+    "parcelId": "172816186440000200",
+    "address": "3233 HYDE PARK DR",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "OS/R overlap is not meaningful in the official viewer; visually this is clearly an LMDR parcel.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "eligible": true,
+    "flags": [],
+    "proposedPrimary": "LMDR",
+    "agreement": true,
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1342.092,
+        "percentOfParcel": 99.005034
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 13.488,
+        "percentOfParcel": 0.994965
+      }
+    ]
+  },
+  {
+    "caseId": "1C-02",
+    "parcelId": "202816498570001060",
+    "address": "2875 GREEN MEADOW CT",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same interpretation.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "eligible": true,
+    "flags": [],
+    "proposedPrimary": "LMDR",
+    "agreement": true,
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1614.343,
+        "percentOfParcel": 97.969992
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 33.45,
+        "percentOfParcel": 2.03001
+      }
+    ]
+  },
+  {
+    "caseId": "1C-03",
+    "parcelId": "082916943020110160",
+    "address": "1400 W VIRGINIA LN",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same interpretation.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "eligible": false,
+    "flags": [
+      "invalid_zoning_geometry"
+    ],
+    "proposedPrimary": null,
+    "agreement": true,
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 911.745,
+        "percentOfParcel": 97.208776
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 26.703,
+        "percentOfParcel": 2.847022
+      }
+    ]
+  },
+  {
+    "caseId": "1C-04",
+    "parcelId": "322816884270000002",
+    "address": "2841 MOONBEAM WAY",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same interpretation.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "eligible": true,
+    "flags": [],
+    "proposedPrimary": "LMDR",
+    "agreement": true,
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 2179.854,
+        "percentOfParcel": 97.182497
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 63.198,
+        "percentOfParcel": 2.817503
+      }
+    ]
+  },
+  {
+    "caseId": "1C-05",
+    "parcelId": "332816803900060120",
+    "address": "3045 PIN OAK DR",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same interpretation.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "eligible": true,
+    "flags": [],
+    "proposedPrimary": "LMDR",
+    "agreement": true,
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 869.65,
+        "percentOfParcel": 96.88783
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 27.934,
+        "percentOfParcel": 3.11217
+      }
+    ]
+  }
+]
