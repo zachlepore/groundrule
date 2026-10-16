@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "approvalId": "CLR-Z-002-SAME-CODE-2026-10-16",
+  "ruleId": "CLR-Z-002",
+  "ruleVersion": "1.1.0-approved-static",
+  "candidateRuleVersion": "1.1.0-provisional",
+  "decision": "APPROVED_FOR_OFFLINE_STATIC_EXPORT_ONLY",
+  "approvedOn": "2026-10-16",
+  "authorization": "Groundrule owner explicitly authorized FINAL APPROVAL of CLR-Z-002 in conversation on 2026-10-16: exactly 262 qualifying original-REVIEW addresses with existing LMDR classifications and exactly LMDR + OS/R intersections. Preserve secondary mapped OS/R, meaningful areas, all exclusions, original zoning and source QA. The 3% threshold controls notice presentation only. Preserve Rule 001 approvals. No Supabase, production Guides, resident UX, additional QC or new zoning methodology authorized.",
+  "basisCommit": "ef31c8fb18a22cb52f658a05141223f95627b64d",
+  "sourceSnapshotId": "clearwater-gis-2026-09-28",
+  "sourceArchiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+  "scope": {
+    "originalQaStatus": "review",
+    "existingPrimaryCode": "LMDR",
+    "exactPositiveAreaDistricts": [
+      "LMDR",
+      "OS/R"
+    ],
+    "requirePreviousProvisionalEligibility": true,
+    "retainAllExistingQualityAndHumanExclusions": true,
+    "preserveAllRule001Approvals": true,
+    "doNotChangeOriginalPrimaryCode": true,
+    "doNotChangeSourceQa": true
+  },
+  "presentation": {
+    "osrNoticeProminentWhenPercentGreaterThan": 3,
+    "presentationOnly": true,
+    "noticeThresholdIsLegalExemption": false,
+    "secondaryMappedOsrMustBeRetained": true,
+    "retainMappedEvidenceAndViewerAccess": true,
+    "preserveMeaningfulSecondaryOsr": true,
+    "impliesExclusivelyLmdr": false,
+    "noticeText": "Part of this parcel is mapped Open Space/Recreation (OS/R). Check the mapped district at your project location and confirm applicable requirements with Clearwater before proceeding."
+  },
+  "excludedScopes": [
+    "94 exact-pair source-quality excluded addresses",
+    "173 LMDR/OSR plus additional-district addresses",
+    "all other district combinations, unsupported codes and overlays",
+    "known true splits preventing confident primary guidance, uncertainty, or contradictory human evidence",
+    "unrelated source-profile and geometry/coverage/identity failures",
+    "original CLEAN, changed-code and unclassified addresses",
+    "Rule 001 pending 201 changed-code and 1 unclassified proposal"
+  ],
+  "expected": {
+    "allAddresses": 63430,
+    "originalClean": 43092,
+    "originalReview": 20338,
+    "rule001Approved": 1967,
+    "rule002Approved": 262,
+    "totalApproved": 2229,
+    "stillReview": 18109,
+    "rule002NoticeProminent": 4,
+    "rule002NoticeNotProminent": 258,
+    "rule001NoticeProminent": 762,
+    "rule001NoticeNotProminent": 1205,
+    "exactPairExcludedAddresses": 94,
+    "additionalDistrictExcludedAddresses": 173,
+    "substantiveSecondaryOsrApproved": 2,
+    "changedPrimaryCodes": 0,
+    "changedSourceQaStatuses": 0,
+    "duplicateApprovals": 0
+  },
+  "basisFileSha256": {
+    "scripts/gis/clearwater-rule001-source.json": "8ecce9d585fc742b5301d591b696c5e47863763f79bf6ca099dbdf8d859f4324",
+    "scripts/gis/clearwater-rule001.mjs": "9bf5314c59322d1c55004029a093c6b2c51c932c5b80956351dedf5ad48202da",
+    "scripts/gis/clearwater-rule001-policy.mjs": "0547466035bb4114c212926dda2c5a1623ad1abeb65df4c5c26e70a699e9cce6",
+    "scripts/gis/clearwater-rule001-intersections.mjs": "7ffd78c84328f55688b251c3604727a8696e62b1214f5b177088a4ed6ff99cf4",
+    "scripts/gis/export-clearwater-approved-rule001.mjs": "1d254e993e213bb554a8e2841592b5bc976d5d37a979e78bd6d09fec00e0f8cb",
+    "research/gis/rule001-approval.same-code-v1.json": "7c515b4ab7c58d33905eed8ef68166725a8460059b44e0b1948a5ee5ec465e66",
+    "research/gis/rule001-final-focused-qc.json": "c1b71a202c7a76dcfaa16b5fbd4b44425f045ddec32b1dfa75b55a29c01ea336",
+    "scripts/gis/clearwater-rule002.mjs": "9227b95ebbea2a210d4aec27a263937b4f57bf883182261ed760d0487ff9363d",
+    "scripts/gis/clearwater-rule002-policy.mjs": "14d029d88f13300eeaedff15d92a829e65e25994d0777f863fa56c5019e80861",
+    "scripts/gis/clearwater-rule002-intersections.mjs": "f9bd2e771f9ee02ed644af4f782cf927a405f2f5b27aaa3a2f72b37a6e4b84ac",
+    "scripts/gis/verify-rule002-output.mjs": "819979465ff40bcc8963b53d0c156407c4ade3a38f9cf04b16504e2d1faf3134",
+    "research/gis/rule002-qc-observations.json": "49b42418bb5eb0901b37755ce6f5ace2af4b71149e03ec86ec2604a3636bd71b",
+    "research/gis/rule002-qc-initial.json": "23758a7d4377730aafd052ea8c9f273d75e4d8cd775b992a45b29a1847a7e19e",
+    "research/gis/rule002-presentation-policy.json": "69d478338d3c0cf2e48c6346b691a1af6b3a4b30dc8eed6be6c6c912f66a9f22",
+    "research/gis/zoning-gold/reference-dataset.json": "e40d7cac4370fa39f0aa60488cec5d04142e2e062be9a065739d627865c83ba6",
+    "research/gis/zoning-gold/rule001-qc-observations.json": "65c8659a6adf32d9cc47b7f8ee10f1ff6069a5da7e20fd4c3247b3b5f09b4eb5"
+  }
+}

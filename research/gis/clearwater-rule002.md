@@ -1,6 +1,6 @@
-# CLR-Z-002 — LMDR + OS/R (provisional)
+# CLR-Z-002 — approved offline LMDR + OS/R static export
 
-Rule 002 proposes LMDR primary resident guidance for parcels with exactly the two distinct positive-area districts LMDR and OS/R, after source-quality and human-review exclusions. It retains OS/R and its measured coverage and provenance. It does not approve a rule, change original zoning/source QA, or implement resident UI. No area-dominance cutoff applies.
+The owner has approved the bounded offline scope of exactly 262 original-REVIEW addresses with existing LMDR classifications. The final exporter produces 2,229 approved guidance records across Rules 001 and 002. Rule 002 uses LMDR primary starting guidance for parcels with exactly the two distinct positive-area districts LMDR and OS/R, after source-quality and human-review exclusions. It retains OS/R and its measured coverage and provenance. It preserves original zoning/source QA and does not implement resident UI. The provisional analysis below remains preapproval evidence; the final bounded export and authorization are documented in the final section. No area-dominance cutoff applies.
 
 This branch starts from `d3be944` on main, after PR #97 merged. All Rule 001 implementation, configuration, human evidence, tests and workflow files remain unchanged. Rule 001's 1,967 approved same-code REVIEW addresses and its strict >2% P notice policy are preserved. Rule 002's disjoint exact-pair scope excludes all P intersections and every third code. A conflict with an approved Rule 001 record fails the run.
 
@@ -45,4 +45,23 @@ Notice wording: “Part of this parcel is mapped Open Space/Recreation (OS/R). C
 
 The small `rule002-results` files preserve audit, completed evidence and targeted QC identities for review. Full lookup, parcel/feature evidence, source verification, incremental audit and checksums are published as `clearwater-rule002-provisional-combined`; the unchanged Rule 001 baseline is a separate artifact in the same run. Both have 90-day retention. No large GIS data is committed. No Supabase or production behavior changes.
 
-**Five new inspections are recorded. No additional inspection is proposed. Await explicit final bounded-scope authorization before approval or merge.**
+**Five new inspections are recorded. No additional inspection was performed. Explicit final bounded-scope authorization is recorded below; merging this code does not deploy Guide or UX changes.**
+
+
+## Final bounded offline approval — October 16, 2026
+
+The owner explicitly authorized exactly 262 qualifying original-REVIEW profiles with existing LMDR primary codes and exactly LMDR + OS/R. `rule002-approval.same-code-v1.json` records the authorization, approved version, basis commit, source snapshot, evidence/implementation SHA256 pins, exclusions and strict >3% presentation policy. Rule 001 is not modified.
+
+The provisional processor and its research objects remain immutable preapproval evidence. `export-clearwater-approved-rule002.mjs` validates those outputs and every original, then updates only `approvedPrimaryGuidance` for the authorized 262 profiles. The existing 1,967 Rule 001 approval objects are preserved exactly. Approved Rule 002 records include both mapped districts, retained OS/R coverage and viewer links, explicit non-exclusive zoning semantics, and the substantive secondary annotations/quotes for R002-01/02. Source `status`, original zoning, evaluator facts and research evidence remain unchanged.
+
+Append this command after the reproduction chain above (fresh approved output directory):
+
+```bash
+node scripts/gis/export-clearwater-approved-rule002.mjs "$RULE002_SOURCE" "$RULE002_OUTPUT/rule001-approved" "$RULE002_OUTPUT/provisional" "$RULE002_OUTPUT/approved"
+```
+
+The exporter first runs the independent existing provisional/source verifier, reconciles exactly 63,430 profiles / 2,229 approved guidance records (1,967 + 262), verifies 4/258 OS/R notices, all 94 exact-pair and 173 additional-district exclusions, known human exceptions, zero original changes, and zero Rule 001 approval changes. Every serialized final row is read back against its frozen original and approved contract, and every output checksum is verified. Rule 001's 201 changed-code and one unclassified proposal remain pending. No new manual QC or zoning resolver is introduced.
+
+The workflow publishes `clearwater-approved-rules-001-002-static-lookup` with the complete lookup, approved audit, both approval configs, original research inventories, human evidence, source verification and checksums (90-day retention). The provisional combined artifact remains separately available as preapproval evidence. No large data is committed and no Supabase, production Guide or UX changes are included.
+
+The approved artifact's `remaining-review-population.json` partitions all 18,109 remaining REVIEW profiles using existing verified diagnostics. It makes no new zoning assignments. MDR + OS/R has 736 remaining REVIEW addresses, 733 passing the existing geometry/coverage/profile-issue screen, the largest such screened population. It is the recommended next cleanup class. These are descriptive diagnostic counts, not automatic eligibility or approved recoveries; no next rule is implemented here.
