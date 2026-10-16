@@ -1,6 +1,6 @@
 {
   "ruleId": "CLR-Z-002",
-  "ruleVersion": "1.0.0-provisional",
+  "ruleVersion": "1.1.0-provisional",
   "approvalStatus": "NOT_APPROVED",
   "sourceSnapshotId": "clearwater-gis-2026-09-28",
   "sourceArchiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
@@ -119,7 +119,85 @@
     "measurementErrorParcels": 0,
     "unlinkedRawBboxParcels": 660
   },
-  "qcNewIndependentParcels": 10,
+  "qcNewIndependentParcels": 0,
+  "qcHumanInspectionsCompleted": 5,
+  "presentation": {
+    "noticeThresholdPercent": 3,
+    "presentationOnly": true,
+    "legalExemption": false,
+    "options": {
+      "2": {
+        "thresholdPercent": 2,
+        "prominent": {
+          "parcels": 20,
+          "addresses": 20
+        },
+        "notProminent": {
+          "parcels": 239,
+          "addresses": 242
+        },
+        "potentialReviewRecovery": 262
+      },
+      "3": {
+        "thresholdPercent": 3,
+        "prominent": {
+          "parcels": 4,
+          "addresses": 4
+        },
+        "notProminent": {
+          "parcels": 255,
+          "addresses": 258
+        },
+        "potentialReviewRecovery": 262
+      },
+      "5": {
+        "thresholdPercent": 5,
+        "prominent": {
+          "parcels": 3,
+          "addresses": 3
+        },
+        "notProminent": {
+          "parcels": 256,
+          "addresses": 259
+        },
+        "potentialReviewRecovery": 262
+      }
+    },
+    "rangeStudy": {
+      "bounds": "OS/R >3% and <=17.5%",
+      "qualifying": {
+        "parcels": 1,
+        "addresses": 1
+      },
+      "qualifyingAlreadyReviewed": {
+        "parcels": 1,
+        "addresses": 1
+      },
+      "qualifyingUnreviewed": {
+        "parcels": 0,
+        "addresses": 0
+      },
+      "supportingReviews": [
+        {
+          "caseId": "1C-05",
+          "parcelId": "332816803900060120",
+          "humanReview": {
+            "result": "CONFIRMED: LMDR",
+            "note": "same interpretation.",
+            "reviewDate": "2026-10-06",
+            "verificationMethod": "Clearwater official zoning viewer",
+            "reviewStatus": "human_confirmed",
+            "reviewer": "User participating in this chat"
+          }
+        }
+      ],
+      "excluded": {
+        "parcels": 1,
+        "addresses": 1
+      }
+    },
+    "note": "Meaningful secondary OS/R does not by itself prevent confident LMDR primary starting guidance. It never removes potentially applicable mapped split zoning. Human true splits preventing primary guidance and all quality exceptions remain excluded."
+  },
   "supabaseChanged": false,
   "productionGuidesChanged": false,
   "residentUxChanged": false

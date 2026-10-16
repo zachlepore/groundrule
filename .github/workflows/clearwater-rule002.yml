@@ -12,6 +12,8 @@ on:
       - tests/clearwater-rule002.test.mjs
       - research/gis/clearwater-rule002.md
       - research/gis/rule002-results/**
+      - research/gis/rule002-qc-*.json
+      - research/gis/rule002-presentation-policy.json
 
 permissions:
   contents: read

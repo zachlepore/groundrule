@@ -1,7 +1,11 @@
 /** Provisional LMDR + OS/R interpretation only. No approvals or source changes. */
+import assert from 'node:assert/strict';
 import { normalizeZoning as norm } from './clearwater-pilot.mjs';
 export const RULE_ID='CLR-Z-002';
-export const RULE_VERSION='1.0.0-provisional';
+export const RULE_VERSION='1.1.0-provisional';
+export const NOTICE_THRESHOLD_PERCENT=3;
+export const OFFICIAL_ZONING_LAYER_URL='https://gis.myclearwater.com/arcgis/rest/services/ArcGISMapServices/Zoning_WGS84/MapServer/1';
+export const noticeVisibility=(eligible,p,threshold=NOTICE_THRESHOLD_PERCENT)=>!eligible?'UNRESOLVED_NO_PRIMARY_PROPOSAL':p>threshold?'RECOMMENDED_PHYSICAL_PROJECT_GUIDES':'NOT_PROMINENT_IN_ORDINARY_GUIDES';
 export function classify(d,profiles,reviews=[],duplicateIdentity=false){
   const codes=[...new Set(d.zoningCodeCoverage.map(e=>e.normalizedZoningCode))].sort();
   const structuralMatch=codes.length===2&&codes[0]==='lmdr'&&codes[1]==='os/r';
@@ -22,10 +26,16 @@ export function classify(d,profiles,reviews=[],duplicateIdentity=false){
   if(reviews.some(r=>r.humanReview.reviewStatus==='human_confirmed'&&norm(r.humanReview.result.replace(/^CONFIRMED:\s*/,''))!=='lmdr'))flags.push('gold_contradiction');
   if(reviews.some(r=>r.humanReview.reviewStatus==='human_primary_candidate'&&r.humanReview.reportedPrimaryCode&&norm(r.humanReview.reportedPrimaryCode)!=='lmdr'))flags.push('conflicting_human_candidate_evidence');
   const eligible=structuralMatch&&!flags.length;
+  const osrCoveragePercent=d.zoningCodeCoverage.find(e=>e.normalizedZoningCode==='os/r')?.percentOfParcel??null;
+  const human=reviews.find(r=>r.humanReview.ruleId===RULE_ID)?.humanReview;
   return {ruleId:RULE_ID,ruleVersion:RULE_VERSION,structuralMatch,eligible,approvalStatus:'NOT_APPROVED',
     decisionStatus:eligible?'PENDING_QC':'EXCLUDED',productionEligible:false,
     proposedPrimaryGuidanceZoning:eligible?'LMDR':null,retainedSecondaryDistrict:eligible?'OS/R':null,
-    osrCoveragePercent:d.zoningCodeCoverage.find(e=>e.normalizedZoningCode==='os/r')?.percentOfParcel??null,
+    osrCoveragePercent,noticeThresholdPercent:NOTICE_THRESHOLD_PERCENT,
+    proposedNoticeVisibility:noticeVisibility(eligible,osrCoveragePercent),
+    secondaryOsrRelevance:human?.secondaryOsrRelevance??'NOT_HUMAN_ASSESSED',
+    substantiveSecondaryOsr:human?.secondaryOsrRelevance==='MEANINGFUL_SECONDARY_OSR'?true:human?.secondaryOsrRelevance==='HUMAN_REPORTED_NEGLIGIBLE'?false:null,
+    humanReviewReferences:reviews.filter(r=>r.humanReview.ruleId===RULE_ID).map(r=>({caseId:r.caseNumber,observationVerbatim:r.humanReview.observationVerbatim})),
     flags:[...new Set(flags)]};
 }
 export function addProvisionalLayer(row,parcel){
@@ -38,6 +48,13 @@ export function addProvisionalLayer(row,parcel){
     retainedSecondaryDistrict:parcel?.decision.retainedSecondaryDistrict??null,
     osrCoveragePercent:parcel?.decision.osrCoveragePercent??null,
     flags:parcel?.decision.flags??[],
+    noticeThresholdPercent:NOTICE_THRESHOLD_PERCENT,noticeThresholdMeaning:'PRESENTATION_ONLY_NOT_ELIGIBILITY_OR_ZONING_APPLICABILITY',
+    proposedNoticeVisibility:parcel?.decision.proposedNoticeVisibility??'NOT_APPLICABLE',
+    secondaryOsrRelevance:parcel?.decision.secondaryOsrRelevance??'NOT_HUMAN_ASSESSED',
+    substantiveSecondaryOsr:parcel?.decision.substantiveSecondaryOsr??null,
+    humanReviewReferences:parcel?.decision.humanReviewReferences??[],
+    doesNotEraseMappedSplitZoning:true,
+    officialViewerAccess:parcel?{zoningLayerUrl:OFFICIAL_ZONING_LAYER_URL,mapViewerUrl:`https://www.arcgis.com/home/webmap/viewer.html?url=${encodeURIComponent(OFFICIAL_ZONING_LAYER_URL)}&source=sd`}:null,
     originalZoningIntersections:parcel?.evidence.zoningCodeCoverage??null,
     intersectionEvidence:parcel?`lmdr-osr-parcel-inventory.json#${parcel.parcelId}`:null,
     originalSourceQaStatus:row.status,existingPrimaryZoning:row.zoningCode,
@@ -74,10 +91,47 @@ export function sampleQc(population,previousReviews,limit=10){
     originalProfiles:r.originalProfiles,diagnosticFlags:r.decision.flags,proposal:'LMDR',
     osrCoveragePercent:r.decision.osrCoveragePercent,reviewPurpose:r.reviewPurpose,
     independentNewParcel:true,sourceSnapshotIdentifier:r.sourceSnapshotIdentifier,
-    nearestOtherQcMeters:Math.round(Math.min(...selected.filter(s=>s.parcelId!==r.parcelId).map(s=>distance(r.addresses[0].coordinates,s.addresses[0].coordinates)))),
+    nearestOtherQcMeters:selected.length>1?Math.round(Math.min(...selected.filter(s=>s.parcelId!==r.parcelId).map(s=>distance(r.addresses[0].coordinates,s.addresses[0].coordinates)))):null,
     humanReview:{result:null,note:null,reviewStatus:'pending',verificationMethod:'Clearwater official zoning viewer'}}));
 }
 
 export function confirmedPairGold(records){
   return records.filter(g=>g.humanReview.reviewStatus==='human_confirmed'&&g.diagnostic.candidates.length===2&&['lmdr','os/r'].every(c=>g.diagnostic.candidates.some(e=>norm(e.zoningCode)===c)));
+}
+
+
+export function validateHumanEvidence(session,packet){
+  assert.equal(session.ruleId,RULE_ID);assert.equal(session.sourceSnapshotIdentifier,'clearwater-gis-2026-09-28');
+  assert.equal(session.records.length,5);assert.equal(new Set(session.records.map(o=>o.caseId)).size,5);
+  return session.records.map((o,i)=>{
+    assert.equal(o.caseId,`R002-${String(i+1).padStart(2,'0')}`);
+    const q=packet.find(q=>q.caseId===o.caseId);assert.ok(q);
+    for(const k of ['parcelId','address','osrCoveragePercent','originalIntersections','originalZoningFeatures'])assert.deepEqual(o[k],q[k],`Human QC identity ${o.caseId} ${k}`);
+    assert.ok(o.humanReview.observationVerbatim);assert.equal(o.humanReview.approvalGranted,false);assert.equal(o.humanReview.legalSplitDetermination,false);
+    const statuses={PRIMARY_GUIDANCE_SUPPORTED:'human_primary_candidate',PRIMARY_UNCERTAIN:'human_primary_applicability_unclear',TRUE_SPLIT_PREVENTS_PRIMARY:'human_true_split'};
+    assert.ok(Object.hasOwn(statuses,o.humanReview.category));
+    assert.ok(['MEANINGFUL_SECONDARY_OSR','HUMAN_REPORTED_NEGLIGIBLE','NOT_HUMAN_ASSESSED'].includes(o.humanReview.secondaryOsrRelevance));
+    return {caseNumber:o.caseId,parcelId:o.parcelId,humanReview:{...o.humanReview,ruleId:RULE_ID,reviewStatus:statuses[o.humanReview.category]}};
+  });
+}
+export function analyzePresentation(population,reviews=[]){
+  const qualifying=population.filter(r=>r.decision.eligible);
+  const metrics=rs=>({parcels:rs.length,addresses:rs.reduce((s,r)=>s+r.originalProfiles.length,0)});
+  const options=Object.fromEntries([2,3,5].map(t=>[t,{thresholdPercent:t,prominent:metrics(qualifying.filter(r=>r.decision.osrCoveragePercent>t)),notProminent:metrics(qualifying.filter(r=>r.decision.osrCoveragePercent<=t)),potentialReviewRecovery:qualifying.reduce((s,r)=>s+r.originalProfiles.filter(p=>p.status==='review').length,0)}]));
+  const inRange=r=>r.decision.osrCoveragePercent>3&&r.decision.osrCoveragePercent<=17.5;
+  const reviewedIds=new Set(reviews.filter(r=>r.humanReview.reviewStatus&&r.humanReview.reviewStatus!=='pending').map(r=>r.parcelId));
+  const range=qualifying.filter(inRange);
+  return {noticeThresholdPercent:NOTICE_THRESHOLD_PERCENT,presentationOnly:true,legalExemption:false,options,
+    rangeStudy:{bounds:'OS/R >3% and <=17.5%',qualifying:metrics(range),qualifyingAlreadyReviewed:metrics(range.filter(r=>reviewedIds.has(r.parcelId))),qualifyingUnreviewed:metrics(range.filter(r=>!reviewedIds.has(r.parcelId))),supportingReviews:reviews.filter(r=>range.some(p=>p.parcelId===r.parcelId)&&r.humanReview.reviewStatus!=='pending').map(r=>({caseId:r.caseNumber,parcelId:r.parcelId,humanReview:r.humanReview})),excluded:metrics(population.filter(r=>r.decision.structuralMatch&&!r.decision.eligible&&inRange(r)))},
+    note:'Meaningful secondary OS/R does not by itself prevent confident LMDR primary starting guidance. It never removes potentially applicable mapped split zoning. Human true splits preventing primary guidance and all quality exceptions remain excluded.'};
+}
+export function progressQc(population,session,packet,priorReviews){
+  const completed=session.records.map(o=>({...packet.find(q=>q.caseId===o.caseId),newInspectionRequested:false,
+    humanReview:{...o.humanReview,result:o.humanReview.category==='PRIMARY_GUIDANCE_SUPPORTED'?'LMDR PRIMARY GUIDANCE SUPPORTED':o.humanReview.category,reviewStatus:'completed'},
+    reviewPurpose:'Completed human evidence; preserve secondary interpretation. No repeat inspection requested.'}));
+  const known=[...priorReviews,...session.records];
+  const range=population.filter(r=>r.decision.osrCoveragePercent>3&&r.decision.osrCoveragePercent<=17.5);
+  const targeted=sampleQc(range,known,3).map((q,i)=>({...q,caseId:`R002-T${String(i+1).padStart(2,'0')}`,batch:'TARGETED',newInspectionRequested:true,
+    reviewPurpose:'Only unreviewed qualifying >3% to <=17.5% OS/R range; check contextual significance just above the proposed notice boundary.'}));
+  return [...completed,...targeted];
 }

@@ -38,11 +38,21 @@ Reason counts can overlap. exclusionCombinations in audit.json partitions the ex
 
 ## Human evidence and limits
 
-Existing confirmed LMDR/OS/R gold cases: 10; supported eligible predictions: 9; interpretation contradictions: 0; gold quality exclusions: 1. 1C-03, 1400 W VIRGINIA LN, remains excluded for invalid_zoning_geometry despite its confirmed LMDR human label. Prior evidence is mostly LMDR-dominant and does not establish that large OS/R shares are harmless. 10 new independent QC parcels are selected by coverage, code mismatch and geographic separation, with pending human outcomes. No repeated inspection of gold cases is requested. Qualifying OS/R coverage ranges from 0.000333% to 30.946006%. There are 0 qualifying changed/new-code records; no such QC case is fabricated when that count is zero.
+Existing confirmed LMDR/OS/R gold cases: 10; supported eligible predictions: 9; interpretation contradictions: 0; gold quality exclusions: 1. 1C-03, 1400 W VIRGINIA LN, remains excluded for invalid_zoning_geometry despite its confirmed LMDR human label. Prior evidence is mostly LMDR-dominant and does not establish that large OS/R shares are harmless. 5 new owner-reported inspections support LMDR primary starting guidance. R002-01 and R002-02 retain substantively meaningful secondary OS/R, including the reported waterfront strip; R002-03–05 report negligible overlaps without legal exemption. Exact observations and frozen packet identities are preserved separately. 0 additional targeted inspections are requested; the other five unreviewed initial examples are archived, not another mandatory batch. No repeated inspection of gold cases is requested. Qualifying OS/R coverage ranges from 0.000333% to 30.946006%. There are 0 qualifying changed/new-code records; no such QC case is fabricated when that count is zero.
 
-## OS/R contextual notice recommendation (pending QC)
+## OS/R contextual notice recommendation (proposed; final scope unapproved)
 
-Recommend a brief physical-project notice for mapped OS/R intersections, without inheriting the P 2% cutoff: “Part of this parcel is mapped Open Space/Recreation (OS/R). Check the mapped district at your project location and confirm applicable requirements with Clearwater before proceeding.” This is a proposed presentation policy, never an eligibility test or legal exemption. The current evidence does not justify suppressing OS/R by percentage; defer any suppression cutoff. Minimum fields: retained OS/R code, exact percent, source feature IDs/indices, parcel ID, snapshot ID/source hashes and official-viewer link. No UI is implemented. Rule 001 retains its separate strict >2% P prominence policy.
+Proposed policy: OS/R <=3% has no prominent notice; OS/R >3% recommends the contextual notice for relevant physical-project Guides. Always retain both mapped districts, exact percentages, feature evidence and viewer access. The threshold changes presentation only, never primary eligibility, legal applicability or source QA. Meaningful secondary OS/R may coexist with confident LMDR starting guidance; legally applicable split zoning is not erased. Known splits preventing confident primary guidance remain excluded. Rule 001 retains its separate strict >2% P prominence policy without modification. No UI is implemented.
+
+“Part of this parcel is mapped Open Space/Recreation (OS/R). Check the mapped district at your project location and confirm applicable requirements with Clearwater before proceeding.”
+
+| OS/R threshold (strict >) | Prominent parcels / addresses | No prominent notice addresses | Potential incremental REVIEW recovery |
+|---|---:|---:|---:|
+| 2% | 20 / 20 | 242 | 262 |
+| 3% | 4 / 4 | 258 | 262 |
+| 5% | 3 / 3 | 259 | 262 |
+
+The >3% to <=17.5% range contains 1 qualifying parcel / 1 address and 1 excluded parcels / 1 addresses. Of the qualifying range, 1 address is already human-reviewed and 0 are unreviewed. 1C-05 remains existing evidence; no repeat inspection is requested. Only unreviewed qualifying range parcels could require targeted inspection; quality exclusions are not reopened. See qc-reviewer.md. This is a presentation proposal, not final Rule 002 approval.
 
 ## Audit and reproduction
 
@@ -50,4 +60,4 @@ Recommend a brief physical-project notice for mapped OS/R intersections, without
 
 Only address-linked parcels have authoritative Clearwater membership; neighboring/unaddressed raw parcels are outside the city address denominator. 660 such raw parcels passed the bounding-box screen, without being asserted to be Clearwater or positive-area pairs. Complete exact-pair and additional-district evidence, per-address incremental audit, lookup and hashes are downloadable workflow artifacts. Large GIS outputs are never committed. Five unavailable Batch 5A reviews are not inferred or used.
 
-Run the dedicated clearwater-rule002 workflow, which downloads the permanent release directly, validates its pinned archive hash, regenerates Rule 001 and its approved export, then runs Rule 002 into a new directory. Optional local Rule 002 measurement reuse requires identical source hashes, algorithm hash and exhaustive screened IDs, and contains no prior classifications. **Stop for human QC; do not promote or merge Rule 002.**
+Run the dedicated clearwater-rule002 workflow, which downloads the permanent release directly, validates its pinned archive hash, regenerates Rule 001 and its approved export, then runs Rule 002 into a new directory. Optional local Rule 002 measurement reuse requires identical source hashes, algorithm hash and exhaustive screened IDs, and contains no prior classifications. **Await explicit final bounded-scope authorization; do not promote or merge Rule 002.**

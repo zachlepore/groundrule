@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "ruleId": "CLR-Z-002",
+  "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+  "sourceQcPacket": {
+    "path": "research/gis/rule002-qc-initial.json",
+    "sha256": "23758a7d4377730aafd052ea8c9f273d75e4d8cd775b992a45b29a1847a7e19e"
+  },
+  "interpretation": "LMDR primary starting guidance may coexist with meaningful, potentially legally applicable secondary OS/R. No mapped district is erased and no final rule approval is recorded.",
+  "records": [
+    {
+      "caseId": "R002-01",
+      "parcelId": "102916107580000040",
+      "address": "3418 BRAESIDE PL",
+      "osrCoveragePercent": 30.946006,
+      "originalIntersections": [
+        {
+          "normalizedZoningCode": "lmdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1787.348,
+          "percentOfParcel": 69.053971
+        },
+        {
+          "normalizedZoningCode": "os/r",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 800.986,
+          "percentOfParcel": 30.946006
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 350,
+          "sourceIdentifier": 10834,
+          "rawZoningCode": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1787.348,
+          "percentOfParcel": 69.053971
+        },
+        {
+          "sourceIndex": 85,
+          "sourceIdentifier": 10565,
+          "rawZoningCode": "OS/R",
+          "normalizedZoningCode": "os/r",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 800.986,
+          "percentOfParcel": 30.946006
+        }
+      ],
+      "humanReview": {
+        "category": "PRIMARY_GUIDANCE_SUPPORTED",
+        "reportedPrimaryCode": "LMDR",
+        "secondaryOsrRelevance": "MEANINGFUL_SECONDARY_OSR",
+        "observationVerbatim": "R002-01: LMDR primary guidance appropriate, but the 30.946006% OS/R portion is a meaningful waterfront strip. Preserve both mapped districts and flag the secondary OS/R area as substantively relevant.",
+        "inspectionDate": null,
+        "recordedOn": "2026-10-16",
+        "reviewer": "Groundrule owner in conversation",
+        "verificationMethod": "Human QC inspection reported by owner; detailed method not restated",
+        "approvalGranted": false,
+        "legalSplitDetermination": false
+      }
+    },
+    {
+      "caseId": "R002-02",
+      "parcelId": "202816168010001990",
+      "address": "2668 CONCORDE CT",
+      "osrCoveragePercent": 17.51724,
+      "originalIntersections": [
+        {
+          "normalizedZoningCode": "lmdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1712.639,
+          "percentOfParcel": 82.48276
+        },
+        {
+          "normalizedZoningCode": "os/r",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 363.721,
+          "percentOfParcel": 17.51724
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 665,
+          "sourceIdentifier": 11158,
+          "rawZoningCode": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1712.639,
+          "percentOfParcel": 82.48276
+        },
+        {
+          "sourceIndex": 43,
+          "sourceIdentifier": 10523,
+          "rawZoningCode": "OS/R",
+          "normalizedZoningCode": "os/r",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 363.721,
+          "percentOfParcel": 17.51724
+        }
+      ],
+      "humanReview": {
+        "category": "PRIMARY_GUIDANCE_SUPPORTED",
+        "reportedPrimaryCode": "LMDR",
+        "secondaryOsrRelevance": "MEANINGFUL_SECONDARY_OSR",
+        "observationVerbatim": "R002-02: Same interpretation as R002-01. LMDR primary guidance with meaningful secondary OS/R (17.517240%).",
+        "inspectionDate": null,
+        "recordedOn": "2026-10-16",
+        "reviewer": "Groundrule owner in conversation",
+        "verificationMethod": "Human QC inspection reported by owner; detailed method not restated",
+        "approvalGranted": false,
+        "legalSplitDetermination": false
+      }
+    },
+    {
+      "caseId": "R002-03",
+      "parcelId": "052915546660060030",
+      "address": "840 ELDORADO AVE",
+      "osrCoveragePercent": 0.000333,
+      "originalIntersections": [
+        {
+          "normalizedZoningCode": "lmdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 570.24,
+          "percentOfParcel": 99.999667
+        },
+        {
+          "normalizedZoningCode": "os/r",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 0.002,
+          "percentOfParcel": 0.000333
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 281,
+          "sourceIdentifier": 10764,
+          "rawZoningCode": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 570.24,
+          "percentOfParcel": 99.999667
+        },
+        {
+          "sourceIndex": 466,
+          "sourceIdentifier": 10954,
+          "rawZoningCode": "OS/R",
+          "normalizedZoningCode": "os/r",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 0.002,
+          "percentOfParcel": 0.000333
+        }
+      ],
+      "humanReview": {
+        "category": "PRIMARY_GUIDANCE_SUPPORTED",
+        "reportedPrimaryCode": "LMDR",
+        "secondaryOsrRelevance": "HUMAN_REPORTED_NEGLIGIBLE",
+        "observationVerbatim": "R002-03: OS/R overlap negligible (0.000333%). LMDR primary guidance.",
+        "inspectionDate": null,
+        "recordedOn": "2026-10-16",
+        "reviewer": "Groundrule owner in conversation",
+        "verificationMethod": "Human QC inspection reported by owner; detailed method not restated",
+        "approvalGranted": false,
+        "legalSplitDetermination": false
+      }
+    },
+    {
+      "caseId": "R002-04",
+      "parcelId": "292816202000000450",
+      "address": "2793 COTTONWOOD CT",
+      "osrCoveragePercent": 2.397773,
+      "originalIntersections": [
+        {
+          "normalizedZoningCode": "lmdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1112.152,
+          "percentOfParcel": 97.602227
+        },
+        {
+          "normalizedZoningCode": "os/r",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 27.322,
+          "percentOfParcel": 2.397773
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 61,
+          "sourceIdentifier": 10541,
+          "rawZoningCode": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1112.152,
+          "percentOfParcel": 97.602227
+        },
+        {
+          "sourceIndex": 99,
+          "sourceIdentifier": 10579,
+          "rawZoningCode": "OS/R",
+          "normalizedZoningCode": "os/r",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 27.322,
+          "percentOfParcel": 2.397773
+        }
+      ],
+      "humanReview": {
+        "category": "PRIMARY_GUIDANCE_SUPPORTED",
+        "reportedPrimaryCode": "LMDR",
+        "secondaryOsrRelevance": "HUMAN_REPORTED_NEGLIGIBLE",
+        "observationVerbatim": "R002-04: OS/R overlap negligible (2.397773%). LMDR primary guidance.",
+        "inspectionDate": null,
+        "recordedOn": "2026-10-16",
+        "reviewer": "Groundrule owner in conversation",
+        "verificationMethod": "Human QC inspection reported by owner; detailed method not restated",
+        "approvalGranted": false,
+        "legalSplitDetermination": false
+      }
+    },
+    {
+      "caseId": "R002-05",
+      "parcelId": "182916246600050100",
+      "address": "916 EVELYN AVE",
+      "osrCoveragePercent": 1.49189,
+      "originalIntersections": [
+        {
+          "normalizedZoningCode": "lmdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1391.34,
+          "percentOfParcel": 98.50811
+        },
+        {
+          "normalizedZoningCode": "os/r",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 21.072,
+          "percentOfParcel": 1.49189
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 199,
+          "sourceIdentifier": 10680,
+          "rawZoningCode": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1391.34,
+          "percentOfParcel": 98.50811
+        },
+        {
+          "sourceIndex": 47,
+          "sourceIdentifier": 10527,
+          "rawZoningCode": "OS/R",
+          "normalizedZoningCode": "os/r",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 21.072,
+          "percentOfParcel": 1.49189
+        }
+      ],
+      "humanReview": {
+        "category": "PRIMARY_GUIDANCE_SUPPORTED",
+        "reportedPrimaryCode": "LMDR",
+        "secondaryOsrRelevance": "HUMAN_REPORTED_NEGLIGIBLE",
+        "observationVerbatim": "R002-05: OS/R overlap negligible (1.491890%). LMDR primary guidance.",
+        "inspectionDate": null,
+        "recordedOn": "2026-10-16",
+        "reviewer": "Groundrule owner in conversation",
+        "verificationMethod": "Human QC inspection reported by owner; detailed method not restated",
+        "approvalGranted": false,
+        "legalSplitDetermination": false
+      }
+    }
+  ]
+}

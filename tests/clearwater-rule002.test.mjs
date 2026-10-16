@@ -36,3 +36,62 @@ test('ten confirmed LMDR gold labels remain intact and the source-invalid gold c
 });
 
 test('serialized output verification detects source, Rule 001, and proposal tampering',async()=>{const {verifyCombinedRecord}=await import('../scripts/gis/verify-rule002-output.mjs');const original=profile();const baseline={...original,researchRule001:{sourceSnapshotIdentifier:'frozen',noticeThresholdPercent:2},approvedPrimaryGuidance:{status:'NO_NEW_APPROVAL'}};const p={parcelId:'abc',evidence:evidence(),decision:classify(evidence(),[profile()])};const out=addProvisionalLayer(baseline,p);verifyCombinedRecord(out,baseline,original,p);for(const mutate of [r=>r.status='clean',r=>r.zoningCode='LMDR',r=>r.researchRule001.noticeThresholdPercent=5,r=>r.approvedPrimaryGuidance.status='GUIDANCE_READY_APPROVED',r=>r.researchRule002.approvalStatus='APPROVED',r=>r.researchRule002.osrCoveragePercent=0]){const changed=structuredClone(out);mutate(changed);assert.throws(()=>verifyCombinedRecord(changed,baseline,original,p));}});
+
+test('OS/R 2/3/5 boundaries control prominence only and retain eligible primary guidance',async()=>{
+  const {noticeVisibility}=await import('../scripts/gis/clearwater-rule002-policy.mjs');
+  for(const threshold of [2,3,5])for(const pct of [threshold,threshold+.000001]){
+    assert.equal(noticeVisibility(true,pct,threshold),pct>threshold?'RECOMMENDED_PHYSICAL_PROJECT_GUIDES':'NOT_PROMINENT_IN_ORDINARY_GUIDES');
+    const decision=classify(evidence(pct),[profile()]);assert.equal(decision.eligible,true);assert.equal(decision.proposedPrimaryGuidanceZoning,'LMDR');assert.equal(decision.retainedSecondaryDistrict,'OS/R');
+  }
+  assert.equal(classify(evidence(3),[profile()]).proposedNoticeVisibility,'NOT_PROMINENT_IN_ORDINARY_GUIDES');
+  assert.equal(classify(evidence(3.000001),[profile()]).proposedNoticeVisibility,'RECOMMENDED_PHYSICAL_PROJECT_GUIDES');
+  assert.equal(noticeVisibility(false,50),'UNRESOLVED_NO_PRIMARY_PROPOSAL');
+});
+test('threshold comparison counts addresses, excludes quality failures, and leaves recovery invariant',async()=>{
+  const {analyzePresentation}=await import('../scripts/gis/clearwater-rule002-policy.mjs');
+  const pop=[2,3,4,6].map((pct,i)=>({decision:classify(evidence(pct),[profile()]),originalProfiles:Array.from({length:i+1},profile)}));
+  const bad=evidence(50);bad.hasInvalidZoningGeometry=true;pop.push({decision:classify(bad,[profile()]),originalProfiles:Array.from({length:100},profile)});
+  const p=analyzePresentation(pop);assert.deepEqual([2,3,5].map(t=>p.options[t].prominent.addresses),[9,7,4]);
+  for(const t of [2,3,5]){assert.equal(p.options[t].potentialReviewRecovery,10);assert.equal(p.options[t].prominent.addresses+p.options[t].notProminent.addresses,10);}
+  assert.equal(p.rangeStudy.qualifying.addresses,7);assert.equal(p.legalExemption,false);
+});
+test('five owner observations retain exact identities and meaningful secondary OS/R never erases mapped splits',async()=>{
+  const {loadHumanEvidence}=await import('../scripts/gis/clearwater-rule002.mjs');
+  const {validateHumanEvidence}=await import('../scripts/gis/clearwater-rule002-policy.mjs');
+  const h=await loadHumanEvidence();assert.equal(h.reviews.length,5);
+  assert.equal(h.session.records[0].humanReview.observationVerbatim,'R002-01: LMDR primary guidance appropriate, but the 30.946006% OS/R portion is a meaningful waterfront strip. Preserve both mapped districts and flag the secondary OS/R area as substantively relevant.');
+  assert.equal(h.session.records[1].humanReview.observationVerbatim,'R002-02: Same interpretation as R002-01. LMDR primary guidance with meaningful secondary OS/R (17.517240%).');
+  for(let i=0;i<5;i++){
+    const o=h.session.records[i],decision=classify(evidence(o.osrCoveragePercent),[profile()],[h.reviews[i]]);
+    assert.equal(decision.eligible,true);assert.equal(decision.substantiveSecondaryOsr,i<2);assert.equal(decision.approvalStatus,'NOT_APPROVED');
+    const base={...profile(),researchRule001:{sourceSnapshotIdentifier:h.session.sourceSnapshotIdentifier},approvedPrimaryGuidance:{status:'NO_NEW_APPROVAL'}};
+    const out=addProvisionalLayer(base,{parcelId:o.parcelId,evidence:evidence(o.osrCoveragePercent),decision});
+    assert.equal(out.researchRule002.doesNotEraseMappedSplitZoning,true);assert.equal(out.researchRule002.originalZoningIntersections.length,2);assert.ok(out.researchRule002.officialViewerAccess.mapViewerUrl);
+    assert.equal(o.humanReview.inspectionDate,null);assert.equal(o.humanReview.legalSplitDetermination,false);
+  }
+  const changed=structuredClone(h.session);changed.records[0].parcelId='wrong';assert.throws(()=>validateHumanEvidence(changed,h.packet));
+  changed.records[0]=structuredClone(h.session.records[0]);changed.records[0].osrCoveragePercent=0;assert.throws(()=>validateHumanEvidence(changed,h.packet));
+});
+test('meaningful secondary evidence and actual primary-preventing splits remain different',async()=>{
+  const {loadHumanEvidence}=await import('../scripts/gis/clearwater-rule002.mjs');const h=await loadHumanEvidence();
+  for(const status of ['human_true_split','human_primary_applicability_unclear']){
+    const review=structuredClone(h.reviews[0]);review.humanReview.reviewStatus=status;
+    const decision=classify(evidence(2.5),[profile()],[review]);assert.equal(decision.eligible,false);assert.equal(decision.proposedPrimaryGuidanceZoning,null);assert.equal(decision.substantiveSecondaryOsr,true);assert.equal(decision.proposedNoticeVisibility,'UNRESOLVED_NO_PRIMARY_PROPOSAL');
+  }
+});
+test('follow-up requests at most three unreviewed range cases and never reopens five completed inspections',async()=>{
+  const {loadHumanEvidence}=await import('../scripts/gis/clearwater-rule002.mjs');const {progressQc}=await import('../scripts/gis/clearwater-rule002-policy.mjs');const h=await loadHumanEvidence();
+  const pool=Array.from({length:8},(_,i)=>({parcelId:`new-${i}`,addresses:[{address:`${i} TEST`,coordinates:[-82.7+i*.01,28]}],originalProfiles:[profile()],evidence:evidence(3.1+i),decision:classify(evidence(3.1+i),[profile()])}));
+  const packet=progressQc(pool,h.session,h.packet,[]);assert.equal(packet.filter(q=>q.newInspectionRequested).length,3);assert.equal(packet.filter(q=>!q.newInspectionRequested).length,5);
+  assert.ok(packet.filter(q=>q.newInspectionRequested).every(q=>q.caseId.startsWith('R002-T')&&q.osrCoveragePercent>3&&q.osrCoveragePercent<=17.5&&q.humanReview.result===null));
+  for(const q of packet.filter(q=>!q.newInspectionRequested))assert.ok(q.humanReview.observationVerbatim);
+});
+
+test('the sole current intermediate-range case is existing confirmed gold, requiring no repeat inspection',async()=>{
+  const {loadHumanEvidence}=await import('../scripts/gis/clearwater-rule002.mjs');const {analyzePresentation,progressQc}=await import('../scripts/gis/clearwater-rule002-policy.mjs');
+  const gold=JSON.parse(await readFile(new URL('../research/gis/zoning-gold/reference-dataset.json',import.meta.url))),g=gold.records.find(g=>g.caseNumber==='1C-05');
+  assert.equal(g.address,'3045 PIN OAK DR');assert.equal(g.humanReview.result,'CONFIRMED: LMDR');
+  const h=await loadHumanEvidence(),d=evidence(3.112170),p={parcelId:g.parcelId,addresses:[{address:g.address,coordinates:[-82.71,28]}],originalProfiles:[profile()],evidence:d,decision:classify(d,[profile()],[g])};
+  const analysis=analyzePresentation([p],gold.records);assert.equal(analysis.rangeStudy.qualifying.addresses,1);assert.equal(analysis.rangeStudy.qualifyingAlreadyReviewed.addresses,1);assert.equal(analysis.rangeStudy.qualifyingUnreviewed.addresses,0);
+  assert.equal(progressQc([p],h.session,h.packet,gold.records).filter(q=>q.newInspectionRequested).length,0);
+});

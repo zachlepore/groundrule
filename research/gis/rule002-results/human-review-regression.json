@@ -1,0 +1,67 @@
+[
+  {
+    "caseId": "R002-01",
+    "parcelId": "102916107580000040",
+    "address": "3418 BRAESIDE PL",
+    "observationVerbatim": "R002-01: LMDR primary guidance appropriate, but the 30.946006% OS/R portion is a meaningful waterfront strip. Preserve both mapped districts and flag the secondary OS/R area as substantively relevant.",
+    "primaryGuidanceSupported": true,
+    "secondaryOsrRelevance": "MEANINGFUL_SECONDARY_OSR",
+    "substantiveSecondaryOsr": true,
+    "allMappedDistrictsRetained": true,
+    "osrCoveragePercent": 30.946006,
+    "notice": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+    "approvalStatus": "NOT_APPROVED"
+  },
+  {
+    "caseId": "R002-02",
+    "parcelId": "202816168010001990",
+    "address": "2668 CONCORDE CT",
+    "observationVerbatim": "R002-02: Same interpretation as R002-01. LMDR primary guidance with meaningful secondary OS/R (17.517240%).",
+    "primaryGuidanceSupported": true,
+    "secondaryOsrRelevance": "MEANINGFUL_SECONDARY_OSR",
+    "substantiveSecondaryOsr": true,
+    "allMappedDistrictsRetained": true,
+    "osrCoveragePercent": 17.51724,
+    "notice": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+    "approvalStatus": "NOT_APPROVED"
+  },
+  {
+    "caseId": "R002-03",
+    "parcelId": "052915546660060030",
+    "address": "840 ELDORADO AVE",
+    "observationVerbatim": "R002-03: OS/R overlap negligible (0.000333%). LMDR primary guidance.",
+    "primaryGuidanceSupported": true,
+    "secondaryOsrRelevance": "HUMAN_REPORTED_NEGLIGIBLE",
+    "substantiveSecondaryOsr": false,
+    "allMappedDistrictsRetained": true,
+    "osrCoveragePercent": 0.000333,
+    "notice": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+    "approvalStatus": "NOT_APPROVED"
+  },
+  {
+    "caseId": "R002-04",
+    "parcelId": "292816202000000450",
+    "address": "2793 COTTONWOOD CT",
+    "observationVerbatim": "R002-04: OS/R overlap negligible (2.397773%). LMDR primary guidance.",
+    "primaryGuidanceSupported": true,
+    "secondaryOsrRelevance": "HUMAN_REPORTED_NEGLIGIBLE",
+    "substantiveSecondaryOsr": false,
+    "allMappedDistrictsRetained": true,
+    "osrCoveragePercent": 2.397773,
+    "notice": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+    "approvalStatus": "NOT_APPROVED"
+  },
+  {
+    "caseId": "R002-05",
+    "parcelId": "182916246600050100",
+    "address": "916 EVELYN AVE",
+    "observationVerbatim": "R002-05: OS/R overlap negligible (1.491890%). LMDR primary guidance.",
+    "primaryGuidanceSupported": true,
+    "secondaryOsrRelevance": "HUMAN_REPORTED_NEGLIGIBLE",
+    "substantiveSecondaryOsr": false,
+    "allMappedDistrictsRetained": true,
+    "osrCoveragePercent": 1.49189,
+    "notice": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+    "approvalStatus": "NOT_APPROVED"
+  }
+]

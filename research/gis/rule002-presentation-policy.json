@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "ruleId": "CLR-Z-002",
+  "ruleVersion": "1.1.0-provisional",
+  "approvalStatus": "NOT_APPROVED",
+  "presentationPolicyStatus": "PROPOSED_BY_OWNER",
+  "noticeProminentWhenOsrPercentGreaterThan": 3,
+  "comparisonThresholds": [
+    2,
+    3,
+    5
+  ],
+  "presentationOnly": true,
+  "noticeThresholdIsLegalExemption": false,
+  "noticeThresholdChangesPrimaryEligibility": false,
+  "retainAllMappedDistrictsAndEvidence": true,
+  "rule001PreservationThresholdUnchanged": 2,
+  "humanEvidence": {
+    "path": "research/gis/rule002-qc-observations.json",
+    "sha256": "49b42418bb5eb0901b37755ce6f5ace2af4b71149e03ec86ec2604a3636bd71b"
+  }
+}

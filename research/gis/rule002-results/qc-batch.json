@@ -62,16 +62,25 @@
     "diagnosticFlags": [],
     "proposal": "LMDR",
     "osrCoveragePercent": 30.946006,
-    "reviewPurpose": "Largest OS/R coverage: try to disprove LMDR primary interpretation.",
+    "reviewPurpose": "Completed human evidence; preserve secondary interpretation. No repeat inspection requested.",
     "independentNewParcel": true,
     "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
     "nearestOtherQcMeters": 1806,
     "humanReview": {
-      "result": null,
-      "note": null,
-      "reviewStatus": "pending",
-      "verificationMethod": "Clearwater official zoning viewer"
-    }
+      "category": "PRIMARY_GUIDANCE_SUPPORTED",
+      "reportedPrimaryCode": "LMDR",
+      "secondaryOsrRelevance": "MEANINGFUL_SECONDARY_OSR",
+      "observationVerbatim": "R002-01: LMDR primary guidance appropriate, but the 30.946006% OS/R portion is a meaningful waterfront strip. Preserve both mapped districts and flag the secondary OS/R area as substantively relevant.",
+      "inspectionDate": null,
+      "recordedOn": "2026-10-16",
+      "reviewer": "Groundrule owner in conversation",
+      "verificationMethod": "Human QC inspection reported by owner; detailed method not restated",
+      "approvalGranted": false,
+      "legalSplitDetermination": false,
+      "result": "LMDR PRIMARY GUIDANCE SUPPORTED",
+      "reviewStatus": "completed"
+    },
+    "newInspectionRequested": false
   },
   {
     "caseId": "R002-02",
@@ -136,16 +145,25 @@
     "diagnosticFlags": [],
     "proposal": "LMDR",
     "osrCoveragePercent": 17.51724,
-    "reviewPurpose": "Intermediate OS/R intersection; inspect functional split.",
+    "reviewPurpose": "Completed human evidence; preserve secondary interpretation. No repeat inspection requested.",
     "independentNewParcel": true,
     "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
     "nearestOtherQcMeters": 2607,
     "humanReview": {
-      "result": null,
-      "note": null,
-      "reviewStatus": "pending",
-      "verificationMethod": "Clearwater official zoning viewer"
-    }
+      "category": "PRIMARY_GUIDANCE_SUPPORTED",
+      "reportedPrimaryCode": "LMDR",
+      "secondaryOsrRelevance": "MEANINGFUL_SECONDARY_OSR",
+      "observationVerbatim": "R002-02: Same interpretation as R002-01. LMDR primary guidance with meaningful secondary OS/R (17.517240%).",
+      "inspectionDate": null,
+      "recordedOn": "2026-10-16",
+      "reviewer": "Groundrule owner in conversation",
+      "verificationMethod": "Human QC inspection reported by owner; detailed method not restated",
+      "approvalGranted": false,
+      "legalSplitDetermination": false,
+      "result": "LMDR PRIMARY GUIDANCE SUPPORTED",
+      "reviewStatus": "completed"
+    },
+    "newInspectionRequested": false
   },
   {
     "caseId": "R002-03",
@@ -210,16 +228,25 @@
     "diagnosticFlags": [],
     "proposal": "LMDR",
     "osrCoveragePercent": 0.000333,
-    "reviewPurpose": "Small technical-looking overlap; do not assume restrictions disappear.",
+    "reviewPurpose": "Completed human evidence; preserve secondary interpretation. No repeat inspection requested.",
     "independentNewParcel": true,
     "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
     "nearestOtherQcMeters": 7568,
     "humanReview": {
-      "result": null,
-      "note": null,
-      "reviewStatus": "pending",
-      "verificationMethod": "Clearwater official zoning viewer"
-    }
+      "category": "PRIMARY_GUIDANCE_SUPPORTED",
+      "reportedPrimaryCode": "LMDR",
+      "secondaryOsrRelevance": "HUMAN_REPORTED_NEGLIGIBLE",
+      "observationVerbatim": "R002-03: OS/R overlap negligible (0.000333%). LMDR primary guidance.",
+      "inspectionDate": null,
+      "recordedOn": "2026-10-16",
+      "reviewer": "Groundrule owner in conversation",
+      "verificationMethod": "Human QC inspection reported by owner; detailed method not restated",
+      "approvalGranted": false,
+      "legalSplitDetermination": false,
+      "result": "LMDR PRIMARY GUIDANCE SUPPORTED",
+      "reviewStatus": "completed"
+    },
+    "newInspectionRequested": false
   },
   {
     "caseId": "R002-04",
@@ -284,16 +311,25 @@
     "diagnosticFlags": [],
     "proposal": "LMDR",
     "osrCoveragePercent": 2.397773,
-    "reviewPurpose": "Moderate OS/R overlap away from earlier cases.",
+    "reviewPurpose": "Completed human evidence; preserve secondary interpretation. No repeat inspection requested.",
     "independentNewParcel": true,
     "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
     "nearestOtherQcMeters": 1521,
     "humanReview": {
-      "result": null,
-      "note": null,
-      "reviewStatus": "pending",
-      "verificationMethod": "Clearwater official zoning viewer"
-    }
+      "category": "PRIMARY_GUIDANCE_SUPPORTED",
+      "reportedPrimaryCode": "LMDR",
+      "secondaryOsrRelevance": "HUMAN_REPORTED_NEGLIGIBLE",
+      "observationVerbatim": "R002-04: OS/R overlap negligible (2.397773%). LMDR primary guidance.",
+      "inspectionDate": null,
+      "recordedOn": "2026-10-16",
+      "reviewer": "Groundrule owner in conversation",
+      "verificationMethod": "Human QC inspection reported by owner; detailed method not restated",
+      "approvalGranted": false,
+      "legalSplitDetermination": false,
+      "result": "LMDR PRIMARY GUIDANCE SUPPORTED",
+      "reviewStatus": "completed"
+    },
+    "newInspectionRequested": false
   },
   {
     "caseId": "R002-05",
@@ -358,385 +394,24 @@
     "diagnosticFlags": [],
     "proposal": "LMDR",
     "osrCoveragePercent": 1.49189,
-    "reviewPurpose": "Geographic and coverage stress check; independent of prior gold cases.",
+    "reviewPurpose": "Completed human evidence; preserve secondary interpretation. No repeat inspection requested.",
     "independentNewParcel": true,
     "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
     "nearestOtherQcMeters": 2315,
     "humanReview": {
-      "result": null,
-      "note": null,
-      "reviewStatus": "pending",
-      "verificationMethod": "Clearwater official zoning viewer"
-    }
-  },
-  {
-    "caseId": "R002-06",
-    "batch": 2,
-    "parcelId": "012915143510000290",
-    "address": "2001 KAMENSKY RD",
-    "coordinates": [
-      -82.75120386950576,
-      27.993789222778087
-    ],
-    "originalIntersections": [
-      {
-        "normalizedZoningCode": "lmdr",
-        "featureCount": 1,
-        "repeatedPolygons": false,
-        "overlappingPolygons": false,
-        "intersectionAreaSquareMeters": 821.266,
-        "percentOfParcel": 99.026896
-      },
-      {
-        "normalizedZoningCode": "os/r",
-        "featureCount": 1,
-        "repeatedPolygons": false,
-        "overlappingPolygons": false,
-        "intersectionAreaSquareMeters": 8.07,
-        "percentOfParcel": 0.973104
-      }
-    ],
-    "originalZoningFeatures": [
-      {
-        "sourceIndex": 406,
-        "sourceIdentifier": 10890,
-        "rawZoningCode": "LMDR",
-        "normalizedZoningCode": "lmdr",
-        "geometryValid": true,
-        "multipart": false,
-        "intersectionAreaSquareMeters": 821.266,
-        "percentOfParcel": 99.026896
-      },
-      {
-        "sourceIndex": 232,
-        "sourceIdentifier": 10715,
-        "rawZoningCode": "OS/R",
-        "normalizedZoningCode": "os/r",
-        "geometryValid": true,
-        "multipart": false,
-        "intersectionAreaSquareMeters": 8.07,
-        "percentOfParcel": 0.973104
-      }
-    ],
-    "originalProfiles": [
-      {
-        "address": "2001 KAMENSKY RD",
-        "sourceAddressIdentifier": 373831,
-        "zoningCode": "LMDR",
-        "status": "review",
-        "issues": [
-          "parcel_ambiguous_zoning"
-        ]
-      }
-    ],
-    "diagnosticFlags": [],
-    "proposal": "LMDR",
-    "osrCoveragePercent": 0.973104,
-    "reviewPurpose": "Geographic and coverage stress check; independent of prior gold cases.",
-    "independentNewParcel": true,
-    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
-    "nearestOtherQcMeters": 2215,
-    "humanReview": {
-      "result": null,
-      "note": null,
-      "reviewStatus": "pending",
-      "verificationMethod": "Clearwater official zoning viewer"
-    }
-  },
-  {
-    "caseId": "R002-07",
-    "batch": 2,
-    "parcelId": "072916399250000150",
-    "address": "2351 NE COACHMAN RD",
-    "coordinates": [
-      -82.73970418210254,
-      27.97599554761498
-    ],
-    "originalIntersections": [
-      {
-        "normalizedZoningCode": "lmdr",
-        "featureCount": 1,
-        "repeatedPolygons": false,
-        "overlappingPolygons": false,
-        "intersectionAreaSquareMeters": 1696.466,
-        "percentOfParcel": 99.706821
-      },
-      {
-        "normalizedZoningCode": "os/r",
-        "featureCount": 1,
-        "repeatedPolygons": false,
-        "overlappingPolygons": false,
-        "intersectionAreaSquareMeters": 4.98,
-        "percentOfParcel": 0.292663
-      }
-    ],
-    "originalZoningFeatures": [
-      {
-        "sourceIndex": 458,
-        "sourceIdentifier": 10946,
-        "rawZoningCode": "LMDR",
-        "normalizedZoningCode": "lmdr",
-        "geometryValid": true,
-        "multipart": true,
-        "intersectionAreaSquareMeters": 1696.466,
-        "percentOfParcel": 99.706821
-      },
-      {
-        "sourceIndex": 457,
-        "sourceIdentifier": 10945,
-        "rawZoningCode": "OS/R",
-        "normalizedZoningCode": "os/r",
-        "geometryValid": true,
-        "multipart": false,
-        "intersectionAreaSquareMeters": 4.98,
-        "percentOfParcel": 0.292663
-      }
-    ],
-    "originalProfiles": [
-      {
-        "address": "2351 NE COACHMAN RD",
-        "sourceAddressIdentifier": 355234,
-        "zoningCode": "LMDR",
-        "status": "review",
-        "issues": [
-          "parcel_ambiguous_zoning"
-        ]
-      }
-    ],
-    "diagnosticFlags": [],
-    "proposal": "LMDR",
-    "osrCoveragePercent": 0.292663,
-    "reviewPurpose": "Geographic and coverage stress check; independent of prior gold cases.",
-    "independentNewParcel": true,
-    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
-    "nearestOtherQcMeters": 2281,
-    "humanReview": {
-      "result": null,
-      "note": null,
-      "reviewStatus": "pending",
-      "verificationMethod": "Clearwater official zoning viewer"
-    }
-  },
-  {
-    "caseId": "R002-08",
-    "batch": 2,
-    "parcelId": "312816987250000150",
-    "address": "2484 MOORE HAVEN DR W",
-    "coordinates": [
-      -82.7402544122386,
-      28.011168373490925
-    ],
-    "originalIntersections": [
-      {
-        "normalizedZoningCode": "lmdr",
-        "featureCount": 1,
-        "repeatedPolygons": false,
-        "overlappingPolygons": false,
-        "intersectionAreaSquareMeters": 1210.164,
-        "percentOfParcel": 99.898146
-      },
-      {
-        "normalizedZoningCode": "os/r",
-        "featureCount": 1,
-        "repeatedPolygons": false,
-        "overlappingPolygons": false,
-        "intersectionAreaSquareMeters": 1.234,
-        "percentOfParcel": 0.101854
-      }
-    ],
-    "originalZoningFeatures": [
-      {
-        "sourceIndex": 80,
-        "sourceIdentifier": 10560,
-        "rawZoningCode": "LMDR",
-        "normalizedZoningCode": "lmdr",
-        "geometryValid": true,
-        "multipart": false,
-        "intersectionAreaSquareMeters": 1210.164,
-        "percentOfParcel": 99.898146
-      },
-      {
-        "sourceIndex": 640,
-        "sourceIdentifier": 11133,
-        "rawZoningCode": "OS/R",
-        "normalizedZoningCode": "os/r",
-        "geometryValid": true,
-        "multipart": false,
-        "intersectionAreaSquareMeters": 1.234,
-        "percentOfParcel": 0.101854
-      }
-    ],
-    "originalProfiles": [
-      {
-        "address": "2484 MOORE HAVEN DR W",
-        "sourceAddressIdentifier": 146736,
-        "zoningCode": "LMDR",
-        "status": "review",
-        "issues": [
-          "parcel_ambiguous_zoning"
-        ]
-      }
-    ],
-    "diagnosticFlags": [],
-    "proposal": "LMDR",
-    "osrCoveragePercent": 0.101854,
-    "reviewPurpose": "Geographic and coverage stress check; independent of prior gold cases.",
-    "independentNewParcel": true,
-    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
-    "nearestOtherQcMeters": 1862,
-    "humanReview": {
-      "result": null,
-      "note": null,
-      "reviewStatus": "pending",
-      "verificationMethod": "Clearwater official zoning viewer"
-    }
-  },
-  {
-    "caseId": "R002-09",
-    "batch": 2,
-    "parcelId": "092916451440100090",
-    "address": "3035 HOYT AVE",
-    "coordinates": [
-      -82.71092447810486,
-      27.970618937571103
-    ],
-    "originalIntersections": [
-      {
-        "normalizedZoningCode": "lmdr",
-        "featureCount": 1,
-        "repeatedPolygons": false,
-        "overlappingPolygons": false,
-        "intersectionAreaSquareMeters": 839.557,
-        "percentOfParcel": 98.292544
-      },
-      {
-        "normalizedZoningCode": "os/r",
-        "featureCount": 1,
-        "repeatedPolygons": false,
-        "overlappingPolygons": false,
-        "intersectionAreaSquareMeters": 14.583,
-        "percentOfParcel": 1.707329
-      }
-    ],
-    "originalZoningFeatures": [
-      {
-        "sourceIndex": 751,
-        "sourceIdentifier": 11253,
-        "rawZoningCode": "LMDR",
-        "normalizedZoningCode": "lmdr",
-        "geometryValid": true,
-        "multipart": false,
-        "intersectionAreaSquareMeters": 839.557,
-        "percentOfParcel": 98.292544
-      },
-      {
-        "sourceIndex": 620,
-        "sourceIdentifier": 11113,
-        "rawZoningCode": "OS/R",
-        "normalizedZoningCode": "os/r",
-        "geometryValid": true,
-        "multipart": false,
-        "intersectionAreaSquareMeters": 14.583,
-        "percentOfParcel": 1.707329
-      }
-    ],
-    "originalProfiles": [
-      {
-        "address": "3035 HOYT AVE",
-        "sourceAddressIdentifier": 348904,
-        "zoningCode": "LMDR",
-        "status": "review",
-        "issues": [
-          "parcel_ambiguous_zoning"
-        ]
-      }
-    ],
-    "diagnosticFlags": [],
-    "proposal": "LMDR",
-    "osrCoveragePercent": 1.707329,
-    "reviewPurpose": "Geographic and coverage stress check; independent of prior gold cases.",
-    "independentNewParcel": true,
-    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
-    "nearestOtherQcMeters": 1806,
-    "humanReview": {
-      "result": null,
-      "note": null,
-      "reviewStatus": "pending",
-      "verificationMethod": "Clearwater official zoning viewer"
-    }
-  },
-  {
-    "caseId": "R002-10",
-    "batch": 2,
-    "parcelId": "332816803900060110",
-    "address": "3039 PIN OAK DR",
-    "coordinates": [
-      -82.71126162634616,
-      28.00498172738878
-    ],
-    "originalIntersections": [
-      {
-        "normalizedZoningCode": "lmdr",
-        "featureCount": 1,
-        "repeatedPolygons": false,
-        "overlappingPolygons": false,
-        "intersectionAreaSquareMeters": 1264.234,
-        "percentOfParcel": 98.487114
-      },
-      {
-        "normalizedZoningCode": "os/r",
-        "featureCount": 1,
-        "repeatedPolygons": false,
-        "overlappingPolygons": false,
-        "intersectionAreaSquareMeters": 19.42,
-        "percentOfParcel": 1.512886
-      }
-    ],
-    "originalZoningFeatures": [
-      {
-        "sourceIndex": 61,
-        "sourceIdentifier": 10541,
-        "rawZoningCode": "LMDR",
-        "normalizedZoningCode": "lmdr",
-        "geometryValid": true,
-        "multipart": false,
-        "intersectionAreaSquareMeters": 1264.234,
-        "percentOfParcel": 98.487114
-      },
-      {
-        "sourceIndex": 120,
-        "sourceIdentifier": 10600,
-        "rawZoningCode": "OS/R",
-        "normalizedZoningCode": "os/r",
-        "geometryValid": true,
-        "multipart": false,
-        "intersectionAreaSquareMeters": 19.42,
-        "percentOfParcel": 1.512886
-      }
-    ],
-    "originalProfiles": [
-      {
-        "address": "3039 PIN OAK DR",
-        "sourceAddressIdentifier": 403214,
-        "zoningCode": "LMDR",
-        "status": "review",
-        "issues": [
-          "parcel_ambiguous_zoning"
-        ]
-      }
-    ],
-    "diagnosticFlags": [],
-    "proposal": "LMDR",
-    "osrCoveragePercent": 1.512886,
-    "reviewPurpose": "Geographic and coverage stress check; independent of prior gold cases.",
-    "independentNewParcel": true,
-    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
-    "nearestOtherQcMeters": 1521,
-    "humanReview": {
-      "result": null,
-      "note": null,
-      "reviewStatus": "pending",
-      "verificationMethod": "Clearwater official zoning viewer"
-    }
+      "category": "PRIMARY_GUIDANCE_SUPPORTED",
+      "reportedPrimaryCode": "LMDR",
+      "secondaryOsrRelevance": "HUMAN_REPORTED_NEGLIGIBLE",
+      "observationVerbatim": "R002-05: OS/R overlap negligible (1.491890%). LMDR primary guidance.",
+      "inspectionDate": null,
+      "recordedOn": "2026-10-16",
+      "reviewer": "Groundrule owner in conversation",
+      "verificationMethod": "Human QC inspection reported by owner; detailed method not restated",
+      "approvalGranted": false,
+      "legalSplitDetermination": false,
+      "result": "LMDR PRIMARY GUIDANCE SUPPORTED",
+      "reviewStatus": "completed"
+    },
+    "newInspectionRequested": false
   }
 ]
