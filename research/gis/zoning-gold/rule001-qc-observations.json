@@ -1,0 +1,2196 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "clearwater-rule001-human-qc-2026-10-12",
+  "purpose": "Exact supplied human observations and conservative evidence categories; no approval or production effects.",
+  "sourceRequestSha256": "052bdbf9ab40b2935609b72aeff01cf17ec378dc0b5a2ed776c040f72e428439",
+  "sourceQcPacket": {
+    "path": "research/gis/rule001-results/qc-batch.json",
+    "sha256": "28a583bbfc8d3b382ff9c5a9965a349a777e732471252423425951227c52e44d"
+  },
+  "sourceRelease": "https://github.com/zachlepore/groundrule/releases/tag/clearwater-gis-2026-09-28",
+  "recordedOn": "2026-10-12",
+  "reviewDateLimitation": "Date of actual inspections was not supplied; recordedOn is consolidation date, not an invented review date.",
+  "categoryDefinitions": {
+    "CONFIRMED": "Unqualified primary statement for an existing confirmed gold control; not new independent confirmation.",
+    "PRIMARY_CANDIDATE": "Supporting direction stated as a candidate; not definitive legal applicability.",
+    "TRUE_SPLIT": "Human explicitly reports both zoning districts; preserve both.",
+    "UNCLEAR": "Primary applicability or classification not established; named non-P candidates remain hypotheses."
+  },
+  "records": [
+    {
+      "caseId": "R001-01",
+      "batchId": "R001-1",
+      "address": "295 BAYSIDE DR",
+      "parcelId": "082915049680000050",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 996.891,
+          "percentOfParcel": 99.999962
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 0,
+          "percentOfParcel": 4.1e-05
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 413,
+          "sourceIdentifier": 10897,
+          "rawZoningCode": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 996.891,
+          "percentOfParcel": 99.999962
+        },
+        {
+          "sourceIndex": 605,
+          "sourceIdentifier": 11095,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 0,
+          "percentOfParcel": 4.1e-05
+        }
+      ],
+      "frozenProposal": "LMDR",
+      "frozenHypotheticalNonP": "LMDR",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [
+        "2A-01"
+      ],
+      "declaredGoldControl": true,
+      "independentNewParcel": false,
+      "humanReview": {
+        "category": "CONFIRMED",
+        "observationVerbatim": "Negligible P intersection. LMDR primary. Previously reviewed gold control.",
+        "reportedPrimaryCode": "LMDR",
+        "confirmedPrimaryCode": "LMDR",
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-02",
+      "batchId": "R001-1",
+      "address": "115 EVELYN AVE",
+      "parcelId": "182916345600050230",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 624.329,
+          "percentOfParcel": 69.205499
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 277.809,
+          "percentOfParcel": 30.794501
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 495,
+          "sourceIdentifier": 10984,
+          "rawZoningCode": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 624.329,
+          "percentOfParcel": 69.205499
+        },
+        {
+          "sourceIndex": 496,
+          "sourceIdentifier": 10985,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 277.809,
+          "percentOfParcel": 30.794501
+        }
+      ],
+      "frozenProposal": "LMDR",
+      "frozenHypotheticalNonP": "LMDR",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [
+        "2A-04"
+      ],
+      "declaredGoldControl": true,
+      "independentNewParcel": false,
+      "humanReview": {
+        "category": "CONFIRMED",
+        "observationVerbatim": "P corresponds to a pond. LMDR primary. Previously reviewed gold control.",
+        "reportedPrimaryCode": "LMDR",
+        "confirmedPrimaryCode": "LMDR",
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-03",
+      "batchId": "R001-1",
+      "address": "1651 SAND KEY ESTATES CT UNIT 46",
+      "parcelId": "302915356300000460",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "HDR",
+          "normalizedZoningCode": "hdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 9750.304,
+          "percentOfParcel": 99.379478
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 61.293,
+          "percentOfParcel": 0.62473
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 539,
+          "sourceIdentifier": 11029,
+          "rawZoningCode": "HDR",
+          "normalizedZoningCode": "hdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 9750.304,
+          "percentOfParcel": 99.379478
+        },
+        {
+          "sourceIndex": 605,
+          "sourceIdentifier": 11095,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 61.293,
+          "percentOfParcel": 0.62473
+        }
+      ],
+      "frozenProposal": "HDR",
+      "frozenHypotheticalNonP": "HDR",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Negligible P intersection. HDR primary candidate.",
+        "reportedPrimaryCode": "HDR",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-04",
+      "batchId": "R001-1",
+      "address": "2600 MCCORMICK DR",
+      "parcelId": "322816730990000010",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "US 19",
+          "normalizedZoningCode": "us19",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 17590.92,
+          "percentOfParcel": 98.576195
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 254.078,
+          "percentOfParcel": 1.423805
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 706,
+          "sourceIdentifier": 11207,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 254.078,
+          "percentOfParcel": 1.423805
+        },
+        {
+          "sourceIndex": 747,
+          "sourceIdentifier": 11248,
+          "rawZoningCode": "US 19",
+          "normalizedZoningCode": "us19",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 17590.92,
+          "percentOfParcel": 98.576195
+        }
+      ],
+      "frozenProposal": "US 19",
+      "frozenHypotheticalNonP": "US 19",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Negligible P intersection. US19 primary candidate.",
+        "reportedPrimaryCode": "US19",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-05",
+      "batchId": "R001-1",
+      "address": "2674 BEAUMONT CT",
+      "parcelId": "172816186910000500",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 2587.157,
+          "percentOfParcel": 97.486519
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 66.704,
+          "percentOfParcel": 2.513469
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 144,
+          "sourceIdentifier": 10624,
+          "rawZoningCode": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 2587.157,
+          "percentOfParcel": 97.486519
+        },
+        {
+          "sourceIndex": 91,
+          "sourceIdentifier": 10571,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 66.704,
+          "percentOfParcel": 2.513469
+        }
+      ],
+      "frozenProposal": "LMDR",
+      "frozenHypotheticalNonP": "LMDR",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Negligible P intersection. LMDR primary candidate.",
+        "reportedPrimaryCode": "LMDR",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-06",
+      "batchId": "R001-2",
+      "address": "931 DEMPSEY ST",
+      "parcelId": "212915474660060010",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "MDR",
+          "normalizedZoningCode": "mdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 2072.483,
+          "percentOfParcel": 99.35618
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 13.43,
+          "percentOfParcel": 0.64382
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 586,
+          "sourceIdentifier": 11076,
+          "rawZoningCode": "MDR",
+          "normalizedZoningCode": "mdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 2072.483,
+          "percentOfParcel": 99.35618
+        },
+        {
+          "sourceIndex": 587,
+          "sourceIdentifier": 11077,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 13.43,
+          "percentOfParcel": 0.64382
+        }
+      ],
+      "frozenProposal": "MDR",
+      "frozenHypotheticalNonP": "MDR",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "P occurs beside a pond; negligible for primary guidance. MDR candidate.",
+        "reportedPrimaryCode": "MDR",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-07",
+      "batchId": "R001-2",
+      "address": "699 BAY ESPLANADE",
+      "parcelId": "052915547560760010",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1680.27,
+          "percentOfParcel": 73.760376
+        },
+        {
+          "code": "T",
+          "normalizedZoningCode": "t",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 597.739,
+          "percentOfParcel": 26.239517
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 452,
+          "sourceIdentifier": 10940,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1680.27,
+          "percentOfParcel": 73.760376
+        },
+        {
+          "sourceIndex": 57,
+          "sourceIdentifier": 10537,
+          "rawZoningCode": "T",
+          "normalizedZoningCode": "t",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 597.739,
+          "percentOfParcel": 26.239517
+        }
+      ],
+      "frozenProposal": "T",
+      "frozenHypotheticalNonP": "T",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Large P area lies in water. T primary candidate.",
+        "reportedPrimaryCode": "T",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-08",
+      "batchId": "R001-2",
+      "address": "302 CEDAR ST",
+      "parcelId": "092915255420010060",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 9756.966,
+          "percentOfParcel": 76.510859
+        },
+        {
+          "code": "D",
+          "normalizedZoningCode": "d",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 2995.631,
+          "percentOfParcel": 23.490738
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 81,
+          "sourceIdentifier": 10561,
+          "rawZoningCode": "D",
+          "normalizedZoningCode": "d",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 2995.631,
+          "percentOfParcel": 23.490738
+        },
+        {
+          "sourceIndex": 452,
+          "sourceIdentifier": 10940,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 9756.966,
+          "percentOfParcel": 76.510859
+        }
+      ],
+      "frozenProposal": "D",
+      "frozenHypotheticalNonP": "D",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Large P area lies in water. D primary candidate.",
+        "reportedPrimaryCode": "D",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-09",
+      "batchId": "R001-2",
+      "address": "2957 EAGLE ESTATES CIR E",
+      "parcelId": "202816236380000200",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "LDR",
+          "normalizedZoningCode": "ldr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1792.986,
+          "percentOfParcel": 99.034263
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 17.484,
+          "percentOfParcel": 0.965737
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 360,
+          "sourceIdentifier": 10844,
+          "rawZoningCode": "LDR",
+          "normalizedZoningCode": "ldr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1792.986,
+          "percentOfParcel": 99.034263
+        },
+        {
+          "sourceIndex": 121,
+          "sourceIdentifier": 10601,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 17.484,
+          "percentOfParcel": 0.965737
+        }
+      ],
+      "frozenProposal": "LDR",
+      "frozenHypotheticalNonP": "LDR",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "P corresponds to a golf course; negligible for primary guidance. LDR candidate.",
+        "reportedPrimaryCode": "LDR",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-10",
+      "batchId": "R001-2",
+      "address": "1365 GULF BLVD",
+      "parcelId": "192915000001400200",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "I",
+          "normalizedZoningCode": "i",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 2071.63,
+          "percentOfParcel": 99.158496
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 17.675,
+          "percentOfParcel": 0.846026
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 540,
+          "sourceIdentifier": 11030,
+          "rawZoningCode": "I",
+          "normalizedZoningCode": "i",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 2071.63,
+          "percentOfParcel": 99.158496
+        },
+        {
+          "sourceIndex": 605,
+          "sourceIdentifier": 11095,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 17.675,
+          "percentOfParcel": 0.846026
+        }
+      ],
+      "frozenProposal": "I",
+      "frozenHypotheticalNonP": "I",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Water-related P intersection; negligible for primary guidance. I candidate.",
+        "reportedPrimaryCode": "I",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-11",
+      "batchId": "R001-3",
+      "address": "1268 ENGMAN ST",
+      "parcelId": "102915265500020010",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "C",
+          "normalizedZoningCode": "c",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 3737.508,
+          "percentOfParcel": 91.727864
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 337.053,
+          "percentOfParcel": 8.272136
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 453,
+          "sourceIdentifier": 10941,
+          "rawZoningCode": "C",
+          "normalizedZoningCode": "c",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 3737.508,
+          "percentOfParcel": 91.727864
+        },
+        {
+          "sourceIndex": 452,
+          "sourceIdentifier": 10940,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 337.053,
+          "percentOfParcel": 8.272136
+        }
+      ],
+      "frozenProposal": "C",
+      "frozenHypotheticalNonP": "C",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "P associated with a river. C primary candidate.",
+        "reportedPrimaryCode": "C",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-12",
+      "batchId": "R001-3",
+      "address": "50 N STARCREST DR",
+      "parcelId": "132915486010000020",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 2480.722,
+          "percentOfParcel": 52.299296
+        },
+        {
+          "code": "O",
+          "normalizedZoningCode": "o",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 2262.596,
+          "percentOfParcel": 47.700704
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 492,
+          "sourceIdentifier": 10981,
+          "rawZoningCode": "O",
+          "normalizedZoningCode": "o",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 2262.596,
+          "percentOfParcel": 47.700704
+        },
+        {
+          "sourceIndex": 490,
+          "sourceIdentifier": 10979,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 2480.722,
+          "percentOfParcel": 52.299296
+        }
+      ],
+      "frozenProposal": "O",
+      "frozenHypotheticalNonP": "O",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "P corresponds to a retention pond. O primary candidate.",
+        "reportedPrimaryCode": "O",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-13",
+      "batchId": "R001-3",
+      "address": "201 S GLENWOOD AVE",
+      "parcelId": "142915000002100100",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "OS/R",
+          "normalizedZoningCode": "os/r",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 112865.688912,
+          "percentOfParcel": 74.205083
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 39233.984556,
+          "percentOfParcel": 25.794917
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 483,
+          "sourceIdentifier": 10971,
+          "rawZoningCode": "OS/R",
+          "normalizedZoningCode": "os/r",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 112865.688912,
+          "percentOfParcel": 74.205083
+        },
+        {
+          "sourceIndex": 347,
+          "sourceIdentifier": 10831,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 39233.984556,
+          "percentOfParcel": 25.794917
+        }
+      ],
+      "frozenProposal": "OS/R",
+      "frozenHypotheticalNonP": "OS/R",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Park with a pond in the middle. OS/R primary candidate; preserve park context.",
+        "reportedPrimaryCode": "OS/R",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [
+          "preserve_park_context"
+        ],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-14",
+      "batchId": "R001-3",
+      "address": "2200 MONTCLAIR RD",
+      "parcelId": "062916000002300100",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 15800.034,
+          "percentOfParcel": 59.408927
+        },
+        {
+          "code": "MHDR",
+          "normalizedZoningCode": "mhdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 10794.879,
+          "percentOfParcel": 40.589289
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 682,
+          "sourceIdentifier": 11178,
+          "rawZoningCode": "MHDR",
+          "normalizedZoningCode": "mhdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 10794.879,
+          "percentOfParcel": 40.589289
+        },
+        {
+          "sourceIndex": 12,
+          "sourceIdentifier": 10492,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": true,
+          "intersectionAreaSquareMeters": 15800.034,
+          "percentOfParcel": 59.408927
+        }
+      ],
+      "frozenProposal": "MHDR",
+      "frozenHypotheticalNonP": "MHDR",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "UNCLEAR",
+        "observationVerbatim": "Park with a pond in the middle. MHDR is the non-P candidate, but primary applicability was not conclusively verified. Flag for review rather than treating this as an unqualified confirmation.",
+        "reportedPrimaryCode": "MHDR",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [
+          "primary_applicability_not_verified",
+          "preserve_park_context"
+        ],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-15",
+      "batchId": "R001-3",
+      "address": "1343 MCMULLEN BOOTH RD UNIT 5",
+      "parcelId": "092916915360000060",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 246.261,
+          "percentOfParcel": 81.153829
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 57.189,
+          "percentOfParcel": 18.846171
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 463,
+          "sourceIdentifier": 10951,
+          "rawZoningCode": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 246.261,
+          "percentOfParcel": 81.153829
+        },
+        {
+          "sourceIndex": 465,
+          "sourceIdentifier": 10953,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 57.189,
+          "percentOfParcel": 18.846171
+        }
+      ],
+      "frozenProposal": "LMDR",
+      "frozenHypotheticalNonP": "LMDR",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Stream behind property. LMDR primary candidate, P retained as relevant secondary zoning.",
+        "reportedPrimaryCode": "LMDR",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-16",
+      "batchId": "R001-4",
+      "address": "55 ROGERS ST UNIT P-5",
+      "parcelId": "162915940520010050",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 18711.691,
+          "percentOfParcel": 78.447887
+        },
+        {
+          "code": "HDR",
+          "normalizedZoningCode": "hdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 5140.467,
+          "percentOfParcel": 21.551168
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 502,
+          "sourceIdentifier": 10992,
+          "rawZoningCode": "HDR",
+          "normalizedZoningCode": "hdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 5140.467,
+          "percentOfParcel": 21.551168
+        },
+        {
+          "sourceIndex": 605,
+          "sourceIdentifier": 11095,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 18711.691,
+          "percentOfParcel": 78.447887
+        }
+      ],
+      "frozenProposal": "HDR",
+      "frozenHypotheticalNonP": "HDR",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "P area corresponds to ocean. HDR primary candidate.",
+        "reportedPrimaryCode": "HDR",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-17",
+      "batchId": "R001-4",
+      "address": "2773 VIA CIPRIANI UNIT 1334A",
+      "parcelId": "202916326910130341",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 30637.343126,
+          "percentOfParcel": 20.664508
+        },
+        {
+          "code": "US 19",
+          "normalizedZoningCode": "us19",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 117501.804615,
+          "percentOfParcel": 79.25351
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 749,
+          "sourceIdentifier": 11250,
+          "rawZoningCode": "US 19",
+          "normalizedZoningCode": "us19",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 117501.804615,
+          "percentOfParcel": 79.25351
+        },
+        {
+          "sourceIndex": 714,
+          "sourceIdentifier": 11215,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 30637.343126,
+          "percentOfParcel": 20.664508
+        }
+      ],
+      "frozenProposal": "US 19",
+      "frozenHypotheticalNonP": "US 19",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "P appears associated with marina docks; observation uncertain. US19 primary candidate.",
+        "reportedPrimaryCode": "US19",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [
+          "marina_association_uncertain"
+        ],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-18",
+      "batchId": "R001-4",
+      "address": "2270 SPRING LAKE CT",
+      "parcelId": "362815916150000070",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "MDR",
+          "normalizedZoningCode": "mdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 341.79,
+          "percentOfParcel": 99.959656
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 0.138,
+          "percentOfParcel": 0.040383
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 616,
+          "sourceIdentifier": 11108,
+          "rawZoningCode": "MDR",
+          "normalizedZoningCode": "mdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 341.79,
+          "percentOfParcel": 99.959656
+        },
+        {
+          "sourceIndex": 426,
+          "sourceIdentifier": 10913,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 0.138,
+          "percentOfParcel": 0.040383
+        }
+      ],
+      "frozenProposal": "MDR",
+      "frozenHypotheticalNonP": "MDR",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Negligible P overlap. MDR primary candidate.",
+        "reportedPrimaryCode": "MDR",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-19",
+      "batchId": "R001-4",
+      "address": "1204 PALM BLUFF PRESERVE DR",
+      "parcelId": "092915654780000080",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 9100.041,
+          "percentOfParcel": 90.904052
+        },
+        {
+          "code": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 910.559,
+          "percentOfParcel": 9.095948
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 437,
+          "sourceIdentifier": 10924,
+          "rawZoningCode": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 910.559,
+          "percentOfParcel": 9.095948
+        },
+        {
+          "sourceIndex": 452,
+          "sourceIdentifier": 10940,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 9100.041,
+          "percentOfParcel": 90.904052
+        }
+      ],
+      "frozenProposal": "LMDR",
+      "frozenHypotheticalNonP": "LMDR",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "P coverage predominantly ocean. LMDR primary candidate despite high P percentage.",
+        "reportedPrimaryCode": "LMDR",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-20",
+      "batchId": "R001-4",
+      "address": "419 EAST SHORE DR",
+      "parcelId": "082915025920030050",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1294.867,
+          "percentOfParcel": 72.202747
+        },
+        {
+          "code": "T",
+          "normalizedZoningCode": "t",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 498.509,
+          "percentOfParcel": 27.797253
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 452,
+          "sourceIdentifier": 10940,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1294.867,
+          "percentOfParcel": 72.202747
+        },
+        {
+          "sourceIndex": 368,
+          "sourceIdentifier": 10852,
+          "rawZoningCode": "T",
+          "normalizedZoningCode": "t",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 498.509,
+          "percentOfParcel": 27.797253
+        }
+      ],
+      "frozenProposal": "T",
+      "frozenHypotheticalNonP": "T",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Marina-related P overlap. T primary candidate.",
+        "reportedPrimaryCode": "T",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-21",
+      "batchId": "R001-5",
+      "address": "100 N OSCEOLA AVE",
+      "parcelId": "162915168530010010",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "D",
+          "normalizedZoningCode": "d",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 63667.938,
+          "percentOfParcel": 92.037267
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 5508.321,
+          "percentOfParcel": 7.962733
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 81,
+          "sourceIdentifier": 10561,
+          "rawZoningCode": "D",
+          "normalizedZoningCode": "d",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 63667.938,
+          "percentOfParcel": 92.037267
+        },
+        {
+          "sourceIndex": 452,
+          "sourceIdentifier": 10940,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 5508.321,
+          "percentOfParcel": 7.962733
+        }
+      ],
+      "frozenProposal": "D",
+      "frozenHypotheticalNonP": "D",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "UNCLEAR",
+        "observationVerbatim": "Park beside water. D is the non-P candidate, but preserve park context and review primary applicability.",
+        "reportedPrimaryCode": "D",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [
+          "primary_applicability_not_verified",
+          "preserve_park_context"
+        ],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-22",
+      "batchId": "R001-5",
+      "address": "2416 FOXHEAD WAY",
+      "parcelId": "322816616280000140",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "LDR",
+          "normalizedZoningCode": "ldr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 2741.162,
+          "percentOfParcel": 99.995277
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 0.129,
+          "percentOfParcel": 0.004721
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 150,
+          "sourceIdentifier": 10630,
+          "rawZoningCode": "LDR",
+          "normalizedZoningCode": "ldr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 2741.162,
+          "percentOfParcel": 99.995277
+        },
+        {
+          "sourceIndex": 157,
+          "sourceIdentifier": 10637,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 0.129,
+          "percentOfParcel": 0.004721
+        }
+      ],
+      "frozenProposal": "LDR",
+      "frozenHypotheticalNonP": "LDR",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Negligible P intersection. LDR primary candidate.",
+        "reportedPrimaryCode": "LDR",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-23",
+      "batchId": "R001-5",
+      "address": "207 JEFFORDS ST",
+      "parcelId": "212915000002100200",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 3004.43,
+          "percentOfParcel": 59.556556
+        },
+        {
+          "code": "I",
+          "normalizedZoningCode": "i",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 2040.201,
+          "percentOfParcel": 40.442712
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 544,
+          "sourceIdentifier": 11034,
+          "rawZoningCode": "I",
+          "normalizedZoningCode": "i",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 2040.201,
+          "percentOfParcel": 40.442712
+        },
+        {
+          "sourceIndex": 605,
+          "sourceIdentifier": 11095,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 3004.43,
+          "percentOfParcel": 59.556556
+        }
+      ],
+      "frozenProposal": "I",
+      "frozenHypotheticalNonP": "I",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Large P area associated with water. I primary candidate.",
+        "reportedPrimaryCode": "I",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-24",
+      "batchId": "R001-5",
+      "address": "249 WINDWARD PSGE",
+      "parcelId": "082915433800030050",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "C",
+          "normalizedZoningCode": "c",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 18257.669,
+          "percentOfParcel": 99.549974
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 82.521,
+          "percentOfParcel": 0.449944
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 448,
+          "sourceIdentifier": 10936,
+          "rawZoningCode": "C",
+          "normalizedZoningCode": "c",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 18257.669,
+          "percentOfParcel": 99.549974
+        },
+        {
+          "sourceIndex": 452,
+          "sourceIdentifier": 10940,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 82.521,
+          "percentOfParcel": 0.449944
+        }
+      ],
+      "frozenProposal": "C",
+      "frozenHypotheticalNonP": "C",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Negligible P intersection. C primary candidate.",
+        "reportedPrimaryCode": "C",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-25",
+      "batchId": "R001-5",
+      "address": "1155 BELLEAIR RD",
+      "parcelId": "272915071540000020",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "O",
+          "normalizedZoningCode": "o",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 736.586,
+          "percentOfParcel": 98.467166
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 11.466,
+          "percentOfParcel": 1.532834
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 346,
+          "sourceIdentifier": 10830,
+          "rawZoningCode": "O",
+          "normalizedZoningCode": "o",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 736.586,
+          "percentOfParcel": 98.467166
+        },
+        {
+          "sourceIndex": 66,
+          "sourceIdentifier": 10546,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 11.466,
+          "percentOfParcel": 1.532834
+        }
+      ],
+      "frozenProposal": "O",
+      "frozenHypotheticalNonP": "O",
+      "frozenDecisionStatus": "PENDING_QC",
+      "originalDiagnosticFlags": [],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Negligible P intersection. O primary candidate.",
+        "reportedPrimaryCode": "O",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-26",
+      "batchId": "R001-6",
+      "address": "1773 OWEN DR",
+      "parcelId": "052916714240000100",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 694.144,
+          "percentOfParcel": 87.198015
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 83.032,
+          "percentOfParcel": 10.430392
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 692,
+          "sourceIdentifier": 11191,
+          "rawZoningCode": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 694.144,
+          "percentOfParcel": 87.198015
+        },
+        {
+          "sourceIndex": 678,
+          "sourceIdentifier": 11174,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 83.032,
+          "percentOfParcel": 10.430392
+        }
+      ],
+      "frozenProposal": null,
+      "frozenHypotheticalNonP": "LMDR",
+      "frozenDecisionStatus": "REVIEW",
+      "originalDiagnosticFlags": [
+        "coverage_outside_99.9_to_100.1_percent"
+      ],
+      "previousGoldCaseIds": [
+        "2A-03"
+      ],
+      "declaredGoldControl": false,
+      "independentNewParcel": false,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Legitimate-looking P strip along rear portion of property. LMDR primary candidate, but P may be meaningful. Do not suppress the P designation or remove existing exception flags.",
+        "reportedPrimaryCode": "LMDR",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [
+          "potentially_meaningful_P_strip"
+        ],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-27",
+      "batchId": "R001-6",
+      "address": "471 PALM IS NE",
+      "parcelId": "052915434340000910",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "LMDR-NCOD Island Est",
+          "normalizedZoningCode": "lmdrncodislandest",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1030.537,
+          "percentOfParcel": 98.459172
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 16.127,
+          "percentOfParcel": 1.540828
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 385,
+          "sourceIdentifier": 10869,
+          "rawZoningCode": "LMDR-NCOD Island Est",
+          "normalizedZoningCode": "lmdrncodislandest",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1030.537,
+          "percentOfParcel": 98.459172
+        },
+        {
+          "sourceIndex": 452,
+          "sourceIdentifier": 10940,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 16.127,
+          "percentOfParcel": 1.540828
+        }
+      ],
+      "frozenProposal": null,
+      "frozenHypotheticalNonP": "LMDR-NCOD Island Est",
+      "frozenDecisionStatus": "REVIEW",
+      "originalDiagnosticFlags": [
+        "unsupported_zoning_code_combination",
+        "unrelated_source_profile_issue"
+      ],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "PRIMARY_CANDIDATE",
+        "observationVerbatim": "Negligible P overlap associated with ocean. LMDR-NCOD primary candidate. Preserve the NCOD classification and all existing source exceptions.",
+        "reportedPrimaryCode": "LMDR-NCOD",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [
+          "full_NCOD_subtype_not_independently_confirmed"
+        ],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-28",
+      "batchId": "R001-6",
+      "address": "2855 GULF TO BAY BLVD",
+      "parcelId": "172916030060000200",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 3257.056005,
+          "percentOfParcel": 2.684677
+        },
+        {
+          "code": "US 19",
+          "normalizedZoningCode": "us19",
+          "featureCount": 2,
+          "repeatedPolygons": true,
+          "overlappingPolygons": true,
+          "intersectionAreaSquareMeters": 117965.325437,
+          "percentOfParcel": 97.234676
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 709,
+          "sourceIdentifier": 11210,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 3257.056005,
+          "percentOfParcel": 2.684677
+        },
+        {
+          "sourceIndex": 255,
+          "sourceIdentifier": 10738,
+          "rawZoningCode": "US 19",
+          "normalizedZoningCode": "us19",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 117935.831647,
+          "percentOfParcel": 97.210365
+        },
+        {
+          "sourceIndex": 748,
+          "sourceIdentifier": 11249,
+          "rawZoningCode": "US 19",
+          "normalizedZoningCode": "us19",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 29.49379,
+          "percentOfParcel": 0.024311
+        }
+      ],
+      "frozenProposal": null,
+      "frozenHypotheticalNonP": "US 19",
+      "frozenDecisionStatus": "REVIEW",
+      "originalDiagnosticFlags": [
+        "repeated_same_code_polygons",
+        "overlapping_same_code_polygons"
+      ],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "UNCLEAR",
+        "observationVerbatim": "Unusual, very large regional-center property. Classification remains uncertain. Preserve existing exclusions.",
+        "reportedPrimaryCode": null,
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [
+          "unusual_regional_center_classification_uncertain"
+        ],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-29",
+      "batchId": "R001-6",
+      "address": "1730 N KEENE RD",
+      "parcelId": "022915879840000010",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 2485.045,
+          "percentOfParcel": 56.933515
+        },
+        {
+          "code": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1823.314,
+          "percentOfParcel": 41.772943
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 760,
+          "sourceIdentifier": 11267,
+          "rawZoningCode": "LMDR",
+          "normalizedZoningCode": "lmdr",
+          "geometryValid": false,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1823.314,
+          "percentOfParcel": 41.772943
+        },
+        {
+          "sourceIndex": 212,
+          "sourceIdentifier": 10693,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 2485.045,
+          "percentOfParcel": 56.933515
+        }
+      ],
+      "frozenProposal": null,
+      "frozenHypotheticalNonP": "LMDR",
+      "frozenDecisionStatus": "REVIEW",
+      "originalDiagnosticFlags": [
+        "invalid_zoning_geometry",
+        "coverage_outside_99.9_to_100.1_percent"
+      ],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "TRUE_SPLIT",
+        "observationVerbatim": "Human observation is TRUE SPLIT: P / LMDR. Preserve both districts and existing geometry-quality exceptions.",
+        "reportedPrimaryCode": null,
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [
+          "P",
+          "LMDR"
+        ],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [
+          "human_reported_true_split"
+        ],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    },
+    {
+      "caseId": "R001-30",
+      "batchId": "R001-6",
+      "address": "18675 US HIGHWAY 19 N LOT 87",
+      "parcelId": "202916032900000870",
+      "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+      "originalIntersections": [
+        {
+          "code": "US 19",
+          "normalizedZoningCode": "us19",
+          "featureCount": 2,
+          "repeatedPolygons": true,
+          "overlappingPolygons": true,
+          "intersectionAreaSquareMeters": 168550.264,
+          "percentOfParcel": 82.321469
+        },
+        {
+          "code": "P",
+          "normalizedZoningCode": "p",
+          "featureCount": 2,
+          "repeatedPolygons": true,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 36169.346,
+          "percentOfParcel": 17.665435
+        }
+      ],
+      "originalZoningFeatures": [
+        {
+          "sourceIndex": 712,
+          "sourceIdentifier": 11213,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 9842.253,
+          "percentOfParcel": 4.807045
+        },
+        {
+          "sourceIndex": 713,
+          "sourceIdentifier": 11214,
+          "rawZoningCode": "P",
+          "normalizedZoningCode": "p",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 26327.093,
+          "percentOfParcel": 12.858389
+        },
+        {
+          "sourceIndex": 748,
+          "sourceIdentifier": 11249,
+          "rawZoningCode": "US 19",
+          "normalizedZoningCode": "us19",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 168035.859,
+          "percentOfParcel": 82.070229
+        },
+        {
+          "sourceIndex": 749,
+          "sourceIdentifier": 11250,
+          "rawZoningCode": "US 19",
+          "normalizedZoningCode": "us19",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 514.404,
+          "percentOfParcel": 0.25124
+        }
+      ],
+      "frozenProposal": null,
+      "frozenHypotheticalNonP": "US 19",
+      "frozenDecisionStatus": "REVIEW",
+      "originalDiagnosticFlags": [
+        "repeated_same_code_polygons",
+        "overlapping_same_code_polygons"
+      ],
+      "previousGoldCaseIds": [],
+      "declaredGoldControl": false,
+      "independentNewParcel": true,
+      "humanReview": {
+        "category": "UNCLEAR",
+        "observationVerbatim": "Property is a marina. US19 primary candidate not independently confirmed. Preserve source-quality exceptions and flag for review if necessary.",
+        "reportedPrimaryCode": "US19",
+        "confirmedPrimaryCode": null,
+        "reportedSplitCodes": [],
+        "recordedOn": "2026-10-12",
+        "reviewDate": null,
+        "reviewer": "User participating in this chat",
+        "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+        "interpretationFlags": [
+          "primary_applicability_not_verified"
+        ],
+        "preservationDesignationRetained": true,
+        "approvalGranted": false
+      }
+    }
+  ],
+  "ruleApprovalStatus": "NOT_APPROVED",
+  "productionChangesAllowed": false
+}

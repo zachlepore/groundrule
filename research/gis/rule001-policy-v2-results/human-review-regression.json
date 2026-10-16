@@ -1,0 +1,841 @@
+{
+  "historical": [
+    {
+      "caseId": "1A-01",
+      "parcelId": "202816186670000010",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1A-02",
+      "parcelId": "202816186450000260",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1A-03",
+      "parcelId": "202816186450000280",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1A-04",
+      "parcelId": "202816186450000250",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1A-05",
+      "parcelId": "202816186450000230",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1B-01",
+      "parcelId": "172816186440000500",
+      "reviewStatus": "pending",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1B-02",
+      "parcelId": "052915546660060040",
+      "reviewStatus": "pending",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1B-03",
+      "parcelId": "292816623790000270",
+      "reviewStatus": "pending",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1B-04",
+      "parcelId": "202816186450000220",
+      "reviewStatus": "pending",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1B-05",
+      "parcelId": "292816623790000280",
+      "reviewStatus": "pending",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1C-01",
+      "parcelId": "172816186440000200",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1C-02",
+      "parcelId": "202816498570001060",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1C-03",
+      "parcelId": "082916943020110160",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1C-04",
+      "parcelId": "322816884270000002",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "1C-05",
+      "parcelId": "332816803900060120",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "2A-01",
+      "parcelId": "082915049680000050",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": true
+    },
+    {
+      "caseId": "2A-02",
+      "parcelId": "052915546660400050",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": true
+    },
+    {
+      "caseId": "2A-03",
+      "parcelId": "052916714240000100",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "2A-04",
+      "parcelId": "182916345600050230",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": true
+    },
+    {
+      "caseId": "2A-05",
+      "parcelId": "092915255420010010",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": true
+    },
+    {
+      "caseId": "3A-01",
+      "parcelId": "012915061150030080",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "3A-02",
+      "parcelId": "032915499860000130",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "3A-03",
+      "parcelId": "172816149050000600",
+      "reviewStatus": "human_true_split",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "3A-04",
+      "parcelId": "172816149050000820",
+      "reviewStatus": "human_true_split",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "3A-05",
+      "parcelId": "172816149050000640",
+      "reviewStatus": "human_true_split",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "4A-01",
+      "parcelId": "222915489780100010",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "4A-02",
+      "parcelId": "032915437400000210",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "4A-03",
+      "parcelId": "122915826560110080",
+      "reviewStatus": "human_confirmed",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "4A-04",
+      "parcelId": "142915105660010200",
+      "reviewStatus": "human_staff_review",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    },
+    {
+      "caseId": "4A-05",
+      "parcelId": "092915555300000170",
+      "reviewStatus": "human_true_split",
+      "prohibitedAssignment": false,
+      "conflictingConfirmation": false,
+      "qualifying": false
+    }
+  ],
+  "rule001": [
+    {
+      "caseId": "R001-01",
+      "parcelId": "082915049680000050",
+      "address": "295 BAYSIDE DR",
+      "humanCategory": "CONFIRMED",
+      "independentNewParcel": false,
+      "pCoveragePercent": 0.000041,
+      "qualifying": true,
+      "proposal": "LMDR",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+      "observationVerbatim": "Negligible P intersection. LMDR primary. Previously reviewed gold control."
+    },
+    {
+      "caseId": "R001-02",
+      "parcelId": "182916345600050230",
+      "address": "115 EVELYN AVE",
+      "humanCategory": "CONFIRMED",
+      "independentNewParcel": false,
+      "pCoveragePercent": 30.794501,
+      "qualifying": true,
+      "proposal": "LMDR",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "P corresponds to a pond. LMDR primary. Previously reviewed gold control."
+    },
+    {
+      "caseId": "R001-03",
+      "parcelId": "302915356300000460",
+      "address": "1651 SAND KEY ESTATES CT UNIT 46",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 0.62473,
+      "qualifying": true,
+      "proposal": "HDR",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+      "observationVerbatim": "Negligible P intersection. HDR primary candidate."
+    },
+    {
+      "caseId": "R001-04",
+      "parcelId": "322816730990000010",
+      "address": "2600 MCCORMICK DR",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 1.423805,
+      "qualifying": true,
+      "proposal": "US 19",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+      "observationVerbatim": "Negligible P intersection. US19 primary candidate."
+    },
+    {
+      "caseId": "R001-05",
+      "parcelId": "172816186910000500",
+      "address": "2674 BEAUMONT CT",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 2.513469,
+      "qualifying": true,
+      "proposal": "LMDR",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "Negligible P intersection. LMDR primary candidate."
+    },
+    {
+      "caseId": "R001-06",
+      "parcelId": "212915474660060010",
+      "address": "931 DEMPSEY ST",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 0.64382,
+      "qualifying": true,
+      "proposal": "MDR",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+      "observationVerbatim": "P occurs beside a pond; negligible for primary guidance. MDR candidate."
+    },
+    {
+      "caseId": "R001-07",
+      "parcelId": "052915547560760010",
+      "address": "699 BAY ESPLANADE",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 73.760376,
+      "qualifying": true,
+      "proposal": "T",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "Large P area lies in water. T primary candidate."
+    },
+    {
+      "caseId": "R001-08",
+      "parcelId": "092915255420010060",
+      "address": "302 CEDAR ST",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 76.510859,
+      "qualifying": true,
+      "proposal": "D",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "Large P area lies in water. D primary candidate."
+    },
+    {
+      "caseId": "R001-09",
+      "parcelId": "202816236380000200",
+      "address": "2957 EAGLE ESTATES CIR E",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 0.965737,
+      "qualifying": true,
+      "proposal": "LDR",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+      "observationVerbatim": "P corresponds to a golf course; negligible for primary guidance. LDR candidate."
+    },
+    {
+      "caseId": "R001-10",
+      "parcelId": "192915000001400200",
+      "address": "1365 GULF BLVD",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 0.846026,
+      "qualifying": true,
+      "proposal": "I",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+      "observationVerbatim": "Water-related P intersection; negligible for primary guidance. I candidate."
+    },
+    {
+      "caseId": "R001-11",
+      "parcelId": "102915265500020010",
+      "address": "1268 ENGMAN ST",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 8.272136,
+      "qualifying": true,
+      "proposal": "C",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "P associated with a river. C primary candidate."
+    },
+    {
+      "caseId": "R001-12",
+      "parcelId": "132915486010000020",
+      "address": "50 N STARCREST DR",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 52.299296,
+      "qualifying": true,
+      "proposal": "O",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "P corresponds to a retention pond. O primary candidate."
+    },
+    {
+      "caseId": "R001-13",
+      "parcelId": "142915000002100100",
+      "address": "201 S GLENWOOD AVE",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 25.794917,
+      "qualifying": true,
+      "proposal": "OS/R",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [
+        "preserve_park_context"
+      ],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "Park with a pond in the middle. OS/R primary candidate; preserve park context."
+    },
+    {
+      "caseId": "R001-14",
+      "parcelId": "062916000002300100",
+      "address": "2200 MONTCLAIR RD",
+      "humanCategory": "UNCLEAR",
+      "independentNewParcel": true,
+      "pCoveragePercent": 59.408927,
+      "qualifying": false,
+      "proposal": null,
+      "flags": [
+        "human_primary_applicability_unclear"
+      ],
+      "originalQualityFlags": [],
+      "interpretationFlags": [
+        "primary_applicability_not_verified",
+        "preserve_park_context"
+      ],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "UNRESOLVED_NO_PRIMARY_PROPOSAL",
+      "observationVerbatim": "Park with a pond in the middle. MHDR is the non-P candidate, but primary applicability was not conclusively verified. Flag for review rather than treating this as an unqualified confirmation."
+    },
+    {
+      "caseId": "R001-15",
+      "parcelId": "092916915360000060",
+      "address": "1343 MCMULLEN BOOTH RD UNIT 5",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 18.846171,
+      "qualifying": true,
+      "proposal": "LMDR",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "Stream behind property. LMDR primary candidate, P retained as relevant secondary zoning."
+    },
+    {
+      "caseId": "R001-16",
+      "parcelId": "162915940520010050",
+      "address": "55 ROGERS ST UNIT P-5",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 78.447887,
+      "qualifying": true,
+      "proposal": "HDR",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "P area corresponds to ocean. HDR primary candidate."
+    },
+    {
+      "caseId": "R001-17",
+      "parcelId": "202916326910130341",
+      "address": "2773 VIA CIPRIANI UNIT 1334A",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 20.664508,
+      "qualifying": true,
+      "proposal": "US 19",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [
+        "marina_association_uncertain"
+      ],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "P appears associated with marina docks; observation uncertain. US19 primary candidate."
+    },
+    {
+      "caseId": "R001-18",
+      "parcelId": "362815916150000070",
+      "address": "2270 SPRING LAKE CT",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 0.040383,
+      "qualifying": true,
+      "proposal": "MDR",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+      "observationVerbatim": "Negligible P overlap. MDR primary candidate."
+    },
+    {
+      "caseId": "R001-19",
+      "parcelId": "092915654780000080",
+      "address": "1204 PALM BLUFF PRESERVE DR",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 90.904052,
+      "qualifying": true,
+      "proposal": "LMDR",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "P coverage predominantly ocean. LMDR primary candidate despite high P percentage."
+    },
+    {
+      "caseId": "R001-20",
+      "parcelId": "082915025920030050",
+      "address": "419 EAST SHORE DR",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 72.202747,
+      "qualifying": true,
+      "proposal": "T",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "Marina-related P overlap. T primary candidate."
+    },
+    {
+      "caseId": "R001-21",
+      "parcelId": "162915168530010010",
+      "address": "100 N OSCEOLA AVE",
+      "humanCategory": "UNCLEAR",
+      "independentNewParcel": true,
+      "pCoveragePercent": 7.962733,
+      "qualifying": false,
+      "proposal": null,
+      "flags": [
+        "human_primary_applicability_unclear"
+      ],
+      "originalQualityFlags": [],
+      "interpretationFlags": [
+        "primary_applicability_not_verified",
+        "preserve_park_context"
+      ],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "UNRESOLVED_NO_PRIMARY_PROPOSAL",
+      "observationVerbatim": "Park beside water. D is the non-P candidate, but preserve park context and review primary applicability."
+    },
+    {
+      "caseId": "R001-22",
+      "parcelId": "322816616280000140",
+      "address": "2416 FOXHEAD WAY",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 0.004721,
+      "qualifying": true,
+      "proposal": "LDR",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+      "observationVerbatim": "Negligible P intersection. LDR primary candidate."
+    },
+    {
+      "caseId": "R001-23",
+      "parcelId": "212915000002100200",
+      "address": "207 JEFFORDS ST",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 59.556556,
+      "qualifying": true,
+      "proposal": "I",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+      "observationVerbatim": "Large P area associated with water. I primary candidate."
+    },
+    {
+      "caseId": "R001-24",
+      "parcelId": "082915433800030050",
+      "address": "249 WINDWARD PSGE",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 0.449944,
+      "qualifying": true,
+      "proposal": "C",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+      "observationVerbatim": "Negligible P intersection. C primary candidate."
+    },
+    {
+      "caseId": "R001-25",
+      "parcelId": "272915071540000020",
+      "address": "1155 BELLEAIR RD",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 1.532834,
+      "qualifying": true,
+      "proposal": "O",
+      "flags": [],
+      "originalQualityFlags": [],
+      "interpretationFlags": [],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+      "observationVerbatim": "Negligible P intersection. O primary candidate."
+    },
+    {
+      "caseId": "R001-26",
+      "parcelId": "052916714240000100",
+      "address": "1773 OWEN DR",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": false,
+      "pCoveragePercent": 10.430392,
+      "qualifying": false,
+      "proposal": null,
+      "flags": [
+        "coverage_outside_99.9_to_100.1_percent"
+      ],
+      "originalQualityFlags": [
+        "coverage_outside_99.9_to_100.1_percent"
+      ],
+      "interpretationFlags": [
+        "potentially_meaningful_P_strip"
+      ],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "UNRESOLVED_NO_PRIMARY_PROPOSAL",
+      "observationVerbatim": "Legitimate-looking P strip along rear portion of property. LMDR primary candidate, but P may be meaningful. Do not suppress the P designation or remove existing exception flags."
+    },
+    {
+      "caseId": "R001-27",
+      "parcelId": "052915434340000910",
+      "address": "471 PALM IS NE",
+      "humanCategory": "PRIMARY_CANDIDATE",
+      "independentNewParcel": true,
+      "pCoveragePercent": 1.540828,
+      "qualifying": false,
+      "proposal": null,
+      "flags": [
+        "unsupported_zoning_code_combination",
+        "unrelated_source_profile_issue"
+      ],
+      "originalQualityFlags": [
+        "unsupported_zoning_code_combination",
+        "unrelated_source_profile_issue"
+      ],
+      "interpretationFlags": [
+        "full_NCOD_subtype_not_independently_confirmed"
+      ],
+      "codeAgreement": "NO_EXACT_FULL_CODE_CONFIRMATION",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "UNRESOLVED_NO_PRIMARY_PROPOSAL",
+      "observationVerbatim": "Negligible P overlap associated with ocean. LMDR-NCOD primary candidate. Preserve the NCOD classification and all existing source exceptions."
+    },
+    {
+      "caseId": "R001-28",
+      "parcelId": "172916030060000200",
+      "address": "2855 GULF TO BAY BLVD",
+      "humanCategory": "UNCLEAR",
+      "independentNewParcel": true,
+      "pCoveragePercent": 2.684677,
+      "qualifying": false,
+      "proposal": null,
+      "flags": [
+        "repeated_same_code_polygons",
+        "overlapping_same_code_polygons",
+        "human_primary_applicability_unclear"
+      ],
+      "originalQualityFlags": [
+        "repeated_same_code_polygons",
+        "overlapping_same_code_polygons"
+      ],
+      "interpretationFlags": [
+        "unusual_regional_center_classification_uncertain"
+      ],
+      "codeAgreement": "NO_EXACT_FULL_CODE_CONFIRMATION",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "UNRESOLVED_NO_PRIMARY_PROPOSAL",
+      "observationVerbatim": "Unusual, very large regional-center property. Classification remains uncertain. Preserve existing exclusions."
+    },
+    {
+      "caseId": "R001-29",
+      "parcelId": "022915879840000010",
+      "address": "1730 N KEENE RD",
+      "humanCategory": "TRUE_SPLIT",
+      "independentNewParcel": true,
+      "pCoveragePercent": 56.933515,
+      "qualifying": false,
+      "proposal": null,
+      "flags": [
+        "invalid_zoning_geometry",
+        "coverage_outside_99.9_to_100.1_percent",
+        "human_split_or_staff_review"
+      ],
+      "originalQualityFlags": [
+        "invalid_zoning_geometry",
+        "coverage_outside_99.9_to_100.1_percent"
+      ],
+      "interpretationFlags": [
+        "human_reported_true_split"
+      ],
+      "codeAgreement": "TRUE_SPLIT",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "UNRESOLVED_NO_PRIMARY_PROPOSAL",
+      "observationVerbatim": "Human observation is TRUE SPLIT: P / LMDR. Preserve both districts and existing geometry-quality exceptions."
+    },
+    {
+      "caseId": "R001-30",
+      "parcelId": "202916032900000870",
+      "address": "18675 US HIGHWAY 19 N LOT 87",
+      "humanCategory": "UNCLEAR",
+      "independentNewParcel": true,
+      "pCoveragePercent": 17.665435,
+      "qualifying": false,
+      "proposal": null,
+      "flags": [
+        "repeated_same_code_polygons",
+        "overlapping_same_code_polygons",
+        "human_primary_applicability_unclear"
+      ],
+      "originalQualityFlags": [
+        "repeated_same_code_polygons",
+        "overlapping_same_code_polygons"
+      ],
+      "interpretationFlags": [
+        "primary_applicability_not_verified"
+      ],
+      "codeAgreement": "NAMED_CODE_MATCH",
+      "prohibitedAssignment": false,
+      "previousQualityExclusionPreserved": true,
+      "noticeVisibility": "UNRESOLVED_NO_PRIMARY_PROPOSAL",
+      "observationVerbatim": "Property is a marina. US19 primary candidate not independently confirmed. Preserve source-quality exceptions and flag for review if necessary."
+    }
+  ]
+}

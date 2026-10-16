@@ -1,0 +1,686 @@
+{
+  "ruleId": "CLR-Z-001",
+  "approvalStatus": "NOT_APPROVED",
+  "snapshotId": "clearwater-gis-2026-09-28",
+  "inputCounts": {
+    "profiles": 63430,
+    "uniqueParcels": 47716,
+    "clean": 43092,
+    "review": 20338
+  },
+  "ruleVersion": "2.0.0-provisional",
+  "noticeThresholdPercent": 2,
+  "pParcels": 4779,
+  "pAddresses": 7381,
+  "pCleanAddresses": 643,
+  "pReviewAddresses": 6738,
+  "pOnly": 0,
+  "pOnlyAddresses": 0,
+  "pExactlyOneOther": 3612,
+  "pExactlyOneOtherAddresses": 5157,
+  "pMultipleOther": 1167,
+  "pMultipleOtherAddresses": 2224,
+  "candidateParcels": 1839,
+  "candidateAddresses": 2498,
+  "candidateAddressCategories": {
+    "reviewAlreadyMatched": 1967,
+    "reviewDifferentCode": 201,
+    "reviewPreviouslyUnclassified": 1,
+    "cleanAlreadyMatched": 325,
+    "cleanDifferentCode": 4,
+    "cleanPreviouslyUnclassified": 0
+  },
+  "candidatePreviouslyUnclassifiedAddresses": 1,
+  "candidateSameAsOriginalZoningAddresses": 2292,
+  "candidateDifferentFromOriginalZoningAddresses": 205,
+  "changedProvisionalRecords": 2498,
+  "unchangedOriginalClassifications": 63430,
+  "unchangedProvisionalRecords": 60932,
+  "originallyReviewCandidates": 2169,
+  "originallyCleanCandidates": 329,
+  "unresolvedReviewWithoutCandidate": 18169,
+  "pendingQcRecords": 2498,
+  "originalReviewRecords": 20338,
+  "goldReviewed": 25,
+  "goldStructurallyApplicable": 5,
+  "goldContradictions": 0,
+  "goldEligibleAgreements": 4,
+  "unverifiedMembershipPParcels": 336,
+  "unverifiedMembershipPOnlyParcels": 41,
+  "byCombination": {
+    "LMDR + MDR + MHDR + P": {
+      "parcels": 1,
+      "addresses": 3,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 3
+    },
+    "LMDR + P": {
+      "parcels": 426,
+      "addresses": 439,
+      "candidateParcels": 243,
+      "candidateAddresses": 256,
+      "excludedStructuralParcels": 183,
+      "cleanAddresses": 3,
+      "reviewAddresses": 436
+    },
+    "LMDR + MDR + P": {
+      "parcels": 26,
+      "addresses": 36,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 36
+    },
+    "MDR + OS/R + P": {
+      "parcels": 83,
+      "addresses": 85,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 85
+    },
+    "LMDR + OS/R + P": {
+      "parcels": 29,
+      "addresses": 31,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 31
+    },
+    "MDR + O + P": {
+      "parcels": 1,
+      "addresses": 2,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 2
+    },
+    "MDR + P": {
+      "parcels": 212,
+      "addresses": 213,
+      "candidateParcels": 212,
+      "candidateAddresses": 213,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 213
+    },
+    "OS/R + P": {
+      "parcels": 6,
+      "addresses": 9,
+      "candidateParcels": 2,
+      "candidateAddresses": 4,
+      "excludedStructuralParcels": 4,
+      "cleanAddresses": 4,
+      "reviewAddresses": 5
+    },
+    "I + O + P": {
+      "parcels": 1,
+      "addresses": 1,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 1
+    },
+    "O + P": {
+      "parcels": 25,
+      "addresses": 25,
+      "candidateParcels": 3,
+      "candidateAddresses": 3,
+      "excludedStructuralParcels": 22,
+      "cleanAddresses": 3,
+      "reviewAddresses": 22
+    },
+    "HDR + OS/R + P": {
+      "parcels": 120,
+      "addresses": 124,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 124
+    },
+    "HDR + P": {
+      "parcels": 647,
+      "addresses": 654,
+      "candidateParcels": 629,
+      "candidateAddresses": 636,
+      "excludedStructuralParcels": 18,
+      "cleanAddresses": 0,
+      "reviewAddresses": 654
+    },
+    "P + T": {
+      "parcels": 201,
+      "addresses": 223,
+      "candidateParcels": 181,
+      "candidateAddresses": 203,
+      "excludedStructuralParcels": 20,
+      "cleanAddresses": 0,
+      "reviewAddresses": 223
+    },
+    "LMDR-NCOD Island Est + P": {
+      "parcels": 302,
+      "addresses": 303,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 302,
+      "cleanAddresses": 0,
+      "reviewAddresses": 303
+    },
+    "HDR-NCOD Island Est + P": {
+      "parcels": 708,
+      "addresses": 726,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 708,
+      "cleanAddresses": 0,
+      "reviewAddresses": 726
+    },
+    "LMDR + P + T": {
+      "parcels": 4,
+      "addresses": 5,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 5
+    },
+    "I + P": {
+      "parcels": 10,
+      "addresses": 13,
+      "candidateParcels": 9,
+      "candidateAddresses": 12,
+      "excludedStructuralParcels": 1,
+      "cleanAddresses": 1,
+      "reviewAddresses": 12
+    },
+    "I + IRT + P": {
+      "parcels": 1,
+      "addresses": 397,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 397
+    },
+    "P + US 19": {
+      "parcels": 749,
+      "addresses": 2161,
+      "candidateParcels": 352,
+      "candidateAddresses": 914,
+      "excludedStructuralParcels": 397,
+      "cleanAddresses": 629,
+      "reviewAddresses": 1532
+    },
+    "I + P + US 19": {
+      "parcels": 3,
+      "addresses": 23,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 23
+    },
+    "I + IRT + O + P": {
+      "parcels": 1,
+      "addresses": 2,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 2
+    },
+    "MHDR + P": {
+      "parcels": 1,
+      "addresses": 1,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 1,
+      "cleanAddresses": 0,
+      "reviewAddresses": 1
+    },
+    "OS/R + P + T": {
+      "parcels": 245,
+      "addresses": 255,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 255
+    },
+    "I + OS/R + P + US 19": {
+      "parcels": 2,
+      "addresses": 270,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 270
+    },
+    "OS/R + P + US 19": {
+      "parcels": 3,
+      "addresses": 90,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 90
+    },
+    "MHDR-NCOD Island Est + P": {
+      "parcels": 104,
+      "addresses": 112,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 104,
+      "cleanAddresses": 0,
+      "reviewAddresses": 112
+    },
+    "I + OS/R + P + T": {
+      "parcels": 1,
+      "addresses": 2,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 2
+    },
+    "HDR-NCOD Island Est + MDR-NCOD Island Est + MHDR-NCOD Island Est + P": {
+      "parcels": 134,
+      "addresses": 135,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 135
+    },
+    "HDR-NCOD Island Est + OS/R + P": {
+      "parcels": 126,
+      "addresses": 127,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 127
+    },
+    "C + OS/R + P": {
+      "parcels": 1,
+      "addresses": 1,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 1
+    },
+    "C + P": {
+      "parcels": 5,
+      "addresses": 8,
+      "candidateParcels": 3,
+      "candidateAddresses": 5,
+      "excludedStructuralParcels": 2,
+      "cleanAddresses": 0,
+      "reviewAddresses": 8
+    },
+    "C + MHDR-NCOD Island Est + P": {
+      "parcels": 2,
+      "addresses": 2,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 2
+    },
+    "C + HDR + P": {
+      "parcels": 129,
+      "addresses": 129,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 129
+    },
+    "HDR-NCOD Island Est + MHDR-NCOD Island Est + P": {
+      "parcels": 12,
+      "addresses": 13,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 13
+    },
+    "HDR + MDR-NCOD Island Est + P": {
+      "parcels": 56,
+      "addresses": 56,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 56
+    },
+    "HDR + HDR-NCOD Island Est + I-NCOD Island Est + MDR-NCOD Island Est + P": {
+      "parcels": 1,
+      "addresses": 1,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 1
+    },
+    "LDR + LMDR + OS/R + P": {
+      "parcels": 1,
+      "addresses": 1,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 1
+    },
+    "MDR + P + US 19": {
+      "parcels": 1,
+      "addresses": 133,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 133
+    },
+    "D + P": {
+      "parcels": 161,
+      "addresses": 214,
+      "candidateParcels": 160,
+      "candidateAddresses": 206,
+      "excludedStructuralParcels": 1,
+      "cleanAddresses": 1,
+      "reviewAddresses": 213
+    },
+    "D + LMDR + P": {
+      "parcels": 1,
+      "addresses": 2,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 2
+    },
+    "C + I + OS/R + P": {
+      "parcels": 1,
+      "addresses": 2,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 2
+    },
+    "LMDR + O + P": {
+      "parcels": 1,
+      "addresses": 1,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 1
+    },
+    "LMDR + MDR + O + P": {
+      "parcels": 16,
+      "addresses": 17,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 17
+    },
+    "LDR + P": {
+      "parcels": 55,
+      "addresses": 56,
+      "candidateParcels": 45,
+      "candidateAddresses": 46,
+      "excludedStructuralParcels": 10,
+      "cleanAddresses": 2,
+      "reviewAddresses": 54
+    },
+    "I + LDR + P": {
+      "parcels": 1,
+      "addresses": 1,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 1
+    },
+    "LDR + LMDR + P": {
+      "parcels": 4,
+      "addresses": 4,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 4
+    },
+    "D + HDR + I + P": {
+      "parcels": 54,
+      "addresses": 54,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 54
+    },
+    "I + LDR + OS/R + P": {
+      "parcels": 1,
+      "addresses": 1,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 1
+    },
+    "C + I + LDR + OS/R + P": {
+      "parcels": 1,
+      "addresses": 3,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 3
+    },
+    "I + LMDR + P": {
+      "parcels": 3,
+      "addresses": 4,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 4
+    },
+    "I + OS/R + P": {
+      "parcels": 1,
+      "addresses": 1,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 1
+    },
+    "HDR + OS/R + P + T": {
+      "parcels": 2,
+      "addresses": 3,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 3
+    },
+    "I + MDR + P": {
+      "parcels": 40,
+      "addresses": 41,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 41
+    },
+    "HDR + MDR + P": {
+      "parcels": 2,
+      "addresses": 3,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 3
+    },
+    "LDR + OS/R + P": {
+      "parcels": 9,
+      "addresses": 9,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 9
+    },
+    "I + LDR + LMDR + P": {
+      "parcels": 1,
+      "addresses": 1,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 1
+    },
+    "MDR + P + T": {
+      "parcels": 1,
+      "addresses": 3,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 3
+    },
+    "HDR + LMDR + OS/R + P": {
+      "parcels": 38,
+      "addresses": 38,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 38
+    },
+    "C + O + P": {
+      "parcels": 2,
+      "addresses": 2,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 2
+    },
+    "I + LDR + LMDR + OS/R + P": {
+      "parcels": 1,
+      "addresses": 1,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 1
+    },
+    "LMDR + MDR + OS/R + P + US 19": {
+      "parcels": 1,
+      "addresses": 2,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 2
+    },
+    "LDR + MDR + P": {
+      "parcels": 1,
+      "addresses": 106,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 106
+    },
+    "LDR + P + US 19": {
+      "parcels": 1,
+      "addresses": 1,
+      "candidateParcels": 0,
+      "candidateAddresses": 0,
+      "excludedStructuralParcels": 0,
+      "cleanAddresses": 0,
+      "reviewAddresses": 1
+    }
+  },
+  "pCoverageDistribution": {
+    "large 20–50%": {
+      "parcels": 705,
+      "addresses": 1668
+    },
+    "moderate 1–<20%": {
+      "parcels": 1055,
+      "addresses": 2180
+    },
+    "P dominant >50–90%": {
+      "parcels": 423,
+      "addresses": 468
+    },
+    "minimal <1%": {
+      "parcels": 2594,
+      "addresses": 3063
+    },
+    "P dominant >90%": {
+      "parcels": 2,
+      "addresses": 2
+    }
+  },
+  "exceptionFlags": {
+    "multiple_non_P_districts": {
+      "parcels": 1167,
+      "addresses": 2224
+    },
+    "invalid_zoning_geometry": {
+      "parcels": 243,
+      "addresses": 244
+    },
+    "coverage_outside_99.9_to_100.1_percent": {
+      "parcels": 152,
+      "addresses": 806
+    },
+    "human_split_or_staff_review": {
+      "parcels": 1,
+      "addresses": 1
+    },
+    "unrelated_source_profile_issue": {
+      "parcels": 1463,
+      "addresses": 1543
+    },
+    "repeated_same_code_polygons": {
+      "parcels": 413,
+      "addresses": 1005
+    },
+    "unsupported_zoning_code_combination": {
+      "parcels": 1445,
+      "addresses": 1475
+    },
+    "human_primary_applicability_unclear": {
+      "parcels": 4,
+      "addresses": 317
+    },
+    "overlapping_same_code_polygons": {
+      "parcels": 363,
+      "addresses": 669
+    }
+  },
+  "limitations": [
+    "The 112,466 raw parcel features include neighbors; only the 47,716 address-linked parcels have source-confirmed Clearwater membership. Additional raw P-overlap parcels are inventoried separately, not declared Clearwater.",
+    "No water/shoreline layer supplied. Waterfront/inland context must be established by the reviewer; known contexts are attributed to prior human notes.",
+    "Frozen diagnostic uses exact positive-area intersections greater than 0.000001 m²; line/point touches are not districts with area coverage. Percentages are summed source-polygon areas, not unioned coverage; repeated polygons are excluded.",
+    "Five unpushed Batch 5A labels are unavailable and excluded. No human label or approval is inferred.",
+    "The zip hash is pinned at first download; six raw-file hashes independently match committed human-reference lineage. No separate publisher-provided archive checksum was supplied."
+  ]
+}

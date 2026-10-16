@@ -1,0 +1,545 @@
+[
+  {
+    "caseId": "R001-P2-01",
+    "address": "195 DEVON DR",
+    "parcelId": "082915049140000300",
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "ruleVersion": "2.0.0-provisional",
+    "pCoveragePercent": 1.91154,
+    "originalIntersections": [
+      {
+        "code": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1099.857,
+        "percentOfParcel": 98.08846
+      },
+      {
+        "code": "P",
+        "normalizedZoningCode": "p",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 21.434,
+        "percentOfParcel": 1.91154
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "195 DEVON DR",
+        "originalZoning": "LMDR",
+        "originalStatus": "review"
+      }
+    ],
+    "proposal": "LMDR",
+    "noticeVisibility": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+    "flags": [],
+    "reviewPurpose": "Nearest qualifying parcel below/equal 2%: validate presentation boundary and retained P details, not a legal exemption.",
+    "previouslyReviewed": false,
+    "newInspectionRequested": true,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewDate": null
+    }
+  },
+  {
+    "caseId": "R001-P2-02",
+    "address": "285 BAYSIDE DR",
+    "parcelId": "082915049680000070",
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "ruleVersion": "2.0.0-provisional",
+    "pCoveragePercent": 2.016963,
+    "originalIntersections": [
+      {
+        "code": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 860.494,
+        "percentOfParcel": 98.006221
+      },
+      {
+        "code": "P",
+        "normalizedZoningCode": "p",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 17.709,
+        "percentOfParcel": 2.016963
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "285 BAYSIDE DR",
+        "originalZoning": "LMDR",
+        "originalStatus": "review"
+      }
+    ],
+    "proposal": "LMDR",
+    "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+    "flags": [],
+    "reviewPurpose": "Nearest qualifying parcel above 2%: test the strict greater-than notice boundary.",
+    "previouslyReviewed": false,
+    "newInspectionRequested": true,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewDate": null
+    }
+  },
+  {
+    "caseId": "R001-P2-03",
+    "address": "1742 SUNSET DR",
+    "parcelId": "042915614880120020",
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "ruleVersion": "2.0.0-provisional",
+    "pCoveragePercent": 2.890802,
+    "originalIntersections": [
+      {
+        "code": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 884.098,
+        "percentOfParcel": 97.109198
+      },
+      {
+        "code": "P",
+        "normalizedZoningCode": "p",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 26.318,
+        "percentOfParcel": 2.890802
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "1742 SUNSET DR",
+        "originalZoning": "LMDR",
+        "originalStatus": "review"
+      }
+    ],
+    "proposal": "LMDR",
+    "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+    "flags": [],
+    "reviewPurpose": "2–3% tradeoff: would raising the notice threshold hide context the reviewer needs? Does not test primary eligibility.",
+    "previouslyReviewed": false,
+    "newInspectionRequested": true,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewDate": null
+    }
+  },
+  {
+    "caseId": "R001-P2-04",
+    "address": "306 KILMER AVE",
+    "parcelId": "182916345600050110",
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "ruleVersion": "2.0.0-provisional",
+    "pCoveragePercent": 3.708866,
+    "originalIntersections": [
+      {
+        "code": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 622.633,
+        "percentOfParcel": 96.291134
+      },
+      {
+        "code": "P",
+        "normalizedZoningCode": "p",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 23.982,
+        "percentOfParcel": 3.708866
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "306 KILMER AVE",
+        "originalZoning": "LMDR",
+        "originalStatus": "review"
+      }
+    ],
+    "proposal": "LMDR",
+    "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+    "flags": [],
+    "reviewPurpose": "3–5% tradeoff, separated from earlier samples: presentation benefit remains unverified; P stays mapped at either threshold.",
+    "previouslyReviewed": false,
+    "newInspectionRequested": true,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewDate": null
+    }
+  },
+  {
+    "caseId": "R001-P2-05",
+    "address": "2850 MCMULLEN BOOTH RD",
+    "parcelId": "282816000002200100",
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "ruleVersion": "2.0.0-provisional",
+    "pCoveragePercent": 0.611263,
+    "originalIntersections": [
+      {
+        "code": "I",
+        "normalizedZoningCode": "i",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 213968.713,
+        "percentOfParcel": 99.388858
+      },
+      {
+        "code": "P",
+        "normalizedZoningCode": "p",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1315.954,
+        "percentOfParcel": 0.611263
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "3000 SR 580",
+        "originalZoning": "I",
+        "originalStatus": "review"
+      },
+      {
+        "address": "2850 MCMULLEN BOOTH RD",
+        "originalZoning": "I",
+        "originalStatus": "review"
+      }
+    ],
+    "proposal": "I",
+    "noticeVisibility": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+    "flags": [],
+    "reviewPurpose": "Small P in an unusually large nonresidential source parcel: challenge whether a non-prominent notice still gives adequate context. Area is existing diagnostic evidence; physical use is not inferred.",
+    "previouslyReviewed": false,
+    "newInspectionRequested": true,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewDate": null
+    }
+  },
+  {
+    "caseId": "R001-P2-06",
+    "address": "301 ELDRIDGE ST",
+    "parcelId": "092915255600000010",
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "ruleVersion": "2.0.0-provisional",
+    "pCoveragePercent": 89.056977,
+    "originalIntersections": [
+      {
+        "code": "P",
+        "normalizedZoningCode": "p",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 3053.89,
+        "percentOfParcel": 89.056977
+      },
+      {
+        "code": "D",
+        "normalizedZoningCode": "d",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 375.252,
+        "percentOfParcel": 10.943023
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "301 ELDRIDGE ST",
+        "originalZoning": "P",
+        "originalStatus": "review"
+      }
+    ],
+    "proposal": "D",
+    "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+    "flags": [],
+    "reviewPurpose": "Original REVIEW primary-code mismatch: verify the proposed change independently of area dominance.",
+    "previouslyReviewed": false,
+    "newInspectionRequested": true,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewDate": null
+    }
+  },
+  {
+    "caseId": "R001-P2-07",
+    "address": "301 CEDAR ST",
+    "parcelId": "092915000001300100",
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "ruleVersion": "2.0.0-provisional",
+    "pCoveragePercent": 79.532995,
+    "originalIntersections": [
+      {
+        "code": "P",
+        "normalizedZoningCode": "p",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 6116.871,
+        "percentOfParcel": 79.532995
+      },
+      {
+        "code": "D",
+        "normalizedZoningCode": "d",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1573.1,
+        "percentOfParcel": 20.453815
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "301 CEDAR ST",
+        "originalZoning": "P",
+        "originalStatus": "review"
+      }
+    ],
+    "proposal": "D",
+    "noticeVisibility": "RECOMMENDED_PHYSICAL_PROJECT_GUIDES",
+    "flags": [],
+    "reviewPurpose": "Large P/nonresidential case: test uncertain primary applicability; physical water context alone cannot confirm zoning.",
+    "previouslyReviewed": false,
+    "newInspectionRequested": true,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewDate": null
+    }
+  },
+  {
+    "caseId": "R001-14",
+    "address": "2200 MONTCLAIR RD",
+    "parcelId": "062916000002300100",
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "ruleVersion": "2.0.0-provisional",
+    "pCoveragePercent": 59.408927,
+    "originalIntersections": [
+      {
+        "code": "P",
+        "normalizedZoningCode": "p",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 15800.034,
+        "percentOfParcel": 59.408927
+      },
+      {
+        "code": "MHDR",
+        "normalizedZoningCode": "mhdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 10794.879,
+        "percentOfParcel": 40.589289
+      }
+    ],
+    "proposal": null,
+    "noticeVisibility": "UNRESOLVED_NO_PRIMARY_PROPOSAL",
+    "flags": [
+      "human_primary_applicability_unclear"
+    ],
+    "reviewPurpose": "Already-reviewed regression control: human/quality/NCOD exclusion applies before presentation. No repeat inspection requested.",
+    "previouslyReviewed": true,
+    "newInspectionRequested": false,
+    "humanReview": {
+      "category": "UNCLEAR",
+      "observationVerbatim": "Park with a pond in the middle. MHDR is the non-P candidate, but primary applicability was not conclusively verified. Flag for review rather than treating this as an unqualified confirmation.",
+      "reportedPrimaryCode": "MHDR",
+      "confirmedPrimaryCode": null,
+      "reportedSplitCodes": [],
+      "recordedOn": "2026-10-12",
+      "reviewDate": null,
+      "reviewer": "User participating in this chat",
+      "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+      "interpretationFlags": [
+        "primary_applicability_not_verified",
+        "preserve_park_context"
+      ],
+      "preservationDesignationRetained": true,
+      "approvalGranted": false
+    }
+  },
+  {
+    "caseId": "R001-21",
+    "address": "100 N OSCEOLA AVE",
+    "parcelId": "162915168530010010",
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "ruleVersion": "2.0.0-provisional",
+    "pCoveragePercent": 7.962733,
+    "originalIntersections": [
+      {
+        "code": "D",
+        "normalizedZoningCode": "d",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 63667.938,
+        "percentOfParcel": 92.037267
+      },
+      {
+        "code": "P",
+        "normalizedZoningCode": "p",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 5508.321,
+        "percentOfParcel": 7.962733
+      }
+    ],
+    "proposal": null,
+    "noticeVisibility": "UNRESOLVED_NO_PRIMARY_PROPOSAL",
+    "flags": [
+      "human_primary_applicability_unclear"
+    ],
+    "reviewPurpose": "Already-reviewed regression control: human/quality/NCOD exclusion applies before presentation. No repeat inspection requested.",
+    "previouslyReviewed": true,
+    "newInspectionRequested": false,
+    "humanReview": {
+      "category": "UNCLEAR",
+      "observationVerbatim": "Park beside water. D is the non-P candidate, but preserve park context and review primary applicability.",
+      "reportedPrimaryCode": "D",
+      "confirmedPrimaryCode": null,
+      "reportedSplitCodes": [],
+      "recordedOn": "2026-10-12",
+      "reviewDate": null,
+      "reviewer": "User participating in this chat",
+      "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+      "interpretationFlags": [
+        "primary_applicability_not_verified",
+        "preserve_park_context"
+      ],
+      "preservationDesignationRetained": true,
+      "approvalGranted": false
+    }
+  },
+  {
+    "caseId": "R001-27",
+    "address": "471 PALM IS NE",
+    "parcelId": "052915434340000910",
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "ruleVersion": "2.0.0-provisional",
+    "pCoveragePercent": 1.540828,
+    "originalIntersections": [
+      {
+        "code": "LMDR-NCOD Island Est",
+        "normalizedZoningCode": "lmdrncodislandest",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1030.537,
+        "percentOfParcel": 98.459172
+      },
+      {
+        "code": "P",
+        "normalizedZoningCode": "p",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 16.127,
+        "percentOfParcel": 1.540828
+      }
+    ],
+    "proposal": null,
+    "noticeVisibility": "UNRESOLVED_NO_PRIMARY_PROPOSAL",
+    "flags": [
+      "unsupported_zoning_code_combination",
+      "unrelated_source_profile_issue"
+    ],
+    "reviewPurpose": "Already-reviewed regression control: human/quality/NCOD exclusion applies before presentation. No repeat inspection requested.",
+    "previouslyReviewed": true,
+    "newInspectionRequested": false,
+    "humanReview": {
+      "category": "PRIMARY_CANDIDATE",
+      "observationVerbatim": "Negligible P overlap associated with ocean. LMDR-NCOD primary candidate. Preserve the NCOD classification and all existing source exceptions.",
+      "reportedPrimaryCode": "LMDR-NCOD",
+      "confirmedPrimaryCode": null,
+      "reportedSplitCodes": [],
+      "recordedOn": "2026-10-12",
+      "reviewDate": null,
+      "reviewer": "User participating in this chat",
+      "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+      "interpretationFlags": [
+        "full_NCOD_subtype_not_independently_confirmed"
+      ],
+      "preservationDesignationRetained": true,
+      "approvalGranted": false
+    }
+  },
+  {
+    "caseId": "R001-29",
+    "address": "1730 N KEENE RD",
+    "parcelId": "022915879840000010",
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "ruleVersion": "2.0.0-provisional",
+    "pCoveragePercent": 56.933515,
+    "originalIntersections": [
+      {
+        "code": "P",
+        "normalizedZoningCode": "p",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 2485.045,
+        "percentOfParcel": 56.933515
+      },
+      {
+        "code": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1823.314,
+        "percentOfParcel": 41.772943
+      }
+    ],
+    "proposal": null,
+    "noticeVisibility": "UNRESOLVED_NO_PRIMARY_PROPOSAL",
+    "flags": [
+      "invalid_zoning_geometry",
+      "coverage_outside_99.9_to_100.1_percent",
+      "human_split_or_staff_review"
+    ],
+    "reviewPurpose": "Already-reviewed regression control: human/quality/NCOD exclusion applies before presentation. No repeat inspection requested.",
+    "previouslyReviewed": true,
+    "newInspectionRequested": false,
+    "humanReview": {
+      "category": "TRUE_SPLIT",
+      "observationVerbatim": "Human observation is TRUE SPLIT: P / LMDR. Preserve both districts and existing geometry-quality exceptions.",
+      "reportedPrimaryCode": null,
+      "confirmedPrimaryCode": null,
+      "reportedSplitCodes": [
+        "P",
+        "LMDR"
+      ],
+      "recordedOn": "2026-10-12",
+      "reviewDate": null,
+      "reviewer": "User participating in this chat",
+      "verificationMethod": "Clearwater official zoning viewer (human-reported; inspection date not supplied)",
+      "interpretationFlags": [
+        "human_reported_true_split"
+      ],
+      "preservationDesignationRetained": true,
+      "approvalGranted": false
+    }
+  }
+]

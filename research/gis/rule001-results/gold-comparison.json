@@ -1,0 +1,593 @@
+[
+  {
+    "caseId": "1A-01",
+    "parcelId": "202816186670000010",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "OS/R does not meaningfully overlap the parcel in the official viewer; this appears to be a tiny GIS boundary/sliver artifact.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1A-02",
+    "parcelId": "202816186450000260",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same pattern as 1A-01.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1A-03",
+    "parcelId": "202816186450000280",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same pattern as 1A-01.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1A-04",
+    "parcelId": "202816186450000250",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same pattern as 1A-01.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1A-05",
+    "parcelId": "202816186450000230",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same pattern as 1A-01.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1B-01",
+    "parcelId": "172816186440000500",
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewDate": null,
+      "verificationMethod": null,
+      "reviewStatus": "pending",
+      "reviewer": null
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1B-02",
+    "parcelId": "052915546660060040",
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewDate": null,
+      "verificationMethod": null,
+      "reviewStatus": "pending",
+      "reviewer": null
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1B-03",
+    "parcelId": "292816623790000270",
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewDate": null,
+      "verificationMethod": null,
+      "reviewStatus": "pending",
+      "reviewer": null
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1B-04",
+    "parcelId": "202816186450000220",
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewDate": null,
+      "verificationMethod": null,
+      "reviewStatus": "pending",
+      "reviewer": null
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1B-05",
+    "parcelId": "292816623790000280",
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewDate": null,
+      "verificationMethod": null,
+      "reviewStatus": "pending",
+      "reviewer": null
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1C-01",
+    "parcelId": "172816186440000200",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "OS/R overlap is not meaningful in the official viewer; visually this is clearly an LMDR parcel.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1C-02",
+    "parcelId": "202816498570001060",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same interpretation.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1C-03",
+    "parcelId": "082916943020110160",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same interpretation.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1C-04",
+    "parcelId": "322816884270000002",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same interpretation.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "1C-05",
+    "parcelId": "332816803900060120",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "same interpretation.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "2A-01",
+    "parcelId": "082915049680000050",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "waterfront/ocean adjacency; `P` does not represent a meaningful competing parcel zoning assignment.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "candidateEligible": true,
+    "hypotheticalNonP": "LMDR",
+    "agreement": true,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "2A-02",
+    "parcelId": "052915546660400050",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "small water/sliver interaction; property is clearly LMDR in the official viewer.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "candidateEligible": true,
+    "hypotheticalNonP": "LMDR",
+    "agreement": true,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "2A-03",
+    "parcelId": "052916714240000100",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "no obvious water shown in imagery; `P` may reflect a City GIS feature, flood/water-related geometry, or another mapping artifact, but the parcel is clearly presented as LMDR. Flag this one as worth understanding separately.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "candidateEligible": false,
+    "hypotheticalNonP": "LMDR",
+    "agreement": true,
+    "exclusionFlags": [
+      "coverage_outside_99.9_to_100.1_percent"
+    ],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "2A-04",
+    "parcelId": "182916345600050230",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "`P` corresponds to the pond behind the residential properties; parcel is clearly LMDR.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "candidateEligible": true,
+    "hypotheticalNonP": "LMDR",
+    "agreement": true,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "2A-05",
+    "parcelId": "092915255420010010",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "parcel extends substantially into water / includes dock-water area, creating nearly 50% `P` intersection, but the developed property is clearly LMDR.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat"
+    },
+    "structuralMatch": true,
+    "candidateEligible": true,
+    "hypotheticalNonP": "LMDR",
+    "agreement": true,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "3A-01",
+    "parcelId": "012915061150030080",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "The ~1.0% MDR intersection is negligible in the official Clearwater viewer. The parcel is clearly presented as LMDR and does not appear meaningfully split.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat",
+      "referenceCategory": "false_technical_ambiguity",
+      "reviewedZones": [
+        "LMDR"
+      ]
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "3A-02",
+    "parcelId": "032915499860000130",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "Same interpretation as 3A-01. The ~4.3% MDR intersection does not appear to represent a meaningful split of the parcel in the official viewer.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat",
+      "referenceCategory": "false_technical_ambiguity",
+      "reviewedZones": [
+        "LMDR"
+      ]
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "3A-03",
+    "parcelId": "172816149050000600",
+    "humanReview": {
+      "result": "TRUE SPLIT: LMDR / MDR",
+      "note": "The zoning boundary materially crosses the parcel in the official Clearwater viewer. Do not resolve this using dominant percentage or the address point.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_true_split",
+      "reviewer": "User participating in this chat",
+      "referenceCategory": "true_split_zoning",
+      "reviewedZones": [
+        "LMDR",
+        "MDR"
+      ]
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": true
+  },
+  {
+    "caseId": "3A-04",
+    "parcelId": "172816149050000820",
+    "humanReview": {
+      "result": "TRUE SPLIT: LMDR / MDR",
+      "note": "Same interpretation as 3A-03. Both development zoning districts materially occupy the parcel.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_true_split",
+      "reviewer": "User participating in this chat",
+      "referenceCategory": "true_split_zoning",
+      "reviewedZones": [
+        "LMDR",
+        "MDR"
+      ]
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": true
+  },
+  {
+    "caseId": "3A-05",
+    "parcelId": "172816149050000640",
+    "humanReview": {
+      "result": "TRUE SPLIT: MDR / LMDR",
+      "note": "Same underlying condition as 3A-03 and 3A-04. The parcel is genuinely split between two development zoning districts; MDR happens to be the slight majority.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_true_split",
+      "reviewer": "User participating in this chat",
+      "referenceCategory": "true_split_zoning",
+      "reviewedZones": [
+        "MDR",
+        "LMDR"
+      ]
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": true
+  },
+  {
+    "caseId": "4A-01",
+    "parcelId": "222915489780100010",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "Official Clearwater viewer shows this parcel clearly as LMDR. The ~0.95% C intersection is negligible and appears to be another minor polygon/boundary mismatch rather than a meaningful split.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat",
+      "referenceCategory": "false_technical_ambiguity",
+      "reviewedZones": [
+        "LMDR"
+      ]
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "4A-02",
+    "parcelId": "032915437400000210",
+    "humanReview": {
+      "result": "CONFIRMED: LMDR",
+      "note": "Same interpretation as 4A-01. The competing C intersection is not meaningful in the official viewer; parcel is clearly LMDR.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat",
+      "referenceCategory": "false_technical_ambiguity",
+      "reviewedZones": [
+        "LMDR"
+      ]
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "4A-03",
+    "parcelId": "122915826560110080",
+    "humanReview": {
+      "result": "CONFIRMED: C",
+      "note": "The official Clearwater viewer shows the parcel overwhelmingly within Commercial zoning. A small LMDR polygon clips the upper portion of the parcel, but this appears to be a zoning/parcel geometry mismatch rather than a meaningful split of the developed property. Do not classify this as TRUE SPLIT solely because two polygons intersect the parcel.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_confirmed",
+      "reviewer": "User participating in this chat",
+      "referenceCategory": "false_technical_ambiguity",
+      "reviewedZones": [
+        "C"
+      ]
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "4A-04",
+    "parcelId": "142915105660010200",
+    "humanReview": {
+      "result": "UNCLEAR / STAFF REVIEW — C / LMDR",
+      "note": "Official Clearwater zoning viewer depicts most of the parcel as C with an LMDR portion along the south. The site is physically residential, but existing land use cannot be used to override the City's zoning map. This could represent intentional commercial zoning of a residential use, a lawful/nonconforming use, or a GIS boundary issue. Do not infer a single zoning designation without additional authoritative confirmation.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_staff_review",
+      "reviewer": "User participating in this chat",
+      "referenceCategory": "unresolved_uncertain",
+      "reviewedZones": [],
+      "reportedZoneContext": [
+        "C",
+        "LMDR"
+      ]
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": false
+  },
+  {
+    "caseId": "4A-05",
+    "parcelId": "092915555300000170",
+    "humanReview": {
+      "result": "TRUE SPLIT / MULTIPART PARCEL — LMDR / C",
+      "note": "Clearwater’s official viewer selects both disconnected parcel components together when either is clicked, indicating that they are treated as one linked/multipart parcel record. The components fall in different zoning districts. Preserve this as a distinct multipart-parcel edge case; do not resolve using dominant area or address-point location.",
+      "reviewDate": "2026-10-06",
+      "verificationMethod": "Clearwater official zoning viewer",
+      "reviewStatus": "human_true_split",
+      "reviewer": "User participating in this chat",
+      "referenceCategory": "true_split_zoning",
+      "reviewedZones": [
+        "LMDR",
+        "C"
+      ],
+      "splitType": "multipart_parcel",
+      "parcelMultipartReported": true,
+      "multipartEvidence": "Human reports both disconnected components select together as one linked parcel record in the official viewer."
+    },
+    "structuralMatch": false,
+    "candidateEligible": false,
+    "hypotheticalNonP": null,
+    "agreement": null,
+    "exclusionFlags": [],
+    "preservedKnownSplit": true
+  }
+]
