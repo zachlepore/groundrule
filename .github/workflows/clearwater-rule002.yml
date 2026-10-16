@@ -109,10 +109,15 @@ jobs:
           body_file="$RUNNER_TEMP/rule002-approved-pr.md"
           cp research/gis/rule002-approved-pr.md "$body_file"
           printf '\nHosted validation: %s/%s/actions/runs/%s\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" >> "$body_file"
-          existing_pr="$(gh pr list --repo "$GITHUB_REPOSITORY" --base main --head "$GITHUB_REF_NAME" --state open --json number --jq '.[0].number // empty')"
+          error_file="$RUNNER_TEMP/rule002-pr-error.txt"
+          fail_pr() {
+            printf '::error::%s\n' "$(tr '\n' ' ' < "$error_file")"
+            exit 1
+          }
+          existing_pr="$(gh pr list --repo "$GITHUB_REPOSITORY" --base main --head "$GITHUB_REF_NAME" --state open --json number --jq '.[0].number // empty' 2>"$error_file")" || fail_pr
           if [[ -n "$existing_pr" ]]; then
-            gh pr edit "$existing_pr" --repo "$GITHUB_REPOSITORY" --title 'Approve Clearwater Rule 002 offline static export' --body-file "$body_file"
+            gh pr edit "$existing_pr" --repo "$GITHUB_REPOSITORY" --title 'Approve Clearwater Rule 002 offline static export' --body-file "$body_file" 2>"$error_file" || fail_pr
             gh pr view "$existing_pr" --repo "$GITHUB_REPOSITORY" --json url --jq .url >> "$GITHUB_STEP_SUMMARY"
           else
-            gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$GITHUB_REF_NAME" --title 'Approve Clearwater Rule 002 offline static export' --body-file "$body_file" >> "$GITHUB_STEP_SUMMARY"
+            gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$GITHUB_REF_NAME" --title 'Approve Clearwater Rule 002 offline static export' --body-file "$body_file" >> "$GITHUB_STEP_SUMMARY" 2>"$error_file" || fail_pr
           fi
