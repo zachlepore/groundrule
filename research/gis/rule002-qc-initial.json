@@ -1,0 +1,742 @@
+[
+  {
+    "caseId": "R002-01",
+    "batch": 1,
+    "parcelId": "102916107580000040",
+    "address": "3418 BRAESIDE PL",
+    "coordinates": [
+      -82.69455822224613,
+      27.977930903501974
+    ],
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1787.348,
+        "percentOfParcel": 69.053971
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 800.986,
+        "percentOfParcel": 30.946006
+      }
+    ],
+    "originalZoningFeatures": [
+      {
+        "sourceIndex": 350,
+        "sourceIdentifier": 10834,
+        "rawZoningCode": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 1787.348,
+        "percentOfParcel": 69.053971
+      },
+      {
+        "sourceIndex": 85,
+        "sourceIdentifier": 10565,
+        "rawZoningCode": "OS/R",
+        "normalizedZoningCode": "os/r",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 800.986,
+        "percentOfParcel": 30.946006
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "3418 BRAESIDE PL",
+        "sourceAddressIdentifier": 318806,
+        "zoningCode": "LMDR",
+        "status": "review",
+        "issues": [
+          "parcel_ambiguous_zoning"
+        ]
+      }
+    ],
+    "diagnosticFlags": [],
+    "proposal": "LMDR",
+    "osrCoveragePercent": 30.946006,
+    "reviewPurpose": "Largest OS/R coverage: try to disprove LMDR primary interpretation.",
+    "independentNewParcel": true,
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "nearestOtherQcMeters": 1806,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewStatus": "pending",
+      "verificationMethod": "Clearwater official zoning viewer"
+    }
+  },
+  {
+    "caseId": "R002-02",
+    "batch": 1,
+    "parcelId": "202816168010001990",
+    "address": "2668 CONCORDE CT",
+    "coordinates": [
+      -82.72733695593426,
+      28.037850903437903
+    ],
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1712.639,
+        "percentOfParcel": 82.48276
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 363.721,
+        "percentOfParcel": 17.51724
+      }
+    ],
+    "originalZoningFeatures": [
+      {
+        "sourceIndex": 665,
+        "sourceIdentifier": 11158,
+        "rawZoningCode": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 1712.639,
+        "percentOfParcel": 82.48276
+      },
+      {
+        "sourceIndex": 43,
+        "sourceIdentifier": 10523,
+        "rawZoningCode": "OS/R",
+        "normalizedZoningCode": "os/r",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 363.721,
+        "percentOfParcel": 17.51724
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "2668 CONCORDE CT",
+        "sourceAddressIdentifier": 141328,
+        "zoningCode": "LMDR",
+        "status": "review",
+        "issues": [
+          "parcel_ambiguous_zoning"
+        ]
+      }
+    ],
+    "diagnosticFlags": [],
+    "proposal": "LMDR",
+    "osrCoveragePercent": 17.51724,
+    "reviewPurpose": "Intermediate OS/R intersection; inspect functional split.",
+    "independentNewParcel": true,
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "nearestOtherQcMeters": 2607,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewStatus": "pending",
+      "verificationMethod": "Clearwater official zoning viewer"
+    }
+  },
+  {
+    "caseId": "R002-03",
+    "batch": 1,
+    "parcelId": "052915546660060030",
+    "address": "840 ELDORADO AVE",
+    "coordinates": [
+      -82.82801764935515,
+      27.995253282832337
+    ],
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 570.24,
+        "percentOfParcel": 99.999667
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 0.002,
+        "percentOfParcel": 0.000333
+      }
+    ],
+    "originalZoningFeatures": [
+      {
+        "sourceIndex": 281,
+        "sourceIdentifier": 10764,
+        "rawZoningCode": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 570.24,
+        "percentOfParcel": 99.999667
+      },
+      {
+        "sourceIndex": 466,
+        "sourceIdentifier": 10954,
+        "rawZoningCode": "OS/R",
+        "normalizedZoningCode": "os/r",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 0.002,
+        "percentOfParcel": 0.000333
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "840 ELDORADO AVE",
+        "sourceAddressIdentifier": 368451,
+        "zoningCode": "LMDR",
+        "status": "review",
+        "issues": [
+          "parcel_ambiguous_zoning"
+        ]
+      }
+    ],
+    "diagnosticFlags": [],
+    "proposal": "LMDR",
+    "osrCoveragePercent": 0.000333,
+    "reviewPurpose": "Small technical-looking overlap; do not assume restrictions disappear.",
+    "independentNewParcel": true,
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "nearestOtherQcMeters": 7568,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewStatus": "pending",
+      "verificationMethod": "Clearwater official zoning viewer"
+    }
+  },
+  {
+    "caseId": "R002-04",
+    "batch": 1,
+    "parcelId": "292816202000000450",
+    "address": "2793 COTTONWOOD CT",
+    "coordinates": [
+      -82.72183972977292,
+      28.01493826913475
+    ],
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1112.152,
+        "percentOfParcel": 97.602227
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 27.322,
+        "percentOfParcel": 2.397773
+      }
+    ],
+    "originalZoningFeatures": [
+      {
+        "sourceIndex": 61,
+        "sourceIdentifier": 10541,
+        "rawZoningCode": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 1112.152,
+        "percentOfParcel": 97.602227
+      },
+      {
+        "sourceIndex": 99,
+        "sourceIdentifier": 10579,
+        "rawZoningCode": "OS/R",
+        "normalizedZoningCode": "os/r",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 27.322,
+        "percentOfParcel": 2.397773
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "2793 COTTONWOOD CT",
+        "sourceAddressIdentifier": 145437,
+        "zoningCode": "LMDR",
+        "status": "review",
+        "issues": [
+          "parcel_ambiguous_zoning"
+        ]
+      }
+    ],
+    "diagnosticFlags": [],
+    "proposal": "LMDR",
+    "osrCoveragePercent": 2.397773,
+    "reviewPurpose": "Moderate OS/R overlap away from earlier cases.",
+    "independentNewParcel": true,
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "nearestOtherQcMeters": 1521,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewStatus": "pending",
+      "verificationMethod": "Clearwater official zoning viewer"
+    }
+  },
+  {
+    "caseId": "R002-05",
+    "batch": 1,
+    "parcelId": "182916246600050100",
+    "address": "916 EVELYN AVE",
+    "coordinates": [
+      -82.7380757933039,
+      27.955243659988408
+    ],
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1391.34,
+        "percentOfParcel": 98.50811
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 21.072,
+        "percentOfParcel": 1.49189
+      }
+    ],
+    "originalZoningFeatures": [
+      {
+        "sourceIndex": 199,
+        "sourceIdentifier": 10680,
+        "rawZoningCode": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 1391.34,
+        "percentOfParcel": 98.50811
+      },
+      {
+        "sourceIndex": 47,
+        "sourceIdentifier": 10527,
+        "rawZoningCode": "OS/R",
+        "normalizedZoningCode": "os/r",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 21.072,
+        "percentOfParcel": 1.49189
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "916 EVELYN AVE",
+        "sourceAddressIdentifier": 382392,
+        "zoningCode": "LMDR",
+        "status": "review",
+        "issues": [
+          "parcel_ambiguous_zoning"
+        ]
+      }
+    ],
+    "diagnosticFlags": [],
+    "proposal": "LMDR",
+    "osrCoveragePercent": 1.49189,
+    "reviewPurpose": "Geographic and coverage stress check; independent of prior gold cases.",
+    "independentNewParcel": true,
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "nearestOtherQcMeters": 2315,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewStatus": "pending",
+      "verificationMethod": "Clearwater official zoning viewer"
+    }
+  },
+  {
+    "caseId": "R002-06",
+    "batch": 2,
+    "parcelId": "012915143510000290",
+    "address": "2001 KAMENSKY RD",
+    "coordinates": [
+      -82.75120386950576,
+      27.993789222778087
+    ],
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 821.266,
+        "percentOfParcel": 99.026896
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 8.07,
+        "percentOfParcel": 0.973104
+      }
+    ],
+    "originalZoningFeatures": [
+      {
+        "sourceIndex": 406,
+        "sourceIdentifier": 10890,
+        "rawZoningCode": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 821.266,
+        "percentOfParcel": 99.026896
+      },
+      {
+        "sourceIndex": 232,
+        "sourceIdentifier": 10715,
+        "rawZoningCode": "OS/R",
+        "normalizedZoningCode": "os/r",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 8.07,
+        "percentOfParcel": 0.973104
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "2001 KAMENSKY RD",
+        "sourceAddressIdentifier": 373831,
+        "zoningCode": "LMDR",
+        "status": "review",
+        "issues": [
+          "parcel_ambiguous_zoning"
+        ]
+      }
+    ],
+    "diagnosticFlags": [],
+    "proposal": "LMDR",
+    "osrCoveragePercent": 0.973104,
+    "reviewPurpose": "Geographic and coverage stress check; independent of prior gold cases.",
+    "independentNewParcel": true,
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "nearestOtherQcMeters": 2215,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewStatus": "pending",
+      "verificationMethod": "Clearwater official zoning viewer"
+    }
+  },
+  {
+    "caseId": "R002-07",
+    "batch": 2,
+    "parcelId": "072916399250000150",
+    "address": "2351 NE COACHMAN RD",
+    "coordinates": [
+      -82.73970418210254,
+      27.97599554761498
+    ],
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1696.466,
+        "percentOfParcel": 99.706821
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 4.98,
+        "percentOfParcel": 0.292663
+      }
+    ],
+    "originalZoningFeatures": [
+      {
+        "sourceIndex": 458,
+        "sourceIdentifier": 10946,
+        "rawZoningCode": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "geometryValid": true,
+        "multipart": true,
+        "intersectionAreaSquareMeters": 1696.466,
+        "percentOfParcel": 99.706821
+      },
+      {
+        "sourceIndex": 457,
+        "sourceIdentifier": 10945,
+        "rawZoningCode": "OS/R",
+        "normalizedZoningCode": "os/r",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 4.98,
+        "percentOfParcel": 0.292663
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "2351 NE COACHMAN RD",
+        "sourceAddressIdentifier": 355234,
+        "zoningCode": "LMDR",
+        "status": "review",
+        "issues": [
+          "parcel_ambiguous_zoning"
+        ]
+      }
+    ],
+    "diagnosticFlags": [],
+    "proposal": "LMDR",
+    "osrCoveragePercent": 0.292663,
+    "reviewPurpose": "Geographic and coverage stress check; independent of prior gold cases.",
+    "independentNewParcel": true,
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "nearestOtherQcMeters": 2281,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewStatus": "pending",
+      "verificationMethod": "Clearwater official zoning viewer"
+    }
+  },
+  {
+    "caseId": "R002-08",
+    "batch": 2,
+    "parcelId": "312816987250000150",
+    "address": "2484 MOORE HAVEN DR W",
+    "coordinates": [
+      -82.7402544122386,
+      28.011168373490925
+    ],
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1210.164,
+        "percentOfParcel": 99.898146
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1.234,
+        "percentOfParcel": 0.101854
+      }
+    ],
+    "originalZoningFeatures": [
+      {
+        "sourceIndex": 80,
+        "sourceIdentifier": 10560,
+        "rawZoningCode": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 1210.164,
+        "percentOfParcel": 99.898146
+      },
+      {
+        "sourceIndex": 640,
+        "sourceIdentifier": 11133,
+        "rawZoningCode": "OS/R",
+        "normalizedZoningCode": "os/r",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 1.234,
+        "percentOfParcel": 0.101854
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "2484 MOORE HAVEN DR W",
+        "sourceAddressIdentifier": 146736,
+        "zoningCode": "LMDR",
+        "status": "review",
+        "issues": [
+          "parcel_ambiguous_zoning"
+        ]
+      }
+    ],
+    "diagnosticFlags": [],
+    "proposal": "LMDR",
+    "osrCoveragePercent": 0.101854,
+    "reviewPurpose": "Geographic and coverage stress check; independent of prior gold cases.",
+    "independentNewParcel": true,
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "nearestOtherQcMeters": 1862,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewStatus": "pending",
+      "verificationMethod": "Clearwater official zoning viewer"
+    }
+  },
+  {
+    "caseId": "R002-09",
+    "batch": 2,
+    "parcelId": "092916451440100090",
+    "address": "3035 HOYT AVE",
+    "coordinates": [
+      -82.71092447810486,
+      27.970618937571103
+    ],
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 839.557,
+        "percentOfParcel": 98.292544
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 14.583,
+        "percentOfParcel": 1.707329
+      }
+    ],
+    "originalZoningFeatures": [
+      {
+        "sourceIndex": 751,
+        "sourceIdentifier": 11253,
+        "rawZoningCode": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 839.557,
+        "percentOfParcel": 98.292544
+      },
+      {
+        "sourceIndex": 620,
+        "sourceIdentifier": 11113,
+        "rawZoningCode": "OS/R",
+        "normalizedZoningCode": "os/r",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 14.583,
+        "percentOfParcel": 1.707329
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "3035 HOYT AVE",
+        "sourceAddressIdentifier": 348904,
+        "zoningCode": "LMDR",
+        "status": "review",
+        "issues": [
+          "parcel_ambiguous_zoning"
+        ]
+      }
+    ],
+    "diagnosticFlags": [],
+    "proposal": "LMDR",
+    "osrCoveragePercent": 1.707329,
+    "reviewPurpose": "Geographic and coverage stress check; independent of prior gold cases.",
+    "independentNewParcel": true,
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "nearestOtherQcMeters": 1806,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewStatus": "pending",
+      "verificationMethod": "Clearwater official zoning viewer"
+    }
+  },
+  {
+    "caseId": "R002-10",
+    "batch": 2,
+    "parcelId": "332816803900060110",
+    "address": "3039 PIN OAK DR",
+    "coordinates": [
+      -82.71126162634616,
+      28.00498172738878
+    ],
+    "originalIntersections": [
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1264.234,
+        "percentOfParcel": 98.487114
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 19.42,
+        "percentOfParcel": 1.512886
+      }
+    ],
+    "originalZoningFeatures": [
+      {
+        "sourceIndex": 61,
+        "sourceIdentifier": 10541,
+        "rawZoningCode": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 1264.234,
+        "percentOfParcel": 98.487114
+      },
+      {
+        "sourceIndex": 120,
+        "sourceIdentifier": 10600,
+        "rawZoningCode": "OS/R",
+        "normalizedZoningCode": "os/r",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 19.42,
+        "percentOfParcel": 1.512886
+      }
+    ],
+    "originalProfiles": [
+      {
+        "address": "3039 PIN OAK DR",
+        "sourceAddressIdentifier": 403214,
+        "zoningCode": "LMDR",
+        "status": "review",
+        "issues": [
+          "parcel_ambiguous_zoning"
+        ]
+      }
+    ],
+    "diagnosticFlags": [],
+    "proposal": "LMDR",
+    "osrCoveragePercent": 1.512886,
+    "reviewPurpose": "Geographic and coverage stress check; independent of prior gold cases.",
+    "independentNewParcel": true,
+    "sourceSnapshotIdentifier": "clearwater-gis-2026-09-28",
+    "nearestOtherQcMeters": 1521,
+    "humanReview": {
+      "result": null,
+      "note": null,
+      "reviewStatus": "pending",
+      "verificationMethod": "Clearwater official zoning viewer"
+    }
+  }
+]

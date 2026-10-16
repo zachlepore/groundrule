@@ -1,0 +1,1703 @@
+{
+  "remainingReviewAddresses": 18109,
+  "withoutAmbiguousZoningDiagnostic": 1200,
+  "ranking": [
+    {
+      "combination": "lmdr + mdr",
+      "remainingReviewAddresses": 1083,
+      "sourceQualityPassingAddresses": 388,
+      "remainingParcels": 786,
+      "knownHumanExceptionParcels": 3,
+      "confirmedPrimaryParcels": 2
+    },
+    {
+      "combination": "p + us19",
+      "remainingReviewAddresses": 940,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 396,
+      "knownHumanExceptionParcels": 1,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr + os/r",
+      "remainingReviewAddresses": 736,
+      "sourceQualityPassingAddresses": 733,
+      "remainingParcels": 149,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdrncodislandest + p",
+      "remainingReviewAddresses": 726,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 708,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + mdr",
+      "remainingReviewAddresses": 577,
+      "sourceQualityPassingAddresses": 380,
+      "remainingParcels": 104,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr + o",
+      "remainingReviewAddresses": 532,
+      "sourceQualityPassingAddresses": 232,
+      "remainingParcels": 508,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + lmdr",
+      "remainingReviewAddresses": 501,
+      "sourceQualityPassingAddresses": 246,
+      "remainingParcels": 453,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + lmdr",
+      "remainingReviewAddresses": 497,
+      "sourceQualityPassingAddresses": 368,
+      "remainingParcels": 426,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + hdr",
+      "remainingReviewAddresses": 489,
+      "sourceQualityPassingAddresses": 467,
+      "remainingParcels": 116,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "irt + lmdr + mdr + mhdr + o",
+      "remainingReviewAddresses": 478,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 477,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + mhdr",
+      "remainingReviewAddresses": 412,
+      "sourceQualityPassingAddresses": 408,
+      "remainingParcels": 387,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + irt + p",
+      "remainingReviewAddresses": 397,
+      "sourceQualityPassingAddresses": 397,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mhdr",
+      "remainingReviewAddresses": 389,
+      "sourceQualityPassingAddresses": 54,
+      "remainingParcels": 325,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + os/r",
+      "remainingReviewAddresses": 368,
+      "sourceQualityPassingAddresses": 266,
+      "remainingParcels": 366,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdrncodislandest + p",
+      "remainingReviewAddresses": 300,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 299,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + hdr + i + lmdr",
+      "remainingReviewAddresses": 276,
+      "sourceQualityPassingAddresses": 276,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + lmdr",
+      "remainingReviewAddresses": 275,
+      "sourceQualityPassingAddresses": 109,
+      "remainingParcels": 172,
+      "knownHumanExceptionParcels": 2,
+      "confirmedPrimaryParcels": 3
+    },
+    {
+      "combination": "c + i + mdr",
+      "remainingReviewAddresses": 273,
+      "sourceQualityPassingAddresses": 272,
+      "remainingParcels": 216,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + os/r + p + us19",
+      "remainingReviewAddresses": 270,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mhdr + os/r",
+      "remainingReviewAddresses": 262,
+      "sourceQualityPassingAddresses": 171,
+      "remainingParcels": 115,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "os/r + us19",
+      "remainingReviewAddresses": 256,
+      "sourceQualityPassingAddresses": 255,
+      "remainingParcels": 254,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "os/r + p + t",
+      "remainingReviewAddresses": 255,
+      "sourceQualityPassingAddresses": 249,
+      "remainingParcels": 245,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + mhp",
+      "remainingReviewAddresses": 237,
+      "sourceQualityPassingAddresses": 137,
+      "remainingParcels": 14,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + irt + mhdr",
+      "remainingReviewAddresses": 229,
+      "sourceQualityPassingAddresses": 229,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr + mhdr",
+      "remainingReviewAddresses": 223,
+      "sourceQualityPassingAddresses": 142,
+      "remainingParcels": 186,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + p",
+      "remainingReviewAddresses": 219,
+      "sourceQualityPassingAddresses": 39,
+      "remainingParcels": 216,
+      "knownHumanExceptionParcels": 1,
+      "confirmedPrimaryParcels": 1
+    },
+    {
+      "combination": "c + mdr",
+      "remainingReviewAddresses": 217,
+      "sourceQualityPassingAddresses": 212,
+      "remainingParcels": 116,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + hdr + i + mdr",
+      "remainingReviewAddresses": 211,
+      "sourceQualityPassingAddresses": 211,
+      "remainingParcels": 201,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + lmdr + mdr + mhdr",
+      "remainingReviewAddresses": 183,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + lmdr + us19",
+      "remainingReviewAddresses": 183,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 172,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + lmdr + mdr + mhp",
+      "remainingReviewAddresses": 170,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "os/r + t",
+      "remainingReviewAddresses": 166,
+      "sourceQualityPassingAddresses": 161,
+      "remainingParcels": 162,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + o",
+      "remainingReviewAddresses": 152,
+      "sourceQualityPassingAddresses": 146,
+      "remainingParcels": 79,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + lmdr",
+      "remainingReviewAddresses": 147,
+      "sourceQualityPassingAddresses": 115,
+      "remainingParcels": 146,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + hdr + o",
+      "remainingReviewAddresses": 138,
+      "sourceQualityPassingAddresses": 138,
+      "remainingParcels": 132,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdrncodislandest + mdrncodislandest + mhdrncodislandest + p",
+      "remainingReviewAddresses": 135,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 134,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mhp",
+      "remainingReviewAddresses": 135,
+      "sourceQualityPassingAddresses": 42,
+      "remainingParcels": 51,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr + p + us19",
+      "remainingReviewAddresses": 133,
+      "sourceQualityPassingAddresses": 133,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + o",
+      "remainingReviewAddresses": 131,
+      "sourceQualityPassingAddresses": 69,
+      "remainingParcels": 95,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + hdr + p",
+      "remainingReviewAddresses": 129,
+      "sourceQualityPassingAddresses": 129,
+      "remainingParcels": 129,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdrncodislandest + os/r + p",
+      "remainingReviewAddresses": 127,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 126,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + os/r + p",
+      "remainingReviewAddresses": 124,
+      "sourceQualityPassingAddresses": 118,
+      "remainingParcels": 120,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr + mhp",
+      "remainingReviewAddresses": 118,
+      "sourceQualityPassingAddresses": 27,
+      "remainingParcels": 30,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mhdrncodislandest + p",
+      "remainingReviewAddresses": 112,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 104,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + irt + mdr",
+      "remainingReviewAddresses": 110,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 110,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + mdr",
+      "remainingReviewAddresses": 109,
+      "sourceQualityPassingAddresses": 98,
+      "remainingParcels": 5,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + mdr + p",
+      "remainingReviewAddresses": 106,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr + us19",
+      "remainingReviewAddresses": 105,
+      "sourceQualityPassingAddresses": 22,
+      "remainingParcels": 56,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + mdr + mhp",
+      "remainingReviewAddresses": 99,
+      "sourceQualityPassingAddresses": 99,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + os/r",
+      "remainingReviewAddresses": 94,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 93,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 1
+    },
+    {
+      "combination": "os/r + p + us19",
+      "remainingReviewAddresses": 90,
+      "sourceQualityPassingAddresses": 90,
+      "remainingParcels": 3,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr + os/r + p",
+      "remainingReviewAddresses": 85,
+      "sourceQualityPassingAddresses": 40,
+      "remainingParcels": 83,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr + p",
+      "remainingReviewAddresses": 81,
+      "sourceQualityPassingAddresses": 81,
+      "remainingParcels": 80,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + o",
+      "remainingReviewAddresses": 79,
+      "sourceQualityPassingAddresses": 79,
+      "remainingParcels": 74,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + lmdr + o",
+      "remainingReviewAddresses": 73,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 71,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mdr + mhp",
+      "remainingReviewAddresses": 71,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "irt + mdr",
+      "remainingReviewAddresses": 70,
+      "sourceQualityPassingAddresses": 6,
+      "remainingParcels": 59,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + i",
+      "remainingReviewAddresses": 59,
+      "sourceQualityPassingAddresses": 55,
+      "remainingParcels": 35,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + mdrncodislandest + p",
+      "remainingReviewAddresses": 56,
+      "sourceQualityPassingAddresses": 56,
+      "remainingParcels": 56,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "d + hdr + i + p",
+      "remainingReviewAddresses": 54,
+      "sourceQualityPassingAddresses": 54,
+      "remainingParcels": 54,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + p",
+      "remainingReviewAddresses": 54,
+      "sourceQualityPassingAddresses": 36,
+      "remainingParcels": 54,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + mdr + o",
+      "remainingReviewAddresses": 53,
+      "sourceQualityPassingAddresses": 53,
+      "remainingParcels": 23,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + os/r",
+      "remainingReviewAddresses": 52,
+      "sourceQualityPassingAddresses": 45,
+      "remainingParcels": 51,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + mdr",
+      "remainingReviewAddresses": 43,
+      "sourceQualityPassingAddresses": 41,
+      "remainingParcels": 40,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + i + lmdr",
+      "remainingReviewAddresses": 41,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 40,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + mdr + p",
+      "remainingReviewAddresses": 41,
+      "sourceQualityPassingAddresses": 41,
+      "remainingParcels": 40,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + os/r + us19",
+      "remainingReviewAddresses": 40,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + mdr + o",
+      "remainingReviewAddresses": 39,
+      "sourceQualityPassingAddresses": 39,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + lmdr + os/r + p",
+      "remainingReviewAddresses": 38,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 38,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mdr + p",
+      "remainingReviewAddresses": 36,
+      "sourceQualityPassingAddresses": 34,
+      "remainingParcels": 26,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + lmdr + mdr + o",
+      "remainingReviewAddresses": 35,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + os/r",
+      "remainingReviewAddresses": 35,
+      "sourceQualityPassingAddresses": 35,
+      "remainingParcels": 20,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mdr + os/r",
+      "remainingReviewAddresses": 34,
+      "sourceQualityPassingAddresses": 21,
+      "remainingParcels": 30,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "p + t",
+      "remainingReviewAddresses": 34,
+      "sourceQualityPassingAddresses": 14,
+      "remainingParcels": 32,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + mhdr",
+      "remainingReviewAddresses": 32,
+      "sourceQualityPassingAddresses": 32,
+      "remainingParcels": 14,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + o",
+      "remainingReviewAddresses": 31,
+      "sourceQualityPassingAddresses": 30,
+      "remainingParcels": 22,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + os/r + p",
+      "remainingReviewAddresses": 31,
+      "sourceQualityPassingAddresses": 16,
+      "remainingParcels": 29,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + t",
+      "remainingReviewAddresses": 30,
+      "sourceQualityPassingAddresses": 30,
+      "remainingParcels": 29,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + us19",
+      "remainingReviewAddresses": 30,
+      "sourceQualityPassingAddresses": 25,
+      "remainingParcels": 30,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mhdr + o",
+      "remainingReviewAddresses": 30,
+      "sourceQualityPassingAddresses": 25,
+      "remainingParcels": 13,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + ldr",
+      "remainingReviewAddresses": 29,
+      "sourceQualityPassingAddresses": 24,
+      "remainingParcels": 26,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "d + p",
+      "remainingReviewAddresses": 28,
+      "sourceQualityPassingAddresses": 28,
+      "remainingParcels": 10,
+      "knownHumanExceptionParcels": 1,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + lmdr + o",
+      "remainingReviewAddresses": 28,
+      "sourceQualityPassingAddresses": 18,
+      "remainingParcels": 26,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + i + lmdr",
+      "remainingReviewAddresses": 26,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 5,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr",
+      "remainingReviewAddresses": 25,
+      "sourceQualityPassingAddresses": 25,
+      "remainingParcels": 5,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + lmdr + mdr",
+      "remainingReviewAddresses": 23,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 18,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + lmdr + mhdr + o",
+      "remainingReviewAddresses": 23,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 18,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + p + us19",
+      "remainingReviewAddresses": 23,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 3,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + mhdr",
+      "remainingReviewAddresses": 22,
+      "sourceQualityPassingAddresses": 22,
+      "remainingParcels": 22,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr",
+      "remainingReviewAddresses": 22,
+      "sourceQualityPassingAddresses": 15,
+      "remainingParcels": 22,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr + t",
+      "remainingReviewAddresses": 22,
+      "sourceQualityPassingAddresses": 22,
+      "remainingParcels": 20,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + hdr + mdr",
+      "remainingReviewAddresses": 21,
+      "sourceQualityPassingAddresses": 21,
+      "remainingParcels": 21,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "o + p",
+      "remainingReviewAddresses": 20,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 20,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + irt",
+      "remainingReviewAddresses": 19,
+      "sourceQualityPassingAddresses": 14,
+      "remainingParcels": 13,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "irt + o",
+      "remainingReviewAddresses": 19,
+      "sourceQualityPassingAddresses": 19,
+      "remainingParcels": 4,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdrncodislandest",
+      "remainingReviewAddresses": 18,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 18,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + irt",
+      "remainingReviewAddresses": 17,
+      "sourceQualityPassingAddresses": 17,
+      "remainingParcels": 11,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + p",
+      "remainingReviewAddresses": 17,
+      "sourceQualityPassingAddresses": 8,
+      "remainingParcels": 17,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mdr + o + p",
+      "remainingReviewAddresses": 17,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 16,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c",
+      "remainingReviewAddresses": 16,
+      "sourceQualityPassingAddresses": 16,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + lmdr + mhp",
+      "remainingReviewAddresses": 16,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + hdr + mhp",
+      "remainingReviewAddresses": 15,
+      "sourceQualityPassingAddresses": 14,
+      "remainingParcels": 3,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + lmdr + o",
+      "remainingReviewAddresses": 14,
+      "sourceQualityPassingAddresses": 3,
+      "remainingParcels": 10,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "d + mdr + o",
+      "remainingReviewAddresses": 14,
+      "sourceQualityPassingAddresses": 14,
+      "remainingParcels": 3,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + lmdrncodcoachmanr",
+      "remainingReviewAddresses": 14,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 14,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + hdr + os/r",
+      "remainingReviewAddresses": 13,
+      "sourceQualityPassingAddresses": 12,
+      "remainingParcels": 10,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + i + o",
+      "remainingReviewAddresses": 13,
+      "sourceQualityPassingAddresses": 8,
+      "remainingParcels": 6,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdrncodislandest + mhdrncodislandest + p",
+      "remainingReviewAddresses": 13,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 12,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + os/r",
+      "remainingReviewAddresses": 13,
+      "sourceQualityPassingAddresses": 5,
+      "remainingParcels": 8,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mhdrncodislandest",
+      "remainingReviewAddresses": 13,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 13,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + mdr + o",
+      "remainingReviewAddresses": 12,
+      "sourceQualityPassingAddresses": 12,
+      "remainingParcels": 12,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + mdrncodislandest",
+      "remainingReviewAddresses": 12,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 12,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + us19",
+      "remainingReviewAddresses": 12,
+      "sourceQualityPassingAddresses": 9,
+      "remainingParcels": 9,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + lmdr + mdr",
+      "remainingReviewAddresses": 11,
+      "sourceQualityPassingAddresses": 3,
+      "remainingParcels": 8,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + d",
+      "remainingReviewAddresses": 10,
+      "sourceQualityPassingAddresses": 10,
+      "remainingParcels": 5,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + irt + o",
+      "remainingReviewAddresses": 10,
+      "sourceQualityPassingAddresses": 10,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + mdr + mhdr",
+      "remainingReviewAddresses": 10,
+      "sourceQualityPassingAddresses": 10,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "incodislandest + mdrncodislandest",
+      "remainingReviewAddresses": 10,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 10,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "d + lmdr",
+      "remainingReviewAddresses": 9,
+      "sourceQualityPassingAddresses": 8,
+      "remainingParcels": 6,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + os/r + p",
+      "remainingReviewAddresses": 9,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 9,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr + mhdr + os/r",
+      "remainingReviewAddresses": 8,
+      "sourceQualityPassingAddresses": 8,
+      "remainingParcels": 8,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + lmdr + mhdr",
+      "remainingReviewAddresses": 7,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + irt + o",
+      "remainingReviewAddresses": 7,
+      "sourceQualityPassingAddresses": 7,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + mdr + os/r",
+      "remainingReviewAddresses": 7,
+      "sourceQualityPassingAddresses": 3,
+      "remainingParcels": 5,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "d + mdr",
+      "remainingReviewAddresses": 6,
+      "sourceQualityPassingAddresses": 5,
+      "remainingParcels": 5,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + lmdr + os/r",
+      "remainingReviewAddresses": 6,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 5,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "irt + mhdr",
+      "remainingReviewAddresses": 6,
+      "sourceQualityPassingAddresses": 6,
+      "remainingParcels": 5,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldrncodcoachmanr + lmdrncodcoachmanr",
+      "remainingReviewAddresses": 6,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 6,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "os/r",
+      "remainingReviewAddresses": 6,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "d + i + lmdr",
+      "remainingReviewAddresses": 5,
+      "sourceQualityPassingAddresses": 5,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + p + t",
+      "remainingReviewAddresses": 5,
+      "sourceQualityPassingAddresses": 5,
+      "remainingParcels": 4,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "os/r + p",
+      "remainingReviewAddresses": 5,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 4,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + lmdr + p",
+      "remainingReviewAddresses": 4,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 3,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + p",
+      "remainingReviewAddresses": 4,
+      "sourceQualityPassingAddresses": 3,
+      "remainingParcels": 3,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + t",
+      "remainingReviewAddresses": 4,
+      "sourceQualityPassingAddresses": 4,
+      "remainingParcels": 4,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + lmdr + p",
+      "remainingReviewAddresses": 4,
+      "sourceQualityPassingAddresses": 4,
+      "remainingParcels": 4,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + mdr + os/r",
+      "remainingReviewAddresses": 4,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mdr + o",
+      "remainingReviewAddresses": 4,
+      "sourceQualityPassingAddresses": 4,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + hdr + mdr + o",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 3,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + i + ldr + os/r + p",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + lmdr + os/r",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 3,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + p",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + i",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 3,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + mdr + p",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 3,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + os/r + p + t",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + lmdr + mdr + os/r",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + os/r + us19",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 3,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "irt + os/r",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 3,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + lmdr + mdr + os/r",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + lmdr + os/r",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 3,
+      "remainingParcels": 3,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mdr + mhdr + p",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 3,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr + p + t",
+      "remainingReviewAddresses": 3,
+      "sourceQualityPassingAddresses": 3,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + i + irt",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + i + os/r + p",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + lmdr + o + os/r",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + mhdrncodislandest + p",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + o + p",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "d + lmdr + p",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + i + mhp + o",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + ldr",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + mhp",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + irt + o + p",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + ldr + lmdr + os/r",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + ldr + mdr",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + ldr + o",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + lmdr + o + os/r",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + os/r + p + t",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + ldrncodcoachmanr",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + mhdr",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mdr + mhdr",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 2,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mdr + os/r + p + us19",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mdr + o + p",
+      "remainingReviewAddresses": 2,
+      "sourceQualityPassingAddresses": 2,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + d + i + irt + mdr + o + os/r",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + d + lmdr",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + hdr + i",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + hdr + lmdr",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + i + lmdr + o",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + i + mdr + o",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + mdr + os/r",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + mhdr + o",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + os/r + p",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "c + os/r + us19",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "d + i",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + hdrncodislandest + incodislandest + mdrncodislandest + p",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + i + lmdr + o",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + i + mdr",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + lmdr + mhdr",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdr + t",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdrncodislandest + lmdrncodislandest",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "hdrncodislandest + mhdrncodislandest",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + ldr + lmdr",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + ldr + lmdr + os/r + p",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + ldr + lmdr + p",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + ldr + os/r + p",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + ldr + p",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + lmdr + mhdr",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + lmdr + mhp",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + mhdr + os/r",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + o + p",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "i + os/r + p",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "irt + lmdr + os/r",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + lmdr + os/r + p",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + mhdr + o",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + o",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "ldr + p + us19",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mdr + t",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mhdr + o",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + mhdr + os/r",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "lmdr + o + p",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 0,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "mhdr + p",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 1,
+      "confirmedPrimaryParcels": 0
+    },
+    {
+      "combination": "t",
+      "remainingReviewAddresses": 1,
+      "sourceQualityPassingAddresses": 1,
+      "remainingParcels": 1,
+      "knownHumanExceptionParcels": 0,
+      "confirmedPrimaryParcels": 0
+    }
+  ],
+  "note": "Descriptive counts from verified existing diagnostics only. Quality-passing counts are not rule eligibility or legal determinations. No next rule is approved or implemented."
+}

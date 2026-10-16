@@ -1,0 +1,97 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { polygon } from '@turf/helpers';
+import { readFile } from 'node:fs/promises';
+import { classify, addProvisionalLayer, sampleQc, confirmedPairGold } from '../scripts/gis/clearwater-rule002-policy.mjs';
+import { measureOsrParcel, indexItem } from '../scripts/gis/clearwater-rule002-intersections.mjs';
+const profile=()=>({status:'review',zoningCode:'OS/R',normalizedJurisdiction:'clearwater',jurisdictionStatus:'confirmed',issues:['parcel_ambiguous_zoning']});
+const evidence=(p=40)=>({parcelFound:true,parcelGeometryValid:true,parcelAreaSquareMeters:100,hasInvalidZoningGeometry:false,sourceErrors:[],hasRepeatedNormalizedCode:false,hasOverlappingSameCodePolygons:false,totalZoningCoveragePercent:100,zoningCodeCoverage:[{normalizedZoningCode:'lmdr',percentOfParcel:100-p},{normalizedZoningCode:'os/r',percentOfParcel:p}]});
+test('candidate is independent of OS/R dominance, with no automatic approval',()=>{for(const pct of [.000001,2,40,50,95,99.9]){const c=classify(evidence(pct),[profile()]);assert.equal(c.eligible,true);assert.equal(c.proposedPrimaryGuidanceZoning,'LMDR');assert.equal(c.retainedSecondaryDistrict,'OS/R');assert.equal(c.approvalStatus,'NOT_APPROVED');assert.equal(c.productionEligible,false);}});
+test('P, unsupported overlay and other districts cannot enter the exact pair',()=>{for(const code of ['p','mdr','lmdr-ncod']){const d=evidence();d.zoningCodeCoverage.push({normalizedZoningCode:code,percentOfParcel:1});assert.equal(classify(d,[profile()]).eligible,false);}const d=evidence();d.zoningCodeCoverage.pop();assert.equal(classify(d,[profile()]).eligible,false);});
+test('each existing source quality safeguard excludes the parcel',()=>{for(const mutate of [d=>d.parcelGeometryValid=false,d=>d.parcelFound=false,d=>d.parcelAreaSquareMeters=0,d=>d.hasInvalidZoningGeometry=true,d=>d.sourceErrors=['intersection_error'],d=>d.totalZoningCoveragePercent=99.8,d=>d.totalZoningCoveragePercent=100.2,d=>d.zoningCodeCoverage[0].percentOfParcel=0,d=>d.zoningCodeCoverage[0].percentOfParcel=NaN,d=>d.hasRepeatedNormalizedCode=true,d=>d.zoningCodeCoverage[0].repeatedPolygons=true,d=>d.hasOverlappingSameCodePolygons=true]){const d=evidence();mutate(d);assert.equal(classify(d,[profile()]).eligible,false);}});
+test('unrelated profile issues, identity and jurisdiction stay excluded',()=>{for(const mutate of [p=>p.issues.push('address_outside_parcel'),p=>p.jurisdictionStatus='uncertain',p=>p.normalizedJurisdiction='other',p=>p.status='unknown']){const p=profile();mutate(p);assert.equal(classify(evidence(),[p]).eligible,false);}assert.equal(classify(evidence(),[]).eligible,false);assert.equal(classify(evidence(),[profile()],[],true).eligible,false);});
+test('human true splits, uncertainty and contradictory codes veto proposals',()=>{for(const status of ['human_true_split','human_staff_review','human_primary_applicability_unclear'])assert.equal(classify(evidence(),[profile()],[{humanReview:{reviewStatus:status}}]).eligible,false);assert.equal(classify(evidence(),[profile()],[{humanReview:{reviewStatus:'human_confirmed',result:'CONFIRMED: OS/R'}}]).eligible,false);assert.equal(classify(evidence(),[profile()],[{humanReview:{reviewStatus:'human_primary_candidate',reportedPrimaryCode:'P'}}]).eligible,false);});
+test('coverage bounds are inclusive quality tolerances, never dominance thresholds',()=>{for(const n of [99.9,100.1]){const d=evidence();d.totalZoningCoveragePercent=n;assert.equal(classify(d,[profile()]).eligible,true);}});
+test('additive layer retains original QA, primary, Rule 001 fields and intersections',()=>{const r={...profile(),researchRule001:{sourceSnapshotIdentifier:'frozen',noticeThresholdPercent:2,originalZoningIntersections:[{code:'P'}]},approvedPrimaryGuidance:{status:'NO_NEW_APPROVAL'}};const p={parcelId:'abc',evidence:evidence(),decision:classify(evidence(),[profile()])};const out=addProvisionalLayer(r,p);assert.equal(out.zoningCode,'OS/R');assert.equal(out.status,'review');assert.equal(out.researchRule001,r.researchRule001);assert.equal(out.approvedPrimaryGuidance,r.approvedPrimaryGuidance);assert.equal(out.researchRule002.potentialIncrementalReviewRecovery,true);assert.equal(out.researchRule002.productionEligible,false);});
+test('already approved Rule 001 cannot be overwritten or double counted',()=>{const r={...profile(),researchRule001:{sourceSnapshotIdentifier:'frozen'},approvedPrimaryGuidance:{status:'GUIDANCE_READY_APPROVED'}};const p={parcelId:'abc',evidence:evidence(),decision:classify(evidence(),[profile()])};assert.throws(()=>addProvisionalLayer(r,p),/overlaps/);const out=addProvisionalLayer(r,null);assert.equal(out.approvedPrimaryGuidance,r.approvedPrimaryGuidance);assert.equal(out.researchRule002.potentialIncrementalReviewRecovery,false);});
+test('CLEAN qualifiers remain separate from REVIEW recovery',()=>{const r={...profile(),status:'clean',researchRule001:{sourceSnapshotIdentifier:'frozen'},approvedPrimaryGuidance:{status:'NO_NEW_APPROVAL'}};const p={parcelId:'abc',evidence:evidence(),decision:classify(evidence(),[r])};assert.equal(p.decision.eligible,true);assert.equal(addProvisionalLayer(r,p).researchRule002.potentialIncrementalReviewRecovery,false);});
+const rect=(x1,y1,x2,y2,properties={})=>polygon([[[x1,y1],[x2,y1],[x2,y2],[x1,y2],[x1,y1]]],properties);
+test('exact measurement excludes a boundary touch and retains feature provenance',()=>{const p=rect(0,0,2,1,{PARCELID:'p'});const d=measureOsrParcel(p,[rect(0,0,1,1,{ZONING:'LMDR',OBJECTID:10}),rect(1,0,2,1,{ZONING:'OS/R',OBJECTID:20}),rect(2,0,3,1,{ZONING:'P',OBJECTID:30})].map(indexItem));assert.equal(d.zoningFeatures.length,2);assert.deepEqual(d.zoningFeatures.map(f=>f.sourceIdentifier),[10,20]);assert.equal(d.zoningCodeCoverage[0].percentOfParcel,50);assert.equal(classify(d,[profile()]).eligible,true);});
+test('repeated/overlapping OS/R polygons remain visible and excluded',()=>{const p=rect(0,0,2,1,{PARCELID:'p'});const d=measureOsrParcel(p,[rect(0,0,1,1,{ZONING:'LMDR'}),rect(1,0,2,1,{ZONING:'OS/R'}),rect(1,0,2,1,{ZONING:'OS/R'})].map(indexItem));assert.equal(d.hasRepeatedNormalizedCode,true);assert.equal(d.hasOverlappingSameCodePolygons,true);assert.equal(classify(d,[profile()]).eligible,false);});
+test('at most ten deterministic independent QC cases preserve null outcomes and stress mismatches',()=>{const pool=Array.from({length:22},(_,i)=>({parcelId:String(i),addresses:[{address:`${i} TEST`,coordinates:[-82.8+i*.01,28]}],originalProfiles:[{...profile(),zoningCode:i===5?'OS/R':'LMDR'}],evidence:evidence(i+1),decision:classify(evidence(i+1),[profile()])}));const known=[{parcelId:'21'}];const q=sampleQc(pool,known);assert.equal(q.length,10);assert.equal(new Set(q.map(c=>c.parcelId)).size,10);assert.ok(q.every(c=>c.parcelId!=='21'&&c.independentNewParcel&&c.humanReview.result===null));assert.ok(q.some(c=>c.parcelId==='5'));assert.deepEqual(q,sampleQc(pool,known));assert.equal(sampleQc(pool.slice(0,2),[]).length,2);});
+test('ten confirmed LMDR gold labels remain intact and the source-invalid gold control stays excluded',async()=>{
+  const gold=JSON.parse(await readFile(new URL('../research/gis/zoning-gold/reference-dataset.json',import.meta.url)));
+  const cases=confirmedPairGold(gold.records);assert.equal(cases.length,10);assert.ok(cases.every(g=>g.batchId!=='1B'));
+  let eligible=0;
+  for(const g of cases){
+    assert.equal(g.humanReview.result,'CONFIRMED: LMDR');
+    const d=evidence();d.zoningCodeCoverage=g.diagnostic.candidates.map(e=>({normalizedZoningCode:e.zoningCode.toLowerCase(),percentOfParcel:e.coveragePercent}));
+    d.hasInvalidZoningGeometry=g.diagnostic.zoningFeatures.some(f=>!f.geometryValid);
+    const decision=classify(d,[profile()],[g]);
+    assert.equal(decision.eligible,g.caseNumber!=='1C-03');
+    if(g.caseNumber==='1C-03')assert.ok(decision.flags.includes('invalid_zoning_geometry'));
+    if(decision.eligible)eligible++;
+  }
+  assert.equal(eligible,9);
+});
+
+test('serialized output verification detects source, Rule 001, and proposal tampering',async()=>{const {verifyCombinedRecord}=await import('../scripts/gis/verify-rule002-output.mjs');const original=profile();const baseline={...original,researchRule001:{sourceSnapshotIdentifier:'frozen',noticeThresholdPercent:2},approvedPrimaryGuidance:{status:'NO_NEW_APPROVAL'}};const p={parcelId:'abc',evidence:evidence(),decision:classify(evidence(),[profile()])};const out=addProvisionalLayer(baseline,p);verifyCombinedRecord(out,baseline,original,p);for(const mutate of [r=>r.status='clean',r=>r.zoningCode='LMDR',r=>r.researchRule001.noticeThresholdPercent=5,r=>r.approvedPrimaryGuidance.status='GUIDANCE_READY_APPROVED',r=>r.researchRule002.approvalStatus='APPROVED',r=>r.researchRule002.osrCoveragePercent=0]){const changed=structuredClone(out);mutate(changed);assert.throws(()=>verifyCombinedRecord(changed,baseline,original,p));}});
+
+test('OS/R 2/3/5 boundaries control prominence only and retain eligible primary guidance',async()=>{
+  const {noticeVisibility}=await import('../scripts/gis/clearwater-rule002-policy.mjs');
+  for(const threshold of [2,3,5])for(const pct of [threshold,threshold+.000001]){
+    assert.equal(noticeVisibility(true,pct,threshold),pct>threshold?'RECOMMENDED_PHYSICAL_PROJECT_GUIDES':'NOT_PROMINENT_IN_ORDINARY_GUIDES');
+    const decision=classify(evidence(pct),[profile()]);assert.equal(decision.eligible,true);assert.equal(decision.proposedPrimaryGuidanceZoning,'LMDR');assert.equal(decision.retainedSecondaryDistrict,'OS/R');
+  }
+  assert.equal(classify(evidence(3),[profile()]).proposedNoticeVisibility,'NOT_PROMINENT_IN_ORDINARY_GUIDES');
+  assert.equal(classify(evidence(3.000001),[profile()]).proposedNoticeVisibility,'RECOMMENDED_PHYSICAL_PROJECT_GUIDES');
+  assert.equal(noticeVisibility(false,50),'UNRESOLVED_NO_PRIMARY_PROPOSAL');
+});
+test('threshold comparison counts addresses, excludes quality failures, and leaves recovery invariant',async()=>{
+  const {analyzePresentation}=await import('../scripts/gis/clearwater-rule002-policy.mjs');
+  const pop=[2,3,4,6].map((pct,i)=>({decision:classify(evidence(pct),[profile()]),originalProfiles:Array.from({length:i+1},profile)}));
+  const bad=evidence(50);bad.hasInvalidZoningGeometry=true;pop.push({decision:classify(bad,[profile()]),originalProfiles:Array.from({length:100},profile)});
+  const p=analyzePresentation(pop);assert.deepEqual([2,3,5].map(t=>p.options[t].prominent.addresses),[9,7,4]);
+  for(const t of [2,3,5]){assert.equal(p.options[t].potentialReviewRecovery,10);assert.equal(p.options[t].prominent.addresses+p.options[t].notProminent.addresses,10);}
+  assert.equal(p.rangeStudy.qualifying.addresses,7);assert.equal(p.legalExemption,false);
+});
+test('five owner observations retain exact identities and meaningful secondary OS/R never erases mapped splits',async()=>{
+  const {loadHumanEvidence}=await import('../scripts/gis/clearwater-rule002.mjs');
+  const {validateHumanEvidence}=await import('../scripts/gis/clearwater-rule002-policy.mjs');
+  const h=await loadHumanEvidence();assert.equal(h.reviews.length,5);
+  assert.equal(h.session.records[0].humanReview.observationVerbatim,'R002-01: LMDR primary guidance appropriate, but the 30.946006% OS/R portion is a meaningful waterfront strip. Preserve both mapped districts and flag the secondary OS/R area as substantively relevant.');
+  assert.equal(h.session.records[1].humanReview.observationVerbatim,'R002-02: Same interpretation as R002-01. LMDR primary guidance with meaningful secondary OS/R (17.517240%).');
+  for(let i=0;i<5;i++){
+    const o=h.session.records[i],decision=classify(evidence(o.osrCoveragePercent),[profile()],[h.reviews[i]]);
+    assert.equal(decision.eligible,true);assert.equal(decision.substantiveSecondaryOsr,i<2);assert.equal(decision.approvalStatus,'NOT_APPROVED');
+    const base={...profile(),researchRule001:{sourceSnapshotIdentifier:h.session.sourceSnapshotIdentifier},approvedPrimaryGuidance:{status:'NO_NEW_APPROVAL'}};
+    const out=addProvisionalLayer(base,{parcelId:o.parcelId,evidence:evidence(o.osrCoveragePercent),decision});
+    assert.equal(out.researchRule002.doesNotEraseMappedSplitZoning,true);assert.equal(out.researchRule002.originalZoningIntersections.length,2);assert.ok(out.researchRule002.officialViewerAccess.mapViewerUrl);
+    assert.equal(o.humanReview.inspectionDate,null);assert.equal(o.humanReview.legalSplitDetermination,false);
+  }
+  const changed=structuredClone(h.session);changed.records[0].parcelId='wrong';assert.throws(()=>validateHumanEvidence(changed,h.packet));
+  changed.records[0]=structuredClone(h.session.records[0]);changed.records[0].osrCoveragePercent=0;assert.throws(()=>validateHumanEvidence(changed,h.packet));
+});
+test('meaningful secondary evidence and actual primary-preventing splits remain different',async()=>{
+  const {loadHumanEvidence}=await import('../scripts/gis/clearwater-rule002.mjs');const h=await loadHumanEvidence();
+  for(const status of ['human_true_split','human_primary_applicability_unclear']){
+    const review=structuredClone(h.reviews[0]);review.humanReview.reviewStatus=status;
+    const decision=classify(evidence(2.5),[profile()],[review]);assert.equal(decision.eligible,false);assert.equal(decision.proposedPrimaryGuidanceZoning,null);assert.equal(decision.substantiveSecondaryOsr,true);assert.equal(decision.proposedNoticeVisibility,'UNRESOLVED_NO_PRIMARY_PROPOSAL');
+  }
+});
+test('follow-up requests at most three unreviewed range cases and never reopens five completed inspections',async()=>{
+  const {loadHumanEvidence}=await import('../scripts/gis/clearwater-rule002.mjs');const {progressQc}=await import('../scripts/gis/clearwater-rule002-policy.mjs');const h=await loadHumanEvidence();
+  const pool=Array.from({length:8},(_,i)=>({parcelId:`new-${i}`,addresses:[{address:`${i} TEST`,coordinates:[-82.7+i*.01,28]}],originalProfiles:[profile()],evidence:evidence(3.1+i),decision:classify(evidence(3.1+i),[profile()])}));
+  const packet=progressQc(pool,h.session,h.packet,[]);assert.equal(packet.filter(q=>q.newInspectionRequested).length,3);assert.equal(packet.filter(q=>!q.newInspectionRequested).length,5);
+  assert.ok(packet.filter(q=>q.newInspectionRequested).every(q=>q.caseId.startsWith('R002-T')&&q.osrCoveragePercent>3&&q.osrCoveragePercent<=17.5&&q.humanReview.result===null));
+  for(const q of packet.filter(q=>!q.newInspectionRequested))assert.ok(q.humanReview.observationVerbatim);
+});
+
+test('the sole current intermediate-range case is existing confirmed gold, requiring no repeat inspection',async()=>{
+  const {loadHumanEvidence}=await import('../scripts/gis/clearwater-rule002.mjs');const {analyzePresentation,progressQc}=await import('../scripts/gis/clearwater-rule002-policy.mjs');
+  const gold=JSON.parse(await readFile(new URL('../research/gis/zoning-gold/reference-dataset.json',import.meta.url))),g=gold.records.find(g=>g.caseNumber==='1C-05');
+  assert.equal(g.address,'3045 PIN OAK DR');assert.equal(g.humanReview.result,'CONFIRMED: LMDR');
+  const h=await loadHumanEvidence(),d=evidence(3.112170),p={parcelId:g.parcelId,addresses:[{address:g.address,coordinates:[-82.71,28]}],originalProfiles:[profile()],evidence:d,decision:classify(d,[profile()],[g])};
+  const analysis=analyzePresentation([p],gold.records);assert.equal(analysis.rangeStudy.qualifying.addresses,1);assert.equal(analysis.rangeStudy.qualifyingAlreadyReviewed.addresses,1);assert.equal(analysis.rangeStudy.qualifyingUnreviewed.addresses,0);
+  assert.equal(progressQc([p],h.session,h.packet,gold.records).filter(q=>q.newInspectionRequested).length,0);
+});
