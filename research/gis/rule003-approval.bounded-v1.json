@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "ruleId": "CLR-Z-003",
+  "ruleVersion": "1.0.0-approved-static",
+  "approvalId": "CLR-Z-003-BOUNDED-MDR-2026-10-16",
+  "decision": "APPROVED_FOR_OFFLINE_STATIC_EXPORT_ONLY",
+  "authorizedOn": "2026-10-16",
+  "authorization": "Groundrule owner explicitly approved bounded implementation in conversation: up to the 731 investigated existing-MDR REVIEW addresses, contingent on all eligibility/QC checks; exclude two address-link holds, three OS/R-primary unsupported-code addresses and 148 additional-district addresses. Retain all evidence and existing rule approvals. No Supabase, Guides, production runtime, resident UX, deployment or merge authorized.",
+  "basisCommit": "c83bf91",
+  "sourceSnapshotId": "clearwater-gis-2026-09-28",
+  "sourceArchiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+  "investigationInventorySha256": "9ff4b1312d2e7b4f7ae69cd25204b6556f73f168edb50fdb94440e6d398d5520",
+  "basisFileSha256": {
+    "scripts/gis/investigate-clearwater-rule003.mjs": "a7c918ca6eb7b8af279ec967d6ebc5deb9c9645c702e7ca0e0f0d7a6c58b172d",
+    "scripts/gis/clearwater-rule002-intersections.mjs": "f9bd2e771f9ee02ed644af4f782cf927a405f2f5b27aaa3a2f72b37a6e4b84ac",
+    "research/gis/rule003-results/summary.json": "2ef6566e36c127a154eab962f1d25cd710e74ba622269a171a4b8cf2965d48be",
+    "research/gis/clearwater-rule003-investigation.md": "f1eb22849b78638ad994ac2d320401f52f5e6de4f22077db9e9693601ac3f3d9",
+    "research/gis/rule003-membership.v1.json": "fcd42679ea0a41790d0528be9afc1b7d0b3c9332c68644fec693dc7ada92fa9f",
+    "research/gis/rule001-approval.same-code-v1.json": "7c515b4ab7c58d33905eed8ef68166725a8460059b44e0b1948a5ee5ec465e66",
+    "research/gis/rule002-approval.same-code-v1.json": "893033439dd530dc691cfe34ef5b99802c7ad8006828a9ce4bac0e5f5b570fc1",
+    "research/gis/zoning-gold/reference-dataset.json": "e40d7cac4370fa39f0aa60488cec5d04142e2e062be9a065739d627865c83ba6",
+    "research/gis/zoning-gold/rule001-qc-observations.json": "65c8659a6adf32d9cc47b7f8ee10f1ff6069a5da7e20fd4c3247b3b5f09b4eb5",
+    "research/gis/rule002-qc-observations.json": "49b42418bb5eb0901b37755ce6f5ace2af4b71149e03ec86ec2604a3636bd71b"
+  },
+  "scope": {
+    "originalQaStatus": "review",
+    "existingPrimaryCode": "MDR",
+    "exactPositiveAreaDistricts": [
+      "MDR",
+      "OS/R"
+    ],
+    "membershipFile": "research/gis/rule003-membership.v1.json",
+    "maximumNewApprovals": 731,
+    "requireAllExistingEligibilityAndHumanChecks": true,
+    "excludeAddressLinkHolds": true
+  },
+  "presentation": {
+    "osrNoticeProminentWhenPercentGreaterThan": 0,
+    "presentationOnly": true,
+    "noticeThresholdIsLegalExemption": false,
+    "secondaryOsrAppliesToEntireParcel": false,
+    "retainSecondaryGeometryPercentagesAndProvenance": true,
+    "noticeText": "Part of this property intersects an area mapped OS/R. The guidance below begins with the property's MDR zoning classification. Additional restrictions may apply depending on the location and nature of your project. Confirm applicable requirements with the City."
+  },
+  "uncertainties": [
+    "shared_land_rights",
+    "density_calculations",
+    "zoning_boundary_disputes",
+    "project_specific_applicability"
+  ],
+  "expected": {
+    "allAddresses": 63430,
+    "rule001Approved": 1967,
+    "rule002Approved": 262,
+    "candidateAddresses": 731,
+    "addressLinkHolds": 2,
+    "unsupportedOsrPrimary": 3,
+    "additionalDistricts": 148,
+    "maximumTotalApproved": 2960
+  }
+}

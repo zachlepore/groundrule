@@ -1,0 +1,693 @@
+{
+  "investigationOnly": true,
+  "approved": false,
+  "sourceSnapshotId": "clearwater-gis-2026-09-28",
+  "sourceArchiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+  "allAddresses": 63430,
+  "approvalCounts": {
+    "CLR-Z-002": 262,
+    "CLR-Z-001": 1967
+  },
+  "remainingReview": 18109,
+  "historicalDiagnosticClass": {
+    "combination": "mdr + os/r",
+    "remainingReviewAddresses": 736,
+    "sourceQualityPassingAddresses": 733,
+    "remainingParcels": 149,
+    "knownHumanExceptionParcels": 0,
+    "confirmedPrimaryParcels": 0
+  },
+  "exactPair": {
+    "parcels": 149,
+    "addresses": 736
+  },
+  "screenedSameCode": {
+    "parcels": 147,
+    "addresses": 733
+  },
+  "proposedBounded": {
+    "parcels": 146,
+    "addresses": 731
+  },
+  "investigativeHold": {
+    "parcels": 1,
+    "addresses": 2
+  },
+  "sharedGeometry": {
+    "distinctExactPairGeometries": 42,
+    "groups": [
+      {
+        "parcelIds": [
+          "172816784460070490",
+          "172816784460070500",
+          "172816784460070510",
+          "172816784460070520",
+          "172816784460070530",
+          "172816784460070540",
+          "172816784460070550",
+          "172816784460070560",
+          "172816784460080570",
+          "172816784460080580",
+          "172816784460080590",
+          "172816784460080600",
+          "172816784460080610",
+          "172816784460080620",
+          "172816784460080630",
+          "172816784460080640",
+          "172816784460090650",
+          "172816784460090660",
+          "172816784460090670",
+          "172816784460090680",
+          "172816784460090690",
+          "172816784460090700",
+          "172816784460090710",
+          "172816784460090720"
+        ],
+        "parcels": 24,
+        "addresses": 24,
+        "osrPercent": 0.589826
+      },
+      {
+        "parcelIds": [
+          "172816784470100730",
+          "172816784470100740",
+          "172816784470100760",
+          "172816784470100770",
+          "172816784470100780",
+          "172816784470100790",
+          "172816784470110810",
+          "172816784470110830",
+          "172816784470110840",
+          "172816784470110880",
+          "172816784470120890",
+          "172816784470120900",
+          "172816784470120910",
+          "172816784470120920",
+          "172816784470120930",
+          "172816784470120940",
+          "172816784470120950"
+        ],
+        "parcels": 17,
+        "addresses": 17,
+        "osrPercent": 0.255482
+      },
+      {
+        "parcelIds": [
+          "172816784470100750",
+          "172816784470100800",
+          "172816784470110820",
+          "172816784470110850",
+          "172816784470110860",
+          "172816784470110870",
+          "172816784470120960"
+        ],
+        "parcels": 7,
+        "addresses": 7,
+        "osrPercent": 0.255482
+      },
+      {
+        "parcelIds": [
+          "202816107300000010",
+          "202816107300000020",
+          "202816107300000030",
+          "202816107300000040",
+          "202816107300000050",
+          "202816107300000060",
+          "202816107300000070",
+          "202816107300000080",
+          "202816107300000090",
+          "202816107300000100",
+          "202816107300000110",
+          "202816107300000120"
+        ],
+        "parcels": 12,
+        "addresses": 12,
+        "osrPercent": 0.157179
+      },
+      {
+        "parcelIds": [
+          "202816236440000010",
+          "202816236440000030",
+          "202816236440000100",
+          "202816236440000110",
+          "202816236440000120",
+          "202816236440000130",
+          "202816236440000150"
+        ],
+        "parcels": 7,
+        "addresses": 7,
+        "osrPercent": 0.385954
+      },
+      {
+        "parcelIds": [
+          "202816236440000020",
+          "202816236440000040",
+          "202816236440000050",
+          "202816236440000060",
+          "202816236440000070",
+          "202816236440000080",
+          "202816236440000090",
+          "202816236440000140"
+        ],
+        "parcels": 8,
+        "addresses": 8,
+        "osrPercent": 0.385954
+      },
+      {
+        "parcelIds": [
+          "202816236440000160",
+          "202816236440000170",
+          "202816236440000180",
+          "202816236440000190",
+          "202816236440000200",
+          "202816236440000210",
+          "202816236440000220",
+          "202816236440000230",
+          "202816236440000240",
+          "202816236440000250",
+          "202816236440000260"
+        ],
+        "parcels": 11,
+        "addresses": 11,
+        "osrPercent": 0.171444
+      },
+      {
+        "parcelIds": [
+          "202816236450030830",
+          "202816236450030840"
+        ],
+        "parcels": 2,
+        "addresses": 3,
+        "osrPercent": 1.443241
+      },
+      {
+        "parcelIds": [
+          "202816236450040790",
+          "202816236450040800",
+          "202816236450040810",
+          "202816236450040820"
+        ],
+        "parcels": 4,
+        "addresses": 4,
+        "osrPercent": 0.043018
+      },
+      {
+        "parcelIds": [
+          "202816236920022110",
+          "202816236920022130",
+          "202816236920022140",
+          "202816236920022150",
+          "202816236920022220",
+          "202816236920022230",
+          "202816236920022250"
+        ],
+        "parcels": 7,
+        "addresses": 8,
+        "osrPercent": 0.171577
+      },
+      {
+        "parcelIds": [
+          "202816236920022120",
+          "202816236920022210",
+          "202816236920022240"
+        ],
+        "parcels": 3,
+        "addresses": 3,
+        "osrPercent": 0.171577
+      },
+      {
+        "parcelIds": [
+          "202816236920033110",
+          "202816236920033120",
+          "202816236920033130",
+          "202816236920033150",
+          "202816236920033210",
+          "202816236920033220",
+          "202816236920033230"
+        ],
+        "parcels": 7,
+        "addresses": 8,
+        "osrPercent": 1.118161
+      },
+      {
+        "parcelIds": [
+          "202816236920033140",
+          "202816236920033240",
+          "202816236920033250"
+        ],
+        "parcels": 3,
+        "addresses": 3,
+        "osrPercent": 1.118161
+      },
+      {
+        "parcelIds": [
+          "202816236920044110",
+          "202816236920044140",
+          "202816236920044150",
+          "202816236920044210",
+          "202816236920044230",
+          "202816236920044240"
+        ],
+        "parcels": 6,
+        "addresses": 7,
+        "osrPercent": 1.134702
+      },
+      {
+        "parcelIds": [
+          "202816236920044120",
+          "202816236920044130",
+          "202816236920044220",
+          "202816236920044250"
+        ],
+        "parcels": 4,
+        "addresses": 4,
+        "osrPercent": 1.134702
+      }
+    ]
+  },
+  "additionalDistricts": {
+    "parcels": 133,
+    "addresses": 148
+  },
+  "additionalDistrictCombinations": {
+    "lmdr + mdr + os/r": {
+      "parcels": 30,
+      "addresses": 34
+    },
+    "mdr + os/r + p": {
+      "parcels": 83,
+      "addresses": 85
+    },
+    "i + mdr + os/r": {
+      "parcels": 5,
+      "addresses": 7
+    },
+    "c + mdr + os/r": {
+      "parcels": 1,
+      "addresses": 1
+    },
+    "i + lmdr + mdr + os/r": {
+      "parcels": 1,
+      "addresses": 3
+    },
+    "c + d + i + irt + mdr + o + os/r": {
+      "parcels": 1,
+      "addresses": 1
+    },
+    "ldr + lmdr + mdr + os/r": {
+      "parcels": 1,
+      "addresses": 3
+    },
+    "mdr + mhdr + os/r": {
+      "parcels": 8,
+      "addresses": 8
+    },
+    "ldr + mdr + os/r": {
+      "parcels": 2,
+      "addresses": 4
+    },
+    "lmdr + mdr + os/r + p + us19": {
+      "parcels": 1,
+      "addresses": 2
+    }
+  },
+  "exclusionReasonsOverlapping": {
+    "unrelated_source_profile_issue": {
+      "parcels": 2,
+      "addresses": 3
+    },
+    "cross_code_positive_area_overlap": {
+      "parcels": 1,
+      "addresses": 2
+    }
+  },
+  "exactPairPrimaryCounts": {
+    "OS/R": 3,
+    "MDR": 733
+  },
+  "bands": [
+    {
+      "range": ">0–0.1%",
+      "allExactPair": {
+        "parcels": 9,
+        "addresses": 495
+      },
+      "screenedSameCode": {
+        "parcels": 9,
+        "addresses": 495
+      }
+    },
+    {
+      "range": ">0.1–1%",
+      "allExactPair": {
+        "parcels": 100,
+        "addresses": 194
+      },
+      "screenedSameCode": {
+        "parcels": 100,
+        "addresses": 194
+      }
+    },
+    {
+      "range": ">1–2%",
+      "allExactPair": {
+        "parcels": 27,
+        "addresses": 32
+      },
+      "screenedSameCode": {
+        "parcels": 27,
+        "addresses": 32
+      }
+    },
+    {
+      "range": ">2–3%",
+      "allExactPair": {
+        "parcels": 0,
+        "addresses": 0
+      },
+      "screenedSameCode": {
+        "parcels": 0,
+        "addresses": 0
+      }
+    },
+    {
+      "range": ">3–5%",
+      "allExactPair": {
+        "parcels": 5,
+        "addresses": 5
+      },
+      "screenedSameCode": {
+        "parcels": 5,
+        "addresses": 5
+      }
+    },
+    {
+      "range": ">5–10%",
+      "allExactPair": {
+        "parcels": 6,
+        "addresses": 7
+      },
+      "screenedSameCode": {
+        "parcels": 6,
+        "addresses": 7
+      }
+    },
+    {
+      "range": ">10–20%",
+      "allExactPair": {
+        "parcels": 0,
+        "addresses": 0
+      },
+      "screenedSameCode": {
+        "parcels": 0,
+        "addresses": 0
+      }
+    },
+    {
+      "range": ">20–50%",
+      "allExactPair": {
+        "parcels": 0,
+        "addresses": 0
+      },
+      "screenedSameCode": {
+        "parcels": 0,
+        "addresses": 0
+      }
+    },
+    {
+      "range": ">50–100.1%",
+      "allExactPair": {
+        "parcels": 2,
+        "addresses": 3
+      },
+      "screenedSameCode": {
+        "parcels": 0,
+        "addresses": 0
+      }
+    }
+  ],
+  "screenedSameCodeOsrQuantiles": {
+    "parcelWeighted": {
+      "0": 0.005949,
+      "1": 5.841653,
+      "0.25": 0.171577,
+      "0.5": 0.385954,
+      "0.75": 1.118161,
+      "0.9": 1.552239,
+      "0.95": 4.682181
+    },
+    "addressWeighted": {
+      "0": 0.005949,
+      "1": 5.841653,
+      "0.25": 0.042629,
+      "0.5": 0.042629,
+      "0.75": 0.224858,
+      "0.9": 0.385954,
+      "0.95": 1.118161
+    }
+  },
+  "presentationComparisons": {
+    "1": {
+      "prominent": {
+        "parcels": 38,
+        "addresses": 44
+      },
+      "nonProminent": {
+        "parcels": 109,
+        "addresses": 689
+      }
+    },
+    "2": {
+      "prominent": {
+        "parcels": 11,
+        "addresses": 12
+      },
+      "nonProminent": {
+        "parcels": 136,
+        "addresses": 721
+      }
+    },
+    "3": {
+      "prominent": {
+        "parcels": 11,
+        "addresses": 12
+      },
+      "nonProminent": {
+        "parcels": 136,
+        "addresses": 721
+      }
+    },
+    "5": {
+      "prominent": {
+        "parcels": 6,
+        "addresses": 7
+      },
+      "nonProminent": {
+        "parcels": 141,
+        "addresses": 726
+      }
+    }
+  },
+  "proposedBoundedPresentationComparisons": {
+    "0": {
+      "prominent": {
+        "parcels": 146,
+        "addresses": 731
+      },
+      "nonProminent": {
+        "parcels": 0,
+        "addresses": 0
+      }
+    },
+    "1": {
+      "prominent": {
+        "parcels": 37,
+        "addresses": 42
+      },
+      "nonProminent": {
+        "parcels": 109,
+        "addresses": 689
+      }
+    },
+    "2": {
+      "prominent": {
+        "parcels": 11,
+        "addresses": 12
+      },
+      "nonProminent": {
+        "parcels": 135,
+        "addresses": 719
+      }
+    },
+    "3": {
+      "prominent": {
+        "parcels": 11,
+        "addresses": 12
+      },
+      "nonProminent": {
+        "parcels": 135,
+        "addresses": 719
+      }
+    },
+    "5": {
+      "prominent": {
+        "parcels": 6,
+        "addresses": 7
+      },
+      "nonProminent": {
+        "parcels": 140,
+        "addresses": 724
+      }
+    }
+  },
+  "completeness": {
+    "remainingReviewParcels": 11715,
+    "bboxScreenedParcels": 1465,
+    "missingDiagnosticsMeasured": 5,
+    "supplementalPositivePairs": 0
+  },
+  "independentMeasurement": {
+    "parcels": 149,
+    "maxPercentDelta": 0,
+    "maxAreaDelta": 0.0004950000000008004,
+    "crossCodeOverlappingParcels": 1
+  },
+  "knownReviewedExactPairParcels": 0,
+  "duplicateExactParcelIds": 0,
+  "multipartExactParcels": 0,
+  "largestAddressConcentrations": [
+    {
+      "parcelId": "082916000004300100",
+      "address": "2930 DREW ST APT 1417",
+      "addresses": 385,
+      "osrPercent": 0.042629
+    },
+    {
+      "parcelId": "322816000002100300",
+      "address": "2690 ENTERPRISE RD E",
+      "addresses": 103,
+      "osrPercent": 0.081739
+    },
+    {
+      "parcelId": "082916224670000010",
+      "address": "301 FAIRWOOD AVE",
+      "addresses": 94,
+      "osrPercent": 0.224858
+    },
+    {
+      "parcelId": "012915936270000460",
+      "address": "2060 SANTIAGO WAY N",
+      "addresses": 2,
+      "osrPercent": 5.03926
+    },
+    {
+      "parcelId": "202816236450030830",
+      "address": "3010 EAGLES LANDING CIR W",
+      "addresses": 2,
+      "osrPercent": 1.443241
+    },
+    {
+      "parcelId": "202816236920022110",
+      "address": "3153 LANDMARK DR UNIT 211",
+      "addresses": 2,
+      "osrPercent": 0.171577
+    },
+    {
+      "parcelId": "202816236920033110",
+      "address": "3155 LANDMARK DR UNIT 311",
+      "addresses": 2,
+      "osrPercent": 1.118161
+    },
+    {
+      "parcelId": "202816236920044110",
+      "address": "3157 LANDMARK DR UNIT 411",
+      "addresses": 2,
+      "osrPercent": 1.134702
+    },
+    {
+      "parcelId": "222915229320000012",
+      "address": "1109 WOODLAWN ST",
+      "addresses": 2,
+      "osrPercent": 1.56302
+    },
+    {
+      "parcelId": "222915229320000014",
+      "address": "1503 S MARTIN LUTHER KING JR AVE",
+      "addresses": 2,
+      "osrPercent": 1.565899
+    }
+  ],
+  "sourceVerification": [
+    {
+      "file": "addresses.geojson",
+      "bytes": 19691340,
+      "sha256": "f4d65a13e94871765f758c3dd238bfca67e1e78de197c10f8564dd16e9dedc96",
+      "verified": true
+    },
+    {
+      "file": "database-import.clean.json",
+      "bytes": 64423990,
+      "sha256": "7cf12d24c9e766bb7c5649386ebcbf324096a8e6698b8b90c3ceaf5042d27c84",
+      "verified": true
+    },
+    {
+      "file": "database-review.json",
+      "bytes": 30635392,
+      "sha256": "bb34bb7a2048a6031f37f68c8571a244a9049f473a029f0ef45a42ad85f56112",
+      "verified": true
+    },
+    {
+      "file": "parcels.geojson",
+      "bytes": 93980229,
+      "sha256": "713252d9f00ef9ea384a06a90f22a24df1034807fc68208b1ee7a47eb0e63d56",
+      "verified": true
+    },
+    {
+      "file": "property-profiles.json",
+      "bytes": 95059379,
+      "sha256": "89a5d403df8a2cb4393f8f142d6b8e4de78e8e0a9d57211643b0334ace90753a",
+      "verified": true
+    },
+    {
+      "file": "source-metadata.json",
+      "bytes": 3719,
+      "sha256": "f94920bfd23a89169fafbf97658c21312c6930cf5d55e0f765db698cabfb1989",
+      "verified": true
+    },
+    {
+      "file": "validation-report.json",
+      "bytes": 10196,
+      "sha256": "b51d57f1dc737ecfb862e4c49626558a3662d83b263e30f8b08c90f38925cb78",
+      "verified": true
+    },
+    {
+      "file": "validation-report.md",
+      "bytes": 4239,
+      "sha256": "cd6a25b7f12b81230b61921ccb0b8cb5b1b67034ad138fbf3ba7f883e023c4ef",
+      "verified": true
+    },
+    {
+      "file": "zoning-diagnostic/representative-samples.md",
+      "bytes": 1987,
+      "sha256": "f00f35a446f68d8da2f6ba82a1c483f490e35f88d862fd1152ead85cc02a4f06",
+      "verified": true
+    },
+    {
+      "file": "zoning-diagnostic/zoning-diagnostic.json",
+      "bytes": 26136992,
+      "sha256": "f0b1edcbdd960019b3f153cd4cbd3b393cbb800f74c892642917f08378fe86e3",
+      "verified": true
+    },
+    {
+      "file": "zoning.geojson",
+      "bytes": 2289896,
+      "sha256": "56ee74e1c2e8fab582efcdda388008e77205237439169c13191caa0ecb31929b",
+      "verified": true
+    }
+  ],
+  "approvedLookup": {
+    "sha256": "8cd40825ecb8f7a5d49e4b3d421dfbd9178a2e8046e26f54039e8c8171094a0b",
+    "bytes": 247396151
+  },
+  "processorSha256": "a7c918ca6eb7b8af279ec967d6ebc5deb9c9645c702e7ca0e0f0d7a6c58b172d"
+}
