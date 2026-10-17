@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "policyId": "CLR-Z-003-NOTICE-6PCT-2026-10-17",
+  "policyVersion": "2.0.0-approved-presentation",
+  "authorization": "Owner explicitly approved strictly greater-than-6% Rule 003 prominent-notice policy in conversation, for the same 731 approved MDR + OS/R addresses only. At or below 6%, suppress prominent recommendation. Retain all mapped evidence, geometry, QA, source references and caveats. No legal exemption or boundary correction. No membership approvals, Rules 001/002 changes, Supabase, Guide/UX, runtime deployment or merge authorized.",
+  "authorizedOn": "2026-10-17",
+  "basisCommit": "9d6331c",
+  "ruleId": "CLR-Z-003",
+  "membershipApprovalId": "CLR-Z-003-BOUNDED-MDR-2026-10-16",
+  "originalApprovalConfigSha256": "46a2be4b6c7f967e64eb88bdaa90b6d8473ddbc10003525af90eb03344beb930",
+  "sourceSnapshotId": "clearwater-gis-2026-09-28",
+  "sourceArchiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+  "membershipSha256": "fcd42679ea0a41790d0528be9afc1b7d0b3c9332c68644fec693dc7ada92fa9f",
+  "investigationInventorySha256": "9ff4b1312d2e7b4f7ae69cd25204b6556f73f168edb50fdb94440e6d398d5520",
+  "geometryEvidenceSha256": "9b676364a7a6ec97ebf299b64fa923cc1ede2af3910abc4e627d6d0056bf062c",
+  "thresholdPercent": 6,
+  "comparison": "STRICT_GREATER_THAN_WITHOUT_ROUNDING",
+  "appliesOnlyToPinnedMembership": true,
+  "sourceOrGeometryOrMembershipChangeRequiresReassessment": true,
+  "presentationOnly": true,
+  "legalZoningExemption": false,
+  "boundaryCorrection": false,
+  "preserveProjectSpecificCaveats": true,
+  "observedMaximumOsrPercent": 5.841653,
+  "expected": {
+    "addresses": 731,
+    "parcelIds": 146,
+    "reviewedParcelIds": 25,
+    "prominent": 0,
+    "nonProminent": 731
+  },
+  "evidenceSha256": {
+    "research/gis/rule003-manual-qc/human-observations.v1.json": "c558e802b3075221b604e332e8d8a2b24e574f30eceabf986e622fe17af620c9",
+    "research/gis/rule003-manual-qc/six-percent-decision-memo.md": "a5a3560f2c66dcf13d2b0e373dd8fe10015563ccf00353af9d168564643baba2",
+    "research/gis/rule003-manual-qc/analysis.json": "7d0a75da7da8af23c21aef5519a7b5a4d3ebaa6a2fdb379887700ce02edf97c4",
+    "research/gis/rule003-manual-qc/sample-index.csv": "a4cfd958a5fcffb04cce0b08034ff20e8a1ea688a530c87c9caac00b82ec9fe6",
+    "scripts/gis/assess-clearwater-rule003-notice.py": "78f497422073862fdfe7c1d6e565218b64b222620ce71f912dc893b2026898bd"
+  }
+}

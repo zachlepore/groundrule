@@ -35,7 +35,7 @@
     "excludeAddressLinkHolds": true
   },
   "presentation": {
-    "osrNoticeProminentWhenPercentGreaterThan": 0,
+    "osrNoticeProminentWhenPercentGreaterThan": 6,
     "presentationOnly": true,
     "noticeThresholdIsLegalExemption": false,
     "secondaryOsrAppliesToEntireParcel": false,
@@ -57,5 +57,7 @@
     "unsupportedOsrPrimary": 3,
     "additionalDistricts": 148,
     "maximumTotalApproved": 2960
-  }
+  },
+  "presentationPolicyFile": "research/gis/rule003-notice-policy.v2.json",
+  "presentationPolicySha256": "490d8288eb633ff5f17e1e412fd113ddab72e4ab2076dad16ef8132f10ee835d"
 }
