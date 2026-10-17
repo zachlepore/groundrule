@@ -16,5 +16,8 @@
   "rawAnalysisChecksumsVerified": true,
   "originalFieldsChanged": 0,
   "existingApprovalChanges": 0,
-  "method": "Independent CSV/source/approved-lookup joins, identity set differences and checksums; full source-original-field equality also asserted during analysis."
+  "method": "Independent CSV/source/approved-lookup joins, identity set differences and checksums; full source-original-field equality also asserted during analysis.",
+  "repeatedFullAnalysisIdenticalAddressEvidence": true,
+  "newCsvLineEndings": "LF",
+  "reportRegenerationDeterministic": true
 }

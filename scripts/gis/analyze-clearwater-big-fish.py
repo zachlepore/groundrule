@@ -42,7 +42,7 @@ def opportunity(r):
 def csvout(p,rows):
  if not rows:return
  with open(p,'w',newline='') as f:
-  w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader()
+  w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator="\n");w.writeheader()
   for r in rows:w.writerow({k:json.dumps(v,separators=(',',':')) if isinstance(v,(list,dict)) else v for k,v in r.items()})
 def run(source,approved,archive,out):
  source,approved,archive,out=map(pathlib.Path,(source,approved,archive,out))

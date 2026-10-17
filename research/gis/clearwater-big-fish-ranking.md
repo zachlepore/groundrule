@@ -1,6 +1,6 @@
 # Clearwater biggest-fish recovery ranking
 
-**No new eligibility or approval is established.** Baseline: 17,378 unresolved REVIEW addresses after 2,960 existing approvals. Opportunities below partition addresses by explicit `opportunity()` precedence; they are not summed together with root-cause categories. Ten opportunities account for 17241 addresses; 137 human/link/parcel-geometry holds remain outside the top ten. Cross-cutting interventions must not add their counts again.
+**No new eligibility or approval is established.** Baseline: 17,378 unresolved REVIEW addresses after 2,960 existing approvals. Opportunities below partition addresses by explicit `opportunity()` precedence; they are not summed together with root-cause categories. Ten opportunities account for 17241 addresses; 137 human/link/parcel-geometry holds remain outside the top ten. Cross-cutting interventions must not add their counts again. The disjoint planning scenario totals 2381 conditional recoveries, leaving 14997 unresolved; it is not an approved target or forecast.
 
 | Rank | Disjoint recovery opportunity | Addresses / parcels | Enhanced QC-pass | Planning recovery* | Score /100 | Volume-heavy / defensibility-heavy rank |
 |---|---|---|---|---|---|---|

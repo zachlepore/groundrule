@@ -2081,8 +2081,8 @@
       "qualityParcels": 0
     }
   ],
-  "analysisScriptSha256": "2679b39fca605ae98d95cfc10456bff81aaf7fbcd0fe2c0fada8c66b2fe68fc4",
-  "baseCommit": "ee1ce8ae1805985fdaa599ec1547cd1890f8b40c",
+  "analysisScriptSha256": "3d1f1a89ea588136dcd2c7840a9029e2c3d940f3554a69935b6b2e373fd5ad8f",
+  "baseCommit": "e669e09c7a69277625d85e8fc7386b87e0717e11",
   "pythonGeometryVersion": "2.1.2",
   "schemaNotes": "Primary category first-match precedence in script. Categories mutually exclusive by address; distinct parcel counts are not additive. Quality screen is technical only, not eligibility or legal approval. Supplemental geometric areas local equirectangular approximation at 27.97N; established diagnostic percentages retained unchanged."
 }
