@@ -1,0 +1,129 @@
+name: Clearwater approved Rules 001–004 static lookup
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - codex/clearwater-rule004-approved-static
+    paths:
+      - .github/workflows/clearwater-rule004.yml
+      - scripts/gis/**
+      - tests/clearwater-rule00*.test.mjs
+      - research/gis/rule004-*.json
+      - research/gis/rule004-manual-qc/**
+      - research/gis/rule003-results/**
+      - research/gis/clearwater-rule004*.md
+      - tests/clearwater-rule004*.py
+
+permissions:
+  contents: read
+
+jobs:
+  provisional:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pinned read-only geometry dependency
+        run: python3 -m pip install shapely==2.1.2
+      - name: Test read-only analysis and QC safeguards
+        run: |
+          python3 tests/clearwater-big-fish.test.py
+          python3 tests/clearwater-rule004-qc.test.py
+      - name: Test Rule 001 preservation and provisional Rule 002 safeguards
+        run: node --test tests/clearwater-rule00*.test.mjs tests/clearwater-gis-pilot.test.mjs tests/clearwater-gis-full.test.mjs
+      - name: Download and verify immutable September 28 release
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/rule002"
+          curl --fail --location --silent --show-error --retry 2 \
+            --output "$RUNNER_TEMP/rule002/source.zip" \
+            https://github.com/zachlepore/groundrule/releases/download/clearwater-gis-2026-09-28/clearwater-full-gis-snapshot.zip
+          python3 scripts/gis/unpack-rule001-release.py "$RUNNER_TEMP/rule002/source.zip" "$RUNNER_TEMP/rule002/source"
+      - name: Regenerate original Rule 001 from source (no prior classifications)
+        run: node scripts/gis/clearwater-rule001.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule002/rule001-provisional"
+      - name: Verify Rule 001 and produce unchanged approved same-code scope
+        shell: bash
+        run: |
+          set -euo pipefail
+          node scripts/gis/verify-rule001-output.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule002/rule001-provisional"
+          node scripts/gis/export-clearwater-approved-rule001.mjs "$RUNNER_TEMP/rule002/rule001-provisional" "$RUNNER_TEMP/rule002/rule001-approved" "$RUNNER_TEMP/rule002/source"
+      - name: Analyze LMDR OSR and produce complete provisional combined lookup
+        run: node scripts/gis/clearwater-rule002.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule002/rule001-approved" "$RUNNER_TEMP/rule002/provisional"
+      - name: Verify candidates and export approved combined static lookup
+        run: node scripts/gis/export-clearwater-approved-rule002.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule002/rule001-approved" "$RUNNER_TEMP/rule002/provisional" "$RUNNER_TEMP/rule002/approved"
+      - name: Publish approved reconciliation and remaining REVIEW ranking
+        shell: bash
+        run: |
+          cat "$RUNNER_TEMP/rule002/approved/report.md" >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo '```json'
+            cat "$RUNNER_TEMP/rule002/approved/approval-audit.json"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload approved complete citywide lookup, audit, evidence and provenance
+        uses: actions/upload-artifact@v4
+        with:
+          name: clearwater-approved-rules-001-002-static-lookup
+          path: ${{ runner.temp }}/rule002/approved/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Publish provisional audit and QC summary
+        shell: bash
+        run: |
+          cat "$RUNNER_TEMP/rule002/provisional/report.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload full combined lookup, evidence, audit and independent QC
+        uses: actions/upload-artifact@v4
+        with:
+          name: clearwater-rule002-provisional-combined
+          path: |
+            ${{ runner.temp }}/rule002/provisional/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Upload regenerated unchanged Rule 001 approved baseline
+        uses: actions/upload-artifact@v4
+        with:
+          name: clearwater-rule002-rule001-approved-baseline
+          path: ${{ runner.temp }}/rule002/rule001-approved/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Reconcile frozen investigation and export bounded approved Rule 003
+        run: node --max-old-space-size=4096 scripts/gis/export-clearwater-approved-rule003.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule002/approved" "$RUNNER_TEMP/rule003-approved" "$RUNNER_TEMP/rule002/source.zip"
+      - name: Publish three-rule reconciliation
+        run: cat "$RUNNER_TEMP/rule003-approved/report.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload approved Rules 001–003 lookup and complete validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: clearwater-approved-rules-001-002-003-static-lookup
+          path: ${{ runner.temp }}/rule003-approved/
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Reconstruct complete unresolved population from approved Rules 001–003
+        run: python3 scripts/gis/analyze-clearwater-big-fish.py "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule003-approved" "$RUNNER_TEMP/rule002/source.zip" "$RUNNER_TEMP/rule004-analysis"
+      - name: Export exact owner-approved Rule 004 condominium scope
+        run: node --max-old-space-size=4096 scripts/gis/export-clearwater-approved-rule004.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule003-approved" "$RUNNER_TEMP/rule004-analysis" "$RUNNER_TEMP/rule004-approved" "$RUNNER_TEMP/rule002/source.zip"
+      - name: Verify deterministic complete Rules 001–004 lookup
+        run: |
+          node --max-old-space-size=4096 scripts/gis/export-clearwater-approved-rule004.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule003-approved" "$RUNNER_TEMP/rule004-analysis" "$RUNNER_TEMP/rule004-repeat" "$RUNNER_TEMP/rule002/source.zip"
+          cmp "$RUNNER_TEMP/rule004-approved/clearwater-approved-address-lookup.jsonl" "$RUNNER_TEMP/rule004-repeat/clearwater-approved-address-lookup.jsonl"
+          cmp "$RUNNER_TEMP/rule004-approved/approval-audit.json" "$RUNNER_TEMP/rule004-repeat/approval-audit.json"
+      - name: Publish four-rule reconciliation
+        run: cat "$RUNNER_TEMP/rule004-approved/report.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload approved Rules 001–004 lookup, audit, source evidence and provenance
+        uses: actions/upload-artifact@v4
+        with:
+          name: clearwater-approved-rules-001-002-003-004-static-lookup
+          path: ${{ runner.temp }}/rule004-approved/
+          if-no-files-found: error
+          retention-days: 90

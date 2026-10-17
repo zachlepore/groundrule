@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "ruleId": "CLR-Z-004",
+  "recordedOn": "2026-10-17",
+  "reviewDate": null,
+  "reviewer": "Groundrule owner participating in this chat",
+  "evidenceType": "OWNER_VISUAL_QC_AND_PRODUCT_POLICY_NOT_LEGAL_DETERMINATION",
+  "observations": [
+    {
+      "caseId": "R004-01",
+      "representativeAddress": "880 MANDALAY AVE UNIT C-609",
+      "parcelId": "322815740740030609",
+      "sameCondominiumDevelopment": true,
+      "lmdrVisuallyNegligibleForProminentNotice": true,
+      "hdrNonExclusiveStartingGuidanceAppropriate": true,
+      "legalBoundaryOrOwnershipDetermination": false
+    },
+    {
+      "caseId": "R004-02",
+      "representativeAddress": "880 MANDALAY AVE UNIT N-1005",
+      "parcelId": "322815740740141005",
+      "sameCondominiumDevelopment": true,
+      "lmdrVisuallyNegligibleForProminentNotice": true,
+      "hdrNonExclusiveStartingGuidanceAppropriate": true,
+      "legalBoundaryOrOwnershipDetermination": false
+    }
+  ],
+  "ownerFindings": [
+    "Both representative cases belong to the same condominium complex.",
+    "The LMDR intersection is visually negligible for purposes of prominent split-zoning notifications.",
+    "The 364 unit-level parcel records form one condominium development, not 364 independent physical zoning decisions.",
+    "The owner identifies the larger un-unitized record and its OS/R and P intersections as associated with the development beach area.",
+    "Beach-related zoning should not automatically produce prominent split-zoning warnings for individual units.",
+    "Preserve OS/R and P evidence for shared-site or beach-related projects.",
+    "HDR is appropriate starting guidance for the bounded units with explicit condominium/shared-land limitations."
+  ],
+  "legalOwnershipVerified": false,
+  "permissibleDevelopmentDetermined": false,
+  "rawLandUseCodeDifferencesRetained": true,
+  "cuRecordsIncludedOnlyThroughExactApprovedMembership": true
+}
