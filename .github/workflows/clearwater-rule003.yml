@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - codex/clearwater-rule003-mdr-osr
+      - codex/clearwater-rule003-notice-six-percent
     paths:
       - .github/workflows/clearwater-rule003.yml
       - scripts/gis/**

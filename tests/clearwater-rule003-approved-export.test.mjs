@@ -25,11 +25,11 @@ test('membership pins all 884 identities and rejects equal-count substitutions a
   const moved=structuredClone(population);moved[0].investigativeHolds=['address_link'];assert.throws(()=>reconcileMembership(moved,membership));
   assert.deepEqual(membership.categories.addressLinkHolds.map(m=>m.addressId).sort((a,b)=>a-b),[639060,645435]);
 });
-test('every positive OSR intersection gets exact approved notice regardless of 2/3 percent boundaries',()=>{
-  for(const pct of [.00001,.1,2,3,5.841653]){
+test('positive OSR intersections retain evidence and receive the approved six-percent presentation policy',()=>{
+  for(const pct of [.00001,.1,2,3,5.841653,6,6.0000001,7]){
     const {row,parcel,member}=fixture(pct),out=approveRecord(row,parcel,member,config);
     assert.deepEqual(out.failures,[]);const a=out.row.approvedPrimaryGuidance;
-    assert.equal(a.ruleId,'CLR-Z-003');assert.equal(a.noticeThresholdPercent,0);assert.equal(a.osrNoticeRecommendation,'RECOMMENDED_PHYSICAL_PROJECT_GUIDES');assert.equal(a.osrNoticeText,NOTICE);
+    assert.equal(a.ruleId,'CLR-Z-003');assert.equal(a.noticeThresholdPercent,6);assert.equal(a.osrNoticeRecommendation,pct>6?'RECOMMENDED_PHYSICAL_PROJECT_GUIDES':'NOT_PROMINENT_IN_ORDINARY_GUIDES');assert.equal(a.noticeSuppressionIsLegalExemption,false);assert.equal(a.noticeSuppressionIsBoundaryCorrection,false);assert.equal(a.osrNoticeText,NOTICE);
     assert.deepEqual(a.unresolvedInterpretations,UNCERTAINTIES);assert.equal(a.secondaryOsrAppliesToEntireParcel,false);assert.equal(a.exclusiveZoningClassification,false);assert.equal(a.legalZoningDetermination,false);
     assert.deepEqual(a.mappedZoningIntersections,parcel.evidence.zoningCodeCoverage);assert.deepEqual(a.sourceZoningFeatures,parcel.evidence.zoningFeatures);
     const {approvedPrimaryGuidance,...before}=row,{approvedPrimaryGuidance:_,...after}=out.row;assert.deepEqual(after,before);

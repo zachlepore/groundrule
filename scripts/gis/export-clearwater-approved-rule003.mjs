@@ -9,6 +9,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { run as investigate, sourceFlags } from './investigate-clearwater-rule003.mjs';
 import { writeJsonl } from './clearwater-rule002.mjs';
+import { noticeRecommendation,validateNoticePolicy,validateNoticeQc,validateNoticeBindings,POLICY_ID,POLICY_VERSION } from './clearwater-rule003-notice-policy.mjs';
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
 const CONFIG='research/gis/rule003-approval.bounded-v1.json';
 export const NOTICE="Part of this property intersects an area mapped OS/R. The guidance below begins with the property's MDR zoning classification. Additional restrictions may apply depending on the location and nature of your project. Confirm applicable requirements with the City.";
@@ -21,7 +22,8 @@ export function validateApproval(c,manifest){
   assert.equal(c.approvalId,'CLR-Z-003-BOUNDED-MDR-2026-10-16');assert.equal(c.decision,'APPROVED_FOR_OFFLINE_STATIC_EXPORT_ONLY');assert.ok(c.authorization);
   assert.equal(c.basisCommit,'c83bf91');assert.equal(c.sourceSnapshotId,manifest.snapshotId);assert.equal(c.sourceArchiveSha256,manifest.archiveSha256);
   assert.deepEqual(c.scope,{originalQaStatus:'review',existingPrimaryCode:'MDR',exactPositiveAreaDistricts:['MDR','OS/R'],membershipFile:'research/gis/rule003-membership.v1.json',maximumNewApprovals:731,requireAllExistingEligibilityAndHumanChecks:true,excludeAddressLinkHolds:true});
-  assert.deepEqual(c.presentation,{osrNoticeProminentWhenPercentGreaterThan:0,presentationOnly:true,noticeThresholdIsLegalExemption:false,secondaryOsrAppliesToEntireParcel:false,retainSecondaryGeometryPercentagesAndProvenance:true,noticeText:NOTICE});
+  assert.deepEqual(c.presentation,{osrNoticeProminentWhenPercentGreaterThan:6,presentationOnly:true,noticeThresholdIsLegalExemption:false,secondaryOsrAppliesToEntireParcel:false,retainSecondaryGeometryPercentagesAndProvenance:true,noticeText:NOTICE});
+  assert.equal(c.presentationPolicyFile,'research/gis/rule003-notice-policy.v2.json');assert.match(c.presentationPolicySha256,/^[a-f0-9]{64}$/);
   assert.deepEqual(c.uncertainties,UNCERTAINTIES);
   assert.deepEqual(c.expected,{allAddresses:63430,rule001Approved:1967,rule002Approved:262,candidateAddresses:731,addressLinkHolds:2,unsupportedOsrPrimary:3,additionalDistricts:148,maximumTotalApproved:2960});
   assert.match(c.investigationInventorySha256,/^[a-f0-9]{64}$/);assert.ok(Object.keys(c.basisFileSha256).length>=10);
@@ -56,13 +58,15 @@ export function assess(row,parcel,member){
   if(!parcel.representativePointEvidence?.some(p=>p.addressId===row.sourceAddressIdentifier&&p.mappedDistricts.length===1&&p.mappedDistricts[0]==='mdr'))failures.push('primary_location_unresolved');
   return [...new Set(failures)];
 }
-export function approveRecord(row,parcel,member,config){
+export function approveRecord(row,parcel,member,config,noticeCaseId=null){
   const failures=assess(row,parcel,member);if(failures.length)return {row,failures};
   return {failures:[],row:{...row,approvedPrimaryGuidance:{...row.approvedPrimaryGuidance,
     status:'GUIDANCE_READY_APPROVED',primaryZoning:'MDR',ruleId:config.ruleId,ruleVersion:config.ruleVersion,approvalId:config.approvalId,
     disposition:'APPROVED_RULE003_BOUNDED_SAME_CODE_REVIEW',stillRequiresReview:false,sourceSnapshotId:config.sourceSnapshotId,
     sourceMappedDistricts:['MDR','OS/R'],retainedSecondaryDistrict:'OS/R',mappedOsrPercent:parcel.osrPercent,mappedZoningIntersections:parcel.evidence.zoningCodeCoverage,
-    osrNoticeRecommendation:'RECOMMENDED_PHYSICAL_PROJECT_GUIDES',noticeThresholdPercent:0,noticeThresholdMeaning:'PRESENTATION_ONLY_NOT_ELIGIBILITY_OR_ZONING_APPLICABILITY',osrNoticeText:config.presentation.noticeText,
+    osrNoticeRecommendation:noticeRecommendation(parcel.osrPercent),noticeThresholdPercent:6,noticeThresholdMeaning:'PRESENTATION_ONLY_NOT_ELIGIBILITY_OR_ZONING_APPLICABILITY',osrNoticeText:config.presentation.noticeText,
+    noticePolicyId:POLICY_ID,noticePolicyVersion:POLICY_VERSION,noticePolicyReference:'rule003-notice-policy.json',noticeSuppressionIsLegalExemption:false,noticeSuppressionIsBoundaryCorrection:false,
+    noticeQcEvidenceReference:'rule003-notice-human-qc.json',humanNoticeQcCaseId:noticeCaseId,noticeQcScope:noticeCaseId?'DIRECTLY_REVIEWED_PARCEL':'BOUNDED_POLICY_ONLY',
     exclusiveZoningClassification:false,legalZoningDetermination:false,doesNotEraseMappedSplitZoning:true,secondaryOsrAppliesToEntireParcel:false,
     unresolvedInterpretations:config.uncertainties,secondaryOsrRelevance:'NOT_HUMAN_ASSESSED',substantiveSecondaryOsr:null,
     evidenceReference:`investigation/parcel-inventory.json#${parcel.parcelId}`,geometryEvidenceReference:`investigation/map-geometries.json#${parcel.parcelId}`,
@@ -76,16 +80,26 @@ export async function exportApproved(source,baseline,output,archive){
   try{await access(output);throw new Error('Fresh output required');}catch(e){if(e.code!=='ENOENT')throw e;}
   const config=await json(path.join(ROOT,CONFIG)),manifest=await json(path.join(ROOT,'scripts/gis/clearwater-rule001-source.json'));
   validateApproval(config,manifest);
+  const policyPath=path.join(ROOT,config.presentationPolicyFile),policy=await json(policyPath);
+  assert.equal((await digest(policyPath)).sha256,config.presentationPolicySha256,'Notice policy drift');validateNoticePolicy(policy,config,manifest);
+  for(const [name,sha] of Object.entries(policy.evidenceSha256))assert.equal((await digest(path.join(ROOT,name))).sha256,sha,`Notice QC evidence drift ${name}`);
+  assert.equal((await digest(path.join(ROOT,'research/gis/rule003-approval.bounded-v1.original.json'))).sha256,policy.originalApprovalConfigSha256);
   for(const [name,sha] of Object.entries(config.basisFileSha256))assert.equal((await digest(path.join(ROOT,name))).sha256,sha,`Pinned Rule 003 evidence ${name}`);
   await investigate(source,baseline,path.join(output,'investigation'),archive);
   assert.equal((await digest(path.join(output,'investigation/parcel-inventory.json'))).sha256,config.investigationInventorySha256,'Frozen investigation evidence drift');
+  validateNoticeBindings(policy,{geometrySha256:(await digest(path.join(output,'investigation/map-geometries.json'))).sha256,
+    inventorySha256:(await digest(path.join(output,'investigation/parcel-inventory.json'))).sha256,
+    membershipSha256:(await digest(path.join(ROOT,config.scope.membershipFile))).sha256});
   const inventory=await json(path.join(output,'investigation/parcel-inventory.json')),membership=await json(path.join(ROOT,config.scope.membershipFile));
   const categories=reconcileMembership(inventory,membership),members=new Map(categories.approvedCandidates.map(m=>[m.addressId,m])),parcels=new Map(inventory.map(p=>[p.parcelId,p]));
+  const eligibleInventory=inventory.filter(p=>categories.approvedCandidates.some(m=>m.parcelId===p.parcelId));
+  assert.equal(eligibleInventory.length,146);assert.equal(Math.max(...eligibleInventory.map(p=>p.osrPercent)),policy.observedMaximumOsrPercent,'Source coverage changed: reassessment required');
+  const human=await json(path.join(ROOT,'research/gis/rule003-manual-qc/human-observations.v1.json')),noticeCases=validateNoticeQc(human,eligibleInventory);
   const rows=[];for await(const row of lines(path.join(baseline,'clearwater-approved-address-lookup.jsonl')))rows.push(row);
   const failures=[],approvals=[];
   const transformed=rows.map(row=>{
     const member=members.get(row.sourceAddressIdentifier);if(!member)return row;
-    const result=approveRecord(row,parcels.get(member.parcelId),member,config);
+    const result=approveRecord(row,parcels.get(member.parcelId),member,config,noticeCases.get(member.parcelId)??null);
     if(result.failures.length)failures.push({addressId:member.addressId,parcelId:member.parcelId,reasons:result.failures});else approvals.push(member.addressId);
     return result.row;
   });
@@ -112,17 +126,21 @@ export async function exportApproved(source,baseline,output,archive){
   }
   assert.equal(audit.allAddresses,63430);assert.equal(audit.rule001Approved,1967);assert.equal(audit.rule002Approved,262);
   assert.equal(audit.rule003Approved+failures.length,731);assert.ok(audit.rule003Approved<=731);assert.equal(audit.totalApproved,2229+audit.rule003Approved);
-  assert.equal(audit.stillReview,18109-audit.rule003Approved);assert.equal(audit.rule003NoticeProminent,audit.rule003Approved);assert.equal(audit.rule003NoticeNonProminent,0);
+  assert.equal(audit.stillReview,18109-audit.rule003Approved);assert.equal(audit.rule003NoticeProminent,0);assert.equal(audit.rule003NoticeNonProminent,audit.rule003Approved);
   assert.deepEqual([audit.rule001NoticeProminent,audit.rule001NoticeNonProminent,audit.rule002NoticeProminent,audit.rule002NoticeNonProminent],[762,1205,4,258]);
   assert.equal(new Set(approvals).size,approvals.length);assert.equal(new Set(transformed.map(r=>r.sourceAddressIdentifier)).size,63430);
   const lookup=path.join(output,'clearwater-approved-address-lookup.jsonl');await writeJsonl(lookup,transformed);
   let n=0;for await(const r of lines(lookup)){assert.deepEqual(r,transformed[n++],'Serialized export drift');}assert.equal(n,63430);
   const write=async(name,v)=>writeFile(path.join(output,name),JSON.stringify(v,null,2)+'\n');
   audit.lookup=await digest(lookup);await write('approval-audit.json',audit);await write('rule003-approval-config.json',config);await write('rule003-membership.json',membership);
+  await write('rule003-notice-policy.json',policy);await write('rule003-notice-human-qc.json',human);
+  await cp(path.join(ROOT,'research/gis/rule003-manual-qc/six-percent-decision-memo.md'),path.join(output,'rule003-notice-decision-memo.md'));
+  await cp(path.join(ROOT,'research/gis/rule003-approval.bounded-v1.original.json'),path.join(output,'rule003-original-approval-config.json'));
   await cp(baseline,path.join(output,'rules001002-baseline'),{recursive:true});
   await write('provenance.json',{sourceManifest:manifest,rule003ApprovalConfig:await digest(path.join(ROOT,CONFIG)),exporter:await digest(fileURLToPath(import.meta.url)),basisCommit:config.basisCommit,basisFileSha256:config.basisFileSha256,
+    noticePolicy:await digest(policyPath),noticePolicyModule:await digest(path.join(ROOT,'scripts/gis/clearwater-rule003-notice-policy.mjs')),noticeQcBasisCommit:policy.basisCommit,noticeQcEvidence:policy.evidenceSha256,geometryEvidenceSha256:policy.geometryEvidenceSha256,
     precedingPolicies:'rules001002-baseline/rule001-approval-config.json and rules001002-baseline/rule002-approval-config.json',originalSourceAndQaUnchanged:true,approvalScope:'OFFLINE_STATIC_ONLY'});
-  await writeFile(path.join(output,'report.md'),`# Approved offline Clearwater Rules 001–003\n\nOriginal profiles: ${audit.allAddresses}. Approved guidance: ${audit.rule001Approved} Rule 001 + ${audit.rule002Approved} Rule 002 + ${audit.rule003Approved} Rule 003 = ${audit.totalApproved}. Remaining REVIEW: ${audit.stillReview}.\n\nRule 003 candidates: 731; failed: ${failures.length}. Excluded: two address-link holds, three unsupported OS/R-primary addresses, 148 additional-district addresses. No substitutions or additional addresses. Original zoning/QA and preceding approvals unchanged; zero double approvals.\n\nRule 001 notices 762/1205 (>2% P); Rule 002 4/258 (>3% OS/R), unchanged. Rule 003 ${audit.rule003NoticeProminent}/${audit.rule003NoticeNonProminent}: contextual notice for every strictly positive mapped OS/R intersection, presentation only.\n\n${NOTICE}\n\nMDR is non-exclusive starting guidance. OS/R does not automatically govern the entire parcel. Shared-land rights, density calculations, boundary disputes and project-specific applicability remain unresolved; confirm applicable requirements with the City. All geometry, source QA, intersections and provenance retained in investigation/ and rules001002-baseline/. No Supabase, Guides, production runtime, resident UX or deployment changes.\n`);
+  await writeFile(path.join(output,'report.md'),`# Approved offline Clearwater Rules 001–003\n\nOriginal profiles: ${audit.allAddresses}. Approved guidance: ${audit.rule001Approved} Rule 001 + ${audit.rule002Approved} Rule 002 + ${audit.rule003Approved} Rule 003 = ${audit.totalApproved}. Remaining REVIEW: ${audit.stillReview}.\n\nRule 003 candidates: 731; failed: ${failures.length}. Excluded: two address-link holds, three unsupported OS/R-primary addresses, 148 additional-district addresses. No substitutions or additional addresses. Original zoning/QA and preceding approvals unchanged; zero double approvals.\n\nRule 001 notices 762/1205 (>2% P); Rule 002 4/258 (>3% OS/R), unchanged. Rule 003 ${audit.rule003NoticeProminent}/${audit.rule003NoticeNonProminent}: contextual notice only when OS/R is strictly >6%, without rounding; at or below 6% the prominent recommendation is suppressed. Presentation only, never a legal exemption or boundary correction. All 25 owner visual findings are retained separately in rule003-notice-human-qc.json.\n\n${NOTICE}\n\nMDR is non-exclusive starting guidance. OS/R does not automatically govern the entire parcel. Shared-land rights, density calculations, boundary disputes and project-specific applicability remain unresolved; confirm applicable requirements with the City. All geometry, source QA, intersections and provenance retained in investigation/ and rules001002-baseline/. No Supabase, Guides, production runtime, resident UX or deployment changes.\n`);
   const checks={};async function collect(dir,prefix=''){for(const e of (await readdir(dir,{withFileTypes:true})).sort((a,b)=>a.name.localeCompare(b.name))){const name=prefix+e.name;if(e.isDirectory())await collect(path.join(dir,e.name),name+'/');else checks[name]=await digest(path.join(dir,e.name));}}await collect(output);
   await write('output-checksums.json',checks);for(const [name,v] of Object.entries(checks))assert.deepEqual(await digest(path.join(output,name)),v,name);
   console.log(JSON.stringify(audit,null,2));return audit;
