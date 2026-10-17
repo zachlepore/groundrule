@@ -1,0 +1,50 @@
+{
+  "basisCommit": "1c33794",
+  "sourceSnapshotId": "clearwater-gis-2026-09-28",
+  "sourceArchiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+  "approvedLookupSha256": "cdb14957486a6665cd4367edce9136df8bf2f01053fc2c0ea62ef4ee0cbbbbb2",
+  "sourceFilesVerified": 11,
+  "approvedChecksumsVerified": 38,
+  "profilesRetained": 63430,
+  "originalFieldsChanged": 0,
+  "approvals": {
+    "CLR-Z-002": 262,
+    "CLR-Z-001": 1967,
+    "CLR-Z-003": 731
+  },
+  "remainingReview": 17378,
+  "candidateMembershipSha256": "20b609d478773b645c6f840735c6d23de9ec129a75cebe5d789c78283529d903",
+  "candidateAddresses": 364,
+  "candidateParcelIds": 364,
+  "groups": [
+    {
+      "caseId": "R004-01",
+      "records": 363,
+      "sha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d"
+    },
+    {
+      "caseId": "R004-02",
+      "records": 1,
+      "sha256": "b1026beacadf7e6db94c0f58dfc915f0aff6afe06d8ae23ace3982a46ee3999b"
+    }
+  ],
+  "outsideCohort": 133,
+  "siteContextOutsideCohort": 3,
+  "scriptSha256": "85b531a43655b571467147fe7fa8ef74824161565fc34d0ea677f916cbc374f4",
+  "analysisInputSha256": "e476e5b74b1c6625d93a4c403762a8b723dcdaf60eb4082137e2e42ed834a638",
+  "shapelyVersion": "2.1.2",
+  "geometryMethod": "Original diagnostic areas/percentages retained. Supplemental distances/areas: local equirectangular plane, fixed latitude 27.97N, 111195 m/degree; not survey distances. Boundary-depth binary search with residual-area tolerance 1e-9 m2.",
+  "propertyRecordsLimitations": "Frozen property fields contain parcel identifiers, STRAP, site address and LAND_USE_CODE, not owners, deeds, condo declarations, unit use entitlements or common-area rights. Live Pinellas parcel service and Property Appraiser property-details requests returned HTTP 403 on 2026-10-17; no live property records used.",
+  "liveAttempts": [
+    {
+      "url": "https://egis.pinellas.gov/gis/rest/services/PublicWebGIS/Parcels/MapServer/1?f=pjson",
+      "httpStatus": 403
+    },
+    {
+      "url": "https://www.pcpao.gov/property-details?s=152832740740030609",
+      "httpStatus": 403
+    }
+  ],
+  "newApprovals": 0,
+  "humanConclusionsAutomaticallyFilled": false
+}

@@ -1,0 +1,207 @@
+[
+  {
+    "addressId": 427585,
+    "address": "880 MANDALAY AVE UNIT N-1003",
+    "parcelId": null,
+    "originalStatus": "review",
+    "guidanceStatus": "NO_NEW_APPROVAL",
+    "originalZoning": null,
+    "issues": [
+      "address_multiple_parcels",
+      "parcel_without_zoning"
+    ],
+    "flags": [
+      "link_failure",
+      "missing_primary",
+      "unrelated_profile_issue"
+    ],
+    "districts": [],
+    "combination": "(no measured intersection)",
+    "districtCount": 0,
+    "dominantCode": null,
+    "dominantPercent": 0,
+    "secondaryPercent": 0,
+    "secondaryAreaM2": 0,
+    "coveragePercent": 0,
+    "intersections": [],
+    "diagnosticAvailable": false,
+    "humanCaseIds": [],
+    "representativePointMatches": [],
+    "addressPointInsideLinkedParcel": null,
+    "pendingRule001": false,
+    "sourceEvidence": "parcels.geojson#None; zoning.geojson (supplemental Shapely)",
+    "geometryEvidence": {},
+    "primaryCategory": "Address/parcel link failure",
+    "qualityScreenPass": false,
+    "opportunity": "outside_top10_holds",
+    "rawAddressRecord": {
+      "type": "Feature",
+      "id": 427585,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.82763155119738,
+          27.998058649186852
+        ]
+      },
+      "properties": {
+        "OBJECTID": 427585,
+        "PIN_NUM": "322815740740141003",
+        "SITEADDID": "54190794",
+        "ADDPTKEY": null,
+        "FULLADDR": "880 MANDALAY AVE UNIT N-1003",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33767",
+        "STATUS": "A"
+      }
+    },
+    "rawPinParcelFeatureCount": 0,
+    "matchingSiteAddressParcelFeaturesByPoint": 365
+  },
+  {
+    "addressId": 444864,
+    "address": "880 MANDALAY AVE UNIT S-905",
+    "parcelId": null,
+    "originalStatus": "review",
+    "guidanceStatus": "NO_NEW_APPROVAL",
+    "originalZoning": null,
+    "issues": [
+      "address_multiple_parcels",
+      "parcel_without_zoning"
+    ],
+    "flags": [
+      "link_failure",
+      "missing_primary",
+      "unrelated_profile_issue"
+    ],
+    "districts": [],
+    "combination": "(no measured intersection)",
+    "districtCount": 0,
+    "dominantCode": null,
+    "dominantPercent": 0,
+    "secondaryPercent": 0,
+    "secondaryAreaM2": 0,
+    "coveragePercent": 0,
+    "intersections": [],
+    "diagnosticAvailable": false,
+    "humanCaseIds": [],
+    "representativePointMatches": [],
+    "addressPointInsideLinkedParcel": null,
+    "pendingRule001": false,
+    "sourceEvidence": "parcels.geojson#None; zoning.geojson (supplemental Shapely)",
+    "geometryEvidence": {},
+    "primaryCategory": "Address/parcel link failure",
+    "qualityScreenPass": false,
+    "opportunity": "outside_top10_holds",
+    "rawAddressRecord": {
+      "type": "Feature",
+      "id": 444864,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.82779767023935,
+          27.997108849661558
+        ]
+      },
+      "properties": {
+        "OBJECTID": 444864,
+        "PIN_NUM": "322815740190905",
+        "SITEADDID": "54216608",
+        "ADDPTKEY": null,
+        "FULLADDR": "880 MANDALAY AVE UNIT S-905",
+        "MUNICIPALITY": "CLEARWATER",
+        "POSTCODE": "33767",
+        "STATUS": "A"
+      }
+    },
+    "rawPinParcelFeatureCount": 0,
+    "matchingSiteAddressParcelFeaturesByPoint": 365
+  },
+  {
+    "addressId": 636004,
+    "address": "880 MANDALAY AVE",
+    "parcelId": "322815740740000001",
+    "originalStatus": "review",
+    "guidanceStatus": "NO_NEW_APPROVAL",
+    "originalZoning": "HDR",
+    "issues": [
+      "parcel_ambiguous_zoning"
+    ],
+    "flags": [
+      "cross_code_overlap_measured"
+    ],
+    "districts": [
+      "hdr",
+      "lmdr",
+      "os/r",
+      "p"
+    ],
+    "combination": "hdr + lmdr + os/r + p",
+    "districtCount": 4,
+    "dominantCode": "hdr",
+    "dominantPercent": 76.752867,
+    "secondaryPercent": 23.247247,
+    "secondaryAreaM2": 7338.79,
+    "coveragePercent": 100.000114,
+    "intersections": [
+      {
+        "normalizedZoningCode": "hdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 24229.67,
+        "percentOfParcel": 76.752867
+      },
+      {
+        "normalizedZoningCode": "os/r",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 5928.052,
+        "percentOfParcel": 18.778423
+      },
+      {
+        "normalizedZoningCode": "p",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 1387.794,
+        "percentOfParcel": 4.396145
+      },
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 22.944,
+        "percentOfParcel": 0.072679
+      }
+    ],
+    "diagnosticAvailable": true,
+    "humanCaseIds": [],
+    "representativePointMatches": [
+      10707
+    ],
+    "addressPointInsideLinkedParcel": true,
+    "pendingRule001": false,
+    "sourceEvidence": "zoning-diagnostic/zoning-diagnostic.json#322815740740000001",
+    "geometryEvidence": {
+      "parcelSourceFeatureCount": 1,
+      "shapelyParcelValid": true,
+      "spatialErrors": [],
+      "areaM2Approx": 31576.47255391306,
+      "canonicalFootprintSha256": "88c08a0ecf9ebe418d5adf2bf48525e111d6d1c910dfe098c62edf1175c4cd12",
+      "zoneSourceIds": [
+        11095,
+        10954,
+        10707,
+        10764
+      ],
+      "crossCodeOverlapM2Approx": 0.12094300100754207,
+      "unionCoveragePercentApprox": 99.99973222335937
+    },
+    "primaryCategory": "Measured cross-code polygon overlap",
+    "qualityScreenPass": false,
+    "opportunity": "Material splits and remaining classification conflicts"
+  }
+]

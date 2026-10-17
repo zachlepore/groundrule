@@ -1,0 +1,201 @@
+[
+  {
+    "caseId": "R004-01",
+    "representative": {
+      "addressId": 4248,
+      "address": "880 MANDALAY AVE UNIT C-609",
+      "parcelId": "322815740740030609",
+      "parcelObjectId": 970169,
+      "strap": "152832740740030609",
+      "siteAddress": "880 MANDALAY AVE",
+      "siteCity": "CLEARWATER",
+      "landUseCode": "04",
+      "unitPrefix": "C",
+      "addressPin": "322815740740030609",
+      "siteAddId": "54190800",
+      "addressStatus": "A",
+      "originalZoning": "HDR",
+      "originalQa": "review",
+      "originalIssues": [
+        "parcel_ambiguous_zoning"
+      ],
+      "guidanceStatus": "NO_NEW_APPROVAL",
+      "parcelMatchMethod": "authoritative_identifier",
+      "coordinates": [
+        -82.82753326228631,
+        27.997821164256305
+      ],
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "sourceReference": "parcels.geojson#OBJECTID=970169;addresses.geojson#OBJECTID=4248;zoning-diagnostic/zoning-diagnostic.json#322815740740030609",
+      "groupId": "R004-01"
+    },
+    "addressCount": 363,
+    "parcelCount": 363,
+    "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+    "parcelAreaM2": 24192.099,
+    "districts": [
+      {
+        "normalizedZoningCode": "hdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 24169.34,
+        "percentOfParcel": 99.905922
+      },
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 22.759,
+        "percentOfParcel": 0.094078
+      }
+    ],
+    "sourceZoningFeatures": [
+      {
+        "sourceIndex": 224,
+        "sourceIdentifier": 10707,
+        "rawZoningCode": "HDR",
+        "normalizedZoningCode": "hdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 24169.34,
+        "percentOfParcel": 99.905922
+      },
+      {
+        "sourceIndex": 281,
+        "sourceIdentifier": 10764,
+        "rawZoningCode": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 22.759,
+        "percentOfParcel": 0.094078
+      }
+    ],
+    "vertexCount": 51,
+    "secondaryGeometryType": "Polygon",
+    "secondaryComponents": 1,
+    "secondaryBeyond1mBoundaryM2Approx": 0.0,
+    "maximumSecondaryInwardDepthMApprox": 0.5536347941233544,
+    "secondaryMaximumInscribedDiameterMApprox": null,
+    "unitPrefixCounts": {
+      "C": 114,
+      "CU": 17,
+      "S": 118,
+      "N": 114
+    },
+    "landUseCounts": {
+      "04": 346,
+      "09": 12,
+      "17": 5
+    },
+    "humanReview": {
+      "meaningfulSecondaryZone": "",
+      "likelyBoundaryArtifact": "",
+      "startingHdrGuidanceAppropriate": "",
+      "prominentNoticeWarranted": "",
+      "furtherLegalOrOwnershipReviewNeeded": "",
+      "reviewer": "",
+      "reviewDate": "",
+      "notes": ""
+    }
+  },
+  {
+    "caseId": "R004-02",
+    "representative": {
+      "addressId": 427524,
+      "address": "880 MANDALAY AVE UNIT N-1005",
+      "parcelId": "322815740740141005",
+      "parcelObjectId": 846266,
+      "strap": "152832740740141005",
+      "siteAddress": "880 MANDALAY AVE",
+      "siteCity": "CLEARWATER",
+      "landUseCode": "04",
+      "unitPrefix": "N",
+      "addressPin": "322815740740141005",
+      "siteAddId": "54190721",
+      "addressStatus": "A",
+      "originalZoning": "HDR",
+      "originalQa": "review",
+      "originalIssues": [
+        "parcel_ambiguous_zoning"
+      ],
+      "guidanceStatus": "NO_NEW_APPROVAL",
+      "parcelMatchMethod": "authoritative_identifier",
+      "coordinates": [
+        -82.8276834304504,
+        27.998112045901347
+      ],
+      "footprintSha256": "b1026beacadf7e6db94c0f58dfc915f0aff6afe06d8ae23ace3982a46ee3999b",
+      "sourceReference": "parcels.geojson#OBJECTID=846266;addresses.geojson#OBJECTID=427524;zoning-diagnostic/zoning-diagnostic.json#322815740740141005",
+      "groupId": "R004-02"
+    },
+    "addressCount": 1,
+    "parcelCount": 1,
+    "footprintSha256": "b1026beacadf7e6db94c0f58dfc915f0aff6afe06d8ae23ace3982a46ee3999b",
+    "parcelAreaM2": 24192.099,
+    "districts": [
+      {
+        "normalizedZoningCode": "hdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 24169.34,
+        "percentOfParcel": 99.905922
+      },
+      {
+        "normalizedZoningCode": "lmdr",
+        "featureCount": 1,
+        "repeatedPolygons": false,
+        "overlappingPolygons": false,
+        "intersectionAreaSquareMeters": 22.759,
+        "percentOfParcel": 0.094078
+      }
+    ],
+    "sourceZoningFeatures": [
+      {
+        "sourceIndex": 224,
+        "sourceIdentifier": 10707,
+        "rawZoningCode": "HDR",
+        "normalizedZoningCode": "hdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 24169.34,
+        "percentOfParcel": 99.905922
+      },
+      {
+        "sourceIndex": 281,
+        "sourceIdentifier": 10764,
+        "rawZoningCode": "LMDR",
+        "normalizedZoningCode": "lmdr",
+        "geometryValid": true,
+        "multipart": false,
+        "intersectionAreaSquareMeters": 22.759,
+        "percentOfParcel": 0.094078
+      }
+    ],
+    "vertexCount": 49,
+    "secondaryGeometryType": "Polygon",
+    "secondaryComponents": 1,
+    "secondaryBeyond1mBoundaryM2Approx": 0.0,
+    "maximumSecondaryInwardDepthMApprox": 0.5536347941233544,
+    "secondaryMaximumInscribedDiameterMApprox": null,
+    "unitPrefixCounts": {
+      "N": 1
+    },
+    "landUseCounts": {
+      "04": 1
+    },
+    "humanReview": {
+      "meaningfulSecondaryZone": "",
+      "likelyBoundaryArtifact": "",
+      "startingHdrGuidanceAppropriate": "",
+      "prominentNoticeWarranted": "",
+      "furtherLegalOrOwnershipReviewNeeded": "",
+      "reviewer": "",
+      "reviewDate": "",
+      "notes": ""
+    }
+  }
+]
