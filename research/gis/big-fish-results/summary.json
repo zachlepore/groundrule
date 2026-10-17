@@ -1,0 +1,2088 @@
+{
+  "sourceArchiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+  "lookupSha256": "cdb14957486a6665cd4367edce9136df8bf2f01053fc2c0ea62ef4ee0cbbbbb2",
+  "sourceFilesVerified": 11,
+  "approvedOutputChecksumsVerified": 38,
+  "originalProfiles": 63430,
+  "originalClean": 43092,
+  "originalReview": 20338,
+  "approvals": {
+    "CLR-Z-002": 262,
+    "CLR-Z-001": 1967,
+    "CLR-Z-003": 731
+  },
+  "noticeCounts": {
+    "CLR-Z-001": {
+      "NOT_PROMINENT_IN_ORDINARY_GUIDES": 1205,
+      "RECOMMENDED_PHYSICAL_PROJECT_GUIDES": 762
+    },
+    "CLR-Z-002": {
+      "NOT_PROMINENT_IN_ORDINARY_GUIDES": 258,
+      "RECOMMENDED_PHYSICAL_PROJECT_GUIDES": 4
+    },
+    "CLR-Z-003": {
+      "NOT_PROMINENT_IN_ORDINARY_GUIDES": 731
+    }
+  },
+  "originalFieldsChanged": 0,
+  "duplicateAddressIds": 0,
+  "remaining": 17378,
+  "remainingParcels": 11568,
+  "unlinkedAddresses": 112,
+  "categories": [
+    {
+      "category": "Near-complete primary with secondary intersections",
+      "addresses": 4000,
+      "parcels": 2673,
+      "percent": 23.0176,
+      "combinations": [
+        [
+          "i + mhdr",
+          376
+        ],
+        [
+          "hdr + lmdr",
+          365
+        ],
+        [
+          "c + hdr",
+          340
+        ],
+        [
+          "i + mdr",
+          308
+        ],
+        [
+          "c + i + mdr",
+          260
+        ]
+      ],
+      "flags": {
+        "near_complete": 4000,
+        "parcel_peer_hold": 43,
+        "address_point_outside_linked_parcel": 37
+      }
+    },
+    {
+      "category": "Unsupported classification",
+      "addresses": 2832,
+      "parcels": 2676,
+      "percent": 16.2965,
+      "combinations": [
+        [
+          "hdrncodislandest + p",
+          726
+        ],
+        [
+          "hdrncodislandest",
+          397
+        ],
+        [
+          "lmdrncodislandest + p",
+          303
+        ],
+        [
+          "lmdrncodislandest",
+          261
+        ],
+        [
+          "lmdrncodcoachmanr",
+          228
+        ]
+      ],
+      "flags": {
+        "near_complete": 1324,
+        "parcel_peer_hold": 2832,
+        "unrelated_profile_issue": 2832,
+        "unsupported": 2832,
+        "coverage_failure": 28,
+        "cross_code_overlap_measured": 61,
+        "invalid_zoning": 18,
+        "repeated_code": 8,
+        "primary_mismatch": 173,
+        "address_point_outside_linked_parcel": 70,
+        "invalid_parcel": 5
+      }
+    },
+    {
+      "category": "Incomplete/excess summed coverage",
+      "addresses": 2507,
+      "parcels": 1243,
+      "percent": 14.4263,
+      "combinations": [
+        [
+          "p + us19",
+          539
+        ],
+        [
+          "irt + lmdr + mdr + mhdr + o",
+          478
+        ],
+        [
+          "mdr + o",
+          298
+        ],
+        [
+          "i + mdr",
+          196
+        ],
+        [
+          "c + lmdr + mdr + mhp",
+          170
+        ]
+      ],
+      "flags": {
+        "coverage_failure": 2507,
+        "near_complete": 1569,
+        "primary_mismatch": 5,
+        "address_point_outside_linked_parcel": 60,
+        "parcel_peer_hold": 63
+      }
+    },
+    {
+      "category": "Material mapped multi-district / unresolved ambiguity",
+      "addresses": 2401,
+      "parcels": 1694,
+      "percent": 13.8163,
+      "combinations": [
+        [
+          "lmdr + mdr",
+          208
+        ],
+        [
+          "hdr + os/r",
+          166
+        ],
+        [
+          "c + mdr",
+          149
+        ],
+        [
+          "c + hdr + p",
+          129
+        ],
+        [
+          "c + hdr",
+          127
+        ]
+      ],
+      "flags": {
+        "address_point_outside_linked_parcel": 107,
+        "parcel_peer_hold": 210
+      }
+    },
+    {
+      "category": "Invalid source zoning geometry",
+      "addresses": 2354,
+      "parcels": 1620,
+      "percent": 13.5459,
+      "combinations": [
+        [
+          "lmdr + mdr",
+          640
+        ],
+        [
+          "lmdr + mhdr",
+          334
+        ],
+        [
+          "i + lmdr",
+          235
+        ],
+        [
+          "hdr + lmdr + mdr + mhdr",
+          183
+        ],
+        [
+          "lmdr + p",
+          176
+        ]
+      ],
+      "flags": {
+        "invalid_zoning": 2354,
+        "near_complete": 1358,
+        "coverage_failure": 621,
+        "repeated_code": 271,
+        "primary_mismatch": 41,
+        "cross_code_overlap_measured": 218,
+        "same_code_overlap": 105,
+        "address_point_outside_linked_parcel": 4,
+        "parcel_peer_hold": 23
+      }
+    },
+    {
+      "category": "Measured cross-code polygon overlap",
+      "addresses": 1875,
+      "parcels": 798,
+      "percent": 10.7895,
+      "combinations": [
+        [
+          "i + irt + p",
+          397
+        ],
+        [
+          "c + hdr + i + lmdr",
+          276
+        ],
+        [
+          "os/r + p + t",
+          245
+        ],
+        [
+          "mdr + p + us19",
+          133
+        ],
+        [
+          "hdr + os/r + p",
+          113
+        ]
+      ],
+      "flags": {
+        "cross_code_overlap_measured": 1875,
+        "near_complete": 1114,
+        "address_point_outside_linked_parcel": 23,
+        "parcel_peer_hold": 23,
+        "coverage_failure": 206,
+        "primary_mismatch": 10
+      }
+    },
+    {
+      "category": "Overlapping same-code polygons",
+      "addresses": 531,
+      "parcels": 531,
+      "percent": 3.0556,
+      "combinations": [
+        [
+          "p + us19",
+          361
+        ],
+        [
+          "i + lmdr + us19",
+          170
+        ]
+      ],
+      "flags": {
+        "near_complete": 170,
+        "repeated_code": 531,
+        "same_code_overlap": 531,
+        "cross_code_overlap_measured": 361
+      }
+    },
+    {
+      "category": "Repeated non-overlapping same-code polygons",
+      "addresses": 492,
+      "parcels": 134,
+      "percent": 2.8312,
+      "combinations": [
+        [
+          "i + os/r + p + us19",
+          265
+        ],
+        [
+          "c + irt + mdr",
+          110
+        ],
+        [
+          "lmdr + os/r + us19",
+          40
+        ],
+        [
+          "i + p + us19",
+          19
+        ],
+        [
+          "c + mhp",
+          14
+        ]
+      ],
+      "flags": {
+        "near_complete": 169,
+        "repeated_code": 492,
+        "coverage_failure": 63,
+        "cross_code_overlap_measured": 299
+      }
+    },
+    {
+      "category": "Existing primary differs from area dominant",
+      "addresses": 197,
+      "parcels": 168,
+      "percent": 1.1336,
+      "combinations": [
+        [
+          "mdr + p",
+          64
+        ],
+        [
+          "mdr + mhdr",
+          53
+        ],
+        [
+          "lmdr + mdr",
+          17
+        ],
+        [
+          "hdr + os/r",
+          15
+        ],
+        [
+          "d + mdr + o",
+          13
+        ]
+      ],
+      "flags": {
+        "primary_mismatch": 197,
+        "address_point_outside_linked_parcel": 10,
+        "parcel_peer_hold": 10
+      }
+    },
+    {
+      "category": "Address/parcel link failure",
+      "addresses": 112,
+      "parcels": 0,
+      "percent": 0.6445,
+      "combinations": [
+        [
+          "(no measured intersection)",
+          112
+        ]
+      ],
+      "flags": {
+        "link_failure": 112,
+        "missing_primary": 112,
+        "unrelated_profile_issue": 112
+      }
+    },
+    {
+      "category": "Missing primary zoning",
+      "addresses": 57,
+      "parcels": 20,
+      "percent": 0.328,
+      "combinations": [
+        [
+          "p + us19",
+          37
+        ],
+        [
+          "(no measured intersection)",
+          14
+        ],
+        [
+          "c + mdr",
+          2
+        ],
+        [
+          "us19",
+          1
+        ],
+        [
+          "i + p",
+          1
+        ]
+      ],
+      "flags": {
+        "address_point_outside_linked_parcel": 46,
+        "missing_primary": 57,
+        "parcel_peer_hold": 57,
+        "representative_point_inconsistent": 57,
+        "unrelated_profile_issue": 54,
+        "coverage_failure": 42,
+        "primary_mismatch": 43,
+        "invalid_zoning": 1,
+        "cross_code_overlap_measured": 3,
+        "repeated_code": 1
+      }
+    },
+    {
+      "category": "Human interpretation hold",
+      "addresses": 17,
+      "parcels": 9,
+      "percent": 0.0978,
+      "combinations": [
+        [
+          "d + p",
+          8
+        ],
+        [
+          "c + lmdr",
+          3
+        ],
+        [
+          "lmdr + mdr",
+          3
+        ],
+        [
+          "lmdr + p",
+          1
+        ],
+        [
+          "mhdr + p",
+          1
+        ]
+      ],
+      "flags": {
+        "human_hold": 17,
+        "parcel_peer_hold": 17,
+        "primary_mismatch": 3,
+        "coverage_failure": 1,
+        "invalid_zoning": 2,
+        "cross_code_overlap_measured": 1,
+        "repeated_code": 1,
+        "same_code_overlap": 1
+      }
+    },
+    {
+      "category": "Invalid parcel geometry",
+      "addresses": 3,
+      "parcels": 2,
+      "percent": 0.0173,
+      "combinations": [
+        [
+          "i + us19",
+          2
+        ],
+        [
+          "c + d + i + irt + mdr + o + os/r",
+          1
+        ]
+      ],
+      "flags": {
+        "address_point_outside_linked_parcel": 1,
+        "coverage_failure": 2,
+        "invalid_parcel": 3,
+        "near_complete": 2,
+        "parcel_peer_hold": 2,
+        "cross_code_overlap_measured": 1,
+        "repeated_code": 1
+      }
+    }
+  ],
+  "secondaryFlags": {
+    "invalid_zoning": 2375,
+    "near_complete": 9706,
+    "coverage_failure": 3470,
+    "parcel_peer_hold": 3280,
+    "unrelated_profile_issue": 2998,
+    "unsupported": 2832,
+    "human_hold": 17,
+    "repeated_code": 1305,
+    "cross_code_overlap_measured": 2819,
+    "address_point_outside_linked_parcel": 358,
+    "link_failure": 112,
+    "missing_primary": 169,
+    "primary_mismatch": 472,
+    "representative_point_inconsistent": 57,
+    "same_code_overlap": 637,
+    "invalid_parcel": 8
+  },
+  "combinations": [
+    {
+      "combination": "lmdr + mdr",
+      "addresses": 1083,
+      "parcels": 786,
+      "qualityPass": 312,
+      "samePrimaryDominant": 1064
+    },
+    {
+      "combination": "p + us19",
+      "addresses": 940,
+      "parcels": 396,
+      "qualityPass": 0,
+      "samePrimaryDominant": 903
+    },
+    {
+      "combination": "hdrncodislandest + p",
+      "addresses": 726,
+      "parcels": 708,
+      "qualityPass": 0,
+      "samePrimaryDominant": 726
+    },
+    {
+      "combination": "i + mdr",
+      "addresses": 577,
+      "parcels": 104,
+      "qualityPass": 371,
+      "samePrimaryDominant": 577
+    },
+    {
+      "combination": "mdr + o",
+      "addresses": 532,
+      "parcels": 508,
+      "qualityPass": 230,
+      "samePrimaryDominant": 532
+    },
+    {
+      "combination": "i + lmdr",
+      "addresses": 501,
+      "parcels": 453,
+      "qualityPass": 222,
+      "samePrimaryDominant": 500
+    },
+    {
+      "combination": "hdr + lmdr",
+      "addresses": 497,
+      "parcels": 426,
+      "qualityPass": 368,
+      "samePrimaryDominant": 497
+    },
+    {
+      "combination": "c + hdr",
+      "addresses": 489,
+      "parcels": 116,
+      "qualityPass": 463,
+      "samePrimaryDominant": 489
+    },
+    {
+      "combination": "irt + lmdr + mdr + mhdr + o",
+      "addresses": 478,
+      "parcels": 477,
+      "qualityPass": 0,
+      "samePrimaryDominant": 478
+    },
+    {
+      "combination": "i + mhdr",
+      "addresses": 412,
+      "parcels": 387,
+      "qualityPass": 392,
+      "samePrimaryDominant": 410
+    },
+    {
+      "combination": "hdrncodislandest",
+      "addresses": 397,
+      "parcels": 397,
+      "qualityPass": 0,
+      "samePrimaryDominant": 397
+    },
+    {
+      "combination": "i + irt + p",
+      "addresses": 397,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 397
+    },
+    {
+      "combination": "lmdr + mhdr",
+      "addresses": 389,
+      "parcels": 325,
+      "qualityPass": 16,
+      "samePrimaryDominant": 389
+    },
+    {
+      "combination": "hdr + os/r",
+      "addresses": 368,
+      "parcels": 366,
+      "qualityPass": 96,
+      "samePrimaryDominant": 333
+    },
+    {
+      "combination": "lmdrncodislandest + p",
+      "addresses": 303,
+      "parcels": 302,
+      "qualityPass": 0,
+      "samePrimaryDominant": 303
+    },
+    {
+      "combination": "c + hdr + i + lmdr",
+      "addresses": 276,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 276
+    },
+    {
+      "combination": "c + lmdr",
+      "addresses": 275,
+      "parcels": 172,
+      "qualityPass": 96,
+      "samePrimaryDominant": 270
+    },
+    {
+      "combination": "c + i + mdr",
+      "addresses": 273,
+      "parcels": 216,
+      "qualityPass": 271,
+      "samePrimaryDominant": 273
+    },
+    {
+      "combination": "i + os/r + p + us19",
+      "addresses": 270,
+      "parcels": 2,
+      "qualityPass": 0,
+      "samePrimaryDominant": 270
+    },
+    {
+      "combination": "mhdr + os/r",
+      "addresses": 262,
+      "parcels": 115,
+      "qualityPass": 171,
+      "samePrimaryDominant": 172
+    },
+    {
+      "combination": "lmdrncodislandest",
+      "addresses": 261,
+      "parcels": 261,
+      "qualityPass": 0,
+      "samePrimaryDominant": 261
+    },
+    {
+      "combination": "os/r + us19",
+      "addresses": 256,
+      "parcels": 254,
+      "qualityPass": 255,
+      "samePrimaryDominant": 256
+    },
+    {
+      "combination": "os/r + p + t",
+      "addresses": 255,
+      "parcels": 245,
+      "qualityPass": 4,
+      "samePrimaryDominant": 246
+    },
+    {
+      "combination": "c + mhp",
+      "addresses": 237,
+      "parcels": 14,
+      "qualityPass": 137,
+      "samePrimaryDominant": 237
+    },
+    {
+      "combination": "c + irt + mhdr",
+      "addresses": 229,
+      "parcels": 1,
+      "qualityPass": 229,
+      "samePrimaryDominant": 229
+    },
+    {
+      "combination": "lmdrncodcoachmanr",
+      "addresses": 228,
+      "parcels": 228,
+      "qualityPass": 0,
+      "samePrimaryDominant": 228
+    },
+    {
+      "combination": "mdr + mhdr",
+      "addresses": 223,
+      "parcels": 186,
+      "qualityPass": 142,
+      "samePrimaryDominant": 170
+    },
+    {
+      "combination": "lmdr + p",
+      "addresses": 219,
+      "parcels": 216,
+      "qualityPass": 34,
+      "samePrimaryDominant": 182
+    },
+    {
+      "combination": "c + mdr",
+      "addresses": 217,
+      "parcels": 116,
+      "qualityPass": 208,
+      "samePrimaryDominant": 211
+    },
+    {
+      "combination": "c + hdr + i + mdr",
+      "addresses": 211,
+      "parcels": 201,
+      "qualityPass": 211,
+      "samePrimaryDominant": 211
+    },
+    {
+      "combination": "hdr + lmdr + mdr + mhdr",
+      "addresses": 183,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 183
+    },
+    {
+      "combination": "i + lmdr + us19",
+      "addresses": 183,
+      "parcels": 172,
+      "qualityPass": 1,
+      "samePrimaryDominant": 183
+    },
+    {
+      "combination": "c + lmdr + mdr + mhp",
+      "addresses": 170,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 170
+    },
+    {
+      "combination": "os/r + t",
+      "addresses": 166,
+      "parcels": 162,
+      "qualityPass": 160,
+      "samePrimaryDominant": 166
+    },
+    {
+      "combination": "c + o",
+      "addresses": 152,
+      "parcels": 79,
+      "qualityPass": 146,
+      "samePrimaryDominant": 152
+    },
+    {
+      "combination": "ldr + lmdr",
+      "addresses": 147,
+      "parcels": 146,
+      "qualityPass": 104,
+      "samePrimaryDominant": 145
+    },
+    {
+      "combination": "mhdrncodislandest",
+      "addresses": 139,
+      "parcels": 137,
+      "qualityPass": 0,
+      "samePrimaryDominant": 139
+    },
+    {
+      "combination": "c + hdr + o",
+      "addresses": 138,
+      "parcels": 132,
+      "qualityPass": 138,
+      "samePrimaryDominant": 138
+    },
+    {
+      "combination": "hdrncodislandest + mdrncodislandest + mhdrncodislandest + p",
+      "addresses": 135,
+      "parcels": 134,
+      "qualityPass": 0,
+      "samePrimaryDominant": 135
+    },
+    {
+      "combination": "lmdr + mhp",
+      "addresses": 135,
+      "parcels": 51,
+      "qualityPass": 42,
+      "samePrimaryDominant": 135
+    },
+    {
+      "combination": "mdr + p + us19",
+      "addresses": 133,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 133
+    },
+    {
+      "combination": "lmdr + o",
+      "addresses": 131,
+      "parcels": 95,
+      "qualityPass": 65,
+      "samePrimaryDominant": 131
+    },
+    {
+      "combination": "(no measured intersection)",
+      "addresses": 130,
+      "parcels": 17,
+      "qualityPass": 0,
+      "samePrimaryDominant": 0
+    },
+    {
+      "combination": "c + hdr + p",
+      "addresses": 129,
+      "parcels": 129,
+      "qualityPass": 123,
+      "samePrimaryDominant": 129
+    },
+    {
+      "combination": "hdrncodislandest + os/r + p",
+      "addresses": 127,
+      "parcels": 126,
+      "qualityPass": 0,
+      "samePrimaryDominant": 127
+    },
+    {
+      "combination": "hdr + os/r + p",
+      "addresses": 124,
+      "parcels": 120,
+      "qualityPass": 5,
+      "samePrimaryDominant": 115
+    },
+    {
+      "combination": "mdr + mhp",
+      "addresses": 118,
+      "parcels": 30,
+      "qualityPass": 27,
+      "samePrimaryDominant": 118
+    },
+    {
+      "combination": "mhdrncodislandest + p",
+      "addresses": 112,
+      "parcels": 104,
+      "qualityPass": 0,
+      "samePrimaryDominant": 111
+    },
+    {
+      "combination": "c + irt + mdr",
+      "addresses": 110,
+      "parcels": 110,
+      "qualityPass": 0,
+      "samePrimaryDominant": 110
+    },
+    {
+      "combination": "hdr + mdr",
+      "addresses": 109,
+      "parcels": 5,
+      "qualityPass": 0,
+      "samePrimaryDominant": 109
+    },
+    {
+      "combination": "ldr + mdr + p",
+      "addresses": 106,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 106
+    },
+    {
+      "combination": "mdr + us19",
+      "addresses": 105,
+      "parcels": 56,
+      "qualityPass": 22,
+      "samePrimaryDominant": 105
+    },
+    {
+      "combination": "c + mdr + mhp",
+      "addresses": 99,
+      "parcels": 2,
+      "qualityPass": 13,
+      "samePrimaryDominant": 99
+    },
+    {
+      "combination": "lmdr + os/r",
+      "addresses": 94,
+      "parcels": 93,
+      "qualityPass": 0,
+      "samePrimaryDominant": 94
+    },
+    {
+      "combination": "os/r + p + us19",
+      "addresses": 90,
+      "parcels": 3,
+      "qualityPass": 90,
+      "samePrimaryDominant": 89
+    },
+    {
+      "combination": "mdr + os/r + p",
+      "addresses": 85,
+      "parcels": 83,
+      "qualityPass": 1,
+      "samePrimaryDominant": 44
+    },
+    {
+      "combination": "mdr + p",
+      "addresses": 81,
+      "parcels": 80,
+      "qualityPass": 81,
+      "samePrimaryDominant": 17
+    },
+    {
+      "combination": "hdr + o",
+      "addresses": 79,
+      "parcels": 74,
+      "qualityPass": 77,
+      "samePrimaryDominant": 79
+    },
+    {
+      "combination": "hdr + lmdr + o",
+      "addresses": 73,
+      "parcels": 71,
+      "qualityPass": 0,
+      "samePrimaryDominant": 73
+    },
+    {
+      "combination": "lmdr + mdr + mhp",
+      "addresses": 71,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 71
+    },
+    {
+      "combination": "irt + mdr",
+      "addresses": 70,
+      "parcels": 59,
+      "qualityPass": 6,
+      "samePrimaryDominant": 70
+    },
+    {
+      "combination": "c + i",
+      "addresses": 59,
+      "parcels": 35,
+      "qualityPass": 55,
+      "samePrimaryDominant": 59
+    },
+    {
+      "combination": "hdr + mdrncodislandest + p",
+      "addresses": 56,
+      "parcels": 56,
+      "qualityPass": 0,
+      "samePrimaryDominant": 56
+    },
+    {
+      "combination": "d + hdr + i + p",
+      "addresses": 54,
+      "parcels": 54,
+      "qualityPass": 54,
+      "samePrimaryDominant": 54
+    },
+    {
+      "combination": "hdr + p",
+      "addresses": 54,
+      "parcels": 54,
+      "qualityPass": 36,
+      "samePrimaryDominant": 53
+    },
+    {
+      "combination": "c + mdr + o",
+      "addresses": 53,
+      "parcels": 23,
+      "qualityPass": 50,
+      "samePrimaryDominant": 53
+    },
+    {
+      "combination": "ldr + os/r",
+      "addresses": 52,
+      "parcels": 51,
+      "qualityPass": 45,
+      "samePrimaryDominant": 51
+    },
+    {
+      "combination": "ldr + mdr",
+      "addresses": 43,
+      "parcels": 40,
+      "qualityPass": 37,
+      "samePrimaryDominant": 43
+    },
+    {
+      "combination": "hdr + i + lmdr",
+      "addresses": 41,
+      "parcels": 40,
+      "qualityPass": 0,
+      "samePrimaryDominant": 41
+    },
+    {
+      "combination": "i + mdr + p",
+      "addresses": 41,
+      "parcels": 40,
+      "qualityPass": 0,
+      "samePrimaryDominant": 41
+    },
+    {
+      "combination": "os/r",
+      "addresses": 41,
+      "parcels": 22,
+      "qualityPass": 0,
+      "samePrimaryDominant": 41
+    },
+    {
+      "combination": "lmdr + os/r + us19",
+      "addresses": 40,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 40
+    },
+    {
+      "combination": "i + mdr + o",
+      "addresses": 39,
+      "parcels": 2,
+      "qualityPass": 39,
+      "samePrimaryDominant": 39
+    },
+    {
+      "combination": "hdr + lmdr + os/r + p",
+      "addresses": 38,
+      "parcels": 38,
+      "qualityPass": 0,
+      "samePrimaryDominant": 38
+    },
+    {
+      "combination": "lmdr + mdr + p",
+      "addresses": 36,
+      "parcels": 26,
+      "qualityPass": 34,
+      "samePrimaryDominant": 36
+    },
+    {
+      "combination": "c + lmdr + mdr + o",
+      "addresses": 35,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 35
+    },
+    {
+      "combination": "c + os/r",
+      "addresses": 35,
+      "parcels": 20,
+      "qualityPass": 28,
+      "samePrimaryDominant": 35
+    },
+    {
+      "combination": "lmdr + mdr + os/r",
+      "addresses": 34,
+      "parcels": 30,
+      "qualityPass": 21,
+      "samePrimaryDominant": 34
+    },
+    {
+      "combination": "p + t",
+      "addresses": 34,
+      "parcels": 32,
+      "qualityPass": 13,
+      "samePrimaryDominant": 34
+    },
+    {
+      "combination": "c + mhdr",
+      "addresses": 32,
+      "parcels": 14,
+      "qualityPass": 31,
+      "samePrimaryDominant": 32
+    },
+    {
+      "combination": "i + o",
+      "addresses": 31,
+      "parcels": 22,
+      "qualityPass": 30,
+      "samePrimaryDominant": 31
+    },
+    {
+      "combination": "lmdr + os/r + p",
+      "addresses": 31,
+      "parcels": 29,
+      "qualityPass": 16,
+      "samePrimaryDominant": 26
+    },
+    {
+      "combination": "lmdr + t",
+      "addresses": 30,
+      "parcels": 29,
+      "qualityPass": 30,
+      "samePrimaryDominant": 30
+    },
+    {
+      "combination": "lmdr + us19",
+      "addresses": 30,
+      "parcels": 30,
+      "qualityPass": 24,
+      "samePrimaryDominant": 30
+    },
+    {
+      "combination": "mdrncodislandest",
+      "addresses": 30,
+      "parcels": 30,
+      "qualityPass": 0,
+      "samePrimaryDominant": 30
+    },
+    {
+      "combination": "mhdr + o",
+      "addresses": 30,
+      "parcels": 13,
+      "qualityPass": 25,
+      "samePrimaryDominant": 30
+    },
+    {
+      "combination": "i + ldr",
+      "addresses": 29,
+      "parcels": 26,
+      "qualityPass": 18,
+      "samePrimaryDominant": 28
+    },
+    {
+      "combination": "d + p",
+      "addresses": 28,
+      "parcels": 10,
+      "qualityPass": 18,
+      "samePrimaryDominant": 20
+    },
+    {
+      "combination": "i + lmdr + o",
+      "addresses": 28,
+      "parcels": 26,
+      "qualityPass": 17,
+      "samePrimaryDominant": 28
+    },
+    {
+      "combination": "c + i + lmdr",
+      "addresses": 26,
+      "parcels": 5,
+      "qualityPass": 1,
+      "samePrimaryDominant": 26
+    },
+    {
+      "combination": "mdr",
+      "addresses": 25,
+      "parcels": 5,
+      "qualityPass": 0,
+      "samePrimaryDominant": 25
+    },
+    {
+      "combination": "c + lmdr + mdr",
+      "addresses": 23,
+      "parcels": 18,
+      "qualityPass": 2,
+      "samePrimaryDominant": 23
+    },
+    {
+      "combination": "i + lmdr + mhdr + o",
+      "addresses": 23,
+      "parcels": 18,
+      "qualityPass": 0,
+      "samePrimaryDominant": 23
+    },
+    {
+      "combination": "i + p + us19",
+      "addresses": 23,
+      "parcels": 3,
+      "qualityPass": 1,
+      "samePrimaryDominant": 23
+    },
+    {
+      "combination": "hdr + mhdr",
+      "addresses": 22,
+      "parcels": 22,
+      "qualityPass": 22,
+      "samePrimaryDominant": 22
+    },
+    {
+      "combination": "lmdr",
+      "addresses": 22,
+      "parcels": 22,
+      "qualityPass": 0,
+      "samePrimaryDominant": 22
+    },
+    {
+      "combination": "mdr + t",
+      "addresses": 22,
+      "parcels": 20,
+      "qualityPass": 22,
+      "samePrimaryDominant": 22
+    },
+    {
+      "combination": "c + hdr + mdr",
+      "addresses": 21,
+      "parcels": 21,
+      "qualityPass": 21,
+      "samePrimaryDominant": 21
+    },
+    {
+      "combination": "o + p",
+      "addresses": 20,
+      "parcels": 20,
+      "qualityPass": 1,
+      "samePrimaryDominant": 20
+    },
+    {
+      "combination": "i + irt",
+      "addresses": 19,
+      "parcels": 13,
+      "qualityPass": 14,
+      "samePrimaryDominant": 19
+    },
+    {
+      "combination": "irt + o",
+      "addresses": 19,
+      "parcels": 4,
+      "qualityPass": 19,
+      "samePrimaryDominant": 19
+    },
+    {
+      "combination": "c + irt",
+      "addresses": 17,
+      "parcels": 11,
+      "qualityPass": 17,
+      "samePrimaryDominant": 16
+    },
+    {
+      "combination": "ldr + p",
+      "addresses": 17,
+      "parcels": 17,
+      "qualityPass": 8,
+      "samePrimaryDominant": 12
+    },
+    {
+      "combination": "lmdr + mdr + o + p",
+      "addresses": 17,
+      "parcels": 16,
+      "qualityPass": 0,
+      "samePrimaryDominant": 17
+    },
+    {
+      "combination": "c",
+      "addresses": 16,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 16
+    },
+    {
+      "combination": "c + lmdr + mhp",
+      "addresses": 16,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 16
+    },
+    {
+      "combination": "c + hdr + mhp",
+      "addresses": 15,
+      "parcels": 3,
+      "qualityPass": 14,
+      "samePrimaryDominant": 15
+    },
+    {
+      "combination": "c + lmdr + o",
+      "addresses": 14,
+      "parcels": 10,
+      "qualityPass": 3,
+      "samePrimaryDominant": 14
+    },
+    {
+      "combination": "d + mdr + o",
+      "addresses": 14,
+      "parcels": 3,
+      "qualityPass": 14,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "i + lmdrncodcoachmanr",
+      "addresses": 14,
+      "parcels": 14,
+      "qualityPass": 0,
+      "samePrimaryDominant": 14
+    },
+    {
+      "combination": "c + hdr + os/r",
+      "addresses": 13,
+      "parcels": 10,
+      "qualityPass": 12,
+      "samePrimaryDominant": 13
+    },
+    {
+      "combination": "c + i + o",
+      "addresses": 13,
+      "parcels": 6,
+      "qualityPass": 8,
+      "samePrimaryDominant": 13
+    },
+    {
+      "combination": "hdrncodislandest + mhdrncodislandest + p",
+      "addresses": 13,
+      "parcels": 12,
+      "qualityPass": 0,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "i + os/r",
+      "addresses": 13,
+      "parcels": 8,
+      "qualityPass": 2,
+      "samePrimaryDominant": 13
+    },
+    {
+      "combination": "hdr + mdr + o",
+      "addresses": 12,
+      "parcels": 12,
+      "qualityPass": 12,
+      "samePrimaryDominant": 12
+    },
+    {
+      "combination": "hdr + mdrncodislandest",
+      "addresses": 12,
+      "parcels": 12,
+      "qualityPass": 0,
+      "samePrimaryDominant": 12
+    },
+    {
+      "combination": "i + us19",
+      "addresses": 12,
+      "parcels": 9,
+      "qualityPass": 6,
+      "samePrimaryDominant": 12
+    },
+    {
+      "combination": "i + lmdr + mdr",
+      "addresses": 11,
+      "parcels": 8,
+      "qualityPass": 2,
+      "samePrimaryDominant": 11
+    },
+    {
+      "combination": "c + d",
+      "addresses": 10,
+      "parcels": 5,
+      "qualityPass": 8,
+      "samePrimaryDominant": 10
+    },
+    {
+      "combination": "c + irt + o",
+      "addresses": 10,
+      "parcels": 1,
+      "qualityPass": 10,
+      "samePrimaryDominant": 10
+    },
+    {
+      "combination": "i + mdr + mhdr",
+      "addresses": 10,
+      "parcels": 1,
+      "qualityPass": 10,
+      "samePrimaryDominant": 10
+    },
+    {
+      "combination": "incodislandest + mdrncodislandest",
+      "addresses": 10,
+      "parcels": 10,
+      "qualityPass": 0,
+      "samePrimaryDominant": 10
+    },
+    {
+      "combination": "d + lmdr",
+      "addresses": 9,
+      "parcels": 6,
+      "qualityPass": 8,
+      "samePrimaryDominant": 9
+    },
+    {
+      "combination": "ldr + os/r + p",
+      "addresses": 9,
+      "parcels": 9,
+      "qualityPass": 2,
+      "samePrimaryDominant": 7
+    },
+    {
+      "combination": "mdr + mhdr + os/r",
+      "addresses": 8,
+      "parcels": 8,
+      "qualityPass": 8,
+      "samePrimaryDominant": 8
+    },
+    {
+      "combination": "c + lmdr + mhdr",
+      "addresses": 7,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 7
+    },
+    {
+      "combination": "i + irt + o",
+      "addresses": 7,
+      "parcels": 1,
+      "qualityPass": 7,
+      "samePrimaryDominant": 7
+    },
+    {
+      "combination": "i + mdr + os/r",
+      "addresses": 7,
+      "parcels": 5,
+      "qualityPass": 3,
+      "samePrimaryDominant": 7
+    },
+    {
+      "combination": "ldrncodcoachmanr",
+      "addresses": 7,
+      "parcels": 7,
+      "qualityPass": 0,
+      "samePrimaryDominant": 7
+    },
+    {
+      "combination": "d + mdr",
+      "addresses": 6,
+      "parcels": 5,
+      "qualityPass": 4,
+      "samePrimaryDominant": 6
+    },
+    {
+      "combination": "i + lmdr + os/r",
+      "addresses": 6,
+      "parcels": 5,
+      "qualityPass": 0,
+      "samePrimaryDominant": 6
+    },
+    {
+      "combination": "irt + mhdr",
+      "addresses": 6,
+      "parcels": 5,
+      "qualityPass": 6,
+      "samePrimaryDominant": 6
+    },
+    {
+      "combination": "ldrncodcoachmanr + lmdrncodcoachmanr",
+      "addresses": 6,
+      "parcels": 6,
+      "qualityPass": 0,
+      "samePrimaryDominant": 6
+    },
+    {
+      "combination": "d + i + lmdr",
+      "addresses": 5,
+      "parcels": 1,
+      "qualityPass": 5,
+      "samePrimaryDominant": 5
+    },
+    {
+      "combination": "lmdr + p + t",
+      "addresses": 5,
+      "parcels": 4,
+      "qualityPass": 3,
+      "samePrimaryDominant": 5
+    },
+    {
+      "combination": "mdr + os/r",
+      "addresses": 5,
+      "parcels": 3,
+      "qualityPass": 0,
+      "samePrimaryDominant": 5
+    },
+    {
+      "combination": "os/r + p",
+      "addresses": 5,
+      "parcels": 4,
+      "qualityPass": 0,
+      "samePrimaryDominant": 5
+    },
+    {
+      "combination": "i + lmdr + p",
+      "addresses": 4,
+      "parcels": 3,
+      "qualityPass": 2,
+      "samePrimaryDominant": 4
+    },
+    {
+      "combination": "i + p",
+      "addresses": 4,
+      "parcels": 3,
+      "qualityPass": 2,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "i + t",
+      "addresses": 4,
+      "parcels": 4,
+      "qualityPass": 4,
+      "samePrimaryDominant": 4
+    },
+    {
+      "combination": "ldr + lmdr + p",
+      "addresses": 4,
+      "parcels": 4,
+      "qualityPass": 3,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "ldr + mdr + os/r",
+      "addresses": 4,
+      "parcels": 2,
+      "qualityPass": 0,
+      "samePrimaryDominant": 4
+    },
+    {
+      "combination": "lmdr + mdr + o",
+      "addresses": 4,
+      "parcels": 1,
+      "qualityPass": 4,
+      "samePrimaryDominant": 4
+    },
+    {
+      "combination": "c + hdr + mdr + o",
+      "addresses": 3,
+      "parcels": 1,
+      "qualityPass": 3,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "c + i + ldr + os/r + p",
+      "addresses": 3,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "c + lmdr + os/r",
+      "addresses": 3,
+      "parcels": 3,
+      "qualityPass": 0,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "c + p",
+      "addresses": 3,
+      "parcels": 2,
+      "qualityPass": 0,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "hdr + i",
+      "addresses": 3,
+      "parcels": 1,
+      "qualityPass": 3,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "hdr + mdr + p",
+      "addresses": 3,
+      "parcels": 2,
+      "qualityPass": 2,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "hdr + os/r + p + t",
+      "addresses": 3,
+      "parcels": 2,
+      "qualityPass": 0,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "i + lmdr + mdr + os/r",
+      "addresses": 3,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "i + os/r + us19",
+      "addresses": 3,
+      "parcels": 2,
+      "qualityPass": 1,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "irt + os/r",
+      "addresses": 3,
+      "parcels": 2,
+      "qualityPass": 3,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "ldr + lmdr + mdr + os/r",
+      "addresses": 3,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "ldr + lmdr + os/r",
+      "addresses": 3,
+      "parcels": 3,
+      "qualityPass": 2,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "lmdr + mdr + mhdr + p",
+      "addresses": 3,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "mdr + p + t",
+      "addresses": 3,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 3
+    },
+    {
+      "combination": "c + i + irt",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "c + i + os/r + p",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 2,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "c + lmdr + o + os/r",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "c + mhdrncodislandest + p",
+      "addresses": 2,
+      "parcels": 2,
+      "qualityPass": 1,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "c + o + p",
+      "addresses": 2,
+      "parcels": 2,
+      "qualityPass": 1,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "d + lmdr + p",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "hdr + i + mhp + o",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 2,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "hdr + ldr",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "hdr + mhp",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 2,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "i + irt + o + p",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 2,
+      "samePrimaryDominant": 0
+    },
+    {
+      "combination": "i + ldr + lmdr + os/r",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "i + ldr + mdr",
+      "addresses": 2,
+      "parcels": 2,
+      "qualityPass": 1,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "i + ldr + o",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "i + lmdr + o + os/r",
+      "addresses": 2,
+      "parcels": 2,
+      "qualityPass": 0,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "i + os/r + p + t",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "ldr + ldrncodcoachmanr",
+      "addresses": 2,
+      "parcels": 2,
+      "qualityPass": 1,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "ldr + mhdr",
+      "addresses": 2,
+      "parcels": 2,
+      "qualityPass": 1,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "lmdr + mdr + mhdr",
+      "addresses": 2,
+      "parcels": 2,
+      "qualityPass": 2,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "lmdr + mdr + os/r + p + us19",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 2
+    },
+    {
+      "combination": "mdr + o + p",
+      "addresses": 2,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 0
+    },
+    {
+      "combination": "c + d + i + irt + mdr + o + os/r",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "c + d + lmdr",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "c + hdr + i",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 1,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "c + hdr + lmdr",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 0
+    },
+    {
+      "combination": "c + i + lmdr + o",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "c + i + mdr + o",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "c + mdr + os/r",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "c + mhdr + o",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 1,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "c + os/r + p",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 1,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "c + os/r + us19",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "d + i",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 1,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "hdr",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "hdr + hdrncodislandest + incodislandest + mdrncodislandest + p",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "hdr + i + lmdr + o",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "hdr + i + mdr",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "hdr + lmdr + mhdr",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "hdr + t",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 1,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "hdrncodislandest + lmdrncodislandest",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "hdrncodislandest + mhdrncodislandest",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "i + ldr + lmdr",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 1,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "i + ldr + lmdr + os/r + p",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "i + ldr + lmdr + p",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 1,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "i + ldr + os/r + p",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "i + ldr + p",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 0
+    },
+    {
+      "combination": "i + lmdr + mhdr",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 1,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "i + lmdr + mhp",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "i + mhdr + os/r",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "i + o + p",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "i + os/r + p",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "irt + lmdr + os/r",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "ldr + lmdr + os/r + p",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "ldr + mhdr + o",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "ldr + o",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "ldr + p + us19",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "lmdr + mdr + t",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 1,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "lmdr + mhdr + o",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "lmdr + mhdr + os/r",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "lmdr + o + p",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 0
+    },
+    {
+      "combination": "mhdr + p",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 0
+    },
+    {
+      "combination": "t",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 1
+    },
+    {
+      "combination": "us19",
+      "addresses": 1,
+      "parcels": 1,
+      "qualityPass": 0,
+      "samePrimaryDominant": 0
+    }
+  ],
+  "opportunities": [
+    {
+      "opportunity": "Authoritative invalid zoning geometry replacement",
+      "addresses": 2355,
+      "parcels": 1621,
+      "qualityPass": 0,
+      "qualityParcels": 0
+    },
+    {
+      "opportunity": "Coverage and cross-code topology reconciliation",
+      "addresses": 2753,
+      "parcels": 1326,
+      "qualityPass": 0,
+      "qualityParcels": 0
+    },
+    {
+      "opportunity": "Material splits and remaining classification conflicts",
+      "addresses": 3921,
+      "parcels": 2244,
+      "qualityPass": 1926,
+      "qualityParcels": 1346
+    },
+    {
+      "opportunity": "NCOD and unsupported-code support",
+      "addresses": 2827,
+      "parcels": 2675,
+      "qualityPass": 0,
+      "qualityParcels": 0
+    },
+    {
+      "opportunity": "Near-complete primary, mixed-use district pairs",
+      "addresses": 1879,
+      "parcels": 1052,
+      "qualityPass": 1879,
+      "qualityParcels": 1052
+    },
+    {
+      "opportunity": "Near-complete primary, residential district pairs",
+      "addresses": 603,
+      "parcels": 571,
+      "qualityPass": 603,
+      "qualityParcels": 571
+    },
+    {
+      "opportunity": "Near-complete primary, three or more districts",
+      "addresses": 917,
+      "parcels": 555,
+      "qualityPass": 917,
+      "qualityParcels": 555
+    },
+    {
+      "opportunity": "Previously investigated Rule 001 changed/new-code scope",
+      "addresses": 202,
+      "parcels": 184,
+      "qualityPass": 193,
+      "qualityParcels": 179
+    },
+    {
+      "opportunity": "Remaining exact OS/R pairs",
+      "addresses": 760,
+      "parcels": 662,
+      "qualityPass": 760,
+      "qualityParcels": 662
+    },
+    {
+      "opportunity": "Same-code polygon identity / union investigation",
+      "addresses": 1024,
+      "parcels": 666,
+      "qualityPass": 0,
+      "qualityParcels": 0
+    },
+    {
+      "opportunity": "outside_top10_holds",
+      "addresses": 137,
+      "parcels": 12,
+      "qualityPass": 0,
+      "qualityParcels": 0
+    }
+  ],
+  "analysisScriptSha256": "2679b39fca605ae98d95cfc10456bff81aaf7fbcd0fe2c0fada8c66b2fe68fc4",
+  "baseCommit": "ee1ce8ae1805985fdaa599ec1547cd1890f8b40c",
+  "pythonGeometryVersion": "2.1.2",
+  "schemaNotes": "Primary category first-match precedence in script. Categories mutually exclusive by address; distinct parcel counts are not additive. Quality screen is technical only, not eligibility or legal approval. Supplemental geometric areas local equirectangular approximation at 27.97N; established diagnostic percentages retained unchanged."
+}

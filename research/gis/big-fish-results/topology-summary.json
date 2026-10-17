@@ -1,0 +1,13 @@
+{
+  "zoningFeatures": 761,
+  "shapelyInvalidZoningFeatures": 4,
+  "uniqueCanonicalZoningFootprints": 761,
+  "exactDuplicateZoningGeometryGroups": [],
+  "note": "Exact duplicate geometry is distinct from repeated normalized district codes; no polygon is removed. Different IDs with equal geometry do not establish identical legal meaning.",
+  "summedCoveragePassButUnionBelow99_9Addresses": 0,
+  "summedCoveragePassButUnionBelow99_9ParcelIds": 0,
+  "maskedCoverageExamples": [],
+  "unresolvedParcelIds": 11568,
+  "parcelIdsWithMultipleSourceFeatures": 0,
+  "duplicateZoningGeometryAffectedUnresolvedAddresses": 0
+}

@@ -1,0 +1,95 @@
+{
+  "definition": "Existing HDR; exact HDR + LMDR; HDR >=99%; enhanced screen true",
+  "addresses": 364,
+  "parcelIds": 364,
+  "footprints": 2,
+  "percentAddressQuantiles": {
+    "0": 0.094078,
+    "25": 0.094078,
+    "50": 0.094078,
+    "75": 0.094078,
+    "90": 0.094078,
+    "95": 0.094078,
+    "99": 0.094078,
+    "100": 0.094078
+  },
+  "areaAddressQuantilesM2": {
+    "0": 22.759,
+    "25": 22.759,
+    "50": 22.759,
+    "75": 22.759,
+    "90": 22.759,
+    "95": 22.759,
+    "99": 22.759,
+    "100": 22.759
+  },
+  "percentParcelQuantiles": {
+    "0": 0.094078,
+    "25": 0.094078,
+    "50": 0.094078,
+    "75": 0.094078,
+    "90": 0.094078,
+    "95": 0.094078,
+    "99": 0.094078,
+    "100": 0.094078
+  },
+  "percentFootprintQuantiles": {
+    "0": 0.094078,
+    "25": 0.094078,
+    "50": 0.094078,
+    "75": 0.094078,
+    "90": 0.094078,
+    "95": 0.094078,
+    "99": 0.094078,
+    "100": 0.094078
+  },
+  "areaParcelQuantilesM2": {
+    "0": 22.759,
+    "25": 22.759,
+    "50": 22.759,
+    "75": 22.759,
+    "90": 22.759,
+    "95": 22.759,
+    "99": 22.759,
+    "100": 22.759
+  },
+  "areaFootprintQuantilesM2": {
+    "0": 22.759,
+    "25": 22.759,
+    "50": 22.759,
+    "75": 22.759,
+    "90": 22.759,
+    "95": 22.759,
+    "99": 22.759,
+    "100": 22.759
+  },
+  "bins": [
+    {
+      "range": ">0\u20130.1%",
+      "addresses": 364,
+      "parcelIds": 364,
+      "footprints": 2
+    },
+    {
+      "range": ">0.1\u20130.25%",
+      "addresses": 0,
+      "parcelIds": 0,
+      "footprints": 0
+    },
+    {
+      "range": ">0.25\u20130.5%",
+      "addresses": 0,
+      "parcelIds": 0,
+      "footprints": 0
+    },
+    {
+      "range": ">0.5\u20131%",
+      "addresses": 0,
+      "parcelIds": 0,
+      "footprints": 0
+    }
+  ],
+  "sourceLookupSha256": "cdb14957486a6665cd4367edce9136df8bf2f01053fc2c0ea62ef4ee0cbbbbb2",
+  "candidateMembershipSha256": "20b609d478773b645c6f840735c6d23de9ec129a75cebe5d789c78283529d903",
+  "outsideScopeAddresses": 133
+}

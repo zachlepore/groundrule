@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "sourceProfiles": 63430,
+  "existingGisTestsPassed": 82,
+  "analysisUnitTestsPassed": 10,
+  "failedOrSkippedTests": 0,
+  "remainingReview": 17378,
+  "remainingNonNullParcelIds": 11568,
+  "unlinkedAddresses": 112,
+  "approvedRecordsExcluded": 2960,
+  "rule004ResearchCandidates": 364,
+  "rule004NewApprovals": 0,
+  "csvAddressIdentityMembershipVerified": true,
+  "csvZoningStatusParcelAgainstFrozenProfilesVerified": true,
+  "categoryAndOpportunityPartitionVerified": true,
+  "rawAnalysisChecksumsVerified": true,
+  "originalFieldsChanged": 0,
+  "existingApprovalChanges": 0,
+  "method": "Independent CSV/source/approved-lookup joins, identity set differences and checksums; full source-original-field equality also asserted during analysis."
+}

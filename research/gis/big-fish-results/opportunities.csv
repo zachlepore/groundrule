@@ -1,0 +1,12 @@
+opportunity,addresses,parcels,qualityPass,qualityParcels
+Authoritative invalid zoning geometry replacement,2355,1621,0,0
+Coverage and cross-code topology reconciliation,2753,1326,0,0
+Material splits and remaining classification conflicts,3921,2244,1926,1346
+NCOD and unsupported-code support,2827,2675,0,0
+"Near-complete primary, mixed-use district pairs",1879,1052,1879,1052
+"Near-complete primary, residential district pairs",603,571,603,571
+"Near-complete primary, three or more districts",917,555,917,555
+Previously investigated Rule 001 changed/new-code scope,202,184,193,179
+Remaining exact OS/R pairs,760,662,760,662
+Same-code polygon identity / union investigation,1024,666,0,0
+outside_top10_holds,137,12,0,0

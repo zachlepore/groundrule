@@ -1,0 +1,229 @@
+{
+  "nearCompleteAddresses": 9706,
+  "enhancedQcPassAddresses": 6278,
+  "secondaryWithin1mAddresses": 7749,
+  "secondaryBeyond1mAddresses": 587,
+  "unsupportedCodeCounts": {
+    "LMDR-NCOD Island Est": 565,
+    "LMDR-NCOD Coachman R": 242,
+    "HDR-NCOD Island Est": 1385,
+    "OS/R": 308,
+    "MHDR-NCOD Island Est": 266,
+    "I-NCOD Island Est": 1,
+    "MDR-NCOD Island Est": 52,
+    "LDR-NCOD Coachman R": 13
+  },
+  "pureUnsupportedAddresses": 1073,
+  "concentrations": [
+    {
+      "footprint": "f9941161b21024e28e00876ae68eeef3e0a5d22282d4c38e8ad50eb892c54247",
+      "addresses": 397,
+      "parcelIds": 1,
+      "example": "2720 REGENCY OAKS BLVD",
+      "combination": "i + irt + p"
+    },
+    {
+      "footprint": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "addresses": 363,
+      "parcelIds": 363,
+      "example": "880 MANDALAY AVE UNIT C-609",
+      "combination": "hdr + lmdr"
+    },
+    {
+      "footprint": "ae55d57f18e0e45e86b879af0e2d55536acbd2ba53f5be176d8acb45877ca17a",
+      "addresses": 303,
+      "parcelIds": 17,
+      "example": "2620 BUTTERFLY DR",
+      "combination": "p + us19"
+    },
+    {
+      "footprint": "db287cb9697cf60ccdc6cea0cf004f5168f82f09ff58c0dd4351bba7e8c036e7",
+      "addresses": 297,
+      "parcelIds": 297,
+      "example": "2225 NURSERY RD UNIT 4-105",
+      "combination": "mdr + o"
+    },
+    {
+      "footprint": "cd5c0191d6a62f359f1998d0725f57f844a09ff63889ab4c0af404127d9dccdb",
+      "addresses": 276,
+      "parcelIds": 1,
+      "example": "1099 MCMULLEN BOOTH RD",
+      "combination": "c + hdr + i + lmdr"
+    },
+    {
+      "footprint": "0dd3ea4bcf3ee3073dbdc00934a5cea59e0bbc54a8d8ec9a5089d3d1878ce30d",
+      "addresses": 265,
+      "parcelIds": 1,
+      "example": "2545 NE COACHMAN RD",
+      "combination": "i + os/r + p + us19"
+    },
+    {
+      "footprint": "ba74dcbc346013e4fa91605449fa25a49cc9d1a03bb68d0b8c2bd979964da4e7",
+      "addresses": 261,
+      "parcelIds": 260,
+      "example": "2965 FLINT DR N",
+      "combination": "irt + lmdr + mdr + mhdr + o"
+    },
+    {
+      "footprint": "c11c0790e9c8a314c6d1e6251115d31ecdca6c8a3a8e6e06c068c06bf23e37be",
+      "addresses": 245,
+      "parcelIds": 245,
+      "example": "2625 SR 590 UNIT 2814",
+      "combination": "os/r + us19"
+    },
+    {
+      "footprint": "43ed9203d7296f2625d46283278fd06011ab4e067ff7a1390ba3122b1fa0e9a2",
+      "addresses": 235,
+      "parcelIds": 235,
+      "example": "440 S GULFVIEW BLVD UNIT 304",
+      "combination": "os/r + p + t"
+    },
+    {
+      "footprint": "fe0af3f215bb1dd0e49a6f66fe1768acf8d5401853fac6d7022f51ae2723f406",
+      "addresses": 229,
+      "parcelIds": 1,
+      "example": "3021 SR 590",
+      "combination": "c + irt + mhdr"
+    },
+    {
+      "footprint": "84dd4d3b1cf87ba1976f000427c0109d856be47a3132529a2ca78885cf8f66ff",
+      "addresses": 219,
+      "parcelIds": 1,
+      "example": "2909 GULF TO BAY BLVD",
+      "combination": "p + us19"
+    },
+    {
+      "footprint": "880a41edc98dc22a65b7fb8ed5f6eb17419c75bc900721f01681ac2447c4ac43",
+      "addresses": 217,
+      "parcelIds": 217,
+      "example": "1389 MISSION HILLS BLVD",
+      "combination": "irt + lmdr + mdr + mhdr + o"
+    },
+    {
+      "footprint": "7d4a30eb55782f36d96e06559b131b596133a3c94240ea1461ce9b7552544a5a",
+      "addresses": 217,
+      "parcelIds": 1,
+      "example": "655 FAIRWOOD AVE APT 331",
+      "combination": "i + mdr"
+    },
+    {
+      "footprint": "60c3ec028b824bc4b60818f8be1ee1b92fab80ca95b3efcff49db5a19b430599",
+      "addresses": 217,
+      "parcelIds": 1,
+      "example": "1121 DRUID RD APT 105",
+      "combination": "c + hdr"
+    },
+    {
+      "footprint": "2bae31b395c6e108da875adfb56d117fa93d89d9e94f92f17bfab22bf186d2a0",
+      "addresses": 211,
+      "parcelIds": 201,
+      "example": "1222 S MISSOURI AVE UNIT 822",
+      "combination": "c + hdr + i + mdr"
+    },
+    {
+      "footprint": "be78c91d7ab7a83fd383131ae5a7ac56c4449906f1c2f9a7f13642fde3cb404c",
+      "addresses": 196,
+      "parcelIds": 196,
+      "example": "18675 US HIGHWAY 19 N LOT 401",
+      "combination": "p + us19"
+    },
+    {
+      "footprint": "8e2a1a4fcbdf98d0d2dac2e6b2be2141cca78aa712ab51877f9de8cfa3fa76f4",
+      "addresses": 193,
+      "parcelIds": 1,
+      "example": "2411 NE COACHMAN RD",
+      "combination": "i + mdr"
+    },
+    {
+      "footprint": "6b4f1595696c1030a15a99330254059158d703ecabda55ed6861efb0f9270e49",
+      "addresses": 185,
+      "parcelIds": 185,
+      "example": "1799 N HIGHLAND AVE UNIT F92",
+      "combination": "lmdr + mhdr"
+    },
+    {
+      "footprint": "16a391e2d3b6a1c452b7656cd440f850545341298e21b503d2469a872e4f8f31",
+      "addresses": 184,
+      "parcelIds": 184,
+      "example": "400 ISLAND WAY UNIT 609",
+      "combination": "hdrncodislandest"
+    },
+    {
+      "footprint": "22320042770eff01b3bac2af2268e7c7b324ecf24f41ec9a98ee4aca1d127876",
+      "addresses": 183,
+      "parcelIds": 1,
+      "example": "2065 N HIGHLAND AVE",
+      "combination": "hdr + lmdr + mdr + mhdr"
+    },
+    {
+      "footprint": "305320f96e1ae76d2b2165dc8b96f7fd7ad4de58f4f43959c0f3892a735762e3",
+      "addresses": 177,
+      "parcelIds": 167,
+      "example": "3040 EASTLAND BLVD UNIT G107",
+      "combination": "i + mhdr"
+    },
+    {
+      "footprint": "39563250a1406af040463d66a7f4080a5e4beb345052256d6ce520c74201a489",
+      "addresses": 170,
+      "parcelIds": 170,
+      "example": "20000 US HIGHWAY 19 N LOT 205",
+      "combination": "i + lmdr + us19"
+    },
+    {
+      "footprint": "d4c13c90e2ed8bd488d424dd51904da1cb3489d99a491bf70a4faf245cb26f6a",
+      "addresses": 170,
+      "parcelIds": 1,
+      "example": "2266 GULF TO BAY BLVD",
+      "combination": "c + lmdr + mdr + mhp"
+    },
+    {
+      "footprint": "2a2cc86b9b2d1810be0495503e5b34c52f32ba19b11cbc728b60a2588542638e",
+      "addresses": 166,
+      "parcelIds": 166,
+      "example": "18675 US HIGHWAY 19 N LOT 95",
+      "combination": "p + us19"
+    },
+    {
+      "footprint": "91144d68d6ba53dd457f355ad89dacbf26b6c52cff4a48a35ed624cb2d7162a2",
+      "addresses": 138,
+      "parcelIds": 108,
+      "example": "243 MCMULLEN BOOTH RD S UNIT 32",
+      "combination": "c + i + mdr"
+    },
+    {
+      "footprint": "807e8f345cd352ac297936ebbac3287bc822ba4c8371c8d79180907801b510d9",
+      "addresses": 135,
+      "parcelIds": 134,
+      "example": "255 DOLPHIN PT UNIT 407",
+      "combination": "hdrncodislandest + mdrncodislandest + mhdrncodislandest + p"
+    },
+    {
+      "footprint": "14e3eb5b5308210e975cf5c284659dbe127a9af08521cb28a614100b9fb053cf",
+      "addresses": 133,
+      "parcelIds": 1,
+      "example": "21903 US HIGHWAY 19 N",
+      "combination": "mdr + p + us19"
+    },
+    {
+      "footprint": "4e7b2e56467d11f52b75763f5fea659d7a22d3bbda50486726a70a3839e20ce4",
+      "addresses": 127,
+      "parcelIds": 126,
+      "example": "31 ISLAND WAY APT 403",
+      "combination": "hdrncodislandest + os/r + p"
+    },
+    {
+      "footprint": "712b11bcf2d5e26aa52c22f414916cfe9add2d26313ff227b0fb3fa09e00ae96",
+      "addresses": 121,
+      "parcelIds": 97,
+      "example": "377 MCMULLEN BOOTH RD S UNIT 100",
+      "combination": "c + i + mdr"
+    },
+    {
+      "footprint": "a7ebb0eca3d0be547f13f274128b77cfe914065db91ff7008b12b85a1f6a5af5",
+      "addresses": 121,
+      "parcelIds": 121,
+      "example": "690 ISLAND WAY UNIT 512",
+      "combination": "hdrncodislandest + p"
+    }
+  ]
+}
