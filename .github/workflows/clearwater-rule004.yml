@@ -113,17 +113,22 @@ jobs:
         run: python3 scripts/gis/analyze-clearwater-big-fish.py "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule003-approved" "$RUNNER_TEMP/rule002/source.zip" "$RUNNER_TEMP/rule004-analysis"
       - name: Export exact owner-approved Rule 004 condominium scope
         run: node --max-old-space-size=4096 scripts/gis/export-clearwater-approved-rule004.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule003-approved" "$RUNNER_TEMP/rule004-analysis" "$RUNNER_TEMP/rule004-approved" "$RUNNER_TEMP/rule002/source.zip"
+      - name: Independently reconcile all source profiles and exact approved membership
+        run: node --max-old-space-size=4096 scripts/gis/verify-rule004-output.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule003-approved" "$RUNNER_TEMP/rule004-approved" > "$RUNNER_TEMP/rule004-independent-validation.json"
       - name: Verify deterministic complete Rules 001–004 lookup
         run: |
           node --max-old-space-size=4096 scripts/gis/export-clearwater-approved-rule004.mjs "$RUNNER_TEMP/rule002/source" "$RUNNER_TEMP/rule003-approved" "$RUNNER_TEMP/rule004-analysis" "$RUNNER_TEMP/rule004-repeat" "$RUNNER_TEMP/rule002/source.zip"
           cmp "$RUNNER_TEMP/rule004-approved/clearwater-approved-address-lookup.jsonl" "$RUNNER_TEMP/rule004-repeat/clearwater-approved-address-lookup.jsonl"
           cmp "$RUNNER_TEMP/rule004-approved/approval-audit.json" "$RUNNER_TEMP/rule004-repeat/approval-audit.json"
+          diff -qr "$RUNNER_TEMP/rule004-approved" "$RUNNER_TEMP/rule004-repeat"
       - name: Publish four-rule reconciliation
         run: cat "$RUNNER_TEMP/rule004-approved/report.md" >> "$GITHUB_STEP_SUMMARY"
       - name: Upload approved Rules 001–004 lookup, audit, source evidence and provenance
         uses: actions/upload-artifact@v4
         with:
           name: clearwater-approved-rules-001-002-003-004-static-lookup
-          path: ${{ runner.temp }}/rule004-approved/
+          path: |
+            ${{ runner.temp }}/rule004-approved/
+            ${{ runner.temp }}/rule004-independent-validation.json
           if-no-files-found: error
           retention-days: 90
