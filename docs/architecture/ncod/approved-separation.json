@@ -1,0 +1,18 @@
+{
+  "baselineLookupSha256": "a4191f3e33be50545aeb6b0739f307db0470517d721e0abe854182dd2859e739",
+  "profiles": 63430,
+  "approvedChecked": 3324,
+  "approvalCounts": {
+    "CLR-Z-002": 262,
+    "CLR-Z-001": 1967,
+    "CLR-Z-004": 364,
+    "CLR-Z-003": 731
+  },
+  "ncodZoningFeatures": 10,
+  "distinctApprovedRawGeometryChecks": 770,
+  "unexpectedOverlapAddresses": 0,
+  "overlaps": [],
+  "method": "All source parcel features for every approved address: Shapely intersects including boundary contact against every raw NCOD feature; additionally raw primary and both points. No buffering or suffix inference.",
+  "sourceZoningSha256": "56ee74e1c2e8fab582efcdda388008e77205237439169c13191caa0ecb31929b",
+  "sourceParcelsSha256": "713252d9f00ef9ea384a06a90f22a24df1034807fc68208b1ee7a47eb0e63d56"
+}
