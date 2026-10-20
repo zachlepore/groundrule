@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "profiles": 63430,
+  "unchangedPriorApprovals": 3324,
+  "unchangedUnapprovedReview": 17014,
+  "originalZoningOrQaChanges": 0,
+  "newApprovals": 0,
+  "newEvaluatorFacts": 0,
+  "unexpectedApprovedNcod": 0,
+  "sourcePrimaryResearchReconciled": true,
+  "allDocumentsRecomputed": true
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "stageBJsTests": 14,
+  "stageBGeometryTests": 2,
+  "stageATests": 33,
+  "priorRegressionTests": 137,
+  "total": 186,
+  "failed": 0,
+  "skipped": 0,
+  "typescript": "PASS",
+  "targetedLint": "PASS",
+  "workflowYaml": "PASS"
+}
