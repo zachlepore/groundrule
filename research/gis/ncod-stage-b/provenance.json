@@ -1,0 +1,107 @@
+{
+  "sourceReleaseUrl": "https://github.com/zachlepore/groundrule/releases/download/clearwater-gis-2026-09-28/clearwater-full-gis-snapshot.zip",
+  "schemaVersion": 1,
+  "stage": "B_OFFLINE_IDENTITY_ONLY",
+  "snapshotId": "clearwater-gis-2026-09-28",
+  "archive": {
+    "sha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+    "bytes": 36688145
+  },
+  "baselineLookup": {
+    "sha256": "a4191f3e33be50545aeb6b0739f307db0470517d721e0abe854182dd2859e739",
+    "bytes": 250198246
+  },
+  "mappingHash": "fbdc5988be614857615e832b0cf4501997f699aeaf4f44973df73ff284239734",
+  "sourceFiles": [
+    {
+      "file": "addresses.geojson",
+      "bytes": 19691340,
+      "sha256": "f4d65a13e94871765f758c3dd238bfca67e1e78de197c10f8564dd16e9dedc96",
+      "verified": true
+    },
+    {
+      "file": "database-import.clean.json",
+      "bytes": 64423990,
+      "sha256": "7cf12d24c9e766bb7c5649386ebcbf324096a8e6698b8b90c3ceaf5042d27c84",
+      "verified": true
+    },
+    {
+      "file": "database-review.json",
+      "bytes": 30635392,
+      "sha256": "bb34bb7a2048a6031f37f68c8571a244a9049f473a029f0ef45a42ad85f56112",
+      "verified": true
+    },
+    {
+      "file": "parcels.geojson",
+      "bytes": 93980229,
+      "sha256": "713252d9f00ef9ea384a06a90f22a24df1034807fc68208b1ee7a47eb0e63d56",
+      "verified": true
+    },
+    {
+      "file": "property-profiles.json",
+      "bytes": 95059379,
+      "sha256": "89a5d403df8a2cb4393f8f142d6b8e4de78e8e0a9d57211643b0334ace90753a",
+      "verified": true
+    },
+    {
+      "file": "source-metadata.json",
+      "bytes": 3719,
+      "sha256": "f94920bfd23a89169fafbf97658c21312c6930cf5d55e0f765db698cabfb1989",
+      "verified": true
+    },
+    {
+      "file": "validation-report.json",
+      "bytes": 10196,
+      "sha256": "b51d57f1dc737ecfb862e4c49626558a3662d83b263e30f8b08c90f38925cb78",
+      "verified": true
+    },
+    {
+      "file": "validation-report.md",
+      "bytes": 4239,
+      "sha256": "cd6a25b7f12b81230b61921ccb0b8cb5b1b67034ad138fbf3ba7f883e023c4ef",
+      "verified": true
+    },
+    {
+      "file": "zoning-diagnostic/representative-samples.md",
+      "bytes": 1987,
+      "sha256": "f00f35a446f68d8da2f6ba82a1c483f490e35f88d862fd1152ead85cc02a4f06",
+      "verified": true
+    },
+    {
+      "file": "zoning-diagnostic/zoning-diagnostic.json",
+      "bytes": 26136992,
+      "sha256": "f0b1edcbdd960019b3f153cd4cbd3b393cbb800f74c892642917f08378fe86e3",
+      "verified": true
+    },
+    {
+      "file": "zoning.geojson",
+      "bytes": 2289896,
+      "sha256": "56ee74e1c2e8fab582efcdda388008e77205237439169c13191caa0ecb31929b",
+      "verified": true
+    }
+  ],
+  "geometryMethod": "Shapely 2.1.2 all-layer STRtree; unmodified geometries; normalized WKB footprint proxy; planar percentages supplementary only, not source QA or policy measures",
+  "geometryHashMethod": "SHA256 normalized Shapely WKB; representation proxy, not legal ownership",
+  "scripts": {
+    "scripts/gis/interpret-clearwater-zoning.mjs": {
+      "sha256": "4aeec9b1bd8b042dc39766320d531d14a5cf54a03c828ee8f13254598fddbd56",
+      "bytes": 18232
+    },
+    "scripts/gis/verify-clearwater-zoning-interpretation.mjs": {
+      "sha256": "9c89f29b831fad7f24aed4b860f2b331fc6378247fd833ff78dec3a95201a387",
+      "bytes": 5879
+    },
+    "scripts/gis/measure-clearwater-zoning-interpretation.py": {
+      "sha256": "12fc30332f666845c1e53ea512c323c687ff795e5cae4271f1abd64b5be61e42",
+      "bytes": 2897
+    },
+    "lib/properties/zoning-interpretation.ts": {
+      "sha256": "f5e826879bad6f12d6e3bc8bd565c849af5eb982c1e752580d14bd793c260fc0",
+      "bytes": 12544
+    },
+    "lib/properties/types.ts": {
+      "sha256": "e57f059ac85f00c5b88a646fddf06d3151aaaf0a63574b82448fedd44cec95b4",
+      "bytes": 2655
+    }
+  }
+}

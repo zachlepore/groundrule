@@ -97,7 +97,8 @@ function evidence(value: unknown) { const o = object(value, ["refs", "sha256"]);
 export function validateZoningInterpretation(value: unknown): asserts value is ZoningInterpretation {
   const o = object(value, ["schemaVersion", "interpretationVersion", "jurisdiction", "sourceIdentity", "originalSourceZoning", "base", "overlayInventory", "overlays", "spatialEvidenceRef", "sourceQaRef", "holds", "projectReadiness"]);
   check(o.schemaVersion === 1, "Unsupported interpretation schema");
-  for (const k of ["interpretationVersion", "jurisdiction", "originalSourceZoning", "spatialEvidenceRef", "sourceQaRef"]) text(o[k]);
+  for (const k of ["interpretationVersion", "jurisdiction", "spatialEvidenceRef", "sourceQaRef"]) text(o[k]);
+  if (o.originalSourceZoning !== null) text(o.originalSourceZoning);
   const s = object(o.sourceIdentity, ["snapshotId", "archiveSha256", "zoningFileSha256", "profileEvidenceSha256", "mappingSha256"]); text(s.snapshotId);
   for (const k of ["archiveSha256", "zoningFileSha256", "profileEvidenceSha256", "mappingSha256"]) sha(s[k]);
   const base = o.base as Record<string, unknown>; check(base && typeof base === "object", "Missing base");

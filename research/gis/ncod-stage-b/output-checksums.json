@@ -1,0 +1,38 @@
+{
+  "interpreted-addresses.jsonl": {
+    "sha256": "c82fa61de3e1ab4fdcff12ae0856a94e6012a6a87ad9abff1feb5422e30dbb2f",
+    "bytes": 129743073
+  },
+  "parcel-evidence.json": {
+    "sha256": "c31ecdd73154a91a4e82d7068382fefa9d8d4d81496759154b17726cc35bc568",
+    "bytes": 26311251
+  },
+  "census.json": {
+    "sha256": "dc3a4cebfbf93e80c8d346d5d10657a30ec9d8673faf9fbe2fb6e6a6a35812ff",
+    "bytes": 4800
+  },
+  "exceptions.json": {
+    "sha256": "6b18d92b995ecf1c6dd71a4837483d37798ff31e32020f870597f55135ffc54f",
+    "bytes": 14192908
+  },
+  "secondary-ncod.json": {
+    "sha256": "00295d3e324cad467e0e4e5da3bb050dc7bad94b182978f19c07e73098b5c81a",
+    "bytes": 403501
+  },
+  "human-evidence.json": {
+    "sha256": "8a7f6a89b1e1f8f7e70b60333af0f66ca4b10daf7c8d1d87eb3c5488bf503b19",
+    "bytes": 84730
+  },
+  "mapping-registry.json": {
+    "sha256": "3b349815886f4312ac14608dcc3005de4b055730007247806240632392fcc0e9",
+    "bytes": 29172
+  },
+  "provenance.json": {
+    "sha256": "44f437915e86d033f67343af82359cca786c13fbbb6941a9bf215fc1d75c0168",
+    "bytes": 3775
+  },
+  "report.md": {
+    "sha256": "7183b369bac46ddda0a200011abfc6c6337d246a187f62ce534d710ad1c4fd38",
+    "bytes": 5153
+  }
+}

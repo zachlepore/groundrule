@@ -1,0 +1,209 @@
+{
+  "unsupportedSourcePrimaryGroups": {
+    "HDR-NCOD Island Est": {
+      "addresses": 1385,
+      "parcels": 1365,
+      "footprints": 43
+    },
+    "I-NCOD Island Est": {
+      "addresses": 1,
+      "parcels": 1,
+      "footprints": 1
+    },
+    "LDR-NCOD Coachman R": {
+      "addresses": 13,
+      "parcels": 13,
+      "footprints": 13
+    },
+    "LMDR-NCOD Coachman R": {
+      "addresses": 242,
+      "parcels": 242,
+      "footprints": 242
+    },
+    "LMDR-NCOD Island Est": {
+      "addresses": 565,
+      "parcels": 564,
+      "footprints": 564
+    },
+    "MDR-NCOD Island Est": {
+      "addresses": 52,
+      "parcels": 52,
+      "footprints": 19
+    },
+    "MHDR-NCOD Island Est": {
+      "addresses": 266,
+      "parcels": 255,
+      "footprints": 83
+    },
+    "OS/R": {
+      "addresses": 308,
+      "parcels": 184,
+      "footprints": 112
+    }
+  },
+  "ncodSubtypeTotals": {
+    "CRNCOD": {
+      "addresses": 257,
+      "parcels": 257,
+      "footprints": 257,
+      "primary": 255,
+      "secondary": 8
+    },
+    "IENCOD": {
+      "addresses": 2326,
+      "parcels": 2294,
+      "footprints": 713,
+      "primary": 2269,
+      "secondary": 218
+    }
+  },
+  "ncodSourceBaseCensus": {
+    "CRNCOD|LDR": {
+      "addresses": 15,
+      "parcels": 15,
+      "footprints": 15
+    },
+    "CRNCOD|LMDR": {
+      "addresses": 248,
+      "parcels": 248,
+      "footprints": 248
+    },
+    "IENCOD|HDR": {
+      "addresses": 1401,
+      "parcels": 1380,
+      "footprints": 48
+    },
+    "IENCOD|I": {
+      "addresses": 11,
+      "parcels": 11,
+      "footprints": 5
+    },
+    "IENCOD|LMDR": {
+      "addresses": 565,
+      "parcels": 564,
+      "footprints": 564
+    },
+    "IENCOD|MDR": {
+      "addresses": 244,
+      "parcels": 243,
+      "footprints": 23
+    },
+    "IENCOD|MHDR": {
+      "addresses": 402,
+      "parcels": 390,
+      "footprints": 85
+    }
+  },
+  "profiles": 63430,
+  "priorApprovals": {
+    "CLR-Z-002": 262,
+    "CLR-Z-001": 1967,
+    "CLR-Z-004": 364,
+    "CLR-Z-003": 731
+  },
+  "unapprovedReview": 17014,
+  "unexpectedApprovedNcod": 0,
+  "unsupportedSourcePrimary": {
+    "LMDR-NCOD Island Est": 565,
+    "LMDR-NCOD Coachman R": 242,
+    "HDR-NCOD Island Est": 1385,
+    "OS/R": 308,
+    "MHDR-NCOD Island Est": 266,
+    "I-NCOD Island Est": 1,
+    "MDR-NCOD Island Est": 52,
+    "LDR-NCOD Coachman R": 13
+  },
+  "overlayCensus": {
+    "CRNCOD|LDR": {
+      "addresses": 9,
+      "parcelIds": 9,
+      "geometryGroups": 9,
+      "primary": 7,
+      "secondaryOnly": 2,
+      "boundaryContactAddresses": 0
+    },
+    "CRNCOD|LMDR": {
+      "addresses": 228,
+      "parcelIds": 228,
+      "geometryGroups": 228,
+      "primary": 228,
+      "secondaryOnly": 0,
+      "boundaryContactAddresses": 0
+    },
+    "CRNCOD|conflicting": {
+      "addresses": 20,
+      "parcelIds": 20,
+      "geometryGroups": 20,
+      "primary": 20,
+      "secondaryOnly": 0,
+      "boundaryContactAddresses": 0
+    },
+    "IENCOD|HDR": {
+      "addresses": 397,
+      "parcelIds": 397,
+      "geometryGroups": 22,
+      "primary": 397,
+      "secondaryOnly": 0,
+      "boundaryContactAddresses": 0
+    },
+    "IENCOD|LMDR": {
+      "addresses": 261,
+      "parcelIds": 261,
+      "geometryGroups": 261,
+      "primary": 261,
+      "secondaryOnly": 0,
+      "boundaryContactAddresses": 0
+    },
+    "IENCOD|MDR": {
+      "addresses": 30,
+      "parcelIds": 30,
+      "geometryGroups": 12,
+      "primary": 30,
+      "secondaryOnly": 0,
+      "boundaryContactAddresses": 0
+    },
+    "IENCOD|MHDR": {
+      "addresses": 139,
+      "parcelIds": 137,
+      "geometryGroups": 56,
+      "primary": 139,
+      "secondaryOnly": 0,
+      "boundaryContactAddresses": 0
+    },
+    "IENCOD|conflicting": {
+      "addresses": 1499,
+      "parcelIds": 1469,
+      "geometryGroups": 362,
+      "primary": 1442,
+      "secondaryOnly": 57,
+      "boundaryContactAddresses": 0
+    }
+  },
+  "exceptionOccurrences": {
+    "parcel_ambiguous_zoning": 19138,
+    "invalid_source_zoning_geometry": 11800,
+    "multiple_source_base_districts": 19717,
+    "unsupported_zoning_code": 2832,
+    "human_true_split": 6,
+    "address_point_outside_linked_parcel": 1744,
+    "address_multiple_parcels": 110,
+    "parcel_without_zoning": 166,
+    "address_link_not_verified": 112,
+    "missing_parcel_link": 112,
+    "human_primary_candidate": 34,
+    "human_primary_applicability_unclear": 317,
+    "human_staff_review": 1,
+    "address_without_parcel": 2
+  },
+  "overlayAddresses": 2583,
+  "ncodContactAddresses": 2583,
+  "primaryPositiveNcodAddresses": 2524,
+  "secondaryPositiveNcodAddresses": 226,
+  "secondaryOnlyPositiveNcodAddresses": 59,
+  "boundaryOnlyNcodAddresses": 0,
+  "multipleOverlayAddresses": 0,
+  "baseConflicts": 19717,
+  "inventoryIncomplete": 11912,
+  "newApprovals": 0,
+  "newEvaluatorFacts": 0
+}

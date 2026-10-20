@@ -59,7 +59,7 @@ export interface ZoningInterpretation {
     profileEvidenceSha256: string;
     mappingSha256: string;
   };
-  originalSourceZoning: string;
+  originalSourceZoning: string | null;
   base: InterpretedBaseZoning;
   overlayInventory: {
     state: "complete_for_source" | "unknown" | "conflicting";
