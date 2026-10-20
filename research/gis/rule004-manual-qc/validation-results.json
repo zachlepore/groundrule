@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "candidateAddresses": 364,
+  "candidateParcelIds": 364,
+  "geometryGroups": {
+    "R004-01": 363,
+    "R004-02": 1
+  },
+  "worksheetRows": 4,
+  "allHumanConclusionsBlank": true,
+  "outsideExactPairAddresses": 133,
+  "outsideParcelIds": 62,
+  "invalidSourceGeometryExclusions": 129,
+  "alsoCoverageFailures": 66,
+  "existingLmdrScopeExclusions": 4,
+  "additionalSiteContextExcludedRecords": 3,
+  "pdfPages": {
+    "qc-atlas.pdf": 2,
+    "contact-sheet.pdf": 1,
+    "review-worksheet.pdf": 1
+  },
+  "casePngPixels": [
+    2550,
+    3300
+  ],
+  "pngDpi": 300,
+  "gisRegressionTestsPassed": 82,
+  "bigFishTestsPassed": 10,
+  "rule004TestsPassed": 7,
+  "failedTests": 0,
+  "newApprovals": 0,
+  "originalFieldsChanged": 0,
+  "rules001002003Changed": false,
+  "matplotlibVersion": "3.10.8",
+  "sourcePropertyOwnershipVerified": false,
+  "livePropertyRequests": "HTTP 403; no live property evidence used",
+  "verification": "Membership joined independently to committed Big Fish candidates, all source identities/QAs checked, group/exclusion arithmetic, reviewer blanks, PDF page counts, PNG dimensions and every prepared/render checksum."
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "ruleId": "CLR-Z-004",
+  "ruleVersion": "1.0.0-approved-static",
+  "approvalId": "CLR-Z-004-BOUNDED-CONDOMINIUM-2026-10-17",
+  "decision": "APPROVED_FOR_OFFLINE_STATIC_EXPORT_ONLY",
+  "authorization": "Owner explicit bounded approval in supplied Rule 004 implementation request; visual QC and product policy, not authoritative legal determination.",
+  "basisCommit": "20d69ff",
+  "sourceSnapshotId": "clearwater-gis-2026-09-28",
+  "sourceArchiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+  "baselineLookupSha256": "cdb14957486a6665cd4367edce9136df8bf2f01053fc2c0ea62ef4ee0cbbbbb2",
+  "membershipFile": "research/gis/rule004-membership.v1.json",
+  "humanQcFile": "research/gis/rule004-human-qc.v1.json",
+  "scope": {
+    "maximumNewApprovals": 364,
+    "uniqueParcelIds": 364,
+    "geometryGroupCounts": {
+      "R004-01": 363,
+      "R004-02": 1
+    },
+    "originalQa": "review",
+    "existingPrimary": "HDR",
+    "exactDistricts": [
+      "hdr",
+      "lmdr"
+    ],
+    "requireAllExistingEligibilityAndHumanChecks": true
+  },
+  "presentation": {
+    "mode": "EXACT_MEMBERSHIP_AND_REVIEWED_EVIDENCE_ONLY",
+    "lmdrNoticeRecommendation": "NOT_PROMINENT_IN_ORDINARY_GUIDES",
+    "reusableThresholdPercent": null,
+    "presentationOnly": true,
+    "legalExemption": false,
+    "boundaryCorrection": false,
+    "suppressOtherIndependentlyApplicableConditions": false,
+    "retainAllMappedEvidence": true,
+    "requireReassessmentOnSourceGeometryMembershipOrSharedSiteChange": true
+  },
+  "development": {
+    "evidenceId": "CLR-880-MANDALAY-OWNER-REVIEWED-2026-10-17",
+    "address": "880 MANDALAY AVE",
+    "relationshipBasis": "OWNER_VISUAL_QC",
+    "legalCommonOwnershipVerified": false,
+    "sharedSiteParcelId": "322815740740000001",
+    "ownerIdentifiedContext": "Development beach area",
+    "sharedSiteDistrictsNotAssignedToUnits": true,
+    "individualDevelopmentRightsEstablished": false,
+    "advisoryRecommendation": "This address is part of a condominium development. Exterior improvements and work in shared areas may require approval from the condominium association or property management. Confirm applicable permissions and municipal requirements before beginning your project."
+  },
+  "expected": {
+    "allAddresses": 63430,
+    "rule001Approved": 1967,
+    "rule002Approved": 262,
+    "rule003Approved": 731,
+    "maximumRule004Approved": 364,
+    "maximumTotalApproved": 3324,
+    "remainingReviewIfAllPass": 17014,
+    "rule004ProminentNotices": 0,
+    "exactPairExcluded": 133,
+    "invalidGeometryExcluded": 129,
+    "existingLmdrExcluded": 4
+  },
+  "basisFileSha256": {
+    "research/gis/rule004-manual-qc/additional-unit-examples.json": "819bef8635ce1495715a087778b75e9c98bc3d37a6886ff99fe1af0994a3641e",
+    "research/gis/rule004-manual-qc/candidate-addresses.csv": "76ad48d17991264e57b0bc9e0b6d9b828ec1c2bfbec560e5683d47f03b8ec60d",
+    "research/gis/rule004-manual-qc/case-index.csv": "36a3c2815f0ee53decd39a2d7f3e86e50c7c6c165ff81686f100ef297300c759",
+    "research/gis/rule004-manual-qc/cases.json": "fc2994e4d89cabceb8dea21562fa7cd2812ec94ae6c7cafb83c8188f953594cf",
+    "research/gis/rule004-manual-qc/decision-memo.md": "7b549fc3271458832dce29b57eac1bd8965a97a321746b627b30325f4e867958",
+    "research/gis/rule004-manual-qc/evidence-report.md": "756e641851b18960f03abd47b39ee3fd779e5918a32a08886dfb184e01ff5142",
+    "research/gis/rule004-manual-qc/geometry-comparison.json": "17dabb0e08a0e1a6d377e7ea90aad8d8aeb2496728ddf3d3989e0a2a4fced8a8",
+    "research/gis/rule004-manual-qc/outside-cohort-133.csv": "40cab7a98ed33060d57f0e0741b9e66261ae876933cac69379596e49c3d8292c",
+    "research/gis/rule004-manual-qc/provenance.json": "478d1c4f5bddd42de4d76ad51f9c3bac178c9a755756527cc1da08c978e73da0",
+    "research/gis/rule004-manual-qc/review-worksheet.csv": "1225442f457f05bf9941a715686cc69489e98668fc306fe0ff06e7e02818d910",
+    "research/gis/rule004-manual-qc/review-worksheet.md": "ce075d3df468e56ed1a380b5b232f1670a8c5e52a7df24c61ad6ce6755b50d9d",
+    "research/gis/rule004-manual-qc/site-context-exclusions.json": "9d99066dcdc8b549cd6d4b4f49a0cfdeeff166fc7d87e83df3eb5269b01dd074",
+    "research/gis/rule004-membership.v1.json": "00e14b482e796e5e60737c7f5e9598090ef4de3809c019e4aef4c4a5ed85b8c2",
+    "research/gis/rule004-human-qc.v1.json": "8e849ac335706479a4b81d623a469f6295bc3e6b36594e0cc2ab5f2fb6383c0d",
+    "scripts/gis/prepare-clearwater-rule004-qc.py": "85b531a43655b571467147fe7fa8ef74824161565fc34d0ea677f916cbc374f4",
+    "scripts/gis/analyze-clearwater-big-fish.py": "3d1f1a89ea588136dcd2c7840a9029e2c3d940f3554a69935b6b2e373fd5ad8f",
+    "scripts/gis/summarize-clearwater-topology.py": "6b75c90916b187d1a5d507084e8f83ce5534e5d1b7498d9c97ee13e33d05ce7b",
+    "research/gis/zoning-gold/reference-dataset.json": "e40d7cac4370fa39f0aa60488cec5d04142e2e062be9a065739d627865c83ba6",
+    "research/gis/zoning-gold/rule001-qc-observations.json": "65c8659a6adf32d9cc47b7f8ee10f1ff6069a5da7e20fd4c3247b3b5f09b4eb5",
+    "research/gis/rule002-qc-observations.json": "49b42418bb5eb0901b37755ce6f5ace2af4b71149e03ec86ec2604a3636bd71b",
+    "research/gis/rule003-membership.v1.json": "fcd42679ea0a41790d0528be9afc1b7d0b3c9332c68644fec693dc7ada92fa9f",
+    "research/gis/rule003-approval.bounded-v1.json": "f3081a1af7dd875550e36cd3234c61866f253460679c7b1fa1a9847f01714f64",
+    "research/gis/rule003-notice-policy.v2.json": "490d8288eb633ff5f17e1e412fd113ddab72e4ab2076dad16ef8132f10ee835d"
+  }
+}

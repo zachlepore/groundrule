@@ -1,0 +1,219 @@
+combination,addresses,parcels,qualityPass,samePrimaryDominant
+lmdr + mdr,1083,786,312,1064
+p + us19,940,396,0,903
+hdrncodislandest + p,726,708,0,726
+i + mdr,577,104,371,577
+mdr + o,532,508,230,532
+i + lmdr,501,453,222,500
+hdr + lmdr,497,426,368,497
+c + hdr,489,116,463,489
+irt + lmdr + mdr + mhdr + o,478,477,0,478
+i + mhdr,412,387,392,410
+hdrncodislandest,397,397,0,397
+i + irt + p,397,1,0,397
+lmdr + mhdr,389,325,16,389
+hdr + os/r,368,366,96,333
+lmdrncodislandest + p,303,302,0,303
+c + hdr + i + lmdr,276,1,0,276
+c + lmdr,275,172,96,270
+c + i + mdr,273,216,271,273
+i + os/r + p + us19,270,2,0,270
+mhdr + os/r,262,115,171,172
+lmdrncodislandest,261,261,0,261
+os/r + us19,256,254,255,256
+os/r + p + t,255,245,4,246
+c + mhp,237,14,137,237
+c + irt + mhdr,229,1,229,229
+lmdrncodcoachmanr,228,228,0,228
+mdr + mhdr,223,186,142,170
+lmdr + p,219,216,34,182
+c + mdr,217,116,208,211
+c + hdr + i + mdr,211,201,211,211
+hdr + lmdr + mdr + mhdr,183,1,0,183
+i + lmdr + us19,183,172,1,183
+c + lmdr + mdr + mhp,170,1,0,170
+os/r + t,166,162,160,166
+c + o,152,79,146,152
+ldr + lmdr,147,146,104,145
+mhdrncodislandest,139,137,0,139
+c + hdr + o,138,132,138,138
+hdrncodislandest + mdrncodislandest + mhdrncodislandest + p,135,134,0,135
+lmdr + mhp,135,51,42,135
+mdr + p + us19,133,1,0,133
+lmdr + o,131,95,65,131
+(no measured intersection),130,17,0,0
+c + hdr + p,129,129,123,129
+hdrncodislandest + os/r + p,127,126,0,127
+hdr + os/r + p,124,120,5,115
+mdr + mhp,118,30,27,118
+mhdrncodislandest + p,112,104,0,111
+c + irt + mdr,110,110,0,110
+hdr + mdr,109,5,0,109
+ldr + mdr + p,106,1,0,106
+mdr + us19,105,56,22,105
+c + mdr + mhp,99,2,13,99
+lmdr + os/r,94,93,0,94
+os/r + p + us19,90,3,90,89
+mdr + os/r + p,85,83,1,44
+mdr + p,81,80,81,17
+hdr + o,79,74,77,79
+hdr + lmdr + o,73,71,0,73
+lmdr + mdr + mhp,71,1,0,71
+irt + mdr,70,59,6,70
+c + i,59,35,55,59
+hdr + mdrncodislandest + p,56,56,0,56
+d + hdr + i + p,54,54,54,54
+hdr + p,54,54,36,53
+c + mdr + o,53,23,50,53
+ldr + os/r,52,51,45,51
+ldr + mdr,43,40,37,43
+hdr + i + lmdr,41,40,0,41
+i + mdr + p,41,40,0,41
+os/r,41,22,0,41
+lmdr + os/r + us19,40,1,0,40
+i + mdr + o,39,2,39,39
+hdr + lmdr + os/r + p,38,38,0,38
+lmdr + mdr + p,36,26,34,36
+c + lmdr + mdr + o,35,1,0,35
+c + os/r,35,20,28,35
+lmdr + mdr + os/r,34,30,21,34
+p + t,34,32,13,34
+c + mhdr,32,14,31,32
+i + o,31,22,30,31
+lmdr + os/r + p,31,29,16,26
+lmdr + t,30,29,30,30
+lmdr + us19,30,30,24,30
+mdrncodislandest,30,30,0,30
+mhdr + o,30,13,25,30
+i + ldr,29,26,18,28
+d + p,28,10,18,20
+i + lmdr + o,28,26,17,28
+c + i + lmdr,26,5,1,26
+mdr,25,5,0,25
+c + lmdr + mdr,23,18,2,23
+i + lmdr + mhdr + o,23,18,0,23
+i + p + us19,23,3,1,23
+hdr + mhdr,22,22,22,22
+lmdr,22,22,0,22
+mdr + t,22,20,22,22
+c + hdr + mdr,21,21,21,21
+o + p,20,20,1,20
+i + irt,19,13,14,19
+irt + o,19,4,19,19
+c + irt,17,11,17,16
+ldr + p,17,17,8,12
+lmdr + mdr + o + p,17,16,0,17
+c,16,1,0,16
+c + lmdr + mhp,16,1,0,16
+c + hdr + mhp,15,3,14,15
+c + lmdr + o,14,10,3,14
+d + mdr + o,14,3,14,1
+i + lmdrncodcoachmanr,14,14,0,14
+c + hdr + os/r,13,10,12,13
+c + i + o,13,6,8,13
+hdrncodislandest + mhdrncodislandest + p,13,12,0,2
+i + os/r,13,8,2,13
+hdr + mdr + o,12,12,12,12
+hdr + mdrncodislandest,12,12,0,12
+i + us19,12,9,6,12
+i + lmdr + mdr,11,8,2,11
+c + d,10,5,8,10
+c + irt + o,10,1,10,10
+i + mdr + mhdr,10,1,10,10
+incodislandest + mdrncodislandest,10,10,0,10
+d + lmdr,9,6,8,9
+ldr + os/r + p,9,9,2,7
+mdr + mhdr + os/r,8,8,8,8
+c + lmdr + mhdr,7,1,0,7
+i + irt + o,7,1,7,7
+i + mdr + os/r,7,5,3,7
+ldrncodcoachmanr,7,7,0,7
+d + mdr,6,5,4,6
+i + lmdr + os/r,6,5,0,6
+irt + mhdr,6,5,6,6
+ldrncodcoachmanr + lmdrncodcoachmanr,6,6,0,6
+d + i + lmdr,5,1,5,5
+lmdr + p + t,5,4,3,5
+mdr + os/r,5,3,0,5
+os/r + p,5,4,0,5
+i + lmdr + p,4,3,2,4
+i + p,4,3,2,3
+i + t,4,4,4,4
+ldr + lmdr + p,4,4,3,2
+ldr + mdr + os/r,4,2,0,4
+lmdr + mdr + o,4,1,4,4
+c + hdr + mdr + o,3,1,3,3
+c + i + ldr + os/r + p,3,1,0,3
+c + lmdr + os/r,3,3,0,3
+c + p,3,2,0,3
+hdr + i,3,1,3,3
+hdr + mdr + p,3,2,2,3
+hdr + os/r + p + t,3,2,0,3
+i + lmdr + mdr + os/r,3,1,0,3
+i + os/r + us19,3,2,1,3
+irt + os/r,3,2,3,3
+ldr + lmdr + mdr + os/r,3,1,0,3
+ldr + lmdr + os/r,3,3,2,3
+lmdr + mdr + mhdr + p,3,1,0,3
+mdr + p + t,3,1,0,3
+c + i + irt,2,1,0,2
+c + i + os/r + p,2,1,2,2
+c + lmdr + o + os/r,2,1,0,2
+c + mhdrncodislandest + p,2,2,1,2
+c + o + p,2,2,1,2
+d + lmdr + p,2,1,0,2
+hdr + i + mhp + o,2,1,2,2
+hdr + ldr,2,1,0,2
+hdr + mhp,2,1,2,2
+i + irt + o + p,2,1,2,0
+i + ldr + lmdr + os/r,2,1,0,2
+i + ldr + mdr,2,2,1,2
+i + ldr + o,2,1,0,2
+i + lmdr + o + os/r,2,2,0,2
+i + os/r + p + t,2,1,0,2
+ldr + ldrncodcoachmanr,2,2,1,2
+ldr + mhdr,2,2,1,2
+lmdr + mdr + mhdr,2,2,2,2
+lmdr + mdr + os/r + p + us19,2,1,0,2
+mdr + o + p,2,1,0,0
+c + d + i + irt + mdr + o + os/r,1,1,0,1
+c + d + lmdr,1,1,0,1
+c + hdr + i,1,1,1,1
+c + hdr + lmdr,1,1,0,0
+c + i + lmdr + o,1,1,0,1
+c + i + mdr + o,1,1,0,1
+c + mdr + os/r,1,1,0,1
+c + mhdr + o,1,1,1,1
+c + os/r + p,1,1,1,1
+c + os/r + us19,1,1,0,1
+d + i,1,1,1,1
+hdr,1,1,0,1
+hdr + hdrncodislandest + incodislandest + mdrncodislandest + p,1,1,0,1
+hdr + i + lmdr + o,1,1,0,1
+hdr + i + mdr,1,1,0,1
+hdr + lmdr + mhdr,1,1,0,1
+hdr + t,1,1,1,1
+hdrncodislandest + lmdrncodislandest,1,1,0,1
+hdrncodislandest + mhdrncodislandest,1,1,0,1
+i + ldr + lmdr,1,1,1,1
+i + ldr + lmdr + os/r + p,1,1,0,1
+i + ldr + lmdr + p,1,1,1,1
+i + ldr + os/r + p,1,1,0,1
+i + ldr + p,1,1,0,0
+i + lmdr + mhdr,1,1,1,1
+i + lmdr + mhp,1,1,0,1
+i + mhdr + os/r,1,1,0,1
+i + o + p,1,1,0,1
+i + os/r + p,1,1,0,1
+irt + lmdr + os/r,1,1,0,1
+ldr + lmdr + os/r + p,1,1,0,1
+ldr + mhdr + o,1,1,0,1
+ldr + o,1,1,0,1
+ldr + p + us19,1,1,0,1
+lmdr + mdr + t,1,1,1,1
+lmdr + mhdr + o,1,1,0,1
+lmdr + mhdr + os/r,1,1,0,1
+lmdr + o + p,1,1,0,0
+mhdr + p,1,1,0,0
+t,1,1,0,1
+us19,1,1,0,0

@@ -1,0 +1,3 @@
+addressId,address,parcelId,originalStatus,guidanceStatus,originalZoning,combination,secondaryPercent,secondaryAreaM2,flags,humanCaseIds,sourceEvidence
+4248,880 MANDALAY AVE UNIT C-609,322815740740030609,review,NO_NEW_APPROVAL,HDR,hdr + lmdr,0.094078,22.759,"[""near_complete""]",[],zoning-diagnostic/zoning-diagnostic.json#322815740740030609
+427524,880 MANDALAY AVE UNIT N-1005,322815740740141005,review,NO_NEW_APPROVAL,HDR,hdr + lmdr,0.094078,22.759,"[""near_complete""]",[],zoning-diagnostic/zoning-diagnostic.json#322815740740141005

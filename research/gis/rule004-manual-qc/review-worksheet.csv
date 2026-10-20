@@ -1,0 +1,5 @@
+caseId,addressId,address,parcelId,geometryGroup,recordedLandUseCode,meaningfulSecondaryZone,likelyBoundaryArtifact,startingHdrGuidanceAppropriate,prominentNoticeWarranted,furtherLegalOrOwnershipReviewNeeded,reviewer,reviewDate,notes
+R004-01,4248,880 MANDALAY AVE UNIT C-609,322815740740030609,R004-01,04,,,,,,,,
+R004-02,427524,880 MANDALAY AVE UNIT N-1005,322815740740141005,R004-02,04,,,,,,,,
+R004-01-CU09,427483,880 MANDALAY AVE UNIT CU-16,322815740743210160,R004-01,09,,,,,,,,
+R004-01-CU17,427487,880 MANDALAY AVE UNIT CU-13,322815740743210130,R004-01,17,,,,,,,,

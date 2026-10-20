@@ -1,0 +1,317 @@
+{
+  "weights": {
+    "base": [
+      0.35,
+      0.25,
+      0.2,
+      0.15,
+      0.05
+    ],
+    "volume_emphasis": [
+      0.45,
+      0.2,
+      0.15,
+      0.15,
+      0.05
+    ],
+    "defensibility_emphasis": [
+      0.25,
+      0.25,
+      0.3,
+      0.15,
+      0.05
+    ]
+  },
+  "opportunities": [
+    {
+      "opportunity": "Near-complete primary, residential district pairs",
+      "addresses": 603,
+      "parcels": 571,
+      "qualityPass": 603,
+      "qualityParcels": 571,
+      "planningRecovery": 482,
+      "fractionOfQcPass": 0.8,
+      "confidenceScore": 4,
+      "regulatoryScore": 4,
+      "easeScore": 4,
+      "generalizabilityScore": 4,
+      "effort": "2\u20133 engineering days; 12\u201318 distinct-geometry inspections",
+      "risk": "Residential density/setback differences; do not infer legal absence of a split.",
+      "dependencies": "Existing viewer and current district standards; condominium/shared-land context",
+      "verifiedNewEligible": 0,
+      "speculativeUpsideCeiling": 0,
+      "volumeScore": 4.005655123618878,
+      "scores": {
+        "base": 80.04,
+        "volume_emphasis": 80.051,
+        "defensibility_emphasis": 80.028
+      },
+      "ranks": {
+        "base": 1,
+        "volume_emphasis": 2,
+        "defensibility_emphasis": 1
+      }
+    },
+    {
+      "opportunity": "Near-complete primary, mixed-use district pairs",
+      "addresses": 1879,
+      "parcels": 1052,
+      "qualityPass": 1879,
+      "qualityParcels": 1052,
+      "planningRecovery": 751,
+      "fractionOfQcPass": 0.4,
+      "confidenceScore": 4,
+      "regulatoryScore": 2.5,
+      "easeScore": 3,
+      "generalizabilityScore": 4,
+      "effort": "3\u20135 days; 20\u201330 stratified geometry inspections",
+      "risk": "Commercial/institutional restrictions can be important at tiny percentages.",
+      "dependencies": "Project-location and current district standards",
+      "verifiedNewEligible": 0,
+      "speculativeUpsideCeiling": 0,
+      "volumeScore": 5.0,
+      "scores": {
+        "base": 78.0,
+        "volume_emphasis": 81.5,
+        "defensibility_emphasis": 73.0
+      },
+      "ranks": {
+        "base": 2,
+        "volume_emphasis": 1,
+        "defensibility_emphasis": 3
+      }
+    },
+    {
+      "opportunity": "Remaining exact OS/R pairs",
+      "addresses": 760,
+      "parcels": 662,
+      "qualityPass": 760,
+      "qualityParcels": 662,
+      "planningRecovery": 494,
+      "fractionOfQcPass": 0.65,
+      "confidenceScore": 4,
+      "regulatoryScore": 3.5,
+      "easeScore": 3.5,
+      "generalizabilityScore": 3,
+      "effort": "2\u20134 days; 12\u201320 stratified inspections",
+      "risk": "Cannot transplant the Rule 002 or 003 notice thresholds; preserve substantive park/open-space areas.",
+      "dependencies": "Viewer, OS/R applicability and shared-property rights",
+      "verifiedNewEligible": 0,
+      "speculativeUpsideCeiling": 0,
+      "volumeScore": 4.055211504497029,
+      "scores": {
+        "base": 75.886,
+        "volume_emphasis": 76.497,
+        "defensibility_emphasis": 74.776
+      },
+      "ranks": {
+        "base": 3,
+        "volume_emphasis": 3,
+        "defensibility_emphasis": 2
+      }
+    },
+    {
+      "opportunity": "Near-complete primary, three or more districts",
+      "addresses": 917,
+      "parcels": 555,
+      "qualityPass": 917,
+      "qualityParcels": 555,
+      "planningRecovery": 366,
+      "fractionOfQcPass": 0.4,
+      "confidenceScore": 4,
+      "regulatoryScore": 2,
+      "easeScore": 2.5,
+      "generalizabilityScore": 4,
+      "effort": "4\u20136 days; 15\u201325 site/geometry inspections",
+      "risk": "Shared-land and several legally applicable districts; many addresses amplify one wrong interpretation.",
+      "dependencies": "Site plans, governing land rights and district boundaries",
+      "verifiedNewEligible": 0,
+      "speculativeUpsideCeiling": 0,
+      "volumeScore": 3.4905235987373313,
+      "scores": {
+        "base": 63.934,
+        "volume_emphasis": 64.915,
+        "defensibility_emphasis": 60.953
+      },
+      "ranks": {
+        "base": 4,
+        "volume_emphasis": 4,
+        "defensibility_emphasis": 4
+      }
+    },
+    {
+      "opportunity": "Previously investigated Rule 001 changed/new-code scope",
+      "addresses": 202,
+      "parcels": 184,
+      "qualityPass": 193,
+      "qualityParcels": 179,
+      "planningRecovery": 96,
+      "fractionOfQcPass": 0.5,
+      "confidenceScore": 4,
+      "regulatoryScore": 2.5,
+      "easeScore": 4,
+      "generalizabilityScore": 2,
+      "effort": "1\u20133 days; inspect changed-code strata and all exceptions",
+      "risk": "Different primary guidance is beyond existing same-code approval; NCOD subtype and marina uncertainty.",
+      "dependencies": "Prior investigations plus regulatory confirmation of proposed primary",
+      "verifiedNewEligible": 0,
+      "speculativeUpsideCeiling": 9,
+      "volumeScore": 1.7876630036578867,
+      "scores": {
+        "base": 56.514,
+        "volume_emphasis": 53.589,
+        "defensibility_emphasis": 57.938
+      },
+      "ranks": {
+        "base": 5,
+        "volume_emphasis": 5,
+        "defensibility_emphasis": 5
+      }
+    },
+    {
+      "opportunity": "Material splits and remaining classification conflicts",
+      "addresses": 3921,
+      "parcels": 2244,
+      "qualityPass": 1926,
+      "qualityParcels": 1346,
+      "planningRecovery": 192,
+      "fractionOfQcPass": 0.1,
+      "confidenceScore": 3,
+      "regulatoryScore": 1.5,
+      "easeScore": 1.5,
+      "generalizabilityScore": 2,
+      "effort": "5\u201310 days; 25\u201340 targeted inspections, individual holds remain",
+      "risk": "Meaningful interior regions and discordant primaries make a blanket presentation policy unsafe.",
+      "dependencies": "Project/site evidence, density and zoning applicability guidance",
+      "verifiedNewEligible": 0,
+      "speculativeUpsideCeiling": 1995,
+      "volumeScore": 2.5281372647256073,
+      "scores": {
+        "base": 45.197,
+        "volume_emphasis": 45.753,
+        "defensibility_emphasis": 43.141
+      },
+      "ranks": {
+        "base": 6,
+        "volume_emphasis": 6,
+        "defensibility_emphasis": 6
+      }
+    },
+    {
+      "opportunity": "Same-code polygon identity / union investigation",
+      "addresses": 1024,
+      "parcels": 666,
+      "qualityPass": 0,
+      "qualityParcels": 0,
+      "planningRecovery": 0,
+      "fractionOfQcPass": 0,
+      "confidenceScore": 2,
+      "regulatoryScore": 3,
+      "easeScore": 2.5,
+      "generalizabilityScore": 5,
+      "effort": "3\u20136 days; inspect identity/version and cross-code topology",
+      "risk": "Repeated parts may be disjoint valid district areas; deduplication cannot remove different legal districts.",
+      "dependencies": "Source polygon identities, versions and City interpretation",
+      "verifiedNewEligible": 0,
+      "speculativeUpsideCeiling": 1024,
+      "volumeScore": 0.0,
+      "scores": {
+        "base": 34.5,
+        "volume_emphasis": 29.5,
+        "defensibility_emphasis": 40.5
+      },
+      "ranks": {
+        "base": 7,
+        "volume_emphasis": 7,
+        "defensibility_emphasis": 7
+      }
+    },
+    {
+      "opportunity": "NCOD and unsupported-code support",
+      "addresses": 2827,
+      "parcels": 2675,
+      "qualityPass": 0,
+      "qualityParcels": 0,
+      "planningRecovery": 0,
+      "fractionOfQcPass": 0,
+      "confidenceScore": 2,
+      "regulatoryScore": 2.5,
+      "easeScore": 1.5,
+      "generalizabilityScore": 4,
+      "effort": "5\u201310 days; overlay-aware legal mapping plus source-wide intersections",
+      "risk": "Never strip NCOD suffixes or treat OS/R as an ordinary residential primary.",
+      "dependencies": "Authoritative overlay provisions and full code registry; 1,073 pure unsupported profiles require complete intersection QC",
+      "verifiedNewEligible": 0,
+      "speculativeUpsideCeiling": 2827,
+      "volumeScore": 0.0,
+      "scores": {
+        "base": 28.5,
+        "volume_emphasis": 24.0,
+        "defensibility_emphasis": 33.5
+      },
+      "ranks": {
+        "base": 8,
+        "volume_emphasis": 8,
+        "defensibility_emphasis": 8
+      }
+    },
+    {
+      "opportunity": "Authoritative invalid zoning geometry replacement",
+      "addresses": 2355,
+      "parcels": 1621,
+      "qualityPass": 0,
+      "qualityParcels": 0,
+      "planningRecovery": 0,
+      "fractionOfQcPass": 0,
+      "confidenceScore": 1.5,
+      "regulatoryScore": 2,
+      "easeScore": 1.5,
+      "generalizabilityScore": 5,
+      "effort": "5\u201310 days plus municipal source turnaround",
+      "risk": "Repairing geometry locally does not establish the legal boundary.",
+      "dependencies": "City-corrected authoritative geometry/version",
+      "verifiedNewEligible": 0,
+      "speculativeUpsideCeiling": 2355,
+      "volumeScore": 0.0,
+      "scores": {
+        "base": 25.0,
+        "volume_emphasis": 21.5,
+        "defensibility_emphasis": 29.0
+      },
+      "ranks": {
+        "base": 9,
+        "volume_emphasis": 9,
+        "defensibility_emphasis": 9
+      }
+    },
+    {
+      "opportunity": "Coverage and cross-code topology reconciliation",
+      "addresses": 2753,
+      "parcels": 1326,
+      "qualityPass": 0,
+      "qualityParcels": 0,
+      "planningRecovery": 0,
+      "fractionOfQcPass": 0,
+      "confidenceScore": 1.5,
+      "regulatoryScore": 1.5,
+      "easeScore": 1.5,
+      "generalizabilityScore": 5,
+      "effort": "5\u201310 days plus City clarification",
+      "risk": "Summed coverage is not union coverage; excess and gaps can cancel.",
+      "dependencies": "Authoritative topology and boundary interpretation",
+      "verifiedNewEligible": 0,
+      "speculativeUpsideCeiling": 2753,
+      "volumeScore": 0.0,
+      "scores": {
+        "base": 23.0,
+        "volume_emphasis": 20.0,
+        "defensibility_emphasis": 26.0
+      },
+      "ranks": {
+        "base": 10,
+        "volume_emphasis": 10,
+        "defensibility_emphasis": 10
+      }
+    }
+  ]
+}

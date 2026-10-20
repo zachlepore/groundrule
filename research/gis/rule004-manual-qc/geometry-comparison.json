@@ -1,0 +1,19 @@
+{
+  "topologicallyEqual": false,
+  "sharedGroupVerticesIncludingClosure": 51,
+  "outlierVerticesIncludingClosure": 49,
+  "maximumHausdorffDistanceMApprox": 1.549097682624267e-05,
+  "symmetricDifferenceM2Approx": 0.0006188985553592374,
+  "sharedOnlySourceVertices": [
+    [
+      -82.82809696057733,
+      27.99717925867804
+    ],
+    [
+      -82.82809389181409,
+      27.99722160729062
+    ]
+  ],
+  "outlierOnlySourceVertices": [],
+  "interpretation": "Outlier omits two almost-collinear source vertices; tiny positive geometry difference, not normalized to equality. No independent site or ownership distinction established."
+}

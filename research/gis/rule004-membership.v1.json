@@ -1,0 +1,2555 @@
+{
+  "schemaVersion": 1,
+  "ruleId": "CLR-Z-004",
+  "basisCommit": "20d69ff",
+  "members": [
+    {
+      "addressId": 4248,
+      "parcelId": "322815740740030609",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427483,
+      "parcelId": "322815740743210160",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "09"
+    },
+    {
+      "addressId": 427484,
+      "parcelId": "322815740743210070",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "09"
+    },
+    {
+      "addressId": 427485,
+      "parcelId": "322815740743210080",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "09"
+    },
+    {
+      "addressId": 427486,
+      "parcelId": "322815740743210110",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "09"
+    },
+    {
+      "addressId": 427487,
+      "parcelId": "322815740743210130",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "17"
+    },
+    {
+      "addressId": 427488,
+      "parcelId": "322815740740191001",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427489,
+      "parcelId": "322815740740191004",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427490,
+      "parcelId": "322815740740191007",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427491,
+      "parcelId": "322815740740191012",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427492,
+      "parcelId": "322815740740190809",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427493,
+      "parcelId": "322815740740190812",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427494,
+      "parcelId": "322815740740190813",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427495,
+      "parcelId": "322815740740190906",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427496,
+      "parcelId": "322815740740190907",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427497,
+      "parcelId": "322815740740190706",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427498,
+      "parcelId": "322815740740190707",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427499,
+      "parcelId": "322815740740190709",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427500,
+      "parcelId": "322815740740190803",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427501,
+      "parcelId": "322815740740190806",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427502,
+      "parcelId": "322815740740190601",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427503,
+      "parcelId": "322815740740190603",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427504,
+      "parcelId": "322815740740190604",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427505,
+      "parcelId": "322815740740190613",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427506,
+      "parcelId": "322815740740190701",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427507,
+      "parcelId": "322815740740190411",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427508,
+      "parcelId": "322815740740190503",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427509,
+      "parcelId": "322815740740190505",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427510,
+      "parcelId": "322815740740190506",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427511,
+      "parcelId": "322815740740190307",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427512,
+      "parcelId": "322815740740190312",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427513,
+      "parcelId": "322815740740190402",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427514,
+      "parcelId": "322815740740190403",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427515,
+      "parcelId": "322815740740190202",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427516,
+      "parcelId": "322815740740190205",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427517,
+      "parcelId": "322815740740190212",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427518,
+      "parcelId": "322815740740190301",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427519,
+      "parcelId": "322815740740190102",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427520,
+      "parcelId": "322815740740190105",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427521,
+      "parcelId": "322815740740190111",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427522,
+      "parcelId": "322815740740190112",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427523,
+      "parcelId": "322815740740140911",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427524,
+      "parcelId": "322815740740141005",
+      "geometryGroup": "R004-02",
+      "footprintSha256": "b1026beacadf7e6db94c0f58dfc915f0aff6afe06d8ae23ace3982a46ee3999b",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427525,
+      "parcelId": "322815740740141009",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427526,
+      "parcelId": "322815740740140807",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427527,
+      "parcelId": "322815740740140810",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427528,
+      "parcelId": "322815740740140903",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427529,
+      "parcelId": "322815740740140702",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427530,
+      "parcelId": "322815740740140704",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427531,
+      "parcelId": "322815740740140714",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427532,
+      "parcelId": "322815740740140804",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427533,
+      "parcelId": "322815740740140601",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427534,
+      "parcelId": "322815740740140602",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427535,
+      "parcelId": "322815740740140611",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427536,
+      "parcelId": "322815740740140612",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427537,
+      "parcelId": "322815740740140701",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427538,
+      "parcelId": "322815740740140501",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427539,
+      "parcelId": "322815740740140502",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427540,
+      "parcelId": "322815740740140505",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427541,
+      "parcelId": "322815740740140507",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427542,
+      "parcelId": "322815740740140309",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427543,
+      "parcelId": "322815740740140314",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427544,
+      "parcelId": "322815740740140401",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427545,
+      "parcelId": "322815740740140405",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427546,
+      "parcelId": "322815740740140203",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427547,
+      "parcelId": "322815740740140204",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427548,
+      "parcelId": "322815740740140210",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427549,
+      "parcelId": "322815740740140213",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427550,
+      "parcelId": "322815740740140301",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427551,
+      "parcelId": "322815740740140304",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427552,
+      "parcelId": "322815740740140105",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427553,
+      "parcelId": "322815740740140112",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427554,
+      "parcelId": "322815740740140201",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427555,
+      "parcelId": "322815740740031104",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427556,
+      "parcelId": "322815740740031107",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427557,
+      "parcelId": "322815740740030913",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427558,
+      "parcelId": "322815740740031003",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427559,
+      "parcelId": "322815740740031007",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427560,
+      "parcelId": "322815740740031010",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427561,
+      "parcelId": "322815740740030814",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427562,
+      "parcelId": "322815740740030901",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427563,
+      "parcelId": "322815740740030909",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427564,
+      "parcelId": "322815740740030804",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427565,
+      "parcelId": "322815740740030809",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427566,
+      "parcelId": "322815740740030701",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427567,
+      "parcelId": "322815740740030704",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427568,
+      "parcelId": "322815740740030513",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427569,
+      "parcelId": "322815740740030601",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427570,
+      "parcelId": "322815740740030604",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427571,
+      "parcelId": "322815740740030413",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427572,
+      "parcelId": "322815740740030507",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427573,
+      "parcelId": "322815740740030311",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427574,
+      "parcelId": "322815740740030313",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427575,
+      "parcelId": "322815740740030404",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427576,
+      "parcelId": "322815740740030206",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427577,
+      "parcelId": "322815740740030210",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427578,
+      "parcelId": "322815740740030303",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427579,
+      "parcelId": "322815740740030304",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427580,
+      "parcelId": "322815740740030203",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427581,
+      "parcelId": "322815740740030204",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427582,
+      "parcelId": "322815740743210170",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "09"
+    },
+    {
+      "addressId": 427583,
+      "parcelId": "322815740740190901",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427584,
+      "parcelId": "322815740740190605",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427586,
+      "parcelId": "322815740740140803",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427587,
+      "parcelId": "322815740740140111",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427588,
+      "parcelId": "322815740740031110",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427589,
+      "parcelId": "322815740740030801",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 427590,
+      "parcelId": "322815740740030307",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428218,
+      "parcelId": "322815740740190914",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428219,
+      "parcelId": "322815740740190103",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428220,
+      "parcelId": "322815740740140411",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428221,
+      "parcelId": "322815740740030512",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428222,
+      "parcelId": "322815740740030403",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428314,
+      "parcelId": "322815740740190213",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428317,
+      "parcelId": "322815740740190414",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428319,
+      "parcelId": "322815740740030509",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428321,
+      "parcelId": "322815740740030615",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428322,
+      "parcelId": "322815740740190705",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428324,
+      "parcelId": "322815740740190807",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428325,
+      "parcelId": "322815740740030907",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428338,
+      "parcelId": "322815740740031109",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428550,
+      "parcelId": "322815740740190912",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428551,
+      "parcelId": "322815740740190714",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 428552,
+      "parcelId": "322815740740190711",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429500,
+      "parcelId": "322815740743210060",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "09"
+    },
+    {
+      "addressId": 429501,
+      "parcelId": "322815740740190606",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429502,
+      "parcelId": "322815740740190602",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429503,
+      "parcelId": "322815740740190805",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429504,
+      "parcelId": "322815740740190614",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429505,
+      "parcelId": "322815740740190409",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429506,
+      "parcelId": "322815740740190405",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429507,
+      "parcelId": "322815740740190302",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429508,
+      "parcelId": "322815740740140609",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429509,
+      "parcelId": "322815740740190504",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429510,
+      "parcelId": "322815740740190206",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429511,
+      "parcelId": "322815740740190204",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429512,
+      "parcelId": "322815740740190104",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429513,
+      "parcelId": "322815740740141001",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429514,
+      "parcelId": "322815740740190201",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429515,
+      "parcelId": "322815740740140414",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429516,
+      "parcelId": "322815740740140713",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429517,
+      "parcelId": "322815740740030813",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429518,
+      "parcelId": "322815740740141011",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429519,
+      "parcelId": "322815740740140905",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429520,
+      "parcelId": "322815740740140904",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429521,
+      "parcelId": "322815740740140504",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429522,
+      "parcelId": "322815740740140207",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429523,
+      "parcelId": "322815740740031204",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429524,
+      "parcelId": "322815740740140104",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429525,
+      "parcelId": "322815740740140102",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429526,
+      "parcelId": "322815740740031214",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429527,
+      "parcelId": "322815740740030411",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429528,
+      "parcelId": "322815740740030603",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429529,
+      "parcelId": "322815740740030710",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429530,
+      "parcelId": "322815740740030707",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429531,
+      "parcelId": "322815740740030614",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429532,
+      "parcelId": "322815740740030713",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429533,
+      "parcelId": "322815740740031005",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429534,
+      "parcelId": "322815740740031015",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429535,
+      "parcelId": "322815740740030214",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429536,
+      "parcelId": "322815740740030315",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429537,
+      "parcelId": "322815740740030504",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 429538,
+      "parcelId": "322815740740030310",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 434921,
+      "parcelId": "322815740740190511",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 434922,
+      "parcelId": "322815740740140107",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 434944,
+      "parcelId": "322815740743210100",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "09"
+    },
+    {
+      "addressId": 435693,
+      "parcelId": "322815740743210020",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "09"
+    },
+    {
+      "addressId": 435694,
+      "parcelId": "322815740740190712",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 435695,
+      "parcelId": "322815740740190303",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 435696,
+      "parcelId": "322815740740140710",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 435697,
+      "parcelId": "322815740740140202",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 435698,
+      "parcelId": "322815740740030607",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 435705,
+      "parcelId": "322815740740140707",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 435756,
+      "parcelId": "322815740740140302",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 435769,
+      "parcelId": "322815740740190507",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 435770,
+      "parcelId": "322815740740031108",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437823,
+      "parcelId": "322815740743210030",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "09"
+    },
+    {
+      "addressId": 437824,
+      "parcelId": "322815740743210120",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "17"
+    },
+    {
+      "addressId": 437825,
+      "parcelId": "322815740740190814",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437826,
+      "parcelId": "322815740740190704",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437827,
+      "parcelId": "322815740740190804",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437828,
+      "parcelId": "322815740740190413",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437829,
+      "parcelId": "322815740740190509",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437830,
+      "parcelId": "322815740740190313",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437831,
+      "parcelId": "322815740740190304",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437832,
+      "parcelId": "322815740740190109",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437833,
+      "parcelId": "322815740740140809",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437834,
+      "parcelId": "322815740740140909",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437835,
+      "parcelId": "322815740740140801",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437836,
+      "parcelId": "322815740740140412",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437837,
+      "parcelId": "322815740740140511",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437838,
+      "parcelId": "322815740740140402",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437839,
+      "parcelId": "322815740740140101",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437840,
+      "parcelId": "322815740740140113",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437841,
+      "parcelId": "322815740740031210",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437842,
+      "parcelId": "322815740740031013",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437843,
+      "parcelId": "322815740740030711",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437844,
+      "parcelId": "322815740740030608",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437845,
+      "parcelId": "322815740740030503",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437846,
+      "parcelId": "322815740740030301",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437939,
+      "parcelId": "322815740740031103",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 437980,
+      "parcelId": "322815740740030201",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 438130,
+      "parcelId": "322815740740191011",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 438131,
+      "parcelId": "322815740740141013",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 438132,
+      "parcelId": "322815740740140514",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 438133,
+      "parcelId": "322815740740190107",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 438134,
+      "parcelId": "322815740740030903",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 438135,
+      "parcelId": "322815740740140509",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 438136,
+      "parcelId": "322815740740140110",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 438137,
+      "parcelId": "322815740740030914",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 439053,
+      "parcelId": "322815740743210040",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "09"
+    },
+    {
+      "addressId": 439054,
+      "parcelId": "322815740740190612",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 439055,
+      "parcelId": "322815740740190214",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 439056,
+      "parcelId": "322815740740140605",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 439057,
+      "parcelId": "322815740740031014",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 439058,
+      "parcelId": "322815740740140711",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 439068,
+      "parcelId": "322815740743210140",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "17"
+    },
+    {
+      "addressId": 439081,
+      "parcelId": "322815740740191002",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 439123,
+      "parcelId": "322815740740140214",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 439236,
+      "parcelId": "322815740740140413",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 439238,
+      "parcelId": "322815740740190311",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443953,
+      "parcelId": "322815740743210010",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "09"
+    },
+    {
+      "addressId": 443954,
+      "parcelId": "322815740743210090",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "17"
+    },
+    {
+      "addressId": 443955,
+      "parcelId": "322815740740190913",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443956,
+      "parcelId": "322815740740191013",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443957,
+      "parcelId": "322815740740190904",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443958,
+      "parcelId": "322815740740190911",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443959,
+      "parcelId": "322815740740190713",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443960,
+      "parcelId": "322815740740190607",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443961,
+      "parcelId": "322815740740190703",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443962,
+      "parcelId": "322815740740190502",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443963,
+      "parcelId": "322815740740190305",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443964,
+      "parcelId": "322815740740190314",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443965,
+      "parcelId": "322815740740190407",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443966,
+      "parcelId": "322815740740190209",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443967,
+      "parcelId": "322815740740141014",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443968,
+      "parcelId": "322815740740190106",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443969,
+      "parcelId": "322815740740190114",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443970,
+      "parcelId": "322815740740140914",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443971,
+      "parcelId": "322815740740140814",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443972,
+      "parcelId": "322815740740140709",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443973,
+      "parcelId": "322815740740140513",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443974,
+      "parcelId": "322815740740140610",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443975,
+      "parcelId": "322815740740140614",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443976,
+      "parcelId": "322815740740140503",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443977,
+      "parcelId": "322815740740140307",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443978,
+      "parcelId": "322815740740140313",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443979,
+      "parcelId": "322815740740140407",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443980,
+      "parcelId": "322815740740140205",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443981,
+      "parcelId": "322815740740140103",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443982,
+      "parcelId": "322815740740140109",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443983,
+      "parcelId": "322815740740031114",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443984,
+      "parcelId": "322815740740031203",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443985,
+      "parcelId": "322815740740031213",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443986,
+      "parcelId": "322815740740031113",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443987,
+      "parcelId": "322815740740031008",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443988,
+      "parcelId": "322815740740030815",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443989,
+      "parcelId": "322815740740030715",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443990,
+      "parcelId": "322815740740030807",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443991,
+      "parcelId": "322815740740030812",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443992,
+      "parcelId": "322815740740030708",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443993,
+      "parcelId": "322815740740030515",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443994,
+      "parcelId": "322815740740030412",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443995,
+      "parcelId": "322815740740030508",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443996,
+      "parcelId": "322815740740030409",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443997,
+      "parcelId": "322815740740030212",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443998,
+      "parcelId": "322815740740030309",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 443999,
+      "parcelId": "322815740740191014",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444000,
+      "parcelId": "322815740740140510",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444001,
+      "parcelId": "322815740740031001",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444002,
+      "parcelId": "322815740740030414",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444296,
+      "parcelId": "322815740740190513",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444344,
+      "parcelId": "322815740740140805",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444421,
+      "parcelId": "322815740743210050",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "09"
+    },
+    {
+      "addressId": 444865,
+      "parcelId": "322815740740190512",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444866,
+      "parcelId": "322815740740140613",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444867,
+      "parcelId": "322815740740140802",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444868,
+      "parcelId": "322815740740190401",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444869,
+      "parcelId": "322815740740190207",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444870,
+      "parcelId": "322815740740140901",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444871,
+      "parcelId": "322815740740140305",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444872,
+      "parcelId": "322815740740140703",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444873,
+      "parcelId": "322815740740140212",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444874,
+      "parcelId": "322815740740140114",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444875,
+      "parcelId": "322815740740140403",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444876,
+      "parcelId": "322815740740030803",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444877,
+      "parcelId": "322815740740031009",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444878,
+      "parcelId": "322815740740141004",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444879,
+      "parcelId": "322815740740030415",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 444880,
+      "parcelId": "322815740740140813",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 447873,
+      "parcelId": "322815740740191009",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 447874,
+      "parcelId": "322815740740030408",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 447894,
+      "parcelId": "322815740740190113",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448567,
+      "parcelId": "322815740740190609",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448568,
+      "parcelId": "322815740740190203",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448569,
+      "parcelId": "322815740740141002",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448570,
+      "parcelId": "322815740740140607",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448571,
+      "parcelId": "322815740740030915",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448572,
+      "parcelId": "322815740740030613",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448573,
+      "parcelId": "322815740740030401",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448625,
+      "parcelId": "322815740740190811",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448691,
+      "parcelId": "322815740740190802",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448692,
+      "parcelId": "322815740740140811",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448693,
+      "parcelId": "322815740740030610",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448694,
+      "parcelId": "322815740740030208",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448993,
+      "parcelId": "322815740740190903",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448994,
+      "parcelId": "322815740740141012",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 448995,
+      "parcelId": "322815740740030714",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 449021,
+      "parcelId": "322815740740030215",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 450047,
+      "parcelId": "322815740740190501",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475566,
+      "parcelId": "322815740740190306",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475567,
+      "parcelId": "322815740740190406",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475568,
+      "parcelId": "322815740740190101",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475569,
+      "parcelId": "322815740740140902",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475570,
+      "parcelId": "322815740740031207",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475571,
+      "parcelId": "322815740740031004",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475572,
+      "parcelId": "322815740740030904",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475573,
+      "parcelId": "322815740740030709",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475689,
+      "parcelId": "322815740743210150",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "17"
+    },
+    {
+      "addressId": 475807,
+      "parcelId": "322815740740190909",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475808,
+      "parcelId": "322815740740190611",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475809,
+      "parcelId": "322815740740140604",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475810,
+      "parcelId": "322815740740190211",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 475811,
+      "parcelId": "322815740740140310",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 476930,
+      "parcelId": "322815740740190412",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 476937,
+      "parcelId": "322815740740140409",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 477166,
+      "parcelId": "322815740740030910",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 477201,
+      "parcelId": "322815740740030808",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 477881,
+      "parcelId": "322815740740191005",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 477882,
+      "parcelId": "322815740740190514",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 477883,
+      "parcelId": "322815740740190309",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 477884,
+      "parcelId": "322815740740030703",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 477885,
+      "parcelId": "322815740740030314",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 477886,
+      "parcelId": "322815740740190404",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 477923,
+      "parcelId": "322815740740140211",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 477930,
+      "parcelId": "322815740740140512",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 477938,
+      "parcelId": "322815740740190801",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 478000,
+      "parcelId": "322815740740190702",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 478567,
+      "parcelId": "322815740740030407",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 478590,
+      "parcelId": "322815740740141007",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 478667,
+      "parcelId": "322815740740140209",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 481403,
+      "parcelId": "322815740740191006",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 481545,
+      "parcelId": "322815740740140603",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 481546,
+      "parcelId": "322815740740030510",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484456,
+      "parcelId": "322815740740031208",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484457,
+      "parcelId": "322815740740190902",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484458,
+      "parcelId": "322815740740030908",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484459,
+      "parcelId": "322815740740030308",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484460,
+      "parcelId": "322815740740140303",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484461,
+      "parcelId": "322815740740031209",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484462,
+      "parcelId": "322815740740030514",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484463,
+      "parcelId": "322815740740141010",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484464,
+      "parcelId": "322815740740140907",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484465,
+      "parcelId": "322815740740140705",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484466,
+      "parcelId": "322815740740030611",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484467,
+      "parcelId": "322815740740140913",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484468,
+      "parcelId": "322815740740030712",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484469,
+      "parcelId": "322815740740030501",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484470,
+      "parcelId": "322815740740140910",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484471,
+      "parcelId": "322815740740030810",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484472,
+      "parcelId": "322815740740140404",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484473,
+      "parcelId": "322815740740030410",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 484474,
+      "parcelId": "322815740740140311",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    },
+    {
+      "addressId": 491822,
+      "parcelId": "322815740740140410",
+      "geometryGroup": "R004-01",
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "landUseCode": "04"
+    }
+  ]
+}

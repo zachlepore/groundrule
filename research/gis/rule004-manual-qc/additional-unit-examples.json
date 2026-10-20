@@ -1,0 +1,66 @@
+[
+  {
+    "caseId": "R004-01-CU09",
+    "record": {
+      "addressId": 427483,
+      "address": "880 MANDALAY AVE UNIT CU-16",
+      "parcelId": "322815740743210160",
+      "parcelObjectId": 244358,
+      "strap": "152832740743210160",
+      "siteAddress": "880 MANDALAY AVE",
+      "siteCity": "CLEARWATER",
+      "landUseCode": "09",
+      "unitPrefix": "CU",
+      "addressPin": "322815740743210160",
+      "siteAddId": "54190674",
+      "addressStatus": "A",
+      "originalZoning": "HDR",
+      "originalQa": "review",
+      "originalIssues": [
+        "parcel_ambiguous_zoning"
+      ],
+      "guidanceStatus": "NO_NEW_APPROVAL",
+      "parcelMatchMethod": "authoritative_identifier",
+      "coordinates": [
+        -82.82758726181093,
+        27.99769887234409
+      ],
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "sourceReference": "parcels.geojson#OBJECTID=244358;addresses.geojson#OBJECTID=427483;zoning-diagnostic/zoning-diagnostic.json#322815740743210160",
+      "groupId": "R004-01"
+    },
+    "purpose": "CU prefix; recorded LAND_USE_CODE 09; relationship and permitted use not established by frozen fields."
+  },
+  {
+    "caseId": "R004-01-CU17",
+    "record": {
+      "addressId": 427487,
+      "address": "880 MANDALAY AVE UNIT CU-13",
+      "parcelId": "322815740743210130",
+      "parcelObjectId": 328640,
+      "strap": "152832740743210130",
+      "siteAddress": "880 MANDALAY AVE",
+      "siteCity": "CLEARWATER",
+      "landUseCode": "17",
+      "unitPrefix": "CU",
+      "addressPin": "322815740743210130",
+      "siteAddId": "54190679",
+      "addressStatus": "A",
+      "originalZoning": "HDR",
+      "originalQa": "review",
+      "originalIssues": [
+        "parcel_ambiguous_zoning"
+      ],
+      "guidanceStatus": "NO_NEW_APPROVAL",
+      "parcelMatchMethod": "authoritative_identifier",
+      "coordinates": [
+        -82.82735299342862,
+        27.99774018494593
+      ],
+      "footprintSha256": "1a4251caa6e9918f2eea0c9d0dd575e76c2559ed36d92ee108c4aec17d07f18d",
+      "sourceReference": "parcels.geojson#OBJECTID=328640;addresses.geojson#OBJECTID=427487;zoning-diagnostic/zoning-diagnostic.json#322815740743210130",
+      "groupId": "R004-01"
+    },
+    "purpose": "CU prefix; recorded LAND_USE_CODE 17; relationship and permitted use not established by frozen fields."
+  }
+]
