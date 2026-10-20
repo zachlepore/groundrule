@@ -1,0 +1,17 @@
+{
+  "task": "Rule 005 investigation only; no approvals",
+  "baselineCommit": "15ed2eb2aeb663f1b9e437626eeedd9932b39093",
+  "sourceRelease": "https://github.com/zachlepore/groundrule/releases/tag/clearwater-gis-2026-09-28",
+  "archiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+  "approved004LookupSha256": "a4191f3e33be50545aeb6b0739f307db0470517d721e0abe854182dd2859e739",
+  "regulatoryEvidenceSha256": "ee2aa3737f474022f130ade018a1f5bccf5876e68eabd6a583df82d897cb0b09",
+  "liveLawCurrencyConfirmed": false,
+  "scripts": {
+    "scripts/gis/analyze-clearwater-rule005.py": "8b2fa557d34e2b81c61268c4bf6603045e2469f7fdba755748d2e4722fd708fe",
+    "scripts/gis/audit-clearwater-rule005-fence.ts": "e40c9e40d90625203c0e687e18474f36e1883df3c41e69c4cdc01363a347df61",
+    "scripts/gis/measure-clearwater-rule005.mjs": "6d5c2b7fbaca2d17528bff9dfadf6093f53048cc24b7ca4757e65d7e6d8c7905",
+    "scripts/gis/render-clearwater-rule005-qc.py": "f42088035dd4c03d8d8d258c8c2682c4518623ba0a7d3f59c0826846ddd3d2af",
+    "scripts/gis/report-clearwater-rule005.py": "ce29cd69ca9dcf7842d89bca66eb4c3762dcd6b1181fe8c48e20f39fe02d88c1"
+  },
+  "reportStatus": "Research recommendations only; human worksheet unanswered; existing approvals unchanged"
+}

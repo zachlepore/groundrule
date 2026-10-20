@@ -1,0 +1,2064 @@
+[
+  {
+    "sourceCode": "LMDR-NCOD Coachman R",
+    "sourceDescribedBaseDistrict": "LMDR",
+    "overlaySubtype": "Coachman Ridge",
+    "regulatoryCitationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LMDR",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "LMDR-NCOD Coachman R",
+    "addresses": 228,
+    "parcelIds": 228,
+    "geometryGroups": 228,
+    "technicalScreenApartFromUnsupported": 227,
+    "allCurrentDesignation3": 228,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 227,
+    "scores": {
+      "volume": 1.4155861615567455,
+      "sourceConfidence": 4.978070175438597,
+      "regulatoryClarity": 4.5,
+      "humanQcEase": 3.5,
+      "cardExtensionEase": 4,
+      "residentialFenceFit": 5
+    },
+    "weightedScore": 77.097,
+    "sensitivityScores": {
+      "volume_emphasis": 67.843,
+      "regulatory_emphasis": 83.265
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "1_AFTER_OVERLAY_AWARE_CARDS_QC_CURRENCY_AND_OWNER_APPROVAL",
+    "exclusionFlags": {
+      "coverage_outside_existing_tolerance": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 1,
+      "regulatory_emphasis": 1
+    }
+  },
+  {
+    "sourceCode": "LDR-NCOD Coachman R",
+    "sourceDescribedBaseDistrict": "LDR",
+    "overlaySubtype": "Coachman Ridge",
+    "regulatoryCitationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LDR",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "LDR-NCOD Coachman R",
+    "addresses": 7,
+    "parcelIds": 7,
+    "geometryGroups": 7,
+    "technicalScreenApartFromUnsupported": 6,
+    "allCurrentDesignation3": 7,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 6,
+    "scores": {
+      "volume": 0.23014365447458082,
+      "sourceConfidence": 4.285714285714286,
+      "regulatoryClarity": 4,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 3.5,
+      "residentialFenceFit": 4.5
+    },
+    "weightedScore": 66.778,
+    "sensitivityScores": {
+      "volume_emphasis": 55.468,
+      "regulatory_emphasis": 74.317
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "1_AFTER_OVERLAY_AWARE_CARDS_QC_CURRENCY_AND_OWNER_APPROVAL",
+    "exclusionFlags": {
+      "coverage_outside_existing_tolerance": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 4,
+      "regulatory_emphasis": 2
+    }
+  },
+  {
+    "sourceCode": "LMDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "LMDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-LMDR-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "LMDR-NCOD Island Est",
+    "addresses": 261,
+    "parcelIds": 261,
+    "geometryGroups": 261,
+    "technicalScreenApartFromUnsupported": 261,
+    "allCurrentDesignation3": 261,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 261,
+    "scores": {
+      "volume": 1.5179016515337262,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 3.5,
+      "humanQcEase": 3,
+      "cardExtensionEase": 2.5,
+      "residentialFenceFit": 4
+    },
+    "weightedScore": 64.072,
+    "sensitivityScores": {
+      "volume_emphasis": 58.625,
+      "regulatory_emphasis": 68.036
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "1_AFTER_OVERLAY_AWARE_CARDS_QC_CURRENCY_AND_OWNER_APPROVAL",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 2,
+      "regulatory_emphasis": 3
+    }
+  },
+  {
+    "sourceCode": "HDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "HDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "HDR-NCOD Island Est",
+    "addresses": 397,
+    "parcelIds": 397,
+    "geometryGroups": 22,
+    "technicalScreenApartFromUnsupported": 376,
+    "allCurrentDesignation3": 397,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 376,
+    "scores": {
+      "volume": 1.8218696549281517,
+      "sourceConfidence": 4.73551637279597,
+      "regulatoryClarity": 3.5,
+      "humanQcEase": 3,
+      "cardExtensionEase": 2.5,
+      "residentialFenceFit": 2.5
+    },
+    "weightedScore": 59.994,
+    "sensitivityScores": {
+      "volume_emphasis": 56.96,
+      "regulatory_emphasis": 63.35
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "1_AFTER_OVERLAY_AWARE_CARDS_QC_CURRENCY_AND_OWNER_APPROVAL",
+    "exclusionFlags": {
+      "address_point_outside_authoritative_parcel": 21,
+      "address_point_primary_inconsistency": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 3,
+      "regulatory_emphasis": 4
+    }
+  },
+  {
+    "sourceCode": "MDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "MDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "MDR-NCOD Island Est",
+    "addresses": 30,
+    "parcelIds": 30,
+    "geometryGroups": 12,
+    "technicalScreenApartFromUnsupported": 29,
+    "allCurrentDesignation3": 30,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 29,
+    "scores": {
+      "volume": 0.5059672171779087,
+      "sourceConfidence": 4.833333333333333,
+      "regulatoryClarity": 3.5,
+      "humanQcEase": 3,
+      "cardExtensionEase": 2.5,
+      "residentialFenceFit": 2.5
+    },
+    "weightedScore": 55.024,
+    "sensitivityScores": {
+      "volume_emphasis": 48.042,
+      "regulatory_emphasis": 61.012
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "1_AFTER_OVERLAY_AWARE_CARDS_QC_CURRENCY_AND_OWNER_APPROVAL",
+    "exclusionFlags": {
+      "address_point_outside_authoritative_parcel": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 5,
+      "regulatory_emphasis": 5
+    }
+  },
+  {
+    "sourceCode": "MHDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "MHDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "MHDR-NCOD Island Est",
+    "addresses": 139,
+    "parcelIds": 137,
+    "geometryGroups": 56,
+    "technicalScreenApartFromUnsupported": 100,
+    "allCurrentDesignation3": 139,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 100,
+    "scores": {
+      "volume": 0.9395575350035361,
+      "sourceConfidence": 3.597122302158273,
+      "regulatoryClarity": 3.5,
+      "humanQcEase": 3,
+      "cardExtensionEase": 2.5,
+      "residentialFenceFit": 2.5
+    },
+    "weightedScore": 53.05,
+    "sensitivityScores": {
+      "volume_emphasis": 47.368,
+      "regulatory_emphasis": 58.17
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "1_AFTER_OVERLAY_AWARE_CARDS_QC_CURRENCY_AND_OWNER_APPROVAL",
+    "exclusionFlags": {
+      "address_point_outside_authoritative_parcel": 39
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 6,
+      "regulatory_emphasis": 6
+    }
+  },
+  {
+    "sourceCode": "HDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "HDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "HDR-NCOD Island Est + P",
+    "addresses": 726,
+    "parcelIds": 708,
+    "geometryGroups": 19,
+    "technicalScreenApartFromUnsupported": 726,
+    "allCurrentDesignation3": 726,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 726,
+    "scores": {
+      "volume": 2.531580199220389,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 2,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 42.626,
+    "sensitivityScores": {
+      "volume_emphasis": 46.721,
+      "regulatory_emphasis": 40.563
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 7,
+      "regulatory_emphasis": 17
+    }
+  },
+  {
+    "sourceCode": "HDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "HDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "HDR-NCOD Island Est + MDR-NCOD Island Est + MHDR-NCOD Island Est + P",
+    "addresses": 135,
+    "parcelIds": 134,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 135,
+    "allCurrentDesignation3": 135,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 135,
+    "scores": {
+      "volume": 1.0916672057617163,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 41.867,
+    "sensitivityScores": {
+      "volume_emphasis": 41.642,
+      "regulatory_emphasis": 42.683
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 8,
+      "regulatory_emphasis": 7
+    }
+  },
+  {
+    "sourceCode": "HDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "HDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "HDR-NCOD Island Est + OS/R + P",
+    "addresses": 127,
+    "parcelIds": 126,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 127,
+    "allCurrentDesignation3": 127,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 127,
+    "scores": {
+      "volume": 1.0588275682135593,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 41.735,
+    "sensitivityScores": {
+      "volume_emphasis": 41.412,
+      "regulatory_emphasis": 42.618
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 9,
+      "regulatory_emphasis": 8
+    }
+  },
+  {
+    "sourceCode": "LMDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "LMDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-LMDR-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "LMDR-NCOD Island Est + P",
+    "addresses": 303,
+    "parcelIds": 302,
+    "geometryGroups": 302,
+    "technicalScreenApartFromUnsupported": 302,
+    "allCurrentDesignation3": 303,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 302,
+    "scores": {
+      "volume": 1.6327769143325739,
+      "sourceConfidence": 4.983498349834983,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 2,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 38.982,
+    "sensitivityScores": {
+      "volume_emphasis": 40.38,
+      "regulatory_emphasis": 38.716
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {
+      "nonfinal_human_primary_candidate_requires_review": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 10,
+      "regulatory_emphasis": 18
+    }
+  },
+  {
+    "sourceCode": "MHDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "MHDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "HDR-NCOD Island Est + MHDR-NCOD Island Est + P",
+    "addresses": 13,
+    "parcelIds": 12,
+    "geometryGroups": 2,
+    "technicalScreenApartFromUnsupported": 13,
+    "allCurrentDesignation3": 13,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 13,
+    "scores": {
+      "volume": 0.3387622868703801,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 38.855,
+    "sensitivityScores": {
+      "volume_emphasis": 36.371,
+      "regulatory_emphasis": 41.178
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 11,
+      "regulatory_emphasis": 9
+    }
+  },
+  {
+    "sourceCode": "MDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "MDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "HDR + MDR-NCOD Island Est",
+    "addresses": 12,
+    "parcelIds": 12,
+    "geometryGroups": 3,
+    "technicalScreenApartFromUnsupported": 12,
+    "allCurrentDesignation3": 12,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 12,
+    "scores": {
+      "volume": 0.32547227745205964,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 38.802,
+    "sensitivityScores": {
+      "volume_emphasis": 36.278,
+      "regulatory_emphasis": 41.151
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 12,
+      "regulatory_emphasis": 10
+    }
+  },
+  {
+    "sourceCode": "MDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "MDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "I-NCOD Island Est + MDR-NCOD Island Est",
+    "addresses": 9,
+    "parcelIds": 9,
+    "geometryGroups": 3,
+    "technicalScreenApartFromUnsupported": 9,
+    "allCurrentDesignation3": 9,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 9,
+    "scores": {
+      "volume": 0.2818672605010608,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 38.627,
+    "sensitivityScores": {
+      "volume_emphasis": 35.973,
+      "regulatory_emphasis": 41.064
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 13,
+      "regulatory_emphasis": 11
+    }
+  },
+  {
+    "sourceCode": "LMDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "LMDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-LMDR-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "HDR-NCOD Island Est + LMDR-NCOD Island Est",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 37.876,
+    "sensitivityScores": {
+      "volume_emphasis": 34.658,
+      "regulatory_emphasis": 40.688
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 16,
+      "regulatory_emphasis": 12
+    }
+  },
+  {
+    "sourceCode": "MDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "MDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "HDR + HDR-NCOD Island Est + I-NCOD Island Est + MDR-NCOD Island Est + P",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 37.876,
+    "sensitivityScores": {
+      "volume_emphasis": 34.658,
+      "regulatory_emphasis": 40.688
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 17,
+      "regulatory_emphasis": 13
+    }
+  },
+  {
+    "sourceCode": "MHDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "MHDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "C + MHDR-NCOD Island Est + P",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 37.876,
+    "sensitivityScores": {
+      "volume_emphasis": 34.658,
+      "regulatory_emphasis": 40.688
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 18,
+      "regulatory_emphasis": 14
+    }
+  },
+  {
+    "sourceCode": "MHDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "MHDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "HDR-NCOD Island Est + MHDR-NCOD Island Est",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 37.876,
+    "sensitivityScores": {
+      "volume_emphasis": 34.658,
+      "regulatory_emphasis": 40.688
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 19,
+      "regulatory_emphasis": 15
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "OS/R",
+    "addresses": 45,
+    "parcelIds": 25,
+    "geometryGroups": 25,
+    "technicalScreenApartFromUnsupported": 36,
+    "allCurrentDesignation3": 45,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 36,
+    "scores": {
+      "volume": 0.5637345210021216,
+      "sourceConfidence": 4.0,
+      "regulatoryClarity": 2,
+      "humanQcEase": 3,
+      "cardExtensionEase": 2.5,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 37.755,
+    "sensitivityScores": {
+      "volume_emphasis": 34.946,
+      "regulatory_emphasis": 40.627
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "coverage_outside_existing_tolerance": 4,
+      "parcel_geometry_quality_hold": 5,
+      "address_point_outside_authoritative_parcel": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 15,
+      "regulatory_emphasis": 16
+    }
+  },
+  {
+    "sourceCode": "MHDR-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "MHDR",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-MULTI-FENCE",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "MHDR-NCOD Island Est + P",
+    "addresses": 112,
+    "parcelIds": 104,
+    "geometryGroups": 23,
+    "technicalScreenApartFromUnsupported": 112,
+    "allCurrentDesignation3": 112,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 112,
+    "scores": {
+      "volume": 0.9943342320224882,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 2,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 36.477,
+    "sensitivityScores": {
+      "volume_emphasis": 35.96,
+      "regulatory_emphasis": 37.489
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 14,
+      "regulatory_emphasis": 26
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "I + LDR + LMDR + OS/R",
+    "addresses": 2,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 2,
+    "allCurrentDesignation3": 2,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 2,
+    "scores": {
+      "volume": 0.13287350086318347,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 35.031,
+    "sensitivityScores": {
+      "volume_emphasis": 32.93,
+      "regulatory_emphasis": 37.766
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 20,
+      "regulatory_emphasis": 19
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "LDR + MDR + OS/R",
+    "addresses": 2,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 2,
+    "allCurrentDesignation3": 2,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 2,
+    "scores": {
+      "volume": 0.13287350086318347,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 35.031,
+    "sensitivityScores": {
+      "volume_emphasis": 32.93,
+      "regulatory_emphasis": 37.766
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 21,
+      "regulatory_emphasis": 20
+    }
+  },
+  {
+    "sourceCode": "I-NCOD Island Est",
+    "sourceDescribedBaseDistrict": "I",
+    "overlaySubtype": "Island Estates",
+    "regulatoryCitationIds": [
+      "IE-BASE",
+      "IE-INSTITUTIONAL",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "I-NCOD Island Est + MDR-NCOD Island Est",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 34.876,
+    "sensitivityScores": {
+      "volume_emphasis": 32.658,
+      "regulatory_emphasis": 37.688
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 22,
+      "regulatory_emphasis": 21
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "C + LMDR + OS/R",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 34.876,
+    "sensitivityScores": {
+      "volume_emphasis": 32.658,
+      "regulatory_emphasis": 37.688
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 23,
+      "regulatory_emphasis": 22
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "C + MDR + OS/R",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 34.876,
+    "sensitivityScores": {
+      "volume_emphasis": 32.658,
+      "regulatory_emphasis": 37.688
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 24,
+      "regulatory_emphasis": 23
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "I + MHDR + OS/R",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 34.876,
+    "sensitivityScores": {
+      "volume_emphasis": 32.658,
+      "regulatory_emphasis": 37.688
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 25,
+      "regulatory_emphasis": 24
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "LDR + LMDR + OS/R + P",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 34.876,
+    "sensitivityScores": {
+      "volume_emphasis": 32.658,
+      "regulatory_emphasis": 37.688
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 26,
+      "regulatory_emphasis": 25
+    }
+  },
+  {
+    "sourceCode": "LMDR-NCOD Coachman R",
+    "sourceDescribedBaseDistrict": "LMDR",
+    "overlaySubtype": "Coachman Ridge",
+    "regulatoryCitationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LMDR",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "I + LMDR-NCOD Coachman R",
+    "addresses": 14,
+    "parcelIds": 14,
+    "geometryGroups": 14,
+    "technicalScreenApartFromUnsupported": 14,
+    "allCurrentDesignation3": 14,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 14,
+    "scores": {
+      "volume": 0.3515502391145097,
+      "sourceConfidence": 5.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 2,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 33.906,
+    "sensitivityScores": {
+      "volume_emphasis": 31.461,
+      "regulatory_emphasis": 36.203
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {},
+    "sensitivityRanks": {
+      "volume_emphasis": 27,
+      "regulatory_emphasis": 27
+    }
+  },
+  {
+    "sourceCode": "LDR-NCOD Coachman R",
+    "sourceDescribedBaseDistrict": "LDR",
+    "overlaySubtype": "Coachman Ridge",
+    "regulatoryCitationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LDR",
+      "FENCE-PRECEDENCE"
+    ],
+    "reasonCurrentlyAmbiguous": "Overlay-specific fence standards/precedence and current applicability not supported/confirmed; technical holds retained",
+    "mappedCombination": "LDR-NCOD Coachman R + LMDR-NCOD Coachman R",
+    "addresses": 6,
+    "parcelIds": 6,
+    "geometryGroups": 6,
+    "technicalScreenApartFromUnsupported": 4,
+    "allCurrentDesignation3": 6,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 4,
+    "scores": {
+      "volume": 0.1879115070007072,
+      "sourceConfidence": 3.3333333333333335,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 1
+    },
+    "weightedScore": 33.252,
+    "sensitivityScores": {
+      "volume_emphasis": 30.315,
+      "regulatory_emphasis": 35.876
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "2_ONLY_AFTER_PRIMARY_RULE_COMPLETENESS_AND_MEANINGFUL_SPLIT_REVIEW",
+    "exclusionFlags": {
+      "coverage_outside_existing_tolerance": 2
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 28,
+      "regulatory_emphasis": 28
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "OS/R + P",
+    "addresses": 5,
+    "parcelIds": 4,
+    "geometryGroups": 4,
+    "technicalScreenApartFromUnsupported": 4,
+    "allCurrentDesignation3": 5,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 4,
+    "scores": {
+      "volume": 0.1879115070007072,
+      "sourceConfidence": 4.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 32.252,
+    "sensitivityScores": {
+      "volume_emphasis": 30.315,
+      "regulatory_emphasis": 34.876
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "coverage_outside_existing_tolerance": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 29,
+      "regulatory_emphasis": 29
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "LMDR + MDR + OS/R",
+    "addresses": 11,
+    "parcelIds": 7,
+    "geometryGroups": 7,
+    "technicalScreenApartFromUnsupported": 7,
+    "allCurrentDesignation3": 11,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 7,
+    "scores": {
+      "volume": 0.24858355800562204,
+      "sourceConfidence": 3.1818181818181817,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 30.04,
+    "sensitivityScores": {
+      "volume_emphasis": 28.286,
+      "regulatory_emphasis": 32.543
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "invalid_zoning_geometry": 3,
+      "coverage_outside_existing_tolerance": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 30,
+      "regulatory_emphasis": 30
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "OS/R + T",
+    "addresses": 5,
+    "parcelIds": 4,
+    "geometryGroups": 4,
+    "technicalScreenApartFromUnsupported": 3,
+    "allCurrentDesignation3": 5,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 3,
+    "scores": {
+      "volume": 0.16273613872602982,
+      "sourceConfidence": 3.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 29.151,
+    "sensitivityScores": {
+      "volume_emphasis": 27.139,
+      "regulatory_emphasis": 31.825
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "existing_cross_code_overlap_diagnostic": 2
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 31,
+      "regulatory_emphasis": 31
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "I + OS/R",
+    "addresses": 7,
+    "parcelIds": 4,
+    "geometryGroups": 4,
+    "technicalScreenApartFromUnsupported": 3,
+    "allCurrentDesignation3": 7,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 3,
+    "scores": {
+      "volume": 0.16273613872602982,
+      "sourceConfidence": 2.142857142857143,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 26.58,
+    "sensitivityScores": {
+      "volume_emphasis": 24.568,
+      "regulatory_emphasis": 29.254
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "parcel_peer_hold": 3,
+      "address_point_primary_inconsistency": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 32,
+      "regulatory_emphasis": 32
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "I + LMDR + OS/R",
+    "addresses": 3,
+    "parcelIds": 2,
+    "geometryGroups": 2,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 3,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 1.6666666666666667,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 24.876,
+    "sensitivityScores": {
+      "volume_emphasis": 22.658,
+      "regulatory_emphasis": 27.688
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "coverage_outside_existing_tolerance": 2,
+      "invalid_zoning_geometry": 2,
+      "repeated_same_code_polygons": 2,
+      "address_point_primary_inconsistency": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 33,
+      "regulatory_emphasis": 33
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "MDR + OS/R",
+    "addresses": 3,
+    "parcelIds": 2,
+    "geometryGroups": 2,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 3,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 1.6666666666666667,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 24.876,
+    "sensitivityScores": {
+      "volume_emphasis": 22.658,
+      "regulatory_emphasis": 27.688
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "existing_cross_code_overlap_diagnostic": 2
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 34,
+      "regulatory_emphasis": 34
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "HDR + OS/R + P",
+    "addresses": 6,
+    "parcelIds": 5,
+    "geometryGroups": 5,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 6,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 0.8333333333333334,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 22.376,
+    "sensitivityScores": {
+      "volume_emphasis": 20.158,
+      "regulatory_emphasis": 25.188
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "address_point_primary_inconsistency": 5,
+      "existing_cross_code_overlap_diagnostic": 1,
+      "coverage_outside_existing_tolerance": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 36,
+      "regulatory_emphasis": 35
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "LDR + OS/R",
+    "addresses": 6,
+    "parcelIds": 5,
+    "geometryGroups": 5,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 6,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 0.8333333333333334,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 22.376,
+    "sensitivityScores": {
+      "volume_emphasis": 20.158,
+      "regulatory_emphasis": 25.188
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "address_point_primary_inconsistency": 4,
+      "coverage_outside_existing_tolerance": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 37,
+      "regulatory_emphasis": 36
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "HDR + OS/R",
+    "addresses": 22,
+    "parcelIds": 21,
+    "geometryGroups": 6,
+    "technicalScreenApartFromUnsupported": 3,
+    "allCurrentDesignation3": 22,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 3,
+    "scores": {
+      "volume": 0.16273613872602982,
+      "sourceConfidence": 0.6818181818181818,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 22.196,
+    "sensitivityScores": {
+      "volume_emphasis": 20.185,
+      "regulatory_emphasis": 24.871
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "address_point_primary_inconsistency": 14,
+      "coverage_outside_existing_tolerance": 9,
+      "address_point_outside_authoritative_parcel": 7
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 35,
+      "regulatory_emphasis": 37
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "LMDR + OS/R",
+    "addresses": 8,
+    "parcelIds": 8,
+    "geometryGroups": 8,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 8,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 0.625,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 21.751,
+    "sensitivityScores": {
+      "volume_emphasis": 19.533,
+      "regulatory_emphasis": 24.563
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "invalid_zoning_geometry": 6,
+      "coverage_outside_existing_tolerance": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 38,
+      "regulatory_emphasis": 38
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "MDR + OS/R + P",
+    "addresses": 44,
+    "parcelIds": 42,
+    "geometryGroups": 4,
+    "technicalScreenApartFromUnsupported": 2,
+    "allCurrentDesignation3": 44,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 2,
+    "scores": {
+      "volume": 0.13287350086318347,
+      "sourceConfidence": 0.22727272727272727,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 20.713,
+    "sensitivityScores": {
+      "volume_emphasis": 18.612,
+      "regulatory_emphasis": 23.448
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "address_point_primary_inconsistency": 41,
+      "existing_cross_code_overlap_diagnostic": 40,
+      "repeated_same_code_polygons": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 39,
+      "regulatory_emphasis": 39
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "LMDR + OS/R + P",
+    "addresses": 12,
+    "parcelIds": 10,
+    "geometryGroups": 10,
+    "technicalScreenApartFromUnsupported": 4,
+    "allCurrentDesignation3": 12,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 4,
+    "scores": {
+      "volume": 0.1879115070007072,
+      "sourceConfidence": 1.6666666666666667,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 2,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 20.252,
+    "sensitivityScores": {
+      "volume_emphasis": 18.315,
+      "regulatory_emphasis": 22.876
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "address_point_primary_inconsistency": 5,
+      "existing_cross_code_overlap_diagnostic": 5,
+      "invalid_zoning_geometry": 3,
+      "repeated_same_code_polygons": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 40,
+      "regulatory_emphasis": 40
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "MHDR + OS/R",
+    "addresses": 91,
+    "parcelIds": 21,
+    "geometryGroups": 2,
+    "technicalScreenApartFromUnsupported": 1,
+    "allCurrentDesignation3": 91,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 1,
+    "scores": {
+      "volume": 0.0939557535003536,
+      "sourceConfidence": 0.054945054945054944,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 20.041,
+    "sensitivityScores": {
+      "volume_emphasis": 17.823,
+      "regulatory_emphasis": 22.853
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "address_point_primary_inconsistency": 90
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 41,
+      "regulatory_emphasis": 41
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "C + OS/R + US 19",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 0,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 0,
+    "scores": {
+      "volume": 0.0,
+      "sourceConfidence": 0.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 19.5,
+    "sensitivityScores": {
+      "volume_emphasis": 17.0,
+      "regulatory_emphasis": 22.5
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "coverage_outside_existing_tolerance": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 42,
+      "regulatory_emphasis": 42
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "HDR + OS/R + P + T",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 0,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 0,
+    "scores": {
+      "volume": 0.0,
+      "sourceConfidence": 0.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 19.5,
+    "sensitivityScores": {
+      "volume_emphasis": 17.0,
+      "regulatory_emphasis": 22.5
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "address_point_primary_inconsistency": 1,
+      "existing_cross_code_overlap_diagnostic": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 43,
+      "regulatory_emphasis": 43
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "I + LDR + LMDR + OS/R + P",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 0,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 0,
+    "scores": {
+      "volume": 0.0,
+      "sourceConfidence": 0.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 19.5,
+    "sensitivityScores": {
+      "volume_emphasis": 17.0,
+      "regulatory_emphasis": 22.5
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "address_point_primary_inconsistency": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 44,
+      "regulatory_emphasis": 44
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "I + LMDR + MDR + OS/R",
+    "addresses": 3,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 0,
+    "allCurrentDesignation3": 3,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 0,
+    "scores": {
+      "volume": 0.0,
+      "sourceConfidence": 0.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 19.5,
+    "sensitivityScores": {
+      "volume_emphasis": 17.0,
+      "regulatory_emphasis": 22.5
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "invalid_zoning_geometry": 3
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 45,
+      "regulatory_emphasis": 45
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "I + LMDR + O + OS/R",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 0,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 0,
+    "scores": {
+      "volume": 0.0,
+      "sourceConfidence": 0.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 19.5,
+    "sensitivityScores": {
+      "volume_emphasis": 17.0,
+      "regulatory_emphasis": 22.5
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "invalid_zoning_geometry": 1,
+      "repeated_same_code_polygons": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 46,
+      "regulatory_emphasis": 46
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "I + MDR + OS/R",
+    "addresses": 4,
+    "parcelIds": 2,
+    "geometryGroups": 2,
+    "technicalScreenApartFromUnsupported": 0,
+    "allCurrentDesignation3": 4,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 0,
+    "scores": {
+      "volume": 0.0,
+      "sourceConfidence": 0.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 19.5,
+    "sensitivityScores": {
+      "volume_emphasis": 17.0,
+      "regulatory_emphasis": 22.5
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "parcel_peer_hold": 1,
+      "coverage_outside_existing_tolerance": 2,
+      "address_point_primary_inconsistency": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 47,
+      "regulatory_emphasis": 47
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "I + OS/R + P + US 19",
+    "addresses": 5,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 0,
+    "allCurrentDesignation3": 5,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 0,
+    "scores": {
+      "volume": 0.0,
+      "sourceConfidence": 0.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 19.5,
+    "sensitivityScores": {
+      "volume_emphasis": 17.0,
+      "regulatory_emphasis": 22.5
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "parcel_peer_hold": 4,
+      "address_point_primary_inconsistency": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 48,
+      "regulatory_emphasis": 48
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "IRT + LMDR + OS/R",
+    "addresses": 1,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 0,
+    "allCurrentDesignation3": 1,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 0,
+    "scores": {
+      "volume": 0.0,
+      "sourceConfidence": 0.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 19.5,
+    "sensitivityScores": {
+      "volume_emphasis": 17.0,
+      "regulatory_emphasis": 22.5
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "coverage_outside_existing_tolerance": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 49,
+      "regulatory_emphasis": 49
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "LDR + LMDR + MDR + OS/R",
+    "addresses": 3,
+    "parcelIds": 1,
+    "geometryGroups": 1,
+    "technicalScreenApartFromUnsupported": 0,
+    "allCurrentDesignation3": 3,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 0,
+    "scores": {
+      "volume": 0.0,
+      "sourceConfidence": 0.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 19.5,
+    "sensitivityScores": {
+      "volume_emphasis": 17.0,
+      "regulatory_emphasis": 22.5
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "existing_cross_code_overlap_diagnostic": 3,
+      "repeated_same_code_polygons": 3
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 50,
+      "regulatory_emphasis": 50
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "LDR + OS/R + P",
+    "addresses": 6,
+    "parcelIds": 6,
+    "geometryGroups": 6,
+    "technicalScreenApartFromUnsupported": 0,
+    "allCurrentDesignation3": 6,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 0,
+    "scores": {
+      "volume": 0.0,
+      "sourceConfidence": 0.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 19.5,
+    "sensitivityScores": {
+      "volume_emphasis": 17.0,
+      "regulatory_emphasis": 22.5
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "address_point_primary_inconsistency": 6,
+      "existing_cross_code_overlap_diagnostic": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 51,
+      "regulatory_emphasis": 51
+    }
+  },
+  {
+    "sourceCode": "OS/R",
+    "sourceDescribedBaseDistrict": "OSR",
+    "overlaySubtype": null,
+    "regulatoryCitationIds": [
+      "OSR-SCOPE"
+    ],
+    "reasonCurrentlyAmbiguous": "Nonresidential OSR scope and source/applicability questions; no residential alias",
+    "mappedCombination": "OS/R + P + T",
+    "addresses": 6,
+    "parcelIds": 2,
+    "geometryGroups": 2,
+    "technicalScreenApartFromUnsupported": 0,
+    "allCurrentDesignation3": 6,
+    "currentCertifiedOrQualifiedSplitReady": 0,
+    "researchPotentialCeilingAfterRegulatoryAndProductWork": 0,
+    "scores": {
+      "volume": 0.0,
+      "sourceConfidence": 0.0,
+      "regulatoryClarity": 1.5,
+      "humanQcEase": 4.5,
+      "cardExtensionEase": 1,
+      "residentialFenceFit": 0
+    },
+    "weightedScore": 19.5,
+    "sensitivityScores": {
+      "volume_emphasis": 17.0,
+      "regulatory_emphasis": 22.5
+    },
+    "currentReadiness": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+    "futureDesignationPossibility": "3_NONRESIDENTIAL_OR_APPLICABILITY_REVIEW",
+    "exclusionFlags": {
+      "address_point_primary_inconsistency": 3,
+      "existing_cross_code_overlap_diagnostic": 6,
+      "address_point_outside_authoritative_parcel": 1
+    },
+    "sensitivityRanks": {
+      "volume_emphasis": 52,
+      "regulatory_emphasis": 52
+    }
+  }
+]

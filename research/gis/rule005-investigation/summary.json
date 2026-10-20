@@ -1,0 +1,303 @@
+{
+  "baseline": {
+    "sourceSnapshotId": "clearwater-gis-2026-09-28",
+    "archive": {
+      "sha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+      "bytes": 36688145
+    },
+    "sourceVerification": [
+      {
+        "file": "addresses.geojson",
+        "bytes": 19691340,
+        "sha256": "f4d65a13e94871765f758c3dd238bfca67e1e78de197c10f8564dd16e9dedc96",
+        "verified": true
+      },
+      {
+        "file": "database-import.clean.json",
+        "bytes": 64423990,
+        "sha256": "7cf12d24c9e766bb7c5649386ebcbf324096a8e6698b8b90c3ceaf5042d27c84",
+        "verified": true
+      },
+      {
+        "file": "database-review.json",
+        "bytes": 30635392,
+        "sha256": "bb34bb7a2048a6031f37f68c8571a244a9049f473a029f0ef45a42ad85f56112",
+        "verified": true
+      },
+      {
+        "file": "parcels.geojson",
+        "bytes": 93980229,
+        "sha256": "713252d9f00ef9ea384a06a90f22a24df1034807fc68208b1ee7a47eb0e63d56",
+        "verified": true
+      },
+      {
+        "file": "property-profiles.json",
+        "bytes": 95059379,
+        "sha256": "89a5d403df8a2cb4393f8f142d6b8e4de78e8e0a9d57211643b0334ace90753a",
+        "verified": true
+      },
+      {
+        "file": "source-metadata.json",
+        "bytes": 3719,
+        "sha256": "f94920bfd23a89169fafbf97658c21312c6930cf5d55e0f765db698cabfb1989",
+        "verified": true
+      },
+      {
+        "file": "validation-report.json",
+        "bytes": 10196,
+        "sha256": "b51d57f1dc737ecfb862e4c49626558a3662d83b263e30f8b08c90f38925cb78",
+        "verified": true
+      },
+      {
+        "file": "validation-report.md",
+        "bytes": 4239,
+        "sha256": "cd6a25b7f12b81230b61921ccb0b8cb5b1b67034ad138fbf3ba7f883e023c4ef",
+        "verified": true
+      },
+      {
+        "file": "zoning-diagnostic/representative-samples.md",
+        "bytes": 1987,
+        "sha256": "f00f35a446f68d8da2f6ba82a1c483f490e35f88d862fd1152ead85cc02a4f06",
+        "verified": true
+      },
+      {
+        "file": "zoning-diagnostic/zoning-diagnostic.json",
+        "bytes": 26136992,
+        "sha256": "f0b1edcbdd960019b3f153cd4cbd3b393cbb800f74c892642917f08378fe86e3",
+        "verified": true
+      },
+      {
+        "file": "zoning.geojson",
+        "bytes": 2289896,
+        "sha256": "56ee74e1c2e8fab582efcdda388008e77205237439169c13191caa0ecb31929b",
+        "verified": true
+      }
+    ],
+    "counts": {
+      "profiles": 63430,
+      "uniqueParcels": 47716,
+      "clean": 43092,
+      "review": 20338
+    },
+    "approvedLookup": {
+      "sha256": "a4191f3e33be50545aeb6b0739f307db0470517d721e0abe854182dd2859e739",
+      "bytes": 250198246
+    },
+    "allProfiles": 63430,
+    "originalReview": 20338,
+    "remainingReview": 17014,
+    "approvedCounts": {
+      "CLR-Z-002": 262,
+      "CLR-Z-001": 1967,
+      "CLR-Z-004": 364,
+      "CLR-Z-003": 731
+    },
+    "unsupportedAddresses": 2832,
+    "unsupportedParcelIds": 2676,
+    "reusedFrozenDiagnostic": 1621,
+    "supplementedMissingDiagnostic": 1055,
+    "uniqueSupplementalRawGeometryComputations": 626,
+    "originalFieldsChanged": 0,
+    "newApprovals": 0,
+    "codeNormalizationPerformed": false,
+    "script": {
+      "sha256": "6d5c2b7fbaca2d17528bff9dfadf6093f53048cc24b7ca4757e65d7e6d8c7905",
+      "bytes": 5652
+    }
+  },
+  "unsupportedTotal": {
+    "addresses": 2832,
+    "parcelIds": 2676,
+    "geometryGroups": 1077
+  },
+  "ncod": {
+    "addresses": 2524,
+    "parcelIds": 2492,
+    "geometryGroups": 965
+  },
+  "nonNcod": {
+    "addresses": 308,
+    "parcelIds": 184,
+    "geometryGroups": 112
+  },
+  "sourceCodes": [
+    {
+      "sourceCode": "HDR-NCOD Island Est",
+      "addresses": 1385,
+      "parcelIds": 1365,
+      "geometryGroups": 43,
+      "baseEvidence": "HDR",
+      "overlaySubtype": "Island Estates",
+      "exactSingleMappedCode": 397,
+      "technicalScreenApartFromUnsupported": 1364,
+      "unitLabeledAddresses": 1349,
+      "flags": {
+        "address_point_outside_authoritative_parcel": 21,
+        "address_point_primary_inconsistency": 1
+      }
+    },
+    {
+      "sourceCode": "LMDR-NCOD Island Est",
+      "addresses": 565,
+      "parcelIds": 564,
+      "geometryGroups": 564,
+      "baseEvidence": "LMDR",
+      "overlaySubtype": "Island Estates",
+      "exactSingleMappedCode": 261,
+      "technicalScreenApartFromUnsupported": 564,
+      "unitLabeledAddresses": 0,
+      "flags": {
+        "nonfinal_human_primary_candidate_requires_review": 1
+      }
+    },
+    {
+      "sourceCode": "OS/R",
+      "addresses": 308,
+      "parcelIds": 184,
+      "geometryGroups": 112,
+      "baseEvidence": "OSR",
+      "overlaySubtype": null,
+      "exactSingleMappedCode": 45,
+      "technicalScreenApartFromUnsupported": 76,
+      "unitLabeledAddresses": 132,
+      "flags": {
+        "address_point_primary_inconsistency": 174,
+        "coverage_outside_existing_tolerance": 24,
+        "existing_cross_code_overlap_diagnostic": 61,
+        "parcel_peer_hold": 8,
+        "invalid_zoning_geometry": 18,
+        "repeated_same_code_polygons": 8,
+        "address_point_outside_authoritative_parcel": 9,
+        "parcel_geometry_quality_hold": 5
+      }
+    },
+    {
+      "sourceCode": "MHDR-NCOD Island Est",
+      "addresses": 266,
+      "parcelIds": 255,
+      "geometryGroups": 83,
+      "baseEvidence": "MHDR",
+      "overlaySubtype": "Island Estates",
+      "exactSingleMappedCode": 139,
+      "technicalScreenApartFromUnsupported": 227,
+      "unitLabeledAddresses": 203,
+      "flags": {
+        "address_point_outside_authoritative_parcel": 39
+      }
+    },
+    {
+      "sourceCode": "LMDR-NCOD Coachman R",
+      "addresses": 242,
+      "parcelIds": 242,
+      "geometryGroups": 242,
+      "baseEvidence": "LMDR",
+      "overlaySubtype": "Coachman Ridge",
+      "exactSingleMappedCode": 228,
+      "technicalScreenApartFromUnsupported": 241,
+      "unitLabeledAddresses": 0,
+      "flags": {
+        "coverage_outside_existing_tolerance": 1
+      }
+    },
+    {
+      "sourceCode": "MDR-NCOD Island Est",
+      "addresses": 52,
+      "parcelIds": 52,
+      "geometryGroups": 19,
+      "baseEvidence": "MDR",
+      "overlaySubtype": "Island Estates",
+      "exactSingleMappedCode": 30,
+      "technicalScreenApartFromUnsupported": 51,
+      "unitLabeledAddresses": 51,
+      "flags": {
+        "address_point_outside_authoritative_parcel": 1
+      }
+    },
+    {
+      "sourceCode": "LDR-NCOD Coachman R",
+      "addresses": 13,
+      "parcelIds": 13,
+      "geometryGroups": 13,
+      "baseEvidence": "LDR",
+      "overlaySubtype": "Coachman Ridge",
+      "exactSingleMappedCode": 7,
+      "technicalScreenApartFromUnsupported": 10,
+      "unitLabeledAddresses": 0,
+      "flags": {
+        "coverage_outside_existing_tolerance": 3
+      }
+    },
+    {
+      "sourceCode": "I-NCOD Island Est",
+      "addresses": 1,
+      "parcelIds": 1,
+      "geometryGroups": 1,
+      "baseEvidence": "I",
+      "overlaySubtype": "Island Estates",
+      "exactSingleMappedCode": 0,
+      "technicalScreenApartFromUnsupported": 1,
+      "unitLabeledAddresses": 0,
+      "flags": {}
+    }
+  ],
+  "combinationCount": 52,
+  "technicalHolds": {
+    "address_point_primary_inconsistency": 175,
+    "coverage_outside_existing_tolerance": 28,
+    "existing_cross_code_overlap_diagnostic": 61,
+    "parcel_peer_hold": 8,
+    "invalid_zoning_geometry": 18,
+    "repeated_same_code_polygons": 8,
+    "nonfinal_human_primary_candidate_requires_review": 1,
+    "address_point_outside_authoritative_parcel": 70,
+    "parcel_geometry_quality_hold": 5
+  },
+  "designationsToday": {
+    "1_certified_starting": 0,
+    "2_certified_with_meaningful_split": 0,
+    "3_ambiguous_known_information": 2832
+  },
+  "note": "Internal confidence designations only, not municipal certification. This is an investigation recommendation, not a modified export. Technical screen apart from unsupported does not resolve the original issue or establish regulatory readiness.",
+  "candidate": {
+    "exactSourceCode": "LMDR-NCOD Coachman R",
+    "exactMappedCombination": [
+      "LMDR-NCOD Coachman R"
+    ],
+    "addresses": 227,
+    "parcelIds": 227,
+    "geometryGroups": 227,
+    "otherSamePrimary": {
+      "addresses": 15,
+      "parcelIds": 15,
+      "geometryGroups": 15
+    },
+    "currentCertifiedReady": 0,
+    "potentialAfterAllGates": 227,
+    "originalIssueOnlyUnsupported": true,
+    "rawLandUseCodes": {
+      "01": 227
+    },
+    "areaM2Quantiles": {
+      "0": 887.842328,
+      "25": 938.355829,
+      "50": 1040.81076,
+      "75": 1228.926414,
+      "95": 1826.149791,
+      "100": 5182.742443
+    },
+    "coveragePercentQuantiles": {
+      "0": 100,
+      "25": 100,
+      "50": 100,
+      "75": 100,
+      "95": 100,
+      "100": 100
+    },
+    "definition": "Exact raw source code and sole positive-area combined district; original issues exactly unsupported_zoning_code; unchanged source QA and no existing geometry, coverage, source, matching, jurisdiction or human hold. No derived alias is assigned."
+  },
+  "qcCases": 11,
+  "qcCandidateCases": 8,
+  "scriptSha256": "8b2fa557d34e2b81c61268c4bf6603045e2469f7fdba755748d2e4722fd708fe",
+  "regulatoryEvidenceSha256": "ee2aa3737f474022f130ade018a1f5bccf5876e68eabd6a583df82d897cb0b09",
+  "noApprovals": true
+}

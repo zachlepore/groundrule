@@ -1,0 +1,1248 @@
+[
+  {
+    "caseId": "R005-01",
+    "inCandidateScope": true,
+    "selectionReason": "Smallest footprint",
+    "record": {
+      "addressId": 322031,
+      "address": "1533 FARRIER TRL",
+      "parcelId": "072916168620002110",
+      "originalStatus": "review",
+      "originalNormalizedZoningCode": null,
+      "sourceCode": "LMDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LMDR",
+      "overlaySubtype": "Coachman Ridge",
+      "overlayCode": "CRNCOD",
+      "baseEvidenceCitation": "CR-BASE",
+      "baseDerivationMethod": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "mappedSourceCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "combination": "LMDR-NCOD Coachman R",
+      "additionalDistricts": [],
+      "coverage": [
+        {
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 887.842328,
+          "percentOfParcel": 100
+        }
+      ],
+      "sourceZoningFeatures": [
+        {
+          "sourceIndex": 459,
+          "sourceIdentifier": 10947,
+          "rawZoningCode": "LMDR-NCOD Coachman R",
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 887.842328,
+          "percentOfParcel": 100
+        }
+      ],
+      "originalIssues": [
+        "unsupported_zoning_code"
+      ],
+      "researchTechnicalHolds": [],
+      "technicalScreenApartFromUnsupported": true,
+      "diagnosticMethod": "EXISTING_TURF_INTERSECTION_HELPER_NO_CODE_FILTER",
+      "humanCaseIds": [],
+      "footprintSha256": "e1552493427fa7295c11c752997b930a18da24625fe593ceac4c833bb448c364",
+      "unitLabelPresent": false,
+      "recordedLandUseCode": "01",
+      "parcelObjectId": 793940,
+      "strap": "162907168620002110",
+      "siteAddress": "1533 FARRIER TRL",
+      "parcelAreaM2": 887.842328,
+      "sourcePolygonIds": [
+        10947
+      ],
+      "representativePointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressPointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressInsideLinkedParcel": true,
+      "addressCoordinates": [
+        -82.73985234703329,
+        27.98045327234026
+      ],
+      "currentResearchResponseDesignation": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+      "currentCertifiedReadiness": false,
+      "newApproval": false,
+      "legalApplicabilityConfirmed": false,
+      "informationSafeToRetain": [
+        "exact_source_code",
+        "explicit_source_base_description",
+        "mapped_overlay_subtype",
+        "all_positive_area_districts_and_percentages",
+        "source_qa_and_holds",
+        "source_references_and_geometry"
+      ],
+      "evidenceReference": "parcel-measurements.json#072916168620002110;source/parcels.geojson#OBJECTID=793940",
+      "perimeterMApprox": 121.36126331331774,
+      "compactness": 0.7575039816225738,
+      "vertexCount": 6,
+      "distanceToCombinedZoneBoundaryMApprox": 103.88500299137013,
+      "selectedForQc": true
+    },
+    "citationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LMDR",
+      "CR-SIDE",
+      "FENCE-PRECEDENCE"
+    ],
+    "ownerQc": {
+      "reviewer": "",
+      "date": "",
+      "combinedNcodMappingCredible": "",
+      "additionalDistrictOrBoundaryConcern": "",
+      "frontOrStreetSideConfiguration": "",
+      "cityRegulatoryClarificationNeeded": "",
+      "knownFactsAdequateForAmbiguousResponse": "",
+      "futureStartingGuidanceAfterOverlaySupportAppropriate": "",
+      "proposedInternalDesignation": "",
+      "notes": ""
+    }
+  },
+  {
+    "caseId": "R005-02",
+    "inCandidateScope": true,
+    "selectionReason": "Largest footprint",
+    "record": {
+      "addressId": 320766,
+      "address": "1573 COACHMAKERS LN",
+      "parcelId": "062916168600001550",
+      "originalStatus": "review",
+      "originalNormalizedZoningCode": null,
+      "sourceCode": "LMDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LMDR",
+      "overlaySubtype": "Coachman Ridge",
+      "overlayCode": "CRNCOD",
+      "baseEvidenceCitation": "CR-BASE",
+      "baseDerivationMethod": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "mappedSourceCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "combination": "LMDR-NCOD Coachman R",
+      "additionalDistricts": [],
+      "coverage": [
+        {
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 5182.742443,
+          "percentOfParcel": 100
+        }
+      ],
+      "sourceZoningFeatures": [
+        {
+          "sourceIndex": 459,
+          "sourceIdentifier": 10947,
+          "rawZoningCode": "LMDR-NCOD Coachman R",
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 5182.742443,
+          "percentOfParcel": 100
+        }
+      ],
+      "originalIssues": [
+        "unsupported_zoning_code"
+      ],
+      "researchTechnicalHolds": [],
+      "technicalScreenApartFromUnsupported": true,
+      "diagnosticMethod": "EXISTING_TURF_INTERSECTION_HELPER_NO_CODE_FILTER",
+      "humanCaseIds": [],
+      "footprintSha256": "65cdfbc10c03b51acd62ef603612905bd5ffb40b6a66c3c402ee5c4e76918263",
+      "unitLabelPresent": false,
+      "recordedLandUseCode": "01",
+      "parcelObjectId": 1038902,
+      "strap": "162906168600001550",
+      "siteAddress": "1573 COACHMAKER'S LN",
+      "parcelAreaM2": 5182.742443,
+      "sourcePolygonIds": [
+        10947
+      ],
+      "representativePointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressPointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressInsideLinkedParcel": true,
+      "addressCoordinates": [
+        -82.73808031861937,
+        27.980933132408655
+      ],
+      "currentResearchResponseDesignation": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+      "currentCertifiedReadiness": false,
+      "newApproval": false,
+      "legalApplicabilityConfirmed": false,
+      "informationSafeToRetain": [
+        "exact_source_code",
+        "explicit_source_base_description",
+        "mapped_overlay_subtype",
+        "all_positive_area_districts_and_percentages",
+        "source_qa_and_holds",
+        "source_references_and_geometry"
+      ],
+      "evidenceReference": "parcel-measurements.json#062916168600001550;source/parcels.geojson#OBJECTID=1038902",
+      "perimeterMApprox": 313.7379125673169,
+      "compactness": 0.6616600070929399,
+      "vertexCount": 19,
+      "distanceToCombinedZoneBoundaryMApprox": 216.34254369443656,
+      "selectedForQc": true
+    },
+    "citationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LMDR",
+      "CR-SIDE",
+      "FENCE-PRECEDENCE"
+    ],
+    "ownerQc": {
+      "reviewer": "",
+      "date": "",
+      "combinedNcodMappingCredible": "",
+      "additionalDistrictOrBoundaryConcern": "",
+      "frontOrStreetSideConfiguration": "",
+      "cityRegulatoryClarificationNeeded": "",
+      "knownFactsAdequateForAmbiguousResponse": "",
+      "futureStartingGuidanceAfterOverlaySupportAppropriate": "",
+      "proposedInternalDesignation": "",
+      "notes": ""
+    }
+  },
+  {
+    "caseId": "R005-03",
+    "inCandidateScope": true,
+    "selectionReason": "Most irregular outline by compactness",
+    "record": {
+      "addressId": 320013,
+      "address": "2377 FLINT LOCK DR",
+      "parcelId": "072916168620001840",
+      "originalStatus": "review",
+      "originalNormalizedZoningCode": null,
+      "sourceCode": "LMDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LMDR",
+      "overlaySubtype": "Coachman Ridge",
+      "overlayCode": "CRNCOD",
+      "baseEvidenceCitation": "CR-BASE",
+      "baseDerivationMethod": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "mappedSourceCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "combination": "LMDR-NCOD Coachman R",
+      "additionalDistricts": [],
+      "coverage": [
+        {
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1260.909032,
+          "percentOfParcel": 100
+        }
+      ],
+      "sourceZoningFeatures": [
+        {
+          "sourceIndex": 459,
+          "sourceIdentifier": 10947,
+          "rawZoningCode": "LMDR-NCOD Coachman R",
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1260.909032,
+          "percentOfParcel": 100
+        }
+      ],
+      "originalIssues": [
+        "unsupported_zoning_code"
+      ],
+      "researchTechnicalHolds": [],
+      "technicalScreenApartFromUnsupported": true,
+      "diagnosticMethod": "EXISTING_TURF_INTERSECTION_HELPER_NO_CODE_FILTER",
+      "humanCaseIds": [],
+      "footprintSha256": "cc22e995e115b28f42095538886760be5f3a3e4b6a7038941175e716600e41a7",
+      "unitLabelPresent": false,
+      "recordedLandUseCode": "01",
+      "parcelObjectId": 786272,
+      "strap": "162907168620001840",
+      "siteAddress": "2377 FLINT LOCK DR",
+      "parcelAreaM2": 1260.909032,
+      "sourcePolygonIds": [
+        10947
+      ],
+      "representativePointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressPointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressInsideLinkedParcel": true,
+      "addressCoordinates": [
+        -82.73908489643846,
+        27.9796790176901
+      ],
+      "currentResearchResponseDesignation": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+      "currentCertifiedReadiness": false,
+      "newApproval": false,
+      "legalApplicabilityConfirmed": false,
+      "informationSafeToRetain": [
+        "exact_source_code",
+        "explicit_source_base_description",
+        "mapped_overlay_subtype",
+        "all_positive_area_districts_and_percentages",
+        "source_qa_and_holds",
+        "source_references_and_geometry"
+      ],
+      "evidenceReference": "parcel-measurements.json#072916168620001840;source/parcels.geojson#OBJECTID=786272",
+      "perimeterMApprox": 236.975691917376,
+      "compactness": 0.28215344035198964,
+      "vertexCount": 7,
+      "distanceToCombinedZoneBoundaryMApprox": 11.854853817579865,
+      "selectedForQc": true
+    },
+    "citationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LMDR",
+      "CR-SIDE",
+      "FENCE-PRECEDENCE"
+    ],
+    "ownerQc": {
+      "reviewer": "",
+      "date": "",
+      "combinedNcodMappingCredible": "",
+      "additionalDistrictOrBoundaryConcern": "",
+      "frontOrStreetSideConfiguration": "",
+      "cityRegulatoryClarificationNeeded": "",
+      "knownFactsAdequateForAmbiguousResponse": "",
+      "futureStartingGuidanceAfterOverlaySupportAppropriate": "",
+      "proposedInternalDesignation": "",
+      "notes": ""
+    }
+  },
+  {
+    "caseId": "R005-04",
+    "inCandidateScope": true,
+    "selectionReason": "Closest to combined-zone boundary",
+    "record": {
+      "addressId": 329267,
+      "address": "2480 STAG RUN BLVD",
+      "parcelId": "062916168600001451",
+      "originalStatus": "review",
+      "originalNormalizedZoningCode": null,
+      "sourceCode": "LMDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LMDR",
+      "overlaySubtype": "Coachman Ridge",
+      "overlayCode": "CRNCOD",
+      "baseEvidenceCitation": "CR-BASE",
+      "baseDerivationMethod": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "mappedSourceCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "combination": "LMDR-NCOD Coachman R",
+      "additionalDistricts": [],
+      "coverage": [
+        {
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 2460.167027,
+          "percentOfParcel": 100
+        }
+      ],
+      "sourceZoningFeatures": [
+        {
+          "sourceIndex": 459,
+          "sourceIdentifier": 10947,
+          "rawZoningCode": "LMDR-NCOD Coachman R",
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 2460.167027,
+          "percentOfParcel": 100
+        }
+      ],
+      "originalIssues": [
+        "unsupported_zoning_code"
+      ],
+      "researchTechnicalHolds": [],
+      "technicalScreenApartFromUnsupported": true,
+      "diagnosticMethod": "EXISTING_TURF_INTERSECTION_HELPER_NO_CODE_FILTER",
+      "humanCaseIds": [],
+      "footprintSha256": "06defddeab1076b1720a583b91ff8bc630f88d0fdd7c9e39eb585bc44700d249",
+      "unitLabelPresent": false,
+      "recordedLandUseCode": "01",
+      "parcelObjectId": 879822,
+      "strap": "162906168600001451",
+      "siteAddress": "2480 STAG RUN BLVD",
+      "parcelAreaM2": 2460.167027,
+      "sourcePolygonIds": [
+        10947
+      ],
+      "representativePointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressPointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressInsideLinkedParcel": true,
+      "addressCoordinates": [
+        -82.73485886372977,
+        27.98423996577992
+      ],
+      "currentResearchResponseDesignation": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+      "currentCertifiedReadiness": false,
+      "newApproval": false,
+      "legalApplicabilityConfirmed": false,
+      "informationSafeToRetain": [
+        "exact_source_code",
+        "explicit_source_base_description",
+        "mapped_overlay_subtype",
+        "all_positive_area_districts_and_percentages",
+        "source_qa_and_holds",
+        "source_references_and_geometry"
+      ],
+      "evidenceReference": "parcel-measurements.json#062916168600001451;source/parcels.geojson#OBJECTID=879822",
+      "perimeterMApprox": 210.8221050699924,
+      "compactness": 0.6955710664663928,
+      "vertexCount": 9,
+      "distanceToCombinedZoneBoundaryMApprox": 0.037735365887751504,
+      "selectedForQc": true
+    },
+    "citationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LMDR",
+      "CR-SIDE",
+      "FENCE-PRECEDENCE"
+    ],
+    "ownerQc": {
+      "reviewer": "",
+      "date": "",
+      "combinedNcodMappingCredible": "",
+      "additionalDistrictOrBoundaryConcern": "",
+      "frontOrStreetSideConfiguration": "",
+      "cityRegulatoryClarificationNeeded": "",
+      "knownFactsAdequateForAmbiguousResponse": "",
+      "futureStartingGuidanceAfterOverlaySupportAppropriate": "",
+      "proposedInternalDesignation": "",
+      "notes": ""
+    }
+  },
+  {
+    "caseId": "R005-05",
+    "inCandidateScope": true,
+    "selectionReason": "Southern extent",
+    "record": {
+      "addressId": 320002,
+      "address": "2403 OLD COACH TRL",
+      "parcelId": "072916168620001920",
+      "originalStatus": "review",
+      "originalNormalizedZoningCode": null,
+      "sourceCode": "LMDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LMDR",
+      "overlaySubtype": "Coachman Ridge",
+      "overlayCode": "CRNCOD",
+      "baseEvidenceCitation": "CR-BASE",
+      "baseDerivationMethod": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "mappedSourceCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "combination": "LMDR-NCOD Coachman R",
+      "additionalDistricts": [],
+      "coverage": [
+        {
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1938.092048,
+          "percentOfParcel": 100
+        }
+      ],
+      "sourceZoningFeatures": [
+        {
+          "sourceIndex": 459,
+          "sourceIdentifier": 10947,
+          "rawZoningCode": "LMDR-NCOD Coachman R",
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1938.092048,
+          "percentOfParcel": 100
+        }
+      ],
+      "originalIssues": [
+        "unsupported_zoning_code"
+      ],
+      "researchTechnicalHolds": [],
+      "technicalScreenApartFromUnsupported": true,
+      "diagnosticMethod": "EXISTING_TURF_INTERSECTION_HELPER_NO_CODE_FILTER",
+      "humanCaseIds": [],
+      "footprintSha256": "dc33b414a411302749f0d26d61fc46f9be16faa9ac3791087d3f3f2271355dba",
+      "unitLabelPresent": false,
+      "recordedLandUseCode": "01",
+      "parcelObjectId": 1011051,
+      "strap": "162907168620001920",
+      "siteAddress": "2403 OLD COACH TRL",
+      "parcelAreaM2": 1938.092048,
+      "sourcePolygonIds": [
+        10947
+      ],
+      "representativePointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressPointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressInsideLinkedParcel": true,
+      "addressCoordinates": [
+        -82.7378547051033,
+        27.978285633479896
+      ],
+      "currentResearchResponseDesignation": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+      "currentCertifiedReadiness": false,
+      "newApproval": false,
+      "legalApplicabilityConfirmed": false,
+      "informationSafeToRetain": [
+        "exact_source_code",
+        "explicit_source_base_description",
+        "mapped_overlay_subtype",
+        "all_positive_area_districts_and_percentages",
+        "source_qa_and_holds",
+        "source_references_and_geometry"
+      ],
+      "evidenceReference": "parcel-measurements.json#072916168620001920;source/parcels.geojson#OBJECTID=1011051",
+      "perimeterMApprox": 233.0308126483884,
+      "compactness": 0.44849410276249907,
+      "vertexCount": 7,
+      "distanceToCombinedZoneBoundaryMApprox": 4.3810575833022884,
+      "selectedForQc": true
+    },
+    "citationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LMDR",
+      "CR-SIDE",
+      "FENCE-PRECEDENCE"
+    ],
+    "ownerQc": {
+      "reviewer": "",
+      "date": "",
+      "combinedNcodMappingCredible": "",
+      "additionalDistrictOrBoundaryConcern": "",
+      "frontOrStreetSideConfiguration": "",
+      "cityRegulatoryClarificationNeeded": "",
+      "knownFactsAdequateForAmbiguousResponse": "",
+      "futureStartingGuidanceAfterOverlaySupportAppropriate": "",
+      "proposedInternalDesignation": "",
+      "notes": ""
+    }
+  },
+  {
+    "caseId": "R005-06",
+    "inCandidateScope": true,
+    "selectionReason": "Northern extent",
+    "record": {
+      "addressId": 320778,
+      "address": "2486 STAG RUN BLVD",
+      "parcelId": "062916168600001460",
+      "originalStatus": "review",
+      "originalNormalizedZoningCode": null,
+      "sourceCode": "LMDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LMDR",
+      "overlaySubtype": "Coachman Ridge",
+      "overlayCode": "CRNCOD",
+      "baseEvidenceCitation": "CR-BASE",
+      "baseDerivationMethod": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "mappedSourceCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "combination": "LMDR-NCOD Coachman R",
+      "additionalDistricts": [],
+      "coverage": [
+        {
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1837.893396,
+          "percentOfParcel": 100
+        }
+      ],
+      "sourceZoningFeatures": [
+        {
+          "sourceIndex": 459,
+          "sourceIdentifier": 10947,
+          "rawZoningCode": "LMDR-NCOD Coachman R",
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1837.893396,
+          "percentOfParcel": 100
+        }
+      ],
+      "originalIssues": [
+        "unsupported_zoning_code"
+      ],
+      "researchTechnicalHolds": [],
+      "technicalScreenApartFromUnsupported": true,
+      "diagnosticMethod": "EXISTING_TURF_INTERSECTION_HELPER_NO_CODE_FILTER",
+      "humanCaseIds": [],
+      "footprintSha256": "7099b0de6ecd166becb58d455242e914ca729da662991ebd81fca0c77b9adad0",
+      "unitLabelPresent": false,
+      "recordedLandUseCode": "01",
+      "parcelObjectId": 1100220,
+      "strap": "162906168600001460",
+      "siteAddress": "2486 STAG RUN BLVD",
+      "parcelAreaM2": 1837.893396,
+      "sourcePolygonIds": [
+        10947
+      ],
+      "representativePointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressPointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressInsideLinkedParcel": true,
+      "addressCoordinates": [
+        -82.73457130546036,
+        27.984326767004724
+      ],
+      "currentResearchResponseDesignation": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+      "currentCertifiedReadiness": false,
+      "newApproval": false,
+      "legalApplicabilityConfirmed": false,
+      "informationSafeToRetain": [
+        "exact_source_code",
+        "explicit_source_base_description",
+        "mapped_overlay_subtype",
+        "all_positive_area_districts_and_percentages",
+        "source_qa_and_holds",
+        "source_references_and_geometry"
+      ],
+      "evidenceReference": "parcel-measurements.json#062916168600001460;source/parcels.geojson#OBJECTID=1100220",
+      "perimeterMApprox": 204.08833944253172,
+      "compactness": 0.5544892573011703,
+      "vertexCount": 9,
+      "distanceToCombinedZoneBoundaryMApprox": 0.220444421390988,
+      "selectedForQc": true
+    },
+    "citationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LMDR",
+      "CR-SIDE",
+      "FENCE-PRECEDENCE"
+    ],
+    "ownerQc": {
+      "reviewer": "",
+      "date": "",
+      "combinedNcodMappingCredible": "",
+      "additionalDistrictOrBoundaryConcern": "",
+      "frontOrStreetSideConfiguration": "",
+      "cityRegulatoryClarificationNeeded": "",
+      "knownFactsAdequateForAmbiguousResponse": "",
+      "futureStartingGuidanceAfterOverlaySupportAppropriate": "",
+      "proposedInternalDesignation": "",
+      "notes": ""
+    }
+  },
+  {
+    "caseId": "R005-07",
+    "inCandidateScope": true,
+    "selectionReason": "Western extent",
+    "record": {
+      "addressId": 470121,
+      "address": "2314 STAG RUN BLVD",
+      "parcelId": "072916168620001750",
+      "originalStatus": "review",
+      "originalNormalizedZoningCode": null,
+      "sourceCode": "LMDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LMDR",
+      "overlaySubtype": "Coachman Ridge",
+      "overlayCode": "CRNCOD",
+      "baseEvidenceCitation": "CR-BASE",
+      "baseDerivationMethod": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "mappedSourceCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "combination": "LMDR-NCOD Coachman R",
+      "additionalDistricts": [],
+      "coverage": [
+        {
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1717.020427,
+          "percentOfParcel": 100
+        }
+      ],
+      "sourceZoningFeatures": [
+        {
+          "sourceIndex": 459,
+          "sourceIdentifier": 10947,
+          "rawZoningCode": "LMDR-NCOD Coachman R",
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1717.020427,
+          "percentOfParcel": 100
+        }
+      ],
+      "originalIssues": [
+        "unsupported_zoning_code"
+      ],
+      "researchTechnicalHolds": [],
+      "technicalScreenApartFromUnsupported": true,
+      "diagnosticMethod": "EXISTING_TURF_INTERSECTION_HELPER_NO_CODE_FILTER",
+      "humanCaseIds": [],
+      "footprintSha256": "36856710664e9b220ed5cea0481a6ee9c045eb61bd3ef6098da2e86c476d7f1b",
+      "unitLabelPresent": false,
+      "recordedLandUseCode": "01",
+      "parcelObjectId": 114132,
+      "strap": "162907168620001750",
+      "siteAddress": "2314 STAG RUN BLVD",
+      "parcelAreaM2": 1717.020428,
+      "sourcePolygonIds": [
+        10947
+      ],
+      "representativePointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressPointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressInsideLinkedParcel": true,
+      "addressCoordinates": [
+        -82.74141792103256,
+        27.98059336225982
+      ],
+      "currentResearchResponseDesignation": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+      "currentCertifiedReadiness": false,
+      "newApproval": false,
+      "legalApplicabilityConfirmed": false,
+      "informationSafeToRetain": [
+        "exact_source_code",
+        "explicit_source_base_description",
+        "mapped_overlay_subtype",
+        "all_positive_area_districts_and_percentages",
+        "source_qa_and_holds",
+        "source_references_and_geometry"
+      ],
+      "evidenceReference": "parcel-measurements.json#072916168620001750;source/parcels.geojson#OBJECTID=114132",
+      "perimeterMApprox": 174.25605566969864,
+      "compactness": 0.7105733435943571,
+      "vertexCount": 12,
+      "distanceToCombinedZoneBoundaryMApprox": 0.5425780279925635,
+      "selectedForQc": true
+    },
+    "citationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LMDR",
+      "CR-SIDE",
+      "FENCE-PRECEDENCE"
+    ],
+    "ownerQc": {
+      "reviewer": "",
+      "date": "",
+      "combinedNcodMappingCredible": "",
+      "additionalDistrictOrBoundaryConcern": "",
+      "frontOrStreetSideConfiguration": "",
+      "cityRegulatoryClarificationNeeded": "",
+      "knownFactsAdequateForAmbiguousResponse": "",
+      "futureStartingGuidanceAfterOverlaySupportAppropriate": "",
+      "proposedInternalDesignation": "",
+      "notes": ""
+    }
+  },
+  {
+    "caseId": "R005-08",
+    "inCandidateScope": true,
+    "selectionReason": "Eastern extent",
+    "record": {
+      "addressId": 207009,
+      "address": "2489 STAG RUN BLVD",
+      "parcelId": "062916168600000020",
+      "originalStatus": "review",
+      "originalNormalizedZoningCode": null,
+      "sourceCode": "LMDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LMDR",
+      "overlaySubtype": "Coachman Ridge",
+      "overlayCode": "CRNCOD",
+      "baseEvidenceCitation": "CR-BASE",
+      "baseDerivationMethod": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "mappedSourceCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "combination": "LMDR-NCOD Coachman R",
+      "additionalDistricts": [],
+      "coverage": [
+        {
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1124.927313,
+          "percentOfParcel": 100
+        }
+      ],
+      "sourceZoningFeatures": [
+        {
+          "sourceIndex": 459,
+          "sourceIdentifier": 10947,
+          "rawZoningCode": "LMDR-NCOD Coachman R",
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1124.927313,
+          "percentOfParcel": 100
+        }
+      ],
+      "originalIssues": [
+        "unsupported_zoning_code"
+      ],
+      "researchTechnicalHolds": [],
+      "technicalScreenApartFromUnsupported": true,
+      "diagnosticMethod": "EXISTING_TURF_INTERSECTION_HELPER_NO_CODE_FILTER",
+      "humanCaseIds": [],
+      "footprintSha256": "a5eab18533f42b2fabcac70e4c526c754ecfa51ca3e88af2015f34fa1e69ab48",
+      "unitLabelPresent": false,
+      "recordedLandUseCode": "01",
+      "parcelObjectId": 824402,
+      "strap": "162906168600000020",
+      "siteAddress": "2489 STAG RUN BLVD",
+      "parcelAreaM2": 1124.927313,
+      "sourcePolygonIds": [
+        10947
+      ],
+      "representativePointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressPointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressInsideLinkedParcel": true,
+      "addressCoordinates": [
+        -82.73425409491455,
+        27.983695853020198
+      ],
+      "currentResearchResponseDesignation": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+      "currentCertifiedReadiness": false,
+      "newApproval": false,
+      "legalApplicabilityConfirmed": false,
+      "informationSafeToRetain": [
+        "exact_source_code",
+        "explicit_source_base_description",
+        "mapped_overlay_subtype",
+        "all_positive_area_districts_and_percentages",
+        "source_qa_and_holds",
+        "source_references_and_geometry"
+      ],
+      "evidenceReference": "parcel-measurements.json#062916168600000020;source/parcels.geojson#OBJECTID=824402",
+      "perimeterMApprox": 140.5271975185305,
+      "compactness": 0.7158349869804053,
+      "vertexCount": 7,
+      "distanceToCombinedZoneBoundaryMApprox": 19.399635122681612,
+      "selectedForQc": true
+    },
+    "citationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LMDR",
+      "CR-SIDE",
+      "FENCE-PRECEDENCE"
+    ],
+    "ownerQc": {
+      "reviewer": "",
+      "date": "",
+      "combinedNcodMappingCredible": "",
+      "additionalDistrictOrBoundaryConcern": "",
+      "frontOrStreetSideConfiguration": "",
+      "cityRegulatoryClarificationNeeded": "",
+      "knownFactsAdequateForAmbiguousResponse": "",
+      "futureStartingGuidanceAfterOverlaySupportAppropriate": "",
+      "proposedInternalDesignation": "",
+      "notes": ""
+    }
+  },
+  {
+    "caseId": "R005-09",
+    "inCandidateScope": false,
+    "selectionReason": "EXCLUDED comparison: preserve extra districts and/or source-quality holds",
+    "record": {
+      "addressId": 329120,
+      "address": "2384 STAG RUN BLVD",
+      "parcelId": "072916168620001620",
+      "originalStatus": "review",
+      "originalNormalizedZoningCode": null,
+      "sourceCode": "LMDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LMDR",
+      "overlaySubtype": "Coachman Ridge",
+      "overlayCode": "CRNCOD",
+      "baseEvidenceCitation": "CR-BASE",
+      "baseDerivationMethod": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "mappedSourceCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "combination": "LMDR-NCOD Coachman R",
+      "additionalDistricts": [],
+      "coverage": [
+        {
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1674.621689,
+          "percentOfParcel": 99.818656
+        }
+      ],
+      "sourceZoningFeatures": [
+        {
+          "sourceIndex": 459,
+          "sourceIdentifier": 10947,
+          "rawZoningCode": "LMDR-NCOD Coachman R",
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1674.621689,
+          "percentOfParcel": 99.818656
+        }
+      ],
+      "originalIssues": [
+        "unsupported_zoning_code"
+      ],
+      "researchTechnicalHolds": [
+        "coverage_outside_existing_tolerance"
+      ],
+      "technicalScreenApartFromUnsupported": false,
+      "diagnosticMethod": "EXISTING_TURF_INTERSECTION_HELPER_NO_CODE_FILTER",
+      "humanCaseIds": [],
+      "footprintSha256": "c11d49ece17b22312f085fdf74b05131a0b97ac856516806f8722ab6fdca47a8",
+      "unitLabelPresent": false,
+      "recordedLandUseCode": "01",
+      "parcelObjectId": 420930,
+      "strap": "162907168620001620",
+      "siteAddress": "2384 STAG RUN BLVD",
+      "parcelAreaM2": 1677.664034,
+      "sourcePolygonIds": [
+        10947
+      ],
+      "representativePointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressPointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressInsideLinkedParcel": true,
+      "addressCoordinates": [
+        -82.73887673362533,
+        27.98322825008433
+      ],
+      "currentResearchResponseDesignation": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+      "currentCertifiedReadiness": false,
+      "newApproval": false,
+      "legalApplicabilityConfirmed": false,
+      "informationSafeToRetain": [
+        "exact_source_code",
+        "explicit_source_base_description",
+        "mapped_overlay_subtype",
+        "all_positive_area_districts_and_percentages",
+        "source_qa_and_holds",
+        "source_references_and_geometry"
+      ],
+      "evidenceReference": "parcel-measurements.json#072916168620001620;source/parcels.geojson#OBJECTID=420930",
+      "selectedForQc": true
+    },
+    "citationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LMDR",
+      "CR-SIDE",
+      "FENCE-PRECEDENCE"
+    ],
+    "ownerQc": {
+      "reviewer": "",
+      "date": "",
+      "combinedNcodMappingCredible": "",
+      "additionalDistrictOrBoundaryConcern": "",
+      "frontOrStreetSideConfiguration": "",
+      "cityRegulatoryClarificationNeeded": "",
+      "knownFactsAdequateForAmbiguousResponse": "",
+      "futureStartingGuidanceAfterOverlaySupportAppropriate": "",
+      "proposedInternalDesignation": "",
+      "notes": ""
+    }
+  },
+  {
+    "caseId": "R005-10",
+    "inCandidateScope": false,
+    "selectionReason": "EXCLUDED comparison: preserve extra districts and/or source-quality holds",
+    "record": {
+      "addressId": 207022,
+      "address": "1697 MIDNIGHT PASS WAY",
+      "parcelId": "062916168600000300",
+      "originalStatus": "review",
+      "originalNormalizedZoningCode": null,
+      "sourceCode": "LMDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LMDR",
+      "overlaySubtype": "Coachman Ridge",
+      "overlayCode": "CRNCOD",
+      "baseEvidenceCitation": "CR-BASE",
+      "baseDerivationMethod": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "mappedSourceCodes": [
+        "I",
+        "LMDR-NCOD Coachman R"
+      ],
+      "combination": "I + LMDR-NCOD Coachman R",
+      "additionalDistricts": [
+        "I"
+      ],
+      "coverage": [
+        {
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 1116.189,
+          "percentOfParcel": 98.739405
+        },
+        {
+          "normalizedZoningCode": "i",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 14.25,
+          "percentOfParcel": 1.260595
+        }
+      ],
+      "sourceZoningFeatures": [
+        {
+          "sourceIndex": 435,
+          "sourceIdentifier": 10922,
+          "rawZoningCode": "I",
+          "normalizedZoningCode": "i",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 14.25,
+          "percentOfParcel": 1.260595
+        },
+        {
+          "sourceIndex": 459,
+          "sourceIdentifier": 10947,
+          "rawZoningCode": "LMDR-NCOD Coachman R",
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 1116.189,
+          "percentOfParcel": 98.739405
+        }
+      ],
+      "originalIssues": [
+        "parcel_ambiguous_zoning",
+        "unsupported_zoning_code"
+      ],
+      "researchTechnicalHolds": [],
+      "technicalScreenApartFromUnsupported": true,
+      "diagnosticMethod": "UNCHANGED_FROZEN_DIAGNOSTIC",
+      "humanCaseIds": [],
+      "footprintSha256": "07731be13a5801061c1b4820837122cc81c48ed848e3d5c4cda357c20ef04ff4",
+      "unitLabelPresent": false,
+      "recordedLandUseCode": "01",
+      "parcelObjectId": 996122,
+      "strap": "162906168600000300",
+      "siteAddress": "1697 MIDNIGHT PASS WAY",
+      "parcelAreaM2": 1130.44,
+      "sourcePolygonIds": [
+        10922,
+        10947
+      ],
+      "representativePointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressPointCodes": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "addressInsideLinkedParcel": true,
+      "addressCoordinates": [
+        -82.73404170557711,
+        27.98298736502993
+      ],
+      "currentResearchResponseDesignation": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+      "currentCertifiedReadiness": false,
+      "newApproval": false,
+      "legalApplicabilityConfirmed": false,
+      "informationSafeToRetain": [
+        "exact_source_code",
+        "explicit_source_base_description",
+        "mapped_overlay_subtype",
+        "all_positive_area_districts_and_percentages",
+        "source_qa_and_holds",
+        "source_references_and_geometry"
+      ],
+      "evidenceReference": "parcel-measurements.json#062916168600000300;source/parcels.geojson#OBJECTID=996122",
+      "selectedForQc": true
+    },
+    "citationIds": [
+      "CR-BASE",
+      "CR-CHAIN",
+      "CR-LMDR",
+      "CR-SIDE",
+      "FENCE-PRECEDENCE"
+    ],
+    "ownerQc": {
+      "reviewer": "",
+      "date": "",
+      "combinedNcodMappingCredible": "",
+      "additionalDistrictOrBoundaryConcern": "",
+      "frontOrStreetSideConfiguration": "",
+      "cityRegulatoryClarificationNeeded": "",
+      "knownFactsAdequateForAmbiguousResponse": "",
+      "futureStartingGuidanceAfterOverlaySupportAppropriate": "",
+      "proposedInternalDesignation": "",
+      "notes": ""
+    }
+  },
+  {
+    "caseId": "R005-11",
+    "inCandidateScope": false,
+    "selectionReason": "EXCLUDED comparison: preserve extra districts and/or source-quality holds",
+    "record": {
+      "addressId": 320760,
+      "address": "1745 CASEY JONES CT",
+      "parcelId": "062916168630002490",
+      "originalStatus": "review",
+      "originalNormalizedZoningCode": null,
+      "sourceCode": "LDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LDR",
+      "overlaySubtype": "Coachman Ridge",
+      "overlayCode": "CRNCOD",
+      "baseEvidenceCitation": "CR-BASE",
+      "baseDerivationMethod": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "mappedSourceCodes": [
+        "LDR-NCOD Coachman R",
+        "LMDR-NCOD Coachman R"
+      ],
+      "combination": "LDR-NCOD Coachman R + LMDR-NCOD Coachman R",
+      "additionalDistricts": [
+        "LMDR-NCOD Coachman R"
+      ],
+      "coverage": [
+        {
+          "normalizedZoningCode": "ldrncodcoachmanr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 5021.775,
+          "percentOfParcel": 99.193351
+        },
+        {
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "featureCount": 1,
+          "repeatedPolygons": false,
+          "overlappingPolygons": false,
+          "intersectionAreaSquareMeters": 10.791,
+          "percentOfParcel": 0.213153
+        }
+      ],
+      "sourceZoningFeatures": [
+        {
+          "sourceIndex": 205,
+          "sourceIdentifier": 10686,
+          "rawZoningCode": "LDR-NCOD Coachman R",
+          "normalizedZoningCode": "ldrncodcoachmanr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 5021.775,
+          "percentOfParcel": 99.193351
+        },
+        {
+          "sourceIndex": 459,
+          "sourceIdentifier": 10947,
+          "rawZoningCode": "LMDR-NCOD Coachman R",
+          "normalizedZoningCode": "lmdrncodcoachmanr",
+          "geometryValid": true,
+          "multipart": false,
+          "intersectionAreaSquareMeters": 10.791,
+          "percentOfParcel": 0.213153
+        }
+      ],
+      "originalIssues": [
+        "parcel_ambiguous_zoning",
+        "unsupported_zoning_code"
+      ],
+      "researchTechnicalHolds": [
+        "coverage_outside_existing_tolerance"
+      ],
+      "technicalScreenApartFromUnsupported": false,
+      "diagnosticMethod": "UNCHANGED_FROZEN_DIAGNOSTIC",
+      "humanCaseIds": [],
+      "footprintSha256": "67bd376ce7be22842cde3d957e787aff60c6969ea62374aa60cc65a434cf486e",
+      "unitLabelPresent": false,
+      "recordedLandUseCode": "01",
+      "parcelObjectId": 753691,
+      "strap": "162906168630002490",
+      "siteAddress": "1745 CASEY JONES CT",
+      "parcelAreaM2": 5062.612,
+      "sourcePolygonIds": [
+        10686,
+        10947
+      ],
+      "representativePointCodes": [
+        "LDR-NCOD Coachman R"
+      ],
+      "addressPointCodes": [
+        "LDR-NCOD Coachman R"
+      ],
+      "addressInsideLinkedParcel": true,
+      "addressCoordinates": [
+        -82.73913221122517,
+        27.983889740801164
+      ],
+      "currentResearchResponseDesignation": "3_AMBIGUOUS_WITH_KNOWN_ZONING_INFORMATION",
+      "currentCertifiedReadiness": false,
+      "newApproval": false,
+      "legalApplicabilityConfirmed": false,
+      "informationSafeToRetain": [
+        "exact_source_code",
+        "explicit_source_base_description",
+        "mapped_overlay_subtype",
+        "all_positive_area_districts_and_percentages",
+        "source_qa_and_holds",
+        "source_references_and_geometry"
+      ],
+      "evidenceReference": "parcel-measurements.json#062916168630002490;source/parcels.geojson#OBJECTID=753691",
+      "selectedForQc": true
+    },
+    "citationIds": [
+      "CR-BASE",
+      "CR-LDR",
+      "FENCE-PRECEDENCE"
+    ],
+    "ownerQc": {
+      "reviewer": "",
+      "date": "",
+      "combinedNcodMappingCredible": "",
+      "additionalDistrictOrBoundaryConcern": "",
+      "frontOrStreetSideConfiguration": "",
+      "cityRegulatoryClarificationNeeded": "",
+      "knownFactsAdequateForAmbiguousResponse": "",
+      "futureStartingGuidanceAfterOverlaySupportAppropriate": "",
+      "proposedInternalDesignation": "",
+      "notes": ""
+    }
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "sourceVersion": "Volume II, Supplement 55 (July 2026), ordinances through 9857-25 enacted December 4, 2025",
+  "currentCurrencyConfirmed": false,
+  "questions": [
+    {
+      "question": "Confirm no amendments since the archived compilation alter 2-1601.J, 2-1602.G/H or 3-803.A.",
+      "citationIds": [
+        "CR-BASE",
+        "CR-LMDR",
+        "CR-CHAIN",
+        "FENCE-PRECEDENCE"
+      ]
+    },
+    {
+      "question": "Confirm source labels/SPECIAL correspond to currently designated CRNCOD/IENCOD parcels and resolve legal tract exclusions in 2-1602.B.",
+      "citationIds": [
+        "CR-BASE",
+        "CR-LMDR",
+        "CR-CHAIN",
+        "FENCE-PRECEDENCE"
+      ]
+    },
+    {
+      "question": "Confirm CRNCOD J.2.b street-side/front wording and its interaction with J.3 and general corner/multiple-frontage provisions, including any applicable flexibility/variance or documented nonconformity.",
+      "citationIds": [
+        "CR-BASE",
+        "CR-LMDR",
+        "CR-CHAIN",
+        "FENCE-PRECEDENCE"
+      ]
+    },
+    {
+      "question": "Confirm IENCOD rear building setback line and seawall applicability; identify exceptions requiring documented City decisions.",
+      "citationIds": [
+        "IE-BASE",
+        "IE-LMDR-FENCE",
+        "IE-MULTI-FENCE",
+        "NCOD-PRIVATE"
+      ]
+    },
+    {
+      "question": "Identify controlling neighborhood plans and current plats/declarations/private restrictions; GIS does not establish them.",
+      "citationIds": [
+        "IE-BASE",
+        "IE-LMDR-FENCE",
+        "IE-MULTI-FENCE",
+        "NCOD-PRIVATE"
+      ]
+    },
+    {
+      "question": "Confirm residential/condominium uses and which shared-land projects need association/management permissions.",
+      "citationIds": [
+        "IE-BASE",
+        "IE-LMDR-FENCE",
+        "IE-MULTI-FENCE",
+        "NCOD-PRIVATE"
+      ]
+    }
+  ]
+}

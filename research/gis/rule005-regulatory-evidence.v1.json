@@ -1,0 +1,936 @@
+{
+  "schemaVersion": 1,
+  "researchOnly": true,
+  "noApprovals": true,
+  "sourceEdition": "Volume II, Supplement 55 (July 2026), ordinances through 9857-25 enacted December 4, 2025",
+  "archivedFileCommit": "2f0117519995ca06e33edeeb4962db95e933f412",
+  "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+  "ncodPageVintage": "NCOD pages CD2:120.21\u2013129 include retained Supplement 12 (2005) pages within the compiled volume; not an independent current-law verification. Fence precedence page CD3:27 retained Supplement 49.",
+  "retrievalDate": "2026-10-20",
+  "liveCurrencyVerified": false,
+  "liveAttempts": [
+    {
+      "url": "https://library.municode.com/fl/clearwater/codes/community_development_code",
+      "result": "CONNECT tunnel failed, proxy HTTP 403; no live page retrieved"
+    },
+    {
+      "url": "https://www.myclearwater.com/Business-Development/Planning-and-Zoning",
+      "result": "CONNECT tunnel failed, proxy HTTP 403; no live page retrieved"
+    }
+  ],
+  "citations": [
+    {
+      "id": "CR-BASE",
+      "section": "2-1601.B\u2013D",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 13289,
+      "lineEnd": 13348,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L13289",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "Coachman Ridge overlays LDR and LMDR; applies additional requirements in its designated boundary. Table D explicitly distinguishes the underlying districts.",
+      "limitationOrQuestion": "Underlying label must be supported by GIS ZONING_DESC/SPECIAL and these provisions, never suffix stripping.",
+      "sourceExtract": "                                                                  B. Jurisdictional boundaries. The Coachman\n                 improved design and appearance;\n                                                               Ridge Neighborhood Conservation Overlay Dis-\n         c.      The reduction in side and rear set-           trict (CRNCOD) shall be consistent with the bound-\n                 back does not prevent access to the           aries of Tract A-I, Coachman Ridge Subdivision,\n                 rear of any building by emergency             as recorded in Plat Book 83, pages 62 through 64\n                 vehicles;                                     of the Public Records of Pinellas County, Florida,\n         d.      The reduction in side and rear set-           Tract A-II, Coachman Ridge Subdivision as re-\n                 back results in an improved site plan,        corded in Plat Book 85, pages 57 and 58 of the\n                 more efficient perking or improved            Public Records of Pinellas County, Florida, and\n                 design and appearance.                        Tract A-III, Coachman Ridge Subdivision, as re-\n                                                               corded in Plat Book 88, page 73 of the Public\n  4.     The use of the parcel proposed for devel-             Records of Pinellas County, Florida.\n         opment will not involve direct access to an\n         arterial street.                                        C. Relationship to underlying districts and other\n                                                               provisions of the Community Development Code.\n  B. Reserved.                                                 The designation of the Coachman Ridge Neigh-\n\n\nSupp. No. 37                                         CD2:120.21\n\f\u00a7 2-1601                                        COMMUNITY DEVELOPMENT CODE\n\n\n\nborhood Conservation Overlay District on the                         overlay district only. Issues not speci\ufb01cally ad-\nZoning Atlas provides requirements in addition to                    dressed in this overlay district shall be governed\nthose contained in the low density residential and                   by the remaining provisions of this Community\nlow medium density residential districts. The                        Development Code.\nprovisions contained herein shall govern in this\n\n_________________________________________________________________________________________________\n\n  D. Minimum standard development. The following uses are Level One permitted uses in the CRNCOD\nDistrict subject to the minimum standards set out in this section and other applicable provisions of\nArticle 3.\n\n                                            Table 2-1601(D). \"CRNCOD\" Minimum Development\n\n                                     Min.    Min. Lot                                             Max.            Min.\n                                  Lot Area Width                                                 Height        Off-Street\n                Use                (sq. ft.)   (ft.)            Min. Setbacks (ft.)               (ft.)         Parking\n                                                                                      Corner\n                                                                                      Side\n                                                        Front      Side       Rear    yard(1),\n       Property with un-\n       derlying zoning of\n       LDR:\n        Detached Dwellings(2)      30,000       100      25         15         25           25     30     2 car attached garage\n                                                                                                               per dwelling\n       Property with un-\n       derlying zoning of\n       LMDR:\n       Detached Dwellings(2)       9,000        80       25          7         10           20     30     2 car attached garage\n                                                                                                               per dwelling\n(1) A corner side yard is the side yard of a corner lot that abuts a public right-of-way.\n(2) Community residential homes (six of fewer residents) shall be considered a detached dwelling.\n\n  E. Flexible standard development. The following Level One uses are permitted in the CRNCOD\nDistrict subject to the standards and criteria set out in this section and other applicable regulations in\nArticle 3."
+    },
+    {
+      "id": "CR-CHAIN",
+      "section": "2-1601.J.1",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 13501,
+      "lineEnd": 13513,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L13501",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "Chain link and vinyl coated chain link fences are prohibited throughout CRNCOD.",
+      "limitationOrQuestion": "Generic chain-link cards cannot be reused without the overlay prohibition.",
+      "sourceExtract": "                   posed infrastructure/utility facility                streets and on driveways if present on business.\n                   protects the established character of                This provision shall not prevent the loading,\n                   the Coachman Ridge Neighborhood;                     unloading and cleaning of such vehicles as per-\n                                                                        mitted in Section 3-1407(B).\n              c.   No above ground structures shall be\n                   located in a required front yard set-                    J. Fences.\n                   back;\n              d.   The development or redevelopment                         1.    Chain line fences. Chain link and vinyl\n                   of the parcel proposed for develop-                            coated chain link fences shall be prohib-\n                   ment is otherwise impractical with-                            ited throughout the CRNCOD.\n                   out deviations from the setback re-\n                                                                            2.    Fences located in the front yard.\n                   quirements;"
+    },
+    {
+      "id": "CR-LDR",
+      "section": "2-1601.J.2.a",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 13514,
+      "lineEnd": 13535,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L13514",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "LDR underlying designation: non-opaque fences not exceeding three feet may be permitted between front building and property lines and between side building and street-adjacent property lines, with compatible materials/design.",
+      "limitationOrQuestion": "Not an LMDR exception; compatibility and street-side location need interpretation.",
+      "sourceExtract": "              e.   Flexibility with regard to setbacks                            a.     Property with an underlying zoning\n                   are justified by the benefits to the                                  designation of low density residen-\n                   neighborhood character and the im-                                    tial. Non-opaque fences not exceed-\n                   mediate vicinity of the parcel pro-                                   ing three feet in height may be per-\n                   posed for development;                                                mitted between the front building\n                                                                                         line and the front property line and\n              f.   The proposed use is compatible and\n                                                                                         between the side building line and\n                   consistent with the character of the\n                                                                                         any property line adjacent to a street\n                   adjacent properties and the Coach-\n                                                                                         right-of-way line provided that fence\n                   man Ridge Neighborhood as a whole.\n                                                                                         materials and design are compatible\n      G. Driveway materials. Driveways constructed                                       with the architectural design of the\n   of asphalt, gravel, shell and other similar mate-                                     dwelling.\n   rials shall be prohibited.\n                                                                                  b.     Property with an underlying zoning\n      H. Parking on landscaped areas. The parking                                        designation of low medium density\n   of any type of vehicle, trailer, boat, recreational                                   residential. Fences shall be prohib-\n   vehicle, or any other similar vehicle shall be                                        ited between the front building line\n   prohibited on grass or any other landscaped area.                                     and the front property line and be-"
+    },
+    {
+      "id": "CR-LMDR",
+      "section": "2-1601.J.2.b",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 13528,
+      "lineEnd": 13552,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L13528",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "LMDR underlying designation: fences prohibited between the front building line and front property line and between side building line and any street-adjacent property line.",
+      "limitationOrQuestion": "Ordinary four-foot front card is unsafe here; corner/street-side fence-line facts or City confirmation needed.",
+      "sourceExtract": "      G. Driveway materials. Driveways constructed                                       with the architectural design of the\n   of asphalt, gravel, shell and other similar mate-                                     dwelling.\n   rials shall be prohibited.\n                                                                                  b.     Property with an underlying zoning\n      H. Parking on landscaped areas. The parking                                        designation of low medium density\n   of any type of vehicle, trailer, boat, recreational                                   residential. Fences shall be prohib-\n   vehicle, or any other similar vehicle shall be                                        ited between the front building line\n   prohibited on grass or any other landscaped area.                                     and the front property line and be-\n\n\n   Supp. No. 12                                                CD2:122\n\fJOBNAME: No Job Name PAGE: 71 SESS: 2 OUTPUT: Tue Jul 26 14:13:31 2005\n/first/pubdocs/mcc/2/13398_takes_tag_mcc_2_awilson\n\n\n\n                                                             ZONING DISTRICTS                                         \u00a7 2-1602\n\n\n\n                               tween the side building line and any               right-of-way of Dory Passage, Unit 5 Is-\n                               property line adjacent to a street                 land Estates of Clearwater as recorded in\n                               right-of-way line.                                 Plat Book 51, Page 34, of the Public Records\n                  3.    Fences located in the side and rear yards.                of Pinellas County, Florida;\n                        Fences located in the side and rear yards           (2)   Begin at the most easterly corner of Lot"
+    },
+    {
+      "id": "CR-SIDE",
+      "section": "2-1601.J.3 and K",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 13549,
+      "lineEnd": 13566,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L13549",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "Side/rear fences refer to Article 3 Division 8; certain equipment must be behind the front building line and screened, potentially with fencing or landscaping.",
+      "limitationOrQuestion": "Read J.3 together with J.1 and J.2; do not treat side/rear reference as overriding chain-link or street-side bans.",
+      "sourceExtract": "                               property line adjacent to a street                 land Estates of Clearwater as recorded in\n                               right-of-way line.                                 Plat Book 51, Page 34, of the Public Records\n                  3.    Fences located in the side and rear yards.                of Pinellas County, Florida;\n                        Fences located in the side and rear yards           (2)   Begin at the most easterly corner of Lot\n                        shall be in compliance with the fence                     13, Block D of Unit 5 Island Estates of\n                        requirements as set forth in Article 3,                   Clearwater; as recorded in Plat Book 51,\n                        Division 8.                                               Page 34, of the Public Records of Pinellas\n                   K. Screening requirements. Trash containers,                   County, Florida; thence N49\u00b023\u203241\u2033W,\n                oil tanks, gas tanks, soft water tanks and other                  100.00 feet; thence N04\u00b023\u203241\u2033W, 71.42\n                similar equipment shall be located behind the                     feet, to a point on a curve to the left;\n                front building line and screened from public view.                thence along the arc of said curve, having\n                Screening may be accomplished through landscap-                   a radius of 70.00 feet, a chord bearing of\n                ing and/or fencing.                                               N75\u00b047\u203240\u2033E, a chord length of 23.86 feet,\n                (Ord. No. 6825-01, \u00a7 2, 9-6-01; Ord. No. 6928-02,                 23.98 feet; thence S49\u00b023\u203241\u2033E, 136.75\n                \u00a7 38, 5-2-02; Ord. No. 7413-05, \u00a7 15, 5-5-05)                     feet; thence S08\u00b012\u203232\u2033E, 81.05 feet; thence\n                                                                                  S40\u00b036\u203219\u2033W,      16.63     feet;    thence\n                Section 2-1602. Island Estates Neighborhood                       N49\u00b023\u203241\u2033W, 61.00 feet to the Point of\n                                Conservation Overlay Dis-                         Beginning;"
+    },
+    {
+      "id": "IE-BASE",
+      "section": "2-1602.A\u2013C",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 13565,
+      "lineEnd": 13605,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L13565",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "Island Estates overlay adds requirements to LMDR, MDR, MHDR, HDR, I and C. Overlay provisions govern covered subjects; remaining Code fills gaps. Boundaries have four express tract exclusions.",
+      "limitationOrQuestion": "GIS combined label is not proof that every source polygon satisfies the legal tract exclusions or current amendment state.",
+      "sourceExtract": "                Section 2-1602. Island Estates Neighborhood                       N49\u00b023\u203241\u2033W, 61.00 feet to the Point of\n                                Conservation Overlay Dis-                         Beginning;\n                                trict.\n                                                                            (3)   Island Yacht Club Condominium, as re-\n                   A. Intent and purpose. The Island Estates\n                                                                                  corded in Condominium Plat Book 39,\n                Neighborhood Plan was developed in response to\n                                                                                  Page 74, of the Public Records of Pinellas\n                neighborhood needs and approved by the city\n                                                                                  County, Florida;\n                commission on August 8, 2002 to provide guid-\n                ance and policy direction for all public and private        (4)   The land bounded on the north by Dory\n                actions within and in the vicinity of the Island                  Passage, on the south by Windward Pas-\n                Estates neighborhood. The intent and purpose of                   sage, on the west by Larboard Way and on\n                the Island Estates Neighborhood Conservation                      the east by Island Way.\n                Overlay District (IENCOD) is to provide overlay\n                requirements to ensure that infill and redevelop-         C. Relationship to underlying districts and other\n                ment activities are consistent with the protection     provisions of the Community Development Code.\n                of the existing established character within the       The designation of the Island Estates Neighbor-\n                district and to protect the health, safety and         hood Conservation Overlay District on the zoning\n                general welfare of the district. Development and       atlas provides requirements in addition to those\n                redevelopment shall be reviewed for consistency        contained in the Low Medium Density Residen-\n                with the Island Estates Neighborhood Plan. Any         tial, Medium Density Residential, Medium High\n                development requesting flexibility from the min-       Density Residential, High Density Residential,\n                imum development standards of the IENCOD               Institutional and Commercial Districts. The pro-\n                shall be consistent with the Island Estates Neigh-     visions contained herein shall govern in this over-\n                borhood Plan.                                          lay district only. Issues not specifically addressed\n                                                                       in this overlay district shall be governed by the\n                   B. Jurisdictional boundaries. The Island Es-\n                                                                       remaining provisions of this Community Develop-\n                tates Neighborhood Conservation Overlay Dis-\n                                                                       ment Code.\n                trict (IENCOD) shall be consistent with the bound-\n                aries of all the land in Clearwater Harbor, known         D. Minimum standard development for areas\n                as Island Estates lying northerly of the northerly     zoned LMDR/IENCOD. The following uses are\n                right of way line of Memorial Causeway, less and       Level One permitted uses in the LMDR/IENCOD\n                except the following described tracts:                 District subject to the minimum standards set out\n                  (1)   All of Block C, and Lots 1-3, 7, 9-13, Block   in this section and other applicable provisions of\n                        D, and the westerly 61 feet of the vacated     Article 3.\n\n"
+    },
+    {
+      "id": "IE-LMDR-USE",
+      "section": "2-1602.D\u2013F",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 13612,
+      "lineEnd": 13656,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L13612",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "LMDR/IENCOD has its own minimum/flexible standards and waterfront-related footnotes.",
+      "limitationOrQuestion": "Do not automatically enable generic setbacks, pool or other property cards from base identification.",
+      "sourceExtract": "   \u00a7 2-1602                                     COMMUNITY DEVELOPMENT CODE\n\n\n\n                                         Table 2-1602(D). \"LMDR/IENCOD\" Minimum Development\n                                                                                                Max.             Min.\n                                    Min. Lot     Min. Lot                                      Height         Off-Street\n                     Use          Area (sq. ft.) Width (ft.)        Min. Setbacks (ft.)        (ft.) (1)       Parking\n                                                             Front        Side        Rear (2)\n           Accessory pools and                                              5           10\n           screen enclosures\n           Community Residen-        7,500          50         25          7.5          15        30            2/unit\n           tial Homes (up to 6\n           residents)\n           Detached Dwellings        7,500          50         25          7.5          15        30            2/unit\n   (1) In special flood hazard areas designated by the National Flood Insurance Program, maximum height is measured above base\n       flood elevation.\n   (2) Any pool exceeding one foot in height above grade shall comply with the required rear setback for the principal structure.\n       Waterfront detached dwellings in the LMDR/IENCOD District should be 25 feet except as provided in Article 3, Division 8,\n       Section 3-805 and Division 9, Section 3-904 and except where adjacent structures on either side of the parcel proposed for\n       development are setback 20 feet and then the rear setback shall be 20 feet. The Building Code may require the rear setback\n       to be at least 18 feet from a seawall.\n\n      E. Flexible standard development for areas zoned LMDR/IENCOD. The following Level One uses are\n   permitted in the LMDR/IENCOD District subject to the standards and criteria set out in this section and\n   other applicable regulations in Article 3.\n                                    Table 2-1602(E). \"LMDR/IENCOD\" Flexible Standard Development\n                                   Min. Lot   Min. Lot                                      Max.                       Min.\n                                    Area        Width                                      Height                    Off-Street\n                   Use             (sq. ft.)     (ft.)          Min. Setbacks (ft.)        (ft.) (1)                 Parking\n                                                          Front       Side        Rear (2)\n           Detached Dwellings       7,500         50      15-25        7.5          5\u201415      30                2/unit\n           Residential      Infill   n/a         n/a      15-25       3-7.5         5\u201415      30                2/unit\n           Project (3)\n           Utility/Infrastruc-        n/a          n/a         25          10         15        n/a              n/a\n           ture Facilities (4)\n   (1) In special flood hazard areas designated by the National Flood Insurance Program, maximum height is measured above base\n       flood elevation.\n   (2) Any pool exceeding one foot in height above grade shall comply with the required rear setback for the principal structure.\n       Waterfront detached dwellings in LMDR/IENCOD District should be 25 feet except as provided in Article 3, Division 8, Section\n       3-805 and Division 9, Section 3-904 and except where adjacent structures on either side of the parcel proposed for development\n       are setback 20 feet and then the rear setback shall be 20 feet. The Building Code may require the rear setback to be at least\n       18 feet from a seawall.\n   (3) The development standards for residential infill projects are guidelines and may be varied based on the criteria specified in\n       Section 2-1602.E.2."
+    },
+    {
+      "id": "IE-LMDR-FENCE",
+      "section": "2-1602.G.2.a\u2013b",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 13836,
+      "lineEnd": 13900,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L13836",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "Single-family LMDR/IENCOD: fences no higher than six feet between any portion of the principal structure and any side lot line; all fences between rear building setback line and seawall non-opaque.",
+      "limitationOrQuestion": "Requires principal structure, side-line classification, rear building setback line and seawall/fence location.",
+      "sourceExtract": "\n\n\n   \u00a7 2-1602                                COMMUNITY DEVELOPMENT CODE\n\n\n\n              b.   Single-family detached dwellings and           2.   Fences.\n                   community residential homes with\n                   six or fewer residents are the only                 a.   Fences shall not exceed six feet in\n                   permitted uses eligible for residen-                     height between any portion of the\n                   tial infill project application;                         principal structure and any side lot\n                                                                            line;\n              c.   The development or redevelopment\n                   of the parcel proposed for develop-                 b.   All fences between the rear building\n                   ment is otherwise impractical with-                      setback line and the seawall shall be\n                   out deviations from one or more of                       non-opaque (see-through);\n                   the following: intensity; other devel-\n                   opment standards;                              3.   Landscaping requirements. Use of gravel,\n                                                                       stones, cinders and other similar material\n              d.   The development of a parcel pro-                    in any yard shall be prohibited unless\n                   posed for development as a residen-                 included as an integral, but minor, ele-\n                   tial infill project will not materially             ment of a landscaping plan; and\n                   reduce the fair market value of abut-\n                   ting properties;                               4.   Outdoor storage. The storage of commer-\n              e.   The uses within the residential infill              cial fishing and crabbing equipment shall\n                   project are compatible with adjacent                be prohibited outdoors on any residential\n                   land uses;                                          property.\n              f.   The development of the parcel pro-          H. Additional development standards for multi-\n                   posed for development as a residen-       family areas zoned MDR/IENCOD, MHDR/\n                   tial infill project will upgrade the      IENCOD, HDR/IENCOD and C/IENCOD.\n                   immediate vicinity of the parcel pro-\n                   posed for development;                         1.   Parking. The parking of any type of vehi-\n              g.   The design of the proposed residen-                 cle, trailer, boat, personal watercraft, rec-\n                   tial infill project creates a form and              reational vehicle, or any other similar\n                   function which enhances the commu-                  vehicle shall be prohibited on grass or any\n                   nity character of the immediate vi-                 other landscaped area.\n                   cinity of the parcel proposed for de-\n                                                                  2.   Fences.\n                   velopment and the City of Clearwater\n                   as a whole; and                                     a.   Fences shall not exceed six feet in\n              h.   Flexibility in regard to lot width,                      height between any portion of the\n                   required setbacks, height, off-street                    principal structure and any side lot\n                   parking, access or other develop-                        line.\n                   ment standards is justified by the\n                                                                       b.   All fences between the rear building\n                   benefits to community character and\n                                                                            setback line and the seawall shall be\n                   the immediate vicinity of the parcel\n                                                                            non-opaque (see-through.)\n                   proposed for development and the\n                   City of Clearwater as a whole.                 3.   Landscaping requirements. Use of gravel,\n     G. Additional development standards for single-                   stones, cinders and other similar material\n   family areas zoned LMDR/IENCOD.                                     in any yard shall be prohibited unless\n                                                                       included as an integral, but minor, ele-\n      1.      Parking on landscaped areas. The park-                   ment of a landscaping plan.\n              ing of any type of vehicle, trailer, boat,\n              personal watercraft, recreational vehicle,          4.   Outdoor storage. The storage of commer-\n              or any other similar vehicle shall be pro-               cial fishing and crabbing equipment shall\n              hibited on grass or any other landscaped                 be prohibited outdoors on any residential\n              area;                                                    property.\n\n\n   Supp. No. 12                                         CD2:128\n\fJOBNAME: No Job Name PAGE: 77 SESS: 2 OUTPUT: Tue Jul 26 14:13:31 2005"
+    },
+    {
+      "id": "IE-MULTI-FENCE",
+      "section": "2-1602.H.2.a\u2013b",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 13862,
+      "lineEnd": 13889,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L13862",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "Multifamily MDR/MHDR/HDR/C IENCOD areas have the corresponding six-foot side and non-opaque rear-setback-to-seawall provisions.",
+      "limitationOrQuestion": "District label alone does not establish multifamily use, shared-property rights or proposed segment location.",
+      "sourceExtract": "                   project are compatible with adjacent                be prohibited outdoors on any residential\n                   land uses;                                          property.\n              f.   The development of the parcel pro-          H. Additional development standards for multi-\n                   posed for development as a residen-       family areas zoned MDR/IENCOD, MHDR/\n                   tial infill project will upgrade the      IENCOD, HDR/IENCOD and C/IENCOD.\n                   immediate vicinity of the parcel pro-\n                   posed for development;                         1.   Parking. The parking of any type of vehi-\n              g.   The design of the proposed residen-                 cle, trailer, boat, personal watercraft, rec-\n                   tial infill project creates a form and              reational vehicle, or any other similar\n                   function which enhances the commu-                  vehicle shall be prohibited on grass or any\n                   nity character of the immediate vi-                 other landscaped area.\n                   cinity of the parcel proposed for de-\n                                                                  2.   Fences.\n                   velopment and the City of Clearwater\n                   as a whole; and                                     a.   Fences shall not exceed six feet in\n              h.   Flexibility in regard to lot width,                      height between any portion of the\n                   required setbacks, height, off-street                    principal structure and any side lot\n                   parking, access or other develop-                        line.\n                   ment standards is justified by the\n                                                                       b.   All fences between the rear building\n                   benefits to community character and\n                                                                            setback line and the seawall shall be\n                   the immediate vicinity of the parcel\n                                                                            non-opaque (see-through.)\n                   proposed for development and the\n                   City of Clearwater as a whole.                 3.   Landscaping requirements. Use of gravel,\n     G. Additional development standards for single-                   stones, cinders and other similar material\n   family areas zoned LMDR/IENCOD.                                     in any yard shall be prohibited unless"
+    },
+    {
+      "id": "IE-INSTITUTIONAL",
+      "section": "2-1602.I",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 13908,
+      "lineEnd": 13922,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L13908",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "I/IENCOD contains additional landscaping requirements; general applicable code remains relevant.",
+      "limitationOrQuestion": "No residential base or residential use permission inferred.",
+      "sourceExtract": "\n                  I. Additional development standards for areas\n                zoned I/IENCOD.\n                  1.    Landscaping requirements. Use of gravel,\n                        stones, cinders and other similar material\n                        in any yard shall be prohibited unless\n                        included as an integral, but minor, ele-\n                        ment of a landscaping plan.\n                (Ord. No. 6981-02, \u00a7 1, 8-8-02; Ord. No. 7413-05,\n                \u00a7\u00a7 16, 17, 5-5-05)\n\n\n\n\n                Supp. No. 12                                    CD2:129"
+    },
+    {
+      "id": "FENCE-PRECEDENCE",
+      "section": "3-803.A",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 15909,
+      "lineEnd": 15927,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L15909",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "CRNCOD and IENCOD design guidelines/standards apply first; Article 3 Division 8 fills matters where those standards are silent.",
+      "limitationOrQuestion": "A split-zone notifier cannot compensate for missing primary-overlay rules.",
+      "sourceExtract": "Section 3-803. Design requirements.\n                                                       Development Coordinator.\n   A. Where fences or walls are located in zoning         F. Fences and walls shall comply with the\ndistricts governed by design standards established     sight visibility triangle requirements of Section\nby Division 5 of this article, including the           3-904.A.\nDowntown (D), US 19, or Tourist (T) Districts, or      (Ord. No. 6526-00, \u00a7 1, 6-15-00; Ord. No. 9643-\nwithin either the Coachman Ridge Neighbor-             23, \u00a7 6, 4-4-23)\nhood Conservation Overlay District (CRNCOD)               Editor\u2019s note\u2014Ord. No. 6526-00, \u00a7 1, adopted June 15,\nor Island Estates Neighborhood Conservation            2000, repealed \u00a7\u00a7 3-803\u20143-807 and added provisions\nOverlay District (IENCOD), the guidelines or           designated as new \u00a7\u00a7 3-803\u20143-807. Former \u00a7\u00a7 3-803\u20143-807\n                                                       pertained to easements and rights-of-way; orientation; height/\nstandards of those districts shall apply. Where        location; setbacks; and special requirements. See the Table of\nthe design standards or guidelines are silent,         Amendments.\nfences or walls shall adhere to the standards\nwithin this division.                                  Section 3-804. Height requirements.\n   B. Fences and walls placed within a required           The following height requirements shall apply\nsetback area shall be oriented so that the side of     to all fences and walls, except chain link fences.\nthe fence or wall facing or viewable from a street         A.   Front. Fences and walls located between\nright-of-way or an adjoining property is the                    the principal structure and front property"
+    },
+    {
+      "id": "NCOD-PRIVATE",
+      "section": "4-608.A",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 25123,
+      "lineEnd": 25150,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L25123",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "NCOD mechanism adds neighborhood standards; its purpose does not include City enforcement of neighborhood deed restrictions.",
+      "limitationOrQuestion": "City zoning review and association/deed restrictions are separate; no private rights certified.",
+      "sourceExtract": "               possesses distinctive characteristics                     overlay district.\n               of a type, period or method of                A. Purpose. The purpose of the neighborhood\n               construction, or the representation        conservation overlay district is to provide a\n               of the work of as master, or the           means of ensuring that infill and redevelopment\n               possession of artistic values.             activities in existing, stable residential neighbor-\n          d.   Whether the property or district           hoods or neighborhoods requiring special\n               has yielded or may be likely to yield      consideration are consistent with the protection\n               information important in prehis-           of the existing character of the neighborhood.\n               tory or history.                           This is accomplished by the neighborhood work-\n                                                          ing with the city to develop a special area plan\n   3.     Properties and districts shall be classi-\n                                                          for the neighborhood, which specifies develop-\n          fied additionally as follows:\n                                                          ment standards beyond those from the city's\n          a.   Exceptional - Satisfies each of the        Community Development Code, that would\n               four criteria.                             otherwise apply. It is not a purpose of this\n          b.   Excellent - Satisfies three of the         section that the city would become, in any way,\n               above criteria.                            involved in the enforcement of neighborhood\n                                                          deed restrictions.\n          c.   Notable - Satisfies two of the above\n               criteria.                                     B. Designation criteria. The community\n                                                          development director shall be responsible for\n          d.   Of value as part of the scene -\n                                                          determining whether a neighborhood is eligible\n               Satisfies one of the above criteria.\n                                                          for Neighborhood Conservation Overlay District\n   4.     Properties need not be contiguous.              Designation based on the following criteria:\n   5.     Contributing properties are those proper-            1.   The area proposed to be designated as a"
+    },
+    {
+      "id": "OSR-SCOPE",
+      "section": "2-1401",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 12922,
+      "lineEnd": 12947,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L12922",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "OSR is an open-space/recreation district, with development potential also depending on Countywide Future Land Use designation.",
+      "limitationOrQuestion": "OS/R is a supported legal concept but is outside the ordinary residential fence scope; do not alias it to a residential district.",
+      "sourceExtract": "Ord. No. 8349-12, \u00a7\u00a7 28, 29, 9-6-12; Ord. No.                 The uses and development potential of a parcel\n8988-17, \u00a7 11, 2-2-17)                                        of land within the OSR District shall be\n                                                              determined by the standards found in this\n                                                              Development Code as well as the Countywide\n DIVISION 14. OPEN SPACE/RECREATION                           Future Land Use Designation of the property,\n            DISTRICT (\"OSR\")                                  including any acreage or floor area restrictions\n                                                              set forth in the Rules Concerning the Administra-\nSection 2-1401. Intent and purpose.                           tion of the Countywide Future Land Use Plan, as\n   The intent and purpose of the Open Space/                  amended from time to time. Development\nRecreation District is to establish areas where               potential for the Countywide Future Land Use\npublic and private organizations can establish                Designations that apply to the OSR District are\nand operate passive and active open space and                 as follows:\nrecreation facilities which are important to the\nquality of life and economic vitality of the City of          Countywide                            Maximum Floor\nClearwater without adversely impacting the                    Future               Maximum          Area Ratio/\nintegrity of adjacent residential neighborhoods,              Land Use             Dwelling Units Impervious\n                                                              Designation          per Acre of Land Surface Ratio\ndiminishing the scenic quality of the City of\nClearwater or negatively impacting the safe and               Recreation/Open      N/A               FAR .25/ISR .60\n                                                              Space\nefficient movement of people and things within\nthe City of Clearwater.                                       (Ord. No. 8043-09, \u00a7 20, 9-3-09)\n\n_______________________________________________________________________________________________\n\nSection 2-1402. Minimum standard development."
+    },
+    {
+      "id": "CR-EXTERIOR",
+      "section": "2-1601.G\u2013K",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 13490,
+      "lineEnd": 13565,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L13490",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "Coachman Ridge additionally restricts driveway materials, parking on landscaped areas and storage/parking of listed vehicles (with stated business/loading exceptions); specified equipment must be behind the front building line and screened.",
+      "limitationOrQuestion": "These exterior-use standards require topic-specific cards/facts; do not unlock driveway, parking or equipment guidance using a generic LMDR alias.",
+      "sourceExtract": "\n\n   Flexibility criteria.                                                   I. Parking of certain types of vehicles. The\n                                                                        following vehicles shall only be kept on property if\n      1.      Infrastructure/utility facilities.\n                                                                        parked inside a garage and concealed from public\n              a.   The proposed infrastructure/utility                  view: boats, personal watercrafts, recreational\n                   facility is needed to maintain cur-                  vehicles, trailers, commercial vehicles, race cars,\n                   rent levels of service or enhance lev-               dune buggies, farm equipment, go karts, ATVs or\n                   els of service;                                      other similar vehicles. This provision shall not\n              b.   The siting and screening of the pro-                 prevent commercial vehicles from parking on the\n                   posed infrastructure/utility facility                streets and on driveways if present on business.\n                   protects the established character of                This provision shall not prevent the loading,\n                   the Coachman Ridge Neighborhood;                     unloading and cleaning of such vehicles as per-\n                                                                        mitted in Section 3-1407(B).\n              c.   No above ground structures shall be\n                   located in a required front yard set-                    J. Fences.\n                   back;\n              d.   The development or redevelopment                         1.    Chain line fences. Chain link and vinyl\n                   of the parcel proposed for develop-                            coated chain link fences shall be prohib-\n                   ment is otherwise impractical with-                            ited throughout the CRNCOD.\n                   out deviations from the setback re-\n                                                                            2.    Fences located in the front yard.\n                   quirements;\n              e.   Flexibility with regard to setbacks                            a.     Property with an underlying zoning\n                   are justified by the benefits to the                                  designation of low density residen-\n                   neighborhood character and the im-                                    tial. Non-opaque fences not exceed-\n                   mediate vicinity of the parcel pro-                                   ing three feet in height may be per-\n                   posed for development;                                                mitted between the front building\n                                                                                         line and the front property line and\n              f.   The proposed use is compatible and\n                                                                                         between the side building line and\n                   consistent with the character of the\n                                                                                         any property line adjacent to a street\n                   adjacent properties and the Coach-\n                                                                                         right-of-way line provided that fence\n                   man Ridge Neighborhood as a whole.\n                                                                                         materials and design are compatible\n      G. Driveway materials. Driveways constructed                                       with the architectural design of the\n   of asphalt, gravel, shell and other similar mate-                                     dwelling.\n   rials shall be prohibited.\n                                                                                  b.     Property with an underlying zoning\n      H. Parking on landscaped areas. The parking                                        designation of low medium density\n   of any type of vehicle, trailer, boat, recreational                                   residential. Fences shall be prohib-\n   vehicle, or any other similar vehicle shall be                                        ited between the front building line\n   prohibited on grass or any other landscaped area.                                     and the front property line and be-\n\n\n   Supp. No. 12                                                CD2:122\n\fJOBNAME: No Job Name PAGE: 71 SESS: 2 OUTPUT: Tue Jul 26 14:13:31 2005\n/first/pubdocs/mcc/2/13398_takes_tag_mcc_2_awilson\n\n\n\n                                                             ZONING DISTRICTS                                         \u00a7 2-1602\n\n\n\n                               tween the side building line and any               right-of-way of Dory Passage, Unit 5 Is-\n                               property line adjacent to a street                 land Estates of Clearwater as recorded in\n                               right-of-way line.                                 Plat Book 51, Page 34, of the Public Records\n                  3.    Fences located in the side and rear yards.                of Pinellas County, Florida;\n                        Fences located in the side and rear yards           (2)   Begin at the most easterly corner of Lot\n                        shall be in compliance with the fence                     13, Block D of Unit 5 Island Estates of\n                        requirements as set forth in Article 3,                   Clearwater; as recorded in Plat Book 51,\n                        Division 8.                                               Page 34, of the Public Records of Pinellas\n                   K. Screening requirements. Trash containers,                   County, Florida; thence N49\u00b023\u203241\u2033W,\n                oil tanks, gas tanks, soft water tanks and other                  100.00 feet; thence N04\u00b023\u203241\u2033W, 71.42\n                similar equipment shall be located behind the                     feet, to a point on a curve to the left;\n                front building line and screened from public view.                thence along the arc of said curve, having\n                Screening may be accomplished through landscap-                   a radius of 70.00 feet, a chord bearing of\n                ing and/or fencing.                                               N75\u00b047\u203240\u2033E, a chord length of 23.86 feet,\n                (Ord. No. 6825-01, \u00a7 2, 9-6-01; Ord. No. 6928-02,                 23.98 feet; thence S49\u00b023\u203241\u2033E, 136.75\n                \u00a7 38, 5-2-02; Ord. No. 7413-05, \u00a7 15, 5-5-05)                     feet; thence S08\u00b012\u203232\u2033E, 81.05 feet; thence\n                                                                                  S40\u00b036\u203219\u2033W,      16.63     feet;    thence\n                Section 2-1602. Island Estates Neighborhood                       N49\u00b023\u203241\u2033W, 61.00 feet to the Point of"
+    },
+    {
+      "id": "IE-EXTERIOR",
+      "section": "2-1602.G.1/G.3/G.4, H.1/H.3/H.4 and I",
+      "sourceFile": "research/clearwater/clearwater-development-code.txt",
+      "sourceSha256": "9745beac8988ab96c4b7bd67ce506d02d1bbd0a62ed0dc990e2abfa53d81b7a0",
+      "lineStart": 13836,
+      "lineEnd": 13922,
+      "permalink": "https://github.com/zachlepore/groundrule/blob/2f0117519995ca06e33edeeb4962db95e933f412/research/clearwater/clearwater-development-code.txt#L13836",
+      "interpretationType": "MANUAL_RECONSTRUCTION_OF_ARCHIVED_TWO_COLUMN_TEXT_NOT_A_NEW_RULE",
+      "supportedFinding": "Island Estates adds parking-on-landscaping, yard landscaping-material and outdoor commercial fishing/crabbing-equipment provisions; institutional areas have the stated additional landscaping requirement.",
+      "limitationOrQuestion": "Retain each use/district scope and landscaping-plan exception; these are not generic permissions or fully encoded MVP conditions.",
+      "sourceExtract": "\n\n\n   \u00a7 2-1602                                COMMUNITY DEVELOPMENT CODE\n\n\n\n              b.   Single-family detached dwellings and           2.   Fences.\n                   community residential homes with\n                   six or fewer residents are the only                 a.   Fences shall not exceed six feet in\n                   permitted uses eligible for residen-                     height between any portion of the\n                   tial infill project application;                         principal structure and any side lot\n                                                                            line;\n              c.   The development or redevelopment\n                   of the parcel proposed for develop-                 b.   All fences between the rear building\n                   ment is otherwise impractical with-                      setback line and the seawall shall be\n                   out deviations from one or more of                       non-opaque (see-through);\n                   the following: intensity; other devel-\n                   opment standards;                              3.   Landscaping requirements. Use of gravel,\n                                                                       stones, cinders and other similar material\n              d.   The development of a parcel pro-                    in any yard shall be prohibited unless\n                   posed for development as a residen-                 included as an integral, but minor, ele-\n                   tial infill project will not materially             ment of a landscaping plan; and\n                   reduce the fair market value of abut-\n                   ting properties;                               4.   Outdoor storage. The storage of commer-\n              e.   The uses within the residential infill              cial fishing and crabbing equipment shall\n                   project are compatible with adjacent                be prohibited outdoors on any residential\n                   land uses;                                          property.\n              f.   The development of the parcel pro-          H. Additional development standards for multi-\n                   posed for development as a residen-       family areas zoned MDR/IENCOD, MHDR/\n                   tial infill project will upgrade the      IENCOD, HDR/IENCOD and C/IENCOD.\n                   immediate vicinity of the parcel pro-\n                   posed for development;                         1.   Parking. The parking of any type of vehi-\n              g.   The design of the proposed residen-                 cle, trailer, boat, personal watercraft, rec-\n                   tial infill project creates a form and              reational vehicle, or any other similar\n                   function which enhances the commu-                  vehicle shall be prohibited on grass or any\n                   nity character of the immediate vi-                 other landscaped area.\n                   cinity of the parcel proposed for de-\n                                                                  2.   Fences.\n                   velopment and the City of Clearwater\n                   as a whole; and                                     a.   Fences shall not exceed six feet in\n              h.   Flexibility in regard to lot width,                      height between any portion of the\n                   required setbacks, height, off-street                    principal structure and any side lot\n                   parking, access or other develop-                        line.\n                   ment standards is justified by the\n                                                                       b.   All fences between the rear building\n                   benefits to community character and\n                                                                            setback line and the seawall shall be\n                   the immediate vicinity of the parcel\n                                                                            non-opaque (see-through.)\n                   proposed for development and the\n                   City of Clearwater as a whole.                 3.   Landscaping requirements. Use of gravel,\n     G. Additional development standards for single-                   stones, cinders and other similar material\n   family areas zoned LMDR/IENCOD.                                     in any yard shall be prohibited unless\n                                                                       included as an integral, but minor, ele-\n      1.      Parking on landscaped areas. The park-                   ment of a landscaping plan.\n              ing of any type of vehicle, trailer, boat,\n              personal watercraft, recreational vehicle,          4.   Outdoor storage. The storage of commer-\n              or any other similar vehicle shall be pro-               cial fishing and crabbing equipment shall\n              hibited on grass or any other landscaped                 be prohibited outdoors on any residential\n              area;                                                    property.\n\n\n   Supp. No. 12                                         CD2:128\n\fJOBNAME: No Job Name PAGE: 77 SESS: 2 OUTPUT: Tue Jul 26 14:13:31 2005\n/first/pubdocs/mcc/2/13398_takes_tag_mcc_2_awilson\n\n\n\n                                                           ZONING DISTRICTS   \u00a7 2-1602\n\n\n\n                  I. Additional development standards for areas\n                zoned I/IENCOD.\n                  1.    Landscaping requirements. Use of gravel,\n                        stones, cinders and other similar material\n                        in any yard shall be prohibited unless\n                        included as an integral, but minor, ele-\n                        ment of a landscaping plan.\n                (Ord. No. 6981-02, \u00a7 1, 8-8-02; Ord. No. 7413-05,\n                \u00a7\u00a7 16, 17, 5-5-05)\n\n\n\n\n                Supp. No. 12                                    CD2:129"
+    }
+  ],
+  "exactCodeEvidenceCrosswalk": [
+    {
+      "exactSourceCode": "LDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LDR",
+      "sourceBaseDescription": "Low Density Residential",
+      "overlayCode": "CRNCOD",
+      "overlaySubtype": "Coachman Ridge",
+      "codeCitationId": "CR-BASE",
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10686,
+          "ZONING": "LDR-NCOD Coachman R",
+          "ZONING_DESC": "Low Density Residential - Coachman Ridge Neighborhood Conservation Overlay District",
+          "SPECIAL": "(CRNCOD)"
+        }
+      ],
+      "method": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "scope": "Evidence crosswalk for research only; raw code/QA unchanged; legal boundary/current applicability not independently confirmed."
+    },
+    {
+      "exactSourceCode": "LMDR-NCOD Coachman R",
+      "sourceDescribedBaseDistrict": "LMDR",
+      "sourceBaseDescription": "Low Medium Density Residential",
+      "overlayCode": "CRNCOD",
+      "overlaySubtype": "Coachman Ridge",
+      "codeCitationId": "CR-BASE",
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10947,
+          "ZONING": "LMDR-NCOD Coachman R",
+          "ZONING_DESC": "Low Medium Density Residential - Coachman Ridge Neighborhood Conservation Overlay District",
+          "SPECIAL": "(CRNCOD)"
+        }
+      ],
+      "method": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "scope": "Evidence crosswalk for research only; raw code/QA unchanged; legal boundary/current applicability not independently confirmed."
+    },
+    {
+      "exactSourceCode": "LMDR-NCOD Island Est",
+      "sourceDescribedBaseDistrict": "LMDR",
+      "sourceBaseDescription": "Low Medium Density Residential",
+      "overlayCode": "IENCOD",
+      "overlaySubtype": "Island Estates",
+      "codeCitationId": "IE-BASE",
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10869,
+          "ZONING": "LMDR-NCOD Island Est",
+          "ZONING_DESC": "Low Medium Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)"
+        },
+        {
+          "OBJECTID": 10937,
+          "ZONING": "LMDR-NCOD Island Est",
+          "ZONING_DESC": "Low Medium Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)"
+        }
+      ],
+      "method": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "scope": "Evidence crosswalk for research only; raw code/QA unchanged; legal boundary/current applicability not independently confirmed."
+    },
+    {
+      "exactSourceCode": "MDR-NCOD Island Est",
+      "sourceDescribedBaseDistrict": "MDR",
+      "sourceBaseDescription": "Medium Density Residential",
+      "overlayCode": "IENCOD",
+      "overlaySubtype": "Island Estates",
+      "codeCitationId": "IE-BASE",
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10873,
+          "ZONING": "MDR-NCOD Island Est",
+          "ZONING_DESC": "Medium Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)"
+        }
+      ],
+      "method": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "scope": "Evidence crosswalk for research only; raw code/QA unchanged; legal boundary/current applicability not independently confirmed."
+    },
+    {
+      "exactSourceCode": "MHDR-NCOD Island Est",
+      "sourceDescribedBaseDistrict": "MHDR",
+      "sourceBaseDescription": "Medium High Density Residential",
+      "overlayCode": "IENCOD",
+      "overlaySubtype": "Island Estates",
+      "codeCitationId": "IE-BASE",
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10870,
+          "ZONING": "MHDR-NCOD Island Est",
+          "ZONING_DESC": "Medium High Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)"
+        },
+        {
+          "OBJECTID": 10898,
+          "ZONING": "MHDR-NCOD Island Est",
+          "ZONING_DESC": "Medium High Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)"
+        }
+      ],
+      "method": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "scope": "Evidence crosswalk for research only; raw code/QA unchanged; legal boundary/current applicability not independently confirmed."
+    },
+    {
+      "exactSourceCode": "HDR-NCOD Island Est",
+      "sourceDescribedBaseDistrict": "HDR",
+      "sourceBaseDescription": "High Density Residential",
+      "overlayCode": "IENCOD",
+      "overlaySubtype": "Island Estates",
+      "codeCitationId": "IE-BASE",
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10871,
+          "ZONING": "HDR-NCOD Island Est",
+          "ZONING_DESC": "High Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)"
+        },
+        {
+          "OBJECTID": 10874,
+          "ZONING": "HDR-NCOD Island Est",
+          "ZONING_DESC": "High Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)"
+        }
+      ],
+      "method": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "scope": "Evidence crosswalk for research only; raw code/QA unchanged; legal boundary/current applicability not independently confirmed."
+    },
+    {
+      "exactSourceCode": "I-NCOD Island Est",
+      "sourceDescribedBaseDistrict": "I",
+      "sourceBaseDescription": "Institutional",
+      "overlayCode": "IENCOD",
+      "overlaySubtype": "Island Estates",
+      "codeCitationId": "IE-BASE",
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10872,
+          "ZONING": "I-NCOD Island Est",
+          "ZONING_DESC": "Institutional - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)"
+        }
+      ],
+      "method": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "scope": "Evidence crosswalk for research only; raw code/QA unchanged; legal boundary/current applicability not independently confirmed."
+    },
+    {
+      "exactSourceCode": "OS/R",
+      "sourceDescribedBaseDistrict": "OSR",
+      "sourceBaseDescription": "Open Space/Recreation",
+      "overlayCode": null,
+      "overlaySubtype": null,
+      "codeCitationId": "OSR-SCOPE",
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10489,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10523,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10527,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10532,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10534,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10544,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10550,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10563,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10565,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10579,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10580,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10583,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10591,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10600,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10607,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10609,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10616,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10639,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10643,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10655,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10676,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10678,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10679,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10681,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10688,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10689,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10696,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10703,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10709,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10712,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10713,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10714,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10715,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10716,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10719,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10721,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10722,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10737,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10750,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10757,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10760,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10763,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10775,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10782,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10802,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10804,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10805,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10820,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10822,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10845,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10848,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10855,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10863,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10880,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10881,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10882,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10884,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10915,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10916,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10919,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10925,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10926,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10938,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10942,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10944,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10945,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10952,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10954,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10955,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10957,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10959,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10968,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10970,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10971,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 10991,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11012,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11026,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11032,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11059,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11063,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11066,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11075,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11078,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11106,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11107,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11113,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11133,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11160,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11217,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11218,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11238,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        },
+        {
+          "OBJECTID": 11240,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null
+        }
+      ],
+      "method": "EXPLICIT_SOURCE_ZONING_DESC_AND_SPECIAL_PLUS_CITED_CODE_NOT_SUFFIX_STRIPPING",
+      "scope": "Evidence crosswalk for research only; raw code/QA unchanged; legal boundary/current applicability not independently confirmed."
+    }
+  ],
+  "planningQuestions": [
+    "Confirm no amendments since the archived compilation alter 2-1601.J, 2-1602.G/H or 3-803.A.",
+    "Confirm source labels/SPECIAL correspond to currently designated CRNCOD/IENCOD parcels and resolve legal tract exclusions in 2-1602.B.",
+    "Confirm CRNCOD J.2.b street-side/front wording and its interaction with J.3 and general corner/multiple-frontage provisions, including any applicable flexibility/variance or documented nonconformity.",
+    "Confirm IENCOD rear building setback line and seawall applicability; identify exceptions requiring documented City decisions.",
+    "Identify controlling neighborhood plans and current plats/declarations/private restrictions; GIS does not establish them.",
+    "Confirm residential/condominium uses and which shared-land projects need association/management permissions."
+  ]
+}

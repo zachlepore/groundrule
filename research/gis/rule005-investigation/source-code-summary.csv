@@ -1,0 +1,9 @@
+sourceCode,addresses,parcelIds,geometryGroups,baseEvidence,overlaySubtype,exactSingleMappedCode,technicalScreenApartFromUnsupported,unitLabeledAddresses,flags
+HDR-NCOD Island Est,1385,1365,43,HDR,Island Estates,397,1364,1349,"{""address_point_outside_authoritative_parcel"":21,""address_point_primary_inconsistency"":1}"
+LMDR-NCOD Island Est,565,564,564,LMDR,Island Estates,261,564,0,"{""nonfinal_human_primary_candidate_requires_review"":1}"
+OS/R,308,184,112,OSR,,45,76,132,"{""address_point_primary_inconsistency"":174,""coverage_outside_existing_tolerance"":24,""existing_cross_code_overlap_diagnostic"":61,""parcel_peer_hold"":8,""invalid_zoning_geometry"":18,""repeated_same_code_polygons"":8,""address_point_outside_authoritative_parcel"":9,""parcel_geometry_quality_hold"":5}"
+MHDR-NCOD Island Est,266,255,83,MHDR,Island Estates,139,227,203,"{""address_point_outside_authoritative_parcel"":39}"
+LMDR-NCOD Coachman R,242,242,242,LMDR,Coachman Ridge,228,241,0,"{""coverage_outside_existing_tolerance"":1}"
+MDR-NCOD Island Est,52,52,19,MDR,Island Estates,30,51,51,"{""address_point_outside_authoritative_parcel"":1}"
+LDR-NCOD Coachman R,13,13,13,LDR,Coachman Ridge,7,10,0,"{""coverage_outside_existing_tolerance"":3}"
+I-NCOD Island Est,1,1,1,I,Island Estates,0,1,0,{}

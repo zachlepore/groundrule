@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "allAddresses": 63430,
+  "originalReview": 20338,
+  "approvedCounts": {
+    "CLR-Z-002": 262,
+    "CLR-Z-001": 1967,
+    "CLR-Z-004": 364,
+    "CLR-Z-003": 731
+  },
+  "totalApproved": 3324,
+  "remainingReview": 17014,
+  "exactRule004AddressAndParcelMembership": true,
+  "geometryGroups": {
+    "R004-01": 363,
+    "R004-02": 1
+  },
+  "rule004ProminentNotices": 0,
+  "rule004NonProminentNotices": 364,
+  "sourceAndResearchFieldsChanged": 0,
+  "priorApprovalChanges": 0,
+  "duplicateOrDoubleApprovals": 0,
+  "sharedSiteEvidencePreservedAndNotAssignedToUnits": true,
+  "lookup": {
+    "sha256": "a4191f3e33be50545aeb6b0739f307db0470517d721e0abe854182dd2859e739",
+    "bytes": 250198246
+  }
+}

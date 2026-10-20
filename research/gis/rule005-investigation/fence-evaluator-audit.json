@@ -1,0 +1,175 @@
+{
+  "sourceFile": "supabase/migrations/20260823000000_seed_clearwater_fence_rules.sql",
+  "sourceSha256": "8b07049cd19ed2fadd85853cd80e0ced64fb63c4411cb64208d1a9ea0b04ae05",
+  "readOnly": true,
+  "noDatabaseAccess": true,
+  "scope": "Committed migration conditions, not a live rule-database audit; original property adapter blocks REVIEW and supplies only normalized zoning for clean profiles.",
+  "conditions": [
+    {
+      "key": "height.front_baseline",
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_false"
+          },
+          {
+            "fact": "project.location_zone",
+            "op": "eq",
+            "value": "front"
+          }
+        ]
+      }
+    },
+    {
+      "key": "height.side_rear_baseline",
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_false"
+          },
+          {
+            "fact": "project.location_zone",
+            "op": "in",
+            "values": [
+              "side",
+              "rear"
+            ]
+          },
+          {
+            "fact": "property.zoning_district",
+            "op": "neq",
+            "value": "irt"
+          },
+          {
+            "fact": "property.is_water_adjacent",
+            "op": "is_false"
+          }
+        ]
+      }
+    },
+    {
+      "key": "chain_link.side_rear_base_height",
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.location_zone",
+            "op": "in",
+            "values": [
+              "side",
+              "rear"
+            ]
+          },
+          {
+            "fact": "project.vinyl_color",
+            "op": "not_in",
+            "values": [
+              "green",
+              "black"
+            ]
+          },
+          {
+            "fact": "property.is_recreational_facility",
+            "op": "is_false"
+          }
+        ]
+      }
+    },
+    {
+      "key": "chain_link.side_rear_vinyl_height",
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.location_zone",
+            "op": "in",
+            "values": [
+              "side",
+              "rear"
+            ]
+          },
+          {
+            "fact": "project.vinyl_color",
+            "op": "in",
+            "values": [
+              "green",
+              "black"
+            ]
+          },
+          {
+            "fact": "property.is_recreational_facility",
+            "op": "is_false"
+          }
+        ]
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "composite_code_front_non_chain",
+      "facts": {
+        "property.zoning_district": "LMDR-NCOD Coachman R",
+        "project.is_chain_link": false,
+        "project.location_zone": "front"
+      },
+      "forbiddenGenericMatch": "height.front_baseline",
+      "matchedRules": [
+        "height.front_baseline"
+      ],
+      "interpretation": "A generic condition matches if the unsupported property is fed directly/aliased into the evaluator. This is not production behavior or permission; overlay-specific rules/precedence are missing."
+    },
+    {
+      "id": "stripped_base_front_non_chain",
+      "facts": {
+        "property.zoning_district": "lmdr",
+        "project.is_chain_link": false,
+        "project.location_zone": "front"
+      },
+      "forbiddenGenericMatch": "height.front_baseline",
+      "matchedRules": [
+        "height.front_baseline"
+      ],
+      "interpretation": "A generic condition matches if the unsupported property is fed directly/aliased into the evaluator. This is not production behavior or permission; overlay-specific rules/precedence are missing."
+    },
+    {
+      "id": "coachman_side_uncoated_chain_link",
+      "facts": {
+        "property.zoning_district": "lmdr",
+        "project.is_chain_link": true,
+        "project.location_zone": "rear",
+        "project.vinyl_color": "none",
+        "property.is_recreational_facility": false
+      },
+      "forbiddenGenericMatch": "chain_link.side_rear_base_height",
+      "matchedRules": [
+        "chain_link.side_rear_base_height"
+      ],
+      "interpretation": "A generic condition matches if the unsupported property is fed directly/aliased into the evaluator. This is not production behavior or permission; overlay-specific rules/precedence are missing."
+    },
+    {
+      "id": "coachman_side_coated_chain_link",
+      "facts": {
+        "property.zoning_district": "lmdr",
+        "project.is_chain_link": true,
+        "project.location_zone": "side",
+        "project.vinyl_color": "black",
+        "property.is_recreational_facility": false
+      },
+      "forbiddenGenericMatch": "chain_link.side_rear_vinyl_height",
+      "matchedRules": [
+        "chain_link.side_rear_vinyl_height"
+      ],
+      "interpretation": "A generic condition matches if the unsupported property is fed directly/aliased into the evaluator. This is not production behavior or permission; overlay-specific rules/precedence are missing."
+    }
+  ],
+  "scenariosPassed": 4,
+  "newApprovals": 0
+}
