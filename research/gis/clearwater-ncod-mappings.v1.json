@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "registryVersion": "clearwater-ncod-v1",
+  "jurisdiction": "clearwater",
+  "snapshotId": "clearwater-gis-2026-09-28",
+  "archiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+  "zoningFileSha256": "56ee74e1c2e8fab582efcdda388008e77205237439169c13191caa0ecb31929b",
+  "regulatoryEvidenceSha256": "ee2aa3737f474022f130ade018a1f5bccf5876e68eabd6a583df82d897cb0b09",
+  "legalCurrencyVerified": false,
+  "entries": [
+    {
+      "originalSourceCode": "LDR-NCOD Coachman R",
+      "baseCode": "LDR",
+      "kind": "base_with_overlay",
+      "overlay": {
+        "type": "NCOD",
+        "code": "CRNCOD",
+        "name": "Coachman Ridge"
+      },
+      "citationIds": [
+        "CR-BASE"
+      ],
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10686,
+          "ZONING": "LDR-NCOD Coachman R",
+          "ZONING_DESC": "Low Density Residential - Coachman Ridge Neighborhood Conservation Overlay District",
+          "SPECIAL": "(CRNCOD)",
+          "featureSha256": "243f43b1d3ed1b48e9e32e4fa29990eae00704b95a48d287baba97a54f35c62c"
+        }
+      ]
+    },
+    {
+      "originalSourceCode": "LMDR-NCOD Coachman R",
+      "baseCode": "LMDR",
+      "kind": "base_with_overlay",
+      "overlay": {
+        "type": "NCOD",
+        "code": "CRNCOD",
+        "name": "Coachman Ridge"
+      },
+      "citationIds": [
+        "CR-BASE"
+      ],
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10947,
+          "ZONING": "LMDR-NCOD Coachman R",
+          "ZONING_DESC": "Low Medium Density Residential - Coachman Ridge Neighborhood Conservation Overlay District",
+          "SPECIAL": "(CRNCOD)",
+          "featureSha256": "f6662de010d4090159b5b25709d2252a0e2af9563b9d79b3c42b501c99bff0d2"
+        }
+      ]
+    },
+    {
+      "originalSourceCode": "LMDR-NCOD Island Est",
+      "baseCode": "LMDR",
+      "kind": "base_with_overlay",
+      "overlay": {
+        "type": "NCOD",
+        "code": "IENCOD",
+        "name": "Island Estates"
+      },
+      "citationIds": [
+        "IE-BASE"
+      ],
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10869,
+          "ZONING": "LMDR-NCOD Island Est",
+          "ZONING_DESC": "Low Medium Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)",
+          "featureSha256": "8f57623d03f430a67a5a0e59cec3214f39f9178d2a30cbbe66c7f126fd563608"
+        },
+        {
+          "OBJECTID": 10937,
+          "ZONING": "LMDR-NCOD Island Est",
+          "ZONING_DESC": "Low Medium Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)",
+          "featureSha256": "0172e46394cb3dd6ad8a0c6cf712ba0260f973ebe2a1125381f03aa6e0bbb75a"
+        }
+      ]
+    },
+    {
+      "originalSourceCode": "MDR-NCOD Island Est",
+      "baseCode": "MDR",
+      "kind": "base_with_overlay",
+      "overlay": {
+        "type": "NCOD",
+        "code": "IENCOD",
+        "name": "Island Estates"
+      },
+      "citationIds": [
+        "IE-BASE"
+      ],
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10873,
+          "ZONING": "MDR-NCOD Island Est",
+          "ZONING_DESC": "Medium Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)",
+          "featureSha256": "0b589fd9f8bd62a7e023948de1f4030ce72b37e70ea9840b80877ff190b7ad8f"
+        }
+      ]
+    },
+    {
+      "originalSourceCode": "MHDR-NCOD Island Est",
+      "baseCode": "MHDR",
+      "kind": "base_with_overlay",
+      "overlay": {
+        "type": "NCOD",
+        "code": "IENCOD",
+        "name": "Island Estates"
+      },
+      "citationIds": [
+        "IE-BASE"
+      ],
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10870,
+          "ZONING": "MHDR-NCOD Island Est",
+          "ZONING_DESC": "Medium High Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)",
+          "featureSha256": "a96b7c4a5ea77967b95ca5e8fde9bff4ce6e55c0181fe9d76be5ba6e2a4c5014"
+        },
+        {
+          "OBJECTID": 10898,
+          "ZONING": "MHDR-NCOD Island Est",
+          "ZONING_DESC": "Medium High Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)",
+          "featureSha256": "a057c40744f9acc9e4f5afd0333ccc3382f42ba8bab3c4edf3d89388f26de9ef"
+        }
+      ]
+    },
+    {
+      "originalSourceCode": "HDR-NCOD Island Est",
+      "baseCode": "HDR",
+      "kind": "base_with_overlay",
+      "overlay": {
+        "type": "NCOD",
+        "code": "IENCOD",
+        "name": "Island Estates"
+      },
+      "citationIds": [
+        "IE-BASE"
+      ],
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10871,
+          "ZONING": "HDR-NCOD Island Est",
+          "ZONING_DESC": "High Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)",
+          "featureSha256": "5d3e910c957b5bf86d92a2486a316485a0b738e0306a76b4713da3bae8865de7"
+        },
+        {
+          "OBJECTID": 10874,
+          "ZONING": "HDR-NCOD Island Est",
+          "ZONING_DESC": "High Density Residential - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)",
+          "featureSha256": "ccac3908749f587f8789ea85b80a4eb7ef4211f90e18d67f47c07275fcf27def"
+        }
+      ]
+    },
+    {
+      "originalSourceCode": "I-NCOD Island Est",
+      "baseCode": "I",
+      "kind": "base_with_overlay",
+      "overlay": {
+        "type": "NCOD",
+        "code": "IENCOD",
+        "name": "Island Estates"
+      },
+      "citationIds": [
+        "IE-BASE"
+      ],
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10872,
+          "ZONING": "I-NCOD Island Est",
+          "ZONING_DESC": "Institutional - Island Estates Neighborhood Conservation Overlay District",
+          "SPECIAL": "(IENCOD)",
+          "featureSha256": "3dfb47f0dbadb4e94f85a7055942788984c9a17b7d9632450d98bb5ab8b96143"
+        }
+      ]
+    },
+    {
+      "originalSourceCode": "OS/R",
+      "baseCode": "OSR",
+      "kind": "district",
+      "overlay": null,
+      "citationIds": [
+        "OSR-SCOPE"
+      ],
+      "sourcePolygons": [
+        {
+          "OBJECTID": 10489,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "87b04f01ce56a4080e6a96afc067e24242d28d40b2d45d11f86bfdb8633a156c"
+        },
+        {
+          "OBJECTID": 10523,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "0f624462afadd120637361ac138be2f1cbc9735327f25c3c67787aedf4aa690c"
+        },
+        {
+          "OBJECTID": 10527,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "3e44444ee7ca440db02810b97eeabde0f347a389711cc57ce454db5c2af0fc02"
+        },
+        {
+          "OBJECTID": 10532,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "2bc560ca4030d5eb68dc3623d49146118e8b817d612f38cb6ac9ff6e6601856e"
+        },
+        {
+          "OBJECTID": 10534,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "cd27ba2d673827b27ec6575db03a334bb9054d39be4d17a8b25181f2f8a9179b"
+        },
+        {
+          "OBJECTID": 10544,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "8bfc202fbb2dc677b8d76d0e1ae9fc418e7f8ab51854ac1f829d153714d6c0e6"
+        },
+        {
+          "OBJECTID": 10550,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "222859eb33afbbdad1bb516e1030e777e1591f7e4f5ed38ff77deb5b0b11b205"
+        },
+        {
+          "OBJECTID": 10563,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "ffe6ee22843748aafae8fe4ed7acb5fedf967fddd5f1a6a8a6e063e1b66f0cbe"
+        },
+        {
+          "OBJECTID": 10565,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "025ee01e7f0618b9f504f8ac6f5cf4f6211c0e0d8dde36d1b63e03ba130a8507"
+        },
+        {
+          "OBJECTID": 10579,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "87a8a9d2497f1d9931b36ab89b20f35ca671109de1058780cafa03fbd160f582"
+        },
+        {
+          "OBJECTID": 10580,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "1fdc051cd48c0e963dbfe3d5dac72108a62cc57cee16d3e0c046c4062ae424d1"
+        },
+        {
+          "OBJECTID": 10583,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "d585dd3ba205d199d25442fda1bdf4c998c0f5df17365b35e11927dba73ecea9"
+        },
+        {
+          "OBJECTID": 10591,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "cb976c02660a0797d1659188a4e6b00a68257451fe93984d85d9e82e645632f2"
+        },
+        {
+          "OBJECTID": 10600,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "67108f21ac3c1f37d9394261858e49283f024c260301df7ba37bd6d2ded5561d"
+        },
+        {
+          "OBJECTID": 10607,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "28ab389922056a54559efbedd25e202ff4feeefd1829c3dcf4d9105c1e78615a"
+        },
+        {
+          "OBJECTID": 10609,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "8d6bec48b4b6545e305b80edbb0b18369969a0ceb66004c46a0f37ba32ca4535"
+        },
+        {
+          "OBJECTID": 10616,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "ce3e8e8bee23f61cacfb771813c9527ee990ce797618e9f4c96b38081e4e33dc"
+        },
+        {
+          "OBJECTID": 10639,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "416bef4724819dec5347bac832b6082b458601257287cd04e6cfcb9198bdc419"
+        },
+        {
+          "OBJECTID": 10643,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "3610dd0650e69d75fc4cb3943f41d54e066d428b4a240e77303701af39cc9fa6"
+        },
+        {
+          "OBJECTID": 10655,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "b35352acee26106a3371476f0e36083eb47224e48b07a24f16f68e40a1c38474"
+        },
+        {
+          "OBJECTID": 10676,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "033cd99eaa1f9ae4d2e63364face5209629dccd3076b9be433a1dd10bf312bbb"
+        },
+        {
+          "OBJECTID": 10678,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "89db7ebb4326f8db5751969f26afb10d439f21703143838c6e3151028a1867c5"
+        },
+        {
+          "OBJECTID": 10679,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "931b5ac56882959c58d0b5e51ccb26b2eba06ac223f319e6524c3a3c8ddfe9b1"
+        },
+        {
+          "OBJECTID": 10681,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "0825fb9bfe9c07217f401f38e0b21685c90ac9b3c03027f22f37e2db977bf68e"
+        },
+        {
+          "OBJECTID": 10688,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "7439de934300606172f4c66ce702729cdf8afb42e61b63fb9161c11c0e0c58c6"
+        },
+        {
+          "OBJECTID": 10689,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "d52c2ef9f3150c5555453fce3e5b3f29be3224bc184d9c1372889fa94aa7beda"
+        },
+        {
+          "OBJECTID": 10696,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "8b981514c06bebe592e03c6560b8a92ebcd567f4b0fbe6671007991f14971c31"
+        },
+        {
+          "OBJECTID": 10703,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "0f812ade61d873ce8ac3ea86e34a146273c1e5f4368c9d334fee1d8416797b62"
+        },
+        {
+          "OBJECTID": 10709,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "d8131ebdcba1592268fa63e51f7d65b892b3a6a1ed8e816066449c539f0ed61e"
+        },
+        {
+          "OBJECTID": 10712,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "454604728eb503ac0b67e209e0dd76cd0fb5ea70f62aaea45c3193f7740046aa"
+        },
+        {
+          "OBJECTID": 10713,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "3602c4c3027940a5c536d59cdc492c3eb42e632821023913356423a032f004c1"
+        },
+        {
+          "OBJECTID": 10714,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "96e02755c8a3ed27420b3a75108641301d765f66e38525df6251e5cdf910c02e"
+        },
+        {
+          "OBJECTID": 10715,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "c576c7ac392e52971a154224456dff6c3d34813e6bc26eb6a29e5689831dd253"
+        },
+        {
+          "OBJECTID": 10716,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "e70b663d5e5fc3210983e75f5d904e77fa6f213a5f6c981abde3269c0707a29c"
+        },
+        {
+          "OBJECTID": 10719,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "a9a57e2d05de69ba510fc73ff8743a69abae65cb6b14ef89e94205395abefd85"
+        },
+        {
+          "OBJECTID": 10721,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "350f992a3a0df95ba2da13e052cfa492c2d1e7c5bb08ff4642e5011d6927bbb3"
+        },
+        {
+          "OBJECTID": 10722,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "afcced3f9309b4ea201fb0244b97ee5f8872b7b18e92d67f800aa9e17b2c5992"
+        },
+        {
+          "OBJECTID": 10737,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "0006e0a041f8c569359858e612b9ecc5928ea4544f3bd9a46a28e70006d25512"
+        },
+        {
+          "OBJECTID": 10750,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "3480f10b36d9389a7b816b926ea480b384a408116858b08feb9ae07d20ceb7fd"
+        },
+        {
+          "OBJECTID": 10757,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "ccd4f3551778a1586178591c0cca343db8aad75e58d5a344119a7d707a16aa93"
+        },
+        {
+          "OBJECTID": 10760,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "4625967c0610dc10387e6bc0d0950a284c13a1c43ed1ffb4791790f6173b2c8c"
+        },
+        {
+          "OBJECTID": 10763,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "badeecdab418a89220eab89d1a2cd64e44a9c7534ebb4fedbebeb0d27b607df8"
+        },
+        {
+          "OBJECTID": 10775,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "4457cfe87891ece8f88dcdb91fa2ebac3b57af5059c4123b0c1ab065445117fd"
+        },
+        {
+          "OBJECTID": 10782,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "00d305600ed9860b9fc660450d81938ea9fa9310ef7428f356107b4ef16b3de2"
+        },
+        {
+          "OBJECTID": 10802,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "2be94350bf1fd0f09841357818f04c3e86f34ca9ef3b9e5bbecb29719b8c971b"
+        },
+        {
+          "OBJECTID": 10804,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "dd40aa32762a7196acd0790323dc0b84dfb043e6fba9d7b5f9c929fe9698cae6"
+        },
+        {
+          "OBJECTID": 10805,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "5af5a33c9d4b8440c315fd867e32af73652cdaceafa19172420a388f3e774dc9"
+        },
+        {
+          "OBJECTID": 10820,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "ea921112cd7c8ed922f4213dc292fdcd4e6dd9921220dd7d50f900d1ecf1f70a"
+        },
+        {
+          "OBJECTID": 10822,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "ffd1dfec6f6fb8092fc42390ccf145ff67ff494d51f7bad0c36a8b9dc14e0761"
+        },
+        {
+          "OBJECTID": 10845,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "34423261e093ccfc0e525de55f3dbe1e62cb411d7eca69bef81c61bf599402d5"
+        },
+        {
+          "OBJECTID": 10848,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "7bcbb3560a8bbff374bef09daa5c4fc09a8c848174617624b0ddf62b8589c1ed"
+        },
+        {
+          "OBJECTID": 10855,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "61add023cb3011d5926f69336d641ed8a07b73d731bcc79043b3813ed6a439f4"
+        },
+        {
+          "OBJECTID": 10863,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "6c44ad293a0843db1e0ad94bc44ae3f9ce3723c30391e143146e87c010ff0143"
+        },
+        {
+          "OBJECTID": 10880,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "05a0b55f6b1c8b785f707777ce1aab346350d5f6d777ea701f4ca04f1b7b8d31"
+        },
+        {
+          "OBJECTID": 10881,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "6e7bbecab1090af4a157dbfbf23ee5ec999e2e1a4c9d8dfb817b777bebaaa09f"
+        },
+        {
+          "OBJECTID": 10882,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "3d749cbec455894c42773cf0c076967ee554cbd401a536d1c2ed60ecdf09a3c1"
+        },
+        {
+          "OBJECTID": 10884,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "ce9c0c5782048c478a267af35cc3ab156be91ee13a8210c5e3bb7154a0476e97"
+        },
+        {
+          "OBJECTID": 10915,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "ab059861d978760759e01cb9e29630d959a3132ee86640bbb697f009a15ef857"
+        },
+        {
+          "OBJECTID": 10916,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "d41f68e830c090a435ca01c20a447d1fae1ad1f9fa32eafb1c77885656128d52"
+        },
+        {
+          "OBJECTID": 10919,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "fdf43064370ffd6dc90d137dace8e842bfde9208ea9cd9662264d28132295ae5"
+        },
+        {
+          "OBJECTID": 10925,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "6271e55fa0d1d83324b35729718dcf338b172b61d23acff7c9e376a9c61ecfff"
+        },
+        {
+          "OBJECTID": 10926,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "06a72d13411b3d63cb4f54072c3c6fed0f2177a0e8fcf8c30fec3266abc03855"
+        },
+        {
+          "OBJECTID": 10938,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "c66ece483503b9301bbf4912b03ebe962a313b5bb42994dae70d140badc59899"
+        },
+        {
+          "OBJECTID": 10942,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "75d7ca61be95a0fa66a77d726959225b748e3fc1837075a5f59d67ba44e56773"
+        },
+        {
+          "OBJECTID": 10944,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "a9f73133044fb2792711f12feb8682287eac1e2383bd73bf2c56cb0d4baa8a91"
+        },
+        {
+          "OBJECTID": 10945,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "6caf77418f05004f9ba8a830fb4672d0e298e8a73327690556e244b626b1b6ca"
+        },
+        {
+          "OBJECTID": 10952,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "65334ab21cec8d1a51aa88e7ff3b729f6e1ebac0338a36061e57ad3e4f67f0b1"
+        },
+        {
+          "OBJECTID": 10954,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "6d87d73c9ea1239484d36c62e533f824b9e771f048d5099d9a20899157ddab39"
+        },
+        {
+          "OBJECTID": 10955,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "304b92c5c9f84fa0deb880e7834103e3592e09b23df31bc94463a92b45fcfb8b"
+        },
+        {
+          "OBJECTID": 10957,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "1be51b492e5f11a3b9701d859df91be8a86568370902145ee145ca86980df71d"
+        },
+        {
+          "OBJECTID": 10959,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "b40fd94653cf4c84f235f783f400ab351b87a344dafa9268023eed7988d35c8d"
+        },
+        {
+          "OBJECTID": 10968,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "827b6089b44ea7386eaf1c341bd82f91f62d41a058fc1f5455df66d7741f8b6d"
+        },
+        {
+          "OBJECTID": 10970,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "2032c21c5061c5c4c3317799767df140a24a0941ea89850966da493e4423a126"
+        },
+        {
+          "OBJECTID": 10971,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "35aca0c4d839ecec13d1ad77b3b992c14f07eb2820bc2f7c6d42e49b33e86834"
+        },
+        {
+          "OBJECTID": 10991,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "889d473eadbf2c54c7e424a6efb0289ec87c523ce53514c49270966fe7f08206"
+        },
+        {
+          "OBJECTID": 11012,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "01b85fa18c9315fea2bbb9e3a4e192728201c791d6b163037c142c98d33cf559"
+        },
+        {
+          "OBJECTID": 11026,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "bcb71aaf620c78bdb93092f61e949d5c71650a08adffcc5ecec5652cf6657279"
+        },
+        {
+          "OBJECTID": 11032,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "662c61525549ceb2a3383da375c4674fa39a2e2f94e3e3ec935dfc8aa9ee8cca"
+        },
+        {
+          "OBJECTID": 11059,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "4d5881b3314113e7774d77658e82553732e0d1b33800fa49a531fc1f911a3531"
+        },
+        {
+          "OBJECTID": 11063,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "9fd54a4672c762da073d5084e3de6dfb61561d9b9aac925a00b8007a0653294a"
+        },
+        {
+          "OBJECTID": 11066,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "582f684034465f64362c7a410f3739dba77002ed55f8ecc895d3496c806d0a59"
+        },
+        {
+          "OBJECTID": 11075,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "dab26956ba6f71b475e2fb4f68096add90b64af68b706a0e266a488d2c7d38ae"
+        },
+        {
+          "OBJECTID": 11078,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "1767e1544183d3a28ed414e69da288cbf1cae002554ba81100b7cee0987b440a"
+        },
+        {
+          "OBJECTID": 11106,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "a2add1f54350bbc0e703fd3df49a6e331ee67070b771e238531d6922485deb0b"
+        },
+        {
+          "OBJECTID": 11107,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "d2011167c954e740beda13c9a0741bb72e0175576b35ad519ba7ff3df7b39460"
+        },
+        {
+          "OBJECTID": 11113,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "96db62882ec4400e536d3906b8e3405bbf984f7d4045d552bdf1e5cc49bbf704"
+        },
+        {
+          "OBJECTID": 11133,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "01dfc73b66d4a5f0b841619be83f0a25f590ce41c809d9b2cae79d454ef715d5"
+        },
+        {
+          "OBJECTID": 11160,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "a9f7788010e3c2b2d9607e097d800b0ed9dbd64c47b3ee51f64c019a031fcec3"
+        },
+        {
+          "OBJECTID": 11217,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "066a21cc1389ac8f70a50ad0e73ac304119cddbd254831492049cf0699cb7ec9"
+        },
+        {
+          "OBJECTID": 11218,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "8432b4e4f7e52ec14a44fe51256cca0d9089bdc36ca145bc2a257b2b46c550ba"
+        },
+        {
+          "OBJECTID": 11238,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "ca4d020be1a52d9f749b1eaa8e953be6f26e4608634b8fb0bf02d5dbb3f12942"
+        },
+        {
+          "OBJECTID": 11240,
+          "ZONING": "OS/R",
+          "ZONING_DESC": "Open Space/Recreation",
+          "SPECIAL": null,
+          "featureSha256": "a3675cee63c3ab7eeed6cea2cebda4cf015c9098890bbe3c3541c9342989c628"
+        }
+      ]
+    }
+  ]
+}
