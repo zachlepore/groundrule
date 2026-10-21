@@ -1,0 +1,309 @@
+[
+  {
+    "scenario": "Ordinary LMDR, explicit overlay absence",
+    "synthetic": true,
+    "generic": [
+      {
+        "key": "height.front_baseline",
+        "rawStatus": "MATCHED",
+        "effectiveStatus": "MATCHED",
+        "resolution": "effective",
+        "controllingRuleKeys": []
+      }
+    ],
+    "overlay": []
+  },
+  {
+    "scenario": "CR LMDR front",
+    "synthetic": true,
+    "generic": [
+      {
+        "key": "height.front_baseline",
+        "rawStatus": "MATCHED",
+        "effectiveStatus": "NOT_MATCHED",
+        "resolution": "suppressed",
+        "controllingRuleKeys": [
+          "crncod.interval_replacement"
+        ]
+      }
+    ],
+    "overlay": [
+      {
+        "key": "crncod.interval_replacement",
+        "status": "MATCHED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.a",
+          "2-1601.J.2.b",
+          "3-803.A"
+        ]
+      },
+      {
+        "key": "crncod.lmdr_interval_prohibition",
+        "status": "MATCHED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.b",
+          "3-803.A"
+        ]
+      }
+    ]
+  },
+  {
+    "scenario": "CR LMDR street-side",
+    "synthetic": true,
+    "generic": [
+      {
+        "key": "height.side_rear_baseline",
+        "rawStatus": "MATCHED",
+        "effectiveStatus": "NOT_MATCHED",
+        "resolution": "suppressed",
+        "controllingRuleKeys": [
+          "crncod.interval_replacement"
+        ]
+      }
+    ],
+    "overlay": [
+      {
+        "key": "crncod.interval_replacement",
+        "status": "MATCHED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.a",
+          "2-1601.J.2.b",
+          "3-803.A"
+        ]
+      },
+      {
+        "key": "crncod.lmdr_interval_prohibition",
+        "status": "MATCHED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.b",
+          "3-803.A"
+        ]
+      },
+      {
+        "key": "crncod.side_rear_general",
+        "status": "MATCHED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.3 and K",
+          "3-803.A"
+        ]
+      }
+    ]
+  },
+  {
+    "scenario": "CR LDR conditional front, compatibility missing",
+    "synthetic": true,
+    "generic": [
+      {
+        "key": "height.front_baseline",
+        "rawStatus": "MATCHED",
+        "effectiveStatus": "NOT_MATCHED",
+        "resolution": "suppressed",
+        "controllingRuleKeys": [
+          "crncod.interval_replacement"
+        ]
+      }
+    ],
+    "overlay": [
+      {
+        "key": "crncod.interval_replacement",
+        "status": "MATCHED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.a",
+          "2-1601.J.2.b",
+          "3-803.A"
+        ]
+      },
+      {
+        "key": "crncod.ldr_compatibility_review",
+        "status": "REVIEW_REQUIRED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.a",
+          "3-803.A"
+        ]
+      },
+      {
+        "key": "crncod.ldr_interval_height",
+        "status": "MATCHED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.a",
+          "3-803.A"
+        ]
+      },
+      {
+        "key": "crncod.ldr_interval_opacity",
+        "status": "MATCHED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.a",
+          "3-803.A"
+        ]
+      },
+      {
+        "key": "crncod.ldr_pathway_assessment",
+        "status": "UNKNOWN",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.a",
+          "3-803.A"
+        ]
+      }
+    ]
+  },
+  {
+    "scenario": "CR non-street side/rear",
+    "synthetic": true,
+    "generic": [
+      {
+        "key": "height.side_rear_baseline",
+        "rawStatus": "MATCHED",
+        "effectiveStatus": "MATCHED",
+        "resolution": "effective",
+        "controllingRuleKeys": []
+      }
+    ],
+    "overlay": [
+      {
+        "key": "crncod.side_rear_general",
+        "status": "MATCHED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.3 and K",
+          "3-803.A"
+        ]
+      }
+    ]
+  },
+  {
+    "scenario": "CR coated chain-link",
+    "synthetic": true,
+    "generic": [
+      {
+        "key": "chain_link.side_rear_vinyl_height",
+        "rawStatus": "MATCHED",
+        "effectiveStatus": "NOT_MATCHED",
+        "resolution": "suppressed",
+        "controllingRuleKeys": [
+          "crncod.chain_link_prohibition"
+        ]
+      },
+      {
+        "key": "material.wire_chain_link_required",
+        "rawStatus": "MATCHED",
+        "effectiveStatus": "NOT_MATCHED",
+        "resolution": "suppressed",
+        "controllingRuleKeys": [
+          "crncod.wire_review"
+        ]
+      }
+    ],
+    "overlay": [
+      {
+        "key": "crncod.chain_link_prohibition",
+        "status": "MATCHED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.1",
+          "3-803.A"
+        ]
+      },
+      {
+        "key": "crncod.side_rear_general",
+        "status": "MATCHED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.3 and K",
+          "3-803.A"
+        ]
+      },
+      {
+        "key": "crncod.wire_review",
+        "status": "MATCHED",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.1",
+          "3-803.A"
+        ]
+      }
+    ]
+  },
+  {
+    "scenario": "Overlay applicability unknown",
+    "synthetic": true,
+    "generic": [
+      {
+        "key": "height.front_baseline",
+        "rawStatus": "MATCHED",
+        "effectiveStatus": "UNKNOWN",
+        "resolution": "pending",
+        "controllingRuleKeys": [
+          "crncod.interval_replacement"
+        ]
+      }
+    ],
+    "overlay": [
+      {
+        "key": "crncod.interval_replacement",
+        "status": "UNKNOWN",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.a",
+          "2-1601.J.2.b",
+          "3-803.A"
+        ]
+      },
+      {
+        "key": "crncod.lmdr_interval_prohibition",
+        "status": "UNKNOWN",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.b",
+          "3-803.A"
+        ]
+      }
+    ]
+  },
+  {
+    "scenario": "Front and street-side building lines unknown",
+    "synthetic": true,
+    "generic": [
+      {
+        "key": "height.front_baseline",
+        "rawStatus": "MATCHED",
+        "effectiveStatus": "UNKNOWN",
+        "resolution": "pending",
+        "controllingRuleKeys": [
+          "crncod.interval_replacement"
+        ]
+      }
+    ],
+    "overlay": [
+      {
+        "key": "crncod.interval_replacement",
+        "status": "UNKNOWN",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.a",
+          "2-1601.J.2.b",
+          "3-803.A"
+        ]
+      },
+      {
+        "key": "crncod.lmdr_interval_prohibition",
+        "status": "UNKNOWN",
+        "sections": [
+          "2-1601.B\u2013D",
+          "2-1601.J.2.b",
+          "3-803.A"
+        ]
+      }
+    ]
+  }
+]

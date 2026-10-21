@@ -1,0 +1,4609 @@
+{
+  "sourceSeeds": [
+    {
+      "path": "supabase/migrations/20260823000000_seed_clearwater_fence_rules.sql",
+      "sha256": "8b07049cd19ed2fadd85853cd80e0ced64fb63c4411cb64208d1a9ea0b04ae05"
+    },
+    {
+      "path": "supabase/migrations/20260824000002_update_clearwater_resident_fence_rules.sql",
+      "sha256": "36755ef5c300298acfcaf9f17f53462e119bf6a21cb133f835fc9211d1fac43b"
+    }
+  ],
+  "rules": [
+    {
+      "key": "material.metal_prohibition",
+      "title": "Corrugated and sheet metal prohibition",
+      "groupKey": "material",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.material",
+        "op": "in",
+        "values": [
+          "corrugated_metal",
+          "sheet_metal"
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Corrugated and sheet metal prohibition.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "prohibition",
+          "subjectKey": null,
+          "parameters": {},
+          "severity": "requirement",
+          "messageTemplate": "Corrugated or sheet metal may not be used to form the fence or wall."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.material",
+          "label": "Primary proposed material",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "corrugated_metal",
+              "label": "Corrugated metal",
+              "description": null
+            },
+            {
+              "key": "sheet_metal",
+              "label": "Sheet metal",
+              "description": null
+            },
+            {
+              "key": "chain_link",
+              "label": "Chain-link",
+              "description": null
+            },
+            {
+              "key": "barbed_wire",
+              "label": "Barbed wire",
+              "description": null
+            },
+            {
+              "key": "other_wire",
+              "label": "Other wire",
+              "description": null
+            },
+            {
+              "key": "masonry",
+              "label": "Masonry",
+              "description": null
+            },
+            {
+              "key": "wood",
+              "label": "Wood",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-802",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "material.wire_chain_link_required",
+      "title": "Wire fence must use chain-link wire",
+      "groupKey": "material",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.is_wire_fence",
+        "op": "is_true"
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Wire fence must use chain-link wire.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "required_value",
+          "subjectKey": "project.material",
+          "parameters": {
+            "value": "chain_link"
+          },
+          "severity": "requirement",
+          "messageTemplate": "A wire fence must use chain-link wire."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.is_wire_fence",
+          "label": "Wire fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.material",
+          "label": "Primary proposed material",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": [
+            {
+              "key": "corrugated_metal",
+              "label": "Corrugated metal",
+              "description": null
+            },
+            {
+              "key": "sheet_metal",
+              "label": "Sheet metal",
+              "description": null
+            },
+            {
+              "key": "chain_link",
+              "label": "Chain-link",
+              "description": null
+            },
+            {
+              "key": "barbed_wire",
+              "label": "Barbed wire",
+              "description": null
+            },
+            {
+              "key": "other_wire",
+              "label": "Other wire",
+              "description": null
+            },
+            {
+              "key": "masonry",
+              "label": "Masonry",
+              "description": null
+            },
+            {
+              "key": "wood",
+              "label": "Wood",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-802",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "material.exposed_top_prohibition",
+      "title": "Exposed top points, wires, and prongs prohibited",
+      "groupKey": "material",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.has_exposed_top_points",
+        "op": "is_true"
+      },
+      "evaluationMode": "partial",
+      "summary": "Exposed top points, wires, and prongs prohibited.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "prohibition",
+          "subjectKey": null,
+          "parameters": {},
+          "severity": "requirement",
+          "messageTemplate": "A chain-link fence may not have exposed points, wires, or prongs at the top."
+        },
+        {
+          "sequence": 2,
+          "type": "warning",
+          "subjectKey": null,
+          "parameters": {
+            "conflict": "barbed_wire_exception"
+          },
+          "severity": "warning",
+          "messageTemplate": "Barbed-wire interaction remains unresolved; do not infer approval."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.has_exposed_top_points",
+          "label": "Exposed top points, wires, or prongs",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-802",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "design.finished_side",
+      "title": "Finished-side orientation",
+      "groupKey": "design",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.in_required_setback",
+        "op": "is_true"
+      },
+      "evaluationMode": "partial",
+      "summary": "Finished-side orientation.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "required_value",
+          "subjectKey": "project.finished_side_faces_outward",
+          "parameters": {
+            "value": true
+          },
+          "severity": "requirement",
+          "messageTemplate": "The finished side must face or be viewable from the right-of-way or adjoining property."
+        },
+        {
+          "sequence": 2,
+          "type": "manual_review_required",
+          "subjectKey": null,
+          "parameters": {
+            "exception": "blocked_access"
+          },
+          "severity": "warning",
+          "messageTemplate": "Blocked-access support-post exceptions require review."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.finished_side_faces_outward",
+          "label": "Finished side faces the right-of-way or adjoining property",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.in_required_setback",
+          "label": "Located in a required setback",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-803",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "design.support_orientation",
+      "title": "Post and stringer orientation",
+      "groupKey": "design",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.in_required_setback",
+        "op": "is_true"
+      },
+      "evaluationMode": "partial",
+      "summary": "Post and stringer orientation.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "required_value",
+          "subjectKey": "project.supports_face_inward",
+          "parameters": {
+            "value": true
+          },
+          "severity": "requirement",
+          "messageTemplate": "Posts and stringers must face inward, subject to the support-post-only blocked-access exception."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.in_required_setback",
+          "label": "Located in a required setback",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.supports_face_inward",
+          "label": "Posts and stringers face inward",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-803",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "design.long_street_plane",
+      "title": "Long street-facing plane treatment",
+      "groupKey": "design",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.street_plane_length",
+        "op": "gt",
+        "value": 100,
+        "unit": "ft"
+      },
+      "evaluationMode": "discretionary",
+      "summary": "Long street-facing plane treatment.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "manual_review_required",
+          "subjectKey": "project.long_plane_treatment_reviewed",
+          "parameters": {
+            "alternatives": {
+              "landscaped_inset_ft": [
+                8,
+                8
+              ],
+              "non_opaque_or_architectural_treatment": true
+            }
+          },
+          "severity": "requirement",
+          "messageTemplate": "A qualifying inset, opening, or architectural treatment must break the plane."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.long_plane_treatment_reviewed",
+          "label": "Long-plane treatment accepted",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.street_plane_length",
+          "label": "Uninterrupted length along street right-of-way",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-803",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "height.front_baseline",
+      "title": "Ordinary front maximum height",
+      "groupKey": "height",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_false"
+          },
+          {
+            "fact": "project.location_zone",
+            "op": "eq",
+            "value": "front"
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Ordinary front maximum height.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 4,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "The ordinary front maximum is four feet unless a supported exception applies."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.location_zone",
+          "label": "Fence segment location zone",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "front",
+              "label": "Between principal structure and front property line",
+              "description": null
+            },
+            {
+              "key": "side",
+              "label": "Between principal structure and side property line",
+              "description": null
+            },
+            {
+              "key": "rear",
+              "label": "Between principal structure and rear property line",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other location",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "design.front_landscape_strip",
+      "title": "Landscape strip for fences over three feet",
+      "groupKey": "design",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.location_zone",
+            "op": "in",
+            "values": [
+              "front",
+              "side"
+            ]
+          },
+          {
+            "fact": "project.height",
+            "op": "gt",
+            "value": 3,
+            "unit": "ft"
+          },
+          {
+            "fact": "project.landscape_strip_waived",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "partial",
+      "summary": "Landscape strip for fences over three feet.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "minimum",
+          "subjectKey": "project.landscape_strip_width",
+          "parameters": {
+            "value": 3,
+            "unit": "ft",
+            "location": "right_of_way_side"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Provide a three-foot-wide landscape strip on the right-of-way side."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.landscape_strip_waived",
+          "label": "Landscape strip waived by Coordinator",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.landscape_strip_width",
+          "label": "Right-of-way-side landscape strip width",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.location_zone",
+          "label": "Fence segment location zone",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "front",
+              "label": "Between principal structure and front property line",
+              "description": null
+            },
+            {
+              "key": "side",
+              "label": "Between principal structure and side property line",
+              "description": null
+            },
+            {
+              "key": "rear",
+              "label": "Between principal structure and rear property line",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other location",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "height.side_rear_baseline",
+      "title": "Ordinary side and rear maximum height",
+      "groupKey": "height",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_false"
+          },
+          {
+            "fact": "project.location_zone",
+            "op": "in",
+            "values": [
+              "side",
+              "rear"
+            ]
+          },
+          {
+            "fact": "property.zoning_district",
+            "op": "neq",
+            "value": "irt"
+          },
+          {
+            "fact": "property.is_water_adjacent",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Ordinary side and rear maximum height.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 6,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "The ordinary side/rear maximum is six feet unless a more specific rule applies."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.location_zone",
+          "label": "Fence segment location zone",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "front",
+              "label": "Between principal structure and front property line",
+              "description": null
+            },
+            {
+              "key": "side",
+              "label": "Between principal structure and side property line",
+              "description": null
+            },
+            {
+              "key": "rear",
+              "label": "Between principal structure and rear property line",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other location",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "property.is_water_adjacent",
+          "label": "Property is adjacent to water",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "property.zoning_district",
+          "label": "Zoning district",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "ldr",
+              "label": "LDR",
+              "description": null
+            },
+            {
+              "key": "lmdr",
+              "label": "LMDR",
+              "description": null
+            },
+            {
+              "key": "mdr",
+              "label": "MDR",
+              "description": null
+            },
+            {
+              "key": "mhdr",
+              "label": "MHDR",
+              "description": null
+            },
+            {
+              "key": "hdr",
+              "label": "HDR",
+              "description": null
+            },
+            {
+              "key": "mhp",
+              "label": "MHP",
+              "description": null
+            },
+            {
+              "key": "c",
+              "label": "C",
+              "description": null
+            },
+            {
+              "key": "t",
+              "label": "T",
+              "description": null
+            },
+            {
+              "key": "o",
+              "label": "O",
+              "description": null
+            },
+            {
+              "key": "i",
+              "label": "I",
+              "description": null
+            },
+            {
+              "key": "irt",
+              "label": "IRT",
+              "description": null
+            },
+            {
+              "key": "osr",
+              "label": "OSR",
+              "description": null
+            },
+            {
+              "key": "p",
+              "label": "P",
+              "description": null
+            },
+            {
+              "key": "d",
+              "label": "D",
+              "description": null
+            },
+            {
+              "key": "us19",
+              "label": "US19",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "height.irt_side_rear",
+      "title": "IRT side and rear maximum height",
+      "groupKey": "height",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_false"
+          },
+          {
+            "fact": "project.location_zone",
+            "op": "in",
+            "values": [
+              "side",
+              "rear"
+            ]
+          },
+          {
+            "fact": "property.zoning_district",
+            "op": "eq",
+            "value": "irt"
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "IRT side and rear maximum height.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 8,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "The IRT side/rear maximum is eight feet."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.location_zone",
+          "label": "Fence segment location zone",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "front",
+              "label": "Between principal structure and front property line",
+              "description": null
+            },
+            {
+              "key": "side",
+              "label": "Between principal structure and side property line",
+              "description": null
+            },
+            {
+              "key": "rear",
+              "label": "Between principal structure and rear property line",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other location",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "property.zoning_district",
+          "label": "Zoning district",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "ldr",
+              "label": "LDR",
+              "description": null
+            },
+            {
+              "key": "lmdr",
+              "label": "LMDR",
+              "description": null
+            },
+            {
+              "key": "mdr",
+              "label": "MDR",
+              "description": null
+            },
+            {
+              "key": "mhdr",
+              "label": "MHDR",
+              "description": null
+            },
+            {
+              "key": "hdr",
+              "label": "HDR",
+              "description": null
+            },
+            {
+              "key": "mhp",
+              "label": "MHP",
+              "description": null
+            },
+            {
+              "key": "c",
+              "label": "C",
+              "description": null
+            },
+            {
+              "key": "t",
+              "label": "T",
+              "description": null
+            },
+            {
+              "key": "o",
+              "label": "O",
+              "description": null
+            },
+            {
+              "key": "i",
+              "label": "I",
+              "description": null
+            },
+            {
+              "key": "irt",
+              "label": "IRT",
+              "description": null
+            },
+            {
+              "key": "osr",
+              "label": "OSR",
+              "description": null
+            },
+            {
+              "key": "p",
+              "label": "P",
+              "description": null
+            },
+            {
+              "key": "d",
+              "label": "D",
+              "description": null
+            },
+            {
+              "key": "us19",
+              "label": "US19",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "waterfront.opacity",
+      "title": "Waterfront protected-area opacity",
+      "groupKey": "waterfront",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "property.is_water_adjacent",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.in_waterfront_protected_area",
+            "op": "is_true"
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Waterfront protected-area opacity.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "required_value",
+          "subjectKey": "project.is_opaque",
+          "parameters": {
+            "value": false
+          },
+          "severity": "requirement",
+          "messageTemplate": "The fence must be non-opaque in the waterfront protected area."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.in_waterfront_protected_area",
+          "label": "Within waterfront line/setback protected area",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.is_opaque",
+          "label": "Fence is opaque",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "property.is_water_adjacent",
+          "label": "Property is adjacent to water",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "waterfront.height",
+      "title": "Waterfront protected-area maximum height",
+      "groupKey": "waterfront",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "property.is_water_adjacent",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.in_waterfront_protected_area",
+            "op": "is_true"
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Waterfront protected-area maximum height.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 4,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "The fence may not exceed four feet in the waterfront protected area."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.in_waterfront_protected_area",
+          "label": "Within waterfront line/setback protected area",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "property.is_water_adjacent",
+          "label": "Property is adjacent to water",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "height.attached_dwelling",
+      "title": "Attached-dwelling lot maximum height",
+      "groupKey": "height",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "property.is_attached_dwelling_lot",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.uniform_boundary_exception_approved",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "partial",
+      "summary": "Attached-dwelling lot maximum height.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 6,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "A fence or wall on an attached-dwelling lot may not exceed six feet absent the supported uniform-boundary exception."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.uniform_boundary_exception_approved",
+          "label": "Uniform boundary exception is applicable",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "property.is_attached_dwelling_lot",
+          "label": "Attached-dwelling lot",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "height.retaining_wall",
+      "title": "Retaining-wall above-grade maximum",
+      "groupKey": "height",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.structure_type",
+            "op": "eq",
+            "value": "retaining_wall"
+          },
+          {
+            "fact": "project.is_detention_pond_retaining_wall",
+            "op": "is_false"
+          },
+          {
+            "fact": "project.engineering_height_exception_approved",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "partial",
+      "summary": "Retaining-wall above-grade maximum.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 18,
+            "unit": "in"
+          },
+          "severity": "requirement",
+          "messageTemplate": "The above-grade retaining-wall portion may not exceed 18 inches absent an engineering/environmental determination."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.engineering_height_exception_approved",
+          "label": "Greater retaining-wall height approved",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.is_detention_pond_retaining_wall",
+          "label": "Retaining wall is associated with detention pond",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.structure_type",
+          "label": "Proposed structure type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "fence",
+              "label": "Fence",
+              "description": null
+            },
+            {
+              "key": "wall",
+              "label": "Wall",
+              "description": null
+            },
+            {
+              "key": "retaining_wall",
+              "label": "Retaining wall",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "height.combined_components",
+      "title": "Combined component maximum",
+      "groupKey": "height",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.combined_height",
+        "op": "is_known"
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Combined component maximum.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "obligation",
+          "subjectKey": "project.combined_height",
+          "parameters": {
+            "value_fact": "project.applicable_maximum_height"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Combined component height may not exceed the applicable maximum."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.combined_height",
+          "label": "Combined fence, wall, berm, and retaining-wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "entry.height",
+      "title": "Entry component overall height",
+      "groupKey": "entry",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.entry_component_type",
+        "op": "is_known"
+      },
+      "evaluationMode": "partial",
+      "summary": "Entry component overall height.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.entry_component_height",
+          "parameters": {
+            "value": 8,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Entry component overall height may not exceed 8 feet."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.entry_component_height",
+          "label": "Entry component overall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.entry_component_type",
+          "label": "Entry component type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "gate",
+              "label": "Gate",
+              "description": null
+            },
+            {
+              "key": "arbor",
+              "label": "Arbor",
+              "description": null
+            },
+            {
+              "key": "trellis",
+              "label": "Trellis",
+              "description": null
+            },
+            {
+              "key": "pergola",
+              "label": "Pergola",
+              "description": null
+            },
+            {
+              "key": "similar_approved",
+              "label": "Similar Approved",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "entry.side_extension",
+      "title": "Entry component side extension",
+      "groupKey": "entry",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.entry_component_type",
+        "op": "is_known"
+      },
+      "evaluationMode": "partial",
+      "summary": "Entry component side extension.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.entry_side_extension",
+          "parameters": {
+            "value": 1,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Entry component side extension may not exceed 1 feet."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.entry_component_type",
+          "label": "Entry component type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "gate",
+              "label": "Gate",
+              "description": null
+            },
+            {
+              "key": "arbor",
+              "label": "Arbor",
+              "description": null
+            },
+            {
+              "key": "trellis",
+              "label": "Trellis",
+              "description": null
+            },
+            {
+              "key": "pergola",
+              "label": "Pergola",
+              "description": null
+            },
+            {
+              "key": "similar_approved",
+              "label": "Similar Approved",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "project.entry_side_extension",
+          "label": "Entry component extension on either side",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "entry.face_projection",
+      "title": "Entry component face projection",
+      "groupKey": "entry",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.entry_component_type",
+        "op": "is_known"
+      },
+      "evaluationMode": "partial",
+      "summary": "Entry component face projection.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.entry_face_projection",
+          "parameters": {
+            "value": 3,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Entry component face projection may not exceed 3 feet."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.entry_component_type",
+          "label": "Entry component type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "gate",
+              "label": "Gate",
+              "description": null
+            },
+            {
+              "key": "arbor",
+              "label": "Arbor",
+              "description": null
+            },
+            {
+              "key": "trellis",
+              "label": "Trellis",
+              "description": null
+            },
+            {
+              "key": "pergola",
+              "label": "Pergola",
+              "description": null
+            },
+            {
+              "key": "similar_approved",
+              "label": "Similar Approved",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "project.entry_face_projection",
+          "label": "Entry component projection from fence face",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "chain_link.downtown_prohibition",
+      "title": "Downtown chain-link prohibition",
+      "groupKey": "chain_link",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_true"
+          },
+          {
+            "fact": "property.is_downtown",
+            "op": "is_true"
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Downtown chain-link prohibition.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "prohibition",
+          "subjectKey": null,
+          "parameters": {},
+          "severity": "requirement",
+          "messageTemplate": "Chain-link fencing is prohibited in the Downtown District."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "property.is_downtown",
+          "label": "Property is in Downtown District",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-805",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "chain_link.front_location",
+      "title": "Chain-link front-location restriction",
+      "groupKey": "chain_link",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_true"
+          },
+          {
+            "fact": "property.has_principal_structure",
+            "op": "is_true"
+          },
+          {
+            "fact": "property.is_recreational_facility",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Chain-link front-location restriction.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "required_value",
+          "subjectKey": "project.is_rear_of_front_building_line",
+          "parameters": {
+            "value": true
+          },
+          "severity": "requirement",
+          "messageTemplate": "Chain-link must be rear of the principal structure front building line."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.is_rear_of_front_building_line",
+          "label": "Fence is rear of front building line",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "property.has_principal_structure",
+          "label": "Parcel has a principal structure",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "property.is_recreational_facility",
+          "label": "Listed or officially similar recreational facility",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-805",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "chain_link.side_rear_base_height",
+      "title": "Chain-link side/rear base maximum",
+      "groupKey": "chain_link",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.location_zone",
+            "op": "in",
+            "values": [
+              "side",
+              "rear"
+            ]
+          },
+          {
+            "fact": "project.vinyl_color",
+            "op": "not_in",
+            "values": [
+              "green",
+              "black"
+            ]
+          },
+          {
+            "fact": "property.is_recreational_facility",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Chain-link side/rear base maximum.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 4,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Unqualified chain-link side/rear fencing may not exceed 48 inches."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.location_zone",
+          "label": "Fence segment location zone",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "front",
+              "label": "Between principal structure and front property line",
+              "description": null
+            },
+            {
+              "key": "side",
+              "label": "Between principal structure and side property line",
+              "description": null
+            },
+            {
+              "key": "rear",
+              "label": "Between principal structure and rear property line",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other location",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "project.vinyl_color",
+          "label": "Chain-link vinyl color",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "green",
+              "label": "Green",
+              "description": null
+            },
+            {
+              "key": "black",
+              "label": "Black",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other",
+              "description": null
+            },
+            {
+              "key": "none",
+              "label": "None",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "property.is_recreational_facility",
+          "label": "Listed or officially similar recreational facility",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-805",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "chain_link.side_rear_vinyl_height",
+      "title": "Vinyl-clad chain-link side/rear maximum",
+      "groupKey": "chain_link",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.location_zone",
+            "op": "in",
+            "values": [
+              "side",
+              "rear"
+            ]
+          },
+          {
+            "fact": "project.vinyl_color",
+            "op": "in",
+            "values": [
+              "green",
+              "black"
+            ]
+          },
+          {
+            "fact": "property.is_recreational_facility",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Vinyl-clad chain-link side/rear maximum.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 6,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Green- or black-vinyl-clad chain-link may be up to six feet in side/rear locations."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.location_zone",
+          "label": "Fence segment location zone",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "front",
+              "label": "Between principal structure and front property line",
+              "description": null
+            },
+            {
+              "key": "side",
+              "label": "Between principal structure and side property line",
+              "description": null
+            },
+            {
+              "key": "rear",
+              "label": "Between principal structure and rear property line",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other location",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "project.vinyl_color",
+          "label": "Chain-link vinyl color",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "green",
+              "label": "Green",
+              "description": null
+            },
+            {
+              "key": "black",
+              "label": "Black",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other",
+              "description": null
+            },
+            {
+              "key": "none",
+              "label": "None",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "property.is_recreational_facility",
+          "label": "Listed or officially similar recreational facility",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-805",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "chain_link.public_row_prohibition",
+      "title": "Chain-link at public right-of-way prohibition",
+      "groupKey": "chain_link",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.location_zone",
+            "op": "in",
+            "values": [
+              "side",
+              "rear"
+            ]
+          },
+          {
+            "fact": "project.adjacent_to_public_row",
+            "op": "is_true"
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Chain-link at public right-of-way prohibition.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "prohibition",
+          "subjectKey": null,
+          "parameters": {},
+          "severity": "requirement",
+          "messageTemplate": "Chain-link is prohibited where the side/rear line is adjacent to public right-of-way."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.adjacent_to_public_row",
+          "label": "Segment side or rear line is adjacent to public right-of-way",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.location_zone",
+          "label": "Fence segment location zone",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "front",
+              "label": "Between principal structure and front property line",
+              "description": null
+            },
+            {
+              "key": "side",
+              "label": "Between principal structure and side property line",
+              "description": null
+            },
+            {
+              "key": "rear",
+              "label": "Between principal structure and rear property line",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other location",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-805",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "chain_link.vacant_lot_height",
+      "title": "Vacant-lot chain-link maximum",
+      "groupKey": "chain_link",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_true"
+          },
+          {
+            "fact": "property.is_vacant_lot",
+            "op": "is_true"
+          },
+          {
+            "fact": "property.is_downtown",
+            "op": "is_false"
+          },
+          {
+            "fact": "project.vinyl_color",
+            "op": "in",
+            "values": [
+              "green",
+              "black"
+            ]
+          }
+        ]
+      },
+      "evaluationMode": "partial",
+      "summary": "Vacant-lot chain-link maximum.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 6,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Qualifying vinyl-clad chain-link on a vacant lot may be up to six feet."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.vinyl_color",
+          "label": "Chain-link vinyl color",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "green",
+              "label": "Green",
+              "description": null
+            },
+            {
+              "key": "black",
+              "label": "Black",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other",
+              "description": null
+            },
+            {
+              "key": "none",
+              "label": "None",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "property.is_downtown",
+          "label": "Property is in Downtown District",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "property.is_vacant_lot",
+          "label": "Property is vacant",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-805",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "chain_link.vacant_lot_removal",
+      "title": "Vacant-lot chain-link removal",
+      "groupKey": "chain_link",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_true"
+          },
+          {
+            "fact": "property.is_vacant_lot",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.is_developed",
+            "op": "is_true"
+          }
+        ]
+      },
+      "evaluationMode": "partial",
+      "summary": "Vacant-lot chain-link removal.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "obligation",
+          "subjectKey": null,
+          "parameters": {
+            "action": "remove_fence"
+          },
+          "severity": "requirement",
+          "messageTemplate": "The vacant-lot chain-link fence must be removed when the lot is developed."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.is_developed",
+          "label": "Vacant lot has been developed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "property.is_vacant_lot",
+          "label": "Property is vacant",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-805",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "chain_link.public_landbank",
+      "title": "Public-landbank chain-link standard",
+      "groupKey": "chain_link",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_true"
+          },
+          {
+            "fact": "property.is_public_landbank",
+            "op": "is_true"
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Public-landbank chain-link standard.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 6,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "The public-landbank perimeter chain-link maximum is six feet."
+        },
+        {
+          "sequence": 2,
+          "type": "required_value",
+          "subjectKey": "project.vinyl_color",
+          "parameters": {
+            "values": [
+              "green",
+              "black"
+            ]
+          },
+          "severity": "requirement",
+          "messageTemplate": "The coating must be green or black."
+        },
+        {
+          "sequence": 3,
+          "type": "exemption",
+          "subjectKey": null,
+          "parameters": {
+            "from": "chain_link.landscaping"
+          },
+          "severity": "advisory",
+          "messageTemplate": "Public landbank fencing is exempt from chain-link landscaping."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.vinyl_color",
+          "label": "Chain-link vinyl color",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": [
+            {
+              "key": "green",
+              "label": "Green",
+              "description": null
+            },
+            {
+              "key": "black",
+              "label": "Black",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other",
+              "description": null
+            },
+            {
+              "key": "none",
+              "label": "None",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "property.is_public_landbank",
+          "label": "Property is publicly owned and landbanked",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-805",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "access.prohibited_area",
+      "title": "Right-of-way, drainage, meter, and manhole placement",
+      "groupKey": "access",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.intersects_prohibited_access_area",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.city_engineer_authorized",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "partial",
+      "summary": "Right-of-way, drainage, meter, and manhole placement.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "prohibition",
+          "subjectKey": null,
+          "parameters": {},
+          "severity": "requirement",
+          "messageTemplate": "Placement is prohibited without specific City Engineer authorization."
+        },
+        {
+          "sequence": 2,
+          "type": "approval_required",
+          "subjectKey": "project.city_engineer_authorized",
+          "parameters": {
+            "authority": "City Engineer"
+          },
+          "severity": "warning",
+          "messageTemplate": "Specific City Engineer authorization is required for an exception."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.city_engineer_authorized",
+          "label": "City Engineer authorization obtained",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.intersects_prohibited_access_area",
+          "label": "Fence intersects right-of-way, drainage easement, meter, or manhole area",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-806",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "access.utility_easement",
+      "title": "Utility-easement access review",
+      "groupKey": "access",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.in_utility_easement",
+        "op": "is_true"
+      },
+      "evaluationMode": "discretionary",
+      "summary": "Utility-easement access review.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "manual_review_required",
+          "subjectKey": "project.utility_access_approved",
+          "parameters": {
+            "removal_right_retained": true
+          },
+          "severity": "requirement",
+          "messageTemplate": "Suitable access and utility removal rights require official review."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.in_utility_easement",
+          "label": "Fence is in a utility easement",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.utility_access_approved",
+          "label": "Suitable utility access approved",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-806",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "subdivision.perimeter_height",
+      "title": "Residential-subdivision perimeter maximum",
+      "groupKey": "subdivision",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "property.is_residential_subdivision_perimeter",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "partial",
+      "summary": "Residential-subdivision perimeter maximum.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 6,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "A qualifying residential-subdivision perimeter fence or wall may not exceed six feet."
+        },
+        {
+          "sequence": 2,
+          "type": "manual_review_required",
+          "subjectKey": "project.subdivision_plan_compliance_approved",
+          "parameters": {},
+          "severity": "warning",
+          "messageTemplate": "Approved-plan and front-rule conflicts require review."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.subdivision_plan_compliance_approved",
+          "label": "Subdivision plan compliance confirmed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "property.is_residential_subdivision_perimeter",
+          "label": "Residential subdivision perimeter",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-807",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "maintenance.lean",
+      "title": "Fence lean limit",
+      "groupKey": "maintenance",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.lean_angle",
+            "op": "gt",
+            "value": 10,
+            "unit": "degree"
+          },
+          {
+            "fact": "project.designed_lean_permitted",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "partial",
+      "summary": "Fence lean limit.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "obligation",
+          "subjectKey": "project.lean_angle",
+          "parameters": {
+            "maximum": 10,
+            "unit": "degree"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Correct sag or lean exceeding ten degrees from vertical unless designed and permitted."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.designed_lean_permitted",
+          "label": "Nonvertical angle is designed and permitted",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.lean_angle",
+          "label": "Fence lean or sag from vertical",
+          "dataType": "decimal",
+          "unit": "degree",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-808",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "maintenance.condition",
+      "title": "Fence maintenance review",
+      "groupKey": "maintenance",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.maintenance_review_passed",
+        "op": "is_false"
+      },
+      "evaluationMode": "discretionary",
+      "summary": "Fence maintenance review.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "manual_review_required",
+          "subjectKey": "project.maintenance_review_passed",
+          "parameters": {
+            "criteria": [
+              "structural_soundness",
+              "rotten_boards",
+              "attachments",
+              "uniform_appearance"
+            ]
+          },
+          "severity": "requirement",
+          "messageTemplate": "An inspection is required for qualitative maintenance duties."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.maintenance_review_passed",
+          "label": "Qualitative maintenance inspection passed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-808",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "repair.nonconforming_boards",
+      "title": "Nonconforming fence board replacement",
+      "groupKey": "repair",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "property.is_legal_nonconforming_fence",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.work_type",
+            "op": "eq",
+            "value": "board_only_replacement"
+          },
+          {
+            "fact": "project.replaces_posts",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Nonconforming fence board replacement.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "permission_pathway",
+          "subjectKey": null,
+          "parameters": {
+            "work_scope": "boards_only"
+          },
+          "severity": "advisory",
+          "messageTemplate": "Boards may be replaced when posts are not replaced."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.replaces_posts",
+          "label": "Project replaces fence posts",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.work_type",
+          "label": "Fence work type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "new",
+              "label": "New",
+              "description": null
+            },
+            {
+              "key": "repair",
+              "label": "Repair",
+              "description": null
+            },
+            {
+              "key": "board_only_replacement",
+              "label": "Board Only Replacement",
+              "description": null
+            },
+            {
+              "key": "temporary",
+              "label": "Temporary",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "property.is_legal_nonconforming_fence",
+          "label": "Fence is legally nonconforming",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-808",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "barbed_wire.street_adjacency",
+      "title": "Barbed-wire street adjacency prohibition",
+      "groupKey": "barbed_wire",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.material",
+            "op": "eq",
+            "value": "barbed_wire"
+          },
+          {
+            "fact": "project.work_type",
+            "op": "in",
+            "values": [
+              "new",
+              "repair"
+            ]
+          },
+          {
+            "fact": "project.adjacent_to_street_alley_sidewalk",
+            "op": "is_true"
+          }
+        ]
+      },
+      "evaluationMode": "partial",
+      "summary": "Barbed-wire street adjacency prohibition.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "prohibition",
+          "subjectKey": null,
+          "parameters": {},
+          "severity": "requirement",
+          "messageTemplate": "Building or repairing barbed-wire fencing adjacent to a street, alley, or sidewalk is prohibited."
+        },
+        {
+          "sequence": 2,
+          "type": "manual_review_required",
+          "subjectKey": "project.adjacent_to_street_alley_sidewalk",
+          "parameters": {
+            "term": "adjacent"
+          },
+          "severity": "warning",
+          "messageTemplate": "The unquantified adjacency determination must be authoritative."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.adjacent_to_street_alley_sidewalk",
+          "label": "Barbed-wire fence is adjacent to street, alley, or sidewalk",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.material",
+          "label": "Primary proposed material",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "corrugated_metal",
+              "label": "Corrugated metal",
+              "description": null
+            },
+            {
+              "key": "sheet_metal",
+              "label": "Sheet metal",
+              "description": null
+            },
+            {
+              "key": "chain_link",
+              "label": "Chain-link",
+              "description": null
+            },
+            {
+              "key": "barbed_wire",
+              "label": "Barbed wire",
+              "description": null
+            },
+            {
+              "key": "other_wire",
+              "label": "Other wire",
+              "description": null
+            },
+            {
+              "key": "masonry",
+              "label": "Masonry",
+              "description": null
+            },
+            {
+              "key": "wood",
+              "label": "Wood",
+              "description": null
+            },
+            {
+              "key": "other",
+              "label": "Other",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "project.work_type",
+          "label": "Fence work type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "new",
+              "label": "New",
+              "description": null
+            },
+            {
+              "key": "repair",
+              "label": "Repair",
+              "description": null
+            },
+            {
+              "key": "board_only_replacement",
+              "label": "Board Only Replacement",
+              "description": null
+            },
+            {
+              "key": "temporary",
+              "label": "Temporary",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "28.06",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "materials.appropriateness_review",
+      "title": "Material appropriateness review",
+      "groupKey": "materials",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.material_appropriateness_approved",
+        "op": "is_false"
+      },
+      "evaluationMode": "discretionary",
+      "summary": "Material appropriateness review.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "manual_review_required",
+          "subjectKey": "project.material_appropriateness_approved",
+          "parameters": {},
+          "severity": "requirement",
+          "messageTemplate": "Material appropriateness for purpose and location requires review."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.material_appropriateness_approved",
+          "label": "Material appropriateness confirmed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-802",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "materials.wall_finish_review",
+      "title": "Decorative wall finish review",
+      "groupKey": "materials",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.structure_type",
+            "op": "in",
+            "values": [
+              "wall",
+              "retaining_wall"
+            ]
+          },
+          {
+            "fact": "project.decorative_finish_approved",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "discretionary",
+      "summary": "Decorative wall finish review.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "manual_review_required",
+          "subjectKey": "project.decorative_finish_approved",
+          "parameters": {},
+          "severity": "requirement",
+          "messageTemplate": "A decorative wall finish must be confirmed."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.decorative_finish_approved",
+          "label": "Decorative wall finish confirmed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.structure_type",
+          "label": "Proposed structure type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "fence",
+              "label": "Fence",
+              "description": null
+            },
+            {
+              "key": "wall",
+              "label": "Wall",
+              "description": null
+            },
+            {
+              "key": "retaining_wall",
+              "label": "Retaining wall",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-802",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "materials.safety_review",
+      "title": "Hazardous material or technique review",
+      "groupKey": "materials",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.safety_material_review_passed",
+        "op": "is_false"
+      },
+      "evaluationMode": "discretionary",
+      "summary": "Hazardous material or technique review.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "manual_review_required",
+          "subjectKey": "project.safety_material_review_passed",
+          "parameters": {},
+          "severity": "requirement",
+          "messageTemplate": "Potentially injurious, hazardous, or noxious materials or techniques require review."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.safety_material_review_passed",
+          "label": "Injurious, hazardous, or noxious material review passed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-802",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "design.maintenance_access",
+      "title": "Required-setback maintenance access",
+      "groupKey": "design",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.in_required_setback",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.maintenance_access_approved",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "discretionary",
+      "summary": "Required-setback maintenance access.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "manual_review_required",
+          "subjectKey": "project.maintenance_access_approved",
+          "parameters": {
+            "coordinator_exception": "impracticable"
+          },
+          "severity": "requirement",
+          "messageTemplate": "An adequate maintenance opening or gate, or Coordinator exception, must be confirmed."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.in_required_setback",
+          "label": "Located in a required setback",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.maintenance_access_approved",
+          "label": "Maintenance opening or gate accepted",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-803",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "frontage.corner_multi_review",
+      "title": "Corner and multi-frontage classification review",
+      "groupKey": "frontage",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "property.lot_frontage_type",
+        "op": "in",
+        "values": [
+          "corner",
+          "multi_frontage"
+        ]
+      },
+      "evaluationMode": "discretionary",
+      "summary": "Corner and multi-frontage classification review.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "manual_review_required",
+          "subjectKey": null,
+          "parameters": {
+            "review": [
+              "addressed_front",
+              "adjoining_character",
+              "open_style",
+              "street_classification"
+            ]
+          },
+          "severity": "requirement",
+          "messageTemplate": "The special frontage pathway requires official/property-pattern review."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "property.lot_frontage_type",
+          "label": "Lot frontage type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "interior",
+              "label": "Interior",
+              "description": null
+            },
+            {
+              "key": "corner",
+              "label": "Corner",
+              "description": null
+            },
+            {
+              "key": "multi_frontage",
+              "label": "Multi Frontage",
+              "description": null
+            },
+            {
+              "key": "double_frontage",
+              "label": "Double Frontage",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "frontage.double_rear_four",
+      "title": "Double-frontage default opposite-line maximum",
+      "groupKey": "frontage",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "property.lot_frontage_type",
+            "op": "eq",
+            "value": "double_frontage"
+          },
+          {
+            "fact": "property.rear_orientation_conditions_met",
+            "op": "is_false"
+          },
+          {
+            "fact": "property.rear_abuts_arterial_or_collector",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "partial",
+      "summary": "Double-frontage default opposite-line maximum.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 4,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "The opposite frontage maximum is four feet when the orientation and arterial/collector pathways do not apply."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "property.lot_frontage_type",
+          "label": "Lot frontage type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "interior",
+              "label": "Interior",
+              "description": null
+            },
+            {
+              "key": "corner",
+              "label": "Corner",
+              "description": null
+            },
+            {
+              "key": "multi_frontage",
+              "label": "Multi Frontage",
+              "description": null
+            },
+            {
+              "key": "double_frontage",
+              "label": "Double Frontage",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "property.rear_abuts_arterial_or_collector",
+          "label": "Rear abuts arterial or collector right-of-way",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "property.rear_orientation_conditions_met",
+          "label": "Double-frontage rear-orientation conditions met",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "frontage.double_rear_six",
+      "title": "Double-frontage qualifying opposite-line maximum",
+      "groupKey": "frontage",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "property.lot_frontage_type",
+            "op": "eq",
+            "value": "double_frontage"
+          },
+          {
+            "any": [
+              {
+                "fact": "property.rear_orientation_conditions_met",
+                "op": "is_true"
+              },
+              {
+                "fact": "property.rear_abuts_arterial_or_collector",
+                "op": "is_true"
+              }
+            ]
+          }
+        ]
+      },
+      "evaluationMode": "partial",
+      "summary": "Double-frontage qualifying opposite-line maximum.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 6,
+            "unit": "ft"
+          },
+          "severity": "requirement",
+          "messageTemplate": "The qualifying opposite frontage follows the ordinary six-foot side/rear maximum."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "property.lot_frontage_type",
+          "label": "Lot frontage type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "interior",
+              "label": "Interior",
+              "description": null
+            },
+            {
+              "key": "corner",
+              "label": "Corner",
+              "description": null
+            },
+            {
+              "key": "multi_frontage",
+              "label": "Multi Frontage",
+              "description": null
+            },
+            {
+              "key": "double_frontage",
+              "label": "Double Frontage",
+              "description": null
+            }
+          ]
+        },
+        {
+          "key": "property.rear_abuts_arterial_or_collector",
+          "label": "Rear abuts arterial or collector right-of-way",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "property.rear_orientation_conditions_met",
+          "label": "Double-frontage rear-orientation conditions met",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-804",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "chain_link.landscaping",
+      "title": "Chain-link landscaping review",
+      "groupKey": "chain_link",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_true"
+          },
+          {
+            "fact": "property.is_public_landbank",
+            "op": "is_false"
+          },
+          {
+            "fact": "project.chain_link_landscaping_approved",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "discretionary",
+      "summary": "Chain-link landscaping review.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "manual_review_required",
+          "subjectKey": "project.chain_link_landscaping_approved",
+          "parameters": {
+            "full_length": true,
+            "planting": [
+              "continuous_hedge",
+              "nondeciduous_robust_vine"
+            ]
+          },
+          "severity": "requirement",
+          "messageTemplate": "Full-length qualifying hedge or vine landscaping must be confirmed."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.chain_link_landscaping_approved",
+          "label": "Chain-link landscaping approved",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "property.is_public_landbank",
+          "label": "Property is publicly owned and landbanked",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-805",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "chain_link.recreation_exemption",
+      "title": "Recreational chain-link exemption",
+      "groupKey": "chain_link",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.is_chain_link",
+            "op": "is_true"
+          },
+          {
+            "fact": "property.is_recreational_facility",
+            "op": "is_true"
+          }
+        ]
+      },
+      "evaluationMode": "partial",
+      "summary": "Recreational chain-link exemption.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "exemption",
+          "subjectKey": null,
+          "parameters": {
+            "from": [
+              "chain_link_height",
+              "front_location"
+            ]
+          },
+          "severity": "advisory",
+          "messageTemplate": "A listed or officially similar recreational facility is exempt from \u00a7 3-805 height and front-location restrictions."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.is_chain_link",
+          "label": "Chain-link fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "property.is_recreational_facility",
+          "label": "Listed or officially similar recreational facility",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-805",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "subdivision.plan_uniformity",
+      "title": "Subdivision plan uniformity review",
+      "groupKey": "subdivision",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "property.is_residential_subdivision_perimeter",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.subdivision_plan_compliance_approved",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "discretionary",
+      "summary": "Subdivision plan uniformity review.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "manual_review_required",
+          "subjectKey": "project.subdivision_plan_compliance_approved",
+          "parameters": {},
+          "severity": "requirement",
+          "messageTemplate": "Additional or substitute fencing must not contravene the approved plan purpose and uniformity."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.subdivision_plan_compliance_approved",
+          "label": "Subdivision plan compliance confirmed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "property.is_residential_subdivision_perimeter",
+          "label": "Residential subdivision perimeter",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": true,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-807",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "construction.temporary_approval",
+      "title": "Temporary construction fence approval",
+      "groupKey": "construction",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.temporary_construction_fence",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.building_official_approval",
+            "op": "is_false"
+          }
+        ]
+      },
+      "evaluationMode": "discretionary",
+      "summary": "Temporary construction fence approval.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "approval_required",
+          "subjectKey": "project.building_official_approval",
+          "parameters": {
+            "authority": "Building Official",
+            "conditions": [
+              "height",
+              "location",
+              "materials"
+            ]
+          },
+          "severity": "requirement",
+          "messageTemplate": "Building Official approval and project-specific conditions are required."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.building_official_approval",
+          "label": "Building Official approval and conditions obtained",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.temporary_construction_fence",
+          "label": "Temporary construction-site fence proposed",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-807",
+          "role": "primary",
+          "note": null
+        }
+      ]
+    },
+    {
+      "key": "permit.building_required",
+      "title": "Building permit required",
+      "groupKey": "permit",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.structure_type",
+        "op": "eq",
+        "value": "fence"
+      },
+      "evaluationMode": "deterministic",
+      "summary": "An anchored fence requires a City building permit before construction.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "obligation",
+          "subjectKey": null,
+          "parameters": {
+            "presentation_group": "before_you_build"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Permit required before construction."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.structure_type",
+          "label": "Proposed structure type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "fence",
+              "label": "Fence",
+              "description": null
+            },
+            {
+              "key": "wall",
+              "label": "Wall",
+              "description": null
+            },
+            {
+              "key": "retaining_wall",
+              "label": "Retaining wall",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "4-203",
+          "role": "primary",
+          "note": "\u00a7 4-203.A.1 permit duty."
+        },
+        {
+          "locator": "8-102",
+          "role": "definition",
+          "note": "Anchored fence is a structure."
+        }
+      ]
+    },
+    {
+      "key": "permit.review_path",
+      "title": "Permit review and plans",
+      "groupKey": "permit",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.structure_type",
+        "op": "eq",
+        "value": "fence"
+      },
+      "evaluationMode": "informational",
+      "summary": "The permit application follows zoning/development-standard and building-code review and includes applicable plans.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "information",
+          "subjectKey": null,
+          "parameters": {
+            "presentation_group": "before_you_build"
+          },
+          "severity": "advisory",
+          "messageTemplate": "Submit the prescribed application and applicable plans for Coordinator and Building Official review."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.structure_type",
+          "label": "Proposed structure type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "fence",
+              "label": "Fence",
+              "description": null
+            },
+            {
+              "key": "wall",
+              "label": "Wall",
+              "description": null
+            },
+            {
+              "key": "retaining_wall",
+              "label": "Retaining wall",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "4-203",
+          "role": "primary",
+          "note": "\u00a7 4-203.B application and dual review."
+        }
+      ]
+    },
+    {
+      "key": "permit.final_inspection",
+      "title": "Final inspection required",
+      "groupKey": "permit",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.structure_type",
+        "op": "eq",
+        "value": "fence"
+      },
+      "evaluationMode": "informational",
+      "summary": "The permit holder or agent must request the supported final inspection.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "obligation",
+          "subjectKey": null,
+          "parameters": {
+            "presentation_group": "before_you_build"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Request the final inspection after completion."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.structure_type",
+          "label": "Proposed structure type",
+          "dataType": "enum",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": [
+            {
+              "key": "fence",
+              "label": "Fence",
+              "description": null
+            },
+            {
+              "key": "wall",
+              "label": "Wall",
+              "description": null
+            },
+            {
+              "key": "retaining_wall",
+              "label": "Retaining wall",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "47.111",
+          "role": "primary",
+          "note": "Final inspection request."
+        }
+      ]
+    },
+    {
+      "key": "visibility.triangle_restriction",
+      "title": "Sight-visibility triangle fence restriction",
+      "groupKey": "visibility",
+      "versionNumber": 1,
+      "condition": {
+        "fact": "project.in_sight_visibility_triangle",
+        "op": "is_true"
+      },
+      "evaluationMode": "deterministic",
+      "summary": "Inside the 20-foot by 20-foot sight-visibility triangle, only a non-opaque fence no higher than 30 inches is permitted.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "maximum",
+          "subjectKey": "project.height",
+          "parameters": {
+            "value": 2.5,
+            "unit": "ft",
+            "display_value": 30,
+            "display_unit": "in",
+            "horizontal_leg_1_ft": 20,
+            "horizontal_leg_2_ft": 20,
+            "presentation_group": "what_you_can_do",
+            "presentation_asset_id": "clearwater_sight_visibility_triangle_v1"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Within the triangle, fence height must not exceed 30 inches."
+        },
+        {
+          "sequence": 2,
+          "type": "required_value",
+          "subjectKey": "project.is_opaque",
+          "parameters": {
+            "value": false,
+            "meaning": "non-opaque",
+            "presentation_group": "what_you_can_do",
+            "presentation_asset_id": "clearwater_sight_visibility_triangle_v1"
+          },
+          "severity": "requirement",
+          "messageTemplate": "Within the triangle, the fence must be non-opaque."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.in_sight_visibility_triangle",
+          "label": "Fence segment intersects the legal sight-visibility triangle",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-904",
+          "role": "primary",
+          "note": "\u00a7 3-904.A and authoritative Sight Visibility Triangle figure: 20 ft by 20 ft; non-opaque fence no higher than 30 inches."
+        }
+      ]
+    },
+    {
+      "key": "visibility.triangle_conflict",
+      "title": "Fence conflicts with sight-visibility restriction",
+      "groupKey": "visibility",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.in_sight_visibility_triangle",
+            "op": "is_true"
+          },
+          {
+            "any": [
+              {
+                "fact": "project.is_opaque",
+                "op": "is_true"
+              },
+              {
+                "fact": "project.height",
+                "op": "gt",
+                "value": 2.5,
+                "unit": "ft"
+              }
+            ]
+          },
+          {
+            "not": {
+              "fact": "project.sight_visibility_exception_approved",
+              "op": "is_true"
+            }
+          }
+        ]
+      },
+      "evaluationMode": "deterministic",
+      "summary": "An opaque fence or fence above 30 inches conflicts with the sight-visibility triangle standard unless the City Engineer approves otherwise.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "prohibition",
+          "subjectKey": null,
+          "parameters": {
+            "presentation_group": "check_this",
+            "protected_vertical_band": {
+              "from_in": 30,
+              "through_ft": 8
+            },
+            "presentation_asset_id": "clearwater_sight_visibility_triangle_v1"
+          },
+          "severity": "warning",
+          "messageTemplate": "The proposed fence conflicts with the sight-visibility standard unless the City Engineer approves otherwise."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.in_sight_visibility_triangle",
+          "label": "Fence segment intersects the legal sight-visibility triangle",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.is_opaque",
+          "label": "Fence is opaque",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.height",
+          "label": "Proposed fence or wall height",
+          "dataType": "decimal",
+          "unit": "ft",
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "compliance",
+          "options": []
+        },
+        {
+          "key": "project.sight_visibility_exception_approved",
+          "label": "City Engineer sight-visibility exception approved",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": false,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-904",
+          "role": "primary",
+          "note": "Textual 30-inch-through-eight-foot band and figure exception."
+        }
+      ]
+    },
+    {
+      "key": "visibility.applicability_review",
+      "title": "Sight-triangle location must be confirmed",
+      "groupKey": "visibility",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.near_sight_visibility_intersection",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.in_sight_visibility_triangle",
+            "op": "is_unknown"
+          }
+        ]
+      },
+      "evaluationMode": "external",
+      "summary": "A coarse near-driveway/corner answer cannot establish legal triangle intersection.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "external_authority_required",
+          "subjectKey": null,
+          "parameters": {
+            "presentation_group": "check_this",
+            "reason": "property_and_fence_geometry_unavailable",
+            "presentation_asset_id": "clearwater_sight_visibility_triangle_v1"
+          },
+          "severity": "warning",
+          "messageTemplate": "Confirm whether the fence enters the 20-foot by 20-foot sight-visibility triangle."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.near_sight_visibility_intersection",
+          "label": "Fence is near a driveway or street corner",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": true,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.in_sight_visibility_triangle",
+          "label": "Fence segment intersects the legal sight-visibility triangle",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": false,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-904",
+          "role": "primary",
+          "note": "Street/right-of-way and driveway/right-of-way corners depicted."
+        }
+      ]
+    },
+    {
+      "key": "visibility.city_engineer_exception",
+      "title": "City Engineer visibility exception",
+      "groupKey": "visibility",
+      "versionNumber": 1,
+      "condition": {
+        "all": [
+          {
+            "fact": "project.in_sight_visibility_triangle",
+            "op": "is_true"
+          },
+          {
+            "fact": "project.sight_visibility_exception_approved",
+            "op": "is_true"
+          }
+        ]
+      },
+      "evaluationMode": "external",
+      "summary": "The City Engineer may approve an exception to the sight-visibility obstruction standard.",
+      "outcomes": [
+        {
+          "sequence": 1,
+          "type": "permission_pathway",
+          "subjectKey": null,
+          "parameters": {
+            "presentation_group": "check_this"
+          },
+          "severity": "advisory",
+          "messageTemplate": "A documented City Engineer approval supplies the exception pathway."
+        }
+      ],
+      "inputs": [
+        {
+          "key": "project.in_sight_visibility_triangle",
+          "label": "Fence segment intersects the legal sight-visibility triangle",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        },
+        {
+          "key": "project.sight_visibility_exception_approved",
+          "label": "City Engineer sight-visibility exception approved",
+          "dataType": "boolean",
+          "unit": null,
+          "propertyDerived": false,
+          "userInputAllowed": false,
+          "requiredWhenApplicable": true,
+          "role": "applicability",
+          "options": []
+        }
+      ],
+      "citationBindings": [
+        {
+          "locator": "3-904",
+          "role": "primary",
+          "note": "City Engineer exception authority."
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "fromRuleKey": "waterfront.height",
+      "toRuleKey": "height.side_rear_baseline",
+      "type": "more_specific_than",
+      "rationale": "The waterfront maximum is the specific side/rear rule.",
+      "scopeCondition": null,
+      "metadata": {
+        "candidate": "CLR-FENCE-009"
+      }
+    },
+    {
+      "fromRuleKey": "chain_link.side_rear_base_height",
+      "toRuleKey": "height.side_rear_baseline",
+      "type": "more_specific_than",
+      "rationale": "Section 3-805 governs chain-link instead of the ordinary schedule.",
+      "scopeCondition": null,
+      "metadata": {
+        "candidate": "CLR-FENCE-016"
+      }
+    },
+    {
+      "fromRuleKey": "chain_link.side_rear_vinyl_height",
+      "toRuleKey": "chain_link.side_rear_base_height",
+      "type": "more_specific_than",
+      "rationale": "Vinyl cladding supplies the stated six-foot chain-link pathway.",
+      "scopeCondition": null,
+      "metadata": {
+        "candidate": "CLR-FENCE-016"
+      }
+    },
+    {
+      "fromRuleKey": "chain_link.recreation_exemption",
+      "toRuleKey": "chain_link.front_location",
+      "type": "exempts_from",
+      "rationale": "The recreation provision expressly exempts the front-location restriction.",
+      "scopeCondition": null,
+      "metadata": {
+        "candidate": "CLR-FENCE-035"
+      }
+    },
+    {
+      "fromRuleKey": "chain_link.public_landbank",
+      "toRuleKey": "chain_link.landscaping",
+      "type": "exempts_from",
+      "rationale": "The public-landbank provision expressly exempts landscaping.",
+      "scopeCondition": null,
+      "metadata": {
+        "candidate": "CLR-FENCE-018"
+      }
+    },
+    {
+      "fromRuleKey": "material.exposed_top_prohibition",
+      "toRuleKey": "barbed_wire.street_adjacency",
+      "type": "potentially_conflicts_with",
+      "rationale": "The package flags unresolved interaction between the CDC top-wire prohibition and conditional barbed-wire treatment.",
+      "scopeCondition": null,
+      "metadata": {
+        "research_gap": "barbed_wire_interaction"
+      }
+    }
+  ],
+  "sourceProvisions": [
+    [
+      "Clearwater Community Development Code",
+      "3-801",
+      "\u00a7 3-801",
+      "Purpose and applicability",
+      "Division 8 provides standards for fences and walls."
+    ],
+    [
+      "Clearwater Community Development Code",
+      "3-802",
+      "\u00a7 3-802",
+      "Materials",
+      "Fence materials must be appropriate; walls need decorative finish; corrugated or sheet metal and injurious techniques are prohibited; wire fences must use chain-link and may not expose top points, wires, or prongs, subject to the unresolved barbed-wire provision."
+    ],
+    [
+      "Clearwater Community Development Code",
+      "3-803",
+      "\u00a7 3-803",
+      "Design requirements",
+      "Required-setback fences have finished-side, inward-support, maintenance-access, and visibility duties; street-facing planes over 100 feet require qualifying insets, openings, or architectural treatment."
+    ],
+    [
+      "Clearwater Community Development Code",
+      "3-804",
+      "\u00a7 3-804",
+      "Height requirements",
+      "Non-chain-link fences use the front, side/rear, waterfront, lot-type, retaining-wall, combined-height, and entry-component standards stated in this section."
+    ],
+    [
+      "Clearwater Community Development Code",
+      "3-805",
+      "\u00a7 3-805",
+      "Chainlink fences",
+      "Chain-link is prohibited Downtown and is subject to front-location, height, public-right-of-way, landscaping, recreation, vacant-lot, and public-landbank provisions."
+    ],
+    [
+      "Clearwater Community Development Code",
+      "3-806",
+      "\u00a7 3-806",
+      "Easements and rights-of-way",
+      "Fences may not occupy specified rights-of-way/easements or enclose meters/manholes without authorization; utility-easement placement requires suitable access and preserves removal rights."
+    ],
+    [
+      "Clearwater Community Development Code",
+      "3-807",
+      "\u00a7 3-807",
+      "Special regulations",
+      "This section addresses pool enclosures, visibility, subdivision plans/perimeters, and Building Official approval of temporary construction fencing."
+    ],
+    [
+      "Clearwater Community Development Code",
+      "3-808",
+      "\u00a7 3-808",
+      "Maintenance of fences and walls",
+      "Fences must be maintained, may not lean or sag over ten degrees unless designed and permitted, and nonconforming-fence boards may be replaced if posts are not replaced."
+    ],
+    [
+      "Clearwater Community Development Code",
+      "3-904",
+      "\u00a7 3-904",
+      "Sight visibility triangles",
+      "At street/right-of-way and driveway/right-of-way intersections, the Sight Visibility Triangle figure depicts a triangle measured 20 feet along each applicable intersecting edge. Within it, no structure or landscaping may be installed other than a non-opaque fence not exceeding 30 inches in height. The text also protects views from 30 inches through eight feet above grade and provides for City Engineer approval."
+    ],
+    [
+      "Clearwater Community Development Code",
+      "3-1202.F",
+      "\u00a7 3-1202.F",
+      "Landscape strips",
+      "A referenced landscape strip is outside the right-of-way and uses a solid hedge or a qualifying mix installed for coverage at maturity."
+    ],
+    [
+      "Clearwater Community Development Code",
+      "8-102",
+      "\u00a7 8-102",
+      "Definitions",
+      "Defines relevant terms including easement, structure height, lot types, opaque, principal structure, property lines, right-of-way, and setbacks."
+    ],
+    [
+      "Clearwater Code of Ordinances",
+      "28.06",
+      "\u00a7 28.06",
+      "Barbed wire near streets",
+      "Building or repairing a barbed-wire fence adjacent to a street, alley, or sidewalk is unlawful; adjacent is not quantified in the reviewed extract."
+    ],
+    [
+      "Clearwater Community Development Code",
+      "4-203",
+      "\u00a7 4-203",
+      "Building permits",
+      "Construction, demolition, modification, or renovation of a building or structure may not begin before a building permit is obtained. The Building Official receives the prescribed application and plans, the Community Development Coordinator reviews applicable development standards, and the Building Official reviews applicable building-code conformity."
+    ],
+    [
+      "Clearwater Community Development Code",
+      "47.111",
+      "\u00a7 47.111",
+      "Inspections",
+      "On completion, the permit holder or agent must request a final inspection and any other inspection required by the permit."
+    ]
+  ]
+}

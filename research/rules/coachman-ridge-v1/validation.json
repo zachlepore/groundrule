@@ -1,0 +1,63 @@
+{
+  "bundleVersion": "coachman-ridge-fence-archived-v1",
+  "inactive": true,
+  "currentLawVerified": false,
+  "syntheticScenarios": 8,
+  "baselineRules": 54,
+  "overlayRules": 9,
+  "relationships": 22,
+  "frozenBaseline": {
+    "byRule": {
+      "CLR-Z-001": 1967,
+      "CLR-Z-002": 262,
+      "CLR-Z-003": 731,
+      "CLR-Z-004": 364
+    },
+    "remainingReview": 17014,
+    "sha256": "a4191f3e33be50545aeb6b0739f307db0470517d721e0abe854182dd2859e739",
+    "originalProfiles": 63430,
+    "uniqueAddressIdentifiers": 63430,
+    "approvedRecords": 3324,
+    "readOnly": true
+  },
+  "blockers": [
+    "Current official text and intervening amendments not verified",
+    "City interpretation of LDR may be permitted and architectural compatibility",
+    "Legal overlay boundary, building lines and street frontage require trusted evidence, not GIS code recognition",
+    "Other overlay conflicts, variances, nonconforming and special approval pathways require review before activation",
+    "Stage D status-aware card integration and independent publication review required"
+  ],
+  "tests": {
+    "focused": 40,
+    "engineQuestionsGuidesStageAAndC1IncludingFocused": 216,
+    "loaderPropertyJurisdiction": 22,
+    "gisRules001Through004AndStageB": 108,
+    "pythonGeometry": 2,
+    "total": 348,
+    "failed": 0,
+    "skipped": 0,
+    "typescript": "passed",
+    "targetedEslint": "passed"
+  },
+  "deterministicRepeat": "all four export files byte-identical",
+  "exportChecksums": [
+    "9ae2e46d52d3207c14d3a125f11781b4860e972a45c0b1f0d32861c90950a534  coachman-ridge-fence.draft.json",
+    "27c7df4c6bf766f482e7daf61a5b965fec61c8b008c902d9785fbabf7b47f351  before-after.json",
+    "b9b19805397c3b8dc9bba8236b6f3ef57c95b1b55d97b6dad2a015c77cb92e19  validation.json"
+  ],
+  "inheritedEvidence": {
+    "stageBFilesVerified": 9,
+    "stageBInterpretedAddressesSha256": "c82fa61de3e1ab4fdcff12ae0856a94e6012a6a87ad9abff1feb5422e30dbb2f",
+    "sourceArchiveSha256": "174c46ea4fca085a3ec81d443e003fa9abc0747741188bfbcc264b717af8a902",
+    "readOnly": true
+  },
+  "unchangedScope": {
+    "newGuidanceApprovals": 0,
+    "originalZoningAndQaChanges": 0,
+    "productionGuideChanges": 0,
+    "rules001Through004Changes": 0,
+    "stageARegistryChanges": 0,
+    "stageBOutputChanges": 0,
+    "c1EngineChanges": 0
+  }
+}
