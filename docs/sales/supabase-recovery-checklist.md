@@ -4,8 +4,10 @@ Companion to [the readiness report](clearwater-sales-v1-readiness.md). **Plannin
 
 ## 1. Establish the correct project and environment — owner
 
+November 2 owner update: deployment is `https://groundrule-three.vercel.app`, its root shows a disabled placeholder, and the Supabase project is paused. Project reference/dashboard URL will follow. This confirms reported state, not database contents or restore availability. No recovery action should be attempted while project identity is pending.
+
 - Open the existing Supabase organization/project through the owner's normal account. Record project reference, region, organization, displayed status/error, last known access, plan and current backup/restore availability. Distinguish paused compute, billing restriction, unhealthy service and expired restore eligibility; do not infer any from an app error.
-- In Vercel's existing Groundrule project, record the production domain, production branch, deployment SHA, runtime/Node version and environment scope. Repo-listed candidate is `groundrule-three.vercel.app`; owner must confirm it. Preview deployments for draft branches are not production evidence.
+- In Vercel's existing Groundrule project, record the production domain, production branch, deployment SHA, runtime/Node version and environment scope. The owner-confirmed domain is `groundrule-three.vercel.app`; deployed SHA/branch/environment still need verification. Preview deployments for draft branches are not production evidence.
 - Privately compare **project identity**, not secret values, to the configured `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` for Production and Preview. These are the only application Supabase variables read by `lib/supabase/server.ts`. Verify the intended project's valid publishable/anon-compatible key without sharing it here. No service-role key belongs in this app's browser/public variables. Do not rotate/reset credentials just to investigate.
 - Capture a dated status screenshot and last known good deployment. Identify the responsible project owner and municipal reviewer. Do not create a replacement project or change billing while the original project's state is unclear.
 

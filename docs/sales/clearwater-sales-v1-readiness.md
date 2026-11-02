@@ -10,11 +10,14 @@
 | Remote Stage A / B / C1 / C2 heads | `10036f8` / `91a71f4` / `c697027` / `c71c52e`; implementation exists on separate branches, not deployed evidence |
 | Public GitHub pull list, November 2 | [Stage B #103](https://github.com/zachlepore/groundrule/pull/103) and [C1 #104](https://github.com/zachlepore/groundrule/pull/104) are open **drafts**, matching those heads |
 | C2 remote contents | Inactive archived Coachman Ridge bundle is implemented at `c71c52e`; its committed report records 348 tests and unresolved currency/applicability gates. Those are historical branch results, not tests rerun in this audit. No C2 PR appears in the open pull list |
-| Repo-listed website | [groundrule-three.vercel.app](https://groundrule-three.vercel.app); GitHub PRs also expose B/C1 **preview** deployment links. Neither proves the production branch or deployed SHA |
+| Owner-confirmed deployment URL | [groundrule-three.vercel.app](https://groundrule-three.vercel.app), confirmed November 2. GitHub PRs also expose B/C1 **preview** deployment links; production branch/deployed SHA remain unverified |
+| Owner-observed live root | Outdated placeholder with a disabled address field. This establishes that the public root does not currently offer address entry; it does not establish the state of `/clearwater` or the deployed commit |
 | Live GET attempts | `/`, `/clearwater`, `/clearwater/fence` on the listed website all failed at this environment's **CONNECT proxy HTTP 403**. This is not a site HTTP response or evidence of downtime. GitHub API and official City/Supabase documentation requests were similarly blocked; public GitHub HTML and Git fetch worked |
-| Supabase state | **Unknown.** Pause is owner-reported, not independently confirmed. No project reference, Dashboard access, credential inspection, live database query or recovery operation was attempted |
+| Supabase state | **Paused, confirmed by owner November 2.** Project reference/dashboard URL is pending. Contents, migration history, backup availability and restore eligibility remain unknown; no Dashboard access, credential inspection, live database query or recovery operation was attempted |
 
-The owner must confirm the production URL, Vercel deployed SHA/branch/environment and Supabase project identity/status. The findings below describe **repository behavior if deployed with matching data**, not a claim about what the live service currently serves. The README's “initial shell/no lookups” description is stale.
+The deployment URL and paused project state are now owner-confirmed. Still needed: Vercel deployed SHA/branch/environment and Supabase project reference, inventory and recovery options. The findings below describe **repository behavior if deployed with matching data**, except the explicitly owner-observed root. The README's “initial shell/no lookups” description is stale.
+
+**Two independent blockers:** `app/page.tsx` on audited `main` still hardcodes the disabled root form and “Address lookup is coming soon.” The root observation is therefore consistent with current main; it does **not** prove an old deployment, and redeploying main unchanged would retain it. The newer resident flow lives at `/clearwater`. Separately, that flow depends on live Supabase RPCs/rules. Resuming Supabase would not enable the root form, and changing the root would not recover database-backed lookups. No direct observation of deployed `/clearwater` succeeded; do not advertise it as working while the project is paused.
 
 ## Resident journey and gaps in `main`
 
@@ -72,7 +75,7 @@ Negative cases: `208 KERRY DR` (source REVIEW, ambiguous zoning; may be absent f
 
 | Small sales requirement | Existing / minimum remaining |
 | --- | --- |
-| Stable demo URL | Candidate `https://groundrule-three.vercel.app/clearwater`; owner confirms intended environment and pins approved SHA. Preview success ≠ production success; never link branch previews as the municipal pilot |
+| Stable demo URL | Owner-confirmed host; proposed pilot entry `https://groundrule-three.vercel.app/clearwater` remains unverified. Owner pins the approved SHA/environment after recovery. Preview success ≠ production success; never link branch previews as the municipal pilot |
 | Branding | Existing Clearwater route theme, municipality header and Groundrule attribution suffice. Municipality approves name/logo use and pilot wording; no redesign |
 | Citations and contact | Verify existing Planning, fence-permit and ROW URLs in `lib/guides/fence.ts`; municipality supplies current department phone/email/hours and an escalation contact. No guessed phone or invented staff SLA. Visible relevant sections: §§3-802, 3-803, 3-804, 3-805, 3-806, 3-904.A, permit §4-203, inspection §47.111; retain edition/currency and any other actually relied-on provisions |
 | Privacy/terms/disclaimer | Small `/privacy` and `/terms` pages + footer: operator/contact, public property data/source/date, limited scope, no permit/legal determination, no municipal endorsement unless authorized, cookies/hosting logs/retention, feedback handling and support. Owner/municipality approve copy |
