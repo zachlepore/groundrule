@@ -2,6 +2,8 @@
 
 **Recommendation:** sell a staff-supported, fence-only pilot for **10–20 individually reviewed ordinary LMDR addresses**, starting with three demo properties. Restore and inventory the existing Supabase project first; reuse canonical property tables, existing rule structures and the resident shell. Correct misleading card states and provide useful referrals. Defer citywide approval ingestion, NCOD activation and the other five Guides. Aim for a reviewable demo by day 5 and a bounded pilot by business day 10, conditional on owner access and municipal review. This audit does not authorize implementation or database changes.
 
+**Subsequent owner update:** the existing Supabase project has resumed; the owner reports a working live **1975 Drew Plaza** case and private schema/data/roles backups. Earlier pause observations below are historical. Live contents and restore readiness remain unverified. See the [three-property reconciliation plan](three-property-live-reconciliation.md), including the 1975-versus-1950 identity discrepancy.
+
 ## What is verified, and what is not
 
 | Evidence | Finding |

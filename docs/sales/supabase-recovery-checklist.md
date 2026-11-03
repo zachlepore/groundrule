@@ -2,6 +2,8 @@
 
 Companion to [the readiness report](clearwater-sales-v1-readiness.md). **Planning only:** no dashboard action, credential use, SQL execution, restore, migration, database write or deployment is authorized/performed by this audit. Owner runs or separately authorizes each operational step. Keep secrets/backup data out of Git and chat.
 
+**Subsequent owner update:** Supabase has resumed, a live 1975 Drew Plaza case works according to the owner, and schema/data/roles backups are stored privately on the owner's Mac. Do not request or transfer those files. Resume instructions below are historical/contingency guidance, not a request to resume again. Use the [three-property reconciliation plan](three-property-live-reconciliation.md) for current next steps; export success does not prove restore readiness.
+
 ## 1. Establish the correct project and environment — owner
 
 November 2 owner update: deployment is `https://groundrule-three.vercel.app`, its root shows a disabled placeholder, and the Supabase project is paused. Project reference/dashboard URL will follow. This confirms reported state, not database contents or restore availability. No recovery action should be attempted while project identity is pending.
